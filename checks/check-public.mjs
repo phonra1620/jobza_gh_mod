@@ -17,11 +17,19 @@ const run=code=>vm.runInContext(code,sandbox);
 assert.doesNotMatch(node('#nav').innerHTML,/#history|#roadmap/,'Private navigation excluded');
 const routes=run('Object.keys(views)');
 const renderedAssets=new Set();
+const cardOrder=['restore','kit','items','repair','travel','utility','pet','doctors','skills','world'];
+let navOrder;
 assert.ok(routes.includes('overview')&&routes.includes('field-tools')&&routes.includes('workbook'));
 assert.ok(!routes.includes('history')&&!routes.includes('roadmap'));
 for(const role of ['single','host','client'])for(const route of routes){
  run(`state.mode=${JSON.stringify(role)};active=${JSON.stringify(route)};render()`);
  assert.ok(node('#main').innerHTML.length>100,`Empty ${role}/${route}`);
+ if(route==='overview'){
+  assert.deepEqual(Array.from(node('#main').innerHTML.matchAll(/data-hub-tool="([^"]+)"/g),m=>m[1]),cardOrder);
+  const current=Array.from(node('#nav').innerHTML.matchAll(/href="#([^"]+)"/g),m=>m[1]);
+  if(navOrder)assert.deepEqual(current,navOrder);else navOrder=current;
+  if(role==='client')for(const id of ['pet','world'])assert.match(node('#main').innerHTML,new RegExp(`data-hub-tool="${id}"[^>]*aria-disabled="true"`));
+ }
  assert.doesNotMatch(node('#main').innerHTML,/\uFFFD|\?{3,}/,`Encoding ${role}/${route}`);
  for(const match of node('#main').innerHTML.matchAll(/(?:src|href)=["']([^"']+)["']/g)){
   assert.ok(!match[1].startsWith('/')||match[1].startsWith('//'),`Root URL in ${route}: ${match[1]}`);

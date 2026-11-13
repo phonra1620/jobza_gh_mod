@@ -3,3 +3,7 @@
 .hub-nav-more{margin-top:12px;border-top:1px solid var(--border);padding-top:10px}.hub-nav-more summary{font-size:11px;color:var(--muted);padding:10px;cursor:pointer}.hub-action-page{border:0;padding:0;margin:20px 0;min-width:0}.hub-action-page:disabled{opacity:.65}
 .game-home-layout{flex:1;min-height:0;overflow:hidden}.game-home-layout .game-tabs{min-height:0;overflow:auto}.game-home-layout .game-content{min-height:0;max-height:none;min-width:0}@media(max-width:700px){.game-home-layout{grid-template-rows:auto minmax(0,1fr)}}
 .hub-language-buttons{display:flex;gap:6px;margin-top:auto;padding-top:12px}.hub-language-buttons button{flex:1;text-align:center!important}.hub-language-buttons [aria-pressed=true]{border-color:var(--green);color:var(--green)}
+/* Preserve positions across roles; unavailable entries remain visible. */
+.hub-quick-card.is-locked,.sidebar a.is-locked{opacity:.48;cursor:not-allowed}
+.hub-quick-card.is-locked:hover{transform:none;border-color:var(--border)}
+.hub-quick-card.is-locked .hub-open-label{color:var(--muted)}

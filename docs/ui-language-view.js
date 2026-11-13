@@ -3,6 +3,7 @@ let hubUiLanguage='en';
 try{hubUiLanguage=localStorage.getItem('gh-hub-ui-language')==='th'?'th':'en';}catch{}
 function hubTranslateText(value){
  const original={...(window.GH_UI_LANGUAGE||{}),
+  'Locked in this mode':'ใช้ไม่ได้ในโหมดนี้',
   'In wall':'In wall · ทะลุวัตถุ','Invisible':'Invisible · ซ่อนตัว','Ignore me':'Ignore me · AI มองข้าม',
   'Pass through objects while flying; exit to checked clear ground':'ทะลุวัตถุขณะบิน เมื่อออกจะย้ายไปพื้นว่างที่ตรวจแล้ว',
   'Hide body and name; AI ignores you':'ซ่อนร่างและชื่อ พร้อมให้ AI มองข้ามเรา',
