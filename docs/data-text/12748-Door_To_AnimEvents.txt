@@ -1,0 +1,4 @@
+Anim("DoorsOpen")
+{
+	Sound("Dream03_door_squick", "Items", 0.1)
+}

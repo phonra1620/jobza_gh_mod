@@ -1,0 +1,5 @@
+Idle("GiantAnteater_idle_01", "GiantAnteater_idle_02", "GiantAnteater_idle_03", "GiantAnteater_idle_04")
+Hit("GiantAnteater_hit_01","GiantAnteater_hit_02","GiantAnteater_hit_03","GiantAnteater_hit_04")
+Panic("GiantAnteater_runaway_01","GiantAnteater_runaway_02")
+Death("GiantAnteater_death_01","GiantAnteater_death_02", "GiantAnteater_death_03")
+Attack("GiantAnteater_attack_01","GiantAnteater_attack_02","GiantAnteater_attack_03","GiantAnteater_attack_04")

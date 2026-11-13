@@ -1,0 +1,105 @@
+Node("Arce_Unlock", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsArceUblocked", False, 0)
+	Element("UnlockItemInNotepad:Acre_Small", False, 1)
+	Element("UnlockItemInNotepad:Acre", False, 2)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_A", False, 3)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_B", False, 4)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_C", False, 5)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_D", False, 6)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_E", False, 7)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_F", False, 8)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_G", False, 9)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_H", False, 10)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_I", False, 11)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_J", False, 12)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_K", False, 13)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_L", False, 14)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_M", False, 15)
+	Element("DeactivateScenarioNode:Seed_Arce_Unlock_N", False, 16)	
+}
+
+Node("Seed_Arce_Unlock_A", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:molineria_flowers_Dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}	
+Node("Seed_Arce_Unlock_B", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Banana_Seeds", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_C", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Casava_Seeds", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_D", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Quassia_Amara_flowers_Dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_E", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Guanabana_Seeds", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_F", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Malanga_Seeds", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_G", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:tobacco_flowers_Dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_H", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:plantain_lilly_flowers_Dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_I", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Cocona_Seeds", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_J", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Albahaca_Flower_Dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_K", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:psychotria_viridis_berries_dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_L", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Brazil_nut", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_M", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:monstera_deliciosa_flower_Dryed", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}
+Node("Seed_Arce_Unlock_N", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Raffia_nut", False, 1)
+	Element("SetBoolVariable:IsArceUblocked:true", False, 2)
+}

@@ -1,0 +1,2 @@
+Death("Peccary_Death_01", "Peccary_Death_02")
+Panic("Peccary_Panic_01","Peccary_Panic_02","Peccary_Panic_03")

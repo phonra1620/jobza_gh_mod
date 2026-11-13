@@ -1,0 +1,29 @@
+Anim("death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("death2")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("punch")
+{
+	Event("GiveDamage", 0.5)
+}
+
+Anim("attack1")
+{
+	Event("GiveDamage", 0.5)
+}
+
+Anim("attack2")
+{
+	Event("GiveDamage", 0.5)
+}
+
+Anim("salute")
+{
+	Event("BowShot", 0.5)
+}

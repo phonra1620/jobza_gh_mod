@@ -1,0 +1,64 @@
+Node("Get_Fuel", True, -185.0000, 441.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Fuel", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Fuel", False, 50)
+	Element("SetBoolVariable:UnlockFuel:true", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_jerrycan:true", False, 2)
+}
+Node("Elevator_NoPowerTrigger", True, 299.0000, 439.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:GoldMiine_NoPower_Elevator_Trigger", False, 0)
+	// Dzwiek?
+	// Element("SetBoolVariable:NeedFuel:true", False, 4)
+
+}
+Node("Elevator_NoFuel", True, 79.0000, 329.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:GoldMine_Generator_NoFuelTrigger", False, 0)
+	Element("DisableObject:GoldMine_Generator_NoFuelTrigger", False, 1)
+	Element("PlayAnimation:Generator_ElevatorGM:generator_fail", False, 2)
+	Element("PlayAudioSource:GoldMine_Generator_NoFuel_Sound", False, 3)
+	Element("SetBoolVariable:NeedFuel:true", False, 4)
+	Element("Wait:1.8", False, 5)
+	Element("EnableObject:GoldMine_Generator_NoFuelLoopTrigger", False, 6)
+	Element("ActivateScenarioNode:Elevator_NoFuelLoop", False, 7)
+	Element("IsBoolVariableTrue:false:UnlockFuel", False, 8)
+	Element("StartDialog:Mine_Generator_Empty", False, 9)
+}
+// Loop Not working - cos of require item
+Node("Elevator_NoFuelLoop", False, 75.0000, 439.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:GoldMine_Generator_NoFuelLoopTrigger", False, 0)
+	Element("PlayAnimation:Generator_ElevatorGM:generator_fail", False, 1)
+	Element("PlayAudioSource:GoldMine_Generator_NoFuel_Sound", False, 2)
+	Element("Wait:1.8", False, 3)
+	Element("ResetTrigger:GoldMine_Generator_NoFuelLoopTrigger", False, 4)
+}
+Node("GoldMine_ElevatorEnabler", True, -188.0000, 344.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockFuel", False, 0)
+	// Element("IsGeneratorFull:true:Generator_FuelTrigger", False, 1)
+	Element("DisableObject:GoldMine_Generator_NoFuelTrigger", False, 1)
+	Element("DisableObject:GoldMine_Generator_NoFuelLoopTrigger", False, 2)
+	Element("EnableObject:GoldMine_Generator_WorkingTrigger", False, 3)
+	Element("IsTriggered:true:GoldMine_Generator_WorkingTrigger", False, 4)
+	Element("ShowFakeItemInBackpack:backpack_jerrycan:false", False, 42)
+	Element("ForcePlayAnimation:Generator_ElevatorGM:generator_start", False, 5)
+	// 	Element("PlayAnimation:Generator_ElevatorGM:generator_stop", False, 23)
+	Element("SetBoolVariable:NeedFuel:false", False, 6)
+	Element("DisableObject:GoldMine_Generator_WorkingTrigger", False, 7)
+	Element("DisableObject:GoldMiine_NoPower_Elevator_Trigger", False, 8)
+	Element("EnableObject:GoldMine_Generator_Starting_Sound", False, 9)
+	Element("Wait:3.7", False, 10)
+	Element("EnableObject:GoldMine_Generator_Working_Sound", False, 11)
+	Element("SetBoolVariable:UnlockElevator:true", False, 12)
+}
+// UnlockElevator
+Node("ElevatorEnabler", True, 89.0000, 165.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateBoolVariable:ShouldAnimElevator:false", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockElevator", False, 1)
+	Element("EnableObject:GoldMiine_WorkingDown_Elevator_Trigger", False, 2)
+	Element("EnableObject:GoldMiine_WorkingUp_Elevator_Trigger", False, 3)
+}
+

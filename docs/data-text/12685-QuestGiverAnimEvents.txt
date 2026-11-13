@@ -1,0 +1,44 @@
+Anim("quest_a_accept")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_start_", "PVE\QuestGiver\start", 0.05)
+}
+Anim("quest_a_quit")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_finish_", "PVE\QuestGiver\finish", 0.1)
+}
+Anim("quest_b_accept")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_start_", "PVE\QuestGiver\start", 0.05)
+}
+Anim("quest_b_quit")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_finish_", "PVE\QuestGiver\finish", 0.1)
+}
+
+Anim("quest_c_accept")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_start_", "PVE\QuestGiver\start", 0.05)
+}
+Anim("quest_c_quit")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_finish_", "PVE\QuestGiver\finish", 0.1)
+}
+
+
+Anim("quest_d_accept")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_start_", "PVE\QuestGiver\start", 0.05)
+}
+
+Anim("quest_d_quit")
+{
+	Event("AnimEnd", 0.99)
+	Sound("TEMP_questgiver_finish_", "PVE\QuestGiver\finish", 0.1)
+}

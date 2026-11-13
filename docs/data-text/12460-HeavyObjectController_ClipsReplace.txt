@@ -1,0 +1,241 @@
+Item("Capybara_HO")
+{
+	Clip("PL|PreCarryUp", "PL|capybara_carry_takeUp")
+	Clip("PL|CarryUp", "PL|capybara_carry_loop")
+	Clip("PL|CarryUpDrop", "PL|capybara_carry_drop")
+}
+
+Item("Peccary_HO")
+{
+	Clip("PL|PreCarryUp", "PL|peccary_carry_takeUp")
+	Clip("PL|CarryUp", "PL|peccary_carry_loop")
+	Clip("PL|CarryUpDrop", "PL|peccary_carry_drop")
+}
+Item("Tapir_HO")
+{
+	Clip("PL|PreCarryUp", "PL|tapir_carry_takeUp")
+	Clip("PL|CarryUp", "PL|tapir_carry_loop")
+	Clip("PL|CarryUpDrop", "PL|tapi_carry_drop")
+}
+Item("ArmadilloThreeBanded_HO")
+{
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+}
+
+
+
+Item("Palm_Leaf")
+{	
+	Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("PL|CarryUp", "PL|CarryDown")
+	Clip("PL|CarryUpDrop", "PL|CarryDownDrop")
+	Clip("PL|Jump", "PL|CarryDown")
+}
+
+Item("Banana_Leaf")
+{	
+	Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("PL|CarryUp", "PL|CarryDown")
+	Clip("PL|CarryUpDrop", "PL|CarryDownDrop")
+	Clip("PL|Jump", "PL|CarryDown")
+
+}
+
+Item("Coconut_Green")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+
+}
+
+Item("ArenaFarmerWaterDrop_Laceration")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+
+}
+
+Item("ArenaFarmerWaterDrop_Parasite")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+
+}
+
+Item("ArenaFarmerWaterDrop_Snake")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Item("Big_Stone")
+{
+	Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|PreBigStoneCarry")
+	Clip("PL|CarryUp", "PL|BigStoneCarry")
+	Clip("PL|CarryUpDrop", "PL|BigStoneCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|BigStoneCarry_Build")
+	Clip("PL|Jump", "PL|BigStoneCarry")
+}
+
+Item("Log")
+{
+	Clip("PL|Harvest", "PL|CarryUpHarvest")	
+	Clip("PL|CarryDown_Build", "PL|CarryUp_Build")
+	Clip("PL|Jump", "PL|CarryUp")
+	
+
+}
+Item("Long_Stick")
+{
+	Clip("PL|Harvest", "PL|CarryUpHarvest")
+	Clip("PL|CarryDown_Build", "PL|CarryUp_Build")
+	Clip("PL|Jump", "PL|CarryUp")
+
+}
+Item("Bamboo_Long_Stick")
+{
+	Clip("PL|Harvest", "PL|CarryUpHarvest")
+	Clip("PL|CarryDown_Build", "PL|CarryUp_Build")
+	Clip("PL|Jump", "PL|CarryUp")
+
+}
+Item("Bamboo_Log")
+{
+	Clip("PL|Harvest", "PL|CarryUpHarvest")
+	Clip("PL|CarryDown_Build", "PL|CarryUp_Build")
+	Clip("PL|Jump", "PL|CarryUp")
+
+}
+Item("mud_to_build")
+{	
+	Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("PL|CarryUp", "PL|CarryDown")
+	Clip("PL|Harvest", "PL|CarryDownHarvest");
+	Clip("PL|CarryUpDrop", "PL|CarryDownDrop")
+	Clip("PL|Jump", "PL|CarryDown")
+}
+
+Item("mud_from_water")
+{	
+	Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("PL|CarryUp", "PL|CarryDown")
+	Clip("PL|Harvest", "PL|CarryDownHarvest");
+	Clip("PL|CarryUpDrop", "PL|CarryDownDrop")
+	Clip("PL|Jump", "PL|CarryDown")
+}
+
+Item("william_ball")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("Puma_head_HO")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("Jaguar_head_HO")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("BlackCaiman_head_HO")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("Peccary_head_HO")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("Capybara_head_HO")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("Tapir_head_HO")
+{
+	//Clip("PL|Harvest", "PL|CarryDownHarvest")
+	Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("PL|CarryUp", "PL|CocoNutCarryIdle")
+	Clip("PL|CarryUpDrop", "PL|CocoNutCarryDrop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|CocoNutCarryIdle")
+}
+
+Item("KidRunnerHeavyObject")
+{
+	
+	Clip("PL|PreCarryUp", "PL|child_grab")
+	Clip("PL|CarryUp", "PL|childCarry_idle")
+	Clip("PL|CarryUpDrop", "PL|child_drop")
+	//Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|childCarry_idle")
+}

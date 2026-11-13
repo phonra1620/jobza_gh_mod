@@ -1,0 +1,98 @@
+Node("Unlock_Log_Stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Log", False, 1)
+	Element("UnlockItemInNotepad:Log_Stand", False, 2)
+	Element("SetBoolVariable:IsSleighUnlocked:true", False, 3)	
+}
+
+Node("Unlock_Long_Stick_Stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Long_Stick", False, 1)
+	Element("UnlockItemInNotepad:Long_Stick_Stand", False, 2)	
+	Element("SetBoolVariable:IsSleighUnlocked:true", False, 3)
+}
+
+Node("Unlock_Stick_Stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Stick", False, 1)
+	Element("UnlockItemInNotepad:Stick_Stand", False, 2)
+}
+
+Node("Unlock_Small_Stick_Stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Small_Stick", False, 1)
+	Element("UnlockItemInNotepad:Small_Stick_Stand", False, 2)	
+}
+
+
+Node("Unlock_bamboo_stick_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bamboo_Stick", False, 1)
+	Element("UnlockItemInNotepad:bamboo_stick_stand", False, 2)
+	// Element("UnlockItemInNotepadNoMsg:bamboo_stick_stand", False, 3)
+}
+	
+	
+Node("Unlock_bamboo_long_stick_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bamboo_Long_Stick", False, 1)
+	Element("UnlockItemInNotepad:bamboo_long_stick_stand", False, 2)
+	// Element("UnlockItemInNotepadNoMsg:bamboo_long_stick_stand", False, 3)
+	Element("SetBoolVariable:IsSleighUnlocked:true", False, 4)	
+}
+
+
+Node("Unlock_bamboo_log_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bamboo_Log", False, 1)
+	Element("UnlockItemInNotepad:bamboo_log_stand", False, 2)
+	// Element("UnlockItemInNotepadNoMsg:bamboo_log_stand", False, 3)
+	Element("SetBoolVariable:IsSleighUnlocked:true", False, 4)
+}
+
+Node("Unlock_small_stone_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Stone", False, 1)
+	Element("UnlockItemInNotepad:small_stone_stand", False, 2)	
+}
+	
+Node("Unlock_big_stone_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)	
+{	
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Big_Stone", False, 1)
+	Element("UnlockItemInNotepad:big_stone_stand", False, 2)
+	Element("SetBoolVariable:IsSleighUnlocked:true", False, 3)	
+}
+
+
+Node("Unlock_rope_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Rope", False, 1)
+	Element("UnlockItemInNotepad:rope_stand", False, 2)	
+}
+
+
+Node("Unlock_leaf_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Palm_Leaf", False, 1)
+	Element("UnlockItemInNotepad:leaf_stand", False, 2)	
+	Element("SetBoolVariable:IsSleighUnlocked:true", False, 3)
+}
+
+// Node("Unlock_banana_leaf_stand", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+// {
+	// Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	// Element("HaveItem:true:Banana_Leaf", False, 1)
+	// Element("UnlockItemInNotepad:banana_leaf_stand", False, 2)	
+// }
+

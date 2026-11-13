@@ -1,0 +1,71 @@
+Anim("vil_questgiver_B_welcome_A")
+{
+	Event("AnimEnd", 0.99)
+}
+
+
+
+Anim("vil_questgiver_B_idle_A")
+{
+	
+	Event("VillageActorIdleStart", 0.01);	
+
+	
+}
+Anim("vil_questgiver_B_idle_B")
+{
+	
+	Event("VillageActorIdleStart", 0.01);	
+	
+	
+	
+}
+Anim("vil_questgiver_B_idle_dirt_A")
+{
+	
+	Event("VillageActorIdleStart", 0.01);	
+	
+	
+	
+}
+
+
+
+
+Anim("vil_questgiver_B_QS1_part_A")
+{
+	
+	
+	
+	
+}
+
+
+Anim("vil_questgiver_B_QS1_part_B")
+{
+	
+
+	
+}
+
+
+Anim("vil_questgiver_B_QS2_tapir")
+{
+	
+	Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.75)
+	
+}
+
+Anim("vil_questgiver_B_welcome_C")
+{
+		
+Sound("quest_giver_stick_hit_ground_01", "PVE\Villagers\SFX\Quest_giver", 0.345)
+
+Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.6)
+Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.665)
+Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.741)
+
+Sound("quest_giver_stick_hit_ground_03", "PVE\Villagers\SFX\Quest_giver", 0.8) 
+}
+
+

@@ -1,0 +1,3931 @@
+///////////////////////////////////////////////////////////////
+// QUEST SYSTEM RELATED ACHIVEMENTS
+///////////////////////////////////////////////////////////////
+Achievement("ACH_TUTORIAL")
+
+Achievement("ACH_AYAHUASKA")
+
+Achievement("ACH_BAD_ENDING")
+Achievement("ACH_GOOD_ENDING")
+Achievement("ACH_GREEDY")
+Achievement("ACH_ENDING_GREENHELL")
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_TRAVEL")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_DISTANCE_TRAVELED")
+{
+	IsInteger(0)
+	IsInternal(0)
+	MaxValue(64.0)
+	ConnectedAchivement("ACH_TRAVEL")
+	ShouldAccumulateValue(1)
+	ValueDeltaStoreThreshold(0.5)
+	ShowProgressInterval(16.0)
+	SuccessConditions()
+	{
+		Condition("TraveledDist")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_START_FIRE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_FIRES_STARTED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_START_FIRE")
+	SuccessConditions()
+	{
+		Condition("IgniteFire", "IsAliveStatCondition")
+	}
+	ResetConditions()
+	{
+		Condition("Die")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_WELCOME")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_DAYS_SURVIVED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_WELCOME")
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "HasSurvivedNightStatCondition")
+		Condition("AchievementManagerUpdate", "IsAliveStatCondition")
+	}
+	ResetConditions()
+	{
+		Condition("Die")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_SURVIVE_10")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_GREENHELL_DAYS")
+{
+	IsInternal(1)
+	MaxValue(10.0)
+	ConnectedAchivement("ACH_SURVIVE_10")
+	SuccessConditions()
+	{
+		Condition("DaysSurvived", "IsAliveStatCondition")
+		Condition("DaysSurvived", "DifficultyStatCondition")
+		{
+			GameDifficulty("Hard")
+		}
+	}
+	ResetConditions()
+	{
+		Condition("Die")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_JUST_DIE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_TIMES_DIED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_JUST_DIE")
+	SuccessConditions()
+	{
+		Condition("Die")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_CANIBAL")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_HUMAN_MEAT_EATEN")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_CANIBAL")
+	SuccessConditions()
+	{
+		Condition("Eat", "ItemIdStatCondition")
+		{
+			ItemId("Human_Meat_Burned")
+			ItemId("Human_Meat_Cooked")
+			ItemId("Human_Meat_Dryed")
+			ItemId("Human_Meat_Raw")
+			ItemId("Human_Meat_Smoked")
+			ItemId("Human_Meat_Spoiled")
+		}
+		Condition("Drink", "LiquidTypeStatCondition")
+		{			
+			LiquidType("Human_Soup")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_KILL_TRIBE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_TRIBE_KILLED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_KILL_TRIBE")
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("Spearman")
+			AiId("Hunter")
+			AiId("Savage")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_1ST_TOOL")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_TOOLS_CREATED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_1ST_TOOL")
+	SuccessConditions()
+	{
+		Condition("Craft", "ItemTypeStatCondition")
+		{
+			ItemType("ItemTool")
+			ItemType("Weapon")
+			ItemType("Torch")
+			ItemType("Spear")
+			ItemType("Bow")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_VEGAN")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_VEGAN_DAYS")
+{
+	MaxValue(25.0)
+	IsInternal(1)
+	ConnectedAchivement("ACH_VEGAN")
+	SuccessConditions()
+	{
+		Condition("DaysSurvived", "IsAliveStatCondition")
+		Condition("DaysSurvived", "DifficultyStatCondition")
+		{
+			GameDifficulty("Normal")
+		}
+	}
+	ResetConditions()
+	{
+		Condition("Eat", "ItemIdStatCondition") 
+		{
+			ItemId("Larva")
+			ItemId("Larva_Coocked")
+			ItemId("Maggots")
+			ItemId("Maggots_Cooked")
+			ItemId("Egg")
+			ItemId("Egg_Boiled")
+			ItemId("Egg_Spoiled")
+			ItemId("Honeycomb")
+			ItemId("Beef_Jerky")
+			ItemId("Snack")
+			ItemId("Can_small")
+			ItemId("Can_big")
+			ItemId("can_milk_military")
+			ItemId("can_beef_military")
+			ItemId("can_cheese_military")
+			ItemId("can_tuna_military")
+			ItemId("food_ration_military")
+			ItemId("animal_droppings_item")
+			ItemId("Meat_Raw")
+			ItemId("Meat_Cooked")
+			ItemId("Meat_Smoked")
+			ItemId("Meat_Dryed")
+			ItemId("Meat_Cooked_Spoiled")
+			ItemId("Meat_Smoked_Spoiled")
+			ItemId("Meat_Spoiled")
+			ItemId("Meat_Burned")
+			ItemId("Fat_Meat_Raw")
+			ItemId("Fat_Meat_Cooked")
+			ItemId("Fat_Meat_Smoked")
+			ItemId("Fat_Meat_Dryed")
+			ItemId("Fat_Meat_Cooked_Spoiled")
+			ItemId("Fat_Meat_Smoked_Spoiled")
+			ItemId("Fat_Meat_Spoiled")
+			ItemId("Fat_Meat_Burned")
+			ItemId("Lean_Meat_Raw")
+			ItemId("Lean_Meat_Cooked")
+			ItemId("Lean_Meat_Smoked")
+			ItemId("Lean_Meat_Dryed")
+			ItemId("Lean_Meat_Cooked_Spoiled")
+			ItemId("Lean_Meat_Smoked_Spoiled")
+			ItemId("Lean_Meat_Spoiled")
+			ItemId("Lean_Meat_Burned")
+			ItemId("Fish_Meat_Raw")
+			ItemId("Fish_Meat_Cooked")
+			ItemId("Fish_Meat_Smoked")
+			ItemId("Fish_Meat_Dryed")
+			ItemId("Fish_Meat_Cooked_Spoiled")
+			ItemId("Fish_Meat_Smoked_Spoiled")
+			ItemId("Fish_Meat_Spoiled")
+			ItemId("Fish_Meat_Burned")
+			ItemId("Pirahnia_Meat_Raw")
+			ItemId("Pirahnia_Meat_Cooked")
+			ItemId("Pirahnia_Meat_Smoked")
+			ItemId("Pirahnia_Meat_Dryed")
+			ItemId("Pirahnia_Meat_Spoiled")
+			ItemId("Pirahnia_Meat_Burned")
+			ItemId("Peacock_Bass_Meat_Raw")
+			ItemId("Peacock_Bass_Meat_Cooked")
+			ItemId("Peacock_Bass_Meat_Smoked")
+			ItemId("Peacock_Bass_Meat_Dryed")
+			ItemId("Peacock_Bass_Meat_Spoiled")
+			ItemId("Peacock_Bass_Meat_Burned")
+			ItemId("Arowana_Meat_Raw")
+			ItemId("Arowana_Meat_Cooked")
+			ItemId("Arowana_Meat_Smoked")
+			ItemId("Arowana_Meat_Dryed")
+			ItemId("Arowana_Meat_Spoiled")
+			ItemId("Arowana_Meat_Burned")
+			ItemId("Stingray_Meat_Raw")
+			ItemId("Stingray_Meat_Cooked")
+			ItemId("Stingray_Meat_Smoked")
+			ItemId("Stingray_Meat_Dryed")
+			ItemId("Stingray_Meat_Spoiled")
+			ItemId("Stingray_Meat_Burned")
+			ItemId("Rattlesnake_Meat_Raw")
+			ItemId("RattlesnakeMeat_Cooked")
+			ItemId("Rattlesnake_Meat_Smoked")
+			ItemId("Rattlesnake_Meat_Dryed")
+			ItemId("Rattlesnake_Meat_Spoiled")
+			ItemId("Rattlesnake_Meat_Burned")
+			ItemId("Macaw_Meat_Raw")
+			ItemId("Macaw_Meat_Cooked")
+			ItemId("Macaw_Meat_Smoked")
+			ItemId("Macaw_Meat_Dryed")
+			ItemId("Macaw_Meat_Spoiled")
+			ItemId("Macaw_Meat_Burned")
+			ItemId("Cane_Toad_Meat_Raw")
+			ItemId("Cane_Toad_Meat_Cooked")
+			ItemId("Cane_Toad_Meat_Smoked")
+			ItemId("Cane_Toad_Meat_Dryed")
+			ItemId("Cane_Toad_Meat_Spoiled")
+			ItemId("Cane_Toad_Meat_Burned")
+			ItemId("Mouse_Meat_Raw")
+			ItemId("Mouse_Meat_Cooked")
+			ItemId("Mouse_Meat_Smoked")
+			ItemId("Mouse_Meat_Dryed")
+			ItemId("Mouse_Meat_Spoiled")
+			ItemId("Mouse_Meat_Burned")
+			ItemId("Toucan_Meat_Raw")
+			ItemId("Toucan_Meat_Cooked")
+			ItemId("Toucan_Meat_Smoked")
+			ItemId("Toucan_Meat_Dryed")
+			ItemId("Toucan_Meat_Spoiled")
+			ItemId("Toucan_Meat_Burned")
+			ItemId("Poison_Dart_Frog_Meat_Raw")
+			ItemId("Poison_Dart_Frog_Meat_Cooked")
+			ItemId("Poison_Dart_Frog_Meat_Smoked")
+			ItemId("Poison_Dart_Frog_Meat_Dryed")
+			ItemId("Poison_Dart_Frog_Meat_Spoiled")
+			ItemId("Poison_Dart_Frog_Meat_Burned")
+			ItemId("Green_Iguana_Meat_Raw")
+			ItemId("Green_Iguana_Meat_Cooked")
+			ItemId("Green_Iguana_Meat_Smoked")
+			ItemId("Green_Iguana_Meat_Dryed")
+			ItemId("Green_Iguana_Meat_Spoiled")
+			ItemId("Green_Iguana_Meat_Burned")
+			ItemId("Caiman_Lizard_Meat_Raw")
+			ItemId("Caiman_Lizard_Meat_Cooked")
+			ItemId("Caiman_Lizard_Meat_Smoked")
+			ItemId("Caiman_Lizard_Meat_Dryed")
+			ItemId("Caiman_Lizard_Meat_Spoiled")
+			ItemId("Caiman_Lizard_Meat_Burned")
+			ItemId("Peccary_Meat_Raw")
+			ItemId("Peccary_Meat_Cooked")
+			ItemId("Peccary_Meat_Smoked")
+			ItemId("Peccary_Meat_Dryed")
+			ItemId("Peccary_Meat_Spoiled")
+			ItemId("Peccary_Meat_Burned")
+			ItemId("Capybara_Meat_Raw")
+			ItemId("Capybara_Meat_Cooked")
+			ItemId("Capybara_Meat_Smoked")
+			ItemId("Capybara_Meat_Dryed")
+			ItemId("Capybara_Meat_Spoiled")
+			ItemId("Capybara_Meat_Burned")
+			ItemId("Tapir_Meat_Raw")
+			ItemId("Tapir_Meat_Cooked")
+			ItemId("Tapir_Meat_Smoked")
+			ItemId("Tapir_Meat_Dryed")
+			ItemId("Tapir_Meat_Spoiled")
+			ItemId("Tapir_Meat_Burned")
+			ItemId("Mud_Turtle_Meat_Raw")
+			ItemId("Mud_Turtle_Meat_Cooked")
+			ItemId("Mud_Turtle_Meat_Smoked")
+			ItemId("Mud_Turtle_Meat_Dryed")
+			ItemId("Mud_Turtle_Meat_Spoiled")
+			ItemId("Mud_Turtle_Meat_Burned")
+			ItemId("Red_Footed_Tortoise_Meat_Raw")
+			ItemId("Red_Footed_Tortoise_Meat_Cooked")
+			ItemId("Red_Footed_Tortoise_Meat_Smoked")
+			ItemId("Red_Footed_Tortoise_Meat_Dryed")
+			ItemId("Red_Footed_Tortoise_Meat_Spoiled")
+			ItemId("Red_Footed_Tortoise_Meat_Burned")
+			ItemId("Armadilo_Meat_Raw")
+			ItemId("Armadilo_Meat_Cooked")
+			ItemId("Armadilo_Meat_Smoked")
+			ItemId("Armadilo_Meat_Dryed")
+			ItemId("Armadilo_Meat_Spoiled")
+			ItemId("Armadilo_Meat_Burned")
+			ItemId("Armadillo_Three_Banded_Meat_Raw")
+			ItemId("Armadillo_Three_Banded_Meat_Cooked")
+			ItemId("Armadillo_Three_Banded_Meat_Smoked")
+			ItemId("Armadillo_Three_Banded_Meat_Dryed")
+			ItemId("Armadillo_Three_Banded_Meat_Spoiled")
+			ItemId("Armadillo_Three_Banded_Meat_Burned")
+			ItemId("Human_Meat_Raw")
+			ItemId("Human_Meat_Cooked")
+			ItemId("Human_Meat_Smoked")
+			ItemId("Human_Meat_Dryed")
+			ItemId("Human_Meat_Spoiled")
+			ItemId("Human_Meat_Burned")
+			ItemId("Puma_Meat_Raw")
+			ItemId("Puma_Meat_Cooked")
+			ItemId("Puma_Meat_Smoked")
+			ItemId("Puma_Meat_Dryed")
+			ItemId("Puma_Meat_Spoiled")
+			ItemId("Puma_Meat_Burned")
+			ItemId("Jaguar_Meat_Raw")
+			ItemId("Jaguar_Meat_Cooked")
+			ItemId("Jaguar_Meat_Smoked")
+			ItemId("Jaguar_Meat_Dryed")
+			ItemId("Jaguar_Meat_Spoiled")
+			ItemId("Jaguar_Meat_Burned")
+			ItemId("GoliathBirdEater_Body")
+			ItemId("GoliathBirdEater_Cooked")
+			ItemId("GoliathBirdEater_Spoiled")
+			ItemId("GoliathBirdEater_Burned")
+			ItemId("BrasilianWanderingSpider_Body")
+			ItemId("BrasilianWanderingSpider_Cooked")
+			ItemId("BrasilianWanderingSpider_Spoiled")
+			ItemId("BrasilianWanderingSpider_Burned")
+			ItemId("Goliath_birdeater_ash")
+			ItemId("Scorpion_Body")
+			ItemId("Scorpion_Cooked")
+			ItemId("Scorpion_Spoiled")
+			ItemId("Scorpion_Burned")
+			ItemId("AngelFish_Body")
+			ItemId("AngelFish_Cooked")
+			ItemId("AngelFish_Smoked")
+			ItemId("AngelFish_Dryed")
+			ItemId("AngelFish_Spoiled")
+			ItemId("AngelFish_Burned")
+			ItemId("DiscusFish_Body")
+			ItemId("DiscusFish_Cooked")
+			ItemId("DiscusFish_Smoked")
+			ItemId("DiscusFish_Dryed")
+			ItemId("DiscusFish_Spoiled")
+			ItemId("DiscusFish_Burned")
+			ItemId("Crab_Body")
+			ItemId("Crab_Cooked")
+			ItemId("Crab_Smoked")
+			ItemId("Crab_Spoiled")
+			ItemId("Crab_Burned")
+			ItemId("Snail_Raw")
+			ItemId("Snail_Cooked")
+			ItemId("Snail_Smoked")
+			ItemId("Snail_Spoiled")
+			ItemId("Snail_Burned")
+			ItemId("Caiman_Meat_Raw")
+			ItemId("Caiman_Meat_Cooked")
+			ItemId("Caiman_Meat_Smoked")
+			ItemId("Caiman_Meat_Dryed")
+			ItemId("Caiman_Meat_Spoiled")
+			ItemId("Caiman_Meat_Burned")
+			ItemId("Shrimp_Raw")
+			ItemId("Shrimp_Coocked")
+			ItemId("Shrimp_Smoked")
+			ItemId("Shrimp_Dryed")
+			ItemId("Shrimp_Spoiled")
+			ItemId("Shrimp_Burned")
+		}
+		Condition("Drink", "LiquidTypeStatCondition")
+		{
+			LiquidType("Honeycomb_Infusion")
+			LiquidType("Maggots_Soup")
+			LiquidType("Larva_Soup")
+			LiquidType("BoneInfusion")
+			LiquidType("Piranha_Soup")
+			LiquidType("Bass_Soup")
+			LiquidType("Arowana_Soup")
+			LiquidType("Stingray_Soup")
+			LiquidType("Rattlesnake_Soup")
+			LiquidType("Macaw_Soup")
+			LiquidType("Cane_Toad_Soup")
+			LiquidType("Mouse_Soup")
+			LiquidType("Toucan_Soup")
+			LiquidType("Poison_Dart_Frog_Soup")
+			LiquidType("Green_Iguana_Soup")
+			LiquidType("Peccary_Soup")
+			LiquidType("Capybara_Soup")
+			LiquidType("Tapir_Soup")
+			LiquidType("Mud_Turtle_Soup")
+			LiquidType("Red_Footed_Tortoise_Soup")
+			LiquidType("Armadilo_Soup")
+			LiquidType("Human_Soup")
+			LiquidType("Puma_Soup")
+			LiquidType("Jaguar_Soup")
+			LiquidType("Caiman_Lizard_Soup")
+			LiquidType("Armadillo_Three_Banded_Soup")
+			LiquidType("Crab_Soup")
+			LiquidType("Snail_Soup")
+			LiquidType("DiscusFish_Soup")
+			LiquidType("Angelfish_Soup")
+			LiquidType("Prawn_Soup")
+			LiquidType("Caiman_Soup")
+		}
+		Condition("Die")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_PACIFIST")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_PACIFIST_DAYS")
+{
+	MaxValue(10.0)
+	IsInternal(1)
+	ConnectedAchivement("ACH_PACIFIST")
+	IgnoreEventsFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("DaysSurvived", "IsAliveStatCondition")
+		Condition("DaysSurvived", "DifficultyStatCondition")
+		{
+			GameDifficulty("Hard")
+		}
+	}
+	ResetConditions()
+	{
+		Condition("HarvestedItem", "ItemIdStatCondition")
+		{
+			ItemId("PoisonDartFrog_Alive")
+			ItemId("ArmadilloThreeBanded_Body")
+		}
+		Condition("DestroyedItem", "ItemIdStatCondition")
+		{
+			ItemId("PoisonDartFrog_Alive")
+		}
+		Condition("TakeItem", "ItemIdStatCondition")
+		{
+			ItemId("Snail_ToSpawnAndTake")
+			ItemId("Snail_Raw")
+		}
+		Condition("KilledAI")
+		Condition("OnFlockChildHit")
+		Condition("TrapArmed")
+		Condition("TrapHarvested")
+		Condition("TrapDestroyedWithPrey")
+		Condition("Die")
+		Condition("Build", "ItemIdStatCondition")
+		{
+			ItemId("Big_Stick_Fish_Trap")
+			ItemId("Cage_Trap")
+			ItemId("Fish_Rod_Trap")
+			ItemId("Human_Killer_Trap")
+			ItemId("Killer_Trap")
+			ItemId("shrimp_trap")
+			ItemId("Snare_Trap")
+			ItemId("Stick_Fish_Trap")
+			ItemId("Stone_Trap")
+			ItemId("Tribe_Bow_Trap")
+			ItemId("tribe_spike_trap")
+		}
+		Condition("FishCaught")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_WILLSON")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_WILLIAM_COLLECTED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_WILLSON")
+	SuccessConditions()
+	{
+		Condition("TakeItem", "ItemIdStatCondition")
+		{
+			ItemId("william_ball");
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_MAX_SKILL")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_MAX_SKILL_LEVEL_REACHED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_MAX_SKILL")
+	SuccessConditions()
+	{
+		Condition("MaxSkillReached")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_IRONMAN")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_IRONMAN")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_IRONMAN")
+	SuccessConditions()
+	{
+		Condition("ArmorAttached", "AttachedArmorStatCondition")
+		{
+			Armor("LArm", "metal_armor")
+			Armor("RArm", "metal_armor")
+			Armor("LLeg", "metal_armor")
+			Armor("RLeg", "metal_armor")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_SAVEGAME")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_GAMES_SAVED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_SAVEGAME")
+	SuccessConditions()
+	{
+		Condition("GameSaved")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_FIND_STORYCAVE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_STORY_MUSHROOM_COLLECTED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_FIND_STORYCAVE")
+	SuccessConditions()
+	{
+		Condition("TakeItem", "ItemIdStatCondition")
+		{
+			ItemId("geoglossum_viride")
+			ItemId("geoglossum_viride_Dryed")
+			ItemId("geoglossum_viride_Spoiled")
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_CURE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_STORY_CURE_COLLECTED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_CURE")
+	SuccessConditions()
+	{
+		Condition("TakeItem", "ItemIdStatCondition")
+		{
+			ItemId("QuestItem_Cure_Vial")
+		}
+		Condition("AchievementManagerUpdate", "HaveAllItemIdStatCondition")
+		{
+			ItemId("QuestItem_Cure_Vial")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_SANITY_TRIBE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_HALLUCINATIONS_KILLED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_SANITY_TRIBE")
+	SuccessConditions()
+	{
+		Condition("KilledHallucination")
+	}
+}
+
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_LEECHES")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_LEECHES_REMOVED")
+{
+	IsInternal(0)
+	IsInteger(1)
+	MaxValue(50.0)
+	ValueDeltaStoreThreshold(1)
+	ConnectedAchivement("ACH_LEECHES")
+	SuccessConditions()
+	{
+		Condition("HealWound", "IsAliveStatCondition")
+		Condition("HealWound", "InjuryTypeStatCondition")
+		{
+			InjuryType("Leech")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_MAGGOT_WOUND")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_MAGGOTS_ATTACHED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_MAGGOT_WOUND")
+	SuccessConditions()
+	{
+		Condition("AttachMaggots")
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_HOME")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_SHELTERS_BUILT")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_HOME")
+	SuccessConditions()
+	{
+		Condition("Build", "ItemIdStatCondition")
+		{
+			ItemId("Bed_Shelter")
+			ItemId("Hut_Shelter")
+			ItemId("Medium_Bamboo_Shelter")
+			ItemId("Medium_Shelter")
+			ItemId("Small_Bamboo_Shelter")
+			ItemId("Small_Shelter")
+			ItemId("building_roof")
+			ItemId("building_banana_leaf_roof")
+			ItemId("mud_ceiling")
+			ItemId("mud_ceiling_notch")
+			ItemId("building_shed_roof")
+			ItemId("building_banana_shed_roof")
+			ItemId("mud_shed_ceiling")
+			ItemId("building_shed_roof_floor")
+			ItemId("building_banana_shed_roof_floor")
+			ItemId("mud_shed_ceiling_floor")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_SAFE_WATER")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_SAFE_WATER_DRINKED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_SAFE_WATER")
+	SuccessConditions()
+	{
+		Condition("Drink", "LiquidTypeStatCondition")
+		{
+			LiquidType("Water")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_INSOMIA")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_INSOMIA_5_STACKS")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_INSOMIA")
+	SuccessConditions()
+	{
+		Condition("InsomiaLevelIncreased", "ValueStatCondition")
+		{
+			Value(5.0)
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_FIREPLACE_GOING")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_FIREPLACE_GOING")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_FIREPLACE_GOING")
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("FireCampBurning", "IsAliveStatCondition")
+		Condition("FireCampBurning", "ValueStatCondition")
+		{
+			Value(120.0)
+		}
+		Condition("FireCampBurning", "DifficultyStatCondition")
+		{
+			GameDifficulty("Normal")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_TURTLE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_TURTLE_SOUP_PREPARED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_TURTLE")
+	SuccessConditions()
+	{
+		Condition("BowlItemInsert", "ItemInsertStatCondition")
+		{
+			InsertData("Red_Footed_Tortoise_Meat_Raw", "Turtle_shell")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_FISHING")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_FISH_TYPES_CAUGHT")
+{
+	MaxValue(9)
+	ConnectedAchivement("ACH_FISHING")
+	ShowProgressAt(5)
+	IsInternal(0)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(9)
+			Name("GH_STAT_FISH_CAUGHT_PIRANHA")
+			Name("GH_STAT_FISH_CAUGHT_PRAWN")
+			Name("GH_STAT_FISH_CAUGHT_STINGRAY")
+			Name("GH_STAT_FISH_CAUGHT_AROWANA")
+			Name("GH_STAT_FISH_CAUGHT_PEACOCKBASS")
+			Name("GH_STAT_FISH_CAUGHT_CRAB")
+			Name("GH_STAT_FISH_CAUGHT_ANGELFISH")
+			Name("GH_STAT_FISH_CAUGHT_DISCUSFISH")
+			Name("GH_STAT_FISH_CAUGHT_SNAIL")
+			Name("GH_STAT_KILLED_BLACK_CAIMAN")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_PIRANHA")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("FishCaught", "IsAiTypeStatCondition")
+		{
+			AiId("Piranha")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_PRAWN")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("TakeItem", "ItemIdStatCondition")
+		{
+			ItemId("Shrimp_Raw")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_SNAIL")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("TakeItem", "ItemIdStatCondition")
+		{
+			ItemId("Snail_Raw")
+		}
+	}
+}
+
+
+Stat("GH_STAT_FISH_CAUGHT_STINGRAY")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("FishCaught", "IsAiTypeStatCondition")
+		{
+			AiId("Stingray")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_AROWANA")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("FishCaught", "IsAiTypeStatCondition")
+		{
+			AiId("Arowana")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_PEACOCKBASS")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("FishCaught", "IsAiTypeStatCondition")
+		{
+			AiId("PeacockBass")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_CRAB")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("Crab")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_ANGELFISH")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("FishCaught", "IsAiTypeStatCondition")
+		{
+			AiId("AngelFish")
+		}
+	}
+}
+
+Stat("GH_STAT_FISH_CAUGHT_DISCUSFISH")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("FishCaught", "IsAiTypeStatCondition")
+		{
+			AiId("DiscusFish")
+		}
+	}
+}
+
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_KING_OF_THE_JUNGLE")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_PREDATOR_TYPES_KILLED")
+{
+	MaxValue(7)
+	ConnectedAchivement("ACH_KING_OF_THE_JUNGLE")
+	ShowProgressAt(4)
+	IsInternal(0)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(7)
+			Name("GH_STAT_KILLED_PUMA")
+			Name("GH_STAT_KILLED_JAGUAR")
+			Name("GH_STAT_KILLED_BLACK_CAIMAN")
+			Name("GH_STAT_KILLED_GOLIATH_BIRD_EATER")
+			Name("GH_STAT_KILLED_SCORPION")
+			Name("GH_STAT_KILLED_RATTLESNAKE")
+			Name("GH_STAT_KILLED_BRASILIAN_SPIDER")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_PUMA")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("Puma")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_JAGUAR")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("Jaguar")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_BLACK_CAIMAN")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("BlackCaiman")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_GOLIATH_BIRD_EATER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("GoliathBirdEater")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_SCORPION")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("Scorpion")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_RATTLESNAKE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("SouthAmericanRattlesnake")
+		}
+	}
+}
+
+Stat("GH_STAT_KILLED_BRASILIAN_SPIDER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("KilledAI", "IsAiTypeStatCondition")
+		{
+			AiId("BrasilianWanderingSpider")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_SNOWMAN")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_CARTEL_TRIGGERS_FOUND")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_SNOWMAN")
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(3)
+			Name("GH_STAT_SNOWMAN_01")
+			Name("GH_STAT_SNOWMAN_02")
+			Name("GH_STAT_SNOWMAN_03")
+		}
+	}
+}
+
+
+Stat("GH_STAT_SNOWMAN_01")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("TriggerTriggeredByLooking", "StringStatCondition")
+		{
+			Name("ACH_SNOWMAN_Trigger01")
+		}
+	}
+}
+
+
+Stat("GH_STAT_SNOWMAN_02")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("TriggerTriggeredByLooking", "StringStatCondition")
+		{
+			Name("ACH_SNOWMAN_Trigger02")
+		}
+	}
+}
+
+
+Stat("GH_STAT_SNOWMAN_03")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("TriggerTriggeredByLooking", "StringStatCondition")
+		{
+			Name("ACH_SNOWMAN_Trigger03")
+		}
+	}
+}
+
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_ALL_FIRE_TOOLS")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_UNIQUE_FIRE_TOOLS_UNLOCKED")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_ALL_FIRE_TOOLS")
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(4)
+			Name("GH_STAT_FIRE_BOW_UNLOCKED")
+			Name("GH_STAT_HAND_DRILL_STICK_UNLOCKED")
+			Name("GH_STAT_HAND_DRILL_BOARD_UNLOCKED")
+			Name("GH_STAT_RUBBING_WOOD_UNLOCKED")
+		}
+	}
+}
+
+Stat("GH_STAT_FIRE_BOW_UNLOCKED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("UnlockedItemInNotepad", "ItemIdStatCondition")
+		{
+			ItemId("Fire_Bow")
+		}
+	}
+}
+
+Stat("GH_STAT_HAND_DRILL_STICK_UNLOCKED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("UnlockedItemInNotepad", "ItemIdStatCondition")
+		{
+			ItemId("Hand_Drill_Stick")
+		}
+	}
+}
+
+Stat("GH_STAT_HAND_DRILL_BOARD_UNLOCKED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("UnlockedItemCrafting", "ItemIdStatCondition")
+		{
+			ItemId("Hand_Drill_Board")
+		}
+	}
+}
+
+Stat("GH_STAT_RUBBING_WOOD_UNLOCKED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("UnlockedItemInNotepad", "ItemIdStatCondition")
+		{
+			ItemId("Rubing_Wood")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_CATCH_AT_ONCE")
+///////////////////////////////////////////////////////////////
+
+Stat("INTERNAL_STAT_UNIQUE_DISEASES_PRESENT")
+{
+	IsInternal(1)
+	ConnectedAchivement("ACH_CATCH_AT_ONCE")
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "HardcodedAllSicknessPresentStatCondition")
+		{
+			ConsumeEffect("Insomnia")
+			ConsumeEffect("DirtSickness")
+			ConsumeEffect("Fever")
+			ConsumeEffect("FoodPoisoning")
+			ConsumeEffect("ParasiteSickness")
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_ALL_SICKNESS")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_ALL_UNIQUE_DISEASES_EXPERIENCED")
+{
+	IsInternal(0)
+	MaxValue(12)
+	ConnectedAchivement("ACH_ALL_SICKNESS")
+	ShowProgressAt(6)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(12)
+			Name("GH_STAT_INSOMIA_EXPERIENCED")
+			Name("GH_STAT_DIRT_SICKNESS_EXPERIENCED")
+			Name("GH_STAT_FEVER_EXPERIENCED")
+			Name("GH_STAT_FOOD_POISION_EXPERIENCED")
+			Name("GH_STAT_PARASITE_EXPERIENCED")
+			Name("GH_STAT_SMALL_WOUND_EXPERIENCED")
+			Name("GH_STAT_LACERATION_EXPERIENCED")
+			Name("GH_STAT_VENOM_OR_SNAKE_BITE_EXPERIENCED")
+			Name("GH_STAT_RASH_EXPERIENCED")
+			Name("GH_STAT_LEECH_EXPERIENCED")
+			Name("GH_STAT_WORM_EXPERIENCED")
+			Name("GH_STAT_WOUND_INFECTION_EXPERIENCED")
+		}
+	}
+}
+
+Stat("GH_STAT_INSOMIA_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			ConsumeEffect("Insomnia")
+		}
+	}
+}
+
+Stat("GH_STAT_DIRT_SICKNESS_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			ConsumeEffect("DirtSickness")
+		}
+	}
+}
+
+Stat("GH_STAT_FEVER_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			ConsumeEffect("Fever")
+		}
+	}
+}
+
+Stat("GH_STAT_FOOD_POISION_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			ConsumeEffect("FoodPoisoning")
+		}
+	}
+}
+
+Stat("GH_STAT_PARASITE_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			ConsumeEffect("ParasiteSickness")
+		}
+	}
+}
+
+Stat("GH_STAT_POISION_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("PoisonDamage")
+		Condition("AchievementManagerUpdate", "IsPoisonedStatCondition")
+	}
+}
+
+Stat("GH_STAT_SMALL_WOUND_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryType("SmallWoundScratch")
+			InjuryType("SmallWoundAbrassion")
+		}
+	}
+}
+
+Stat("GH_STAT_LACERATION_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryType("Laceration")
+			InjuryType("LacerationCat")
+		}
+	}
+}
+
+
+Stat("GH_STAT_VENOM_OR_SNAKE_BITE_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryType("VenomBite")
+			InjuryType("SnakeBite")
+		}
+	}
+}
+
+Stat("GH_STAT_RASH_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryType("Rash")
+		}
+	}
+}
+Stat("GH_STAT_LEECH_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryType("Leech")
+		}
+	}
+}
+Stat("GH_STAT_WORM_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryState("WormInside")
+			InjuryType("Worm")
+		}
+	}
+}
+
+Stat("GH_STAT_WOUND_INFECTION_EXPERIENCED")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "IsAnyUnlockedInNotepadStatCondition")
+		{
+			InjuryState("Infected")
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_ALL_CHALLENGES")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_UNIQUE_CHALLENGE_COMPLETED")
+{
+	MaxValue(7)
+	IsInternal(0)
+	ConnectedAchivement("ACH_ALL_CHALLENGES")
+	ShowProgressInterval(1)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(7)
+			Name("GH_STAT_CHALLENGE_FIRECAMP")
+			Name("GH_STAT_CHALLENGE_BOAT")
+			Name("GH_STAT_CHALLENGE_CAMP")
+			Name("GH_STAT_CHALLENGE_HUNTER")
+			Name("GH_STAT_CHALLENGE_ANGLER")
+			Name("GH_STAT_CHALLENGE_COMBAT")
+			Name("GH_STAT_CHALLENGE_MUD")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_FIRECAMP")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Firecamp")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_BOAT")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Boat")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_CAMP")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Camp")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_HUNTER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Hunter")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_ANGLER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Angler")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_COMBAT")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Combat")
+		}
+	}
+}
+
+Stat("GH_STAT_CHALLENGE_MUD")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ChallengeCompleted", "StringStatCondition")
+		{
+			Name("Mud")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_FARMER")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_UNIQUE_PLANTS_CULTIVATED")
+{
+	MaxValue(12)
+	IsInternal(0)
+	ConnectedAchivement("ACH_FARMER")
+	IgnoreEventsFromReplication(0)
+	ShowProgressAt(6)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(12)
+			Name("GH_STAT_CULTIVATED_COCONA")
+			Name("GH_STAT_CULTIVATED_MOLINERIA")
+			Name("GH_STAT_CULTIVATED_BANANA")
+			Name("GH_STAT_CULTIVATED_CASAVA")
+			Name("GH_STAT_CULTIVATED_BAMBOO")
+			Name("GH_STAT_CULTIVATED_QUASSIA")
+			Name("GH_STAT_CULTIVATED_GUANABANA")
+			Name("GH_STAT_CULTIVATED_MALANGA")
+			Name("GH_STAT_CULTIVATED_TOBBACO")
+			Name("GH_STAT_CULTIVATED_LILLY")
+			Name("GH_STAT_CULTIVATED_ALBAHACA")
+			Name("GH_STAT_CULTIVATED_PSYCHOTRIA")
+			Name("GH_STAT_CULTIVATED_BRAZIL_NUT")
+			Name("GH_STAT_CULTIVATED_MONSTERA")
+			Name("GH_STAT_CULTIVATED_RAFFIA")
+		}
+	}
+}
+
+
+Stat("GH_STAT_CULTIVATED_COCONA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("small_plant_11_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_MOLINERIA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("medium_plant_02_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_BANANA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("big_tree_08_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_CASAVA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("medium_plant_08_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_BAMBOO")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("medium_plant_09_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_QUASSIA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("medium_plant_10_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_GUANABANA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("medium_plant_12_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_MALANGA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("small_plant_01_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_TOBBACO")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("small_plant_08_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_LILLY")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("small_plant_10_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_ALBAHACA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("small_plant_13_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_PSYCHOTRIA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("small_plant_14_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_BRAZIL_NUT")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("big_tree_07_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_MONSTERA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("medium_plant_04_acres_grown")
+		}
+	}
+}
+
+Stat("GH_STAT_CULTIVATED_RAFFIA")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	ShouldReplicateStatValue(1)
+	CanAcceptDataFromReplication(1)
+	SuccessConditions()
+	{
+		Condition("PlantCultivated", "IsAliveStatCondition")
+		Condition("PlantCultivated", "ItemIdStatCondition")
+		{
+			ItemId("big_tree_03_acres_grown")
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_FULL_MAP")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_UNIQUE_MAP_LOCATIONS_DISCOVERED")
+{
+	MaxValue(60)
+	IsInternal(0)
+	ConnectedAchivement("ACH_FULL_MAP")
+	IgnoreEventsFromReplication(0)
+	ShowProgressInterval(10)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(60)
+			Name("GH_STAT_MAP_Tribe_Village")
+			Name("GH_STAT_MAP_PaintedRock")
+			Name("GH_STAT_MAP_PaintedRock02")
+			Name("GH_STAT_MAP_Cartel")
+			Name("GH_STAT_MAP_Elevator")
+			Name("GH_STAT_MAP_Goldmine")
+			Name("GH_STAT_MAP_Jeep_Wreck")
+			Name("GH_STAT_MAP_River_Harbor")
+			Name("GH_STAT_MAP_Plane")
+			Name("GH_STAT_MAP_Camp_in_cave")
+			Name("GH_STAT_MAP_StoneRing_01")
+			Name("GH_STAT_MAP_Broken_Bridge")
+			Name("GH_STAT_MAP_Broken_Bridge_B")
+			Name("GH_STAT_MAP_Evil_Village_S01")
+			Name("GH_STAT_MAP_Evil_Village_S10")
+			Name("GH_STAT_MAP_GHP_A01S07_to_StoneRing")
+			Name("GH_STAT_MAP_GHP_A01S07_to_Cartel")
+			Name("GH_STAT_MAP_GHP_A01S07_to_CrashedPlane")
+			Name("GH_STAT_MAP_Cave01_A01S01")
+			Name("GH_STAT_MAP_Cave02_A01S01")
+			Name("GH_STAT_MAP_Cave03_A01S01")
+			Name("GH_STAT_MAP_Cave01_A01S02")
+			Name("GH_STAT_MAP_Cave02_A01S02")
+			Name("GH_STAT_MAP_Cave01_A01S04")
+			Name("GH_STAT_MAP_Cave01_A01S06")
+			Name("GH_STAT_MAP_Cave02_A01S06")
+			Name("GH_STAT_MAP_Cave01_A01S07")
+			Name("GH_STAT_MAP_Cave02_A01S07")
+			Name("GH_STAT_MAP_Cave03_A01S07")
+			Name("GH_STAT_MAP_Cave04_A01S07")
+			Name("GH_STAT_MAP_Cave01_A01S08")
+			Name("GH_STAT_MAP_Cave02_A01S08")
+			Name("GH_STAT_MAP_Cave01_A01S09")
+			Name("GH_STAT_MAP_Evil_Village_S11")
+			Name("GH_STAT_MAP_Airport")
+			Name("GH_STAT_MAP_Refuges")
+			Name("GH_STAT_MAP_WHA_cave_camp")
+			Name("GH_STAT_MAP_GHP_A01S11")
+			Name("GH_STAT_MAP_GHP_A01S12_to_Airport")
+			Name("GH_STAT_MAP_GHP_A01S12_to_Caves")
+			Name("GH_STAT_MAP_EGHP_A02S02_to_Airport")
+			Name("GH_STAT_MAP_RLT_A02S01")
+			Name("GH_STAT_MAP_RLT_A02S02")
+			Name("GH_STAT_MAP_Cave01_A01S12")
+			Name("GH_STAT_MAP_Cave02_A01S12")
+			Name("GH_STAT_MAP_Cave03_A01S12")
+			Name("GH_STAT_MAP_Cave04_A01S12")
+			Name("GH_STAT_MAP_Cave05_A01S12")
+			Name("GH_STAT_MAP_Cave01_A02S02")
+			Name("GH_STAT_MAP_Cave02_A02S02")
+			Name("GH_STAT_MAP_B_AlvarezCave")
+			Name("GH_STAT_MAP_B_EGHP_A03S01_to_Tutorial_01")
+			Name("GH_STAT_MAP_WHA_Camp")
+			Name("GH_STAT_MAP_AlvarezCave")
+			Name("GH_STAT_MAP_StoneRing_02")
+			Name("GH_STAT_MAP_FinalVillage")
+			Name("GH_STAT_MAP_Tent")
+			Name("GH_STAT_MAP_EGHP_A03S01_to_Tutorial_01")
+			Name("GH_STAT_MAP_EGHP_A03S03_to_Refugees")
+			Name("GH_STAT_MAP_Cave01_A03S01")
+			Name("GH_STAT_MAP_Cave01_A03S02")
+			Name("GH_STAT_MAP_Cave01_A03S03")
+			Name("GH_STAT_MAP_Cave02_A03S03")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Tribe_Village")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_TribeVillage")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_PaintedRock")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_PaintedRock")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_PaintedRock02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_PaintedRock02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cartel")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cartel")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Elevator")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Elevator")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Goldmine")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GoldMine")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Jeep_Wreck")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Jeep")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_River_Harbor")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Harbor")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Plane")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_CrashedPlane")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Camp_in_cave")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_CampInCave")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_StoneRing_01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_StoneRing_01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Broken_Bridge")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Bridge_01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Broken_Bridge_B")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Bridge_02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Evil_Village_S01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EvilVillage01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Evil_Village_S10")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EvilVillage10")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_GHP_A01S07_to_StoneRing")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GHP_A01S07_to_StoneRing")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_GHP_A01S07_to_Cartel")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GHP_A01S07_to_Cartel")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_GHP_A01S07_to_CrashedPlane")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GHP_A01S07_to_CrashedPlane")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A01S01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A01S01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave03_A01S01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave03_A01S01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A01S02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A01S02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S04")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S04")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S06")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S06")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A01S06")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A01S06")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S07")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S07")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A01S07")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A01S07")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave03_A01S07")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave03_A01S07")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave04_A01S07")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave04_A01S07")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S08")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S08")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A01S08")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A01S08")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S09")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S09")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Evil_Village_S11")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EvilVillage11")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Airport")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Airport")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Refuges")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_RefugesCamp")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_WHA_cave_camp")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_WHA_cave_camp")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_GHP_A01S11")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GHP_A01S11")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_GHP_A01S12_to_Airport")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GHP_A01S12_to_Airport")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_GHP_A01S12_to_Caves")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_GHP_A01S12_to_Caves")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_EGHP_A02S02_to_Airport")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EGHP_A02S02_to_Airport")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_RLT_A02S01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_RLT_A02S01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_RLT_A02S02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_RLT_A02S02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A01S12")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A01S12")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A01S12")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A01S12")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave03_A01S12")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave03_A01S12")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave04_A01S12")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave04_A01S12")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave05_A01S12")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave05_A01S12")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A02S02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A02S02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A02S02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A02S02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_B_AlvarezCave")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_AlvarezCave_Map01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_B_EGHP_A03S01_to_Tutorial_01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EGHP_A03S01_to_Tutorial_01_Map01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_WHA_Camp")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_WHA")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_AlvarezCave")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_AlvarezCave")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_StoneRing_02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_StoneRing_02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_FinalVillage")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_FinalVillage")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Tent")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Tent")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_EGHP_A03S01_to_Tutorial_01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EGHP_A03S01_to_Tutorial_01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_EGHP_A03S03_to_Refugees")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_EGHP_A03S03_to_Refugees")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A03S01")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A03S01")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A03S02")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A03S02")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave01_A03S03")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave01_A03S03")
+		}
+	}
+}
+
+Stat("GH_STAT_MAP_Cave02_A03S03")
+{
+	IsInternal(0)
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("LocationDiscovered", "StringStatCondition")
+		{
+			Name("MP_Cave02_A03S03")
+		}
+	}
+}
+
+
+
+///////////////////////////////////////////////////////////////
+Achievement("ACH_ALL_READABLE")
+///////////////////////////////////////////////////////////////
+
+Stat("GH_STAT_UNIQUE_READABLE_READ")
+{
+	MaxValue(50)
+	IsInternal(0)
+	ConnectedAchivement("ACH_ALL_READABLE")
+	ShowProgressInterval(10)
+	ValueFromGroupingCondition(1)
+	SuccessConditions()
+	{
+		Condition("AchievementManagerUpdate", "GroupingStatCondition")
+		{
+			RequiredCount(50)
+			Name("GH_STAT_READ_JAGUAR")
+			Name("GH_STAT_READ_TUTORIAL_AYAHUASCA")
+			Name("GH_STAT_READ_DANGER_MAMMALS")
+			Name("GH_STAT_READ_DANGER_YABAHUACA")
+			Name("GH_STAT_READ_DANGER_FLINameGHT")
+			Name("GH_STAT_READ_FOREST_LAYERS")
+			Name("GH_STAT_READ_BAD_TRIBES")
+			Name("GH_STAT_READ_CARTEL_LIST_PEOPLE")
+			Name("GH_STAT_READ_CARTEL_PRODUCTION")
+			Name("GH_STAT_READ_SCOUT_NOTE")
+			Name("GH_STAT_READ_TRIBE_CAMP_BOOK1")
+			Name("GH_STAT_READ_TUTORIAL_NOTE_CORCBOARD")
+			Name("GH_STAT_READ_TUTORIAL_NOTE_START")
+			Name("GH_STAT_READ_TUTORIAL_NOTE_KITCHEN")
+			Name("GH_STAT_READ_GOLDMINE_PRODUCTION")
+			Name("GH_STAT_READ_CARTEL_LISTTOWIFE")
+			Name("GH_STAT_READ_GOLDMINE_LISTOFPEOPLE")
+			Name("GH_STAT_READ_CARTELCAVE_NOTE")
+			Name("GH_STAT_READ_GOLDMINE_SPYNOTE")
+			Name("GH_STAT_READ_AIRPORT_PASSAGERLIST")
+			Name("GH_STAT_READ_CARTEL_COOKBOOK")
+			Name("GH_STAT_READ_REFUGES_MAGAZINE")
+			Name("GH_STAT_READ_GOLDMINE_EXPERIMENTLIST")
+			Name("GH_STAT_READ_GOLDMINE_PLANEDROP")
+			Name("GH_STAT_READ_MEDICAL_TENT_NOTE1")
+			Name("GH_STAT_READ_MEDICAL_TENT_NOTE3")
+			Name("GH_STAT_READ_MEDICAL_TENT_LIST")
+			Name("GH_STAT_READ_MEDICAL_TENT_NOTE2")
+			Name("GH_STAT_READ_MEDICAL_TENT_NOTE4")
+			Name("GH_STAT_READ_REFUGES_NOTEBOOK")
+			Name("GH_STAT_READ_PASSAGE_LIST")
+			Name("GH_STAT_READ_AIRPORT_LIST")
+			Name("GH_STAT_READ_CARTEL_NOTE1")
+			Name("GH_STAT_READ_ONZ_TENT_BOOK")
+			Name("GH_STAT_READ_CARTEL_NOTE2")
+			Name("GH_STAT_READ_ONZ_TENT_NOTE")
+			Name("GH_STAT_READ_REFUGES_NOTE")
+			Name("GH_STAT_READ_HANGAR_BHP")
+			Name("GH_STAT_READ_HANGAR_LIST")
+			Name("GH_STAT_READ_MINE_NOTE")
+			Name("GH_STAT_READ_DANGER_CARDS_DART_FROG")
+			Name("GH_STAT_READ_TUTORIAL_NOTE_START_TOAPPEAR")
+			Name("GH_STAT_READ_REFUGEESCAMP_DIARY05")
+			Name("GH_STAT_READ_REFUGEESCAMP_DIARY00")
+			Name("GH_STAT_READ_REFUGEESCAMP_DIARY01")
+			Name("GH_STAT_READ_GOLDMINE_BLOODTRANFUSION")
+			Name("GH_STAT_READ_REFUGEESCAMP_DIARY03")
+			Name("GH_STAT_READ_REFUGEESCAMP_DIARY04")
+			Name("GH_STAT_READ_REFUGEESCAMP_DIARY02")
+			Name("GH_STAT_READ_ISLAND_DRAWED_MAP")
+			Name("GH_STAT_READ_DARTFROG_BOOK_01")
+			Name("GH_STAT_READ_OMALU_ORDER_03")
+			Name("GH_STAT_READ_OMALU_ORDER_02_B")
+			Name("GH_STAT_READ_OMALU_ORDER_04")
+			Name("GH_STAT_READ_OMALU_ORDER_01")
+			Name("GH_STAT_READ_OMALU_ORDER_02")
+			Name("GH_STAT_READ_DREAM02_SCENE2_LETTER")
+			Name("GH_STAT_READ_DREAM02_SCENE1_INVOICE1")
+			Name("GH_STAT_READ_DREAM02_SCENE2_BOOK_COVER")
+			Name("GH_STAT_READ_DREAM02_SCENE3_REVIEW")
+			Name("GH_STAT_READ_DREAM01_ARRIVAL_ONBOAT")
+			Name("GH_STAT_READ_DREAM03_SCENE1_OMALULETTER")
+			Name("GH_STAT_READ_DREAM02_SCENE2_CORPLETTER")
+			Name("GH_STAT_READ_DREAM01_SCENE3_MIANOTE")
+			Name("GH_STAT_READ_DREAM02_SCENE1_SHOULDIWRITE")
+			Name("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE3")
+			Name("GH_STAT_READ_DREAM03_SCENE1_ARTICLE1")
+			Name("GH_STAT_READ_DREAM03_SCENE1_ARTICLE3")
+			Name("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE2")
+			Name("GH_STAT_READ_DREAM01_SCENE2_MIANOTE")
+			Name("GH_STAT_READ_DREAM03_SCENE3_ARTICLE1")
+			Name("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE1")
+			Name("GH_STAT_READ_DREAM02_SCENE2_INVOICE2")
+			Name("GH_STAT_READ_DREAM02_SCENE03_MIACARD")
+			Name("GH_STAT_READ_DREAM03_SCENE1_ARTICLE2")
+			Name("GH_STAT_READ_DREAM03_SCENE2_ARTICLE1")
+			Name("GH_STAT_READ_DREAM03_SCENE00_MIACARD")
+			Name("GH_STAT_READ_DREAM02_SCENE2_BOOK_COVER_BACK")
+			Name("GH_STAT_READ_DREAM02_SCENE2_BOOK_COVER_BR")
+			Name("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE1_B")
+			Name("GH_STAT_READ_DREAM03_SCENE2_ARTICLE4")
+			Name("GH_STAT_READ_DREAM03_SCENE2_ARTICLE2")
+			Name("GH_STAT_READ_DREAM03_SCENE2_ARTICLE3")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_JAGUAR")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Danger_Cards_Jaguar")
+		}
+	}
+}
+
+
+Stat("GH_STAT_READ_TUTORIAL_AYAHUASCA")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Tutorial_Ayuhaska")
+		}
+	}
+}
+
+
+Stat("GH_STAT_READ_DANGER_MAMMALS")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Danger_Cards_Mammals")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DANGER_YABAHUACA")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Danger_Cards_Yabahuaca")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DANGER_FLIGHT")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Danger_Cards_Flight")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_FOREST_LAYERS")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Poster_Forest_Layers")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_BAD_TRIBES")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Danger_Cards_Bad_Tribes")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTEL_LIST_PEOPLE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Cartel_ListofPeople")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTEL_PRODUCTION")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Cartel_Production")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_SCOUT_NOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Camp01_ScoutNote")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_TRIBE_CAMP_BOOK1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_TribeCamp_Book1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_TUTORIAL_NOTE_CORCBOARD")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Tutorial_Note_Corcboard")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_TUTORIAL_NOTE_START")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Tutorial_Note_Start")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_TUTORIAL_NOTE_KITCHEN")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Tutorial_Note_Kitchen")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_GOLDMINE_PRODUCTION")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_GoldMine_Production")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTEL_LISTTOWIFE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Cartel_ListToWife")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_GOLDMINE_LISTOFPEOPLE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_GoldMine_ListofPeople")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTELCAVE_NOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_CartelCave_Note")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_GOLDMINE_SPYNOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_GoldMine_SpyNote")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_AIRPORT_PASSAGERLIST")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Airport_PassagerList")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTEL_COOKBOOK")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Cartel_Cookbook")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGES_MAGAZINE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Refuges_Magazine")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_GOLDMINE_EXPERIMENTLIST")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_GoldMine_ExperimentList")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_GOLDMINE_PLANEDROP")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_GoldMine_PlaneDrop")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_MEDICAL_TENT_NOTE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Medical_Tent_Note1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_MEDICAL_TENT_NOTE3")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Medical_Tent_Note3")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_MEDICAL_TENT_LIST")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Medical_Tent_List")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_MEDICAL_TENT_NOTE2")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Medical_Tent_Note2")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_MEDICAL_TENT_NOTE4")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Medical_Tent_Note4")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGES_NOTEBOOK")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Refuges_Notebook")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_PASSAGE_LIST")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Passage_List")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_AIRPORT_LIST")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Airport_List")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTEL_NOTE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Cartel_Note1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_ONZ_TENT_BOOK")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Onz_Tent_Book")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_CARTEL_NOTE2")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Cartel_Note2")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_ONZ_TENT_NOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Onz_Tent_Note")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGES_NOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Refuges_Note")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_HANGAR_BHP")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Hangar_BHP")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_HANGAR_LIST")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Hangar_List")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_MINE_NOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Mine_Note")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DANGER_CARDS_DART_FROG")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Danger_Cards_Dart_Frog")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_TUTORIAL_NOTE_START_TOAPPEAR")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Tutorial_Note_Start_ToAppear")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGEESCAMP_DIARY05")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_RefugeesCamp_Diary05")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGEESCAMP_DIARY00")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_RefugeesCamp_Diary00")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGEESCAMP_DIARY01")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_RefugeesCamp_Diary01")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_GOLDMINE_BLOODTRANFUSION")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_GoldMine_BloodTranfusion")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGEESCAMP_DIARY03")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_RefugeesCamp_Diary03")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGEESCAMP_DIARY04")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_RefugeesCamp_Diary04")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_REFUGEESCAMP_DIARY02")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_RefugeesCamp_Diary02")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_ISLAND_DRAWED_MAP")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Island_Drawed_Map")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DARTFROG_BOOK_01")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_DartFrog_Book_01")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_OMALU_ORDER_03")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Omalu_Order_03")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_OMALU_ORDER_02_B")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Omalu_Order_02_b")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_OMALU_ORDER_04")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Omalu_Order_04")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_OMALU_ORDER_01")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Omalu_Order_01")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_OMALU_ORDER_02")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Omalu_Order_02")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE2_LETTER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene2_Letter")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE1_INVOICE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene1_Invoice1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE2_BOOK_COVER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene2_Book_Cover")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE3_REVIEW")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene3_Review")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM01_ARRIVAL_ONBOAT")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream_01_Arrival_OnBoat")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE1_OMALULETTER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene1_OmaluLetter")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE2_CORPLETTER")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene2_CorpLetter")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM01_SCENE3_MIANOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream01_Scene3_MiaNote")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE1_SHOULDIWRITE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene1_ShouldIWrite")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE3")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene1_BookPage3")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE1_ARTICLE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene1_Article1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE1_ARTICLE3")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene1_Article3")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE2")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene1_BookPage2")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM01_SCENE2_MIANOTE")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream01_Scene2_MiaNote")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE3_ARTICLE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene3_Article1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene1_BookPage1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE2_INVOICE2")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene2_Invoice2")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE03_MIACARD")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene03_MiaCard")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE1_ARTICLE2")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene1_Article2")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE2_ARTICLE1")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene2_Article1")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE00_MIACARD")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene00_MiaCard")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE2_BOOK_COVER_BACK")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene2_Book_Cover_Back")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE2_BOOK_COVER_BR")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene2_Book_Cover_BR")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM02_SCENE1_BOOKPAGE1_B")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream02_Scene1_BookPage1_b")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE2_ARTICLE4")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene2_Article4")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE2_ARTICLE2")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene2_Article2")
+		}
+	}
+}
+
+Stat("GH_STAT_READ_DREAM03_SCENE2_ARTICLE3")
+{
+	IsInternal(0)
+	SuccessConditions()
+	{
+		Condition("ReadableRead", "ItemIdStatCondition")
+		{
+			ItemId("Collectable_Dream03_Scene2_Article3")
+		}
+	}
+}
+
+
+Achievement("ACH_GAIN_REPUTATION_800_PLANTING")
+
+Achievement("ACH_GAIN_REPUTATION_800_HUNTING")
+
+Achievement("ACH_GAIN_REPUTATION_800_FISHING")
+
+Achievement("ACH_BRING_9_KIDS_BACK")
+Stat("GH_STAT_KID_BACK_TO_VILLAGE")
+{
+	IsInternal(0)
+	MaxValue(9.0)
+	ConnectedAchivement("ACH_BRING_9_KIDS_BACK")	
+	IgnoreEventsFromReplication(0)
+	SuccessConditions()
+	{
+		Condition("KidBackToVillage")
+	}
+}
+
+Achievement("ACH_HEAL_10_TRIBES")
+Stat("GH_STAT_HEALED_TRIBES")
+{
+	IsInternal(0)
+	MaxValue(1.0)
+	IgnoreEventsFromReplication(0)
+	ConnectedAchivement("ACH_HEAL_10_TRIBES")	
+	SuccessConditions()
+	{
+		Condition("HealedTribesman")
+	}
+}
+
+Achievement("ACH_BURN_10_CORPSES")
+Stat("GH_STAT_BURNED_CORPSES")
+{
+	IsInternal(0)
+	MaxValue(10.0)
+	IgnoreEventsFromReplication(0)
+	ConnectedAchivement("ACH_BURN_10_CORPSES")	
+	SuccessConditions()
+	{
+		Condition("BurnedCorpses")
+	}
+}
+
+Achievement("ACH_BURN_10_TRASHES")
+Stat("GH_STAT_BURNED_TRASHES")
+{
+	IsInternal(0)
+	MaxValue(10.0)
+	IgnoreEventsFromReplication(0)
+	ConnectedAchivement("ACH_BURN_10_TRASHES")	
+	SuccessConditions()
+	{
+		Condition("BurnedTrashes")
+	}
+}
+
+Achievement("ACH_HELP_5_FISHERMEN")
+Stat("GH_STAT_HELP_FISHERMAN")
+{
+	IsInternal(0)
+	MaxValue(5.0)
+	IgnoreEventsFromReplication(0)
+	ConnectedAchivement("ACH_HELP_5_FISHERMEN")	
+	SuccessConditions()
+	{
+		Condition("HelpFisherman")
+	}
+}
+
+Achievement("ACH_REBUILD_10_TOTEMS")
+Stat("GH_STAT_REBUILT_TOTEMS")
+{
+	IsInternal(0)
+	MaxValue(10.0)
+	IgnoreEventsFromReplication(0)
+	ConnectedAchivement("ACH_REBUILD_10_TOTEMS")	
+	SuccessConditions()
+	{
+		Condition("RebuildTotem")
+	}
+}
+
+Achievement("ACH_FREE_9_WOMEN")
+Stat("GH_STAT_FREE_WOMAN")
+{
+	IsInternal(0)
+	MaxValue(9.0)
+	IgnoreEventsFromReplication(0)
+	ConnectedAchivement("ACH_FREE_9_WOMEN")	
+	SuccessConditions()
+	{
+		Condition("FreeWoman")
+	}
+}
+
+Achievement("ACH_FIND_5_MAPS")
+
+Achievement("ACH_COMPLETE_SOA3_STORY")
+
+Achievement("RAPORT_BACK_TO_THE_BASE")
+
+Achievement("COMPLETE_MUAGI_TRIAL")
+
+Achievement("COMPLETE_HABBAKU_TRIAL")
+
+Achievement("COMPLETE_UNGARACA_TRIAL")
+
+Achievement("REACH_YABAHUACA_VILLAGE")
+
+Achievement("PASS_YABAHUACA_TRIAL")
+
+Achievement("DISCOVER_VILLAGE_MUAGI")
+
+Achievement("DISCOVER_VILLAGE_HABBAKU")
+
+Achievement("DISCOVER_VILLAGE_UNGARACA")
+
+Achievement("COMPLETE_ALL_MUAGI_LEGENDS")
+
+Achievement("COMPLETE_ALL_UNGARACA_LEGENDS")
+
+Achievement("COMPLETE_ALL_HABBAKU_LEGENDS")
+
+Achievement("COMPLETE_ALL_SOA_ACHIEVEMENTS")
+
+Achievement("ACH_NEW_FRIEND")
+
+Achievement("ACH_EMOTIONAL_SUPPORT")
+
+Achievement("ACH_CIRCLE_OF_LIFE")
+
+
+
+

@@ -1,0 +1,13 @@
+Anim("Tribe_Bow_Trap|Shot")
+{
+	Event("BowTrapShootArrow", 0.1)
+	Sound("wooden_bow_shot_03", "Weapon", 0.0)
+
+}
+
+Anim("Tribe_Bow_Trap|ArmedIdle")
+{
+	
+	Sound("wooden_bow_draw_03", "Weapon", 0.0)
+
+}

@@ -1,0 +1,4 @@
+Challenge("LootBoxes","LD_Story","Balance_Story","Challenges")
+Story("Story","LootBoxes","LD_Story","Balance_Story")
+Survival("LootBoxes","LD_Story","Balance_Story","Balance_Survi")
+PVE("LD_PVE", "Balance_PVE", "SOA3"){ Reload("LootBoxes_PVE") }

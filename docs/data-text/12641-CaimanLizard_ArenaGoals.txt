@@ -1,0 +1,13 @@
+Goal("Death")
+Goal("ReactOnHit")
+Goal("DontMove")
+
+Goal("MoveAwayFromEnemy")
+
+//Goal("ShowPlayer")
+
+Goal("ReturnToSpawner")
+
+Goal("Loiter", 0.2)
+Goal("Eat",	0.2)
+Goal("Idle")

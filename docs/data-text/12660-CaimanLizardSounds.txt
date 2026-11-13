@@ -1,0 +1,6 @@
+
+Panic("Caiman_Lizard_Panic_01","Caiman_Lizard_Panic_02")
+Death("Caiman_Lizard_Death_01", "Caiman_Lizard_Death_02")
+Hit("Caiman_Lizard_Hit_01","Caiman_Lizard_Hit_02")
+RunBegin("Caiman_Lizard_Run_Begin_set01","Caiman_Lizard_Run_Begin_set02")
+Run("Caiman_Lizard_Run_Loop_set01","Caiman_Lizard_Run_Loop_set02")

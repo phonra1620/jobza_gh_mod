@@ -1,0 +1,11 @@
+//Task(class_name, text, enabled_in_list, positive_planned, negative_planned, positive_not_planned, negative_not_planned, ... optional)
+//optional is used for e.g. Build, there should be item id.
+
+//Task("Drink", "PlannerTaskDrink", 10.0, 10.0, 5.0, 5.0, )
+Task("Build", "PlannerTaskBuildSmallShelter", true, 20.0, 20.0, 11.0, 11.0, "Small_Shelter")
+Task("MakeFire", "PlannerTaskMakeFire", true, 30.0, 30.0, 15.0, 15.0)
+Task("Sleep", "PlannerTaskSleepInBed", false, 30.0, 30.0, 15.0, 15.0)
+Task("EatCooked", "PlannerTaskEatCooked", true, 30.0, 30.0, 15.0, 15.0)
+Task("HealWound", "PlannerTaskHealWound", true, 30.0, 30.0, 15.0, 15.0)
+Task("EatRawMeat", "PlannerTaskEatRawMeat", false, 30.0, 30.0, 15.0, 15.0)
+

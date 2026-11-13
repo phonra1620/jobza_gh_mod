@@ -1,0 +1,385 @@
+Item("Stone_Blade")
+{
+	Clip("PL|MeeleIdle", "PL|BladeStoneIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|BladeStoneAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|BladeStoneAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|BladeStoneAttackRightEnd")
+	Clip("PL|AttackRightRelease", "PL|BladeStoneAttackRightRelease")
+	Clip("PL|AttackRightSlantReturn", "PL|BladeStoneAttackRightReturn")
+	Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|MeeleRun", "PL|BladeStoneRun")
+	Clip("PL|MeeleWalk", "PL|BladeStoneWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|BladeStoneCombo")
+	Clip("PL|Fight_block", "PL|FightBladeStoneBlock")
+	Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")	
+	Clip("PL|Axe_LowStamina", "PL|BladeStone_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("PL|AttackRight_LowStamina", "PL|BladeStoneAttack_LowStamina")
+
+}
+Item("Bone_Knife")
+{
+	Clip("PL|MeeleIdle", "PL|BladeStoneIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|BladeStoneAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|BladeStoneAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|BladeStoneAttackRightEnd")
+	Clip("PL|AttackRightRelease", "PL|BladeStoneAttackRightRelease")
+	Clip("PL|AttackRightSlantReturn", "PL|BladeStoneAttackRightReturn")
+	Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|MeeleRun", "PL|BladeStoneRun")
+	Clip("PL|MeeleWalk", "PL|BladeStoneWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|BladeStoneCombo")
+	Clip("PL|Fight_block", "PL|FightBladeStoneBlock")
+	Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")	
+	Clip("PL|Axe_LowStamina", "PL|BladeStone_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("PL|AttackRight_LowStamina", "PL|BladeStoneAttack_LowStamina")
+	
+}
+Item("Obsidian_Blade")
+{
+	Clip("PL|MeeleIdle", "PL|BladeStoneIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|BladeStoneAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|BladeStoneAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|BladeStoneAttackRightEnd")
+	Clip("PL|AttackRightRelease", "PL|BladeStoneAttackRightRelease")
+	Clip("PL|AttackRightSlantReturn", "PL|BladeStoneAttackRightReturn")
+	Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|MeeleRun", "PL|BladeStoneRun")
+	Clip("PL|MeeleWalk", "PL|BladeStoneWalk")		
+	Clip("PL|AttackLeftComboSwing", "PL|BladeStoneCombo")
+	Clip("PL|Fight_block", "PL|FightBladeStoneBlock")
+	Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")	
+	Clip("PL|Axe_LowStamina", "PL|BladeStone_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("PL|AttackRight_LowStamina", "PL|BladeStoneAttack_LowStamina")
+	
+}
+Item("Obsidian_Bone_Blade")
+{
+	Clip("PL|MeeleIdle", "PL|BladeStoneIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|BladeStoneAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|BladeStoneAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|BladeStoneAttackRightEnd")
+	Clip("PL|AttackRightRelease", "PL|BladeStoneAttackRightRelease")
+	Clip("PL|AttackRightSlantReturn", "PL|BladeStoneAttackRightReturn")
+	Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|MeeleRun", "PL|BladeStoneRun")
+	Clip("PL|MeeleWalk", "PL|BladeStoneWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|BladeStoneCombo")
+	Clip("PL|Fight_block", "PL|FightBladeStoneBlock")
+	Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")	
+	Clip("PL|Axe_LowStamina", "PL|BladeStone_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("PL|AttackRight_LowStamina", "PL|BladeStoneAttack_LowStamina")
+	
+}
+Item("Stick_Blade")
+{
+	Clip("PL|MeeleIdle", "PL|BladeStoneIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|BladeStoneAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|BladeStoneAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|BladeStoneAttackRightEnd")
+	Clip("PL|AttackRightRelease", "PL|BladeStoneAttackRightRelease")
+	Clip("PL|AttackRightSlantReturn", "PL|BladeStoneAttackRightReturn")
+	Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|MeeleRun", "PL|BladeStoneRun")
+	Clip("PL|MeeleWalk", "PL|BladeStoneWalk")	
+	Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")	
+	Clip("PL|AttackLeftComboSwing", "PL|BladeStoneCombo")
+	Clip("PL|Fight_block", "PL|FightBladeStoneBlock")
+	Clip("PL|Axe_LowStamina", "PL|BladeStone_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("PL|AttackRight_LowStamina", "PL|BladeStoneAttack_LowStamina")
+}
+
+Item("metal_blade_weapon")
+{
+	Clip("PL|MeeleIdle", "PL|BladeStoneIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|BladeStoneAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|BladeStoneAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|BladeStoneAttackRightEnd")
+	Clip("PL|AttackRightRelease", "PL|BladeStoneAttackRightRelease")
+	Clip("PL|AttackRightSlantReturn", "PL|BladeStoneAttackRightReturn")
+	Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|MeeleRun", "PL|BladeStoneRun")
+	Clip("PL|MeeleWalk", "PL|BladeStoneWalk")	
+	Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")	
+	Clip("PL|AttackLeftComboSwing", "PL|BladeStoneCombo")
+	Clip("PL|Fight_block", "PL|FightBladeStoneBlock")
+	Clip("PL|Axe_LowStamina", "PL|BladeStone_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("PL|AttackRight_LowStamina", "PL|BladeStoneAttack_LowStamina")
+}
+
+Item("Axe")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	Clip("PL|Jump", "PL|Jump_Axe")
+}
+
+Item("Blade_Axe")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+}
+
+Item("Stone_Axe")
+{
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+}
+
+Item("Stone_Axe_ArenaHunting")
+{
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+}
+
+Item("Bone_Axe")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+}
+
+Item("Axe_professional")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+}
+Item("Machete")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|AxeHitBack", "PL|AttackRight_AdditiveMachette")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Machete")
+
+}
+Item("Rusted_Machete")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|AxeHitBack", "PL|AttackRight_AdditiveMachette")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Machete")
+}
+Item("Obsidian_Axe")
+{
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+}
+Item("Rusted_Axe")
+{
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+}
+Item("Tribe_Axe")
+{
+//	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|TribeAxeBlock")
+	Clip("PL|Jump", "PL|TribeAxeJump")
+	Clip("PL|Duck", "PL|TribeAxeDuck")
+	Clip("PL|DuckEnd", "PL|TribeAxeDuck_End")
+
+	Clip("PL|AttackRight_AdditiveMachette", "PL|TribeAxeAttackRightAdditive")
+
+	Clip("PL|MeeleIdle", "PL|TribeAxeIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|TribeAxeAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|TribeAxeAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|TribeAxeAttackRightEnd")
+	Clip("PL|AxeHitPoseFar", "PL|TribeAxeAttackRightAdditivePoseFar")
+	Clip("PL|AttackRighSlantReturn", "PL|TribeAxeAttackRightReturn")
+
+	Clip("PL|AttackUpWindUp", "PL|TribeAxeAttackUpWindUp")
+	Clip("PL|AttackUpSwing", "PL|TribeAxeAttackUpSwing")
+	Clip("PL|AttackUp", "PL|TribeAxeAttackUp")
+	Clip("PL|AttackUpEnd", "PL|TribeAxeAttackUpEnd")
+
+	Clip("PL|AttackUpReturn", "PL|TribeAxeAttackUpReturn")
+	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|TribeAxeAttackRightCombo")
+	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("PL|Axe_LowStamina", "PL|TribeAxeLowStamina")	
+	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("PL|AttackRight_LowStamina", "PL|TribeAxeAttackRight")
+	Clip("PL|AttackRightRelease", "PL|TribeAxeAttackUpReturn")
+	
+	Clip("PL|ThrowAim", "PL|TribeAxe_Throw_Aim")		
+	Clip("PL|ThrowAimIdle", "PL|TribeAxe_Throw_Idle")
+	Clip("PL|Throw", "PL|TribeAxe_Throw")
+	
+}
+
+Item("Modern_Axe")
+{
+//	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|TribeAxeBlock")
+	Clip("PL|Jump", "PL|TribeAxeJump")
+	Clip("PL|Duck", "PL|TribeAxeDuck")
+	Clip("PL|DuckEnd", "PL|TribeAxeDuck_End")
+
+	Clip("PL|AttackRight_AdditiveMachette", "PL|TribeAxeAttackRightAdditive")
+
+	Clip("PL|MeeleIdle", "PL|TribeAxeIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|ProfAxe_AttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|ProfAxe_AttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|ProfAxe_AttackRightEnd")
+	Clip("PL|AxeHitPoseFar", "PL|TribeAxeAttackRightAdditivePoseFar")
+	Clip("PL|AttackRighSlantReturn", "PL|ProfAxe_AttackRightReturn")
+
+	Clip("PL|AttackUpWindUp", "PL|ProfAxe_AttackUpWindUp")
+	Clip("PL|AttackUpSwing", "PL|ProfAxe_AttackUpSwing")
+	Clip("PL|AttackUp", "PL|ProfAxe_AttackUp")
+	Clip("PL|AttackUpEnd", "PL|ProfAxe_AttackUpEnd")
+
+	Clip("PL|AttackUpReturn", "PL|ProfAxe_AttackUpReturn")
+	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|TribeAxeAttackRightCombo")
+	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("PL|Axe_LowStamina", "PL|TribeAxeLowStamina")	
+	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("PL|AttackRight_LowStamina", "PL|ProfAxe_AttackRight")
+	Clip("PL|AttackRightRelease", "PL|ProfAxe_AttackRightReturn")
+	
+	Clip("PL|ThrowAim", "PL|TribeAxe_Throw_Aim")		
+	Clip("PL|ThrowAimIdle", "PL|TribeAxe_Throw_Idle")
+	Clip("PL|Throw", "PL|TribeAxe_Throw")
+	
+}
+
+Item("Stone_Axe_2H")
+{
+//	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|TribeAxeBlock")
+	Clip("PL|Jump", "PL|TribeAxeJump")
+	Clip("PL|Duck", "PL|TribeAxeDuck")
+	Clip("PL|DuckEnd", "PL|TribeAxeDuck_End")
+
+	Clip("PL|AttackRight_AdditiveMachette", "PL|TribeAxeAttackRightAdditive")
+
+	Clip("PL|MeeleIdle", "PL|TribeAxeIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|TribeAxeAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|TribeAxeAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|TribeAxeAttackRightEnd")
+	Clip("PL|AxeHitPoseFar", "PL|TribeAxeAttackRightAdditivePoseFar")
+	Clip("PL|AttackRighSlantReturn", "PL|TribeAxeAttackRightReturn")
+
+	Clip("PL|AttackUpWindUp", "PL|TribeAxeAttackUpWindUp")
+	Clip("PL|AttackUpSwing", "PL|TribeAxeAttackUpSwing")
+	Clip("PL|AttackUp", "PL|TribeAxeAttackUp")
+	Clip("PL|AttackUpEnd", "PL|TribeAxeAttackUpEnd")
+
+	Clip("PL|AttackUpReturn", "PL|TribeAxeAttackUpReturn")
+	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|TribeAxeAttackRightCombo")
+	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("PL|Axe_LowStamina", "PL|TribeAxeLowStamina")	
+	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("PL|AttackRight_LowStamina", "PL|TribeAxeAttackRight")
+	Clip("PL|AttackRightRelease", "PL|TribeAxeAttackUpReturn")
+	
+	Clip("PL|ThrowAim", "PL|TribeAxe_Throw_Aim")		
+	Clip("PL|ThrowAimIdle", "PL|TribeAxe_Throw_Idle")
+	Clip("PL|Throw", "PL|TribeAxe_Throw")
+	
+}
+
+Item("metal_axe")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+}
+
+Item("metal_pickaxe")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+}
+
+Item("pickaxe")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+}
+
+Item("Aztec_Club")
+{
+	Clip("PL|Fight_block", "PL|FightBlockAxe")
+	Clip("PL|AxeHitBack", "PL|AttackRight_AdditiveMachette")
+	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Jump", "PL|Jump_Machete")
+}
+Item("Flamekeeper_club")
+{
+//	Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Fight_block", "PL|TribeAxeBlock")
+	Clip("PL|Jump", "PL|TribeAxeJump")
+	Clip("PL|Duck", "PL|TribeAxeDuck")
+	Clip("PL|DuckEnd", "PL|TribeAxeDuck_End")
+
+	Clip("PL|AttackRight_AdditiveMachette", "PL|TribeAxeAttackRightAdditive")
+
+	Clip("PL|MeeleIdle", "PL|TribeAxeIdle")
+	Clip("PL|AttackRightSlantWindUp", "PL|TribeAxeAttackRightWindUp")
+	Clip("PL|AttackRightSlantSwing", "PL|TribeAxeAttackRightSwing")
+	Clip("PL|AttackRightSlantEnd", "PL|TribeAxeAttackRightEnd")
+	Clip("PL|AxeHitPoseFar", "PL|TribeAxeAttackRightAdditivePoseFar")
+	Clip("PL|AttackRighSlantReturn", "PL|TribeAxeAttackRightReturn")
+
+	Clip("PL|AttackUpWindUp", "PL|TribeAxeAttackUpWindUp")
+	Clip("PL|AttackUpSwing", "PL|TribeAxeAttackUpSwing")
+	Clip("PL|AttackUp", "PL|TribeAxeAttackUp")
+	Clip("PL|AttackUpEnd", "PL|TribeAxeAttackUpEnd")
+
+	Clip("PL|AttackUpReturn", "PL|TribeAxeAttackUpReturn")
+	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+	Clip("PL|AttackLeftComboSwing", "PL|TribeAxeAttackRightCombo")
+	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("PL|Axe_LowStamina", "PL|TribeAxeLowStamina")	
+	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("PL|AttackRight_LowStamina", "PL|TribeAxeAttackRight")
+	Clip("PL|AttackRightRelease", "PL|TribeAxeAttackUpReturn")
+	
+	Clip("PL|ThrowAim", "PL|TribeAxe_Throw_Aim")		
+	Clip("PL|ThrowAimIdle", "PL|TribeAxe_Throw_Idle")
+	Clip("PL|Throw", "PL|TribeAxe_Throw")
+	
+}
+
+

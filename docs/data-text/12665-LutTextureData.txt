@@ -1,0 +1,3 @@
+Effect("Default", "LUT_game_GH", "", "", 0.0)
+Effect("Dream", "LUT_dream_GH", "", "", 0.0)
+Effect("Panic", "LUT_game_GH", "LUT_panic_GH", "", 0.0)

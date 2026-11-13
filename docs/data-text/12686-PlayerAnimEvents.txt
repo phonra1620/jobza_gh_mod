@@ -1,0 +1,1079 @@
+
+Anim("PL|MeeleIdle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("PL|GoToSleep")
+{
+	Event("RecoverEnd", 0.9)
+}
+
+Anim("PL|AfterSleepStandUp")
+{
+	Event("RecoverEnd", 0.9)
+}
+Anim("PL|TorchUnlitIdle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("PL|SpearIdle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("PL|SpearPresentation")
+{
+	Event("SpearEnterPresentationEnd", 0.9)
+}
+
+Anim("PL|SpearBlockIn")
+{
+	Event("SpearBlockOutEnd", 0.1)
+	Event("SpearBlockInEnd", 0.9)
+}
+
+Anim("PL|BladeStoneIdle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("PL|WalkForward")
+{
+	Event("FootStep", 0.22)
+	Event("FootStep", 0.7)
+}
+
+Anim("PL|RunLeft")
+{
+	Event("FootStep", 0.08)
+	Event("FootStep", 0.51)
+}
+
+Anim("PL|RunRight")
+{
+	Event("FootStep", 0.08)
+	Event("FootStep", 0.52)
+}
+
+Anim("PL|WalkLeft")
+{
+	Event("FootStep", 0.14)
+	Event("FootStep", 0.56)
+}
+
+Anim("PL|WalkRight")
+{
+	Event("FootStep", 0.14)
+	Event("FootStep", 0.56)
+}
+
+//Anim("PL|StrafeWalk")
+//{
+//	Event("FootStep", 0.55)
+//	Event("FootStep", 0.9)
+//}
+
+Anim("PL|CrouchWalkFWD")
+{
+	Event("FootStep", 0.9)
+	Event("FootStep", 0.65)
+}
+
+Anim("PL|CrouchWalkBWD")
+{
+	Event("FootStep", 0.45)
+	Event("FootStep", 0.9)
+}
+
+Anim("PL|CrouchWalkLeft")
+{
+	Event("FootStep", 0.55)
+	Event("FootStep", 0.9)
+}
+
+Anim("PL|CrouchWalkRight")
+{
+	Event("FootStep", 0.38)
+	Event("FootStep", 0.9)
+}
+
+Anim("PL|WalkBackward")
+{
+	Event("FootStep", 0.43)
+	Event("FootStep", 0.93)
+}
+
+Anim("PL|RunForward")
+{
+	Event("FootStep", 0.12)
+	Event("FootStep", 0.62)
+}
+
+Anim("PL|RunBackward")
+{
+	Event("FootStep", 0.38)
+	Event("FootStep", 0.84)
+}
+
+Anim("PL|AttackRight")
+{
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("ObjectSwingEnd", 0.9)	
+}
+
+//Anim("PL|StoneAttack")
+//{
+//	Event("DamageStart", 0.40)
+//	Event("DamageEnd", 0.65)	
+//	Event("MeleeRightAttackEnd", 0.9)	
+//}
+
+//Anim("PL|AttackRightSwing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeRightAttackStart", 0.0)	
+//	Event("MeleeRightAttackEnd", 0.9)
+//	Event("DamageStart", 0.1)
+//	Event("DamageEnd", 1.0)	
+//	Event("ObjectSwingEnd", 0.9)
+//}
+
+
+Anim("PL|TribeAxeAttackRightCombo")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeLeftAttackStart", 0.0)	
+	Event("MeleeLeftAttackEnd", 0.8)
+	Event("DamageStart", 0.0)
+	Event("DamageEnd", 0.6)	
+	Event("ObjectSwingEnd", 0.6)	
+}
+
+//Anim("PL|AttackRightSwing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeRightAttackStart", 0.0)	
+//	Event("MeleeRightAttackEnd", 0.9)
+//	Event("DamageStart", 0.45)
+//	Event("DamageEnd", 0.9)	
+//	Event("ObjectSwingEnd", 0.85)
+//}
+
+Anim("PL|AttackRightSlantSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.25)
+	Event("DamageEnd", 0.9)	
+	Event("ObjectSwingEnd", 0.85)
+}
+Anim("PL|AttackRight_LowStamina")
+{
+	Event("PlaySwingSound", 0.2)
+	Event("MeleeRightAttackStart", 0.27)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.2)
+	Event("DamageEnd", 0.38)	
+	Event("ObjectSwingEnd", 0.38)
+}
+Anim("PL|TribeAxeAttackRight") //as low stamina
+{
+	Event("PlaySwingSound", 0.2)
+	Event("MeleeRightAttackStart", 0.27)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.48)
+	Event("DamageEnd", 0.54)	
+	Event("ObjectSwingEnd", 0.85)
+}
+
+Anim("PL|TribeAxeAttackRightSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeRightAttackStart", 0.1)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.39)
+	Event("DamageEnd", 0.8)	
+	Event("ObjectSwingEnd", 0.9)
+}
+
+Anim("PL|AttackLeftComboSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeLeftAttackStart", 0.0)	
+	Event("MeleeLeftAttackEnd", 0.8)
+	Event("DamageStart", 0.0)
+	Event("DamageEnd", 0.8)	
+	Event("ObjectSwingEnd", 0.6)	
+}
+
+Anim("PL|BladeStoneCombo")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeLeftAttackStart", 0.0)	
+	Event("MeleeLeftAttackEnd", 0.7)
+	Event("DamageStart", 0.0)
+	Event("DamageEnd", 0.9)	
+	Event("ObjectSwingEnd", 0.9)	
+}
+
+//Anim("PL|AttackRightSlant")
+//{
+//	Event("MeleeRightAttackEnd", 0.9)
+//	Event("ObjectSwingEnd", 0.9)	
+//}
+
+
+Anim("PL|BladeStoneAttackRightSwing")
+{
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("PlaySwingSound", 0.0)
+
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.35)
+	Event("DamageEnd", 0.9)	
+	Event("ObjectSwingEnd", 0.9)	
+}
+
+Anim("PL|BladeStoneAttack_LowStamina")
+{
+	Event("PlaySwingSound", 0.2)
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.2)
+	Event("DamageEnd", 0.45)	
+	Event("ObjectSwingEnd", 0.45)
+}
+
+Anim("PL|TorchAttack")
+{
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.35)
+	Event("DamageEnd", 0.9)	
+	Event("ObjectSwingEnd", 0.9)
+}
+
+//Anim("PL|AttackUp")
+//{
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.4)
+//	Event("DamageEnd", 0.9)
+//}
+
+Anim("PL|TribeAxeAttackUp")
+{
+	Event("MeleeUpAttackEnd", 0.9)
+	Event("DamageStart", 0.4)
+	Event("DamageEnd", 0.9)
+}
+
+Anim("PL|TribeAxeAttackUpSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeUpAttackEnd", 0.9)
+	Event("DamageStart", 0.4)
+	Event("DamageEnd", 0.9)
+}
+
+Anim("PL|AttackUpSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeUpAttackEnd", 0.9)
+	Event("DamageStart", 0.2)
+	Event("DamageEnd", 0.9)
+}
+
+//Anim("PL|AttackUpBlade")
+//{
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.4)
+//	Event("DamageEnd", 0.9)
+//}
+
+Anim("PL|AttackUpBladeSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeUpAttackEnd", 0.9)
+	Event("DamageStart", 0.2)
+	Event("DamageEnd", 0.9)
+}
+Anim("PL|FishingCast")
+{
+	Event("FishingCastEnd", 0.9)
+}
+
+Anim("PL|FishingCancel")
+{
+	Event("FishingHideVein", 0.5)
+	Event("FishingReelEnd", 0.9)
+	Event("FishingStrikeEnd", 0.9)
+}
+
+//Anim("PL|FishingStrike")
+//{
+//	Event("FishingStrikeEnd", 0.9)
+//}
+
+Anim("PL|FishingStrikeQuick")
+{
+	Event("FishingHideVein", 0.4)
+	Event("FishingStrikeEnd", 0.9)
+}
+
+Anim("PL|SpearAttack")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeThrustAttackStart", 0.1)
+	Event("SpearAttackEnd", 1.0)
+	Event("DamageStart", 0.1)
+	Event("DamageEnd", 1.0)	
+}
+
+Anim("PL|SpearAttackDown")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeThrustAttackStart", 0.1)
+	Event("DamageStart", 0.15)
+	Event("DamageEnd", 0.5)		
+	Event("SpearAttackEnd", 0.64)
+}
+
+Anim("PL|Spear_AttackDownLowStamina")
+{
+	Event("PlaySwingSound", 0.2)
+	Event("MeleeThrustAttackStart", 0.1)
+	Event("DamageStart", 0.15)
+	Event("DamageEnd", 0.5)		
+	Event("SpearAttackEnd", 0.9)
+}
+
+Anim("PL|SpearBackIdle")
+{	
+	Event("SpearAttackEnd", 1.0)
+}
+
+
+
+Anim("PL|SpearAim")
+{	
+	Event("SpearAimEnd", 0.9)
+}
+
+Anim("PL|SpearAimShot")
+{	
+	Event("SpearAimEnd", 0.9)
+}
+
+Anim("PL|SpearAimShotUnAim")
+{	
+	Event("SpearUnAimEnd", 0.9)
+}
+
+Anim("PL|SpearUnAim")
+{	
+	Event("SpearUnAimEnd", 0.9)
+}
+
+Anim("PL|Vomit")
+{
+	Event("VomitingThrowUp", 0.15)
+	Event("VomitingEnd", 0.9)
+}
+
+//Anim("Armature|ProtDewormLHandSucces")
+//{
+//	Event("BIMinigameSuccess", 0.8)
+//}
+
+//Anim("Armature|ProtDewormRightHandsucc")
+//{
+//	Event("BIMinigameSuccess", 0.8)
+//}
+
+//Anim("Armature|ProtDewormLLegSucces")
+//{
+//	Event("BIMinigameSuccess", 0.8)
+//}
+
+//Anim("Armature|ProtDewormRLegSucces")
+//{
+//	Event("BIMinigameSuccess", 0.8)
+//}
+
+Anim("PL|BowShot")
+{
+	Event("BowShot", 0.01)
+	Event("BowShotEnd", 0.9)
+}
+
+Anim("PL|BowReload")
+{
+	Event("BowReloadEnd", 0.6)
+}
+
+Anim("PL|BowHarvest")
+{
+	Event("GrabItemHideArrow", 0.0)
+	Event("GrabItem", 0.4)
+	Event("GrabItemEnd", 0.8)
+	Event("GrabItemShowArrow", 0.9)
+}
+
+Anim("PL|BambooBowShot")
+{
+	Event("BowShot", 0.01)
+	Event("BowShotEnd", 0.9)
+}
+
+Anim("PL|BambooBowReload")
+{
+	Event("BowReloadEnd", 0.8)
+}
+
+Anim("PL|BambooBowHarvest")
+{
+	Event("GrabItemHideArrow", 0.0)
+	Event("GrabItem", 0.4)
+	Event("GrabItemEnd", 0.8)
+	Event("GrabItemShowArrow", 0.9)
+}
+
+Anim("PL|Bandaging_RHand")
+{
+	Event("BIShowBandage", 0.37)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+Anim("PL|BandagingLHand")
+{
+	Event("BIShowBandage", 0.37)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+Anim("PL|Bandaging_LLeg")
+{
+	Event("BIShowBandage", 0.6)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+Anim("PL|Bandaging_RLeg")
+{
+	Event("BIShowBandage", 0.6)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+Anim("PL|SpearShot")
+{
+	Event("SpearShot", 0.19)
+	Event("SpearShotEnd", 0.9)
+}
+
+Anim("PL|Throw")
+{
+	Event("SpearShot", 0.19)
+	Event("SpearShotEnd", 0.9)
+	Event("ObjectThrow", 0.2)  //Temp
+}
+Anim("PL|TribeAxe_Throw")
+{
+	Event("SpearShot", 0.14)
+	Event("SpearShotEnd", 0.9)
+	Event("ObjectThrow", 0.15)  //Temp
+}
+
+Anim("PL|AnimalHarvestCutIn")
+{
+	Event("HarvestingSpawnFX", 0.3)	
+}
+
+Anim("PL|AnimalHarvestingLoop")
+{
+	Event("HarvestingSpawnFX", 0.3)
+	Event("HarvestingEnd", 0.9)
+}
+
+Anim("PL|Crafting")
+{
+	Event("CraftingEnd", 0.9)
+	Event("HarvestingEnd", 0.9)
+}
+
+Anim("PL|AnimalHarvestGetOut")
+{
+	Event("HarvestingFinishEnd", 0.9)
+}
+
+Anim("PL|BlowPipe_Shot")
+{	
+	Event("BlowpipeShot", 0.15)
+	Event("BlowpipeShotEnd", 0.9)
+}
+
+Anim("PL|BlowPipe_Reload")
+{
+	Event("BlowpipeLoad", 0.5)
+	Event("BlowpipeLoadEnd", 0.9)
+}
+
+Anim("PL|Harvest")
+{
+	Event("GrabItem", 0.37)
+	Event("GrabItemEnd", 0.7)
+}
+
+Anim("PL|Spear_Harvest")
+{
+	Event("GrabItem", 0.37)
+	Event("GrabItemEnd", 0.7)
+}
+
+Anim("PL|Death")
+{
+	Event("DeathFall", 0.6)
+	Event("DeathEnd", 0.9)
+}
+
+//Anim("PL|FallDeath")
+//{
+//	Event("DeathFall", 0.6)
+//	Event("DeathEnd", 0.9)
+//}
+
+
+//Anim("PL|FallingDeath")
+//{
+//	Event("DeathFall", 0.6)
+//	Event("DeathEnd", 0.9)
+//}
+
+Anim("PL|CaimanDeath")
+{
+	Event("DeathFall", 0.4)
+	Event("DeathEnd", 0.7)
+}
+
+Anim("PL|SwimDeath")
+{
+	Event("DeathEnd", 0.8)
+}
+
+Anim("PL|Death_OnWater")
+{
+	Event("DeathEnd", 0.8)
+}
+
+Anim("PL|Death_Cut")
+{
+	Event("DeathFall", 0.26)
+	Event("DeathEnd", 0.6)
+}
+
+Anim("PL|Death_Poison")
+{
+	Event("DeathFall", 0.47)
+	Event("DeathEnd", 0.8)
+}
+
+Anim("PL|Death_Thrust")
+{
+	Event("DeathFall", 0.15)
+	Event("DeathEnd", 0.8)
+}
+
+Anim("PL|Death_Melee")
+{
+	Event("DeathFall", 0.4)
+	Event("DeathEnd", 0.8)
+}
+
+Anim("PL|PassOut")
+{
+	Event("PassingOutEnd", 0.9)
+	Event("PassingOutFall", 0.52)
+}
+
+Anim("PL|TorchIgnite")
+{
+	Event("TorchIgnite", 0.4)
+	Event("TorchIgniteEnd", 0.9)
+}
+
+Anim("PL|TorchFireIgnite")
+{
+	Event("TorchIgnite", 0.4)
+	Event("TorchIgniteEnd", 0.9)
+}
+
+Anim("PL|FireIgnite")
+{
+	Event("FireIgnite", 0.5)
+	Event("FireIgniteEnd", 0.9)
+}
+
+Anim("PL|DrinkingFromLake")
+{
+	Event("DrinkLiquidStart", 0.1)
+	Event("DrinkLiquid", 0.3)
+	Event("DrinkLiquidEnd", 0.9)
+}
+
+Anim("PL|SwimForward")
+{
+	Event("DiveSound0", 0.15)		
+	Event("DiveSound1", 0.43)		
+	Event("DiveSound2", 0.8)		
+	
+	Event("SwimSound0", 0.15)		
+	Event("SwimSound1", 0.43)		
+	Event("SwimSound2", 0.8)		
+}
+
+Anim("PL|SwimBackward")
+{
+	Event("DiveSound0", 0.0)		
+}
+
+Anim("PL|SwimLeft")
+{
+	Event("DiveSound0", 0.0)		
+}
+
+Anim("PL|SwimRight")
+{
+	Event("DiveSound0", 0.0)		
+}
+
+Anim("PL|FirestickStandUp")
+{
+	Event("MakeFireTakeFire", 0.23)	
+	Event("MakeFireSuccessEnd", 0.9)
+}
+
+Anim("PL|FirestickFail")
+{
+	Event("MakeFireFailEnd", 0.9)
+	Event("MakeFireHideTool", 0.2)
+}
+
+Anim("PL|FireFeetStandup")
+{
+	Event("MakeFireTakeFire", 0.4)	
+	Event("MakeFireSuccessEnd", 0.9)
+}
+
+Anim("PL|FireFeetFail")
+{
+	Event("MakeFireFailEnd", 0.9)
+	Event("MakeFireHideTool", 0.2)
+}
+
+Anim("PL|FireBowFail")
+{
+	Event("MakeFireFailEnd", 0.9)
+	Event("MakeFireHideTool", 0.2)	
+}
+
+Anim("PL|ShakingOff")
+{
+	Event("WaspsFlyAwayLHand", 0.26)	
+	Event("WaspsFlyAwayRHand", 0.71)	
+
+	Event("ShakingOffDamage", 0.5)	
+	Event("ShakingOffEnd", 0.9)	
+}
+
+Anim("PL|BeesShakeOff")
+{
+	Event("WaspsFlyAwayLHand", 0.46)	
+	Event("WaspsFlyAwayRHand", 0.71)	
+
+	Event("ShakingOffDamage", 0.5)	
+	Event("ShakingOffEnd", 0.99)	
+}
+
+Anim("PL|FireBowStandUp")
+{
+	Event("MakeFireTakeFire", 0.1)	
+	Event("MakeFireSuccessEnd", 0.9)
+}
+
+Anim("PL|NotepadHide")
+{
+	Event("HideNotebookEnd", 0.9)	
+}
+
+Anim("PL|NotebookTakeOut")
+{
+	Event("ShowNotebook", 0.6)
+	Event("ShowNotebookEnd", 0.9)	
+}
+
+Anim("PL|MapHide")
+{
+	Event("HideMapEnd", 0.9)	
+}
+
+Anim("PL|MapShow")
+{
+	Event("ShowMap", 0.8)
+	Event("ShowMapEnd", 0.9)	
+}
+
+Anim("PL|MapWatchTakeOut")
+{
+	Event("ShowMap", 0.1)
+	Event("ShowMapEnd", 0.9)	
+}
+
+Anim("PL|CarryUpHarvest")
+{
+	Event("GrabItem", 0.3)
+	Event("GrabItemEnd", 0.7)
+}
+
+Anim("PL|CarryDownHarvest")
+{
+	Event("GrabItem", 0.3)
+	Event("GrabItemEnd", 0.7)
+}
+
+
+Anim("PL|FightLeftPunch")
+{
+	Event("FistFightPunchEnd", 0.5)
+}
+
+Anim("PL|FightLeftPunchHard")
+{
+	Event("FistFightPunchStart", 0.25)
+	Event("FistFightPunchHardEnd", 0.5)
+}
+
+Anim("PL|FightRightPunch")
+{
+	Event("FistFightPunchEnd", 0.5)
+}
+
+Anim("PL|FightRightPunchHard")
+{
+	Event("FistFightPunchStart", 0.25)
+	Event("FistFightPunchHardEnd", 0.5)
+}
+
+Anim("PL|FightLeftWeak")
+{
+	Event("FistFightPunchStart", 0.05)
+	Event("FistFightPunchHardEnd", 0.25)
+}
+
+Anim("PL|FightRightWeak")
+{
+	Event("FistFightPunchStart", 0.05)
+	Event("FistFightPunchHardEnd", 0.25)
+}
+
+Anim("PL|Hit_Reaction")
+{
+	Event("HitReactionEnd", 0.6)
+}
+
+Anim("PL|SlowerWatchTake")
+{
+	Event("WatchStart", 0.5)
+}
+
+Anim("PL|SlowerWatchHide")
+{
+	Event("WatchEnd", 0.9)
+}
+
+Anim("PL|StandUp")
+{
+	Event("RecoverEnd", 0.9)
+}
+
+Anim("PL|RopeClimbTakeOffUP")
+{
+	Event("LadderSound", 0.37)	
+}
+
+Anim("PL|Jump_Spear")
+{
+	Event("JumpSpearEnd", 0.9)	
+}
+
+Anim("PL|Mud_Crafting_GoOut")
+{
+	Event("MudMixerEnd", 0.9)	
+}
+
+Anim("PL|Mud_Crafting_Loop")
+{
+	Event("MudMixerGetDirty", 0.0)	
+	Event("MudMixerGetDirty", 0.3)	
+	Event("MudMixerGetDirty", 0.6)	
+}
+
+Anim("PL|Washing_Off")
+{
+	Sound("CleanUp", "Player", 0.0)
+	Event("SpawnWashingLHandFX", 0.2)
+	Event("DestroyWashingLHandFX", 0.4)
+	Event("SpawnWashingRHandFX", 0.5)
+	Event("DestroyWashingRHandFX", 0.7)
+}
+
+Anim("PL|OpeningDoors_NoLook")
+{
+	Event("AnimationTriggerEnd", 0.6)	
+}
+
+Anim("PL|MiaHospitalGrab")
+{
+	Event("AnimationTriggerEnd", 0.7)	
+}
+
+Anim("PL|Dream4_Corridor_phone_Start")
+{
+	Event("Dream4_WT_Click", 0.55)	
+	Event("Dream4_WT_Raise", 0.88)	
+}
+
+Anim("PL|Dream4_CorridorStandUp")
+{
+	Event("Dream4_WT_Stop", 0.04)	
+	Event("Dream4_WT_TurnOff", 0.35)	
+	Event("Dream4_StandUp", 0.65)	
+}
+
+Anim("PL|Ayuhasca_Seasoning")
+{
+	Event("PreDream_Ayahuasca_Throw_Ingredients", 0.0)		
+}
+
+Anim("PL|AirPort_Radio_StartRadio")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.95)			
+}
+
+Anim("PL|AirPort_Radio_Player_01")
+{
+	Event("AIRPORT_RADIO_SFX_SWITCH_CHANNEL_1", 0.186)			
+}
+
+Anim("PL|AirPort_Radio_Player_02")
+{
+	Event("AIRPORT_RADIO_SFX_SWITCH_CHANNEL_2", 0.125)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_03")
+{
+	Event("AIRPORT_RADIO_SFX_PUNCH_RADIO", 0.4)		
+}
+
+Anim("PL|AirPort_Radio_Player_05")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.50)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_07")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.8)		
+}
+
+Anim("PL|AirPort_Radio_Player_11A")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.85)		
+}
+
+Anim("PL|AirPort_Radio_Player_13A")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_13B")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_13C")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_14A")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_14B")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_16")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_18A")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_18B")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_18C")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_19-20")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.01)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.95)		
+}
+
+Anim("PL|AirPort_Radio_Player_21")
+{
+	Event("AIRPORT_RADIO_SFX_PUNCH_DESK_AND_KEY_DROPS", 0.0)		
+}
+
+Anim("PL|GoodEnding_Player_01")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.135)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.635)
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.802)		
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.94)
+}
+
+Anim("PL|GoodEnding_Player_02")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.0625)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.8)
+}
+
+Anim("PL|GoodEnding_Player_03")
+{
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_PRESS", 0.045)			
+	Event("AIRPORT_RADIO_SFX_CHAT_BUTTON_RELEASE", 0.454)
+	Event("END1_SFX_RADIO_POWER_DOWN", 0.469)
+}
+
+
+Anim("PL|FireBow_start")
+{
+	Event("MakeFireShowTool", 0.2)			
+	Event("MakeFireShowKindlingSlot", 0.9)
+}
+
+Anim("PL|FireFeet_start")
+{
+	Event("MakeFireShowTool", 0.2)			
+	Event("MakeFireShowKindlingSlot", 0.9)
+}
+
+Anim("PL|Firestick_start")
+{
+	Event("MakeFireShowTool", 0.2)			
+	Event("MakeFireShowKindlingSlot", 0.8)
+}
+
+Anim("PL|Player_falldown_stand_Up")
+{
+	Event("FullBodyHitReactionEnd", 0.9)
+}
+
+Anim("PL|ProfAxe_AttackRightSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeRightAttackStart", 0.1)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.39)
+	Event("DamageEnd", 0.8)	
+	Event("ObjectSwingEnd", 0.9)
+}
+
+Anim("PL|ProfAxe_AttackRight") //as LowStamina
+{
+	Event("PlaySwingSound", 0.2)
+	Event("MeleeRightAttackStart", 0.27)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.47)
+	Event("DamageEnd", 0.525)	
+	Event("ObjectSwingEnd", 0.85)
+}
+
+Anim("PL|ProfAxe_AttackUp")
+{
+	Event("MeleeUpAttackEnd", 0.9)
+	Event("DamageStart", 0.4)
+	Event("DamageEnd", 0.9)
+}
+
+Anim("PL|ProfAxe_AttackUpSwing")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeUpAttackEnd", 0.9)
+	Event("DamageStart", 0.4)
+	Event("DamageEnd", 0.9)
+}
+
+Anim("PL|capybara_caress")
+{
+	Event("StrokingEnd", 0.9)
+}
+
+Anim("PL|peccary_caress")
+{
+	Event("StrokingEnd", 0.9)
+}
+
+Anim("PL|AnimalBinding")
+{
+	Event("BindingEnd", 0.9)
+}
+
+Anim("PL|Sleigh_TakeUp")
+{
+	Event("SleighInEnd", 0.9)
+}
+
+Anim("PL|Sleigh_Drop")
+{
+	Event("SleighOutEnd", 0.9)
+}
+
+Anim("PL|Brush_scrub")
+{
+	Event("ScrubEnd", 0.5)
+}
+
+Anim("PL|AttackRightSlantSwing")
+{
+	Event("PlayPaintingSound", 0.5)
+}

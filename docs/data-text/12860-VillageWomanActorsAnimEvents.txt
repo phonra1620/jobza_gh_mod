@@ -1,0 +1,244 @@
+// To notify that idle sound should be played (it can be skipped if actor is in sound cooldown)
+// Event("VillageActorIdleStart", 0.01);
+
+// To notify that voice over should be played (it can be skipped if actor is in sound cooldown)
+// VoiceOver(file_name_without_preset_and_index, path_to_file, anim_time_percent, probability_that_vo_will_be_played)
+
+
+
+
+///////////////////////FIRE///////////////////////
+Anim("vil_woman_start_fire")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageGreenSkirt", 0.1)
+}
+
+/////////////
+Anim("vil_woman_fire_idle")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+Anim("vil_woman_fire_A")
+{
+	Event("ShowVillageStickB", 0.28)
+	Event("HideVillageStickB", 0.60)
+	Sound("vil_woman_fire_A_sfx_", "PVE\Villagers\SFX\Woman_Fire", 0.29)
+	VoiceOver("vil_woman_fire_A_VO_", "PVE\Villagers\Woman\woman_fire", 0.29, 0.75)
+}
+
+//Anim("vil_woman_fire_B")
+//{
+	//vil_woman_fire_hands_out_VO_ -commented out
+//}
+
+Anim("vil_woman_fire_C")
+{
+	Event("ShowVillageStickA", 0.19)
+	Event("HideVillageStickA", 0.89)
+	Sound("vil_woman_fire_C_sfx_", "PVE\Villagers\SFX\Woman_Fire", 0.18)
+	VoiceOver("vil_woman_fire_C_VO_", "PVE\Villagers\Woman\woman_fire", 0.18, 0.75)
+}
+Anim("vil_woman_fire_hands")
+{
+	VoiceOver("vil_woman_fire_hands_out_VO_", "PVE\Villagers\Woman\woman_fire", 0.29, 0.75)
+}
+
+
+/////////////////////MORTAR///////////////////////
+Anim("vil_woman_start_mortar")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageStickPlain", 0.1)
+	Event("ShowVillageMortarSmall", 0.1)
+	Event("ShowVillageGreenSkirt", 0.1)
+}
+
+/////////////
+Anim("vil_woman_mortar_loop_A")
+{
+	Sound("Woman_Mortar_loop_A_sfx_", "PVE\Villagers\SFX\Woman_Bowl", 0.01)
+}
+Anim("vil_woman_mortar_loop_B")
+{
+	Sound("Woman_Mortar_loop_B_sfx_", "PVE\Villagers\SFX\Woman_Bowl", 0.1)
+}
+Anim("vil_woman_mortar_break_A")
+{
+}
+Anim("vil_woman_mortar_break_B")
+{
+	Sound("Woman_Mortar_break_B_sfx_", "PVE\Villagers\SFX\Woman_Bowl", 0.2)
+}
+Anim("vil_woman_mortar_start")
+{
+	
+}
+Anim("vil_woman_mortar_end")
+{
+	
+}
+Anim("vil_woman_mortar_idle")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+
+//////////////////////SLEEP///////////////////////
+Anim("vil_woman_start_sleep")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageHammock", 0.1)
+	Event("ShowVillageGreenSkirt", 0.1)
+}
+/////////////
+Anim("vil_woman_sleep")
+{
+	VoiceOver("Vil_woman_sleep_loop_VO_", "PVE\Villagers\Woman\woman_sleep", 0.29, 0.75)
+}
+
+//////////////////////LEAF///////////////////////
+Anim("vil_woman_start_leaf")
+{
+	Event("VillageActorIdleStart", 0.01);	
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageBowlA", 0.1)
+	Event("ShowVillageStickPlainB", 0.1)
+	Event("ShowVillageWoodTamper", 0.1)
+	Event("ShowVillageGreenSkirt", 0.1)
+}
+/////////////
+Anim("vil_woman_leaf_work")
+{
+	Event("HideVillageLeafs", 0.28)
+	Event("ShowVillageLeafs", 0.37)
+}
+Anim("vil_woman_leaf_work_to_idle")
+{
+	Event("HideVillageLeafs", 0.14)
+}
+Anim("vil_woman_leaf_idle")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+Anim("vil_woman_leaf_idle_to_work")
+{
+	Event("ShowVillageLeafs", 0.77)
+}
+
+//////////////////////COOK///////////////////////
+Anim("vil_woman_start_cook")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageBowlA", 0.1)
+	Event("ShowVillageSmallStickPlain", 0.1)
+	Event("ShowVillageGreenSkirt", 0.1)
+	//Event("ShowVillageCookingPot", 0.1)
+}
+
+/////////////
+Anim("vil_woman_cook_idle")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+Anim("vil_woman_cook_work")
+{
+	Event("ShowVillageLeafsB", 0.07)
+	Event("HideVillageLeafsB", 0.16)
+	Sound("vil_woman_cook_work_sfx_", "PVE\Villagers\SFX\Woman_Cook", 0.07)
+	VoiceOver("vil_woman_cook_work_VO_", "PVE\Villagers\Woman\woman_cook", 0.07, 0.75)
+}
+
+//////////////////////DIG///////////////////////
+Anim("vil_woman_start_dig")
+{	
+	Event("VillageActorIdleStart", 0.01);	
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillagePlantB", 0.1)
+	Event("ShowVillageStoneAxe", 0.1)
+	Event("ShowVillageGreenSkirt", 0.1)
+}
+
+/////////////
+Anim("vil_woman_dig")
+{
+
+	Event("ShowVillagePlantA", 0.38)
+	Event("HideVillagePlantB", 0.38)
+	Event("HideVillagePlantA", 0.44)
+}
+Anim("vil_woman_dig_idle")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+
+//////////////////////FISH///////////////////////
+
+Anim("vil_woman_fish_start")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageStoneBlade", 0.1)
+	Event("ShowVillageGreenSkirt", 0.1)
+}
+
+Anim("vil_woman_fish_take")
+{
+	Event("ShowVillageFish", 0.28)
+	Sound("vil_woman_fish_take_sfx_", "PVE\Villagers\SFX\Woman_Fish", 0.01)
+	VoiceOver("vil_woman_fish_take_VO_", "PVE\Villagers\Woman\woman_fish", 0.43, 0.75)
+}
+
+Anim("vil_woman_fish_work")
+{
+	Sound("vil_woman_fish_work_sfx_", "PVE\Villagers\SFX\Woman_Fish", 0.01)
+	VoiceOver("vil_woman_fish_work_VO_", "PVE\Villagers\Woman\woman_fish", 0.55, 0.75)
+}
+Anim("vil_woman_fish_drop")
+{
+	Sound("vil_woman_fish_drop_sfx_", "PVE\Villagers\SFX\Woman_Fish", 0.01)
+	VoiceOver("vil_woman_fish_drop_VO_", "PVE\Villagers\Woman\woman_fish", 0.45, 0.75)
+	Event("HideVillageFish", 0.665)
+}
+Anim("vil_woman_fish_idle")
+{
+	//Sound("vil_woman_cook_work_sfx_", "PVE\Villagers\SFX\Woman_Fish", 0.07)
+	//VoiceOver("vil_woman_cook_work_VO_", "PVE\Villagers\Woman\woman_fish", 0.01, 0.75)
+	Event("VillageActorIdleStart", 0.01);
+}
+Anim("vil_woman_fish_idle_dirt")
+{
+	Sound("vil_woman_fish_idle_dirt_sfx_", "PVE\Villagers\SFX\Woman_Fish", 0.01)
+	
+}
+
+//////////////////////NET///////////////////////
+
+
+Anim("vil_woman_net_start")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageNet", 0.1);
+	Event("ShowVillageRedSkirt", 0.1);
+	Event("ShowVillagePants", 0.1);
+}
+
+Anim("vil_woman_net_idle")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+Anim("vil_woman_net_idle_to_work")
+{
+	
+}
+Anim("vil_woman_net_repair")
+{
+	Event("ShowVillageCord", 0.135)
+	Event("HideVillageCord", 0.9)
+	VoiceOver("vil_woman_net_repair_VO_", "PVE\Villagers\Woman\woman_net", 0.07, 0.75)
+}
+Anim("vil_woman_net_work_to_idle")
+{
+	
+}
+
+
+

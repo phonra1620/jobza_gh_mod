@@ -1,0 +1,5 @@
+Idle("frog_idle_01", "frog_idle_02", "frog_idle_03","Cane_Toad_Call_00", "Cane_Toad_Call_01", "Cane_Toad_Call_02", "Cane_Toad_Call_03")
+Panic("frog_idle_01", "frog_idle_02", "frog_idle_03")
+Jump("Cane_Toad_Jump_00", "Cane_Toad_Jump_01", "Cane_Toad_Jump_02", "Cane_Toad_Jump_03")
+Death("Cane_Death_00")
+Call("Cane_Toad_Call_00", "Cane_Toad_Call_01", "Cane_Toad_Call_02", "Cane_Toad_Call_03")

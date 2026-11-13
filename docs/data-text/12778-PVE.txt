@@ -1,0 +1,149 @@
+Node("PvEVariableCreator", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateBoolVariable:IsTutorialFinished:false", False, 0)
+	Element("CreateBoolVariable:PvE_Var_Dialog_Debug:false", False, 1)
+}
+
+Node("Includer_PvE", True, 155.0000, 240.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Reminders", False, 0)
+	Element("Include:Unlocks", False, 1)
+	Element("Include:Map", False, 2)
+	Element("Include:PvE_MaP", False, 3)
+	Element("Include:PvE_Story", False, 4)
+	Element("Include:PvE_Legend_Quest", False, 5)
+	Element("Include:PvE_Legend_Map", False, 6)
+	Element("Include:PvE_Activities", False, 7)
+	Element("Include:PvE2_MaP", False, 8)
+}
+Node("Includer_PvE3", True, 155.0000, 240.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:PvE3_GrapplingHookPlaces", False, 9)
+	Element("Include:PvE3_MaP", False, 10)
+	Element("Include:PvE3_Legend_Quest", False, 11)
+	Element("Include:PvE3_Arenas", False, 12)
+	Element("Include:PvE3_BoatRepair", False, 13)
+	Element("Include:PVE3_EndingCutscene", False, 14)
+	Element("Include:PvE3C_MaP", False, 15)
+	Element("Include:NotStory_Unlocks", False, 16)
+	Element("Include:LootBoxes_PVE", False, 17)
+	Element("Include:PvE_GateKeepers", False, 18)
+	Element("Include:PvE_ArenaForge", False, 19)
+	Element("Include:Unlock_Eternal_Fire", False, 20)
+}
+
+Node("PvE_DebugIncludeForMode", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("Include:PvE_Debug", False, 1)
+}
+
+Node("PvE_Start", True, 158.0000, 138.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	//Element("SetTutorial:true", False, 20)
+	Element("SetConditionFromScript:Player_condition_after_Tutorial", False, 0)
+	Element("SetDayTime:08:00", False, 412)
+	Element("PlayMovieWithFade:PvE_Intro:2.0", False, 111)
+	Element("IsMovieWithFadePlaying:false", False, 112)
+	Element("UnlockNotepad", False, 5)
+	Element("UnlockWatch", False, 6)
+	Element("BalanceSystemUnblockListsUpdate", False, 2)
+	Element("BalanceSystemSetItemsLastSpawnToPlayerPos", False, 3)
+	Element("UnblockHumanAISpawn:true", False, 4)
+	//Element("FadeIn:0.7", False, 8)
+	Element("SetBoolVariable:IsTutorialFinished:true", False, 15)
+	Element("SetBoolVariable:PVEIntroFinished:true", False, 16)
+	//Element("SetTutorial:false", False, 9)
+	Element("DisableObject:Bamboo_BridgeGhost", False, 34)
+	Element("DisableObject:Water_UpdateBridge", False, 35)
+	Element("PerformSave", False, 33)
+}
+
+
+Node("Village_01_farmers_1stTimeMusic ", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_01_audio_sensor", False, 0)
+	Element("PlayMusic:Green_hell_pve_discover_good_tribes1:false:0.7:0", False, 1)
+	//Element("PlayerIsInSensor:false:Village_01_audio_sensor", False, 3)
+	Element("IsMusicPlaying:false:0", False, 2)
+	Element("Wait:25", False, 25)
+	Element("ActivateScenarioNode:Village_01_farmers_Music", False, 5)
+}
+
+Node("Village_01_farmers_Music", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("Wait:25", False, 113)
+	Element("PlayerIsInSensor:true:Village_01_audio_sensor", False, 0)
+	Element("PlayMusic:Green_hell_pve_Village1_start1:false:0.7:0", False, 1)
+	Element("PlayerIsInSensor:false:Village_01_audio_sensor", False, 3)
+	Element("StopMusic:5.0:0", False, 4)
+	Element("IsMusicPlaying:false:0", False, 5)
+	Element("Wait:25", False, 114)
+	Element("PlayerIsInSensor:true:Village_01_audio_sensor", False, 6)
+	Element("PlayMusic:Green_hell_pve_Village1_start2:false:0.7:0", False, 7)
+	Element("PlayerIsInSensor:false:Village_01_audio_sensor", False, 8)
+	Element("StopMusic:5.0:0", False, 9)
+	Element("IsMusicPlaying:false:0", False, 10)
+	Element("Wait:25", False, 115)
+	Element("PlayerIsInSensor:true:Village_01_audio_sensor", False, 11)
+	Element("PlayMusic:Green_hell_pve_Village1_start3:false:0.7:0", False, 12)
+	Element("PlayerIsInSensor:false:Village_01_audio_sensor", False, 13)
+	Element("StopMusic:5.0:0", False, 14)
+	Element("IsMusicPlaying:false:0", False, 15)
+}
+
+Node("Village_02_hunters_1stTimeMusic ", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_02_audio_sensor", False, 0)
+	Element("PlayMusic:Green_hell_pve_discover_good_tribes1:false:0.7:0", False, 1)
+	Element("IsMusicPlaying:false:0", False, 2)
+	Element("Wait:25", False, 25)
+	Element("ActivateScenarioNode:Village_02_hunters_Music", False, 5)
+}
+
+Node("Village_02_hunters_Music", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("Wait:25", False, 113)
+	Element("PlayerIsInSensor:true:Village_02_audio_sensor", False, 0)
+	Element("PlayMusic:Green_hell_pve_Village2_start1:false:0.7:0", False, 1)
+	Element("PlayerIsInSensor:false:Village_02_audio_sensor", False, 3)
+	Element("StopMusic:5.0:0", False, 4)
+	Element("IsMusicPlaying:false:0", False, 5)
+	Element("Wait:25", False, 114)
+	Element("PlayerIsInSensor:true:Village_02_audio_sensor", False, 6)
+	Element("PlayMusic:Green_hell_pve_Village2_start2:false:0.7:0", False, 7)
+	Element("PlayerIsInSensor:false:Village_02_audio_sensor", False, 8)
+	Element("StopMusic:5.0:0", False, 9)
+	Element("IsMusicPlaying:false:0", False, 10)
+}
+
+Node("Village_03_fishing_1stTimeMusic ", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_03_audio_sensor", False, 0)
+	Element("PlayMusic:Green_hell_pve_discover_good_tribes1:false:0.7:0", False, 1)
+	Element("IsMusicPlaying:false:0", False, 2)
+	Element("Wait:25", False, 3)
+	Element("ActivateScenarioNode:Village_03_fishing_Music", False, 4)
+}
+
+Node("Village_03_fishing_Music", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("Wait:25", False, 0)
+	Element("PlayerIsInSensor:true:Village_03_audio_sensor", False, 1)
+	Element("PlayMusic:Green_hell_pve_Village3_start1:false:0.7:0", False, 2)
+	Element("PlayerIsInSensor:false:Village_03_audio_sensor", False, 3)
+	Element("StopMusic:5.0:0", False, 4)
+	Element("IsMusicPlaying:false:0", False, 5)
+	Element("Wait:25", False, 6)
+	Element("PlayerIsInSensor:true:Village_03_audio_sensor", False, 7)
+	Element("PlayMusic:Green_hell_pve_Village3_start2:false:0.7:0", False, 8)
+	Element("PlayerIsInSensor:false:Village_03_audio_sensor", False, 9)
+	Element("StopMusic:5.0:0", False, 10)
+	Element("IsMusicPlaying:false:0", False, 11)
+	Element("Wait:25", False, 12)
+	Element("PlayerIsInSensor:true:Village_03_audio_sensor", False, 13)
+	Element("PlayMusic:Green_hell_pve_Village3_start3:false:0.7:0", False, 14)
+	Element("PlayerIsInSensor:false:Village_03_audio_sensor", False, 15)
+	Element("StopMusic:5.0:0", False, 16)
+	Element("IsMusicPlaying:false:0", False, 17)
+}

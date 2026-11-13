@@ -1,0 +1,89 @@
+MaxStamina(100.0)
+Stamina(100.0)
+MaxEnergy(100.0)
+Energy(100.0)
+MaxHP(100.0)
+HP(100.0)
+MaxNutritionFat(100.0)
+NutritionFat(50.0)
+MaxNutritionCarbo(100.0)
+NutritionCarbo(50.0)
+MaxNutritionProtein(100.0)
+NutritionProtein(50.0)
+MaxSanity(100.0)
+Sanity(100.0)
+MaxHydration(100.0)
+Hydration(18.0)
+MaxWeight(50.0);
+
+StaminaConsumptionWalkPerSecond(-25.0)
+StaminaConsumptionRunPerSecond(3.0)
+StaminaConsumptionDepletedPerSecond(-0.1)
+StaminaRegenerationPerSecond(30.0)
+StaminaDepletedLevel(0.1)
+StaminaDecrease("Jump", 10.0)
+StaminaDecrease("Attack", 5.0)
+StaminaDecrease("Swing", 5.0)
+StaminaDecrease("Throw", 15.0)
+
+EnergyDecrease("Jump", 0.3)
+EnergyDecrease("Attack", 0.15)
+EnergyDecrease("Swing", 0.15)
+EnergyDecrease("Throw", 0.4)
+
+EnergyConsumptionPerSecond(0.05)
+//EnergyConsumptionPerSecond(1.5)
+EnergyConsumptionPerSecondNoNutrition(0.1)
+EnergyConsumptionPerSecondFever(0.1)
+
+HealtLossPerSecondNoNutrition(0.05)
+//HealtLossPerSecondNoNutrition(1.5)
+HealthRecoveryPerDay(0.25)
+
+
+// Consumption Per Secound 
+HydrationConsumptionPerSecond(0.08)
+NutritionCarbohydratesConsumptionPerSecond(0.04)
+NutritionFatConsumptionPerSecond(0.025)
+NutritionProteinsConsumptionPerSecond(0.025)
+
+
+// increase consumption when no carbs
+NutritionFatConsumptionMulNoCarbs(2.0)
+NutritionProteinsConsumptionMulNoCarbs(2.0)
+
+
+// Consumption x when runing
+NutritionCarbohydratesConsumptionRunMul(1.3)
+NutritionFatConsumptionRunMul(1.3)
+NutritionProteinsConsumptionRunMul(1.3)
+HydrationConsumptionRunMul(1.3)
+
+// Consumpion x when doing actions
+NutritionCarbohydratesConsumptionActionMul(4.0)
+NutritionFatConsumptionActionMul(2.0)
+NutritionProteinsConsumptionActionMul(3.0)
+
+// Consumption x whith different weights
+NutritionCarbohydratesConsumptionWeightNormalMul(1.0)
+NutritionFatConsumptionWeightNormalMul(1.0)
+NutritionProteinsConsumptionWeightNormalMul(1.0)
+NutritionCarbohydratesConsumptionWeightOverloadMul(1.1)
+NutritionFatConsumptionWeightOverloadMul(1.1)
+NutritionProteinsConsumptionWeightOverloadMul(1.1)
+NutritionCarbohydratesConsumptionWeightCriticalMul(1.2)
+NutritionFatConsumptionWeightCriticalMul(1.2)
+NutritionProteinsConsumptionWeightCriticalMul(1.2)
+
+OxygenConsumptionPerSecond(4.0)
+HealthLossPerSecondNoOxygen(10.0)
+
+SanityConsumptionWoundPerSecond(0.05)
+SanityConsumptionHungerPerSecond(0.05)
+SanityConsumptionNoHydrationPerSecond(0.07)
+
+//health loss
+HealthLossPerSecondNoHydration(0.07)
+
+
+

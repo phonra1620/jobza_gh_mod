@@ -1,0 +1,14 @@
+New profile
+hips
+spine1
+head
+L_up_leg
+L_leg
+L_foot
+L_up_arm
+L_forearm
+R_up_leg
+R_leg
+R_foot
+R_up_arm
+R_forearm

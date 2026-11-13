@@ -1,0 +1,104 @@
+Node("AfterReadingBook_Unlocks", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("WasReadedAndOff:true:Collectable_Survival_Guide_Book_Cover", False, 0)
+	Element("UnlockItemInNotepad:Logs_Bed", False, 1)
+	Element("UnlockItemInNotepad:BambooLog_Bed", False, 2)
+	Element("UnlockItemInNotepad:Medium_Bamboo_Shelter", False, 3)
+	Element("UnlockItemInNotepad:shrimp_trap", False, 4)
+	Element("UnlockItemInNotepad:Water_Filter", False, 5)
+	Element("UnlockItemInNotepad:Bamboo_Water_Filter", False, 6)
+	Element("SetBoolVariable:COOP_Water_Filter_Unlock:true", False, 7)
+	Element("UnlockItemInNotepad:Water_Collector", False, 8)
+	Element("UnlockItemInNotepad:Bamboo_Water_Collector", False, 9)
+	Element("SetBoolVariable:COOP_Water_Collector_Unlock:true", False, 10)
+	Element("UnlockItemInNotepad:Campfire_Rack", False, 11)
+	Element("UnlockItemInNotepad:Fire_Bow", False, 12)
+	Element("UnlockItemInNotepad:Fishing_Rod", False, 13)
+	Element("UnlockItemInNotepad:Bone_Hook", False, 14)
+	Element("UnlockItemInNotepad:Fish_Hook", False, 15)
+	Element("UnlockItemInNotepad:Stone_Blade", False, 16)
+	Element("UnlockItemInNotepad:Stone_Axe", False, 17)
+}
+Node("PvE_Unlock_SnareTrap", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_SnareTrap", False, 0)
+	Element("UnlockItemInNotepad:Snare_Trap", False, 1)
+}
+Node("PvE_Unlock_Bamboo_Smoker", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Bamboo_Smoker", False, 0)
+	Element("UnlockItemInNotepad:Bamboo_Smoker", False, 1)
+	Element("UnlockItemInNotepad:Smoker", False, 2)
+}
+Node("PvE_Unlock_Campfire", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Campfire", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+Node("PvE_Unlock_CampfireB", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Campfire2", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+Node("PvE_Unlock_CampfireC", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Campfire3", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+Node("PvE_Unlock_CampfireD", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Campfire4", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+Node("PvE_Unlock_KillerTrap", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_KillerTrap", False, 0)
+	Element("UnlockItemInNotepad:Killer_Trap", False, 1)
+}
+Node("PvE_Unlock_Stick_Fish_Trap", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Stick_Fish_Trap", False, 0)
+	Element("UnlockItemInNotepad:Stick_Fish_Trap", False, 1)
+	Element("UnlockItemInNotepad:Big_Stick_Fish_Trap", False, 2)
+}
+Node("PvE_Unlock_Weapon_Rack", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Weapon_Rack", False, 0)
+	Element("UnlockItemInNotepad:Weapon_Rack", False, 1)
+    Element("UnlockItemInNotepadNoMsg:bamboo_Weapon_Rack", False, 2)
+
+}
+Node("PvE_Unlock_Dryer", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Dryer", False, 0)
+	Element("UnlockItemInNotepad:Dryer", False, 1)
+	Element("UnlockItemInNotepad:Bamboo_Dryer", False, 2)
+}
+Node("PvE_Unlock_Cage_Trap", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Unlock_Cage_Trap", False, 0)
+	Element("UnlockItemInNotepad:Cage_Trap", False, 1)
+}
+
+
+Node("PvE_FoodRationInfo", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("UnlockItemInfo:FoodRation_Carbs", False, 0)
+	Element("UnlockItemInfo:FoodRation_Carbs_Spoiled", False, 1)
+	Element("UnlockItemInfo:FoodRation_Fat", False, 2)
+	Element("UnlockItemInfo:FoodRation_Fat_Spoiled", False, 3)
+	Element("UnlockItemInfo:FoodRation_Protein", False, 4)
+	Element("UnlockItemInfo:FoodRation_Protein_Spoiled", False, 5)
+}
+
+
+
+
+
+
+
+

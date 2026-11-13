@@ -1,0 +1,411 @@
+
+Anim("thug_2_idle_calm_A")
+{
+	
+}
+Anim("thug_2_idle_calm_B")
+{
+	
+}
+Anim("thug_2_walk_calm_start")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.65, "R_foot")
+	Footstep(0.97, "L_foot")
+}
+Anim("thug_2_walk_calm_forward")
+{
+	Footstep(0.44, "R_foot")
+	Footstep(0.94, "L_foot")
+}
+Anim("thug_2_walk_calm_stop")
+{
+	Event("StopMoveEnd", 0.5)
+	Footstep(0.17, "R_foot")
+	Footstep(0.37, "L_foot")
+	Footstep(0.56, "R_foot")
+}
+//---------------------------move combat------------------------------
+Anim("thug_2_walk_combat_start_forward")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.58, "R_foot")
+	Footstep(0.96, "L_foot")
+}
+Anim("thug_2_walk_combat_start_left_90")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.49, "L_foot")
+	Footstep(0.76, "R_foot")
+	Footstep(0.97, "L_foot")
+}
+Anim("thug_2_walk_combat_start_right_90")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.26, "R_foot")
+	Footstep(0.54, "L_foot")
+	Footstep(0.77, "R_foot")
+	Footstep(0.98, "L_foot")
+}
+Anim("thug_2_walk_combat_start_left_180")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.56, "L_foot")
+	Footstep(0.78, "R_foot")
+	Footstep(0.98, "L_foot")
+}
+Anim("thug_2_walk_combat_start_right_180")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.20, "L_foot")
+	Footstep(0.38, "R_foot")
+	Footstep(0.58, "L_foot")
+	Footstep(0.80, "R_foot")
+	Footstep(0.98, "L_foot")
+}
+Anim("thug_2_walk_combat")
+{
+	Footstep(0.5, "R_foot")
+	Footstep(0.98, "L_foot")
+}
+
+Anim("thug_2_charge")
+{
+	Footstep(0.48, "R_foot")
+	Footstep(0.97, "L_foot")
+	Footstep(0.70, "R_foot")
+}
+Anim("thug_2_combat_rotate_left_45")
+{
+	Footstep(0.23, "R_foot")
+	Footstep(0.44, "L_foot")
+	Footstep(0.68, "R_foot")
+}
+Anim("thug_2_combat_rotate_right_45")
+{
+	Footstep(0.16, "L_foot")
+	Footstep(0.37, "R_foot")
+	Footstep(0.59, "L_foot")
+	Footstep(0.78, "R_foot")
+}
+Anim("thug_2_combat_rotate_left_90")
+{
+	Footstep(0.25, "R_foot")
+	Footstep(0.46, "L_foot")
+}
+Anim("thug_2_combat_rotate_right_90")
+{
+	Footstep(0.30, "R_foot")
+	Footstep(0.52, "L_foot")
+	Footstep(0.73, "R_foot")
+}
+Anim("thug_2_combat_rotate_left_135")
+{
+	Footstep(0.16, "R_foot")
+	Footstep(0.41, "L_foot")
+	Footstep(0.66, "R_foot")
+}
+Anim("thug_2_combat_rotate_right_135")
+{
+	Footstep(0.22, "L_foot")
+	Footstep(0.38, "R_foot")
+	Footstep(0.59, "L_foot")
+	Footstep(0.78, "R_foot")
+}
+Anim("thug_2_combat_rotate_left_180")
+{
+	Footstep(0.16, "L_foot")
+	Footstep(0.39, "R_foot")
+	Footstep(0.59, "L_foot")
+	Footstep(0.78, "R_foot")
+}
+Anim("thug_2_combat_rotate_right_180")
+{
+	Footstep(0.22, "L_foot")
+	Footstep(0.37, "R_foot")
+	Footstep(0.58, "L_foot")
+	Footstep(0.76, "R_foot")
+}
+Anim("thug_2_strafe_left")
+{
+	Footstep(0.53, "L_foot")
+	Footstep(0.95, "R_foot")
+}
+Anim("thug_2_strafe_right")
+{
+	Footstep(0.48, "R_foot")
+	Footstep(0.97, "L_foot")
+}
+Anim("thug_2_taunt")
+{
+	Sound("taunt_a_", "AI/Thug/taunt_a", 0.0)
+	//Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.0)
+	Footstep(0.15, "L_foot")
+	Footstep(0.23, "R_foot")
+	Footstep(0.35, "L_foot")
+	Footstep(0.43, "R_foot")
+	Footstep(0.50, "L_foot")
+	Footstep(0.61, "R_foot")
+	Footstep(0.70, "L_foot")
+}
+//---------------------------combat------------------------------
+Anim("thug_2_attack_left_to_right")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.15)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.45)
+	Event("GiveDamageLeft", 0.39)
+	Event("GiveDamage", 0.46)
+	Event("GiveDamageRight", 0.49)
+	Footstep(0.16, "L_foot")
+	Footstep(0.43, "R_foot")
+	Footstep(0.51, "L_foot")
+	Footstep(0.62, "R_foot")
+	Footstep(0.74, "L_foot")
+	Footstep(0.83, "R_foot")
+}
+Anim("thug_2_attack_right_to_left")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.1)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.45)
+	Event("GiveDamageRight", 0.43)
+	Event("GiveDamage", 0.49)
+	Event("GiveDamageLeft", 0.55)
+	Footstep(0.09, "R_foot")
+	Footstep(0.41, "L_foot")
+	Footstep(0.53, "L_foot")
+	Footstep(0.70, "R_foot")
+	Footstep(0.88, "L_foot")
+}
+Anim("thug_2_attack_up_to_down")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.1)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.5)
+	Event("GiveDamage", 0.54)
+	Footstep(0.27, "L_foot")
+	Footstep(0.49, "L_foot")
+	Footstep(0.68, "R_foot")
+	Footstep(0.84, "L_foot")
+}
+Anim("thug_2_attack_combo_a")
+{
+	Sound("attack_combo_a_", "AI/Thug/attack_combo_a", 0.09)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.33)	
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.6)
+	Event("GiveDamageLeft", 0.33)
+	Event("GiveDamage", 0.36)
+	Event("GiveDamageRight", 0.39)
+	Event("GiveDamageLeft", 0.59)
+	Event("GiveDamage", 0.61)
+	Event("GiveDamageRight", 0.64)
+	Footstep(0.34, "L_foot")
+	Footstep(0.38, "R_foot")
+	Footstep(0.44, "L_foot")
+	Footstep(0.59, "R_foot")
+	Footstep(0.78, "L_foot")
+	Footstep(0.89, "R_foot")
+}
+Anim("thug_2_attack_combo_b")
+{
+	Sound("attack_combo_b_", "AI/Thug/attack_combo_b", 0.2)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.38)	
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.65)
+	Event("GiveDamage", 0.39)
+	Event("GiveDamageLeft", 0.41)
+	Event("GiveDamage", 0.66)
+	Footstep(0.35, "L_foot")
+	Footstep(0.39, "R_foot")
+	Footstep(0.58, "R_foot")
+	Footstep(0.66, "L_foot")
+	Footstep(0.72, "R_foot")
+	Footstep(0.85, "L_foot")
+}
+Anim("thug_2_hit_reaction_front_left")
+{
+	
+	Sound("hit_reaction_a_", "AI/Thug/hit_reaction_a", 0.0)
+}
+Anim("thug_2_hit_reaction_front_mid")
+{
+	Sound("hit_reaction_b_", "AI/Thug/hit_reaction_b", 0.0)
+}
+Anim("thug_2_hit_reaction_front_right")
+{
+	Sound("hit_reaction_c_", "AI/Thug/hit_reaction_c", 0.0)
+	Footstep(0.23, "L_foot")
+}
+Anim("thug_2_punchback_left")
+{
+	Sound("punchback_b_", "AI/Thug/punchback_b", 0.0)
+	
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.32)
+	Event("GiveDamageLeft", 0.31)
+	Event("GiveDamage", 0.34)
+	Event("GiveDamageRight", 0.36)
+	Footstep(0.08, "R_foot")
+	Footstep(0.16, "L_foot")
+	Footstep(0.30, "R_foot")
+	Footstep(0.57, "L_foot")
+	Footstep(0.70, "R_foot")
+}
+Anim("thug_2_punchback_right")
+{
+	Sound("punchback_a_", "AI/Thug/punchback_a", 0.0)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.22)
+	Event("GiveDamageRight", 0.261)
+	Event("GiveDamage", 0.26)
+	Event("GiveDamageLeft", 0.28)
+	Footstep(0.22, "L_foot")
+	Footstep(0.30, "R_foot")
+	Footstep(0.52, "L_foot")
+	Footstep(0.74, "R_foot")
+}
+Anim("thug_2_run_attack_A")
+{
+	Sound("short_attack_", "AI/Thug/short_attack", 0.1)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.33)
+	Event("GiveDamage", 0.25)
+	Event("GiveDamage", 0.36)
+	Footstep(0.11, "R_foot")
+	Footstep(0.21, "L_foot")
+	Footstep(0.39, "R_foot")
+	Footstep(0.59, "L_foot")
+	Footstep(0.73, "R_foot")
+}
+Anim("thug_2_run_attack_B")
+{
+	Sound("charge_attack_c", "AI/Thug/charge_attack", 0.0)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.51)
+	Event("GiveDamage", 0.53)
+	Footstep(0.10, "R_foot")
+	Footstep(0.19, "L_foot")
+	Footstep(0.27, "R_foot")
+	Footstep(0.35, "L_foot")
+	Footstep(0.46, "R_foot")
+	Footstep(0.60, "L_foot")
+	Footstep(0.72, "R_foot")
+	Footstep(0.83, "L_foot")
+}
+Anim("thug_2_run_attack_C")
+{
+	Sound("charge_attack_b", "AI/Thug/charge_attack", 0.0)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.44)
+	Event("GiveDamage", 0.45)
+	Footstep(0.09, "R_foot")
+	Footstep(0.17, "L_foot")
+	Footstep(0.26, "R_foot")
+	Footstep(0.33, "L_foot")
+	Footstep(0.47, "R_foot")
+	Footstep(0.58, "L_foot")
+	Footstep(0.67, "R_foot")
+	Footstep(0.77, "L_foot")
+}
+Anim("thug_2_walk_attack_left")
+{
+	Sound("short_attack_", "AI/Thug/short_attack", 0.0)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.27)
+	Event("GiveDamageLeft", 0.26)
+	Event("GiveDamage", 0.315)
+	Footstep(0.16, "R_foot")
+	Footstep(0.34, "L_foot")
+	Footstep(0.57, "R_foot")
+	Footstep(0.74, "L_foot")
+}
+Anim("thug_2_walk_attack_right")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.0)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.4)
+	Event("GiveDamage", 0.42)
+	Footstep(0.15, "R_foot")
+	Footstep(0.28, "L_foot")
+	Footstep(0.43, "R_foot")
+	Footstep(0.60, "L_foot")
+	Footstep(0.73, "R_foot")
+}
+Anim("thug_2_walk_attack_combo")
+{
+	
+	Sound("charge_attack_d", "AI/Thug/charge_attack", 0.0)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.18)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.45)
+	Event("GiveDamage", 0.215)
+	Event("GiveDamage", 0.48)
+	Footstep(0.10, "R_foot")
+	Footstep(0.20, "L_foot")
+	Footstep(0.31, "R_foot")
+	Footstep(0.40, "L_foot")
+	Footstep(0.57, "R_foot")
+	Footstep(0.68, "L_foot")
+	Footstep(0.77, "R_foot")
+}
+
+Anim("thug_2_attack_right_90")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.2)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.48)
+	Event("GiveDamage", 0.5)
+	Footstep(0.19, "L_foot")
+	Footstep(0.47, "R_foot")
+	Footstep(0.54, "L_foot")
+	Footstep(0.64, "R_foot")
+	Footstep(0.75, "L_foot")
+	Footstep(0.84, "R_foot")
+}
+
+Anim("thug_2_attack_right_180")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.15)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.45)
+	Event("GiveDamage", 0.46)
+	Footstep(0.16, "R_foot")
+	Footstep(0.26, "L_foot")
+	Footstep(0.36, "L_foot")
+	Footstep(0.45, "R_foot")
+	Footstep(0.64, "L_foot")
+	Footstep(0.74, "R_foot")
+}
+
+Anim("thug_2_attack_left_90")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.3)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.57)
+	Event("GiveDamage", 0.61)
+	Footstep(0.18, "L_foot")
+	Footstep(0.30, "R_foot")
+	Footstep(0.56, "L_foot")
+	Footstep(0.78, "R_foot")
+	Footstep(0.90, "L_foot")
+}
+
+Anim("thug_2_attack_left_180")
+{
+	Sound("attack_left_to_right_", "AI/Thug/attack_left_to_right", 0.3)
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.6)
+	Event("GiveDamage", 0.61)
+	Footstep(0.12, "L_foot")
+	Footstep(0.27, "R_foot")
+	Footstep(0.42, "L_foot")
+	Footstep(0.58, "L_foot")
+	Footstep(0.78, "R_foot")
+}
+
+Anim("thug_2_charge_b_attack")
+{
+	Sound("2handed_axe_swoosh_", "AI/Thug/sfx", 0.13)
+	Sound("charge_attack_short_", "AI/Thug/charge_attack_short", 0.0)
+	Event("ChargeDamage", 0.1)
+}
+
+
+//-----------------------rock_throw------------------------
+//Anim("spr_rock_throw_czyste")
+//{
+//	Event("ThrowStone", 0.4)
+//}
+//---------------------------------------------------------
+//-----------------------axe_throw------------------------
+Anim("thug_2_axe_throw")
+{
+	Sound("axe_throw_", "AI/Thug/axe_throw", 0.1)
+}
+//---------------------------------------------------------
+

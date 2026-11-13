@@ -1,0 +1,33 @@
+//DontInterruptState("current_state_name", "target_state_name")
+
+// DontInterruptState("Fire_Bow_Idle", "Fire_Bow")
+// DontInterruptState("Rubing_Wood_Idle", "Rubing_Wood")
+// DontInterruptState("Hand_Drill_Stick_Idle", "Hand_Drill_Stick")
+// DontInterruptState("Hand_Drill_Board_Idle", "Hand_Drill_Board")
+// DontInterruptState("MudMixerIn", "MudMixerLoop")
+DontInterruptState("CleanUp", "Unarmed_Idle")
+
+//CustomBlend("current_state_name", "target_state_name", time)
+CustomBlend("any", "Sleeping", 0.0)
+CustomBlend("Sleeping", "Idle", 0.0)
+CustomBlend("SleepingInHammock", "Idle", 0.0)
+CustomBlend("any", "SleepingInHammock", 0.0)
+
+CustomBlend("any", "sleepingMask", 0.0)
+
+CustomBlend("Fire_Bow", "Fire_BowStandUp", 0.0)
+CustomBlend("Fire_Bow", "Fire_BowFail", 0.0)
+CustomBlend("Rubing_Wood", "Rubing_WoodStandUp", 0.0)
+CustomBlend("Rubing_Wood", "Rubing_WoodFail", 0.0)
+CustomBlend("Hand_Drill_Board", "Hand_DrillWoodStandUp", 0.0)
+CustomBlend("Hand_Drill_Board", "HandDrillFail", 0.0)
+CustomBlend("Hand_Drill_Stick", "Hand_DrillWoodStandUp", 0.0)
+CustomBlend("Hand_Drill_Stick", "HandDrillFail", 0.0)
+
+// PropFloat, PropInt, PropBool
+PropFloat("MoveSpeedForward")
+PropFloat("MoveSpeed")
+PropFloat("MoveDirection")
+PropFloat("BI_Show_Hand")
+PropFloat("BI_Show_Leg")
+

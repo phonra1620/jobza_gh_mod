@@ -1,0 +1,171 @@
+Node("Survival", True, 1098.0000, 173.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Teleport:Skip_Tutorial_Place:true", False)
+	Element("UnlockNotepad", False)
+	Element("UnlockWatch", False)
+	Element("PlayerAddItemToInventory:Axe", False)
+	Element("UnlockItemInNotepadNoMsg:Leaf_Bandage", False)
+	Element("UnlockItemInNotepadNoMsg:Bow", False)
+	Element("UnlockItemInNotepadNoMsg:Arrow", False)
+	Element("UnlockItemInNotepadNoMsg:Hand_Drill_Soft_Wood", False)
+	Element("UnlockItemInNotepadNoMsg:Stone_Spear", False)
+	Element("UnlockItemInNotepadNoMsg:Torch", False)
+	Element("UnlockItemInNotepadNoMsg:Rope", False)
+	Element("UnlockItemInNotepadNoMsg:Axe", False)
+	Element("UnlockItemInNotepadNoMsg:Stone_Blade", False)
+	Element("UnlockItemInNotepadNoMsg:Small_Fire", False)
+	Element("UnlockItemInNotepadNoMsg:Stone_Ring", False)
+	Element("UnlockItemInNotepadNoMsg:Campfire_Rack", False)
+	Element("UnlockItemInNotepadNoMsg:Water_Collector", False)
+	Element("UnlockItemInNotepadNoMsg:Water_Filter", False)
+	Element("UnlockItemInNotepadNoMsg:Small_Shelter", False)
+	Element("UnlockItemInNotepadNoMsg:Medium_Shelter", False)
+	Element("UnlockItemInNotepadNoMsg:Leaves_Bed", False)
+	Element("UnlockItemInNotepadNoMsg:Stone_Trap", False)
+	Element("UnlockItemInNotepadNoMsg:Snare_Trap", False)
+	Element("Wait:3", False)
+	Element("FadeIn:0.7", False)
+}
+Node("Low_Water", True, 301.0000, 336.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("BIIsLookingAt:true:RHand", False)
+	Element("Wait:7", False)
+	Element("PlayerCondition:Hydration:Less:30", False)
+	Element("StartDialog:Low_Water1", False)
+	Element("ShowHint:Low_Water", False)
+	Element("Wait:180", False)
+}
+Node("Low_Water2", False, 301.0000, 453.5000, 200.0000, 75.0000, "Low_Water", False)
+{
+	Element("PlayerCondition:Hydration:Less:30", False)
+	Element("StartDialog:Low_Water2", False)
+	Element("Wait:180", False)
+}
+Node("Low_Water3", False, 301.0000, 551.5000, 200.0000, 75.0000, "Low_Water2", False)
+{
+	Element("PlayerCondition:Hydration:Less:30", False)
+	Element("StartDialog:Low_Water3", False)
+	Element("Wait:180", False)
+	Element("ActivateScenarioNode:Low_Water", False)
+}
+Node("Low_Energy", True, 758.0000, 333.5000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("PlayerCondition:Energy:Less:25", False)
+	Element("ShowHint:Low_Energy", False)
+	Element("Wait:180", False)
+}
+Node("Low_NutritionFat", True, 532.0000, 238.5000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("PlayerCondition:NutritionFat:Less:25", True)
+	Element("IsLookingAtWatch:true", False)
+	Element("ShowHint:Low_NutritionFat", False)
+	Element("Wait:180", False)
+}
+Node("Low_NutritionCarbo", True, 757.0000, 238.5000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("PlayerCondition:NutritionFat:Less:25", True)
+	Element("IsLookingAtWatch:true", False)
+	Element("ShowHint:Low_NutritionCarbo", False)
+	Element("Wait:180", False)
+}
+Node("Low_NutritionProteins", True, 305.0000, 242.5000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("PlayerCondition:NutritionProteins:Less:25", True)
+	Element("IsLookingAtWatch:true", False)
+	Element("ShowHint:Low_NutritionProteins", False)
+	Element("Wait:180", False)
+}
+Node("Tribe_Village", True, 1103.0000, 90.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Old_Village_Sensor_Demo", False)
+	Element("PlayMusic:jingle_refugee:false", False)
+}
+Node("Survival_Lock", True, 1310.0000, 94.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:Fishing_Rod", False)
+	Element("LockCraftingItem:Bamboo_Fishing_Rod", False)
+	Element("LockCraftingItem:Bamboo_Fishing_Rod_Bone", False)
+	Element("LockCraftingItem:Fishing_Rod_Bone", False)
+	Element("LockCraftingItem:Bow", False)
+	Element("LockCraftingItem:Bamboo_Bow", False)
+	Element("LockCraftingItem:Tribe_Bow", False)
+	Element("LockCraftingItem:Fire_Bow", False)
+	Element("LockCraftingItem:Dryer", False)
+	Element("LockCraftingItem:Fish_Rod_Trap", False)
+	Element("LockCraftingItem:Four_Pronged_Bamboo_Spear", False)
+	Element("LockCraftingItem:Four_Pronged_Spear", False)
+	Element("LockCraftingItem:Campfire", False)
+	Element("LockCraftingItem:Logs_Bed", False)
+	Element("LockCraftingItem:Cage_Trap", False)
+	Element("LockCraftingItem:Killer_Trap", False)
+	Element("LockCraftingItem:Smoker", False)
+	Element("LockCraftingItem:Stick_Fish_Trap", False)
+}
+Node("Survival_4_Pronged_Spear", True, 1519.0000, 93.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Stone_Spear", False)
+	Element("UnlockCraftingItem:Four_Pronged_Spear", False)
+	Element("UnlockCraftingItem:Four_Pronged_Bamboo_Spear", False)
+	Element("UnlockItemInNotepad:Four_Pronged_Spear", False)
+	Element("UnlockItemInNotepad:Four_Pronged_Bamboo_Spear", False)
+}
+Node("Survival_Campfire", True, 1521.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Stone_Ring", False)
+	Element("UnlockCraftingItem:Campfire", False)
+	Element("UnlockItemInNotepad:Campfire", False)
+}
+Node("Survival_Logs_Bed", True, 1520.0000, 263.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Leaves_Bed", False)
+	Element("UnlockCraftingItem:Logs_Bed", False)
+	Element("UnlockItemInNotepad:Logs_Bed", False)
+}
+Node("Survival_Cage_Trap", True, 1522.0000, 348.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Stone_Trap", False)
+	Element("UnlockCraftingItem:Cage_Trap", False)
+	Element("UnlockItemInNotepad:Cage_Trap", False)
+}
+Node("Survival_Killer_Trap", True, 1522.0000, 432.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Cage_Trap", False)
+	Element("UnlockCraftingItem:Killer_Trap", False)
+	Element("UnlockItemInNotepad:Killer_Trap", False)
+}
+Node("Survival_bone_knife", True, 1744.0000, 93.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Bone_Knife", False)
+	Element("UnlockItemInNotepad:Bone_Knife", False)
+}
+Node("Start_Cutscene", True, 305.0000, 156.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerBlockMoves", False)
+	Element("PlayerBlockRotation", False)
+	Element("PlayCutscene:SittingByFire_Cutscene", False)
+	Element("IsCutscenePlaying:false", False)
+	Element("PlayerUnblockRotation", False)
+	Element("PlayerUnblockMoves", False)
+}
+Node("Survival_Smoker", True, 1959.0000, 92.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Smoker_Sensor_Demo", False)
+	Element("UnlockCraftingItem:Smoker", False)
+	Element("UnlockItemInNotepad:Smoker", False)
+}
+Node("Survival|_Stick_Fish_Trap", True, 1955.0000, 174.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Stick_Fish_Trap_Sensor_Demo", False)
+	Element("UnlockCraftingItem:Stick_Fish_Trap", False)
+	Element("UnlockItemInNotepad:Stick_Fish_Trap", False)
+}
+Node("Add_Injury", True, 1238.0000, 329.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("AddInjury:Laceration:RHand:Infected", False)
+}
+Node("End_Sound", True, 1105.0000, 3.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:End_Sound_Sensor_Demo", False)
+	Element("Wait:4", False)
+	Element("PlayAudioSource:End_Sound_Emiter", False)
+}

@@ -1,0 +1,11 @@
+//Item("Ladder")
+//{
+//	Clip("PL|RopeJumpUnder", "PL|Ladder_StartDown")
+//	Clip("PL|RopeClimbUp", "PL|Ladder_ClimbUp")
+//	Clip("PL|RopeClimbDown", "PL|Ladder_ClimbDown")
+//	Clip("PL|RopeClimbIdle", "PL|Ladder_Idle")
+//	Clip("PL|RopeClimbTakeOffUP", "PL|Ladder_EndUp")
+//	Clip("PL|RopeClimbTakeOffDown", "PL|Ladder_EndDown")
+//	Clip("PL|RopeClimbJumpUp", "PL|Ladder_StartUp")
+//	
+//}

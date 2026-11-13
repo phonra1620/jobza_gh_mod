@@ -1,0 +1,6 @@
+//CustomBlend("current_state_name", "target_state_name", time)
+CustomBlend("FireBowIdle", "FireBow_StartUp", 0.25)
+CustomBlend("FireBow_StartUp", "Fire_Bow_Break", 0.0126)
+CustomBlend("FireBow_StartUp", "FireBow_Finish", 0.0238)
+CustomBlend("FireBow_StartUp", "Fire_Bow_Finish", 0.0238)
+

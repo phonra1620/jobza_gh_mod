@@ -1,0 +1,191 @@
+﻿//---------------------------idle------------------------------
+Anim("child_idle_to_crouch")
+{
+	// Footstep(0.41, "R_foot")
+}
+
+Anim("child_crouch")
+{
+	//Sound("PreDreamChild_idle", "AI/KidRunner/KidRunner_Idle", 0.0)
+}
+
+Anim("child_crouch_to_idle")
+{
+	// Footstep(0.58, "R_foot")
+	// Footstep(0.77, "L_foot")
+}
+
+Anim("child_idle_a")
+{
+	//Sound("PreDreamChild_idle", "AI/KidRunner/KidRunner_Idle", 0.0)
+}
+
+Anim("child_idle_b")
+{
+	//Sound("PreDreamChild_idle", "AI/KidRunner/KidRunner_Idle", 0.0)
+}
+
+Anim("child_crouch_look_left_180")
+{
+	//Sound("PreDreamChild_idle", "AI/KidRunner/KidRunner_Idle", 0.0)
+}
+
+Anim("child_crouch_look_right_180")
+{
+	//Sound("PreDreamChild_idle", "AI/KidRunner/KidRunner_Idle", 0.0)
+}
+
+//---------------------------run------------------------------
+
+Anim("child_start_run_forward")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.34, "L_foot")
+	// Footstep(0.72, "R_foot")
+}
+
+Anim("child_start_run_left_90")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.51, "L_foot")
+	// Footstep(0.77, "R_foot")
+}
+
+Anim("child_start_run_left_180")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.38, "R_foot")
+	// Footstep(0.55, "L_foot")
+	// Footstep(0.77, "R_foot")
+}
+
+Anim("child_start_run_right_90")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.22, "L_foot")
+	// Footstep(0.61, "L_foot")
+	// Footstep(0.77, "R_foot")
+}
+
+Anim("child_start_run_right_180")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.50, "R_foot")
+	// Footstep(0.66, "L_foot")
+	// Footstep(0.81, "R_foot")
+}
+
+Anim("child_run_forward")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	// Footstep(0.01, "L_foot")
+	// Footstep(0.49, "R_foot")
+}
+
+Anim("child_run_forward_long")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.99)
+	// Footstep(0.001, "L_foot")
+	// Footstep(0.056, "R_foot")
+	// Footstep(0.133, "L_foot")
+	// Footstep(0.185, "R_foot")
+	// Footstep(0.257, "L_foot")
+	// Footstep(0.308, "R_foot")
+	// Footstep(0.380, "L_foot")
+	// Footstep(0.435, "R_foot")
+	// Footstep(0.510, "L_foot")
+	// Footstep(0.560, "R_foot")
+	// Footstep(0.634, "L_foot")
+	// Footstep(0.686, "R_foot")
+	// Footstep(0.758, "L_foot")
+	// Footstep(0.813, "R_foot")
+	// Footstep(0.881, "L_foot")
+	// Footstep(0.937, "R_foot")
+}
+
+
+Anim("child_stop_run")
+{
+	Event("StopMoveEnd", 0.6)
+	// Footstep(0.11, "R_foot")
+	// Footstep(0.27, "L_foot")
+	// Footstep(0.53, "R_foot")
+}
+
+Anim("child_stop_run_left_90")
+{
+	Event("StopMoveEnd", 0.5)
+	// Footstep(0.12, "R_foot")
+	// Footstep(0.24, "L_foot")
+	// Footstep(0.40, "R_foot")
+}
+
+Anim("child_stop_run_right_90")
+{
+	Event("StopMoveEnd", 0.5)
+	// Footstep(0.11, "R_foot")
+	// Footstep(0.22, "L_foot")
+	// Footstep(0.55, "R_foot")
+	// Footstep(0.79, "L_foot")
+}
+
+Anim("child_stop_run_right_180")//używany też do left 180
+{
+	Event("StopMoveEnd", 0.6)
+	// Footstep(0.11, "R_foot")
+	// Footstep(0.25, "L_foot")
+	// Footstep(0.48, "R_foot")
+}
+
+//--------run from crouch--------
+
+Anim("child_crouch_start_run_forward")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.34, "L_foot")
+	// Footstep(0.72, "R_foot")
+}
+
+Anim("child_crouch_start_run_left_90")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.25, "R_foot")
+	// Footstep(0.45, "L_foot")
+	// Footstep(0.75, "R_foot")
+}
+
+Anim("child_crouch_start_run_left_180")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.38, "R_foot")
+	// Footstep(0.55, "L_foot")
+	// Footstep(0.77, "R_foot")
+}
+
+Anim("child_crouch_start_run_right_90")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.61, "L_foot")
+	// Footstep(0.77, "R_foot")
+}
+
+Anim("child_crouch_start_run_right_180")
+{
+	//Sound("PreDreamChild_laugh", "AI/KidRunner/KidRunner_Laugh", 0.0)
+	Event("StartMoveEnd", 0.9)
+	// Footstep(0.30, "L_foot")
+	// Footstep(0.47, "R_foot")
+	// Footstep(0.66, "L_foot")
+	// Footstep(0.81, "R_foot")
+}
+

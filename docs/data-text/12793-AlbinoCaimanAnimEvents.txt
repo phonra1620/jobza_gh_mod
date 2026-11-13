@@ -1,0 +1,127 @@
+Anim("caiman_walk_to_swim")
+{
+	Event("WalkToSwimEnd", 0.9)
+	Footstep(0.15, "Hand.L")
+	Footstep(0.15, "BackFeet.R")
+	Sound("alligator_attack_water_splash_", "AI/BlackCaiman/alligator_attack_water_splash", 0.35)
+}
+
+Anim("caiman_swim_to_walk")
+{
+	Event("SwimToWalkEnd", 0.9)
+	Footstep(0.62, "BackFeet.L")
+	Footstep(0.69, "Hand.R")
+	Footstep(0.71, "BackFeet.R")
+	Footstep(0.75, "Hand.L")
+	Footstep(0.89, "Hand.R")
+	Footstep(0.89, "BackFeet.L")
+	Sound("alligator_attack_water_splash_", "AI/BlackCaiman/alligator_attack_water_splash", 0.57)
+}
+
+Anim("caiman_attack_forward")
+{
+	Event("GiveDamageLLeg", 0.3)
+	Footstep(0.36, "BackFeet.R")
+	Footstep(0.36, "BackFeet.L")
+	Footstep(0.43, "Hand.L")
+	Footstep(0.50, "Hand.R")
+	Footstep(0.78, "BackFeet.R")
+	Footstep(0.92, "BackFeet.L")
+}
+
+Anim("caiman_attack_left")
+{
+	Event("GiveDamageLLeg", 0.3)
+	Footstep(0.33, "BackFeet.L")
+	Footstep(0.36, "BackFeet.R")
+	Footstep(0.45, "Hand.L")
+	Footstep(0.45, "Hand.R")
+	Footstep(0.76, "BackFeet.R")
+	Footstep(0.78, "Hand.L")
+	Footstep(0.92, "Hand.R")
+	Footstep(0.92, "BackFeet.L")
+}
+
+Anim("caiman_attack_right")
+{
+	Event("GiveDamageRLeg", 0.3)
+	Footstep(0.45, "Hand.L")
+	Footstep(0.45, "Hand.R")
+	Footstep(0.78, "Hand.L")
+	Footstep(0.78, "BackFeet.R")
+	Footstep(0.92, "Hand.R")
+	Footstep(0.92, "BackFeet.L")
+}
+
+Anim("caiman_swim_attack_forward")
+{
+	Event("GiveDamage", 0.3)
+}
+
+Anim("caiman_swim_attack_left")
+{
+	Event("GiveDamage", 0.3)
+}
+
+Anim("caiman_swim_attack_right")
+{
+	Event("GiveDamage", 0.3)
+}
+
+Anim("caiman_walk_forward")
+{
+	Footstep(0.30, "Hand.L")
+	Footstep(0.30, "BackFeet.R")
+	Footstep(0.80, "Hand.R")
+	Footstep(0.80, "BackFeet.L")
+}
+
+Anim("caiman_walk_left")
+{
+	Footstep(0.30, "Hand.L")
+	Footstep(0.30, "BackFeet.R")
+	Footstep(0.80, "Hand.R")
+	Footstep(0.80, "BackFeet.L")
+}
+
+Anim("caiman_walk_right")
+{
+	Footstep(0.30, "Hand.L")
+	Footstep(0.30, "BackFeet.R")
+	Footstep(0.80, "Hand.R")
+	Footstep(0.80, "BackFeet.L")
+}
+
+Anim("caiman_turn_left")
+{
+	Footstep(0.30, "Hand.L")
+	Footstep(0.30, "BackFeet.R")
+	Footstep(0.80, "Hand.R")
+	Footstep(0.80, "BackFeet.L")
+}
+
+Anim("caiman_turn_right")
+{
+	Footstep(0.30, "Hand.R")
+	Footstep(0.30, "BackFeet.L")
+	Footstep(0.80, "Hand.L")
+	Footstep(0.80, "BackFeet.R")
+}
+
+//Anim("caiman_rotate_left_180")
+//{
+//	Footstep(0.40, "Hand.L")
+//	Footstep(0.40, "Hand.R")
+//	Footstep(0.62, "BackFeet.R")
+//	Footstep(0.62, "BackFeet.L")
+//	Footstep(0.69, "Hand.R")
+//	Footstep(0.71, "Hand.L")
+//}
+
+//Anim("caiman_rotate_right_180")
+//{
+//	Footstep(0.29, "BackFeet.R")
+//	Footstep(0.33, "BackFeet.L")
+//	Footstep(0.35, "Hand.L")
+//	Footstep(0.37, "Hand.R")
+//}

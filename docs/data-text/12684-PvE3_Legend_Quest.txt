@@ -1,0 +1,762 @@
+// ########### GOLDEN FISH ###############
+Node("LegendaryQuest_GoldenFish_Start", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait", False, 0)
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait_Larva", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish", False, 2)
+	Element("UnlockCraftingItem:QuestItem_GoldenFish_Bait", False, 3)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQGoldenFish_PlaceBait:true", False, 4)
+}
+Node("LegendaryQuest_GoldenFish_BaitNoArachnids", True, -1125.0000, -27.0000, 200.0000, 75.0000, "LegendaryQuest_GoldenFish_Start", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish_NoArachnids", False, 0)
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait", False, 1)
+	Element("UnlockCraftingItem:QuestItem_GoldenFish_Bait_Larva", False, 2)
+}
+Node("LegendaryQuest_GoldenFish_PlaceBait_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GoldenFish_bait_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\AI\Footsteps\tribe_walk_mud_03", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_GoldenFish_bait_Placed:true", False, 2)
+}
+Node("LegendaryQuest_GoldenFish_PlaceBait_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GoldenFish_bait_3d", False, 0)
+	Element("DisableObject:LQ_GoldenFish_bait_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish", False, 2)
+	Element("EnableObject:LQ_GoldenFish_bait_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish_bait_Placed", False, 4)
+	Element("DisableObject:LQ_GoldenFish_bait_Trigger", False, 5)
+	Element("EnableObject:LQ_GoldenFish_bait_3d", False, 6)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQGoldenFish_PlaceBait", False, 7)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQGoldenFish_CatchFish:true", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_GoldenFish_PlaceBait_FPP", False, 9)
+	Element("IsNight:true", False, 10)
+	Element("PlayerIsInSensor:false:PvE_GoldenFish_Cove_sensor", False, 11)
+	Element("DisableObject:LQ_GoldenFish_bait_3d", False, 12)
+	Element("SetBoolVariable:VarLQ_GoldenFish_bait_Eaten:true", False, 13)
+}
+Node("LegendaryQuest_GoldenFish_Fish_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GoldenFish_Fish_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Items\mud_from_the_river_pickup", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_GoldenFish_CanTalk:true", False, 2)
+	Element("PlayMusicJingle:gh_jg5:false:0.7:0", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_GoldenFish_2", False, 4)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_GoldenFish_2", False, 5)
+}
+Node("LegendaryQuest_GoldenFish_Fish_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GoldenFish_Fish_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:VarLQ_GoldenFish_bait_Eaten", False, 1)
+	Element("EnableObject:LQ_GoldenFish_Fish_Trigger", False, 2)
+	Element("DisableObject:PvE_GoldenFish_Cove_sensor", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GoldenFish_BaitNoArachnids", False, 4)
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait", False, 5)
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait_Larva", False, 6)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish_CanTalk", False, 7)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQGoldenFish_CatchFish", False, 8)
+	Element("ShowFakeItemInBackpack:backpack_LQGoldenFish_Fish:true", False, 9)
+	Element("DisableObject:LQ_GoldenFish_Fish_Trigger", False, 10)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQGoldenFish_Talk:true", False, 11)
+	Element("DeactivateScenarioNode:LegendaryQuest_GoldenFish_Fish_FPP", False, 12)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_C", False, 13)
+	Element("UnlockPveDialog:LQuest_GoldenFish", False, 14)
+}
+Node("LegendaryQuest_GoldenFish_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_GoldenFish", False, 0)
+	Element("IsDialogPlaying:false:LQuest_GoldenFish", False, 1)
+	Element("AddReputationFromStory:Village_03_fishing:LQGoldenFish", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_GoldenFish_EndQuest:true", False, 3)
+}
+Node("LegendaryQuest_GoldenFish_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GoldenFish_Fish_InVillageArt", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish_EndQuest", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_GoldenFish_Talk_FPP", False, 2)
+	Element("ShowFakeItemInBackpack:backpack_LQGoldenFish_Fish:false", False, 3)
+	Element("LockPveDialog:LQuest_GoldenFish", False, 4)
+	Element("EnableObject:LQ_GoldenFish_Fish_InVillageArt", False, 5)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQGoldenFish_Talk", False, 6)
+	Element("SetLegendFinishState:Story_08GoldenFish:true", False, 7)
+}
+
+// ########### GUARDIAN MONKEYS ###############
+Node("LegendaryQuest_GuardianMonkeys_Start", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockItemInNotepad:QuestItem_clay_monkey_fresh", False, 0)
+	Element("LockCraftingItem:QuestItem_clay_monkey_nut", False, 1)
+	Element("LockCraftingItem:QuestItem_clay_monkey_obsidian", False, 2)
+	Element("LockCraftingItem:QuestItem_clay_monkey_fiber", False, 3)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys", False, 4)
+	Element("UnlockItemInNotepad:QuestItem_clay_monkey_fresh", False, 5)
+	Element("UnlockCraftingItem:QuestItem_clay_monkey_nut", False, 6)
+	Element("UnlockCraftingItem:QuestItem_clay_monkey_obsidian", False, 7)
+	Element("UnlockCraftingItem:QuestItem_clay_monkey_fiber", False, 8)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQGuardianMonkeys_PlaceMonkeys:true", False, 9)
+	Element("CreateIntVariable:LQ_GuardianMonkeys_MonkeysPlaced:0", False, 10)
+}
+Node("LegendaryQuest_GuardianMonkeys_Comment_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_clay_monkey_fresh", False, 0)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_2", False, 1)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_GuardianMonkeys_2", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Comment_FPP:true", False, 3)
+}
+Node("LegendaryQuest_GuardianMonkeys_Comment_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys_Comment_FPP", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Comment_FPP", False, 1)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_1_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_1_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:0", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_3", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_Second_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_Last_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_1_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_1_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_1_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:1", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_4", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_First_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_Last_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_1_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_1_Last_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_1_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:2", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_5", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_First_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_Second_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_1_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_2_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_2_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:0", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_3", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_Second_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_Last_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_2_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_2_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_2_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:1", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_4", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_First_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_Last_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_2_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_2_Last_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_2_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:2", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_5", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_First_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_Second_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_2_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_3_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_3_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:0", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_3", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_Second_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_Last_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_3_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_3_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_3_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:1", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_4", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_First_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_Last_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_3_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_3_Last_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_GuardianMonkeys_3_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:2", False, 1)
+	Element("PlaySound:Player:Sounds\PVE\Villagers\SFX\Quest_giver\quest_giver_stick_hit_ground_02", False, 2)
+	Element("StartDialog:PvE_Player_LQuest_GuardianMonkeys_5", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_First_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_Second_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_Monkey_3_Placed:true", False, 6)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_1_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GuardianMonkeys_1_3d", False, 0)
+	Element("DisableObject:LQ_GuardianMonkeys_1_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys", False, 2)
+	Element("EnableObject:LQ_GuardianMonkeys_1_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys_Monkey_1_Placed", False, 4)
+	Element("DisableObject:LQ_GuardianMonkeys_1_Trigger", False, 5)
+	Element("EnableObject:LQ_GuardianMonkeys_1_3d", False, 6)
+	Element("IntVariableAdd:LQ_GuardianMonkeys_MonkeysPlaced:1", False, 7)
+	Element("LockCraftingItem:QuestItem_clay_monkey_nut", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_First_FPP", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_Second_FPP", False, 10)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_1_Last_FPP", False, 11)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_2_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GuardianMonkeys_2_3d", False, 0)
+	Element("DisableObject:LQ_GuardianMonkeys_2_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys", False, 2)
+	Element("EnableObject:LQ_GuardianMonkeys_2_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys_Monkey_2_Placed", False, 4)
+	Element("DisableObject:LQ_GuardianMonkeys_2_Trigger", False, 5)
+	Element("EnableObject:LQ_GuardianMonkeys_2_3d", False, 6)
+	Element("IntVariableAdd:LQ_GuardianMonkeys_MonkeysPlaced:1", False, 7)
+	Element("LockCraftingItem:QuestItem_clay_monkey_obsidian", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_First_FPP", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_Second_FPP", False, 10)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_2_Last_FPP", False, 11)
+}
+Node("LegendaryQuest_GuardianMonkeys_Monkey_3_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GuardianMonkeys_3_3d", False, 0)
+	Element("DisableObject:LQ_GuardianMonkeys_3_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys", False, 2)
+	Element("EnableObject:LQ_GuardianMonkeys_3_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys_Monkey_3_Placed", False, 4)
+	Element("DisableObject:LQ_GuardianMonkeys_3_Trigger", False, 5)
+	Element("EnableObject:LQ_GuardianMonkeys_3_3d", False, 6)
+	Element("IntVariableAdd:LQ_GuardianMonkeys_MonkeysPlaced:1", False, 7)
+	Element("LockCraftingItem:QuestItem_clay_monkey_fiber", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_First_FPP", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_Second_FPP", False, 10)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Monkey_3_Last_FPP", False, 11)
+}
+Node("LegendaryQuest_GuardianMonkeys_CanTalk", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsIntVariableGreaterOrEqual:true:LQ_GuardianMonkeys_MonkeysPlaced:3", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQGuardianMonkeys_PlaceMonkeys", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQGuardianMonkeys_Talk:true", False, 2)
+	Element("LockItemInNotepad:QuestItem_clay_monkey_fresh", False, 3)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_C", False, 4)
+	Element("UnlockPveDialog:LQuest_GuardianMonkeys", False, 5)
+}
+Node("LegendaryQuest_GuardianMonkeys_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_GuardianMonkeys", False, 0)
+	Element("IsDialogPlaying:false:LQuest_GuardianMonkeys", False, 1)
+	Element("AddReputationFromStory:Village_03_fishing:LQGuardianMonkeys", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_GuardianMonkeys_EndQuest:true", False, 3)
+}
+Node("LegendaryQuest_GuardianMonkeys_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GuardianMonkeys_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_GuardianMonkeys_Talk_FPP", False, 1)
+	Element("LockPveDialog:LQuest_GuardianMonkeys", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQGuardianMonkeys_Talk", False, 3)
+	Element("SetLegendFinishState:Story_09GuardianMonkeys:true", False, 4)
+}
+
+// ########### AZTEC WARRIOR ###############
+Node("LegendaryQuest_AztecWarrior_Start", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQAztecWarrior_Investigate:true", False, 1)
+	Element("CreateIntVariable:LQ_AztecWarrior_SkullWoodFragmentsFound:0", False, 2)
+	Element("CreateIntVariable:LQ_AztecWarrior_ObsidianScratchesFound:0", False, 3)
+}
+Node("LegendaryQuest_AztecWarrior_SkullWood_1_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_SkullWood_1_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_SkullWoodFragmentsFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_SkullWood_1_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_4", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_SkullWood_1_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_SkullWood_1_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_SkullWoodFragmentsFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_SkullWood_1_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_5", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_SkullWood_2_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_SkullWood_2_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_SkullWoodFragmentsFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_2_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_SkullWood_2_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_4", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_SkullWood_2_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_SkullWood_2_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_SkullWoodFragmentsFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_SkullWood_2_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_5", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_SkullWood_1_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_SkullWood_1_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 1)
+	Element("EnableObject:LQ_AztecWarrior_SkullWood_1_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_SkullWood_1_Found", False, 3)
+	Element("DisableObject:LQ_AztecWarrior_SkullWood_1_Trigger", False, 4)
+	Element("IntVariableAdd:LQ_AztecWarrior_SkullWoodFragmentsFound:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_First_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_Second_FPP", False, 7)
+}
+Node("LegendaryQuest_AztecWarrior_SkullWood_2_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_SkullWood_2_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 1)
+	Element("EnableObject:LQ_AztecWarrior_SkullWood_2_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_SkullWood_2_Found", False, 3)
+	Element("DisableObject:LQ_AztecWarrior_SkullWood_2_Trigger", False, 4)
+	Element("IntVariableAdd:LQ_AztecWarrior_SkullWoodFragmentsFound:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_2_First_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_2_Second_FPP", False, 7)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_1_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_1_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body1_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_2", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_1_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_1_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body1_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_3", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_1_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_1_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 1)
+	Element("EnableObject:LQ_AztecWarrior_ObsidianScratch_1_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body1_Found", False, 3)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_1_Trigger", False, 4)
+	Element("IntVariableAdd:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_First_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_Second_FPP", False, 7)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_2_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_2_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body2_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_2", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_2_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_2_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body2_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_3", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_3_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_3_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_3_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body2_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_2", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_3_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_3_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_3_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body2_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_3", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_2_3_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_2_Trigger", False, 0)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_3_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 2)
+	Element("EnableObject:LQ_AztecWarrior_ObsidianScratch_2_Trigger", False, 3)
+	Element("EnableObject:LQ_AztecWarrior_ObsidianScratch_3_Trigger", False, 4)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body2_Found", False, 5)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_2_Trigger", False, 6)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_3_Trigger", False, 7)
+	Element("IntVariableAdd:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_First_FPP", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_Second_FPP", False, 10)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_3_First_FPP", False, 11)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_3_Second_FPP", False, 12)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_4_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_4_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body3_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_2", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_4_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_4_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body3_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_3", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_5_First_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_5_Trigger", False, 0)
+	Element("IsIntVariableEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:0", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_5_Second_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body3_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_2", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_5_Second_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_ObsidianScratch_5_Trigger", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_5_First_FPP", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body3_Found:true", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_3", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_ObsidianScratch_4_5_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_4_Trigger", False, 0)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_5_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 2)
+	Element("EnableObject:LQ_AztecWarrior_ObsidianScratch_4_Trigger", False, 3)
+	Element("EnableObject:LQ_AztecWarrior_ObsidianScratch_5_Trigger", False, 4)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_ObsidianScratch_Body3_Found", False, 5)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_4_Trigger", False, 6)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_5_Trigger", False, 7)
+	Element("IntVariableAdd:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_First_FPP", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_Second_FPP", False, 10)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_5_First_FPP", False, 11)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_5_Second_FPP", False, 12)
+}
+Node("LegendaryQuest_AztecWarrior_Hilt_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_Hilt_Trigger", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_Hilt_Found:true", False, 1)
+}
+Node("LegendaryQuest_AztecWarrior_Hilt_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_Hilt_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 1)
+	Element("EnableObject:LQ_AztecWarrior_Hilt_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_Hilt_Found", False, 3)
+	Element("DisableObject:LQ_AztecWarrior_Hilt_Trigger", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_Hilt_FPP", False, 5)
+}
+Node("LegendaryQuest_AztecWarrior_RecipeCheck", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:Aztec_Club", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_SkullWoodFragmentsFound:1", False, 1)
+	Element("IsIntVariableGreaterOrEqual:true:LQ_AztecWarrior_ObsidianScratchesFound:1", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_Hilt_Found", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_AllFound:true", False, 4)
+	Element("UnlockCraftingItem:Aztec_Club", False, 5)
+	Element("UnlockItemInNotepad:Aztec_Club", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_First_FPP", False, 7)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_Second_FPP", False, 8)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_2_First_FPP", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_2_Second_FPP", False, 10)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_First_FPP", False, 11)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_Second_FPP", False, 12)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_First_FPP", False, 13)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_Second_FPP", False, 14)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_3_First_FPP", False, 15)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_3_Second_FPP", False, 16)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_First_FPP", False, 17)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_Second_FPP", False, 18)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_5_First_FPP", False, 19)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_5_Second_FPP", False, 20)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_1_TPP", False, 21)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_SkullWood_2_TPP", False, 22)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_1_TPP", False, 23)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_2_3_TPP", False, 24)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_ObsidianScratch_4_5_TPP", False, 25)
+	Element("DisableObject:LQ_AztecWarrior_SkullWood_1_Trigger", False, 26)
+	Element("DisableObject:LQ_AztecWarrior_SkullWood_2_Trigger", False, 27)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_1_Trigger", False, 28)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_2_Trigger", False, 29)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_3_Trigger", False, 30)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_4_Trigger", False, 31)
+	Element("DisableObject:LQ_AztecWarrior_ObsidianScratch_5_Trigger", False, 32)
+	Element("ActivateScenarioNode:LegendaryQuest_AztecWarrior_WeaponComment_FPP", False, 33)
+	Element("ActivateScenarioNode:LegendaryQuest_AztecWarrior_WeaponComment_TPP", False, 34)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQAztecWarrior_Craft:true", False, 35)
+}
+Node("LegendaryQuest_AztecWarrior_WeaponComment_FPP", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Aztec_Club", False, 0)
+	Element("StartDialog:PvE_Player_LQuest_AztecWarrior_6", False, 1)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_AztecWarrior_6", False, 2)
+	Element("PlayMusicJingle:gh_jg4:false:0.7:0", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_WeaponComment_FPP:true", False, 4)
+}
+Node("LegendaryQuest_AztecWarrior_WeaponComment_TPP", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_WeaponComment_FPP", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_WeaponComment_FPP", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQAztecWarrior_Craft", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQAztecWarrior_Talk:true", False, 3)
+}
+Node("LegendaryQuest_AztecWarrior_PutDown_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_AztecWarrior_WeaponInVillage_Trigger", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_CanTalk:true", False, 1)
+}
+Node("LegendaryQuest_AztecWarrior_PutDown_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AztecWarrior_WeaponInVillage_Trigger", False, 0)
+	Element("DisableObject:LQ_AztecWarrior_WeaponInVillage_3d", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_AllFound", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQAztecWarrior_Investigate", False, 3)
+	Element("EnableObject:LQ_AztecWarrior_WeaponInVillage_Trigger", False, 4)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_CanTalk", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_PutDown_FPP", False, 6)
+	Element("DisableObject:LQ_AztecWarrior_WeaponInVillage_Trigger", False, 7)
+	Element("EnableObject:LQ_AztecWarrior_WeaponInVillage_3d", False, 8)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_C", False, 9)
+	Element("UnlockPveDialog:LQuest_AztecWarrior", False, 10)
+}
+Node("LegendaryQuest_AztecWarrior_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_AztecWarrior", False, 0)
+	Element("IsDialogPlaying:false:LQuest_AztecWarrior", False, 1)
+	Element("AddReputationFromStory:Village_03_fishing:LQAztecWarrior", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_AztecWarrior_EndQuest:true", False, 3)
+}
+Node("LegendaryQuest_AztecWarrior_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_AztecWarrior_Talk_FPP", False, 1)
+	Element("LockPveDialog:LQuest_AztecWarrior", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQAztecWarrior_Talk", False, 3)
+	Element("SetLegendFinishState:Story_10AztecWarrior:true", False, 4)
+}
+
+// ########### LOVERS ###############
+Node("LegendaryQuest_Lovers_PickupPhotos_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Lovers_Photos_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\TempSounds\Player\item_grab_hard_01", False, 1)	
+	Element("SetBoolVariable:HaveLoversPhotos:true", False, 2)
+}
+Node("LegendaryQuest_Lovers_PickupPhotos_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:LQ_Lovers_Photos_Trigger", False, 0)	
+	Element("IsBoolVariableTrue:true:HaveLoversPhotos", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_PickupPhotos_FPP", False, 2)	
+	Element("DisableObject:LQ_Lovers_Photos_Trigger", False, 3)			
+}
+Node("LegendaryQuest_Lovers_UnlockMap_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveLoversPhotos", False, 0)
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Lovers_AllDestroyed", False, 1)	
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map08", False, 3)
+}
+Node("LegendaryQuest_Lovers_UnlockMapComment", True, -1125.0000, -27.0000, 200.0000, 75.0000, "LegendaryQuest_Lovers_PickupPhotos_FPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Lovers_AllDestroyed", False, 4)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_2", False, 5)
+}
+Node("LegendaryQuest_Lovers_PickupPhotos_NoLegend", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveLoversPhotos", False, 0)
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Lovers", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_UnlockMapComment", False, 3)
+}
+Node("LegendaryQuest_Lovers_CheckPhotos_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 0)
+	Element("IsBoolVariableTrue:true:HaveLoversPhotos", False, 1)
+	Element("ShowHint:LookatMap:0", False, 2)
+	Element("IsLookingAtMapPage:true:Map08", False, 3)
+	Element("HideHint:LookatMap", False, 4)
+	Element("SetBoolVariable:LookedAtLoversPhotos:true", False, 5)
+}
+Node("LegendaryQuest_Lovers_CheckPhotos_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:LookedAtLoversPhotos", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_CheckPhotos_FPP", False, 1)
+	Element("HideHint:LookatMap", False, 2)
+}
+Node("LegendaryQuest_Lovers_Charm1_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm1Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm1Destroyed:true", False, 1)
+	Element("IsIntVariableEqual:true:LegendaryQuest_Lovers_DestroyedCharms:0", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_3", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm1_Last_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm1_Last_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm1Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm1Destroyed:true", False, 1)
+	Element("IsIntVariableGreaterOrEqual:true:LegendaryQuest_Lovers_DestroyedCharms:3", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_4", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm1_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm1_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:QuestItem_LoversCharm1_Whole", False, 0)
+	Element("DisableObject:QuestItem_LoversCharm1_Destroyed", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm1Destroyed", False, 2)
+	Element("DisableObject:QuestItem_LoversCharm1_Whole", False, 3)
+	Element("EnableObject:QuestItem_LoversCharm1_Destroyed", False, 4)
+	Element("IntVariableAdd:LegendaryQuest_Lovers_DestroyedCharms:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm1_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm1_Last_FPP", False, 7)
+}
+Node("LegendaryQuest_Lovers_Charm2_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm2Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm2Destroyed:true", False, 1)
+	Element("IsIntVariableEqual:true:LegendaryQuest_Lovers_DestroyedCharms:0", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_3", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm2_Last_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm2_Last_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm2Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm2Destroyed:true", False, 1)
+	Element("IsIntVariableGreaterOrEqual:true:LegendaryQuest_Lovers_DestroyedCharms:3", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_4", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm2_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm2_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:QuestItem_LoversCharm2_Whole", False, 0)
+	Element("DisableObject:QuestItem_LoversCharm2_Destroyed", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm2Destroyed", False, 2)
+	Element("DisableObject:QuestItem_LoversCharm2_Whole", False, 3)
+	Element("EnableObject:QuestItem_LoversCharm2_Destroyed", False, 4)
+	Element("IntVariableAdd:LegendaryQuest_Lovers_DestroyedCharms:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm2_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm2_Last_FPP", False, 7)
+}
+Node("LegendaryQuest_Lovers_Charm3_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm3Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm3Destroyed:true", False, 1)
+	Element("IsIntVariableEqual:true:LegendaryQuest_Lovers_DestroyedCharms:0", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_3", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm3_Last_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm3_Last_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm3Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm3Destroyed:true", False, 1)
+	Element("IsIntVariableGreaterOrEqual:true:LegendaryQuest_Lovers_DestroyedCharms:3", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_4", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm3_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm3_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:QuestItem_LoversCharm3_Whole", False, 0)
+	Element("DisableObject:QuestItem_LoversCharm3_Destroyed", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm3Destroyed", False, 2)
+	Element("DisableObject:QuestItem_LoversCharm3_Whole", False, 3)
+	Element("EnableObject:QuestItem_LoversCharm3_Destroyed", False, 4)
+	Element("IntVariableAdd:LegendaryQuest_Lovers_DestroyedCharms:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm3_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm3_Last_FPP", False, 7)
+}
+Node("LegendaryQuest_Lovers_Charm4_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm4Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm4Destroyed:true", False, 1)
+	Element("IsIntVariableEqual:true:LegendaryQuest_Lovers_DestroyedCharms:0", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_3", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm4_Last_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm4_Last_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm4Triggered", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_Charm4Destroyed:true", False, 1)
+	Element("IsIntVariableGreaterOrEqual:true:LegendaryQuest_Lovers_DestroyedCharms:3", False, 2)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 3)
+	Element("StartDialog:PvE_Player_LQuest_Lovers_4", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm4_FPP", False, 5)
+}
+Node("LegendaryQuest_Lovers_Charm4_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:QuestItem_LoversCharm4_Whole", False, 0)
+	Element("DisableObject:QuestItem_LoversCharm4_Destroyed", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers_Charm4Destroyed", False, 2)
+	Element("DisableObject:QuestItem_LoversCharm4_Whole", False, 3)
+	Element("EnableObject:QuestItem_LoversCharm4_Destroyed", False, 4)
+	Element("IntVariableAdd:LegendaryQuest_Lovers_DestroyedCharms:1", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm4_FPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Charm4_Last_FPP", False, 7)
+}
+Node("LegendaryQuest_Lovers_CharmsProgress", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateIntVariable:LegendaryQuest_Lovers_DestroyedCharms:0", False, 0)
+	Element("IsIntVariableGreaterOrEqual:true:LegendaryQuest_Lovers_DestroyedCharms:4", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_AllDestroyed:true", False, 2)
+	Element("LockMapPage:Map08", False, 3)
+}
+Node("LegendaryQuest_Lovers_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQLovers_DestroyCharms:true", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers_AllDestroyed", False, 2)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_ReadNote_FPP", False, 3)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_CheckPhotos_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_PickupPhotos_FPP", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_PickupPhotos_TPP", False, 6)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_UnlockMap_TPP", False, 7)	
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_PickupPhotos_NoLegend", False, 8)
+	Element("DisableObject:LQ_Lovers_Photos_Trigger", False, 9)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQLovers_DestroyCharms", False, 10)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQLovers_Talk:true", False, 11)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_C", False, 12)
+	Element("UnlockPveDialog:LQuest_Lovers", False, 13)
+}
+Node("LegendaryQuest_Lovers_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Lovers", False, 0)
+	Element("IsDialogPlaying:false:LQuest_Lovers", False, 1)
+	Element("AddReputationFromStory:Village_03_fishing:LQLovers", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_Lovers_EndQuest:true", False, 3)
+}
+Node("LegendaryQuest_Lovers_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Lovers_Talk_FPP", False, 1)
+	Element("LockPveDialog:LQuest_Lovers", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQLovers_Talk", False, 3)
+	Element("SetLegendFinishState:Story_11Lovers:true", False, 4)
+}

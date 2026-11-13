@@ -1,0 +1,16 @@
+Anim("rattlesnake_idle_death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("rattlesnake_attack_hit")
+{
+	Event("RattlesnakeAttack", 0.0)
+	Event("GiveDamageLLeg", 0.5)
+}
+
+Anim("rattlesnake_attack_miss")
+{
+	Event("RattlesnakeAttack", 0.0)
+	Event("GiveDamageRLeg", 0.5)
+}

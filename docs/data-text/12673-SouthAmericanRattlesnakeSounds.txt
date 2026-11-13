@@ -1,0 +1,4 @@
+Attack("Rattlesnake_Attack_01", "Rattlesnake_Attack_02")
+Death("Rattlesnake_Death")
+Hit("Rattlesnake_Hit_01","Rattlesnake_Hit_02","Rattlesnake_Hit_03")
+Idle("Rattlesnake_Loop")

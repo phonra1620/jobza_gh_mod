@@ -1,0 +1,88 @@
+Item("Four_Pronged_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+
+
+}
+
+
+Item("Four_Pronged_Bamboo_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Spear")	
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+}
+Item("Obsidian_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+}
+Item("Stone_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")	
+}
+Item("Tribe_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|SpearBlock", "PL|SpearTribe_BlockIdle")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Spear")	
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+}
+Item("Bamboo_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")	
+}
+
+Item("Weak_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")	
+}
+Item("Bone_Spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+}
+Item("metal_spear")
+{
+	Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	Clip("PL|Fight_block", "PL|SpearBlock")
+	Clip("PL|Harvest", "PL|Spear_Harvest")
+	Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Spear")
+	Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+}
+
+

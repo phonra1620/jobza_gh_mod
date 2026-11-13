@@ -1,0 +1,492 @@
+//Node("DebugToDel", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+//{
+//	Element("SetBoolVariable:SOA3_Boat_Radio_Talk_Done:true", False, 1)
+//	Element("SetBoolVariable:HasToken_Hunting_AfterArena:true", False, 2)
+//	Element("SetBoolVariable:HasToken_Planting_AfterArena:true", False, 3)
+//	Element("SetBoolVariable:HasToken_Fishing_AfterArena:true", False, 4)
+//}
+
+//*** UNIVERSAL***
+Node("PvE_CompletedArenasCount_CreateInt", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateIntVariable:CompletedArenas:0", False, 0)	
+	Element("ActivateScenarioNode:PvE_ArenaComplete_Comment1", False, 1)
+}
+Node("PvE_ArenaComplete_Comment1", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsIntVariableEqual:true:CompletedArenas:1", False, 0)
+	Element("StartDialog:PvE_TrialsEnd_Player_01", False, 1)
+	Element("IsDialogPlaying:false:PvE_TrialsEnd_Player_01", False, 2)
+	Element("PlayMusicJingle:jingle_new_area1_forge:false:0.7:0", False, 3)	
+	Element("ActivateScenarioNode:PvE_ArenaComplete_Comment2", False, 4)	
+}
+Node("PvE_ArenaComplete_Comment2", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DeactivateScenarioNode:PvE_ArenaComplete_Comment1", False, 0)	
+	Element("IsIntVariableEqual:true:CompletedArenas:2", False, 1)	
+	Element("StartDialog:PvE_TrialsEnd_Player_02", False, 2)
+	Element("IsDialogPlaying:false:PvE_TrialsEnd_Player_02", False, 3)
+	Element("PlayMusicJingle:jingle_new_area1_forge:false:0.7:0", False, 4)	
+	Element("ActivateScenarioNode:PvE_ArenaComplete_Comment3", False, 5)	
+}
+Node("PvE_ArenaComplete_Comment3", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DeactivateScenarioNode:PvE_ArenaComplete_Comment2", False, 0)		
+	Element("IsIntVariableEqual:true:CompletedArenas:3", False, 1)
+	Element("StartDialog:PvE_TrialsEnd_Player_03", False, 2)	
+	Element("IsDialogPlaying:false:PvE_TrialsEnd_Player_03", False, 3)
+	Element("PlayMusicJingle:jingle_new_area1_forge:false:0.7:0", False, 4)	
+}
+
+
+// ##########  HUNTER FORGE 
+// ##########  HUNTER FORGE 
+// ##########  HUNTER FORGE 
+
+// Furnance TPP
+Node("Hunter_forge_TPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:HuntingTotem_Pre_Trigger", False, 0)
+	Element("DisableObject:HuntingTotem_NoToken_Trigger", False, 1)
+	Element("DisableObject:Arena_Furnance_Hunter_GoldNuggets", False, 2)
+	Element("EnableObject:Arena_Furnance_Hunter_drawer_in", False, 3)
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 4)
+	Element("EnableObject:HuntingTotem_Pre_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:HunterTotem_PreTrigger", False, 6)
+	Element("DeactivateScenarioNode:Hunter_forge_PreTrigger_FPP", False, 7)
+	Element("DisableObject:HuntingTotem_Pre_Trigger", False, 8)
+	Element("DisableObject:Arena_Furnance_Hunter_drawer_in", False, 9)
+	Element("EnableObject:Arena_Furnance_Hunter_drawer_out", False, 10)
+	Element("EnableObject:Arena_Furnance_Hunter_GoldNuggets", False, 11)
+	Element("EnableObject:HuntingTotem_NoToken_Trigger", False, 12)
+	Element("IsBoolVariableTrue:true:HasToken_Hunting_AfterArena", False, 13)
+	Element("DisableObject:HuntingTotem_NoToken_Trigger", False, 14)
+	Element("IsBoolVariableTrue:true:HunterTotem_AnimNuggers", False, 15)
+	Element("DisableObject:Arena_Furnance_Hunter_GoldNuggets", False, 16)
+	Element("DisableObject:Arena_Furnance_Hunter_drawer_out", False, 17)
+	Element("EnableObject:Arena_Furnance_Hunter_drawer_in", False, 18)
+	Element("IsBoolVariableTrue:true:HunterTotem_ReOpen", False, 19)
+	Element("EnableObject:Arena_Furnance_Hunter_drawer_out", False, 20)
+	Element("DisableObject:Arena_Furnance_Hunter_drawer_in", False, 21)
+}
+
+// Furnance Pre Triger 
+Node("Hunter_forge_PreTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:HuntingTotem_Pre_Trigger", False, 0)
+	Element("SetBoolVariable:HunterTotem_PreTrigger:true", False, 1)
+	Element("PlaySound:Player:Sounds\Items\Storage_open", False, 2)
+}
+
+//Forge Rack Looped - start after triger
+Node("Hunter_forge_Rack_looped", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("DisableObject:HuntingTotem_NoFire_Trigger", False, 0)
+	Element("DisableObject:HuntingTotem_Start_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:HunterTotem_PreTrigger", False, 2)
+	Element("IsBoolVariableTrue:true:HasToken_Hunting_AfterArena", False, 3)
+	Element("EnableObject:HuntingTotem_NoFire_Trigger", False, 4)
+	Element("DisableObject:HuntingTotem_Start_Trigger", False, 5)
+	Element("IsRackBurning:true:Arena_ForgeRack_Hunting", False,6)
+	Element("DisableObject:HuntingTotem_NoFire_Trigger", False, 7)
+	Element("EnableObject:HuntingTotem_Start_Trigger", False, 8)
+	Element("IsRackBurning:false:Arena_ForgeRack_Hunting", False, 9)
+}
+
+// Furnance StartTriger
+Node("Hunter_forge_StartTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:HuntingTotem_Start_Trigger", False, 0)
+	Element("SetBoolVariable:HunterTotem_StartTrigger:true", False, 1)
+}
+
+// Furnance Cutscene & Goldpickup
+Node("Hunter_forge_Cutscene_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:Arena_Furnance_Hunter_TokenRaw", False, 1)
+	Element("IsBoolVariableTrue:true:HunterTotem_StartTrigger", False, 2)
+	Element("SetRackEndlessFire:Arena_ForgeRack_Hunting", False, 3)
+	Element("DeactivateScenarioNode:Hunter_forge_Rack_looped", False, 4)
+	Element("DisableObject:HuntingTotem_Start_Trigger", False, 5)
+	Element("DeactivateScenarioNode:Hunter_forge_StartTrigger_FPP", False, 6)
+	Element("DreamFadeOut:1", False, 7)
+	Element("PlayerBlockMoves", False, 8)
+	Element("PlayerBlockRotation", False, 9)
+	Element("BlockSaveGame", False, 10)
+	Element("HideForPlayers:true", False, 11)
+	Element("Wait:1", False, 12)
+	Element("HideAllHints", False, 13)
+	Element("DisablePlayerCollisions", False, 14)
+	Element("BlockHUDEnergy", False, 15)
+	Element("BlockHUDSanity", False, 16)
+	Element("Teleport:Fake_Forge_Hunting_Playerpos:false", False, 17)
+	Element("Wait:0.6", False, 18)
+	Element("Teleport:Forge_Hunting_Playerpos_TokenThrow:false", False, 19)
+	Element("DreamFadeIn:1", False, 20)
+	Element("PlayCutscene:ThrowTokenToForge_Cutscene", False, 22)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:1.2", False, 23)	
+	Element("EnableObject:Token_Hunting_InHand", False, 24)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:7.7", False, 25)	
+	Element("DisableObject:Token_Hunting_InHand", False, 26)
+	Element("EnableObject:Arena_Furnance_Hunter_TokenRaw", False, 27)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:9", False, 28)
+	Element("DreamFadeOut:1", False, 29)
+	Element("Wait:1", False, 30)
+	Element("PlaySound:Player:Sounds\Items\Storage_close", False, 31)
+	Element("Wait:3", False, 32)
+	Element("UnblockHUDEnergy", False, 33)
+	Element("UnblockHUDSanity", False, 34)
+	Element("UnblockGettingDirty", False, 35)
+	Element("HideForPlayers:false", False, 36)
+	Element("EnablePlayerCollisions", False, 37)	
+	Element("TeleportWithRandomOffset:Forge_Hunting_Playerpos_AfterCut:false:1.0", False, 38)
+	Element("DisableObject:Arena_Furnance_Hunter_TokenRaw", False, 39)
+	Element("SetBoolVariable:HunterTotem_AnimNuggers:true", False, 40)
+	Element("DreamFadeIn:1", False, 41)	
+	Element("PlayerUnblockMoves", False, 42)
+	Element("PlayerUnblockRotation", False, 43)
+	Element("UnblockSaveGame", False, 44)
+}
+
+// Furnance Re Open Token Triger
+Node("Hunter_forge_Reopen_Trigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:HuntingTotem_Re_Open_Trigger", False, 0)
+	Element("SetBoolVariable:HunterTotem_ReOpen:true", False, 1)
+	Element("PlaySound:Player:Sounds\Items\Storage_open", False, 2)
+}
+// Furnance Goldpickup Token Triger
+Node("Hunter_forge_TotemTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:HuntingTotem_Token_Trigger", False, 0)
+	Element("SetBoolVariable:HunterTotem_TokenTrigger:true", False, 1)
+}
+
+Node("Hunter_forge_TotemTrigger_TPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:Arena_Furnance_Hunter_TokenGoldArt", False, 0)
+	Element("DisableObject:HuntingTotem_Token_Trigger", False, 1)
+	Element("DisableObject:Token_Gold_Hunting_InHand", False, 2)
+	Element("DisableObject:HuntingTotem_Re_Open_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:HunterTotem_AnimNuggers", False, 4)
+	Element("EnableObject:HuntingTotem_Re_Open_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:HunterTotem_ReOpen", False, 6)
+	Element("DisableObject:HuntingTotem_Re_Open_Trigger", False, 7)
+	Element("EnableObject:Arena_Furnance_Hunter_TokenGoldArt", False, 8)
+	Element("EnableObject:HuntingTotem_Token_Trigger", False, 9)
+	Element("IsBoolVariableTrue:true:HunterTotem_TokenTrigger", False, 10)
+	Element("DisableObject:HuntingTotem_Token_Trigger", False, 11)
+	Element("DisableObject:Arena_Furnance_Hunter_TokenGoldArt", False, 12)
+	Element("PlayCutscene:TokenPresentation_Cutscene", False, 13)
+	Element("EnableObject:Token_Gold_Hunting_InHand", False, 14)
+	Element("IsCutsceneTimeGreaterOrEqual:true:TokenPresentation_Cutscene:2", False, 15)
+	Element("IntVariableAdd:CompletedArenas:1", False, 16)
+	Element("IsCutscenePlaying:false", False, 17)
+	Element("DisableObject:Token_Gold_Hunting_InHand", False, 18)
+	Element("SetBoolVariable:HasToken_Hunting_AfterForge:true", False, 19)
+}
+// ##########  HUNTER FORGE  - END
+// ##########  HUNTER FORGE  - END
+// ##########  HUNTER FORGE  - END
+
+
+// ##########  Planting FORGE 
+// ##########  Planting FORGE 
+// ##########  Planting FORGE 
+
+// Furnance TPP
+Node("Planting_forge_TPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PlantingTotem_Pre_Trigger", False, 0)
+	Element("DisableObject:PlantingTotem_NoToken_Trigger", False, 1)
+	Element("DisableObject:Arena_Furnance_Planting_GoldNuggets", False, 2)
+	Element("EnableObject:Arena_Furnance_Planting_drawer_in", False, 3)
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 4)
+	Element("EnableObject:PlantingTotem_Pre_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:PlantingTotem_PreTrigger", False, 6)
+	Element("DeactivateScenarioNode:Planting_forge_PreTrigger_FPP", False, 7)
+	Element("DisableObject:PlantingTotem_Pre_Trigger", False, 8)
+	Element("DisableObject:Arena_Furnance_Planting_drawer_in", False, 9)
+	Element("EnableObject:Arena_Furnance_Planting_drawer_out", False, 10)
+	Element("EnableObject:Arena_Furnance_Planting_GoldNuggets", False, 11)
+	Element("EnableObject:PlantingTotem_NoToken_Trigger", False, 12)
+	Element("IsBoolVariableTrue:true:HasToken_Planting_AfterArena", False, 13)
+	Element("DisableObject:PlantingTotem_NoToken_Trigger", False, 14)
+	Element("IsBoolVariableTrue:true:PlantingTotem_AnimNuggers", False, 15)
+	Element("DisableObject:Arena_Furnance_Planting_GoldNuggets", False, 16)
+	Element("DisableObject:Arena_Furnance_Planting_drawer_out", False, 17)
+	Element("EnableObject:Arena_Furnance_Planting_drawer_in", False, 18)
+	Element("IsBoolVariableTrue:true:PlantingTotem_ReOpen", False, 19)
+	Element("EnableObject:Arena_Furnance_Planting_drawer_out", False, 20)
+	Element("DisableObject:Arena_Furnance_Planting_drawer_in", False, 21)
+}
+
+// Furnance Pre Triger 
+Node("Planting_forge_PreTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PlantingTotem_Pre_Trigger", False, 0)
+	Element("SetBoolVariable:PlantingTotem_PreTrigger:true", False, 1)
+	Element("PlaySound:Player:Sounds\Items\Storage_open", False, 2)
+}
+
+//Forge Rack Looped - start after triger
+Node("Planting_forge_Rack_looped", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("DisableObject:PlantingTotem_NoFire_Trigger", False, 0)
+	Element("DisableObject:PlantingTotem_Start_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:PlantingTotem_PreTrigger", False, 2)
+	Element("IsBoolVariableTrue:true:HasToken_Planting_AfterArena", False, 3)
+	Element("EnableObject:PlantingTotem_NoFire_Trigger", False, 4)
+	Element("DisableObject:PlantingTotem_Start_Trigger", False, 5)
+	Element("IsRackBurning:true:Arena_ForgeRack_Farming", False,6)
+	Element("DisableObject:PlantingTotem_NoFire_Trigger", False, 7)
+	Element("EnableObject:PlantingTotem_Start_Trigger", False, 8)
+	Element("IsRackBurning:false:Arena_ForgeRack_Farming", False, 9)
+}
+
+// Furnance StartTriger
+Node("Planting_forge_StartTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PlantingTotem_Start_Trigger", False, 0)
+	Element("SetBoolVariable:PlantingTotem_StartTrigger:true", False, 1)
+}
+
+// Furnance Cutscene & Goldpickup
+Node("Planting_forge_Cutscene_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:Arena_Furnance_Planting_TokenRaw", False, 1)
+	Element("IsBoolVariableTrue:true:PlantingTotem_StartTrigger", False, 2)
+	Element("SetRackEndlessFire:Arena_ForgeRack_Planting", False, 3)
+	Element("DeactivateScenarioNode:Planting_forge_Rack_looped", False, 4)
+	Element("DisableObject:PlantingTotem_Start_Trigger", False, 5)
+	Element("DeactivateScenarioNode:Planting_forge_StartTrigger_FPP", False, 6)
+	Element("DreamFadeOut:1", False, 7)
+	Element("PlayerBlockMoves", False, 8)
+	Element("PlayerBlockRotation", False, 9)
+	Element("BlockSaveGame", False, 10)
+	Element("HideForPlayers:true", False, 11)
+	Element("Wait:1", False, 12)
+	Element("HideAllHints", False, 13)
+	Element("DisablePlayerCollisions", False, 14)
+	Element("BlockHUDEnergy", False, 15)
+	Element("BlockHUDSanity", False, 16)
+	Element("Teleport:Fake_Forge_Planting_Playerpos:false", False, 17)
+	Element("Wait:0.6", False, 18)
+	Element("Teleport:Forge_Planting_Playerpos_TokenThrow:false", False, 19)
+	Element("DreamFadeIn:1", False, 20)
+	Element("PlayCutscene:ThrowTokenToForge_Cutscene", False, 22)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:1.2", False, 23)	
+	Element("EnableObject:Token_Planting_InHand", False, 24)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:7.7", False, 25)	
+	Element("DisableObject:Token_Planting_InHand", False, 26)
+	Element("EnableObject:Arena_Furnance_Planting_TokenRaw", False, 27)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:9", False, 28)
+	Element("DreamFadeOut:1", False, 29)
+	Element("Wait:1", False, 30)
+	Element("PlaySound:Player:Sounds\Items\Storage_close", False, 31)
+	Element("Wait:3", False, 32)
+	Element("UnblockHUDEnergy", False, 33)
+	Element("UnblockHUDSanity", False, 34)
+	Element("UnblockGettingDirty", False, 35)
+	Element("HideForPlayers:false", False, 36)
+	Element("EnablePlayerCollisions", False, 37)	
+	Element("TeleportWithRandomOffset:Forge_Planting_Playerpos_AfterCut:false:1.0", False, 38)
+	Element("DisableObject:Arena_Furnance_Planting_TokenRaw", False, 39)
+	Element("SetBoolVariable:PlantingTotem_AnimNuggers:true", False, 40)
+	Element("DreamFadeIn:1", False, 41)	
+	Element("PlayerUnblockMoves", False, 42)
+	Element("PlayerUnblockRotation", False, 43)
+	Element("UnblockSaveGame", False, 44)
+}
+
+// Furnance Re Open Token Triger
+Node("Planting_forge_Reopen_Trigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PlantingTotem_Re_Open_Trigger", False, 0)
+	Element("SetBoolVariable:PlantingTotem_ReOpen:true", False, 1)
+	Element("PlaySound:Player:Sounds\Items\Storage_open", False, 2)
+}
+// Furnance Goldpickup Token Triger
+Node("Planting_forge_TotemTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PlantingTotem_Token_Trigger", False, 0)
+	Element("SetBoolVariable:PlantingTotem_TokenTrigger:true", False, 1)
+}
+
+Node("Planting_forge_TotemTrigger_TPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:Arena_Furnance_Planting_TokenGoldArt", False, 0)
+	Element("DisableObject:PlantingTotem_Token_Trigger", False, 1)
+	Element("DisableObject:Token_Gold_Planting_InHand", False, 2)
+	Element("DisableObject:PlantingTotem_Re_Open_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:PlantingTotem_AnimNuggers", False, 4)
+	Element("EnableObject:PlantingTotem_Re_Open_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:PlantingTotem_ReOpen", False, 6)
+	Element("DisableObject:PlantingTotem_Re_Open_Trigger", False, 7)
+	Element("EnableObject:Arena_Furnance_Planting_TokenGoldArt", False, 8)
+	Element("EnableObject:PlantingTotem_Token_Trigger", False, 9)
+	Element("IsBoolVariableTrue:true:PlantingTotem_TokenTrigger", False, 10)
+	Element("DisableObject:PlantingTotem_Token_Trigger", False, 11)
+	Element("DisableObject:Arena_Furnance_Planting_TokenGoldArt", False, 12)
+	Element("PlayCutscene:TokenPresentation_Cutscene", False, 13)
+	Element("EnableObject:Token_Gold_Planting_InHand", False, 14)
+	Element("IsCutsceneTimeGreaterOrEqual:true:TokenPresentation_Cutscene:2", False, 15)
+	Element("IntVariableAdd:CompletedArenas:1", False, 16)
+	Element("IsCutscenePlaying:false", False, 17)
+	Element("DisableObject:Token_Gold_Planting_InHand", False, 18)
+	Element("SetBoolVariable:HasToken_Planting_AfterForge:true", False, 19)
+}
+// ##########  Planting FORGE  - END
+// ##########  Planting FORGE  - END
+// ##########  Planting FORGE  - END	
+
+// ##########  Fishing FORGE 
+// ##########  Fishing FORGE 
+// ##########  Fishing FORGE 
+
+// Furnance TPP
+Node("`Fishing_forge_TPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:FishingTotem_Pre_Trigger", False, 0)
+	Element("DisableObject:FishingTotem_NoToken_Trigger", False, 1)
+	Element("DisableObject:Arena_Furnance_Fishing_GoldNuggets", False, 2)
+	Element("EnableObject:Arena_Furnance_Fishing_drawer_in", False, 3)
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 4)
+	Element("EnableObject:FishingTotem_Pre_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:FishingTotem_PreTrigger", False, 6)
+	Element("DeactivateScenarioNode:Fishing_forge_PreTrigger_FPP", False, 7)
+	Element("DisableObject:FishingTotem_Pre_Trigger", False, 8)
+	Element("DisableObject:Arena_Furnance_Fishing_drawer_in", False, 9)
+	Element("EnableObject:Arena_Furnance_Fishing_drawer_out", False, 10)
+	Element("EnableObject:Arena_Furnance_Fishing_GoldNuggets", False, 11)
+	Element("EnableObject:FishingTotem_NoToken_Trigger", False, 12)
+	Element("IsBoolVariableTrue:true:HasToken_Fishing_AfterArena", False, 13)
+	Element("DisableObject:FishingTotem_NoToken_Trigger", False, 14)
+	Element("IsBoolVariableTrue:true:FishingTotem_AnimNuggers", False, 15)
+	Element("DisableObject:Arena_Furnance_Fishing_GoldNuggets", False, 16)
+	Element("DisableObject:Arena_Furnance_Fishing_drawer_out", False, 17)
+	Element("EnableObject:Arena_Furnance_Fishing_drawer_in", False, 18)
+	Element("IsBoolVariableTrue:true:FishingTotem_ReOpen", False, 19)
+	Element("EnableObject:Arena_Furnance_Fishing_drawer_out", False, 20)
+	Element("DisableObject:Arena_Furnance_Fishing_drawer_in", False, 21)
+}
+
+// Furnance Pre Triger 
+Node("Fishing_forge_PreTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:FishingTotem_Pre_Trigger", False, 0)
+	Element("SetBoolVariable:FishingTotem_PreTrigger:true", False, 1)
+	Element("PlaySound:Player:Sounds\Items\Storage_open", False, 2)
+}
+
+//Forge Rack Looped - start after triger
+Node("Fishing_forge_Rack_looped", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("DisableObject:FishingTotem_NoFire_Trigger", False, 0)
+	Element("DisableObject:FishingTotem_Start_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:FishingTotem_PreTrigger", False, 2)
+	Element("IsBoolVariableTrue:true:HasToken_Fishing_AfterArena", False, 3)
+	Element("EnableObject:FishingTotem_NoFire_Trigger", False, 4)
+	Element("DisableObject:FishingTotem_Start_Trigger", False, 5)
+	Element("IsRackBurning:true:Arena_ForgeRack_Fishing", False,6)
+	Element("DisableObject:FishingTotem_NoFire_Trigger", False, 7)
+	Element("EnableObject:FishingTotem_Start_Trigger", False, 8)
+	Element("IsRackBurning:false:Arena_ForgeRack_Fishing", False, 9)
+}
+
+// Furnance StartTriger
+Node("Fishing_forge_StartTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:FishingTotem_Start_Trigger", False, 0)
+	Element("SetBoolVariable:FishingTotem_StartTrigger:true", False, 1)
+}
+
+// Furnance Cutscene & Goldpickup
+Node("Fishing_forge_Cutscene_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:Arena_Furnance_Fishing_TokenRaw", False, 1)
+	Element("IsBoolVariableTrue:true:FishingTotem_StartTrigger", False, 2)
+	Element("SetRackEndlessFire:Arena_ForgeRack_Fishing", False, 3)
+	Element("DeactivateScenarioNode:Fishing_forge_Rack_looped", False, 4)
+	Element("DisableObject:FishingTotem_Start_Trigger", False, 5)
+	Element("DeactivateScenarioNode:Fishing_forge_StartTrigger_FPP", False, 6)
+	Element("DreamFadeOut:1", False, 7)
+	Element("PlayerBlockMoves", False, 8)
+	Element("PlayerBlockRotation", False, 9)
+	Element("BlockSaveGame", False, 10)
+	Element("HideForPlayers:true", False, 11)
+	Element("Wait:1", False, 12)
+	Element("HideAllHints", False, 13)
+	Element("DisablePlayerCollisions", False, 14)
+	Element("BlockHUDEnergy", False, 15)
+	Element("BlockHUDSanity", False, 16)
+	Element("Teleport:Fake_Forge_Fishing_Playerpos:false", False, 17)
+	Element("Wait:0.6", False, 18)
+	Element("Teleport:Forge_Fishing_Playerpos_TokenThrow:false", False, 19)
+	Element("DreamFadeIn:1", False, 20)
+	Element("PlayCutscene:ThrowTokenToForge_Cutscene", False, 22)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:1.2", False, 23)	
+	Element("EnableObject:Token_Fishing_InHand", False, 24)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:7.7", False, 25)	
+	Element("DisableObject:Token_Fishing_InHand", False, 26)
+	Element("EnableObject:Arena_Furnance_Fishing_TokenRaw", False, 27)
+	Element("IsCutsceneTimeGreaterOrEqual:true:ThrowTokenToForge_Cutscene:9", False, 28)
+	Element("DreamFadeOut:1", False, 29)
+	Element("Wait:1", False, 30)
+	Element("PlaySound:Player:Sounds\Items\Storage_close", False, 31)
+	Element("Wait:3", False, 32)
+	Element("UnblockHUDEnergy", False, 33)
+	Element("UnblockHUDSanity", False, 34)
+	Element("UnblockGettingDirty", False, 35)
+	Element("HideForPlayers:false", False, 36)
+	Element("EnablePlayerCollisions", False, 37)	
+	Element("TeleportWithRandomOffset:Forge_Fishing_Playerpos_AfterCut:false:1.0", False, 38)
+	Element("DisableObject:Arena_Furnance_Fishing_TokenRaw", False, 39)
+	Element("SetBoolVariable:FishingTotem_AnimNuggers:true", False, 40)
+	Element("DreamFadeIn:1", False, 41)	
+	Element("PlayerUnblockMoves", False, 42)
+	Element("PlayerUnblockRotation", False, 43)
+	Element("UnblockSaveGame", False, 44)
+}
+
+// Furnance Re Open Token Triger
+Node("Fishing_forge_Reopen_Trigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:FishingTotem_Re_Open_Trigger", False, 0)
+	Element("SetBoolVariable:FishingTotem_ReOpen:true", False, 1)
+	Element("PlaySound:Player:Sounds\Items\Storage_open", False, 2)
+}
+// Furnance Goldpickup Token Triger
+Node("Fishing_forge_TotemTrigger_FPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:FishingTotem_Token_Trigger", False, 0)
+	Element("SetBoolVariable:FishingTotem_TokenTrigger:true", False, 1)
+}
+
+Node("Fishing_forge_TotemTrigger_TPP", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:Arena_Furnance_Fishing_TokenGoldArt", False, 0)
+	Element("DisableObject:FishingTotem_Token_Trigger", False, 1)
+	Element("DisableObject:Token_Gold_Fishing_InHand", False, 2)
+	Element("DisableObject:FishingTotem_Re_Open_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:FishingTotem_AnimNuggers", False, 4)
+	Element("EnableObject:FishingTotem_Re_Open_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:FishingTotem_ReOpen", False, 6)
+	Element("DisableObject:FishingTotem_Re_Open_Trigger", False, 7)
+	Element("EnableObject:Arena_Furnance_Fishing_TokenGoldArt", False, 8)
+	Element("EnableObject:FishingTotem_Token_Trigger", False, 9)
+	Element("IsBoolVariableTrue:true:FishingTotem_TokenTrigger", False, 10)
+	Element("DisableObject:FishingTotem_Token_Trigger", False, 11)
+	Element("DisableObject:Arena_Furnance_Fishing_TokenGoldArt", False, 12)
+	Element("PlayCutscene:TokenPresentation_Cutscene", False, 13)
+	Element("EnableObject:Token_Gold_Fishing_InHand", False, 14)
+	Element("IsCutsceneTimeGreaterOrEqual:true:TokenPresentation_Cutscene:2", False, 15)
+	Element("IntVariableAdd:CompletedArenas:1", False, 16)
+	Element("IsCutscenePlaying:false", False, 17)
+	Element("DisableObject:Token_Gold_Fishing_InHand", False, 18)
+	Element("SetBoolVariable:HasToken_Fishing_AfterForge:true", False, 19)
+}
+// ##########  Fishing FORGE  - END
+// ##########  Fishing FORGE  - END
+// ##########  Fishing FORGE  - END	
+

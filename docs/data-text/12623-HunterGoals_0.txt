@@ -1,0 +1,37 @@
+//Goal("Idle", -10)
+Goal("Death")
+Goal("HumanPunchBack", 0.75)
+Goal("HumanHitReaction")
+
+Goal("HumanJumpBack", 1.0)
+
+Goal("HunterSwitchToSecondaryWeapon")
+
+Goal("HumanEmergency")
+
+Goal("HumanUseNavLink")
+
+Goal("HumanMoveAwayFromEternalFire")
+
+Goal("HumanRest")
+Goal("HumanUpset")
+Goal("HumanTaunt", 0.75)
+Goal("HumanFollowPatrolPath")
+
+Goal("HumanPostAttackConstruction")
+Goal("HumanExtinguishEternalFire")
+Goal("HumanAttackConstruction")
+Goal("HumanMoveToConstruction")
+
+Goal("HunterStrafe", 0.2)
+Goal("HunterBowPostAttack")
+Goal("HumanPostAttack")
+Goal("HumanJumpAttack")
+Goal("HumanAttack")
+
+Goal("HunterMoveToBowAttackPos")
+Goal("HunterBowAttack")
+Goal("HunterMoveBack")
+
+Goal("HumanMoveToEnemy")
+Goal("Idle")

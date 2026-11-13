@@ -1,0 +1,599 @@
+Node("Box_Map_Pve", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvEMapBox_Open", False, 0)
+	Element("EnableObject:PvEMapBox_Close", False, 1)
+	Element("EnableObject:PvEMapBox_Trigger", False, 2)
+	Element("IsTriggered:true:PvEMapBox_Trigger", False, 3)
+	Element("DisableObject:PvEMapBox_Trigger", False, 4)
+	Element("DisableObject:PvEMapBox_Close", False, 5)
+	Element("EnableObject:PvEMapBox_Open", False, 6)
+}
+
+Node("Pickup_Map_Pve", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_PVE", False, 0)
+	Element("StartDialog:PvE_Map_Found_Player_01", False, 6)
+	Element("DeleteInventoryItem:QuestItem_Map_PVE", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map03", False, 3)
+	Element("SetBoolVariable:HaveMap_Pve:true", False, 4)
+}
+
+// #################   MAP PVE  #################
+// *** LOCATIONS_MAP_PVE ***
+// ----- LOCATION - XXXXXXXX -----
+Node("PVE_MAP_XXXXX", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Tribe_Village_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_TribeVillage", False, 1)
+}
+// ----- LOCATION - BOAT -----
+Node("PVE_MAP_Boat", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Boat_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Boat", False, 1)
+}
+// ----- LOCATION - STEAMBOAT -----
+Node("PVE_MAP_Steamboat", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Steamboat_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Steamboat", False, 1)
+}
+// ----- LOCATION - PLANTING_VILLAGE -----
+Node("PVE_MAP_Village_01_Planting", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_01_planting_map_sensor", False, 0)
+	Element("IsPve:true", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Village_01_Planting", False, 1)
+}
+// ----- LOCATION - BIG_AI_CAMP_01 -----
+Node("PVE_MAP_Big_Camp_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:big_camp_01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_big_camp_01", False, 1)
+}
+// ----- LOCATION - BIG_AI_CAMP_02 -----
+Node("PVE_MAP_Big_Camp_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:big_camp_02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_big_camp_02", False, 1)
+}
+// ----- LOCATION - BIG_AI_CAMP_03 -----
+Node("PVE_MAP_Big_Camp_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:big_camp_03_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_big_camp_03", False, 1)
+}
+// ----- LOCATION - SNAKE PASS MAP03 -----
+Node("PVE_MAP_SnakePass_Map03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_SnakePass_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:SoA3_YabahuacaGatekeeper_Talked", False, 1)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 2)	
+	Element("UnlockMapElement:MP_SnakePass_Map03", False, 3)
+}
+// *** CLIMBING_MAP_PVE ***
+// ----- CLIMBING - CR_A01_S07_to_A04_S01b_Unlocked -----
+Node("PVE2_MAP_CR_A01_S07_to_A04_S01b_Unlocked", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE3_ClimbingRope_13_Unlocked", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 1)
+	Element("UnlockMapElement:MP_CR_A01_S07_to_A04_S01b_Unlocked", False, 2)
+}
+// ----- CLIMBING - CR_A01_S12_to_A04_S01b_Unlocked -----
+Node("PVE3_MAP_CR_A01_S12_to_A04_S01b_Unlocked", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE3_ClimbingRope_14_Unlocked", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 1)
+	Element("UnlockMapElement:MP_CR_A01_S12_to_A04_S01b_Unlocked", False, 2)
+}
+// ----- CLIMBING - CR_A03_S03_to_A04_S01c_Unlocked -----
+Node("PVE3_MAP_CR_A03_S03_to_A04_S01c_Unlocked", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE3_ClimbingRope_6_Unlocked", False, 0)	
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 1)
+	Element("UnlockMapElement:MP_CR_A03_S03_to_A04_S01c_Unlocked", False, 2)
+}
+
+// *** CLIMBING_MAP_PVE SURVIVAL MAPS***
+// ----- CLIMBING - CR_A01_S07_to_A04_S01b_Unlocked_Survival -----
+Node("PVE2_MAP_CR_A01_S07_to_A04_S01b_Unlocked_Survival", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A01_S07_to_A04_S01b_Survival_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 1)
+	Element("UnlockMapElement:MP_CR_A01_S07_to_A04_S01b_Unlocked", False, 2)
+}
+// ----- CLIMBING - CR_A01_S12_to_A04_S01b_Unlocked_Survival -----
+Node("PVE3_MAP_CR_A01_S12_to_A04_S01b_Unlocked_Survival", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A01_S12_to_A04_S01b_Survival_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 1)
+	Element("UnlockMapElement:MP_CR_A01_S12_to_A04_S01b_Unlocked", False, 2)
+}
+// ----- CLIMBING - CR_A03_S03_to_A04_S01c_Unlocked_Survival -----
+Node("PVE3_MAP_CR_A03_S03_to_A04_S01c_Unlocked_Survival", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A03_S03_to_A04_S01c_Survival_map_sensor", False, 0)	
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 1)
+	Element("UnlockMapElement:MP_CR_A03_S03_to_A04_S01c_Unlocked", False, 2)
+}
+// ----- CLIMBING - CR_A01_S07_to_A04_S01b_B -----
+Node("PVE2_MAP_CR_A01_S07_to_A04_S01b_B_Survival", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A01_S07_to_A04_S01b_Survival_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_CR_A01_S07_to_A04_S01b_Map00", False, 1)
+}
+// ----- CLIMBING - CR_A03_S03_to_A04_S01c Survival -----
+Node("PVE3_MAP_CR_A03_S03_to_A04_S01c_Survival", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A03_S03_to_A04_S01c_Survival_map_sensor", False, 0)	
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_CR_A03_S03_to_A04_S01c_Map02", False, 1)
+}
+// ----- CLIMBING - CR_A02_S01_to_A02_S02 Survival -----
+Node("PVE3_MAP_CR_A02_S01_to_A02_S02_Survival", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A02_S01_to_A02_S02_Survival_map_sensor", False, 0)	
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_CR_A02_S01_to_A02_S02_Map01", False, 1)
+}
+// ----- CLIMBING - CR_A01_S12_to_A04_S01b Survival -----
+Node("PVE3_MAP_CR_A01_S12_to_A04_S01b_Survival", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CR_A01_S12_to_A04_S01b_Survival_map_sensor", False, 0)	
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_CR_A01_S12_to_A04_S01b_Map01", False, 1)
+}
+// *** CAVES_MAP_PVE ***
+// ----- CAVE - Cave01_A04_S01a -----
+Node("PVE_MAP_Cave01_A04_S01a", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01a_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01a", False, 1)
+}
+// ----- CAVE - Cave04_A04_S01a -----
+Node("PVE_MAP_Cave04_A04_S01a", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A04_S01a_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A04_S01a", False, 1)
+}
+// ----- CAVE - Cave05_A04_S01a -----
+Node("PVE_MAP_Cave05_A04_S01a", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave05_A04_S01a_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave05_A04_S01a", False, 1)
+}
+// ----- CAVE - Cave01_A04_S01f -----
+Node("PVE_MAP_Cave01_A04_S01f", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01f_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01f", False, 1)
+}
+
+// ----- CAVE - Cave14_A04_S01g -----
+Node("PVE_MAP_Cave14_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave14_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave14_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave15_A04_S01g -----
+Node("PVE_MAP_Cave15_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave15_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave15_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave11_A04_S01g -----
+Node("PVE_MAP_Cave11_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave11_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave11_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave10_A04_S01g -----
+Node("PVE_MAP_Cave10_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave10_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave10_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave13_A04_S01g -----
+Node("PVE_MAP_Cave13_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave13_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave13_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave12_A04_S01g -----
+Node("PVE_MAP_Cave12_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave12_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave12_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave09_A04_S01g -----
+Node("PVE_MAP_Cave09_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave09_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave09_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave08_A04_S01g -----
+Node("PVE_MAP_Cave08_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave08_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave08_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave07_A04_S01g -----
+Node("PVE_MAP_Cave07_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave07_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave07_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave02_A04_S01g -----
+Node("PVE_MAP_Cave02_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave06_A04_S01g -----
+Node("PVE_MAP_Cave06_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave06_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave06_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave05_A04_S01g -----
+Node("PVE_MAP_Cave05_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave05_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave05_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave09_A04_S01e -----
+Node("PVE_MAP_Cave09_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave09_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave09_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave04_A04_S01g -----
+Node("PVE_MAP_Cave04_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave03_A04_S01g -----
+Node("PVE_MAP_Cave03_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave01_A04_S01g -----
+Node("PVE_MAP_Cave01_A04_S01g", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01g_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01g", False, 1)
+}
+// ----- CAVE - Cave06_A04_S01e -----
+Node("PVE_MAP_Cave06_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave06_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave06_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave08_A04_S01e -----
+Node("PVE_MAP_Cave08_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave08_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave08_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave02_A04_S01e -----
+Node("PVE_MAP_Cave02_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave01_A04_S01e -----
+Node("PVE_MAP_Cave01_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave05_A04_S01e -----
+Node("PVE_MAP_Cave05_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave05_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave05_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave04_A04_S01e -----
+Node("PVE_MAP_Cave04_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave03_A04_S01e -----
+Node("PVE_MAP_Cave03_A04_S01e", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A04_S01e_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A04_S01e", False, 1)
+}
+// ----- CAVE - Cave01_A04_S01b -----
+Node("PVE_MAP_Cave01_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave02_A04_S01b -----
+Node("PVE_MAP_Cave02_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave03_A04_S01b -----
+Node("PVE_MAP_Cave03_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave04_A04_S01b -----
+Node("PVE_MAP_Cave04_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave05_A04_S01b -----
+Node("PVE_MAP_Cave05_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave05_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave05_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave10_A04_S01b -----
+Node("PVE_MAP_Cave10_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave10_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave10_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave07_A04_S01b -----
+Node("PVE_MAP_Cave07_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave07_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave07_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave08_A04_S01b -----
+Node("PVE_MAP_Cave08_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave08_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave08_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave13_A04_S01b -----
+Node("PVE_MAP_Cave13_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave13_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave13_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave12_A04_S01b -----
+Node("PVE_MAP_Cave12_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave12_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave12_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave11_A04_S01b -----
+Node("PVE_MAP_Cave11_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave11_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave11_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave14_A04_S01b -----
+Node("PVE_MAP_Cave14_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave14_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave14_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave09_A04_S01b -----
+Node("PVE_MAP_Cave09_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave09_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave09_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave15_A04_S01b -----
+Node("PVE_MAP_Cave15_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave15_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave15_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave16_A04_S01b -----
+Node("PVE_MAP_Cave16_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave16_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave16_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave17_A04_S01b -----
+Node("PVE_MAP_Cave17_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave17_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave17_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave18_A04_S01b -----
+Node("PVE_MAP_Cave18_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave18_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave18_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave19_A04_S01b -----
+Node("PVE_MAP_Cave19_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave19_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave19_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave20_A04_S01b -----
+Node("PVE_MAP_Cave20_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave20_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave20_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave21_A04_S01b -----
+Node("PVE_MAP_Cave21_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave21_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave21_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave22_A04_S01b -----
+Node("PVE_MAP_Cave22_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave22_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave22_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave27_A04_S01b -----
+Node("PVE_MAP_Cave27_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave27_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave27_A04_S01b", False, 1)
+}
+
+// ----- CAVE - Cave24_A04_S01b -----
+Node("PVE_MAP_Cave24_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave24_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave24_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave23_A04_S01b -----
+Node("PVE_MAP_Cave23_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave23_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave23_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave25_A04_S01b -----
+Node("PVE_MAP_Cave25_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave25_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave25_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave26_A04_S01b -----
+Node("PVE_MAP_Cave26_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave26_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave26_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave02_A04_S01c -----
+Node("PVE_MAP_Cave02_A04_S01c", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A04_S01c_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A04_S01c", False, 1)
+}
+// ----- CAVE - Cave03_A04_S01c -----
+Node("PVE_MAP_Cave03_A04_S01c", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A04_S01c_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A04_S01c", False, 1)
+}
+// ----- CAVE - Cave04_A04_S01c -----
+Node("PVE_MAP_Cave04_A04_S01c", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A04_S01c_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A04_S01c", False, 1)
+}
+// ----- CAVE - Cave05_A04_S01c -----
+Node("PVE_MAP_Cave05_A04_S01c", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave05_A04_S01c_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave05_A04_S01c", False, 1)
+}
+// ----- CAVE - Cave06_A04_S01c -----
+Node("PVE_MAP_Cave06_A04_S01c", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave06_A04_S01c_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave06_A04_S01c", False, 1)
+}
+// ----- CAVE - Cave01_A04_S01d -----
+Node("PVE_MAP_Cave01_A04_S01d", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01d_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01d", False, 1)
+}
+// ----- CAVE - Cave02_A04_S01a -----
+Node("PVE_MAP_Cave02_A04_S01a", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A04_S01a_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A04_S01a", False, 1)
+}
+// ----- CAVE - Cave03_A04_S01a -----
+Node("PVE_MAP_Cave03_A04_S01a", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A04_S01a_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A04_S01a", False, 1)
+}
+// ----- CAVE - Cave06_A04_S01b -----
+Node("PVE_MAP_Cave06_A04_S01b", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave06_A04_S01b_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave06_A04_S01b", False, 1)
+}
+// ----- CAVE - Cave01_A04_S01c -----
+Node("PVE_MAP_Cave01_A04_S01c", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A04_S01c_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A04_S01c", False, 1)
+}
+

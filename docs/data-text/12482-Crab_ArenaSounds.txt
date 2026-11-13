@@ -1,0 +1,2 @@
+Idle("Crab_Ver_01_Loop", "Crab_Ver_02_Loop", "Crab_Ver_03_Loop")
+Panic("Crab_Ver_01_Loop", "Crab_Ver_02_Loop", "Crab_Ver_03_Loop")

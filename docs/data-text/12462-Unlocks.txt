@@ -1,0 +1,680 @@
+Node("AfterTutorial_Unlocks", True, 908.0000, 1246.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:Hand_Drill_Stick", False, 1)
+	Element("UnlockCraftingItem:Hand_Drill_Stick", False, 2)
+	Element("UnlockCraftingItem:Hand_Drill_Board", False, 3)
+	Element("UnlockCraftingItem:Leaf_Bandage", False, 4)
+	Element("UnlockItemInNotepadNoMsg:Leaf_Bandage", False, 5)
+	Element("UnlockItemInNotepadNoMsg:Rope", False, 6)
+	Element("UnlockItemInNotepadNoMsg:Weak_Torch", False, 7)
+	Element("UnlockItemInNotepadNoMsg:Small_Shelter", False, 8)
+	Element("UnlockItemInNotepadNoMsg:Hut_Shelter", False, 9)
+	Element("UnlockItemInNotepadNoMsg:Leaves_Bed", False, 10)
+	Element("UnlockItemInNotepadNoMsg:banana_leaf_bed", False, 50)
+	Element("UnlockItemInNotepadNoMsg:Small_Bamboo_Shelter", False, 11)
+	Element("UnlockItemInNotepadNoMsg:Stone_Trap", False, 12)
+	Element("UnlockItemInNotepadNoMsg:Small_Fire", False, 13)
+	Element("ActivateScenarioNode:Watch_scroll", False, 14)
+	Element("ActivateScenarioNode:Arrow_Unlock", False, 15)
+	Element("UnlockCraftingItem:leaf_armor", False, 16)
+	Element("UnlockCraftingItem:stick_armor", False, 17)
+	Element("UnlockCraftingItem:bamboo_armor", False, 18)
+	Element("UnlockCraftingItem:bone_armor", False, 19)
+	Element("UnlockCraftingItem:armadillo_armor", False, 20)
+	Element("UnlockCraftingItem:Stick_Blade", False, 21)
+	Element("UnlockCraftingItem:Stone_Blade", False, 22)
+	Element("UnlockCraftingItem:Obsidian_Blade", False, 23)
+	Element("UnlockCraftingItem:Stone_Axe", False, 24)
+	Element("UnlockCraftingItem:Axe", False, 25)
+	Element("UnlockCraftingItem:Blade_Axe", False, 26)
+	Element("UnlockCraftingItem:Bone_Axe", False, 27)
+	Element("UnlockCraftingItem:Obsidian_Axe", False, 28)
+	Element("UnlockCraftingItem:Weak_Torch", False, 29)
+	Element("UnlockCraftingItem:Torch", False, 30)
+	Element("UnlockCraftingItem:Tobacco_Torch", False, 31)
+	Element("UnlockCraftingItem:Fishing_Rod", False, 32)
+	Element("UnlockCraftingItem:Bamboo_Fishing_Rod", False, 33)
+	Element("UnlockCraftingItem:Weak_Spear", False, 34)
+	Element("UnlockCraftingItem:Stone_Spear", False, 35)
+	Element("UnlockCraftingItem:Bone_Spear", False, 36)
+	Element("UnlockCraftingItem:Obsidian_Spear", False, 37)
+	Element("UnlockCraftingItem:Four_Pronged_Spear", False, 38)
+	Element("UnlockCraftingItem:Four_Pronged_Bamboo_Spear", False, 39)
+	Element("UnlockCraftingItem:Bamboo_Spear", False, 40)
+	Element("UnlockCraftingItem:Arrow", False, 41)
+	Element("UnlockCraftingItem:Bow", False, 42)
+	Element("UnlockCraftingItem:Bamboo_Bow", False, 43)
+	Element("UnlockCraftingItem:Bone_Knife", False, 44)
+	Element("UnlockCraftingItem:Fire_Bow", False, 45)
+	Element("UnlockPlantInNotepad:Tobacco_Leaf", False, 46)
+}
+Node("AfterTutorial_Unlocks_Patch_Animal", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:building_frame", False, 1)
+	Element("UnlockItemInNotepadNoMsg:building_bamboo_frame", False, 2)
+	Element("UnlockItemInNotepadNoMsg:building_roof", False, 3)
+	Element("UnlockItemInNotepadNoMsg:building_banana_leaf_roof", False, 4)
+	Element("UnlockItemInNotepadNoMsg:building_shed", False, 5)
+	Element("UnlockItemInNotepadNoMsg:building_bamboo_shed", False, 6)
+	Element("UnlockItemInNotepadNoMsg:building_wall", False, 7)
+	Element("UnlockItemInNotepadNoMsg:building_bamboo_wall", False, 8)
+	//Element("UnlockItemInNotepadNoMsg:Log_Stand", False, 9)
+	//Element("UnlockItemInNotepadNoMsg:Long_Stick_Stand", False, 10)
+	//Element("UnlockItemInNotepadNoMsg:Stick_Stand", False, 11)
+	//Element("UnlockItemInNotepadNoMsg:Small_Stick_Stand", False, 12)
+	Element("UnlockItemInNotepadNoMsg:wooden_doorway", False, 13)
+	Element("UnlockItemInNotepadNoMsg:bamboo_doorway", False, 14)
+}
+Node("Stone_Blade", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Stone", False, 1)
+	Element("UnlockItemInNotepad:Stone_Blade", False, 2)
+}
+Node("Axe_Unlock", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Axe", False, 1)
+	Element("UnlockItemInNotepad:Axe", False, 2)
+}
+Node("Axe_SkillUnlock", True, 2158.0000, 817.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("SkillGreaterOrEqual:true:Crafting:15", False, 1)
+	Element("UnlockItemInNotepad:Axe", False, 2)
+}
+Node("Stone_Blade_Unlock", True, 1444.0000, 1547.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Stone", False, 1)
+	Element("UnlockItemInNotepad:Stone_Blade", False, 2)
+}
+Node("Stone_Spear_Unlock", True, 2161.0000, 1354.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Stone_Spear", False, 0)
+	Element("UnlockItemInNotepad:Stone_Spear", False, 1)
+}
+Node("Stone_Spear_SkillUnlock", True, 2162.0000, 1448.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:20", False, 0)
+	Element("UnlockItemInNotepad:Stone_Spear", False, 1)
+}
+Node("4ProngedSpear_Unlock", True, 2395.0000, 1048.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Four_Pronged_Spear", False, 0)
+	Element("UnlockItemInNotepad:Four_Pronged_Spear", False, 1)
+}
+Node("4ProngedSpear_SkillUnlock", True, 2402.0000, 865.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:35", False, 0)
+	Element("UnlockItemInNotepad:Four_Pronged_Spear", False, 1)
+}
+Node("Fishing_Rod_Unlock", True, 2620.0000, 958.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Fishing_Rod", False, 0)
+	Element("UnlockItemInNotepad:Fishing_Rod", False, 1)
+	Element("UnlockItemInNotepad:Fish_Rod_Trap", False, 2)
+	Element("UnlockItemInNotepad:Bone_Hook", False, 3)
+	Element("UnlockItemInNotepad:Fish_Hook", False, 4)
+}
+Node("BambooFishing_Rod_Unlock", True, 2401.0000, 956.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bamboo_Fishing_Rod", False, 0)
+	Element("UnlockItemInNotepad:Fishing_Rod", False, 1)
+	Element("UnlockItemInNotepad:Fish_Rod_Trap", False, 2)
+	Element("UnlockItemInNotepad:Bone_Hook", False, 3)
+	Element("UnlockItemInNotepad:Fish_Hook", False, 4)
+}
+Node("Fish_Hook_Unlock", True, 2616.0000, 679.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Fish_Hook", False, 0)
+	Element("UnlockItemInNotepad:Fish_Hook", False, 1)
+}
+Node("Bone_Hook_Unlock", True, 2617.0000, 771.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bone_Hook", False, 0)
+	Element("UnlockItemInNotepad:Bone_Hook", False, 1)
+}
+Node("BoneKnife_Unlock", True, 2401.0000, 680.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bone_Knife", False, 0)
+	Element("UnlockItemInNotepad:Bone_Knife", False, 1)
+}
+Node("Stone_Ring_Unlock", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_StoneRing", False, 0)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 1)
+}
+Node("Campfire_Unlock", True, 2767.0000, 1243.5000, 200.0000, 75.0000, "Stone_Ring_Unlock", False)
+{
+	Element("ItemExist:true:Stone_Ring", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+}
+Node("Campfire_Sensor1_Unlock", True, 2778.0000, 1332.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Campfire_Sensor1", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+Node("Campfire_Sensor2_Unlock", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Campfire_Sensor2", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+Node("Campfire_Sensor3_Unlock", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Campfire_Sensor3", False, 0)
+	Element("UnlockItemInNotepad:Campfire", False, 1)
+	Element("UnlockItemInNotepad:Stone_Ring", False, 2)
+}
+
+Node("Smoker", True, 1936.0000, 1539.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Smoker", False, 0)
+	Element("UnlockItemInNotepad:Smoker", False, 1)
+}
+Node("Bamboo_Smoker", True, 1939.0000, 1450.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Bamboo_Smoker", False, 0)
+	Element("UnlockItemInNotepad:Bamboo_Smoker", False, 1)
+}
+Node("Cage_Trap_Unlock", True, 2401.0000, 1432.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Cage_Trap", False, 0)
+	Element("UnlockItemInNotepad:Cage_Trap", False, 1)
+}
+Node("Cage_Trap_Unlock2", True, 2401.0000, 1432.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Cage_Trap2", False, 0)
+	Element("UnlockItemInNotepad:Cage_Trap", False, 1)
+}
+Node("Weapon_Rack_Unlock", True, 2388.0000, 1145.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Weapon_Rack", False, 0)
+	Element("UnlockItemInNotepad:Weapon_Rack", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_Weapon_Rack", False, 2)
+}
+Node("Water_Collector_Unlock", True, 2166.0000, 1538.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Water_Collector", False, 0)
+	Element("UnlockItemInNotepad:Water_Collector", False, 1)
+	Element("UnlockItemInNotepad:Bamboo_Water_Collector", False, 2)
+}
+
+Node("COOP_VarWater_Collector_Unlock", True, 2166.0000, 1538.5000, 200.0000, 75.0000, "Water_Collector_Unlock", False)
+{
+	Element("SetBoolVariable:COOP_Water_Collector_Unlock:true", False, 0)
+}
+
+
+Node("Water_Filter_Unlock", True, 2166.0000, 1538.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Water_Filter", False, 0)
+	Element("UnlockItemInNotepad:Water_Filter", False, 1)
+	Element("UnlockItemInNotepad:Bamboo_Water_Filter", False, 2)
+}
+Node("COOP_VarCOOP_Water_Filter_Unlock", True, 2166.0000, 1538.5000, 200.0000, 75.0000, "Water_Filter_Unlock", False)
+{
+	Element("SetBoolVariable:COOP_Water_Filter_Unlock:true", False, 0)
+}
+
+
+Node("Campfire_Rack_Unlock", True, 1940.0000, 1354.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Campfire_Rack", False, 0)
+	Element("UnlockItemInNotepad:Campfire_Rack", False, 1)
+}
+Node("Killer_Trap_Unlock", True, 2164.0000, 1146.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_KillerTrap", False, 0)
+	Element("UnlockItemInNotepad:Killer_Trap", False, 1)
+}
+Node("Medium_Bamboo_Shelter_Unlock", True, 2159.0000, 1242.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Medium_Bamboo_Shelter", False, 0)
+	Element("UnlockItemInNotepad:Medium_Bamboo_Shelter", False, 1)
+}
+Node("Bow_Unlock", True, 2391.0000, 1232.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bow", False, 0)
+	Element("UnlockItemInNotepad:Bow", False, 1)
+	Element("UnlockItemInNotepad:Tribe_Bow_Trap", False, 2)
+}
+Node("Bow_SkillUnlock", True, 2396.0000, 1327.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:15", False, 0)
+	Element("UnlockItemInNotepad:Bow", False, 1)
+}
+Node("Arrow_Unlock", True, 2390.0000, 1526.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bird_feather", False, 1)
+	Element("UnlockItemInNotepad:Arrow", False, 2)
+}
+Node("Arrow_SkillUnlock", True, 2167.0000, 1629.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:19", False, 0)
+	Element("UnlockItemInNotepad:Arrow", False, 1)
+}
+Node("Torch", True, 1491.0000, 1071.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Torch", False, 0)
+	Element("UnlockItemInNotepad:Torch", False, 1)
+}
+Node("Stone_Axe", True, 1463.0000, 1165.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Stone_Axe", False, 0)
+	Element("UnlockItemInNotepad:Stone_Axe", False, 1)
+}
+Node("Stone_Axe_SkillUnlock", True, 2155.0000, 910.0000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:5", False, 0)
+	Element("UnlockItemInNotepad:Stone_Axe", False, 1)
+}
+Node("Blade_Axe", True, 1461.0000, 1256.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Blade_Axe", False, 0)
+	Element("UnlockItemInNotepad:Blade_Axe", False, 1)
+}
+Node("Blade_Axe_SkillUnlock", True, 2390.0000, 1705.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:30", False, 0)
+	Element("UnlockItemInNotepad:Blade_Axe", False, 1)
+}
+Node("Bone_Axe", True, 1707.0000, 1164.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bone_Axe", False, 0)
+	Element("UnlockItemInNotepad:Bone_Axe", False, 1)
+}
+Node("Bone_Axe_SkillUnlock", True, 2172.0000, 1719.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:45", False, 0)
+	Element("UnlockItemInNotepad:Bone_Axe", False, 1)
+}
+Node("Weak_Spear", True, 1701.0000, 1346.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Weak_Spear", False, 0)
+	Element("UnlockItemInNotepad:Weak_Spear", False, 1)
+	Element("UnlockItemInNotepad:tribe_spike_trap", False, 2)
+}
+Node("Weak_Spear_SkillUnlock", True, 2162.0000, 1448.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:10", False, 0)
+	Element("UnlockItemInNotepad:Stone_Spear", False, 1)
+}
+Node("Bone_Spear", True, 1706.0000, 1257.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Bone_Spear", False, 0)
+	Element("UnlockItemInNotepad:Bone_Spear", False, 1)
+}
+Node("Bone_Spear_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Crafting:40", False, 0)
+	Element("UnlockItemInNotepad:Bone_Spear", False, 1)
+}
+Node("Logs_Bed_Unlock", True, 1709.0000, 1075.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Logs_Bed", False, 0)
+	Element("UnlockItemInNotepad:Logs_Bed", False, 1)
+	Element("UnlockItemInNotepad:BambooLog_Bed", False, 2)
+}
+Node("Stick_Fish_Trap_Unlock", True, 1946.0000, 1263.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Stick_Fish_Trap", False, 0)
+	Element("UnlockItemInNotepad:Stick_Fish_Trap", False, 1)
+}
+Node("BigStick_Fish_Trap_Unlock", True, 1942.0000, 1158.5000, 200.0000, 75.0000, "Stick_Fish_Trap_Unlock", False)
+{
+	Element("UnlockItemInNotepad:Big_Stick_Fish_Trap", False, 0)
+}
+Node("Shrimp_Trap_Unlock", True, 1944.0000, 1061.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_shrimp_Trap", False, 0)
+	Element("UnlockItemInNotepad:shrimp_trap", False, 1)
+}
+Node("Rubing_Wood_Unlock", True, 1486.0000, 1446.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:Rubing_Wood", False, 3)
+	Element("HaveItem:true:Rubing_Wood", False, 0)
+	Element("UnlockCraftingItem:Rubing_Wood", False, 1)
+	Element("UnlockItemInNotepad:Rubing_Wood", False, 2)
+}
+Node("Fire_Bow_Unlock", True, 1486.0000, 1446.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Fire_Bow", False, 0)
+	Element("UnlockItemInNotepad:Fire_Bow", False, 1)
+}
+Node("Coconut_Bidon_Unlock", True, 1711.0000, 1439.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Coconut", False, 0)
+	Element("UnlockItemInNotepad:Coconut_Bidon", False, 1)
+}
+Node("Snare_Trap", True, 2619.0000, 859.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_SnareTrap", False, 0)
+	Element("UnlockItemInNotepad:Snare_Trap", False, 1)
+}
+Node("Unlock_Dryer", True, 2401.0000, 777.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Unlock_Dryer", False, 0)
+	Element("UnlockItemInNotepad:Dryer", False, 1)
+	Element("UnlockItemInNotepad:Bamboo_Dryer", False, 2)
+}
+Node("leaf_armor", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:leaf_armor", False, 1)
+	Element("UnlockItemInNotepad:leaf_armor", False, 2)
+}
+Node("stick_armor", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:stick_armor", False, 1)
+	Element("UnlockItemInNotepad:stick_armor", False, 2)
+}
+Node("bamboo_armor", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:bamboo_armor", False, 1)
+	Element("UnlockItemInNotepad:bamboo_armor", False, 2)
+}
+Node("bone_armor", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:bone_armor", False, 1)
+	Element("UnlockItemInNotepad:bone_armor", False, 2)
+}
+Node("armadillo_armor", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:armadillo_armor", False, 1)
+	Element("UnlockItemInNotepad:armadillo_armor", False, 2)
+}
+Node("TribeSpike_Trap_Unlock", True, 2619.0000, 859.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Weak_Spear", False, 0)
+	Element("UnlockItemInNotepad:tribe_spike_trap", False, 1)
+}
+Node("Tribe_Bow_Trap_Unlock", True, 2619.0000, 859.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bow", False, 0)
+	Element("UnlockItemInNotepad:Tribe_Bow_Trap", False, 1)
+}
+Node("metal_armor_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:metal_armor", False, 0)
+	Element("UnlockItemInNotepad:metal_armor", False, 1)
+}
+Node("pickaxe_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:pickaxe", False, 0)
+	Element("UnlockItemInNotepad:pickaxe", False, 1)
+}
+Node("metal_pickaxe_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:metal_pickaxe", False, 0)
+	Element("UnlockItemInNotepad:metal_pickaxe", False, 1)
+}
+Node("metal_blade_weapon_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:metal_blade_weapon", False, 0)
+	Element("UnlockItemInNotepad:metal_blade_weapon", False, 1)
+}
+Node("metal_axe_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:metal_axe", False, 0)
+	Element("UnlockItemInNotepad:metal_axe", False, 1)
+}
+Node("metal_spear_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:metal_spear", False, 0)
+	Element("UnlockItemInNotepad:metal_spear", False, 1)
+}
+Node("Metal_arrow_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Metal_arrow", False, 0)
+	Element("UnlockItemInNotepad:Metal_arrow", False, 1)
+}
+Node("Metal_Form_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:mud_metal_furnace", False, 0)
+	Element("UnlockItemInNotepad:form", False, 1)
+}
+
+Node("COOP_MUD_VAR_Creator", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateBoolVariable:COOP_Mud_Mixer_Unlock:false", False, 0)
+	Element("CreateBoolVariable:COOP_Water_Collector_Unlock:false", False, 1)
+	Element("CreateBoolVariable:COOP_Water_Filter_Unlock:false", False, 2)
+}
+
+Node("Mud_Mixer_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_from_water", False, 1)
+	Element("UnlockItemInNotepad:mud_mixer", False, 2)
+}
+
+Node("Mud_Mixer_ForSavedCoopGames", True, -89.0000, 622.0000, 200.0000, 75.0000, "Mud_Mixer_Unlock", False)
+{
+	Element("SetBoolVariable:COOP_Mud_Mixer_Unlock:true", False, 0)
+}
+
+Node("MudBuildings_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 0)
+	Element("UnlockItemInNotepad:mud_wall", False, 2)
+	Element("UnlockItemInNotepad:mud_ceiling", False, 3)
+	Element("UnlockItemInNotepad:mud_wall_fireside", False, 4)
+	// Element("UnlockItemInNotepad:mud_shed_wall", False, 5)
+	Element("UnlockItemInNotepad:mud_window_wall", False, 6)
+	Element("UnlockItemInNotepad:mud_doorway", False, 7)
+}
+
+Node("Mud_Water_Collector_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 0)
+	Element("IsNodeCompleted:true:Water_Collector_Unlock", False, 1)
+	Element("IsNodeCompleted:true:Water_Filter_Unlock", False, 2)
+	Element("UnlockItemInNotepad:mud_water_collector", False, 3)
+}
+
+Node("COOP_Mud_Water_Collector_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:COOP_Mud_Mixer_Unlock", False, 0)
+	Element("IsBoolVariableTrue:true:COOP_Water_Collector_Unlock", False, 1)
+	Element("IsBoolVariableTrue:true:COOP_Water_Filter_Unlock", False, 2)
+	Element("UnlockItemInNotepad:mud_water_collector", False, 3)
+}
+
+Node("mud_metal_furnace_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:iron_ore_stone", False, 0)
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 1)
+	Element("UnlockItemInNotepad:mud_metal_furnace", False, 2)
+}
+
+Node("Metal_Furnance_ForSavedCoopGames", True, -89.0000, 622.0000, 200.0000, 75.0000, "mud_metal_furnace_Unlock", False)
+{
+	Element("ActivateScenarioNode:COOP_mud_metal_furnace_Unlock_Part2", False, 0)
+}
+
+Node("COOP_mud_metal_furnace_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:iron_ore_stone", False, 0)
+	Element("IsBoolVariableTrue:true:COOP_Mud_Mixer_Unlock", False, 1)
+	Element("ActivateScenarioNode:COOP_mud_metal_furnace_Unlock_Part2", False, 2)
+}
+
+Node("COOP_mud_metal_furnace_Unlock_byCan1", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Can_small_open", False, 0)
+	Element("IsBoolVariableTrue:true:COOP_Mud_Mixer_Unlock", False, 1)
+	Element("ActivateScenarioNode:COOP_mud_metal_furnace_Unlock_Part2", False, 2)
+}
+
+Node("COOP_mud_metal_furnace_Unlock_byCan2", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Can_big_open", False, 0)
+	Element("IsBoolVariableTrue:true:COOP_Mud_Mixer_Unlock", False, 1)
+	Element("ActivateScenarioNode:COOP_mud_metal_furnace_Unlock_Part2", False, 2)
+}
+
+Node("COOP_mud_metal_furnace_Unlock_Part2", False, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)	
+{
+	Element("UnlockItemInNotepad:mud_metal_furnace", False, 0)
+}
+
+Node("mud_charcoal_furnace_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Charcoal", False, 0)
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 1)
+	Element("UnlockItemInNotepad:mud_charcoal_furnace", False, 2)
+}
+
+
+
+Node("mud_shower_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("ItemExist:true:Charcoal", False, 0) czekam na faze
+	Element("PlayerCondition:Dirtiness:Greater:100", False, 0)
+	Element("PlayerCondition:Dirtiness:Less:90", False, 1)
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 2)
+	Element("UnlockItemInNotepad:mud_shower", False, 3)
+}
+
+Node("COOP_mud_shower_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerCondition:Dirtiness:Greater:100", False, 0)
+	Element("PlayerCondition:Dirtiness:Less:90", False, 1)
+	Element("IsBoolVariableTrue:true:COOP_Mud_Mixer_Unlock", False, 2)
+	Element("UnlockItemInNotepad:mud_shower", False, 3)
+}
+
+
+
+Node("storage_box_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:Fire_Board", False, 0)
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 1)
+	Element("UnlockItemInNotepad:storage_box", False, 2)
+}
+Node("Blue_Leponia_Info_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("WasReadedAndOff:true:Collectable_Dream02_Scene1_BookPage2", False, 0)
+	Element("UnlockItemInfo:indigo_blue_leptonia", False, 1)
+	Element("UnlockItemInfo:indigo_blue_leptonia_dryed", False, 2)
+	Element("UnlockItemInfo:indigo_blue_leptonia_Spoiled", False, 3)
+}
+Node("Plantain_lily_Info_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("WasReadedAndOff:true:Collectable_Dream02_Scene1_BookPage3", False, 0)
+	Element("UnlockItemInfo:Plantain_lily_leaf", False, 1)
+	Element("UnlockItemInfo:plantain_lilly_flowers", False, 2)
+	Element("UnlockItemInfo:plantain_lilly_flowers_Dryed", False, 3)
+}
+Node("Ayuhaska_Info_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("WasReadedAndOff:true:Collectable_TribeCamp_Book1", False, 0)
+	Element("UnlockItemInfo:banisteriopsis_scraps", False, 1)
+	Element("UnlockItemInfo:psychotria_viridis", False, 2)
+	Element("UnlockItemInfo:psychotria_viridis_berries", False, 3)
+	Element("UnlockItemInfo:psychotria_viridis_berries_Dryed", False, 4)
+}
+
+Node("FarmingUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Unlock_Farming", False, 0)
+}
+
+Node("SheltersUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Unlock_Shelters", False, 0)
+}
+
+Node("StandsUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Unlock_Stands", False, 0)
+}
+
+Node("PVEUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Unlock_pve", False, 0)
+}
+
+Node("SOA_Drum_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsPve:true", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_EndQuest", False, 1)
+	Element("UnlockItemInNotepad:Drums", False, 2)
+}
+
+Node("NotSOA_Drum_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsPve:false", False, 0)
+	Element("HaveItem:true:tapir_skin", False, 1)
+	Element("UnlockItemInNotepad:Drums", False, 2)
+}
+
+Node("NotSOA_Statue_Locker", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsPve:false", False, 0)
+	Element("LockCraftingItem:form_Quest_Scale", False, 1)
+	Element("LockCraftingItem:form_Quest_Fang", False, 2)
+	Element("LockCraftingItem:form_Quest_Feather", False, 3)
+	Element("LockCraftingItem:QuestItem_statue", False, 4)
+}
+
+Node("Bamboo_Bow_Unlock", True, 2391.0000, 1232.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Bamboo_Bow", False, 0)
+	Element("UnlockItemInNotepad:Bow", False, 1)
+}
+
+Node("Bamboo_Spear_Unlock", True, 1701.0000, 1346.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Bamboo_Spear", False, 0)
+	Element("UnlockItemInNotepad:Weak_Spear", False, 1)
+}
+
+Node("4ProngedBambooSpear_Unlock", True, 2395.0000, 1048.5000, 200.0000, 75.0000, "AfterTutorial_Unlocks", False)
+{
+	Element("HaveItem:true:Four_Pronged_Bamboo_Spear", False, 0)
+	Element("UnlockItemInNotepad:Four_Pronged_Spear", False, 1)
+}
+Node("NotSOA_GoldenFishBait_Locker", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsPve:false", False, 0)
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait", False, 1)
+	Element("LockCraftingItem:QuestItem_GoldenFish_Bait_Larva", False, 2)
+}
+
+Node("AnimalHasbandryUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("Include:Unlock_AnimalHusbandry", False, 0)
+}
+
+Node("BuildingUpdateUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("Include:Unlock_BuildingUpdate", False, 0)
+}
+
+Node("StorageAndTransportationUpdateUnlock_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("Include:Unlock_StorageAndTransportationUpdate", False, 0)
+}
+Node("FlamekeeperUpdate_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("Include:Unlock_FlamekeeperUpdate", False, 0)
+}
+Node("AnteaterUpdate_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("Include:Unlock_AnteaterUpdate", False, 0)
+}
+Node("DecorationUpdate_Includer", True, 89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("Include:Unlock_DecorationUpdate", False, 0)
+}

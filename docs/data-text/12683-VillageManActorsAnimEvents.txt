@@ -1,0 +1,254 @@
+// Obs³uga eventów animacyjnych powi¹zanych z aktorem z wioski
+// To co zostanie pokazane/ukryte w evencie jest konfigurowane w komponencie
+// AnimAssetActivator w prefabie aktora
+
+// UWAGA: eventy s¹ do animacji, czyli np gdy podepniesz do "vil_man_s_axe_idle_A" to wykona siê w ka¿dym stanie, który ma t¹ animacjê
+
+// UWAGA: Jeœli jest jakiœ niepo³¹czony stan z t¹ sam¹ animacj¹, to eventy nie zadzia³aj¹
+
+// To notify that idle sound should be played (it can be skipped if actor is in sound cooldown)
+// Event("VillageActorIdleStart", 0.01);
+
+// To notify that voice over should be played (it can be skipped if actor is in sound cooldown)
+// VoiceOver(file_name_without_preset_and_index, path_to_file, anim_time_percent, probability_that_vo_will_be_played)
+
+///////////////////////AXE///////////////////////
+Anim("vil_man_start_s_axe")
+{
+
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageWoodTamper", 0.1)
+	Event("ShowVillageBoneNeedle", 0.1)
+	Event("ShowVillageAxePartA", 0.1)
+	Event("ShowVillageAxePartB", 0.1)
+}
+/////////////
+Anim("vil_man_s_axe_work")
+{
+	Sound("vil_man_s_axe_work_part1_sfx_", "PVE\Villagers\SFX\Man_Axe", 0.06)
+	Sound("vil_man_s_axe_work_part2_sfx_", "PVE\Villagers\SFX\Man_Axe", 0.29)
+	Sound("vil_man_s_axe_work_part3_sfx_", "PVE\Villagers\SFX\Man_Axe", 0.41)
+	Sound("vil_man_s_axe_work_part4_sfx_", "PVE\Villagers\SFX\Man_Axe", 0.54)
+	Sound("vil_man_s_axe_work_part5_sfx_", "PVE\Villagers\SFX\Man_Axe", 0.705)	
+	
+	VoiceOver("vil_man_s_axe_work_part1_VO_", "PVE\Villagers\Man\man_axe", 0.06, 0.5)
+	VoiceOver("vil_man_s_axe_work_part2_VO_", "PVE\Villagers\Man\man_axe", 0.29, 0.60)
+	VoiceOver("vil_man_s_axe_work_part3_VO_", "PVE\Villagers\Man\man_axe", 0.41, 0.65)
+	VoiceOver("vil_man_s_axe_work_part4_VO_", "PVE\Villagers\Man\man_axe", 0.54, 0.7)
+	VoiceOver("vil_man_s_axe_work_part5_VO_", "PVE\Villagers\Man\man_axe", 0.705, 0.75)
+}
+Anim("vil_man_s_axe_idle_A")
+{
+	Event("VillageActorIdleStart", 0.01)
+
+}
+Anim("vil_man_s_axe_idle_B")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+Anim("vil_man_s_axe_dirt_A")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+///////////////////////FIRE///////////////////////
+Anim("vil_man_start_s_fire")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageFireStick", 0.1)
+	// Event("ShowVillageMeat", 0.1)
+}
+/////////////
+Anim("vil_man_s_fire_loop")
+{
+	Event("VillageActorIdleStart", 0.01);	
+}
+Anim("vil_man_s_fire_start")
+{
+	Event("ShowVillageMeat", 0.165)
+}
+Anim("vil_man_s_fire_taste")
+{
+
+}
+Anim("vil_man_s_fire_eat")
+{
+	Event("HideVillageMeat", 0.80)
+	Sound("vil_man_s_fire_eat_part1_sfx_", "PVE\Villagers\SFX\Man_Fire", 0.01)
+	Sound("vil_man_s_fire_eat_part2_sfx_", "PVE\Villagers\SFX\Man_Fire", 0.53)
+	VoiceOver("vil_man_s_fire_eat_part1_VO_", "PVE\Villagers\Man\man_fire", 0.01, 0.5)
+	VoiceOver("vil_man_s_fire_eat_part2_VO_", "PVE\Villagers\Man\man_fire", 0.53, 0.75)
+}
+Anim("vil_man_s_fire_idle_A")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+
+///////////////////////PLANT///////////////////////
+Anim("vil_man_start_plant")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageLongStickPlain", 0.1)
+	Event("ShowVillageBag", 0.1)
+}
+/////////////
+Anim("vil_man_plant_A")
+{
+	Sound("vil_man_plant_A_sfx_", "PVE\Villagers\SFX\Man_Plant", 0.05)	
+	VoiceOver("vil_man_plant_A_VO_", "PVE\Villagers\Man\man_plant", 0.05, 0.75)
+}
+Anim("vil_man_plant_rotate")
+{
+
+}
+Anim("vil_man_plant_idle_A")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+Anim("vil_man_plant_work_to_stand")
+{
+
+}
+Anim("vil_man_plant_stand_to_work")
+{
+
+}
+Anim("vil_man_plant_work_idle_A")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+
+//////////////////////SLEEP///////////////////////
+Anim("vil_man_start_sleep")
+{
+
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageHammock", 0.1)
+}
+/////////////
+Anim("vil_man_sleep")
+{
+	VoiceOver("Vil_Man_VO_sleep_", "PVE\Villagers\Man\man_sleep", 0.29, 0.75)
+}
+
+///////////////////////CHOP///////////////////////
+Anim("vil_man_start_chop")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageStoneAxe", 0.1)
+	// Event("ShowVillageStickA", 0.1)
+	// Event("ShowVillageStickB", 0.1)
+	// Event("ShowVillageLongStick50x", 0.1)
+}
+Anim("vil_man_chop_stage_A")
+{
+	Event("ShowVillageLongStick50x", 0.29)
+	Sound("vil_man_chop_stage_A_part1_sfx_", "PVE\Villagers\SFX\Man_Chop", 0.29)
+	Sound("vil_man_chop_stage_A_part2_sfx_", "PVE\Villagers\SFX\Man_Chop", 0.73)
+	
+//	VoiceOver("vil_man_chop_stage_A_part1_VO_", "PVE\Villagers\Man\man_chop", 0.29, 0.5) - nie ma takich dzwiekow
+	VoiceOver("vil_man_chop_stage_A_part2_VO_", "PVE\Villagers\Man\man_chop", 0.73, 0.75)
+}
+Anim("vil_man_chop_stage_B")
+{
+	Event("ShowVillageStickA", 0.02)
+	Event("ShowVillageStickB", 0.02)
+	Event("HideVillageLongStick50x", 0.02)
+	Event("HideVillageStickA", 0.24)
+	Event("HideVillageStickB", 0.35)
+	
+	
+	Sound("vil_man_chop_stage_B_part1_sfx_", "PVE\Villagers\SFX\Man_Chop", 0.01)
+	VoiceOver("vil_man_chop_stage_B_part1_VO_", "PVE\Villagers\Man\man_chop", 0.01, 0.75)
+}
+Anim("vil_man_chop_idle")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+
+///////////////////////SPEAR///////////////////////
+Anim("vil_man_start_spear_A")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageTribalSpearSmall", 0.1)
+	Event("ShowVillageSharpener", 0.1)
+}
+/////////////
+Anim("vil_man_spear_A_work")
+{
+
+}
+Anim("vil_man_spear_A_idle_to_work")
+{
+
+}
+Anim("vil_man_spear_A_work_to_idle")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+Anim("vil_man_spear_A_idle")
+{
+	Event("VillageActorIdleStart", 0.01);
+}
+
+///////////////////////FISH///////////////////////
+
+Anim("vil_man_start_fish")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageStoneBlade", 0.1)
+}
+
+Anim("vil_man_fish_take")
+{
+	Event("ShowVillageFish", 0.28)
+}
+
+Anim("vil_man_fish_work")
+{
+
+}
+Anim("vil_man_fish_drop")
+{
+	Event("HideVillageFish", 0.665)
+}
+Anim("vil_man_fish_idle")
+{
+	// Event("VillageActorIdleStart", 0.01);
+}
+Anim("vil_man_fish_idle_dirt")
+{
+	Event("VillageActorIdleStart", 0.0)
+}
+
+///////////////////////FISH_B///////////////////////
+
+Anim("vil_man_start_fish_b")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	Event("ShowVillageStoneBlade", 0.1)
+}
+
+Anim("vil_man_fish_b_take")
+{
+	Event("ShowVillagePeacockbass", 0.28)
+}
+
+Anim("vil_man_fish_b_work")
+{
+
+}
+Anim("vil_man_fish_b_drop")
+{
+	Event("HideVillagePeacockbass", 0.665)
+}
+// Anim("vil_man_fish_b_idle")
+// {
+	// Event("VillageActorIdleStart", 0.01);
+// }
+// Anim("vil_man_fish_b_idle_dirt")
+// {
+
+// }
+
+
+

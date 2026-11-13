@@ -1,0 +1,877 @@
+Item("Palm_Leaf")
+{	
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryUp_idle", "coop_carryDown_Idle")
+	Clip("coop_carryUp_drop", "coop_carryDown_Drop")
+	Clip("coop_carry_Hitreaction", "coop_carryDown_Hitreaction")	
+	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+//	Clip("coop_carry_Hitreaction", "coop_carry_Hitreaction")
+}
+
+Item("Banana_Leaf")
+{	
+
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryUp_idle", "coop_carryDown_Idle")
+	Clip("coop_carryUp_drop", "coop_carryDown_Drop")
+	Clip("coop_carry_Hitreaction", "coop_carryDown_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+
+Item("Capybara_HO")
+{	
+
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryDown_Idle", "coop_capybara_carry_idle")
+	Clip("coop_carryDown_drop", "coop_capybara_carry_drop")
+	Clip("coop_carry_Hitreaction", "coop_capybara_carry_idle")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+
+Item("Peccary_HO")
+{	
+
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryDown_Idle", "coop_peccary_carry_idle")
+	Clip("coop_carryDown_drop", "coop_peccary_carry_drop")
+	Clip("coop_carry_Hitreaction", "coop_peccary_carry_idle")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+
+Item("Tapir_HO")
+{	
+
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryDown_Idle", "coop_tapir_carry_idle")
+	Clip("coop_carryDown_drop", "coop_tapir_carry_drop")
+	Clip("coop_carry_Hitreaction", "coop_tapir_carry_idle")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("GiantAnteater_HO")
+{	
+
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryDown_Idle", "coop_capybara_carry_idle")
+	Clip("coop_carryDown_drop", "coop_capybara_carry_drop")
+	Clip("coop_carry_Hitreaction", "coop_capybara_carry_idle")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("Armadillo_HO")
+{	
+
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryDown_Idle", "coop_capybara_carry_idle")
+	Clip("coop_carryDown_drop", "coop_capybara_carry_drop")
+	Clip("coop_carry_Hitreaction", "coop_capybara_carry_idle")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("ArmadilloThreeBanded_HO")
+{	
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+}
+
+Item("Coconut_Green")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//		Clip("coop_jump_spine", "coop_CoconutCarry_Idle")
+}
+
+
+Item("Big_Stone")
+{
+	//Clip("PL|PreCarryUp", "PL|PreBigStoneCarry")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+		Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+	//	Clip("coop_jump_spine", "coop_CoconutCarry_Idle")
+}
+
+Item("Log")
+{
+	Clip("coop_carryDown_Idle", "coop_carryFront_Idle")
+	Clip("coop_carryDown_drop", "coop_carryFront_Drop")
+		Clip("coop_carry_Hitreaction", "coop_carryFront_Hitreaction")	
+	//	Clip("coop_jump_spine", "coop_carryFront_Idle")
+	//Clip("PL|CarryDown_Build", "PL|CarryUp_Build") // nie wystepuje	
+}
+Item("Long_Stick")
+{
+	Clip("coop_carryDown_Idle", "coop_carryFront_Idle")
+	Clip("coop_carryDown_drop", "coop_carryFront_Drop")
+	Clip("coop_carry_Hitreaction", "coop_carryFront_Hitreaction")
+	//Clip("coop_jump_spine", "coop_carryFront_Idle")
+	//Clip("PL|CarryDown_Build", "PL|CarryUp_Build") // nie wystepuje
+}
+Item("Bamboo_Long_Stick")
+{
+	Clip("coop_carryDown_Idle", "coop_carryFront_Idle")
+	Clip("coop_carryDown_drop", "coop_carryFront_Drop")
+	Clip("coop_carry_Hitreaction", "coop_carryFront_Hitreaction")
+	//Clip("coop_jump_spine", "coop_carryFront_Idle")
+	//Clip("PL|CarryDown_Build", "PL|CarryUp_Build")
+}
+Item("Bamboo_Log")
+{
+	Clip("coop_carryDown_Idle", "coop_carryFront_Idle")
+	Clip("coop_carryUp_drop", "coop_carryFront_Drop")
+	Clip("coop_carry_Hitreaction", "coop_carryFront_Hitreaction")
+//	Clip("coop_jump_spine", "coop_carryFront_Idle")
+	//Clip("PL|CarryDown_Build", "PL|CarryUp_Build") // nie wystepuje	
+
+}
+Item("mud_to_build")
+{	
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryUp_idle", "coop_carryDown_Idle")
+	Clip("coop_carryUp_drop", "coop_carryDown_Drop")	
+	Clip("coop_carry_Hitreaction", "coop_carryDown_Hitreaction")	
+	//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("mud_from_water")
+{	
+	//Clip("PL|PreCarryUp", "PL|PreCarryDown")
+	Clip("coop_carryUp_idle", "coop_carryDown_Idle")
+	Clip("coop_carryUp_drop", "coop_carryDown_Drop")	
+	Clip("coop_carry_Hitreaction", "coop_carryDown_Hitreaction")	
+	//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("william_ball")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("Puma_head_HO")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("Jaguar_head_HO")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("BlackCaiman_head_HO")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("Peccary_head_HO")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("Capybara_head_HO")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+Item("Tapir_head_HO")
+{
+	//Clip("PL|PreCarryUp", "PL|CocoNutCarryTakeOut")
+	Clip("coop_carryDown_Idle", "coop_CoconutCarry_Idle")
+	Clip("coop_carryDown_drop", "coop_CoconutCarry_Drop")
+	Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")	
+	Clip("coop_carry_Hitreaction", "coop_carryCoconut_Hitreaction")	
+//	Clip("coop_jump_spine", "coop_carryDown_Idle")
+}
+
+//ITEM CONTROLLER
+
+
+
+//Item("Stone")
+//{
+//	Clip("PL|MeeleIdle", "PL|MeeleStone_Idle")	
+//	Clip("PL|AttackRight", "PL|StoneAttack")	
+//	
+//}
+
+
+Item("Torch")
+{
+	//Clip("PL|PreFight_block", "coop_torch_fired_Preblock") // nieuzywane
+	Clip("coop_fight_block_idle", "coop_torch_fired_block")	
+	Clip("coop_1Haxe_LowStamina_idle", "coop_torch_lowstamina")	
+	//Clip("PL|Jump", "PL|Jump_TorchUnlit")
+	Clip("coop_attack_right_slant", "coop_torch_attack")	
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_throw_aim", "coop_torch_aim")
+	Clip("coop_fight_block_HitReactLeft", "coop_torch_fired_hitreaction_back")
+	Clip("coop_hitReaction_back", "coop_torch_fired_hitreaction_back")
+	//	Clip("coop_jump_spine", "coop_torch_unlit_idle")
+}
+
+Item("Weak_Torch")
+{
+	//Clip("PL|PreFight_block", "PL|PreTorchBlock")	// nieuzywane
+	Clip("coop_fight_block_idle", "coop_torch_fired_block")	
+	Clip("coop_1Haxe_LowStamina_idle", "coop_torch_lowstamina")	
+	//Clip("PL|Jump", "PL|Jump_TorchUnlit")	
+	Clip("PL|AttackRight", "PL|TorchAttack")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_throw_aim", "coop_torch_aim")
+	Clip("coop_fight_block_HitReactLeft", "coop_torch_fired_hitreaction_back")
+	Clip("coop_hitReaction_back", "coop_torch_fired_hitreaction_back")
+	//	Clip("coop_jump_spine", "coop_torch_unlit_idle")
+	
+}
+
+Item("Tobacco_Torch")
+{
+	//Clip("PL|PreFight_block", "PL|PreTorchBlock")	 // nieuzywane
+	Clip("coop_fight_block_idle", "coop_torch_fired_block")	
+	Clip("coop_1Haxe_LowStamina_idle", "coop_torch_lowstamina")	
+	//Clip("PL|Jump", "PL|Jump_TorchUnlit")	
+		Clip("PL|AttackRight", "PL|TorchAttack")	
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_throw_aim", "coop_torch_aim")
+	Clip("coop_fight_block_HitReactLeft", "coop_torch_fired_hitreaction_back")
+	Clip("coop_hitReaction_back", "coop_torch_fired_hitreaction_back")
+//	Clip("coop_jump_spine", "coop_torch_unlit_idle")
+}
+
+Item("Walkie_Talkie")
+{
+	//Clip("PL|SlowerWatchIdle", "PL|WalkieTalkieWatch")	
+}
+
+
+// WEAPON MELEE CONTROLLER
+
+Item("Stone_Blade")
+{
+	Clip("coop_1Haxe_idle", "coop_blade_idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "coop_blade_attack_right_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "coop_blade_attack_right_Swing")
+	Clip("coop_1Haxe_attack_slant_return", "coop_blade_attack_right_return")
+	// Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	// Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	// Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	// Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|WalkForward", "coop_blade_idle")
+	Clip("coop_1Haxe_combo", "coop_blade_attack_combo")
+	Clip("coop_fight_block_idle", "coop_blade_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")
+	Clip("coop_1Haxe_LowStamina_idle", "coop_blade_lowstamina_loop")
+	// Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("coop_1Haxe_LowStamina_attackRight", "coop_blade_lowstamina_attack")
+	Clip("coop_hitReaction_back", "coop_blade_hitreaction_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+		Clip("coop_throw_aim", "coop_blade_aim")
+		Clip("coop_fight_block_HitReactLeft", "coop_blade_hitReaction_back")
+	//	Clip("coop_jump_spine", "coop_blade_idle")
+
+}
+Item("Bone_Knife")
+{
+	Clip("coop_1Haxe_idle", "coop_blade_idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "coop_blade_attack_right_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "coop_blade_attack_right_Swing")
+	Clip("coop_1Haxe_attack_slant_return", "coop_blade_attack_right_return")
+	// Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	// Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	// Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	// Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|WalkForward", "coop_blade_idle")
+	Clip("coop_1Haxe_combo", "coop_blade_attack_combo")
+	Clip("coop_fight_block_idle", "coop_blade_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")
+	Clip("coop_1Haxe_LowStamina_idle", "coop_blade_lowstamina_loop")
+	// Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("coop_1Haxe_LowStamina_attackRight", "coop_blade_lowstamina_attack")
+	Clip("coop_hitReaction_back", "coop_blade_hitreaction_back")
+	
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+		Clip("coop_throw_aim", "coop_blade_aim")
+		Clip("coop_fight_block_HitReactLeft", "coop_blade_hitReaction_back")
+	//	Clip("coop_jump_spine", "coop_blade_idle")
+}
+Item("Obsidian_Blade")
+{
+	Clip("coop_1Haxe_idle", "coop_blade_idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "coop_blade_attack_right_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "coop_blade_attack_right_Swing")
+	Clip("coop_1Haxe_attack_slant_return", "coop_blade_attack_right_return")
+	// Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	// Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	// Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	// Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|WalkForward", "coop_blade_idle")
+	Clip("coop_1Haxe_combo", "coop_blade_attack_combo")
+	Clip("coop_fight_block_idle", "coop_blade_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")
+	Clip("coop_1Haxe_LowStamina_idle", "coop_blade_lowstamina_loop")
+	// Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("coop_1Haxe_LowStamina_attackRight", "coop_blade_lowstamina_attack")
+	Clip("coop_hitReaction_back", "coop_blade_hitreaction_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+		Clip("coop_throw_aim", "coop_blade_aim")
+		Clip("coop_fight_block_HitReactLeft", "coop_blade_hitReaction_back")
+	//	Clip("coop_jump_spine", "coop_blade_idle")
+}
+Item("Obsidian_Bone_Blade")
+{
+	Clip("coop_1Haxe_idle", "coop_blade_idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "coop_blade_attack_right_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "coop_blade_attack_right_Swing")
+	Clip("coop_1Haxe_attack_slant_return", "coop_blade_attack_right_return")
+	// Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	// Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	// Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	// Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|WalkForward", "coop_blade_idle")
+	Clip("coop_1Haxe_combo", "coop_blade_attack_combo")
+	Clip("coop_fight_block_idle", "coop_blade_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")
+	Clip("coop_1Haxe_LowStamina_idle", "coop_blade_lowstamina_loop")
+	// Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("coop_1Haxe_LowStamina_attackRight", "coop_blade_lowstamina_attack")
+	Clip("coop_hitReaction_back", "coop_blade_hitreaction_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+		Clip("coop_throw_aim", "coop_blade_aim")
+		Clip("coop_fight_block_HitReactLeft", "coop_blade_hitReaction_back")
+	//	Clip("coop_jump_spine", "coop_blade_idle")
+}
+Item("Stick_Blade")
+{
+	Clip("coop_1Haxe_idle", "coop_blade_idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "coop_blade_attack_right_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "coop_blade_attack_right_Swing")
+	Clip("coop_1Haxe_attack_slant_return", "coop_blade_attack_right_return")
+	// Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	// Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	// Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	// Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|WalkForward", "coop_blade_idle")
+	Clip("coop_1Haxe_combo", "coop_blade_attack_combo")
+	Clip("coop_fight_block_idle", "coop_blade_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")
+	Clip("coop_1Haxe_LowStamina_idle", "coop_blade_lowstamina_loop")
+	// Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("coop_1Haxe_LowStamina_attackRight", "coop_blade_lowstamina_attack")
+	Clip("coop_hitReaction_back", "coop_blade_hitreaction_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_throw_aim", "coop_blade_aim")
+	Clip("coop_fight_block_HitReactLeft", "coop_blade_hitReaction_back")
+//	Clip("coop_jump_spine", "coop_blade_idle")
+}
+
+Item("metal_blade_weapon")
+{
+	Clip("coop_1Haxe_idle", "coop_blade_idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "coop_blade_attack_right_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "coop_blade_attack_right_Swing")
+	Clip("coop_1Haxe_attack_slant_return", "coop_blade_attack_right_return")
+	// Clip("PL|AttackUpWindUp", "PL|AttackUpBladeWindUp")
+	// Clip("PL|AttackUpSwing", "PL|AttackUpBladeSwing")
+	// Clip("PL|AttackUpEnd", "PL|AttackUpBladeEnd")
+	// Clip("PL|AttackUpReturn", "PL|AttackUpBladeReturn")
+	Clip("PL|WalkForward", "coop_blade_idle")
+	Clip("coop_1Haxe_combo", "coop_blade_attack_combo")
+	Clip("coop_fight_block_idle", "coop_blade_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBladeStoneBlock")
+	Clip("coop_1Haxe_LowStamina_idle", "coop_blade_lowstamina_loop")
+	// Clip("PL|Jump", "PL|Jump_Blade")
+	Clip("coop_1Haxe_LowStamina_attackRight", "coop_blade_lowstamina_attack")
+	Clip("coop_hitReaction_back", "coop_blade_hitreaction_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_throw_aim", "coop_blade_aim")
+	Clip("coop_fight_block_HitReactLeft", "coop_blade_hitReaction_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+		
+}
+
+Item("Axe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("Blade_Axe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+//	Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("Stone_Axe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("Stone_Axe_ArenaHunting")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("Bone_Axe")
+{
+	Clip("coop_fight_block_idle", "coop_bone_axe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+//	Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("Axe_professional")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+//	Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+Item("Machete")
+{
+	Clip("coop_fight_block_idle", "coop_machete_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+Item("Rusted_Machete")
+{
+	Clip("coop_fight_block_idle", "coop_machete_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+Item("Obsidian_Axe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+//	Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+Item("Rusted_Axe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+Item("Aztec_Club")
+{
+	Clip("coop_fight_block_idle", "coop_machete_block")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("Tribe_Axe")
+{
+	//Clip("PL|PreFight_block", "2Hand_pre_block")
+	Clip("coop_fight_block_idle", "2Hand_block_idle")
+	//Clip("PL|Jump", "2Hand_Idle")
+	//Clip("coop_1Haxe_combo", "2Hand_combo")
+	Clip("coop_1Haxe_idle", "2Hand_Idle")
+	Clip("coop_idle_walk_emptypose", "2Hand_Idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "2Hand_Attack_Slant_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "2Hand_Attack_Slant_swing")
+	Clip("coop_1Haxe_attack_slant_end", "2Hand_Attack_Slant_end")
+	Clip("coop_1Haxe_attack_slant_poseFar", "2hand_attack_up_additive_pose_far")
+	Clip("coop_1Haxe_attack_slant_return", "2Hand_Attack_Slant_return")
+
+	Clip("coop_1Haxe_attack_up_windUp", "2hand_attack_up_WindUp")
+	Clip("coop_1Haxe_attack_up_swing", "2hand_attack_up_Swing")
+	Clip("coop_1Haxe_attack_up", "2hand_attack_up")
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_return")
+	
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_Return")
+//	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+//	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+//	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("coop_1Haxe_LowStamina_attackRight", "2Hand_Attack_Slant")	
+//	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+//	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("coop_hitReaction_back", "2Hand_block_hit_reaction")
+	Clip("coop_fight_block_HitReactLeft", "2Hand_block_hit_reaction")
+	
+	Clip("coop_throw_aim", "2hand_aim")
+	Clip("coop_throw", "2hand_throw")
+	//Clip("coop_jump_spine", "2Hand_Idle")
+	Clip("coop_1Haxe_LowStamina_idle", "2Hand_Attack_LowStamina")	
+
+}
+
+Item("Modern_Axe")
+{
+	//Clip("PL|PreFight_block", "2Hand_pre_block")
+	Clip("coop_fight_block_idle", "2Hand_block_idle")
+	//Clip("PL|Jump", "2Hand_Idle")
+	//Clip("coop_1Haxe_combo", "2Hand_combo")
+	Clip("coop_1Haxe_idle", "2Hand_Idle")
+	Clip("coop_idle_walk_emptypose", "2Hand_Idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "2Hand_Attack_Slant_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "2Hand_Attack_Slant_swing")
+	Clip("coop_1Haxe_attack_slant_end", "2Hand_Attack_Slant_end")
+	Clip("coop_1Haxe_attack_slant_poseFar", "2hand_attack_up_additive_pose_far")
+	Clip("coop_1Haxe_attack_slant_return", "2Hand_Attack_Slant_return")
+
+	Clip("coop_1Haxe_attack_up_windUp", "2hand_attack_up_WindUp")
+	Clip("coop_1Haxe_attack_up_swing", "2hand_attack_up_Swing")
+	Clip("coop_1Haxe_attack_up", "2hand_attack_up")
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_return")
+	
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_Return")
+//	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+//	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+//	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("coop_1Haxe_LowStamina_attackRight", "2Hand_Attack_Slant")	
+//	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+//	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("coop_hitReaction_back", "2Hand_block_hit_reaction")
+	Clip("coop_fight_block_HitReactLeft", "2Hand_block_hit_reaction")
+	
+	Clip("coop_throw_aim", "2hand_aim")
+	Clip("coop_throw", "2hand_throw")
+	//Clip("coop_jump_spine", "2Hand_Idle")
+	Clip("coop_1Haxe_LowStamina_idle", "2Hand_Attack_LowStamina")	
+
+}
+
+Item("Stone_Axe_2H")
+{
+	//Clip("PL|PreFight_block", "2Hand_pre_block")
+	Clip("coop_fight_block_idle", "2Hand_block_idle")
+	//Clip("PL|Jump", "2Hand_Idle")
+	//Clip("coop_1Haxe_combo", "2Hand_combo")
+	Clip("coop_1Haxe_idle", "2Hand_Idle")
+	Clip("coop_idle_walk_emptypose", "2Hand_Idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "2Hand_Attack_Slant_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "2Hand_Attack_Slant_swing")
+	Clip("coop_1Haxe_attack_slant_end", "2Hand_Attack_Slant_end")
+	Clip("coop_1Haxe_attack_slant_poseFar", "2hand_attack_up_additive_pose_far")
+	Clip("coop_1Haxe_attack_slant_return", "2Hand_Attack_Slant_return")
+
+	Clip("coop_1Haxe_attack_up_windUp", "2hand_attack_up_WindUp")
+	Clip("coop_1Haxe_attack_up_swing", "2hand_attack_up_Swing")
+	Clip("coop_1Haxe_attack_up", "2hand_attack_up")
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_return")
+	
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_Return")
+//	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+//	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+//	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("coop_1Haxe_LowStamina_attackRight", "2Hand_Attack_Slant")	
+//	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+//	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("coop_hitReaction_back", "2Hand_block_hit_reaction")
+	Clip("coop_fight_block_HitReactLeft", "2Hand_block_hit_reaction")
+	
+	Clip("coop_throw_aim", "2hand_aim")
+	Clip("coop_throw", "2hand_throw")
+	//Clip("coop_jump_spine", "2Hand_Idle")
+	Clip("coop_1Haxe_LowStamina_idle", "2Hand_Attack_LowStamina")	
+
+}
+
+Item("metal_axe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("metal_pickaxe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+Item("pickaxe")
+{
+	Clip("coop_fight_block_idle", "coop_1Haxe_block_idle")
+	// Clip("PL|PreFight_block", "PL|PreFightBlockAxe")	
+	// Clip("PL|Jump", "PL|Jump_Axe")
+	Clip("coop_hitReaction_back", "coop_1Haxe_block_hitReactions_back")
+	Clip("coop_idle_walk_emptypose", "coop_1Haxe_walk")
+	Clip("coop_idle_run_emptypose", "coop_1Haxe_run")
+	Clip("coop_fight_block_HitReactLeft", "coop_1Haxe_block_hitReactions_back")
+	//Clip("coop_jump_spine", "coop_1Haxe_jump")
+}
+
+
+
+//WEAPON SPEAR CONTROLLER
+
+
+Item("Four_Pronged_Spear")
+{
+	// Clip("PL|PreFight_block", "PL|SpearBlockIn")
+	// Clip("PL|Fight_block", "PL|SpearBlock")
+	// Clip("PL|Harvest", "PL|Spear_Harvest")
+	// Clip("PL|Axe_LowStamina", "PL|Spear_LowStamina")	
+	// Clip("PL|Jump", "PL|Jump_Spear")
+	// Clip("PL|SlowerWatchHide", "PL|SpearWatchHide")
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+	//Clip("coop_jump_spine", "coop_spear_jump")
+
+}
+
+
+Item("Four_Pronged_Bamboo_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+	//Clip("coop_jump_spine", "coop_spear_jump")
+}
+Item("Obsidian_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+//	Clip("coop_jump_spine", "coop_spear_jump")
+}
+Item("Stone_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	//Clip("coop_jump_spine", "coop_spear_jump")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+}
+Item("Tribe_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+//	Clip("coop_jump_spine", "coop_spear_jump")
+}
+Item("Bamboo_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+//	Clip("coop_jump_spine", "coop_spear_jump")
+}
+
+Item("Weak_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+//	Clip("coop_jump_spine", "coop_spear_jump")
+}
+Item("Bone_Spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+//	Clip("coop_jump_spine", "coop_spear_jump")
+}
+Item("metal_spear")
+{
+	Clip("coop_harvest", "coop_spear_harvest")
+	Clip("coop_hitReaction_back", "coop_spear_hitreaction")
+	//	Clip("coop_jump_spine", "coop_spear_jump")
+	
+}
+
+
+Item("stick_fishing_rod")
+{
+		
+	Clip("coop_idle_walk_emptypose", "coop_fishingRod_walk")
+	Clip("coop_idle_run_emptypose", "coop_fishingRod_run")
+	//Clip("coop_jump_spine", "coop_fishingRod_idle")
+}
+
+Item("Fishing_Rod")
+{
+		
+	Clip("coop_idle_walk_emptypose", "coop_fishingRod_walk")
+	Clip("coop_idle_run_emptypose", "coop_fishingRod_run")
+	//Clip("coop_jump_spine", "coop_fishingRod_idle")
+}
+
+Item("Bamboo_Fishing_Rod")
+{
+		
+	Clip("coop_idle_walk_emptypose", "coop_fishingRod_walk")
+	Clip("coop_idle_run_emptypose", "coop_fishingRod_run")
+	//Clip("coop_jump_spine", "coop_fishingRod_idle")
+}
+
+
+Item("Bamboo_Bow")
+{
+	Clip("coop_hitReaction_back", "coop_bow_armed_hitreaction_back")
+	//Clip("coop_jump_spine", "coop_bow_armed_idle")
+
+}
+Item("Bow")
+{	
+	Clip("coop_hitReaction_back", "coop_bow_armed_hitreaction_back")
+	//Clip("coop_jump_spine", "coop_bow_armed_idle")
+}
+Item("Bow_ArenaHunting")
+{	
+	Clip("coop_hitReaction_back", "coop_bow_armed_hitreaction_back")
+	//Clip("coop_jump_spine", "coop_bow_armed_idle")
+}
+Item("tribe_bow")
+{	
+	Clip("coop_hitReaction_back", "coop_bow_armed_hitreaction_back")
+//	Clip("coop_jump_spine", "coop_bow_armed_idle")
+}
+
+
+Item("KidRunnerHeavyObject")
+{
+	Clip("coop_carryDown_takeUp", "coop_grab_child")
+//	Clip("coop_jump_spine", "coop_idle_carrying_child")
+	Clip("coop_carryDown_Idle", "coop_idle_carrying_child")
+	Clip("coop_carryUp_drop", "coop_put_child")	
+}
+Item("Flamekeeper_club")
+{
+	//Clip("PL|PreFight_block", "2Hand_pre_block")
+	Clip("coop_fight_block_idle", "2Hand_block_idle")
+	//Clip("PL|Jump", "2Hand_Idle")
+	//Clip("coop_1Haxe_combo", "2Hand_combo")
+	Clip("coop_1Haxe_idle", "2Hand_Idle")
+	Clip("coop_idle_walk_emptypose", "2Hand_Idle")
+	Clip("coop_1Haxe_attack_slant _windUp", "2Hand_Attack_Slant_windUp")
+	Clip("coop_1Haxe_attack_slant_swing", "2Hand_Attack_Slant_swing")
+	Clip("coop_1Haxe_attack_slant_end", "2Hand_Attack_Slant_end")
+	Clip("coop_1Haxe_attack_slant_poseFar", "2hand_attack_up_additive_pose_far")
+	Clip("coop_1Haxe_attack_slant_return", "2Hand_Attack_Slant_return")
+
+	Clip("coop_1Haxe_attack_up_windUp", "2hand_attack_up_WindUp")
+	Clip("coop_1Haxe_attack_up_swing", "2hand_attack_up_Swing")
+	Clip("coop_1Haxe_attack_up", "2hand_attack_up")
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_return")
+	
+	Clip("coop_1Haxe_attack_up_return", "2hand_attack_up_Return")
+//	Clip("PL|MeeleRun", "PL|TribeAxeRun")
+//	Clip("PL|MeeleWalk", "PL|TribeAxeWalk")	
+//	Clip("PL|AttackLeftPoseFar", "PL|TribeAxeComboAdditive")
+	Clip("coop_1Haxe_LowStamina_attackRight", "2Hand_Attack_Slant")	
+//	Clip("PL|AxeHitBack", "PL|TribeAxeAttackRightAdditive")	
+//	Clip("PL|AttackLeftHit", "PL|TribeAxeComboAdditive")
+	Clip("coop_hitReaction_back", "2Hand_block_hit_reaction")
+	Clip("coop_fight_block_HitReactLeft", "2Hand_block_hit_reaction")
+	
+	Clip("coop_throw_aim", "2hand_aim")
+	Clip("coop_throw", "2hand_throw")
+	//Clip("coop_jump_spine", "2Hand_Idle")
+	Clip("coop_1Haxe_LowStamina_idle", "2Hand_Attack_LowStamina")	
+
+}
+
+
+
+
+

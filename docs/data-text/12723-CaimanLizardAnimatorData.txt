@@ -1,0 +1,8 @@
+State("Idle", "idle", 14.6667, 1)
+State("Die", "death_b", 0.6000, 0)
+State("Run", "Blend Tree", 0.3667, 1)
+State("Walk", "Blend Tree", 1.3333, 1)
+State("Eat", "eat", 9.6667, 1)
+State("HitReaction", "hit_reaction", 0.3333, 0)
+State("TrapKill", "death", 1.0000, 0)
+State("TrapBlock", "idle", 14.6667, 1)

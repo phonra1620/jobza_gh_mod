@@ -1,0 +1,24 @@
+Anim("SK|Centipede_coop_coconut")
+{
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("SK|Centipede_coop_carry_leaf")
+{
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("SK|Centipede_coop_carry_down")
+{
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("SK|Centipede_coop_bigStone")
+{
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("SK|Centipede_coop_LongStick")
+{
+	Event("CentipedeAnimFinish", 0.99)
+}

@@ -1,0 +1,3 @@
+Idle("anim_capybara_idle_01", "anim_capybara_idle_02", "anim_capybara_idle_03", "anim_capybara_idle_04", "anim_capybara_idle_05", "anim_capybara_idle_06", "anim_capybara_idle_07", "anim_capybara_idle_08", "anim_capybara_idle_09", "anim_capybara_idle_10", "anim_capybara_idle_11", "anim_capybara_idle_12", "anim_capybara_idle_13", "anim_capybara_idle_14")
+Panic("anim_capybara_scared_01", "anim_capybara_scared_02", "anim_capybara_scared_03", "anim_capybara_scared_04", "anim_capybara_scared_05", "anim_capybara_scared_06", "anim_capybara_scared_07")
+Death("capybara_death_03")

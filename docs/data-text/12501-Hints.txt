@@ -1,0 +1,377 @@
+//Hint(name, show_times (0 = infinite)
+
+Hint("Inspection", 0)
+{
+	Text("HINT_Inspection");
+	Duration(0.0);
+}
+Hint("How_to_run", 1)
+{
+	Text("HINT_How_to_run");
+	Duration(10.0);
+}
+Hint("Open_Inspection", 0)
+{
+	Text("HINT_Open_Inspection");
+	Duration(0.0);
+}
+Hint("FishRod_Hook", 1)
+{
+	Text("HINT_FishRod_Hook");
+	Duration(5.0);
+}
+Hint("FishRod_Bait", 1)
+{
+	Text("HINT_FishRod_Bait");
+	Duration(5.0);
+}
+Hint("Start_Fishing", 1)
+{
+	Text("HINT_Start_Fishing");
+	Duration(5.0);
+}
+Hint("Cast_FishingRod", 1)
+{
+	Text("HINT_Cast_FishingRod");
+	Duration(5.0);
+}
+Hint("Catch_Fish", 1)
+{
+	Text("HINT_Catch_Fish");
+	Duration(5.0);
+}
+Hint("Take_Fish", 0)
+{
+	Text("HINT_Take_Fish");
+	Duration(5.0);
+}
+Hint("LookNotebook", 1)
+{
+	Text("HINT_NewNoteNotebook");
+	Duration(30.0);
+}
+Hint("GatherWood", 0)
+{
+	Text("HINT_GatherWood");
+	Duration(0.0);
+}
+Hint("GatherWood2", 1)
+{
+	Text("HINT_GatherWood");
+	Duration(15.0);
+}
+Hint("HowToStartAFire", 0)
+{
+	Text("HINT_HowToStartAFire");
+	Duration(0.0);
+}
+Hint("HowToPlaceTinder", 0)
+{
+	Text("HINT_HowToPlaceTinder");
+	Duration(0.0);
+}
+Hint("BreakLongStick", 1)
+{
+	Text("HINT_BreakLongStick");
+	Duration(30.0);
+}
+Hint("HarvestStick", 1)
+{
+	Text("HINT_HarvestStick");
+	Duration(30.0);
+}
+Hint("NewNoteNotebook", 1)
+{
+	Text("HINT_NewNoteNotebook");
+	Duration(5.0);
+}
+Hint("NewNoteCrafting", 0)
+{
+	Text("HINT_NewNoteCrafting");
+	Duration(0.0);
+}
+Hint("NewNoteWound", 0)
+{
+	Text("HINT_NewNoteWound");
+	Duration(0.0);
+}
+Hint("LookatWatch", 0)
+{
+	Text("HINT_LookatWatch");
+	Duration(0.0);
+}
+Hint("LookatWatch_Compas", 0)
+{
+	Text("HINT_LookatWatch_Compas");
+	Duration(30.0);
+}
+Hint("LookatMap", 1)
+{
+	Text("HINT_LookatMap");
+	Duration(30.0);
+}
+Hint("WatchScroll", 0)
+{
+	Text("HINT_WatchScroll");
+	Duration(30.0);
+}
+Hint("OpenBackpack", 1)
+{
+	Text("HINT_OpenBackpack");
+	Duration(10.0);
+}
+Hint("OpenWheel", 0)
+{
+	Text("HINT_OpenWheel");
+	Duration(5.0);
+}
+Hint("Building", 0)
+{
+	Text("HINT_Building");
+	Duration(0.0);
+}
+Hint("Tinder", 1)
+{
+	Text("HINT_Tinder");
+	Duration(0.0);
+}
+Hint("Ember", 0)
+{
+	Text("HINT_Ember");
+	Duration(5.0);
+}
+Hint("Crafting_Empty", 0)
+{
+	Text("HINT_Crafting_Empty");
+	Duration(0.0);
+}
+Hint("Crafting_Combine", 0)
+{
+	Text("HINT_Crafting_Combine");
+	Duration(5.0);
+}
+Hint("Crafting_Full", 0)
+{
+	Text("HINT_Crafting_Full");
+	Duration(5.0);
+}
+Hint("UseRadio", 0)
+{
+	Text("HINT_UseRadio");
+	Duration(0.0);
+}
+Hint("ToMove", 1)
+{
+	Text("HINT_How_To_Move");
+	Duration(30.0);
+}
+Hint("Harvest", 1)
+{
+	Text("HINT_How_To_Harvest");
+	Duration(5.0);
+}
+Hint("Bandage", 1)
+{
+	Text("HINT_How_To_Bandage");
+	Duration(0.0);
+}
+Hint("Craft_Bandage", 0)
+{
+	Text("HINT_How_Craft_Bandage");
+	Duration(0.0);
+}
+Hint("Low_Water", 10)
+{
+	Text("HINT_Low_Water");
+	Duration(15.0);
+}
+Hint("Low_Energy", 10)
+{
+	Text("HINT_Low_Energy");
+	Duration(15.0);
+}
+Hint("Crafting", 1)
+{
+	Text("HINT_Crafting");
+	Duration(20.0);
+}
+Hint("Crafting_Proggresion", 1)
+{
+	Text("HINT_Crafting_Proggresion");
+	Duration(20.0);
+}
+Hint("AddKindling", 10)
+{
+	Text("HINT_AddKindling");
+	Duration(8.0);
+}
+Hint("MakeFireTool", 10)
+{
+	Text("HINT_MakeFireTool");
+	Duration(8.0);
+}
+Hint("Low_NutritionProteins", 10)
+{
+	Text("HINT_Low_NutritionProteins");
+	Duration(10.0);
+}
+Hint("Low_NutritionCarbo", 10)
+{
+	Text("HINT_Low_NutritionCarbo");
+	Duration(10.0);
+}
+Hint("Low_NutritionFat", 10)
+{
+	Text("HINT_Low_NutritionFat");
+	Duration(10.0);
+}
+Hint("Trap_Bait", 1)
+{
+	Text("HINT_Trap_Bait");
+	Duration(10.0);
+}
+Hint("Inspection_Backpack", 1)
+{
+	Text("HUDBodyInspection_InfoBackpack");
+	Duration(10.0);
+}
+Hint("MakeFire_Fail", 1)
+{
+	Text("HINT_MakeFire_Fail");
+	Duration(8.0);
+}
+Hint("Destroy_Construction", 1)
+{
+	Text("HINT_Destroy_Construction");
+	Duration(10.0);
+}
+Hint("BowTrap_InsertArrow", 1)
+{
+	Text("HINT_BowTrap_InsertArrow");
+	Duration(10.0);
+}
+Hint("RotateItem", 1)
+{
+	Text("HINT_RotateItem");
+	Duration(5.0);
+}
+Hint("FiresidewallFire", 1)
+{
+	Text("HINT_FiresidewallFire");
+	Duration(10.0);
+}
+Hint("ShowerRain", 1)
+{
+	Text("HINT_ShowerRain");
+	Duration(10.0);
+}
+Hint("MixerRain", 1)
+{
+	Text("HINT_MixerRain");
+	Duration(10.0);
+}
+Hint("StorageItems", 1)
+{
+	Text("HINT_StorageItems");
+	Duration(10.0);
+}
+Hint("ForgeCharcoal", 1)
+{
+	Text("HINT_ForgeCharcoal");
+	Duration(10.0);
+}
+Hint("SpikeTrapStepOn", 1)
+{
+	Text("HINT_SpikeTrapStepOn");
+	Duration(10.0);
+}
+Hint("PlaceBowl", 1)
+{
+	Text("HINT_PlaceBowl");
+	Duration(10.0);
+}
+Hint("MapZoom", 1)
+{
+	Text("HINT_MapZoom");
+	Duration(5.0);
+}
+Hint("CoopGather", 0)
+{
+	Text("HINT_CoopGather");
+	Duration(0.0);
+}
+
+Hint("Hint_HitTrunk", 6)
+{
+	Text("HINT_HitTrunk");
+	Duration(10.0);
+}
+
+Hint("SafeZone_CantAttack", 0)
+{
+	Text("HINT_SafeZone_CantAttack");
+	Duration(5.0);
+}
+Hint("GateKeeper_Push", 0)
+{
+	Text("HINT_GateKeeper_Push");
+	Duration(5.0);
+}
+Hint("DeliverKidHint", 0)
+{
+	Text("HINT_DeliverKidHint");
+	Duration(5.0);
+}
+Hint("DropKidHint", 0)
+{
+	Text("HINT_DropKidHint");
+	Duration(5.0);
+}
+
+Hint("Hint_GhostRestrictedArea", 0)
+{
+	Text("Hint_GhostRestrictedArea");
+	Duration(1.0);
+}
+
+Hint("NoNavmesh_CantUntie", 0)
+{
+	Text("HINT_NoNavmesh_CantUntie");
+	Duration(5.0);
+}
+
+Hint("EternalFire", 0)
+{
+	Text("HINT_Eternal_Fire");
+	Duration(5.0);
+}
+
+Hint("BirdHouse", 0)
+{
+	Text("HINT_BirdHouse");
+	Duration(5.0);
+}
+
+Hint("PaintBrush", 0)
+{
+	Text("HINT_PaintBrush_Brush");
+	Duration(5.0);
+}
+
+Hint("Painting", 0)
+{
+	Text("HINT_PaintBrush_Paint");
+	Duration(5.0);
+}
+
+Hint("RemovingPaint", 0)
+{
+	Text("HINT_PaintBrush_RemovePaint");
+	Duration(5.0);
+}
+
+Hint("RefillingTorchFuel", 0)
+{
+	Text("HINT_TorchHolder_Refill");
+	Duration(5.0);
+}

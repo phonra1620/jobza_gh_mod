@@ -1,0 +1,9 @@
+//Goal("StalkerRunAway")
+Goal("StalkerMoveAround")
+
+Goal("Roar", 0.1)
+Goal("PostAttack")
+
+Goal("Attack")
+Goal("MoveToEnemy")
+Goal("Idle")

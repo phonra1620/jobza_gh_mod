@@ -1,0 +1,6 @@
+PostAttack("Jaguar_Postattack_01","Jaguar_Postattack_02")
+Idle("Jaguar_Idle_01")
+Hit("Jaguar_Hit_01","Jaguar_Hit_02")
+Panic("Jaguar_Panic_01","Jaguar_Panic_02")
+Death("Jaguar_Death_01")
+Lurkin("Jaguar_Idle_01")

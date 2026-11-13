@@ -1,0 +1,4 @@
+Attack("Wandering_Spider_Attack_01","Wandering_Spider_Attack_02")
+Death("Wandering_Spider_Death_01","Wandering_Spider_Death_02")
+Defence("Wandering_Spider_Defence_01","Wandering_Spider_Defence_02")
+Idle("Wandering_Spider_Loop")

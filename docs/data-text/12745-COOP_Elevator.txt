@@ -1,0 +1,106 @@
+Node("FPP_Get_Fuel", True, -185.0000, 441.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Fuel", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Fuel", False, 1)
+}
+Node("FindFuel_NoNeed", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "FPP_Get_Fuel", False)
+{
+	Element("IsBoolVariableTrue:false:FuelAlreadyTaken", False, 10)
+	Element("IsBoolVariableTrue:false:NeedFuel", False, 0)
+	Element("DeactivateScenarioNode:FindFuel_Needed", False, 1)
+	Element("DeactivateScenarioNode:TPP_FindFuel_Needed", False, 2)
+	Element("StartDialogIfNonPlaying:FoundFuelNoelevator_Player_02", False, 3)
+	Element("SetBoolVariable:UnlockFuel:true", False, 4)
+}
+Node("FindFuel_Needed", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "FPP_Get_Fuel", False)
+{
+	Element("IsBoolVariableTrue:false:FuelAlreadyTaken", False, 10)
+	Element("IsBoolVariableTrue:true:NeedFuel", False, 0)
+	Element("DeactivateScenarioNode:FindFuel_NoNeed", False, 1)
+	Element("StartDialogIfNonPlaying:FoundFuelNoelevator_Player_02", False, 2)
+	Element("SetBoolVariable:UnlockFuel:true", False, 3)
+}
+Node("Get_Fuel", True, -185.0000, 441.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockFuel", False, 0)
+	Element("SetBoolVariable:FuelAlreadyTaken:true", False, 43)
+	Element("DeactivateScenarioNode:FindFuel_NoNeed", False, 30)
+	Element("DeactivateScenarioNode:FindFuel_Needed", False, 32)
+	Element("DeactivateScenarioNode:FPP_Get_Fuel", False, 3)
+	Element("ShowFakeItemInBackpack:backpack_jerrycan:true", False, 1)
+	Element("AddStoryEvent:Notebook_Jeep", False, 2)
+}
+Node("TPP_FindFuel_Needed", True, -185.0000, 441.0000, 200.0000, 75.0000, "Get_Fuel", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Fuel", False, 1)
+	Element("UnlockDialog:FoundFuel", False, 2)
+	Element("IsDialogPlaying:true:FoundFuel", False, 3)
+	Element("DeactivateScenarioNode:Elevator2ndTime", False, 4)
+}
+Node("FPP_Elevator_NoFuel", True, 79.0000, 329.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:GoldMine_Generator_NoFuelTrigger", False, 0)
+	Element("SetBoolVariable:FPP_Elevator_NoFuel:true", False, 1)
+	Element("Wait:1.8", False, 2)
+	Element("IsBoolVariableTrue:false:UnlockFuel", False, 3)
+	Element("StartDialog:Mine_Generator_Empty", False, 4)
+}
+Node("Elevator_NoFuel", True, 79.0000, 329.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Elevator_NoFuel", False, 0)
+	Element("DisableObject:GoldMine_Generator_NoFuelTrigger", False, 1)
+	Element("PlayAnimation:Generator_ElevatorGM:generator_fail", False, 2)
+	Element("PlayAudioSource:GoldMine_Generator_NoFuel_Sound", False, 3)
+	Element("SetBoolVariable:NeedFuel:true", False, 4)
+	Element("Wait:1.8", False, 5)
+	Element("EnableObject:GoldMine_Generator_NoFuelLoopTrigger", False, 6)
+	Element("ActivateScenarioNode:FPP_Elevator_NoFuelLoop", False, 7)
+	Element("ActivateScenarioNode:Elevator_NoFuelLoop", False, 8)
+}
+Node("FPP_Elevator_NoFuelLoop", False, 75.0000, 439.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:GoldMine_Generator_NoFuelLoopTrigger", False, 0)
+	Element("SetBoolVariable:FPP_Elevator_NoFuelLoop:true", False, 1)
+}
+Node("Elevator_NoFuelLoop", False, 75.0000, 439.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsBoolVariableTrue:true:FPP_Elevator_NoFuelLoop", False, 0)
+	Element("PlayAnimation:Generator_ElevatorGM:generator_fail", False, 1)
+	Element("PlayAudioSource:GoldMine_Generator_NoFuel_Sound", False, 2)
+	Element("Wait:1.8", False, 3)
+	Element("ResetTrigger:GoldMine_Generator_NoFuelLoopTrigger", False, 4)
+	Element("SetBoolVariable:FPP_Elevator_NoFuelLoop:false", False, 5)
+	Element("RestartNode:FPP_Elevator_NoFuelLoop", False, 6)
+}
+Node("GoldMine_ElevatorEnabler", True, -188.0000, 344.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockFuel", False, 0)
+	Element("DisableObject:GoldMine_Generator_NoFuelTrigger", False, 1)
+	Element("DisableObject:GoldMine_Generator_NoFuelLoopTrigger", False, 2)
+	Element("EnableObject:GoldMine_Generator_WorkingTrigger", False, 3)
+}
+Node("FPP_GoldMine_ElevatorEnabler", True, -188.0000, 344.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:GoldMine_Generator_WorkingTrigger", False, 0)
+	Element("SetBoolVariable:FPP_GoldMine_ElevatorEnabler:true", False, 1)
+}
+Node("GoldMine_ElevatorEnabler_Part2", True, -188.0000, 344.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_GoldMine_ElevatorEnabler", False, 0)
+	Element("ShowFakeItemInBackpack:backpack_jerrycan:false", False, 1)
+	Element("ForcePlayAnimation:Generator_ElevatorGM:generator_start", False, 2)
+	Element("SetBoolVariable:NeedFuel:false", False, 3)
+	Element("DisableObject:GoldMine_Generator_WorkingTrigger", False, 4)
+	Element("DisableObject:GoldMiine_NoPower_Elevator_Trigger", False, 5)
+	Element("EnableObject:GoldMine_Generator_Starting_Sound", False, 6)
+	Element("Wait:3.7", False, 7)
+	Element("EnableObject:GoldMine_Generator_Working_Sound", False, 8)
+	Element("SetBoolVariable:UnlockElevator:true", False, 9)
+}
+Node("ElevatorEnabler", True, 89.0000, 165.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockElevator", False, 0)
+	Element("EnableObject:GoldMiine_WorkingDown_Elevator_Trigger", False, 1)
+	Element("EnableObject:GoldMiine_WorkingUp_Elevator_Trigger", False, 2)
+}

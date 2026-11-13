@@ -1,0 +1,42 @@
+
+
+ Anim("vil_questgiver_C_quest_fish")
+ {
+	Sound("quest_giver_stick_hit_ground_03", "PVE\Villagers\SFX\Quest_giver", 0.081)	
+	Sound("quest_giver_stick_hit_ground_01", "PVE\Villagers\SFX\Quest_giver", 0.741)	
+ }
+
+// Anim("vil_questgiver_C_quest_love")
+// {
+	// Event("VillageActorIdleStart", 0.01);	
+// }
+
+Anim("vil_questgiver_C_quest_monkey")
+ {
+	Sound("quest_giver_stick_hit_ground_03", "PVE\Villagers\SFX\Quest_giver", 0.202)
+	Sound("quest_giver_stick_hit_ground_01", "PVE\Villagers\SFX\Quest_giver", 0.362)		
+ }
+ Anim("vil_questgiver_C_quest_warrior")
+ {
+	Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.087)		
+	Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.787)		
+ } 
+ Anim("vil_questgiver_C_fullrep")
+ {
+	Sound("quest_giver_stick_hit_ground_01", "PVE\Villagers\SFX\Quest_giver", 0.909)		
+	
+ }
+Anim("vil_questgiver_C_dirt_A")
+ {
+	Event("VillageActorIdleStart", 0.01);		
+ }
+Anim("vil_questgiver_C_dirt_B")
+ {
+	Event("VillageActorIdleStart", 0.01);		
+ }
+
+Anim("vil_questgiver_C_bye")
+{	
+//Sound("quest_giver_stick_hit_ground_03", "PVE\Villagers\SFX\Quest_giver", 0.8) 
+Sound("quest_giver_stick_hit_ground_02", "PVE\Villagers\SFX\Quest_giver", 0.324)
+}

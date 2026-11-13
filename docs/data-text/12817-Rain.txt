@@ -1,0 +1,18 @@
+// Rain(float rain_duration_in_game_minutes, float rain_interval_in_game_minutes)
+
+
+Rain(30.0, 150.0)
+Rain(60.0, 200.0)
+
+Period("Normal", 14400.0)
+Period("Wet", 7200.0)
+Period("Normal", 10080.0)
+Period("Dry", 20160.0)
+
+RainCollectorFillPerSecondRain(2.0)
+RainCollectorFillPerSecondNoRain(0.05)
+
+//10 Dni Normal
+//5 Dni ulewy
+//7 Dni Normal 
+//14 Dni Suszy

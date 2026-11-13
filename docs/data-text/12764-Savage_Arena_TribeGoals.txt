@@ -1,0 +1,22 @@
+Goal("Death")
+Goal("HumanPunchBack", 0.5)
+Goal("HumanHitReaction")
+
+Goal("HumanEmergency")
+
+Goal("HumanRest")
+Goal("HumanUpset")
+Goal("HumanTaunt")
+Goal("HumanFollowPatrolPath")
+
+Goal("HumanPostAttackConstruction")
+Goal("HumanAttackConstruction")
+Goal("HumanMoveToConstruction")
+
+Goal("MoveAroundEnemy", 0.6)
+Goal("HumanPostAttack")
+Goal("HumanJumpAttack")
+Goal("HumanAttack")
+Goal("HumanMoveToEnemy")
+Goal("HumanReturnToStart")
+Goal("Idle")

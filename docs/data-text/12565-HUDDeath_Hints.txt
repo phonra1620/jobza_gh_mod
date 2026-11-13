@@ -1,0 +1,76 @@
+//Hint(string group, string text)
+
+Hint("Wounds", "HUDDeathHint_Wounds1")
+Hint("Wounds", "HUDDeathHint_Wounds2")
+Hint("Wounds", "HUDDeathHint_Wounds3")
+
+Hint("Poison", "HUDDeathHint_Poison1")
+Hint("Poison", "HUDDeathHint_Poison2")
+Hint("Poison", "HUDDeathHint_Poison3")
+
+
+Hint("Macro", "HUDDeathHint_Macro1")
+Hint("Macro", "HUDDeathHint_Macro2")
+
+
+Hint("Insomnia", "HUDDeathHint_Insomnia1")
+Hint("Insomnia", "HUDDeathHint_Insomnia2")
+
+
+Hint("ParasiteSickness", "HUDDeathHint_ParasiteSickness1")
+Hint("ParasiteSickness", "HUDDeathHint_ParasiteSickness2")
+
+
+//Hint("Fever", "HUDDeathHint_Fever1")
+//Hint("Fever", "HUDDeathHint_Fever2")
+//Hint("Fever", "HUDDeathHint_Fever3")
+//Hint("Fever", "HUDDeathHint_Fever4")
+
+Hint("FoodPoison", "HUDDeathHint_FoodPoison1")
+Hint("FoodPoison", "HUDDeathHint_FoodPoison2")
+
+Hint("Underwater", "HUDDeathHint_Underwater1")
+Hint("Underwater", "HUDDeathHint_Underwater2")
+
+Hint("Sanity", "HUDDeathHint_SanityTribe1")
+Hint("Sanity", "HUDDeathHint_SanityTribe2")
+
+Hint("Tribe", "HUDDeathHint_Tribe1")
+Hint("Tribe", "HUDDeathHint_Tribe2")
+
+Hint("Fall", "HUDDeathHint_Fall1")
+
+Hint("Caiman", "HUDDeathHint_Caiman1")
+Hint("Caiman", "HUDDeathHint_Caiman2")
+
+Hint("Predator", "HUDDeathHint_Predators1")
+Hint("Predator", "HUDDeathHint_Predators2")
+
+Hint("Infection", "HUDDeathHint_Infected1")
+Hint("Infection", "HUDDeathHint_Infected2")
+Hint("Infection", "HUDDeathHint_Infected3")
+
+Hint("Permadeath", "HUDDeathHint_Permadeath1")
+
+//HUDDeathHint_SanityTribe1
+//HUDDeathHint_SanityTribe2
+
+//HUDDeathHint_Tribe1
+//HUDDeathHint_Tribe2
+
+//HUDDeathHint_Underwater1
+//HUDDeathHint_Underwater2
+
+//HUDDeathHint_Fall1
+
+//HUDDeathHint_Caiman1
+//HUDDeathHint_Caiman2
+
+//HUDDeathHint_Predators1
+//HUDDeathHint_Predators2
+
+//HUDDeathHint_Infected1
+//HUDDeathHint_Infected2
+//HUDDeathHint_Infected3
+
+

@@ -1,0 +1,115 @@
+Node("WakeUp", True, -410.0000, 231.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayMusic:jingle_refugee:false:0.5", False)
+	Element("DisableComponent:Logs_Bed:RestingPlace", False)
+	Element("Wait:2", False)
+	Element("StopDayTimeProgress", False)
+}
+Node("Drink", True, -158.0000, 230.0000, 200.0000, 75.0000, "WakeUp", False)
+{
+	Element("Wait:6", False)
+	Element("ActivateObjective:HandsOn_Drink", False)
+	Element("AddObjective3D:WaterPosition:HandsOn_3DRiver", False)
+	Element("PlayerCondition:Hydration:Greater:80", False)
+	Element("RemoveObjective3D:WaterPosition", False)
+	Element("CompleteObjective:HandsOn_Drink", False)
+}
+Node("FishTrap", True, 79.0000, 229.0000, 200.0000, 75.0000, "Drink", False)
+{
+	Element("ActivateObjective:HandsOn_FishTrap", False)
+	Element("AddObjective3D:Fish_Rod_Trap:Fish_Rod_Trap", False)
+	Element("IsTriggered:true:Fish_Rod_Trap", False)
+	Element("RemoveObjective3D:Fish_Rod_Trap", False)
+	Element("CompleteObjective:HandsOn_FishTrap", False)
+}
+Node("GrabAxe", True, 312.0000, 227.0000, 200.0000, 75.0000, "FishTrap", False)
+{
+	Element("ActivateObjective:HandsOn_GrabAxe", False)
+	Element("AddObjective3D:Axe:Axe", False)
+	Element("HaveItemEquiped:true:Axe", False)
+	Element("RemoveObjective3D:Axe", False)
+	Element("CompleteObjective:HandsOn_GrabAxe", False)
+}
+Node("BuildBridge", True, 549.0000, 224.0000, 200.0000, 75.0000, "GrabAxe", False)
+{
+	Element("ActivateObjective:HandsOn_BuildBridge", False)
+	Element("AddObjective3D:BridgePosition:HandsOn_3DBridge", False)
+	Element("ItemExist:true:Tutorial_Bridge", False)
+	Element("CompleteObjective:HandsOn_BuildBridge", False)
+	Element("RemoveObjective3D:BridgePosition", False)
+	Element("ActivateObjective:HandsOn_CheckTrap", False)
+}
+Node("ArmTrap", True, 793.0000, 192.0000, 200.0000, 75.0000, "BuildBridge", False)
+{
+	Element("AddObjective3D:Snare_Trap:Snare_Trap", False)
+	Element("IsTriggered:true:Snare_Trap", False)
+	Element("RemoveObjective3D:Snare_Trap", False)
+}
+Node("ArmTrap2", True, 794.0000, 300.0000, 200.0000, 75.0000, "BuildBridge", False)
+{
+	Element("AddObjective3D:Killer_Trap:Killer_Trap", False)
+	Element("IsTriggered:true:Killer_Trap", False)
+	Element("RemoveObjective3D:Killer_Trap", False)
+}
+Node("GrabSpear", True, 1059.0000, 238.0000, 200.0000, 75.0000, "ArmTrap:ArmTrap2", False)
+{
+	Element("CompleteObjective:HandsOn_CheckTrap", False)
+	Element("ActivateObjective:HandsOn_GrabSpear", False)
+	Element("AddObjective3D:Four_Pronged_Bamboo_Spear:Four_Pronged_Bamboo_Spear", False)
+	Element("HaveItemEquiped:true:Four_Pronged_Bamboo_Spear", False)
+	Element("RemoveObjective3D:Four_Pronged_Bamboo_Spear", False)
+	Element("CompleteObjective:HandsOn_GrabSpear", False)
+}
+Node("CatchFish", True, 1312.0000, 233.0000, 200.0000, 75.0000, "GrabSpear", False)
+{
+	Element("ActivateObjective:HandsOn_GetFish", False)
+	Element("AddObjective3D:WaterPosition:HandsOn_3DRiver", False)
+	Element("HaveItem:true:PeacockBass_Body", False)
+	Element("RemoveObjective3D:WaterPosition", False)
+	Element("CompleteObjective:HandsOn_GetFish", False)
+}
+Node("BuildFire", True, 1565.0000, 232.0000, 200.0000, 75.0000, "CatchFish", False)
+{
+	Element("ActivateObjective:HandsOn_BuildFire", False)
+	Element("ItemExist:true:Small_Fire", False)
+	Element("CompleteObjective:HandsOn_BuildFire", False)
+}
+Node("IsFireBurning", True, 1824.0000, 231.0000, 200.0000, 75.0000, "BuildFire", False)
+{
+	Element("StartDayTimeProgress", False)
+	Element("ActivateObjective:HandsOn_StartFire", False)
+	Element("AddObjective3D:Fire_Starter:Fire_Starter", False)
+	Element("HaveItemEquiped:true:Fire_Starter", False)
+	Element("RemoveObjective3D:Fire_Starter", False)
+	Element("HaveItemEquiped:true:Fire", False)
+	Element("AddObjective3D:Small_Fire:Small_Fire", False)
+	Element("IsFirecampBurning:true:Small_Fire", False)
+	Element("RemoveObjective3D:Small_Fire", False)
+	Element("CompleteObjective:HandsOn_StartFire", False)
+}
+Node("EatFish", True, 2074.0000, 232.0000, 200.0000, 75.0000, "IsFireBurning", False)
+{
+	Element("ActivateObjective:HandsOn_EatFish", False)
+	Element("PlayerCondition:NutritionProteins:Greater:80", False)
+	Element("CompleteObjective:HandsOn_EatFish", False)
+}
+Node("GotoSleep", True, 2077.0000, 456.0000, 200.0000, 75.0000, "Inspection", False)
+{
+	Element("ActivateObjective:HandsOn_GotoSleep", False)
+	Element("AddObjective3D:Logs_Bed:Logs_Bed", False)
+	Element("EnableComponent:Logs_Bed:RestingPlace", False)
+	Element("IsTriggered:true:Logs_Bed", False)
+	Element("RemoveObjective3D:Logs_Bed", False)
+	Element("CompleteObjective:HandsOn_GotoSleep", False)
+	Element("PlayerBlockMoves", False)
+	Element("ShowDemoEnd", False)
+	Element("Wait:2", False)
+	Element("PlayMusic:jingle_possitive_02:false:0.7", False)
+}
+Node("Inspection", True, 2075.0000, 336.0000, 200.0000, 75.0000, "EatFish", False)
+{
+	Element("AddWorm:RHand", False)
+	Element("ActivateObjective:HandsOn_Inspection", False)
+	Element("HasWorm:false", False)
+	Element("CompleteObjective:HandsOn_Inspection", False)
+}

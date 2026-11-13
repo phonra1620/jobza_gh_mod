@@ -1,0 +1,72 @@
+// ########### Poison Watter ###############
+
+Node("PoisonedWaterActivity01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater01_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater01_sensor", False, 1)
+	Element("EnableObject:PoisonedWater01_safe", False, 2)
+    Element("DisableObject:PoisonedWater01_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater02_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater02_sensor", False, 1)
+	Element("EnableObject:PoisonedWater02_safe", False, 2)
+    Element("DisableObject:PoisonedWater02_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater03_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater03_sensor", False, 1)
+	Element("EnableObject:PoisonedWater03_safe", False, 2)
+    Element("DisableObject:PoisonedWater03_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater04_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater04_sensor", False, 1)
+	Element("EnableObject:PoisonedWater04_safe", False, 2)
+    Element("DisableObject:PoisonedWater04_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater05_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater05_sensor", False, 1)
+	Element("EnableObject:PoisonedWater05_safe", False, 2)
+    Element("DisableObject:PoisonedWater05_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater06_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater06_sensor", False, 1)
+	Element("EnableObject:PoisonedWater06_safe", False, 2)
+    Element("DisableObject:PoisonedWater06_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater07_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater07_sensor", False, 1)
+	Element("EnableObject:PoisonedWater07_safe", False, 2)
+    Element("DisableObject:PoisonedWater07_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity08", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater08_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater08_sensor", False, 1)
+	Element("EnableObject:PoisonedWater08_safe", False, 2)
+    Element("DisableObject:PoisonedWater08_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity09", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater09_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater09_sensor", False, 1)
+	Element("EnableObject:PoisonedWater09_safe", False, 2)
+    Element("DisableObject:PoisonedWater09_poisoned", False, 3)
+}
+Node("PoisonedWaterActivity10", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+    Element("IsBoolVariableTrue:true:Bool_PoisonedWater10_Done", False, 0)
+    Element("PlayerIsInSensor:false:PoisonedWater10_sensor", False, 1)
+	Element("EnableObject:PoisonedWater10_safe", False, 2)
+    Element("DisableObject:PoisonedWater10_poisoned", False, 3)
+}

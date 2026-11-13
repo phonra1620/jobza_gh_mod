@@ -1,0 +1,6 @@
+﻿Sound("Death", "death_", "AI/Thug/death")
+Sound("ChargeRun", "charge_run_", "AI/Thug/charge_run")
+Sound("CombatIdle", "combat_idle_", "AI/Thug/combat_idle")
+Sound("Idle", "idle_a", "AI/Thug/idle")
+Sound("WalkCombat", "walk_combat_", "AI/Thug/walk_combat")
+Sound("WalkForward", "walk_forward_", "AI/Thug/walk_forward")

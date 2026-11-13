@@ -1,0 +1,112 @@
+Anim("tapir_death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("tapir_run_forward")
+{
+	Footstep(0.27, "b_RB_leg03")
+	Footstep(0.38, "b_LB_leg03")
+	Footstep(0.45, "b_LF_leg04")
+	Footstep(0.62, "b_RF_leg04")
+}
+
+Anim("tapir_run_left")
+{
+	Footstep(0.27, "b_RB_leg03")
+	Footstep(0.38, "b_LB_leg03")
+	Footstep(0.45, "b_LF_leg04")
+	Footstep(0.62, "b_RF_leg04")
+}
+
+Anim("tapir_run_right")
+{
+	Footstep(0.27, "b_RB_leg03")
+	Footstep(0.38, "b_LB_leg03")
+	Footstep(0.45, "b_LF_leg04")
+	Footstep(0.62, "b_RF_leg04")
+}
+
+Anim("tapir_trot_forward")
+{
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_RB_leg03")
+	Footstep(0.88, "b_RF_leg04")
+	Footstep(0.88, "b_LB_leg03")
+}
+
+Anim("tapir_trot_left")
+{
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_RB_leg03")
+	Footstep(0.88, "b_RF_leg04")
+	Footstep(0.88, "b_LB_leg03")
+}
+
+Anim("tapir_trot_right")
+{
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_RB_leg03")
+	Footstep(0.88, "b_RF_leg04")
+	Footstep(0.88, "b_LB_leg03")
+}
+
+Anim("tapir_walk_forward")
+{
+	Footstep(0.27, "b_LF_leg04")
+	Footstep(0.51, "b_LB_leg03")
+	Footstep(0.77, "b_RF_leg04")
+	Footstep(0.01, "b_RB_leg03")
+}
+
+Anim("tapir_walk_left")
+{
+	Footstep(0.27, "b_LF_leg04")
+	Footstep(0.51, "b_LB_leg03")
+	Footstep(0.77, "b_RF_leg04")
+	Footstep(0.01, "b_RB_leg03")
+}
+
+Anim("tapir_walk_right")
+{
+	Footstep(0.27, "b_LF_leg04")
+	Footstep(0.51, "b_LB_leg03")
+	Footstep(0.77, "b_RF_leg04")
+	Footstep(0.01, "b_RB_leg03")
+}
+
+//Anim("tapir_gallop_forward")
+//{
+//	Footstep(0.13, "b_LB_leg03")
+//	Footstep(0.13, "b_RB_leg03")
+//	Footstep(0.43, "b_LF_leg04")
+//	Footstep(0.60, "b_RF_leg04")
+//}
+
+//Anim("tapir_gallop_left")
+//{
+//	Footstep(0.13, "b_LB_leg03")
+//	Footstep(0.13, "b_RB_leg03")
+//	Footstep(0.43, "b_LF_leg04")
+//	Footstep(0.60, "b_RF_leg04")
+//}
+
+//Anim("tapir_gallop_right")
+//{
+//	Footstep(0.13, "b_LB_leg03")
+//	Footstep(0.13, "b_RB_leg03")
+//	Footstep(0.43, "b_LF_leg04")
+//	Footstep(0.60, "b_RF_leg04")
+//}
+
+Anim("tapir_idle_b")
+{
+	Footstep(0.30, "b_RF_leg04")
+	Footstep(0.65, "b_LB_leg03")
+}
+
+
+
+
+
+

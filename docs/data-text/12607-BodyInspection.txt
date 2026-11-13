@@ -1,0 +1,6 @@
+//Slot(name, parent, offsetx, offset y, offsetz, rotatex, rotatey, rotatez)
+
+//Slot("Wound00", "mixamorig:ForeArm.L", 0.055, 0.148, -0.015, 0.0, 180.0, 0.0)
+//Slot("Wound01", "mixamorig:ForeArm.R", -0.0437, 0.1478, -0.0146, 0.0, 0.0, 0.0)
+//Slot("Wound02", "mixamorig:Leg.L", 0.055, 0.148, -0.015, 0.0, 180.0, 0.0)
+//Slot("Wound03", "mixamorig:Leg.R", 0.055, 0.148, -0.015, 0.0, 180.0, 0.0)

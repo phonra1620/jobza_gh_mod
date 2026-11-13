@@ -1,0 +1,58 @@
+Node("Barrel_disappearing_01", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_01_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_01", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+
+
+}
+Node("Barrel_disappearing_02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_02_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_02", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+	
+
+}
+
+Node("Barrel_disappearing_03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_03_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_03", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+	
+
+}
+Node("Barrel_disappearing_04", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_04_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_04", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+	
+
+}
+Node("Barrel_disappearing_05", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_05_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_05", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+	
+
+}
+Node("Barrel_disappearing_06", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_06_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_06", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+	
+
+}
+Node("Barrel_disappearing_07", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Trigger_quest_barrel_07_trigger", False, 0)
+	Element("DisableObject:Trigger_quest_barrel_07", False, 1)
+	Element("PlayMusicJingle:pve_jingle_metal_jump_land:false:0.7:0", False, 2)
+	
+
+}
+

@@ -1,0 +1,721 @@
+Anim("coop_idle_stand_legs")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("coop_sleep")
+{
+	Event("RecoverEnd", 0.9)
+}
+
+Anim("coop_wake_up_short")
+{
+	Event("RecoverEnd", 0.9)
+}
+Anim("coop_torch_unlit_idle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("coop_spear_idle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("coop_spear_catch")
+{
+	Event("SpearEnterPresentationEnd", 0.9)
+}
+
+Anim("coop_spear_block_in")
+{
+	Event("SpearBlockOutEnd", 0.1)
+	Event("SpearBlockInEnd", 0.9)
+}
+
+Anim("coop_blade_idle")
+{
+	Event("MeleeIdleStart", 0.01)
+}
+
+Anim("coop_walk_forward_legs")
+{
+	Event("FootStep", 0.22)
+	Event("FootStep", 0.7)
+}
+
+Anim("coop_run_strafe_left_legs")
+{
+	Event("FootStep", 0.08)
+	Event("FootStep", 0.51)
+}
+
+Anim("coop_run_strafe_right_legs")
+{
+	Event("FootStep", 0.08)
+	Event("FootStep", 0.52)
+}
+
+Anim("coop_walk_left_legs")
+{
+	Event("FootStep", 0.14)
+	Event("FootStep", 0.56)
+}
+
+Anim("coop_walk_right_legs")
+{
+	Event("FootStep", 0.14)
+	Event("FootStep", 0.56)
+}
+
+//Anim("coop_crouch_forward_legs")
+//{
+//	Event("FootStep", 0.9)
+//	Event("FootStep", 0.65)
+//}
+
+//Anim("coop_crouch_back_legs")
+//{
+//	Event("FootStep", 0.45)
+//	Event("FootStep", 0.9)
+//}
+
+//Anim("coop_crouch_left_legs")
+//{
+//	Event("FootStep", 0.55)
+//	Event("FootStep", 0.9)
+//}
+
+//Anim("coop_crouch_right_legs")
+//{
+//	Event("FootStep", 0.38)
+//	Event("FootStep", 0.9)
+//}
+
+Anim("coop_walk_back_legs")
+{
+	Event("FootStep", 0.43)
+	Event("FootStep", 0.93)
+}
+
+Anim("coop_run_forward_legs")
+{
+	Event("FootStep", 0.12)
+	Event("FootStep", 0.62)
+}
+
+//Anim("coop_run_back_legs")
+//{
+//	Event("FootStep", 0.38)
+//	Event("FootStep", 0.84)
+//}
+
+Anim("coop_1Haxe_attack_slant")
+{
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("ObjectSwingEnd", 0.9)	
+}
+
+Anim("coop_1Haxe_attack_slant")
+{
+	Event("DamageStart", 0.40)
+	Event("DamageEnd", 0.65)	
+	Event("MeleeRightAttackEnd", 0.9)	
+}
+
+
+
+
+//Anim("coop_1Haxe_attack_swing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeRightAttackStart", 0.0)	
+//	Event("MeleeRightAttackEnd", 0.9)
+//	Event("DamageStart", 0.25)
+//	Event("DamageEnd", 0.9)	
+//	Event("ObjectSwingEnd", 0.85)
+//}
+
+//Anim("coop_1Haxe_LowStamina_attack")
+//{
+//	Event("PlaySwingSound", 0.2)
+//	Event("MeleeRightAttackStart", 0.27)	
+//	Event("MeleeRightAttackEnd", 0.9)
+//	Event("DamageStart", 0.2)
+//	Event("DamageEnd", 0.38)	
+//	Event("ObjectSwingEnd", 0.38)
+//}
+
+
+Anim("coop_1Haxe_combo")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeLeftAttackStart", 0.0)	
+	Event("MeleeLeftAttackEnd", 0.8)
+	Event("DamageStart", 0.0)
+	Event("DamageEnd", 0.8)	
+	Event("ObjectSwingEnd", 0.6)	
+}
+
+
+
+
+Anim("coop_blade_attack_right_Swing")
+{
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.35)
+	Event("DamageEnd", 0.9)	
+	Event("ObjectSwingEnd", 0.9)	
+}
+
+Anim("coop_blade_lowstamina_attack")
+{
+	Event("PlaySwingSound", 0.2)
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.2)
+	Event("DamageEnd", 0.45)	
+	Event("ObjectSwingEnd", 0.45)
+}
+
+Anim("coop_torch_fired_attack")
+{
+	Event("MeleeRightAttackStart", 0.0)	
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeRightAttackEnd", 0.9)
+	Event("DamageStart", 0.35)
+	Event("DamageEnd", 0.9)	
+	Event("ObjectSwingEnd", 0.9)
+}
+
+//Anim("PL|AttackUp")
+//{
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.4)
+//	Event("DamageEnd", 0.9)
+//}
+
+
+//Anim("PL|AttackUpSwing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.2)
+//	Event("DamageEnd", 0.9)
+//}
+
+//Anim("PL|AttackUpBlade")
+//{
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.4)
+//	Event("DamageEnd", 0.9)
+//}
+
+//Anim("PL|AttackUpBladeSwing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.2)
+//	Event("DamageEnd", 0.9)
+//}
+Anim("coop_fishingRod_cast")
+{
+	Event("FishingCastEnd", 0.9)
+}
+
+Anim("coop_fishingRod_takeOut")
+{
+	Event("FishingHideVein", 0.5)
+	Event("FishingReelEnd", 0.9)
+}
+
+Anim("coop_fishingRod_Strike")
+{
+	Event("FishingHideVein", 0.4)
+	Event("FishingStrikeEnd", 0.9)
+}
+
+Anim("coop_spear_attack_hit")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeThrustAttackStart", 0.1)
+	Event("SpearAttackEnd", 1.0)
+	Event("DamageStart", 0.1)
+	Event("DamageEnd", 1.0)	
+}
+
+Anim("coop_spear_attack_down")
+{
+	Event("PlaySwingSound", 0.0)
+	Event("MeleeThrustAttackStart", 0.1)
+	Event("DamageStart", 0.15)
+	Event("DamageEnd", 0.5)		
+	Event("SpearAttackEnd", 0.64)
+}
+
+
+Anim("coop_spear_attack_hit_back")
+{	
+	Event("SpearAttackEnd", 1.0)
+}
+Anim("coop_spear_attack_miss_back")
+{	
+	Event("SpearAttackEnd", 1.0)
+}
+
+
+Anim("coop_spear_idle_to_aim")
+{	
+	Event("SpearAimEnd", 0.9)
+}
+
+
+
+Anim("coop_spear_aim_to_idle")
+{	
+	Event("SpearUnAimEnd", 0.9)
+}
+
+Anim("coop_vomit01")
+{
+	Event("VomitingThrowUp", 0.15)
+	Event("VomitingEnd", 0.9)
+}
+
+
+Anim("coop_bow_shot")
+{
+	Event("BowShot", 0.01)
+	Event("BowShotEnd", 0.9)
+}
+
+Anim("coop_bow_reload")
+{
+	Event("BowReloadEnd", 0.6)
+}
+
+Anim("coop_bow_harvest")
+{
+	Event("GrabItemHideArrow", 0.0)
+	Event("GrabItem", 0.4)
+	Event("GrabItemEnd", 0.8)
+	Event("GrabItemShowArrow", 0.9)
+}
+
+Anim("coop_bandaging_Rhand")
+{
+	Event("BIShowBandage", 0.37)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+Anim("coop_bandaging_Lhand")
+{
+	Event("BIShowBandage", 0.37)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+Anim("coop_bandaging_LLeg")
+{
+	Event("BIShowBandage", 0.6)
+	Event("BIHack", 0.9)
+	Event("BIBandageEnd", 0.95)
+}
+
+//Anim("coop_bandaging_Rleg")
+//{
+//	Event("BIShowBandage", 0.6)
+//	Event("BIHack", 0.9)
+//	Event("BIBandageEnd", 0.95)
+//}
+
+Anim("coop_spear_throw")
+{
+	Event("SpearShot", 0.2)
+	Event("SpearShotEnd", 0.9)
+}
+
+Anim("coop_throw")
+{
+	Event("SpearShot", 0.55)
+	Event("SpearShotEnd", 0.9)
+	Event("ObjectThrow", 0.5)  //Temp
+	
+}Anim("2hand_throw")
+{
+	Event("SpearShot", 0.55)
+	Event("SpearShotEnd", 0.9)
+	Event("ObjectThrow", 0.5)  //Temp
+}
+
+Anim("coop_animal_harvest_in")
+{
+	Event("HarvestingSpawnFX", 0.3)	
+}
+
+Anim("coop_animal_harvest_loop")
+{
+	Event("HarvestingSpawnFX", 0.3)
+	Event("HarvestingEnd", 0.9)
+}
+
+Anim("coop_crafting")
+{
+	Event("CraftingEnd", 0.9)
+	Event("HarvestingEnd", 0.9)
+}
+
+Anim("coop_animal_harvest_out")
+{
+	Event("HarvestingFinishEnd", 0.9)
+}
+
+//Anim("PL|BlowgunShot")
+//{	
+//	Event("BlowpipeShot", 0.15)
+//	Event("BlowpipeShotEnd", 0.9)
+//}
+
+//Anim("PL|BlowgunReload")
+//{
+//	Event("BlowpipeLoad", 0.5)
+//	Event("BlowpipeLoadEnd", 0.9)
+//}
+
+Anim("coop_harvest")
+{
+	Event("GrabItem", 0.37)
+	Event("GrabItemEnd", 0.7)
+}
+
+Anim("coop_spear_harvest")
+{
+	Event("GrabItem", 0.37)
+	Event("GrabItemEnd", 0.7)
+}
+
+Anim("coop_death_a")
+{
+	Event("DeathFall", 0.6)
+	Event("DeathEnd", 0.9)
+}
+
+Anim("coop_caiman_death")
+{
+	Event("DeathFall", 0.4)
+	Event("DeathEnd", 0.7)
+}
+
+Anim("coop_swim_death")
+{
+	Event("DeathEnd", 0.8)
+}
+
+Anim("coop_death_b")
+{
+	Event("DeathEnd", 0.8)
+}
+
+
+Anim("coop_pass_out")
+{
+	Event("PassingOutEnd", 0.9)
+	Event("PassingOutFall", 0.52)
+}
+
+Anim("coop_torch_unlit_ignite")
+{
+	Event("TorchIgnite", 0.4)
+	Event("TorchIgniteEnd", 0.9)
+}
+
+Anim("coop_torch_fired_fireignite")
+{
+	Event("TorchIgnite", 0.4)
+	Event("TorchIgniteEnd", 0.9)
+}
+
+Anim("coop_torch_fired_fireignite")
+{
+	Event("FireIgnite", 0.5)
+	Event("FireIgniteEnd", 0.9)
+}
+
+//Anim("PL|DrinkingFromLake")
+//{
+//	Event("DrinkLiquidStart", 0.1)
+//	Event("DrinkLiquid", 0.3)
+//	Event("DrinkLiquidEnd", 0.9)
+//}
+
+Anim("coop_swim_forward_full")
+{
+	Event("DiveSound0", 0.15)		
+	Event("DiveSound1", 0.43)		
+	Event("DiveSound2", 0.8)		
+	
+	Event("SwimSound0", 0.15)		
+	Event("SwimSound1", 0.43)		
+	Event("SwimSound2", 0.8)		
+}
+
+Anim("coop_swim_back_full")
+{
+	Event("DiveSound0", 0.0)		
+}
+
+Anim("coop_swim_left_full")
+{
+	Event("DiveSound0", 0.0)		
+}
+
+Anim("coop_swim_right_full")
+{
+	Event("DiveSound0", 0.0)		
+}
+
+Anim("coop_firestick_end")
+{
+	Event("MakeFireTakeFire", 0.23)	
+	Event("MakeFireSuccessEnd", 0.9)
+}
+
+Anim("coop_firestick_fail")
+{
+	Event("MakeFireFailEnd", 0.9)
+	Event("MakeFireHideTool", 0.1)
+}
+
+Anim("coop_fire_feet_end")
+{
+	Event("MakeFireTakeFire", 0.4)	
+	Event("MakeFireSuccessEnd", 0.9)
+}
+
+Anim("coop_fire_feet_fail")
+{
+	Event("MakeFireFailEnd", 0.9)
+	Event("MakeFireHideTool", 0.2)
+}
+
+Anim("coop_firebow_fail")
+{
+	Event("MakeFireFailEnd", 0.9)
+	Event("MakeFireHideTool", 0.2)
+}
+
+Anim("coop_shaking_off")
+{
+	Event("WaspsFlyAwayLHand", 0.26)	
+	Event("WaspsFlyAwayRHand", 0.71)	
+
+	Event("ShakingOffDamage", 0.5)	
+	Event("ShakingOffEnd", 0.9)	
+}
+
+Anim("coop_bees_shake_off")
+{
+	Event("WaspsFlyAwayLHand", 0.46)	
+	Event("WaspsFlyAwayRHand", 0.71)	
+
+	Event("ShakingOffDamage", 0.5)	
+	Event("ShakingOffEnd", 0.99)	
+}
+
+Anim("coop_firebow_end")
+{
+	Event("MakeFireTakeFire", 0.1)	
+	Event("MakeFireSuccessEnd", 0.9)
+}
+
+Anim("coop_map_hide")
+{
+	Event("HideNotebookEnd", 0.9)	
+}
+
+Anim("coop_map_takeOut")
+{
+	Event("ShowNotebook", 0.6)
+	Event("ShowNotebookEnd", 0.9)	
+}
+
+Anim("coop_map_hide")
+{
+	Event("HideMapEnd", 0.9)	
+}
+
+Anim("coop_map_takeOut")
+{
+	Event("ShowMap", 0.9)
+	Event("ShowMapEnd", 0.9)	
+}
+
+Anim("coop_map_watch_takeOut")
+{
+	Event("ShowMap", 0.8)
+	Event("ShowMapEnd", 0.9)	
+}
+
+Anim("coop_carryUp_harvest")
+{
+	Event("GrabItem", 0.3)
+	Event("GrabItemEnd", 0.7)
+}
+
+
+
+Anim("coop_fight_punch_left")
+{
+	Event("FistFightPunchEnd", 0.5)
+}
+
+Anim("coop_punch_hard_left")
+{
+	Event("FistFightPunchStart", 0.25)
+	Event("FistFightPunchHardEnd", 0.5)
+}
+
+Anim("coop_fight_punch_right")
+{
+	Event("FistFightPunchEnd", 0.5)
+}
+
+//Anim("coop_punch_hard_hard")
+//{
+//	Event("FistFightPunchStart", 0.25)
+//	Event("FistFightPunchHardEnd", 0.5)
+//}
+
+Anim("coop_punch_weak_left")
+{
+	Event("FistFightPunchStart", 0.05)
+	Event("FistFightPunchHardEnd", 0.25)
+}
+
+Anim("coop_punch_weak_right")
+{
+	Event("FistFightPunchStart", 0.05)
+	Event("FistFightPunchHardEnd", 0.25)
+}
+
+Anim("coop_hitReaction_back")
+{
+	Event("HitReactionEnd", 0.6)
+}
+
+//Anim("coop_hitReaction_BiteLegs_left")
+//{
+//	Event("HitReactionEnd", 0.6)
+//}
+
+//Anim("coop_hitReaction_BiteLegs_right")
+//{
+//	Event("HitReactionEnd", 0.6)
+//}
+
+//Anim("coop_hitReaction_left")
+//{
+//	Event("HitReactionEnd", 0.6)
+//}
+//Anim("coop_hitReaction_right")
+//{
+//	Event("HitReactionEnd", 0.6)
+//}
+
+
+Anim("coop_map_watch_takeOut")
+{
+	Event("WatchStart", 0.1)
+}
+
+Anim("coop_wake_up")
+{
+	Event("RecoverEnd", 0.9)
+}
+
+Anim("coop_rope_top_out")
+{
+	Event("LadderSound", 0.37)	
+}
+
+Anim("coop_spear_jump")
+{
+	Event("JumpSpearEnd", 0.9)	
+}
+
+Anim("coop_mud_crafting_out")
+{
+	Event("MudMixerEnd", 0.9)	
+}
+
+Anim("coop_mud_crafting_loop")
+{
+	Event("MudMixerGetDirty", 0.0)	
+	Event("MudMixerGetDirty", 0.3)	
+	Event("MudMixerGetDirty", 0.6)	
+}
+
+Anim("coop_washing_off")
+{
+	Sound("CleanUp", "Player", 0.0)
+	Event("SpawnWashingLHandFX", 0.2)
+	Event("DestroyWashingLHandFX", 0.4)
+	Event("SpawnWashingRHandFX", 0.5)
+	Event("DestroyWashingRHandFX", 0.7)
+}
+
+//Anim("PL|TribeAxeAttackUp")
+//{
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.4)
+//	Event("DamageEnd", 0.9)
+//}
+
+//Anim("PL|TribeAxeAttackUpSwing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeUpAttackEnd", 0.9)
+//	Event("DamageStart", 0.2)
+//	Event("DamageEnd", 0.9)
+//}
+//
+//Anim("PL|TribeAxeAttackRightSwing")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeRightAttackStart", 0.1)	
+//	Event("MeleeRightAttackEnd", 0.9)
+//	Event("DamageStart", 0.2)
+//	Event("DamageEnd", 1.0)	
+//	Event("ObjectSwingEnd", 0.9)
+//}
+//Anim("PL|TribeAxeAttackRightCombo")
+//{
+//	Event("PlaySwingSound", 0.0)
+//	Event("MeleeLeftAttackStart", 0.0)	
+//	Event("MeleeLeftAttackEnd", 0.8)
+//	Event("DamageStart", 0.0)
+//	Event("DamageEnd", 0.6)	
+//	Event("ObjectSwingEnd", 0.6)	
+//}
+
+Anim("coop_firestick_start")
+{
+	Event("MakeFireShowTool", 0.1)
+	Event("MakeFireShowKindlingSlot", 0.99)
+}
+
+Anim("coop_firebow_start")
+{
+	Event("MakeFireShowTool", 0.1)	
+	Event("MakeFireShowKindlingSlot", 0.99)
+}
+
+Anim("coop_fire_feet_start")
+{
+	Event("MakeFireShowTool", 0.1)	
+	Event("MakeFireShowKindlingSlot", 0.99)
+}
+

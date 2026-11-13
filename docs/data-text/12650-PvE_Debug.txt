@@ -1,0 +1,53 @@
+// ################################################################################### False -> True for looped infinite
+Node("LQuest_Albino_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("UnlockPveDialog:LQuest_Albino", False, 0)
+	Element("IsDialogPlaying:true:LQuest_Albino", False, 1)
+	Element("IsDialogPlaying:false:LQuest_Albino", False, 2)
+}	
+Node("LQuest_BadWater_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("UnlockPveDialog:LQuest_BadWater", False, 0)
+	Element("IsDialogPlaying:true:LQuest_BadWater", False, 1)
+	Element("IsDialogPlaying:false:LQuest_BadWater", False, 2)
+}		
+Node("LQuest_Bike_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("UnlockPveDialog:LQuest_Bike", False, 0)
+	Element("IsDialogPlaying:true:LQuest_Bike", False, 1)
+	Element("IsDialogPlaying:false:LQuest_Bike", False, 2)
+}
+Node("LQuest_Statue_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("UnlockPveDialog:LQuest_Statue", False, 0)
+	Element("IsDialogPlaying:true:LQuest_Statue", False, 1)
+	Element("IsDialogPlaying:false:LQuest_Statue", False, 2)
+}
+Node("PvE_VillA_Mushrooms_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("UnlockPveDialog:PvE_VillA_Mushrooms", False, 0)
+	Element("IsDialogPlaying:true:PvE_VillA_Mushrooms", False, 1)
+	Element("IsDialogPlaying:false:PvE_VillA_Mushrooms", False, 2)
+}
+Node("PvE_VillA_Welcoming_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("UnlockPveDialog:PvE_VillA_Welcoming", False, 0)
+	Element("IsDialogPlaying:true:PvE_VillA_Welcoming", False, 1)
+	Element("IsDialogPlaying:false:PvE_VillA_Welcoming", False, 2)
+}
+
+Node("PvE_AllQuest_Debug", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_Var_Dialog_Debug", False, 10)
+	Element("SetBoolVariable:VarLegendaryQuest_Albino:true", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_Bike:true", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_Statue:true", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_BadWater:true", False, 4)
+
+}

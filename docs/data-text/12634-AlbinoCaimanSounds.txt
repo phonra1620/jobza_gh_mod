@@ -1,0 +1,5 @@
+Idle("alligator_growl_01", "alligator_growl_02", "alligator_growl_03", "alligator_growl_04")
+TailDrag("Caiman_Belly_Tail_Drag_01","Caiman_Belly_Tail_Drag_02","Caiman_Belly_Tail_Drag_03","Caiman_Belly_Tail_Drag_04","Caiman_Belly_Tail_Drag_05","Caiman_Belly_Tail_Drag_06","Caiman_Belly_Tail_Drag_07","Caiman_Belly_Tail_Drag_08")
+Hit("Caiman_Hit_01","Caiman_Hit_02","Caiman_Hit_03")
+Death("Caiman_Death_02")
+Attack("alligator_attack_01","alligator_attack_02","alligator_attack_03","alligator_attack_04")

@@ -1,0 +1,55 @@
+Node("MusicSensor_07Village", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:07TribeVillage_OBJ_Sensor", False, 0)
+	Element("PlayMusicJingle:gh_jg6:false:0.8:0", False, 1)
+}
+Node("Cartel_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cartel_FindOut", False, 0)
+	Element("PlayMusicJingle:jingle_cartel:false:0.8:0", False, 1)
+}
+Node("GoldMine_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GoldMine_Story_Sensor", False, 0)
+	Element("PlayMusicJingle:jingle_goldmine:false:0.8:0", False, 1)
+}
+Node("StoneRing_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Find_StoneRing_Sensor", False, 0)
+	Element("PlayMusicJingle:find_stonerings_jingle:false:0.8:0", False, 1)
+}
+Node("RefugessCamp_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:RefugessCamp_Sensor", False, 0)
+	Element("PlayMusicJingle:jingle_refugee:false:0.8:0", False, 1)
+}
+Node("AirPort_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:AirPortMia_No_Radio", False, 0)
+	Element("PlayMusicJingle:jingle_airport:false:0.8:0", False, 1)
+}
+Node("AirPortShed_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Airport_Shed_Sensor", False, 0)
+	Element("PlayMusicJingle:airport_shed_jingle:false:0.8:0", False, 1)
+}
+Node("Pre_Dream03_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Dream3_Ring_Sensor", False, 0)
+	Element("PlayMusicJingle:find_stonerings_jingle:false:0.8:0", False, 1)
+}
+Node("WHA_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Find_WHA_Sensor", False, 0)
+	Element("PlayMusicJingle:find_camp_jingle:false:0.8:0", False, 1)
+}
+Node("Pre_Ending_Village_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Pre_EndingVillageTop_Sensor", False, 0)
+	Element("PlayMusicJingle:find_village_jingle1:false:0.8:0", False, 1)
+}
+Node("Ending_Village_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:EndingVillage_Sensor", False, 0)
+	Element("PlayMusicJingle:find_village_jingle2:false:0.8:0", False, 1)
+}

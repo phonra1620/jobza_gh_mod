@@ -1,0 +1,101 @@
+Node("Pre_All_Cauldrons", True, -84.0000, 181.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:Ayuhasca_Cauldron_Dream01_Rack", False, 0)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream02_Rack", False, 1)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream03_Rack", False, 2)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream04_Rack", False, 3)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream01_Rack_New", False, 4)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream02_Rack_New", False, 5)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream03_Rack_New", False, 6)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream04_Rack_New", False, 7)
+}
+Node("Dream01_Cauldron_Rack", True, -84.0000, 181.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsBoolVariableTrue:true:CanMakeAyuhaska", False, 0)
+	Element("DeactivateScenarioNode:Dream01_Cauldron_Rack_NO_Recepie", False, 1)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_NoRecepieTrigger", False, 2)
+	Element("IsRackBurning:true:Ayuhasca_Cauldron_Dream01_Rack_New", False, 3)
+	Element("EnableObject:Ayuhasca_cauldron_Dream01_Trigger", False, 4)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_NoFireTrigger", False, 5)
+	Element("IsRackBurning:false:Ayuhasca_Cauldron_Dream01_Rack_New", False, 6)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_Trigger", False, 7)
+	Element("EnableObject:Ayuhasca_cauldron_Dream01_NoFireTrigger", False, 8)
+}
+Node("Dream01_Cauldron_Rack_NO_Recepie", True, -84.0000, 181.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsBoolVariableTrue:false:CanMakeAyuhaska", False, 0)
+	Element("IsRackBurning:true:Ayuhasca_Cauldron_Dream01_Rack_New", False, 1)
+	Element("EnableObject:Ayuhasca_cauldron_Dream01_NoRecepieTrigger", False, 2)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_NoFireTrigger", False, 3)
+	Element("IsRackBurning:false:Ayuhasca_Cauldron_Dream01_Rack_New", False, 4)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_NoRecepieTrigger", False, 5)
+	Element("EnableObject:Ayuhasca_cauldron_Dream01_NoFireTrigger", False, 6)
+}
+Node("Dream02_Cauldron_Rack", True, 141.0000, 178.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsRackBurning:true:Ayuhasca_Cauldron_Dream02_Rack_New", False, 0)
+	Element("DisableObject:Ayuhasca_cauldron_Dream02_NoFireTrigger", False, 1)
+	Element("EnableObject:Ayuhasca_cauldron_Dream02_Trigger", False, 2)
+	Element("IsRackBurning:false:Ayuhasca_Cauldron_Dream02_Rack_New", False, 3)
+	Element("DisableObject:Ayuhasca_cauldron_Dream02_Trigger", False, 4)
+	Element("EnableObject:Ayuhasca_cauldron_Dream02_NoFireTrigger", False, 5)
+}
+Node("Dream03_Cauldron_Rack", True, 365.0000, 176.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsRackBurning:true:Ayuhasca_Cauldron_Dream03_Rack_New", False, 0)
+	Element("DisableObject:Ayuhasca_cauldron_Dream03_NoFireTrigger", False, 1)
+	Element("EnableObject:Ayuhasca_cauldron_Dream03_Trigger", False, 2)
+	Element("IsRackBurning:false:Ayuhasca_Cauldron_Dream03_Rack_New", False, 3)
+	Element("EnableObject:Ayuhasca_cauldron_Dream03_NoFireTrigger", False, 4)
+	Element("DisableObject:Ayuhasca_cauldron_Dream03_Trigger", False, 5)
+}
+Node("Dream04_Cauldron_Rack", True, 589.0000, 174.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsRackBurning:true:Ayuhasca_Cauldron_Dream04_Rack_New", False, 0)
+	Element("DisableObject:Ayuhasca_cauldron_Dream04_NoFireTrigger", False, 1)
+	Element("EnableObject:Ayuhasca_cauldron_Dream04_Trigger", False, 2)
+	Element("IsRackBurning:false:Ayuhasca_Cauldron_Dream04_Rack_New", False, 3)
+	Element("EnableObject:Ayuhasca_cauldron_Dream04_NoFireTrigger", False, 4)
+	Element("DisableObject:Ayuhasca_cauldron_Dream04_Trigger", False, 5)
+}
+Node("Dream01_Cauldron_Swamp", True, -82.0000, 89.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:ShouldDream_01_Start", False, 0)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream01_Pot", False, 1)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream01_BrokenPot", False, 2)
+	Element("DeactivateScenarioNode:Dream01_Cauldron_Rack", False, 3)
+	Element("DeactivateScenarioNode:Dream01_Cauldron_Rack_NO_Recepie", False, 4)
+	Element("BurnoutRack:Ayuhasca_Cauldron_Dream01_Rack_New:true", False, 5)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_NoFireTrigger", False, 6)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream01_VisCooking", False, 7)
+}
+Node("Dream02_Cauldron_Swamp", True, 143.0000, 83.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:ShouldDream_02_Start", False, 0)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream02_Pot", False, 1)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream02_BrokenPot", False, 2)
+	Element("DeactivateScenarioNode:Dream02_Cauldron_Rack", False, 3)
+	Element("DisableObject:Ayuhasca_cauldron_Dream02_NoFireTrigger", False, 4)
+	Element("BurnoutRack:Ayuhasca_Cauldron_Dream02_Rack_New:true", False, 5)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream02_VisCooking", False, 6)
+}
+Node("Dream03_Cauldron_Swamp", True, 368.0000, 81.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:ShouldDream_03_Start", False, 0)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream03_Pot", False, 1)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream03_BrokenPot", False, 2)
+	Element("DeactivateScenarioNode:Dream03_Cauldron_Rack", False, 3)
+	Element("DisableObject:Ayuhasca_cauldron_Dream03_NoFireTrigger", False, 4)
+	Element("BurnoutRack:Ayuhasca_Cauldron_Dream03_Rack_New:true", False, 5)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream03_VisCooking", False, 6)
+}
+Node("Dream04_Cauldron_Swamp", True, 587.0000, 79.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsItTimeToDisable_Cauldron4", False, 0)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream04_Pot", False, 1)
+	Element("EnableObject:Ayuhasca_Cauldron_Dream04_BrokenPot", False, 2)
+	Element("DeactivateScenarioNode:Dream04_Cauldron_Rack", False, 3)
+	Element("DisableObject:Ayuhasca_cauldron_Dream04_NoFireTrigger", False, 4)
+	Element("BurnoutRack:Ayuhasca_Cauldron_Dream04_Rack_New:false", False, 5)
+	Element("DisableObject:Ayuhasca_Cauldron_Dream04_VisCooking", False, 6)
+}

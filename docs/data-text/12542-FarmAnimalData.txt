@@ -1,0 +1,283 @@
+Animal("Capybara")
+{
+	// Foods
+	FoodType("Food")							// Typ jedzenia
+	FoodCapacity(65.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	WaterCapacity(65.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	DecreaseFoodLevelPerSec(0.000174)			// Prêdkoœæ spadania najedzenia
+	DecreaseWaterLevelPerSec(0.000347)		// Prêdkoœæ spadania napojenia
+	WaterLevelToDrink(0.75)						// 
+	FoodLevelToEat(0.75)						// 
+	// Shits
+	ShitInterval(1920.0)							// Co ile sra
+	PoisonFromShitPerSec(0.000174)			//
+	DecreasePoisonLevelPerSec(0.1)		// 
+	ShitPoisonLimit(2)
+	// Health
+	DecreaseHealthPerSec(0.01174)					// Prêdkoœæ spadania ¿ycia jak zwierze jest g³odne/spragnione/
+	IncreaseHealthPerSec(0.02348)					// Prêdkoœæ regeneracji HP
+	// Trust
+	IncreaseTrustPerSec(0.000154)					// Prêdkoœæ wzrostu zaufania (jak zwierze jest najedzone i napojone)
+	DecreaseTrustPerSec(0.000154)					// Prêdkoœæ spadania zaufania
+	MinWaterToGainTrust(0.5)					// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinFoodToGainTrust(0.5)						// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinTrustToWhistle(0.8)
+	MinTrustToPet(0.5)
+	OutsideFarmDecreaseTrustPerSec(0.01)
+	MinTrustToSetName(0.0)
+	// Growup
+	PregnantCooldown(2880.0)
+	PregnantDuration(8640.0)					// D³ugoœæ ci¹¿y - w sekundach irl time
+	MaturationPerSec(0.000116)				// D³ugoœæ dorastania AI (zakres doros³oœci 0-1)
+	MaturityMinScale(0.35)
+	// Misc
+	TrustLevelToRunAway(0.3)					// 
+	FollowWhistlerDuration(40.0)				//	
+	NoTrustDistanceToPlayer(2.3)				//
+	TrustDecreaseOnHitMe(0.3)					//
+	TrustDecreaseOnHitOther(0.15)				//
+	// Hunt
+	FarmTriggerIconName("Capybara_HO")
+	SleepingTriggerIconName("Capybara_HO")
+	TimeToCollapse(8.0)							// Czas po jakim AI pada uœpione - mo¿e byæ jedno na wszystkie AI
+	SleepTime(120.0)							// Ile AI œpi - w sekundach irl time
+	DurationOfBeingTied(480.0)					//
+	HarvestingResult0_50("Bone*1")
+	HarvestingResult50_100("Capybara_Meat_Raw*1;Bone*2")
+}
+Animal("Tapir")
+{
+	// Foods
+	FoodType("Food")							// Typ jedzenia
+	FoodCapacity(80.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	WaterCapacity(80.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	DecreaseFoodLevelPerSec(0.000139)			// Prêdkoœæ spadania najedzenia
+	DecreaseWaterLevelPerSec(0.000278)		// Prêdkoœæ spadania napojenia
+	WaterLevelToDrink(0.75)						// 
+	FoodLevelToEat(0.75)						// 
+	// Shits
+	ShitInterval(2160.0)							// Co ile sra
+	PoisonFromShitPerSec(0.000174)			//
+	DecreasePoisonLevelPerSec(0.1)		// 
+	ShitPoisonLimit(2)
+	// Health
+	DecreaseHealthPerSec(0.01515)					// Prêdkoœæ spadania ¿ycia jak zwierze jest g³odne/spragnione/
+	IncreaseHealthPerSec(0.0303)					// Prêdkoœæ regeneracji HP
+	// Trust
+	IncreaseTrustPerSec(0.000116)					// Prêdkoœæ wzrostu zaufania (jak zwierze jest najedzone i napojone)
+	DecreaseTrustPerSec(0.000116)					// Prêdkoœæ spadania zaufania
+	MinWaterToGainTrust(0.5)					// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinFoodToGainTrust(0.5)						// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinTrustToWhistle(0.8)
+	MinTrustToPet(0.5)
+	OutsideFarmDecreaseTrustPerSec(0.01)
+	MinTrustToSetName(0.0)
+	// Growup
+	PregnantCooldown(2880.0)
+	PregnantDuration(10800.0)					// D³ugoœæ ci¹¿y - w sekundach irl time
+	MaturationPerSec(0.000093)				// D³ugoœæ dorastania AI (zakres doros³oœci 0-1)
+	MaturityMinScale(0.4)
+	// Misc
+	TrustLevelToRunAway(0.3)					// 
+	FollowWhistlerDuration(20.0)				//	
+	NoTrustDistanceToPlayer(2.3)				//
+	TrustDecreaseOnHitMe(0.3)					//
+	TrustDecreaseOnHitOther(0.15)				//
+	// Hunt
+	FarmTriggerIconName("Tapir_HO")
+	SleepingTriggerIconName("Tapir_HO")
+	TimeToCollapse(8.0)							// Czas po jakim AI pada uœpione - mo¿e byæ jedno na wszystkie AI
+	SleepTime(120.0)							// Ile AI œpi - w sekundach irl time
+	DurationOfBeingTied(480.0)					//
+	HarvestingResult0_50("Bone*1")
+	HarvestingResult50_100("Tapir_Meat_Raw*2;Bone*2;tapir_skin*1")
+}
+Animal("Peccary")
+{
+	// Foods
+	FoodType("Food")							// Typ jedzenia
+	FoodCapacity(60.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	WaterCapacity(60.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	DecreaseFoodLevelPerSec(0.000231)			// Prêdkoœæ spadania najedzenia
+	DecreaseWaterLevelPerSec(0.000463)		// Prêdkoœæ spadania napojenia
+	WaterLevelToDrink(0.75)						// 
+	FoodLevelToEat(0.75)						// 
+	// Shits
+	ShitInterval(1440.0)							// Co ile sra
+	PoisonFromShitPerSec(0.000174)			//
+	DecreasePoisonLevelPerSec(0.1)		// 
+	ShitPoisonLimit(2)
+	// Health
+	DecreaseHealthPerSec(0.01174)					// Prêdkoœæ spadania ¿ycia jak zwierze jest g³odne/spragnione/
+	IncreaseHealthPerSec(0.02348)					// Prêdkoœæ regeneracji HP
+	// Trust
+	IncreaseTrustPerSec(0.000116)					// Prêdkoœæ wzrostu zaufania (jak zwierze jest najedzone i napojone)
+	DecreaseTrustPerSec(0.000116)					// Prêdkoœæ spadania zaufania
+	MinWaterToGainTrust(0.5)					// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinFoodToGainTrust(0.5)						// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinTrustToWhistle(0.8)
+	MinTrustToPet(0.5)
+	OutsideFarmDecreaseTrustPerSec(0.01)
+	MinTrustToSetName(0.0)
+	// Growup
+	PregnantCooldown(2880.0)
+	PregnantDuration(6480.0)					// D³ugoœæ ci¹¿y - w sekundach irl time
+	MaturationPerSec(0.000154)				// D³ugoœæ dorastania AI (zakres doros³oœci 0-1)
+	MaturityMinScale(0.35)
+	// Misc
+	TrustLevelToRunAway(0.3)					// 
+	FollowWhistlerDuration(30.0)				//	
+	NoTrustDistanceToPlayer(2.3)				//
+	TrustDecreaseOnHitMe(0.3)					//
+	TrustDecreaseOnHitOther(0.15)				//
+	// Hunt
+	FarmTriggerIconName("Peccary_HO")
+	SleepingTriggerIconName("Peccary_HO")
+	TimeToCollapse(8.0)							// Czas po jakim AI pada uœpione - mo¿e byæ jedno na wszystkie AI
+	SleepTime(120.0)							// Ile AI œpi - w sekundach irl time
+	DurationOfBeingTied(480.0)					//
+	HarvestingResult0_50("Bone*1")
+	HarvestingResult50_100("Peccary_Meat_Raw*1;Bone*2")
+}
+Animal("GiantAnteater")
+{
+	// Foods
+	FoodType("Insects")							// Typ jedzenia
+	FoodCapacity(90.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	WaterCapacity(90.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	DecreaseFoodLevelPerSec(0.000154)			// Prêdkoœæ spadania najedzenia
+	DecreaseWaterLevelPerSec(0.000309)		// Prêdkoœæ spadania napojenia
+	WaterLevelToDrink(0.75)						// 
+	FoodLevelToEat(0.75)						// 
+	// Shits
+	ShitInterval(2160.0)							// Co ile sra
+	PoisonFromShitPerSec(0.000174)			//
+	DecreasePoisonLevelPerSec(0.1)		// 
+	ShitPoisonLimit(2)
+	// Health
+	DecreaseHealthPerSec(0.01174)					// Prêdkoœæ spadania ¿ycia jak zwierze jest g³odne/spragnione/
+	IncreaseHealthPerSec(0.02348)					// Prêdkoœæ regeneracji HP
+	// Trust
+	IncreaseTrustPerSec(0.000103)					// Prêdkoœæ wzrostu zaufania (jak zwierze jest najedzone i napojone)
+	DecreaseTrustPerSec(0.000231)					// Prêdkoœæ spadania zaufania
+	MinWaterToGainTrust(0.5)					// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinFoodToGainTrust(0.5)						// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinTrustToWhistle(0.8)
+	MinTrustToPet(0.5)
+	OutsideFarmDecreaseTrustPerSec(0.01)
+	MinTrustToSetName(0.0)
+	// Growup
+	PregnantCooldown(2880.0)
+	PregnantDuration(8640.0)					// D³ugoœæ ci¹¿y - w sekundach irl time
+	MaturationPerSec(0.000103)				// D³ugoœæ dorastania AI (zakres doros³oœci 0-1)
+	MaturityMinScale(0.35)
+	// Misc
+	TrustLevelToRunAway(0.3)					// 
+	FollowWhistlerDuration(40.0)				//	
+	NoTrustDistanceToPlayer(2.3)				//
+	TrustDecreaseOnHitMe(0.3)					//
+	TrustDecreaseOnHitOther(0.15)				//
+	// Hunt
+	FarmTriggerIconName("GiantAnteater")
+	SleepingTriggerIconName("GiantAnteater")
+	TimeToCollapse(8.0)							// Czas po jakim AI pada uœpione - mo¿e byæ jedno na wszystkie AI
+	SleepTime(120.0)							// Ile AI œpi - w sekundach irl time
+	DurationOfBeingTied(480.0)					//
+	HarvestingResult0_50("Bone*1")
+	HarvestingResult50_100("GiantAnteater_Meat_Raw*1;Bone*2")
+	FarmCapacityFill(2.0)
+}
+Animal("Armadillo")
+{
+	// Foods
+	FoodType("Insects")							// Typ jedzenia
+	FoodCapacity(120.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	WaterCapacity(120.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	DecreaseFoodLevelPerSec(0.000116)			// Prêdkoœæ spadania najedzenia
+	DecreaseWaterLevelPerSec(0.000231)		// Prêdkoœæ spadania napojenia
+	WaterLevelToDrink(0.75)						// 
+	FoodLevelToEat(0.75)						// 
+	// Shits
+	ShitInterval(2880.0)							// Co ile sra
+	PoisonFromShitPerSec(0.000174)			//
+	DecreasePoisonLevelPerSec(0.1)		// 
+	ShitPoisonLimit(2)
+	// Health
+	DecreaseHealthPerSec(0.01174)					// Prêdkoœæ spadania ¿ycia jak zwierze jest g³odne/spragnione/
+	IncreaseHealthPerSec(0.02348)					// Prêdkoœæ regeneracji HP
+	// Trust
+	IncreaseTrustPerSec(0.000077)					// Prêdkoœæ wzrostu zaufania (jak zwierze jest najedzone i napojone)
+	DecreaseTrustPerSec(0.000174)					// Prêdkoœæ spadania zaufania
+	MinWaterToGainTrust(0.5)					// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinFoodToGainTrust(0.5)						// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinTrustToWhistle(0.8)
+	MinTrustToPet(0.5)
+	OutsideFarmDecreaseTrustPerSec(0.01)
+	MinTrustToSetName(0.0)
+	// Growup
+	PregnantCooldown(2880.0)
+	PregnantDuration(4320.0)					// D³ugoœæ ci¹¿y - w sekundach irl time
+	MaturationPerSec(0.000077)				// D³ugoœæ dorastania AI (zakres doros³oœci 0-1)
+	MaturityMinScale(0.35)
+	// Misc
+	TrustLevelToRunAway(0.3)					// 
+	FollowWhistlerDuration(40.0)				//	
+	NoTrustDistanceToPlayer(2.3)				//
+	TrustDecreaseOnHitMe(0.3)					//
+	TrustDecreaseOnHitOther(0.15)				//
+	// Hunt
+	FarmTriggerIconName("Armadillo")
+	SleepingTriggerIconName("Armadillo")
+	TimeToCollapse(8.0)							// Czas po jakim AI pada uœpione - mo¿e byæ jedno na wszystkie AI
+	SleepTime(120.0)							// Ile AI œpi - w sekundach irl time
+	DurationOfBeingTied(480.0)					//
+	HarvestingResult0_50("Bone*1")
+	HarvestingResult50_100("Armadilo_Meat_Raw*1;Bone*2")
+}
+Animal("ArmadilloThreeBanded")
+{
+	// Foods
+	FoodType("Insects")							// Typ jedzenia
+	FoodCapacity(120.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	WaterCapacity(120.0)							// Pojemnoœæ AI (statystyka mówi¹ca ile mo¿e zjeœæ/wypiæ dany AI)
+	DecreaseFoodLevelPerSec(0.000116)			// Prêdkoœæ spadania najedzenia
+	DecreaseWaterLevelPerSec(0.000231)		// Prêdkoœæ spadania napojenia
+	WaterLevelToDrink(0.75)						// 
+	FoodLevelToEat(0.75)						// 
+	// Shits
+	ShitInterval(2880.0)							// Co ile sra
+	PoisonFromShitPerSec(0.000174)			//
+	DecreasePoisonLevelPerSec(0.1)		// 
+	ShitPoisonLimit(2)
+	// Health
+	DecreaseHealthPerSec(0.01174)					// Prêdkoœæ spadania ¿ycia jak zwierze jest g³odne/spragnione/
+	IncreaseHealthPerSec(0.02348)					// Prêdkoœæ regeneracji HP
+	// Trust
+	IncreaseTrustPerSec(0.000077)					// Prêdkoœæ wzrostu zaufania (jak zwierze jest najedzone i napojone)
+	DecreaseTrustPerSec(0.000174)					// Prêdkoœæ spadania zaufania
+	MinWaterToGainTrust(0.5)					// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinFoodToGainTrust(0.5)						// Próg najedzenia/napojenia od jakiego roœnie zaufanie
+	MinTrustToWhistle(0.8)
+	MinTrustToPet(0.5)
+	OutsideFarmDecreaseTrustPerSec(0.01)
+	MinTrustToSetName(0.0)
+	// Growup
+	PregnantCooldown(2880.0)
+	PregnantDuration(4320.0)					// D³ugoœæ ci¹¿y - w sekundach irl time
+	MaturationPerSec(0.000077)				// D³ugoœæ dorastania AI (zakres doros³oœci 0-1)
+	MaturityMinScale(0.35)
+	// Misc
+	TrustLevelToRunAway(0.3)					// 
+	FollowWhistlerDuration(40.0)				//	
+	NoTrustDistanceToPlayer(2.3)				//
+	TrustDecreaseOnHitMe(0.3)					//
+	TrustDecreaseOnHitOther(0.15)				//
+	// Hunt
+	FarmTriggerIconName("ArmadilloThreeBanded")
+	SleepingTriggerIconName("ArmadilloThreeBanded")
+	TimeToCollapse(8.0)							// Czas po jakim AI pada uœpione - mo¿e byæ jedno na wszystkie AI
+	SleepTime(120.0)							// Ile AI œpi - w sekundach irl time
+	DurationOfBeingTied(480.0)					//
+	HarvestingResult0_50("Bone*1")
+	HarvestingResult50_100("Armadillo_Three_Banded_Meat_Raw*1;Bone*2")
+}

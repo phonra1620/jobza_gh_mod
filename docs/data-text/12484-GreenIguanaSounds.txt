@@ -1,0 +1,2 @@
+Idle("iguana_idle_01")
+Panic("iguana_idle_01")

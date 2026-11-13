@@ -1,0 +1,16 @@
+
+Item("KidRunnerHeavyObject")
+{
+	
+	Clip("PL|PreCarryUp", "PL|child_grab")
+	Clip("PL|CarryUp", "PL|childCarry_idle")
+	Clip("PL|CarryUpDrop", "PL|child_drop")
+	//Clip("PL|CarryDown_Build", "PL|CocoNutCarry_Build")
+	Clip("PL|Jump", "PL|childCarry_idle")
+}
+
+
+
+
+
+

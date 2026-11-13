@@ -1,0 +1,6 @@
+Cursor("Normal", "Arrow")
+Cursor("Hand_0", "Hand_0")
+Cursor("Hand_1", "Hand_1")
+Cursor("InspectionArrow", "Arrow_double")
+Cursor("MouseOver", "Arrow_click")
+Cursor("Hammer", "Hammer")

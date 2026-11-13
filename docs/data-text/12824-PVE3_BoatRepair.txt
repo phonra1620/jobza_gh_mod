@@ -1,0 +1,298 @@
+
+//REPAIR HULL
+
+Node("PvE_BoatRepair_NoticeHullDamage_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullDamage_Trigger", False, 0)
+	//Element("StartDialog:PvE_Player_LQuest_Panther_4", False, 1)
+	//Element("IsDialogPlaying:false:PvE_Player_LQuest_Panther_4", False, 2)
+	Element("SetBoolVariable:IsHullDamageNoticed:true", False, 3)
+}
+Node("PvE_BoatRepair_CheckHullGood_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatCheckHullGood_Trigger", False, 0)	
+	Element("SetBoolVariable:IsHullGoodChecked:true", False, 1)
+	Element("StartDialog:PVE_BoatCheck_Player_02", False, 2)
+}
+Node("PvE_BoatRepair_CheckSteeringWheel_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatCheckSteeringWheel_Trigger", False, 0)	
+	Element("SetBoolVariable:IsSteeringWheelChecked:true", False, 1)
+	Element("StartDialog:PVE_BoatCheck_Player_01", False, 2)	
+}
+Node("PvE_BoatRepair_NoticeHullDamage_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullDamage_Trigger", False, 0)	
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 1)
+	Element("EnableObject:PvE_BoatHullDamage_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:IsHullDamageNoticed", False, 3)
+	Element("DisableObject:PvE_BoatHullDamage_Trigger", False, 4)
+	Element("DeactivateScenarioNode:PvE_BoatRepair_NoticeHullDamage_FPP", False, 5)	
+}
+Node("PvE_BoatRepair_CheckHullGood_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatCheckHullGood_Trigger", False, 0)	
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 1)
+	Element("EnableObject:PvE_BoatCheckHullGood_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:IsHullGoodChecked", False, 3)
+	Element("DisableObject:PvE_BoatCheckHullGood_Trigger", False, 4)
+	Element("DeactivateScenarioNode:PvE_BoatRepair_CheckHullGood_FPP", False, 5)	
+}
+Node("PvE_BoatRepair_CheckSteeringWheel_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatCheckSteeringWheel_Trigger", False, 0)	
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 1)
+	Element("EnableObject:PvE_BoatCheckSteeringWheel_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:IsSteeringWheelChecked", False, 3)
+	Element("DisableObject:PvE_BoatCheckSteeringWheel_Trigger", False, 4)
+	Element("DeactivateScenarioNode:PvE_BoatRepair_CheckSteeringWheel_FPP", False, 5)	
+}
+// PATCH 1
+Node("PvE_BoatHullPatch1_Board_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch1_Board_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Constructions\construction_insert_log_01", False, 1)
+	Element("SetBoolVariable:IsHullBoatHullPatch1_BoardPlaced:true", False, 2)
+}
+Node("PvE_BoatHullPatch1_Board_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch1_Board_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch1_Board_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsBoatDocked", False, 2)
+	Element("IsBoolVariableTrue:true:IsBoat_DockedBoatEnabled", False, 8)
+	Element("EnableObject:PvE_BoatHullPatch1_Board_Trigger", False, 3)		
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch1_BoardPlaced", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch1_Board_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch1_Board_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch1_Board_FPP", False, 7)	
+}
+// PATCH 2
+Node("PvE_BoatHullPatch2_Board_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch2_Board_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Constructions\construction_insert_log_02", False, 1)	
+	Element("SetBoolVariable:IsHullBoatHullPatch2_BoardPlaced:true", False, 2)
+}
+Node("PvE_BoatHullPatch2_Board_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch2_Board_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch2_Board_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsBoatDocked", False, 2)
+	Element("IsBoolVariableTrue:true:IsBoat_DockedBoatEnabled", False, 8)
+	Element("EnableObject:PvE_BoatHullPatch2_Board_Trigger", False, 3)		
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch2_BoardPlaced", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch2_Board_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch2_Board_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch2_Board_FPP", False, 7)	
+}
+// PATCH 3
+Node("PvE_BoatHullPatch3_Board1_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch3_Board1_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Constructions\construction_insert_log_05", False, 1)	
+	Element("SetBoolVariable:IsHullBoatHullPatch3_Board1Placed:true", False, 2)
+}
+Node("PvE_BoatHullPatch3_Board1_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch3_Board1_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch3_Board1_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsBoatDocked", False, 2)
+	Element("IsBoolVariableTrue:true:IsBoat_DockedBoatEnabled", False, 8)
+	Element("EnableObject:PvE_BoatHullPatch3_Board1_Trigger", False, 3)		
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_Board1Placed", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch3_Board1_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch3_Board1_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch3_Board1_FPP", False, 7)	
+}
+Node("PvE_BoatHullPatch3_Board2_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch3_Board2_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Constructions\construction_insert_log_04", False, 1)
+	Element("SetBoolVariable:IsHullBoatHullPatch3_Board2Placed:true", False, 2)
+}
+Node("PvE_BoatHullPatch3_Board2_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch3_Board2_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch3_Board2_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsBoatDocked", False, 2)
+	Element("IsBoolVariableTrue:true:IsBoat_DockedBoatEnabled", False, 8)
+	Element("EnableObject:PvE_BoatHullPatch3_Board2_Trigger", False, 3)		
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_Board2Placed", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch3_Board2_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch3_Board2_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch3_Board2_FPP", False, 7)	
+}
+Node("PvE_BoatHullPatch3_Boards_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_Board1Placed", False, 0)
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_Board2Placed", False, 1)	
+	Element("SetBoolVariable:IsHullBoatHullPatch3_BoardsPlaced:true", False, 2)	
+}
+// RESIN
+Node("PvE_BoatHullPatch1_Resin_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch1_Resin_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Items\mud_brick_pickup", False, 1)		
+	Element("SetBoolVariable:IsHullBoatHullPatch1_ResinDone:true", False, 2)
+}
+Node("PvE_BoatHullPatch1_Resin_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch1_Resin_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch1_Resin_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch1_BoardPlaced", False, 2)
+	Element("EnableObject:PvE_BoatHullPatch1_Resin_Trigger", False, 3)		
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch1_ResinDone", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch1_Resin_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch1_Resin_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch1_Resin_FPP", False, 7)	
+}
+Node("PvE_BoatHullPatch2_Resin_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch2_Resin_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Items\mud_brick_pickup", False, 1)		
+	Element("SetBoolVariable:IsHullBoatHullPatch2_ResinDone:true", False, 2)
+}
+Node("PvE_BoatHullPatch2_Resin_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch2_Resin_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch2_Resin_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch2_BoardPlaced", False, 2)
+	Element("EnableObject:PvE_BoatHullPatch2_Resin_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch2_ResinDone", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch2_Resin_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch2_Resin_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch2_Resin_FPP", False, 7)	
+}
+Node("PvE_BoatHullPatch3_Resin_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatHullPatch3_Resin_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Items\mud_brick_pickup", False, 1)		
+	Element("SetBoolVariable:IsHullBoatHullPatch3_ResinDone:true", False, 2)
+}
+Node("PvE_BoatHullPatch3_Resin_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatHullPatch3_Resin_Trigger", False, 0)
+	Element("DisableObject:PvE_BoatHullPatch3_Resin_3d", False, 1)	
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_BoardsPlaced", False, 2)
+	Element("EnableObject:PvE_BoatHullPatch3_Resin_Trigger", False, 3)		
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_ResinDone", False, 4)
+	Element("DisableObject:PvE_BoatHullPatch3_Resin_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatHullPatch3_Resin_3d", False, 6)	
+	Element("DeactivateScenarioNode:PvE_BoatHullPatch3_Resin_FPP", False, 7)	
+}
+
+Node("PvE_BoatRepair_BoatRepaired", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch1_ResinDone", False, 1)
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch2_ResinDone", False, 2)
+	Element("IsBoolVariableTrue:true:IsHullBoatHullPatch3_ResinDone", False, 3)	
+	Element("SetBoolVariable:IsBoatRepaired:true", False, 4)
+}
+
+//DOCK BOAT
+
+Node("PvE_BoatRepair_SpawnBoatGhost_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:false:SOA3_Boat_Ghosts_Spawned", False, 1)
+	Element("Hack_ScenarioSpawnSOA3CraneGhosts", False, 2)
+	Element("DisableObject:Crane_platformGhost", False, 12)
+	Element("DisableObject:Crane_logsGhost", False, 22)
+	Element("DisableObject:Crane_logsGhost2", False, 32)
+	Element("DisableObject:Crane_stonesGhost", False, 42)	
+	Element("SetBoolVariable:SOA3_Boat_Ghosts_Spawned:true", False, 7)
+	Element("ActivateScenarioNode:PvE_BoatRepair_Dock", False, 8)
+}
+
+Node("PvE_BoatRepair_DockBoat_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatCranePlatform_DockBoat_Trigger", False, 0)
+	Element("SetBoolVariable:IsBoatDocked:true", False, 1)
+}
+Node("PvE_BoatRepair_CutOffPlatform_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatCranePlatform_CutOff_Trigger", False, 0)
+	Element("SetBoolVariable:IsCranePlatformCutOff:true", False, 1)
+}
+Node("PvE_BoatRepair_Dock", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:Boat_CrashedBoat", False, 0)
+	Element("DisableObject:Boat_DockedBoat", False, 5)
+	Element("DisableObject:Boat_RepairedBoat", False, 6)
+	Element("DisableObject:PvE_BoatCranePlatform_DockBoat_Trigger", False, 7)	
+	Element("DisableObject:PvE_BoatCranePlatform_CutOff_Trigger", False, 8)
+	
+	Element("DisableObject:PvE_BoatCranePlatform_Start", False, 9)
+	Element("DisableObject:PvE_BoatCranePlatform_Docked", False, 10)
+	Element("DisableObject:PvE_BoatCranePlatform_Finished", False, 11)
+	Element("DisableObject:PvE_BoatCraneStonesFull", False, 12)	
+	
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Ghosts_Spawned", False, 11221)
+	Element("DisableObject:Crane_platformGhost", False, 1)
+	Element("DisableObject:Crane_logsGhost", False, 2)
+	Element("DisableObject:Crane_logsGhost2", False, 3)
+	Element("DisableObject:Crane_stonesGhost", False, 4)		
+
+	Element("IsBoolVariableTrue:true:IsHullDamageNoticed", False, 13)
+	Element("IsBoolVariableTrue:true:IsHullGoodChecked", False, 14)
+	Element("IsBoolVariableTrue:true:IsSteeringWheelChecked", False, 15)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatInspect", False, 16)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatBuildDock:true", False, 17)	
+	
+	Element("EnableObject:Crane_logsGhost", False, 18)
+	Element("EnableComponent:Crane_logsGhost:Relevance", False, 19)
+	Element("EnableObject:Crane_logsGhost2", False, 20)
+	Element("EnableComponent:Crane_logsGhost2:Relevance", False, 21)
+	Element("IsBoolVariableTrue:true:IsCrane_Part1Finished", False, 22)
+	Element("IsBoolVariableTrue:true:IsCrane_Part2Finished", False, 23)
+	Element("DisableObject:Crane_logsGhost", False, 24)	
+	Element("DisableObject:Crane_logsGhost2", False, 25)	
+	Element("EnableObject:Crane_platformGhost", False, 26)
+	Element("EnableComponent:Crane_platformGhost:Relevance", False, 27)	
+	Element("IsBoolVariableTrue:true:IsCrane_PlatformFinished", False, 28)
+	Element("DisableObject:Crane_platformGhost", False, 29)
+	Element("EnableObject:PvE_BoatCranePlatform_Start", False, 30)	
+	
+	Element("EnableObject:Crane_stonesGhost", False, 31)
+	Element("EnableComponent:Crane_stonesGhost:Relevance", False, 32)	
+	Element("IsBoolVariableTrue:true:IsCrane_PlatformFull", False, 33)	
+	Element("DisableObject:Crane_stonesGhost", False, 34)
+	Element("EnableObject:PvE_BoatCraneStonesFull", False, 35)		
+	
+	Element("EnableObject:PvE_BoatCranePlatform_DockBoat_Trigger", False, 36)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatBuildDock", False, 37)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatTilt:true", False, 38)		
+	Element("IsBoolVariableTrue:true:IsBoatDocked", False, 39)
+	Element("DisableObject:PvE_BoatCranePlatform_DockBoat_Trigger", False, 40)		
+	Element("DreamFadeOut:1.0", False, 41)
+	Element("Wait:0.5", False, 42)	
+	Element("PlaySound:Player:Sounds\PVE\soa3_boat_tilt", False, 43)		
+	Element("IsDreamFadeOut:false", False, 44)
+	Element("DeactivateScenarioNode:PvE_BoatRepair_DockBoat_FPP", False, 45)
+	
+	Element("DisableObject:Boat_CrashedBoat", False, 46)
+	Element("DisableObject:PvE_BoatCranePlatform_Start", False, 47)	
+	Element("DisableObject:PvE_BoatCraneStonesFull", False, 48)	
+	Element("EnableObject:Boat_DockedBoat", False, 49)
+	Element("SetBoolVariable:IsBoat_DockedBoatEnabled:true", False, 70)
+	
+	Element("Wait:1.3", False, 50)	
+	Element("DreamFadeIn:1.0", False, 51)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatTilt", False, 52)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatFixHull:true", False, 53)	
+	Element("IsBoolVariableTrue:true:IsBoatRepaired", False, 54)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatFixHull", False, 55)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatLowerToWater:true", False, 56)	
+	Element("EnableObject:PvE_BoatCranePlatform_CutOff_Trigger", False, 57)		
+	Element("IsBoolVariableTrue:true:IsCranePlatformCutOff", False, 58)
+	Element("DisableObject:PvE_BoatCranePlatform_CutOff_Trigger", False, 59)	
+	Element("DreamFadeOut:1.0", False, 60)
+	Element("Wait:0.8", False, 61)	
+	Element("PlaySound:Player:Sounds\PVE\soa3_boat_return_to_water", False, 62)	
+	Element("IsDreamFadeOut:false", False, 63)	
+	Element("DeactivateScenarioNode:PvE_BoatRepair_CutOffPlatform_FPP", False, 64)
+	Element("DisableObject:Boat_DockedBoat", False, 65)			
+	Element("EnableObject:Boat_RepairedBoat", False, 66)
+	Element("Wait:2.8", False, 67)
+	Element("DreamFadeIn:1.0", False, 68)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatLowerToWater", False, 69)		
+}

@@ -1,0 +1,6 @@
+Goal("KidAngry")
+Goal("KidMoveToQuestGiver")
+Goal("KidFollowPlayer")
+Goal("KidRunAway")
+Goal("KidPlay")
+Goal("KidIdle")

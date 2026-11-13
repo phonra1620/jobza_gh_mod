@@ -1,0 +1,6 @@
+Node("AfterTutorial_Unlocks_Patch_EternalFire", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:Eternal_Fire", False, 1)
+	Element("UnlockCraftingItem:Flamekeeper_Starter", False, 2)
+}

@@ -1,0 +1,22 @@
+Node("SheltersPatch_Unlock", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:building_wall_short", False, 1)
+	Element("UnlockItemInNotepadNoMsg:building_bamboo_wall_short", False, 2)
+	Element("UnlockItemInNotepadNoMsg:wooden_doorway_side", False, 3)
+	Element("UnlockItemInNotepadNoMsg:bamboo_doorway_side", False, 4)
+	Element("UnlockItemInNotepadNoMsg:FreeHandsLadder", False, 5)
+	Element("UnlockItemInNotepadNoMsg:FreeHandsLadder_bamboo", False, 6)
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 10)
+	Element("UnlockItemInNotepad:mud_wall_short", False, 7)
+	Element("UnlockItemInNotepadNoMsg:mud_doorway_side", False, 8)
+	Element("UnlockItemInNotepad:mud_ceiling_notch", False, 9)
+}
+
+Node("BalconyPvE_Unlock", True, 2991.0000, 1331.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:building_balcony_frame", False, 1)
+	Element("UnlockItemInNotepadNoMsg:building_bamboo_balcony_frame", False, 2)
+}
+

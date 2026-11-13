@@ -1,0 +1,5 @@
+Idle("Black_Panther_Lurking_loop")
+Hit("Black_Panther_hit_01","Black_Panther_hit_02","Black_Panther_hit_03","Black_Panther_hit_04")
+Panic("Black_Panther_Panic_01","Black_Panther_Panic_02","Black_Panther_Panic_03","Black_Panther_Panic_04")
+Death("Black_Panther_death_01","Black_Panther_death_02","Black_Panther_death_03")
+Lurkin("Black_Panther_Lurking_loop")

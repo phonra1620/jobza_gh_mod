@@ -1,0 +1,41 @@
+Anim("L_Clap_Close")
+{
+	Sound("kjurmachine_sfx_insert_phial", "Story", 0.0)
+	Event("CureMachineLClapCloseEnd", 0.99)
+
+}
+
+Anim("R_Clap_Open")
+{	
+	Sound("kjurmachine_sfx_open_analyzer", "Story", 0.0)
+	Event("CureMachineRClapOpenEnd", 0.99)
+}
+
+Anim("R_Clap_Close")
+{
+	Sound("kjurmachine_sfx_insert_random_sample", "Story", 0.0)
+	Event("CureMachineRClapCloseEnd", 0.99)
+}
+
+Anim("Lab_Processing")
+{	
+	Sound("kjurmachine_sfx_work", "Story", 0.0)
+	Event("CureMachineProcessingEnd", 0.99)
+}
+
+//Anim("Lab_Processing_loop")
+//{
+//	Event("CureMachineDestroyingEnd", 0.99)
+//}
+
+Anim("Screen_Fail_Idle")
+{
+	Sound("kjurmachine_sfx_processing_result_fail", "Story", 0.0)
+}
+
+Anim("Screen_Succes_Idle")
+{
+	
+	Sound("kjurmachine_sfx_processing_result_succes", "Story", 0.0)
+}
+

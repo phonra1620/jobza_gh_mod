@@ -1,0 +1,33 @@
+Node("TwoHandStoneAxe_Unlock", True, 2390.0000, 1526.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Stone_Axe", False, 1)
+	Element("UnlockItemInNotepad:Stone_Axe_2H", False, 2)
+}
+
+Node("AfterTutorial_Unlocks_Patch_BuildingUpdate", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:wooden_frame_triangle", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_frame_triangle", False, 2)
+	Element("UnlockItemInNotepadNoMsg:bamboo_platform", False, 3)
+	Element("UnlockItemInNotepadNoMsg:bamboo_platform_triangle", False, 4)
+	Element("UnlockItemInNotepadNoMsg:tree_house", False, 5)
+	Element("UnlockItemInNotepadNoMsg:bamboo_tree_house", False, 6)
+	Element("UnlockItemInNotepadNoMsg:wooden_tree_platform", False, 7)
+	Element("UnlockItemInNotepadNoMsg:bamboo_tree_platform", False, 8)
+	Element("UnlockItemInNotepadNoMsg:wooden_ceiling", False, 9)
+	Element("UnlockItemInNotepadNoMsg:bamboo_ceiling", False, 10)
+	Element("UnlockItemInNotepadNoMsg:wooden_ceiling_notch", False, 11)
+	Element("UnlockItemInNotepadNoMsg:bamboo_ceiling_notch", False, 12)
+	Element("UnlockItemInNotepadNoMsg:wooden_window_wall", False, 13)
+	Element("UnlockItemInNotepadNoMsg:bamboo_window_wall", False, 14)
+	Element("UnlockItemInNotepadNoMsg:wooden_doorway", False, 15)
+	Element("UnlockItemInNotepadNoMsg:bamboo_doorway", False, 16)
+	Element("UnlockItemInNotepadNoMsg:wooden_door", False, 17)
+	Element("UnlockItemInNotepadNoMsg:bamboo_door", False, 18)
+	Element("UnlockItemInNotepadNoMsg:Temp_Bridge", False, 19)
+	Element("UnlockItemInNotepadNoMsg:ClimbingRope", False, 20)
+	Element("IsBoolVariableTrue:true:COOP_Mud_Mixer_Unlock", False, 21)
+	Element("UnlockItemInNotepadNoMsg:mud_bamboo_wall_fireside", False, 22)
+}

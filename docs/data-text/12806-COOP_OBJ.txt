@@ -1,0 +1,337 @@
+Node("OBJ_FindHelp", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:AfterWakeUp", False, 0)
+	Element("AddStoryObjective:NB_OBJ_FindHelp:false", False, 1)
+	Element("AddStoryEvent:Notebook_Tutorial", False, 2)
+	Element("SetObjectiveDuration:0", False, 3)
+	Element("ActivateObjective:Obj_AfterTuttorialNotebook:true", False, 4)
+	Element("ShowHint:LookNotebook:0", False, 5)
+}
+Node("OBJ_Leaving_StartingArea", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:LeaveStartingArea", False, 0)
+	Element("DeactivateScenarioNode:Leaving_StartingArea_A", False, 1)
+	Element("DeactivateScenarioNode:Leaving_StartingArea_B", False, 2)
+	Element("SetObjectiveDuration:4", False, 3)
+	Element("CompleteObjective:Obj_AfterTuttorialNotebook", False, 4)
+	Element("HideHint:LookNotebook", False, 5)
+	Element("ShowHint:LookNotebook:10", False, 6)
+}
+Node("OBJ_Village07_ENTER", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:OBJ_VillageEnter", False, 0)
+	Element("AddStoryObjective:NB_OBJ_CheckVillage:true", False, 1)
+	Element("DeactivateScenarioNode:FPP_Sector7_InVillage", False, 2)
+}
+Node("OBJ_MakeAyuhaska", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:CanMakeAyuhaska", False, 0)
+	Element("UnlockItemInfo:psychotria_viridis", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_CheckVillage", False, 2)
+	Element("AddStoryObjective:NB_OBJ_MakeAyuhaska:true", False, 3)
+	Element("AddStoryEvent:Notebook_Ayuhaska", False, 4)
+	Element("AddStoryEvent:Notebook_Ayuhaska_Part_b", False, 5)
+	Element("AddStoryEvent:Notebook_Ayuhaska_Part_c", False, 6)
+}
+Node("OBJ_FindLambda", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_LookedAtMap", False, 0)
+	Element("AddStoryObjective:NB_OBJ_FindLambda:true", False, 1)
+}
+Node("OBJ_WasHere_S07GrabHook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 0)
+	Element("DisableObject:WasHere_S07Grabhook_lookat", False, 1)
+	Element("IsDialogPlaying:false:S07Grabhook_lookat", False, 2)
+	Element("AddStoryObjective:NB_OBJ_FindGrabGear:true", False, 3)
+}
+Node("GrappHook_Notebook_PreAll", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_WasHere_S07GrabHook", False)
+{
+	Element("IsBoolVariableTrue:false:FPP_LookedAtMap", False, 0)
+	Element("DeactivateScenarioNode:GrappHook_Notebook", False, 1)
+	Element("AddStoryEvent:Notebook_GrappPlace_PreAll", False, 2)
+}
+Node("GrappHook_Notebook", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_WasHere_S07GrabHook", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_LookedAtMap", False, 0)
+	Element("DeactivateScenarioNode:GrappHook_Notebook_PreAll", False, 1)
+	Element("AddStoryEvent:Notebook_GrappPlace", False, 2)
+}
+Node("Rock_Notebook_Prepare", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_LookedAtRock", False, 0)
+	Element("DisableObject:WasHere_PaintedRook_lookat", False, 1)
+}
+Node("Rock_Notebook_PreAll", True, 156.0000, 337.0000, 200.0000, 75.0000, "Rock_Notebook_Prepare", False)
+{
+	Element("IsBoolVariableTrue:false:ShouldPreDream_01", False, 0)
+	Element("DeactivateScenarioNode:Rock_Notebook", False, 1)
+	Element("AddStoryEvent:Notebook_Rock_PreAll", False, 2)
+}
+Node("Rock_Notebook", True, 156.0000, 337.0000, 200.0000, 75.0000, "Rock_Notebook_Prepare", False)
+{
+	Element("IsBoolVariableTrue:true:ShouldPreDream_01", False, 0)
+	Element("DeactivateScenarioNode:Rock_Notebook_PreAll", False, 1)
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 2)
+	Element("AddStoryEvent:Notebook_Rock", False, 3)
+}
+Node("AfterDream_01ForParents", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:COOP_AfterDream_01", False, 0)
+}
+Node("AfterDream_01_NOLambda", True, 156.0000, 337.0000, 200.0000, 75.0000, "AfterDream_01ForParents", False)
+{
+	Element("IsBoolVariableTrue:false:WasHere_S07GrabHook", False, 0)
+	Element("DeactivateScenarioNode:AfterDream_01_WithLambda", False, 1)
+	Element("StartDialogWithWT:AfterDreamFirstCall", False, 2)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall", False, 3)
+	Element("AddStoryObjective:NB_OBJ_FindLambda:true", False, 4)
+	Element("ActivateScenarioNode:AfterDream_01", False, 5)
+}
+Node("AfterDream_01_WithLambda", True, 156.0000, 337.0000, 200.0000, 75.0000, "AfterDream_01ForParents", False)
+{
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 0)
+	Element("DeactivateScenarioNode:AfterDream_01_NOLambda", False, 1)
+	Element("StartDialogWithWT:AfterDreamFirstCall_Been", False, 2)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall_Been", False, 3)
+	Element("ActivateScenarioNode:AfterDream_01", False, 4)
+}
+Node("AfterDream_01", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("StartDialog:AfterDreamFirstCall_2", False, 0)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall_2", False, 1)
+	Element("Wait:1", False, 2)
+	Element("AddStoryEvent:Notebook_AfterDream1", False, 3)
+	Element("AddStoryEvent:Notebook_Battery", False, 4)
+	Element("ActivateScenarioNode:BatteryObjective", False, 5)
+}
+Node("BatteryObjective", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("AddStoryObjective:NB_OBJ_Battery:true", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_Battery", False, 2)
+}
+Node("Notebook_Port_Pre", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Port_Destroyed_Boat", False, 0)
+	Element("IsBoolVariableTrue:false:Can_talkabout_Cartel", False, 1)
+	Element("DeactivateScenarioNode:Notebook_Port", False, 2)
+	Element("AddStoryEvent:Notebook_Port_Pre", False, 3)
+}
+Node("Notebook_Port", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Port_Destroyed_Boat", False, 0)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 1)
+	Element("DeactivateScenarioNode:Notebook_Port_Pre", False, 2)
+	Element("AddStoryEvent:Notebook_Port", False, 3)
+}
+Node("Notebook_CrashedPlane_Pre", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_CrashedPlane", False, 0)
+	Element("IsBoolVariableTrue:false:Can_talkabout_GoldMine", False, 1)
+	Element("DeactivateScenarioNode:Notebook_CrashedPlane", False, 2)
+	Element("AddStoryEvent:Notebook_CrashedPlane_Pre", False, 3)
+}
+Node("Notebook_CrashedPlane", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_CrashedPlane", False, 0)
+	Element("IsBoolVariableTrue:true:Can_talkabout_GoldMine", False, 1)
+	Element("DeactivateScenarioNode:Notebook_CrashedPlane_Pre", False, 2)
+	Element("AddStoryEvent:Notebook_CrashedPlane", False, 3)
+}
+Node("Elevator_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:NeedFuel", False, 0)
+	Element("AddStoryEvent:Notebook_Elevator", False, 1)
+	Element("AddStoryObjective:NB_OBJ_FindFuel:true", False, 2)
+	Element("IsBoolVariableTrue:false:NeedFuel", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_FindFuel", False, 4)
+}
+Node("GoldMine_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockElevator", False, 0)
+	Element("AddStoryObjective:NB_OBJ_CheckWhereElevator:true", False, 1)
+}
+Node("GoldMine_OBJ_Part2", True, 156.0000, 337.0000, 200.0000, 75.0000, "GoldMine_OBJ", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_GoldMine_Story_Sensor", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_CheckWhereElevator", False, 1)
+	Element("AddStoryObjective:NB_OBJ_CheckTheGoldMine:true", False, 2)
+}
+Node("GoldMine_GrabbHook_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_CheckTheGoldMine", False, 1)
+}
+Node("Notebook_GoldMinePreAll", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 0)
+	Element("IsBoolVariableTrue:false:WasHere_S07GrabHook", False, 1)
+	Element("DeactivateScenarioNode:Notebook_GoldMine", False, 2)
+	Element("AddStoryEvent:Notebook_GoldMinePreAll", False, 3)
+}
+Node("Notebook_GoldMine", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 0)
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 1)
+	Element("DeactivateScenarioNode:Notebook_GoldMinePreAll", False, 2)
+	Element("AddStoryEvent:Notebook_GoldMine", False, 3)
+}
+Node("Notebook_Bridge_Pre", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Bridge", False, 0)
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 1)
+	Element("IsBoolVariableTrue:false:UnlockGrappHook", False, 2)
+	Element("DeactivateScenarioNode:Notebook_Bridge", False, 3)
+	Element("DeactivateScenarioNode:Notebook_Bridge_B", False, 4)
+	Element("AddStoryEvent:Notebook_Bridge_Pre", False, 5)
+}
+Node("Notebook_Bridge", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Bridge", False, 0)
+	Element("IsBoolVariableTrue:false:WasHere_S07GrabHook", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 2)
+	Element("DeactivateScenarioNode:Notebook_Bridge_Pre", False, 3)
+	Element("DeactivateScenarioNode:Notebook_Bridge_B", False, 4)
+	Element("AddStoryEvent:Notebook_Bridge", False, 5)
+}
+Node("Notebook_Bridge_B", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Bridge", False, 0)
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 2)
+	Element("DeactivateScenarioNode:Notebook_Bridge_Pre", False, 3)
+	Element("DeactivateScenarioNode:Notebook_Bridge", False, 4)
+	Element("AddStoryEvent:Notebook_Bridge", False, 5)
+}
+Node("GetToStoneRing_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_FindGrabGear", False, 2)
+	Element("AddStoryObjective:NB_OBJ_ClimbToStoneRing:true", False, 3)
+}
+Node("AtStoneRing_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_StoneRing", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_FindLambda", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_ClimbToStoneRing", False, 2)
+	Element("AddStoryObjective:NB_OBJ_ExploreBurnedMap:true", False, 3)
+	Element("AddStoryEvent:Notebook_StoneCircle", False, 4)
+}
+Node("AtStoneRing_OBJ_B", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_StoneAtStoneRing", False, 0)
+	Element("DeactivateScenarioNode:FPP_StoneAtStoneRing", False, 1)
+	Element("AddStoryObjective:NB_OBJ_2ndDream:true", False, 2)
+}
+Node("PLACEHOLDER_After_Dream02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_02Finished", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_2ndDream", False, 1)
+	Element("AddStoryEvent:Notebook_SickMia", False, 2)
+}
+Node("RefugessCamp_Notebook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_RefugessCamp", False, 0)
+	Element("AddStoryEvent:Notebook_Refugees", False, 1)
+}
+Node("GetToAirport_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_AiportOffRadioTrigger", False, 0)
+	Element("AddStoryObjective:NB_OBJ_CheckAirport:true", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_ExploreBurnedMap", False, 2)
+}
+Node("Airport_NoPower_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_AiportOffRadioTrigger", False, 0)
+	Element("AddStoryObjective:NB_OBJ_FixAirPortRadio:true", False, 1)
+	Element("AddStoryEvent:Notebook_Airport", False, 2)
+	Element("IsBoolVariableTrue:true:FPP_AiportOffRadioTrigger_Part2", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_FixAirPortRadio", False, 4)
+}
+Node("Cenote_OBj", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Cenote", False, 0)
+	Element("AddStoryObjective:NB_OBJ_Cenote:true", False, 1)
+	Element("DeactivateScenarioNode:AirPortShed_Map_NotCenote", False, 2)
+}
+Node("Cenote_Comp_OBj", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockZipLine", False, 0)
+	Element("DeactivateScenarioNode:Cenote_OBj", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_Cenote", False, 2)
+}
+Node("KeepWalking_Obj", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_KeepWalking_Obj", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_W8AtAirport:true", False, 1)
+}
+Node("WHA_Find", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_WHA_Find", False, 0)
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 1)
+	Element("AddStoryEvent:Notebook_WHA", False, 2)
+}
+Node("Pre_Dream03_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Pre_Dream03", False, 0)
+	Element("AddStoryObjective:NB_OBJ_3rdDream:true", False, 1)
+	Element("AddStoryEvent:Notebook_PreDream3", False, 2)
+}
+Node("After_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_3rdDream:true", False, 1)
+	Element("AddStoryEvent:Notebook_NeedCure", False, 2)
+	Element("AddStoryObjective:NB_OBJ_FindCure:true", False, 3)
+}
+Node("UnlockAudiologAfterGrappHook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockEpickGrappHook", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_FindEpicGun", False, 1)
+}
+Node("EpicGrappHook_OBJ", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_EpickHookPlaceFound", False, 0)
+	Element("AddStoryObjective:NB_OBJ_FindEpicGun:true", False, 1)
+}
+Node("Have_Cure_IfBefore", True, 156.0000, 337.0000, 200.0000, 75.0000, "After_Dream03", False)
+{
+	Element("IsBoolVariableTrue:true:HaveCure", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_FindCure", False, 1)
+}
+Node("Notebook_CureMachine", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_CureMachine", False, 0)
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 1)
+	Element("AddStoryEvent:Notebook_CureMachine", False, 2)
+}
+Node("Notebook_Tent", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Notebook_Tent", False, 0)
+	Element("HideHint:LookatMap", False, 1)
+	Element("AddStoryEvent:Notebook_Tent", False, 2)
+}
+Node("Have_Cure", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveCure", False, 0)
+	Element("DeactivateScenarioNode:FPP_Have_Cure", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_cure:true", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_FindCure", False, 3)
+	Element("Wait:1.5", False, 4)
+	Element("UnlockDialog:Made_Cure_WT", False, 5)
+	Element("AddStoryEvent:Notebook_HaveCure", False, 6)
+}
+Node("Ending_Village_Notebook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_VillageEnding", False, 0)
+	Element("DeactivateScenarioNode:Ending_Village", False, 1)
+	Element("AddStoryEvent:Notebook_EndVillage", False, 2)
+}
+Node("Notebook_MushromeCave", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Have_Mushroom", False, 0)
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 1)
+	Element("AddStoryEvent:Notebook_Mushroom", False, 2)
+}

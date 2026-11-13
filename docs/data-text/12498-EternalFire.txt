@@ -1,0 +1,1207 @@
+Stage(1)
+{
+	Wave()
+	{
+		IDs(1,"Hunter")
+		IDs(2,"Hunter")
+		IDs(3,"Hunter")
+		IDs(4,"Hunter")
+		Time(0.010000)
+		Reward("fk_reward_01")
+		ObjectsToEnable("test01")
+		FinalWave(1)
+	}
+}
+Stage(2)
+{
+	Wave()
+	{
+		IDs(1,"Hunter","Savage")
+		IDs(2,"Hunter","Savage")
+		IDs(3,"Hunter","Savage")
+		IDs(4,"Hunter","Savage")
+		Time(0.010000)
+		Reward("fk_reward_02")
+		ObjectsToEnable("test02")
+		FinalWave(1)
+	}
+}
+Stage(3)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Hunter")
+		IDs(2,"Savage","Hunter","Hunter")
+		IDs(3,"Savage","Hunter","Hunter")
+		IDs(4,"Savage","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_03")
+		ObjectsToEnable("test03")
+		FinalWave(1)
+	}
+}
+Stage(4)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter")
+		IDs(2,"Savage","Hunter")
+		IDs(3,"Savage","Hunter")
+		IDs(4,"Savage","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter")
+		IDs(2,"Savage","Hunter")
+		IDs(3,"Savage","Hunter")
+		IDs(4,"Savage","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_04")
+		ObjectsToEnable("test04")
+		FinalWave(1)
+	}
+}
+Stage(5)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Hunter")
+		IDs(2,"Savage","Hunter","Hunter")
+		IDs(3,"Savage","Hunter","Hunter")
+		IDs(4,"Savage","Hunter","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter")
+		IDs(2,"Savage","Hunter")
+		IDs(3,"Savage","Hunter")
+		IDs(4,"Savage","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_05")
+		ObjectsToEnable("test05")
+		FinalWave(1)
+	}
+}
+Stage(6)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman")
+		IDs(2,"Savage","Hunter","Spearman")
+		IDs(3,"Savage","Hunter","Spearman")
+		IDs(4,"Savage","Hunter","Spearman")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman")
+		IDs(2,"Savage","Hunter","Spearman")
+		IDs(3,"Savage","Hunter","Spearman")
+		IDs(4,"Savage","Hunter","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_06")
+		ObjectsToEnable("test06")
+		FinalWave(1)
+	}
+}
+Stage(7)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter")
+		IDs(2,"Savage","Savage","Hunter")
+		IDs(3,"Savage","Savage","Hunter")
+		IDs(4,"Savage","Savage","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_07")
+		ObjectsToEnable("test07")
+		FinalWave(1)
+	}
+}
+Stage(8)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_08")
+		ObjectsToEnable("test08")
+		FinalWave(1)
+	}
+}
+Stage(9)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Hunter","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_09")
+		ObjectsToEnable("test09")
+		FinalWave(1)
+	}
+}
+Stage(10)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman")
+		IDs(2,"Savage","Hunter","Spearman")
+		IDs(3,"Savage","Hunter","Spearman")
+		IDs(4,"Savage","Hunter","Spearman")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman")
+		IDs(2,"Savage","Hunter","Spearman")
+		IDs(3,"Savage","Hunter","Spearman")
+		IDs(4,"Savage","Hunter","Spearman")
+	}
+	Wave()
+	{
+		IDs(1,"Thug")
+		IDs(2,"Thug")
+		IDs(3,"Thug")
+		IDs(4,"Thug")
+		Time(0.010000)
+		Reward("fk_reward_10")
+		ObjectsToEnable("test10")
+		FinalWave(1)
+	}
+}
+Stage(11)
+{
+	Wave()
+	{
+		IDs(1,"Thug")
+		IDs(2,"Thug")
+		IDs(3,"Thug")
+		IDs(4,"Thug")
+		Time(0.010000)
+		Reward("fk_reward_11")
+		ObjectsToEnable("test11")
+		FinalWave(1)
+	}
+}
+Stage(12)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage")
+		IDs(2,"Savage","Savage")
+		IDs(3,"Savage","Savage")
+		IDs(4,"Savage","Savage")
+		Time(0.010000)
+		Reward("fk_reward_12")
+		ObjectsToEnable("test12")
+		FinalWave(1)
+	}
+}
+Stage(13)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage")
+		Time(0.010000)
+		Reward("fk_reward_13")
+		ObjectsToEnable("test13")
+		FinalWave(1)
+	}
+}
+Stage(14)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_14")
+		ObjectsToEnable("test14")
+		FinalWave(1)
+	}
+}
+Stage(15)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Thug")
+		IDs(2,"Savage","Savage","Thug")
+		IDs(3,"Savage","Savage","Thug")
+		IDs(4,"Savage","Savage","Thug")
+		Time(0.010000)
+		Reward("fk_reward_15")
+		ObjectsToEnable("test15")
+		FinalWave(1)
+	}
+}
+Stage(16)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Hunter","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage")
+		IDs(2,"Savage","Savage")
+		IDs(3,"Savage","Savage")
+		IDs(4,"Savage","Savage")
+		Time(0.010000)
+		Reward("fk_reward_16")
+		ObjectsToEnable("test16")
+		FinalWave(1)
+	}
+}
+Stage(17)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Hunter")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter")
+		IDs(2,"Savage","Savage","Hunter")
+		IDs(3,"Savage","Savage","Hunter")
+		IDs(4,"Savage","Savage","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_17")
+		ObjectsToEnable("test17")
+		FinalWave(1)
+	}
+}
+Stage(18)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Spearman","Spearman")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_18")
+		ObjectsToEnable("test18")
+		FinalWave(1)
+	}
+}
+Stage(19)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman")
+		IDs(2,"Savage","Spearman","Spearman","Spearman")
+		IDs(3,"Savage","Spearman","Spearman","Spearman")
+		IDs(4,"Savage","Spearman","Spearman","Spearman")
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_19")
+		ObjectsToEnable("test19")
+		FinalWave(1)
+	}
+}
+Stage(20)
+{
+	Wave()
+	{
+		IDs(1,"Spearman","Hunter","Thug")
+		IDs(2,"Spearman","Hunter","Thug")
+		IDs(3,"Spearman","Hunter","Thug")
+		IDs(4,"Spearman","Hunter","Thug")
+	}
+	Wave()
+	{
+		IDs(1,"Spearman","Hunter","Thug")
+		IDs(2,"Spearman","Hunter","Thug")
+		IDs(3,"Spearman","Hunter","Thug")
+		IDs(4,"Spearman","Hunter","Thug")
+		Time(0.010000)
+		Reward("fk_reward_20")
+		ObjectsToEnable("test20")
+		FinalWave(1)
+	}
+}
+Stage(21)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Spearman")
+		IDs(2,"Savage","Savage","Savage","Spearman")
+		IDs(3,"Savage","Savage","Savage","Spearman")
+		IDs(4,"Savage","Savage","Savage","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_21")
+		ObjectsToEnable("test21")
+		FinalWave(1)
+	}
+}
+Stage(22)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Spearman")
+		IDs(2,"Savage","Savage","Hunter","Spearman")
+		IDs(3,"Savage","Savage","Hunter","Spearman")
+		IDs(4,"Savage","Savage","Hunter","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_22")
+		ObjectsToEnable("test22")
+		FinalWave(1)
+	}
+}
+Stage(23)
+{
+	Wave()
+	{
+		IDs(1,"Spearman","Hunter","Hunter","Hunter")
+		IDs(2,"Spearman","Hunter","Hunter","Hunter")
+		IDs(3,"Spearman","Hunter","Hunter","Hunter")
+		IDs(4,"Spearman","Hunter","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Spearman","Hunter")
+		IDs(2,"Spearman","Spearman","Spearman","Spearman","Hunter")
+		IDs(3,"Spearman","Spearman","Spearman","Spearman","Hunter")
+		IDs(4,"Spearman","Spearman","Spearman","Spearman","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_23")
+		ObjectsToEnable("test23")
+		FinalWave(1)
+	}
+}
+Stage(24)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_24")
+		ObjectsToEnable("test24")
+		FinalWave(1)
+	}
+}
+Stage(25)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_25")
+		ObjectsToEnable("test25")
+		FinalWave(1)
+	}
+}
+Stage(26)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_26")
+		ObjectsToEnable("test26")
+		FinalWave(1)
+	}
+}
+Stage(27)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Spearman","Spearman","Hunter")
+		IDs(2,"Savage","Savage","Savage","Spearman","Spearman","Hunter")
+		IDs(3,"Savage","Savage","Savage","Spearman","Spearman","Hunter")
+		IDs(4,"Savage","Savage","Savage","Spearman","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_27")
+		ObjectsToEnable("test27")
+		FinalWave(1)
+	}
+}
+Stage(28)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Savage","Spearman","Hunter","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Savage","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Savage","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Savage","Spearman","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_28")
+		ObjectsToEnable("test28")
+		FinalWave(1)
+	}
+}
+Stage(29)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_29")
+		ObjectsToEnable("test29")
+		FinalWave(1)
+	}
+}
+Stage(30)
+{
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(2,"Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(3,"Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(4,"Spearman","Spearman","Spearman","Hunter","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(2,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(3,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(4,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		Time(0.010000)
+		Reward("fk_reward_30")
+		ObjectsToEnable("test30")
+		FinalWave(1)
+	}
+}
+Stage(31)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Spearman","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_31")
+		ObjectsToEnable("test31")
+		FinalWave(1)
+	}
+}
+Stage(32)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Hunter","Spearman","Thug")
+		IDs(2,"Savage","Savage","Savage","Hunter","Spearman","Thug")
+		IDs(3,"Savage","Savage","Savage","Hunter","Spearman","Thug")
+		IDs(4,"Savage","Savage","Savage","Hunter","Spearman","Thug")
+		Time(0.010000)
+		Reward("fk_reward_32")
+		ObjectsToEnable("test32")
+		FinalWave(1)
+	}
+}
+Stage(33)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Hunter","Spearman","Thug")
+		IDs(2,"Savage","Hunter","Hunter","Spearman","Thug")
+		IDs(3,"Savage","Hunter","Hunter","Spearman","Thug")
+		IDs(4,"Savage","Hunter","Hunter","Spearman","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Hunter","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Hunter","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Hunter","Spearman","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_33")
+		ObjectsToEnable("test33")
+		FinalWave(1)
+	}
+}
+Stage(34)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		Time(0.010000)
+		Reward("fk_reward_34")
+		ObjectsToEnable("test34")
+		FinalWave(1)
+	}
+}
+Stage(35)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+		Reward("fk_reward_35")
+		ObjectsToEnable("test35")
+		FinalWave(1)
+	}
+}
+Stage(36)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Hunter","Spearman","Hunter")
+		IDs(2,"Savage","Hunter","Hunter","Spearman","Hunter")
+		IDs(3,"Savage","Hunter","Hunter","Spearman","Hunter")
+		IDs(4,"Savage","Hunter","Hunter","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Hunter","Spearman","Hunter","Spearman")
+		IDs(2,"Savage","Hunter","Hunter","Spearman","Hunter","Spearman")
+		IDs(3,"Savage","Hunter","Hunter","Spearman","Hunter","Spearman")
+		IDs(4,"Savage","Hunter","Hunter","Spearman","Hunter","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_36")
+		ObjectsToEnable("test36")
+		FinalWave(1)
+	}
+}
+Stage(37)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman","Hunter")
+		IDs(2,"Savage","Hunter","Spearman","Hunter")
+		IDs(3,"Savage","Hunter","Spearman","Hunter")
+		IDs(4,"Savage","Hunter","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Savage","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Savage","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Savage","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Savage","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_37")
+		ObjectsToEnable("test37")
+		FinalWave(1)
+	}
+}
+Stage(38)
+{
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Spearman","Spearman")
+		IDs(2,"Spearman","Spearman","Spearman","Spearman","Spearman")
+		IDs(3,"Spearman","Spearman","Spearman","Spearman","Spearman")
+		IDs(4,"Spearman","Spearman","Spearman","Spearman","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(2,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(3,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(4,"Spearman","Spearman","Spearman","Spearman","Spearman","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Thug")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Thug")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Thug")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Thug")
+		Time(0.010000)
+		Reward("fk_reward_38")
+		ObjectsToEnable("test38")
+		FinalWave(1)
+	}
+}
+Stage(39)
+{
+	Wave()
+	{
+		IDs(1,"Hunter","Hunter","Hunter","Hunter","Spearman")
+		IDs(2,"Hunter","Hunter","Hunter","Hunter","Spearman")
+		IDs(3,"Hunter","Hunter","Hunter","Hunter","Spearman")
+		IDs(4,"Hunter","Hunter","Hunter","Hunter","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Hunter","Hunter","Hunter","Spearman","Spearman")
+		IDs(2,"Hunter","Hunter","Hunter","Spearman","Spearman")
+		IDs(3,"Hunter","Hunter","Hunter","Spearman","Spearman")
+		IDs(4,"Hunter","Hunter","Hunter","Spearman","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Hunter","Hunter","Savage","Spearman","Spearman","Thug")
+		IDs(2,"Hunter","Hunter","Savage","Spearman","Spearman","Thug")
+		IDs(3,"Hunter","Hunter","Savage","Spearman","Spearman","Thug")
+		IDs(4,"Hunter","Hunter","Savage","Spearman","Spearman","Thug")
+		Time(0.010000)
+		Reward("fk_reward_39")
+		ObjectsToEnable("test39")
+		FinalWave(1)
+	}
+}
+Stage(40)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+		Reward("fk_reward_40")
+		ObjectsToEnable("test40")
+		FinalWave(1)
+	}
+}
+Stage(41)
+{
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(2,"Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(3,"Spearman","Spearman","Spearman","Spearman","Thug")
+		IDs(4,"Spearman","Spearman","Spearman","Spearman","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Spearman","Spearman","Spearman","Savage","Thug")
+		IDs(2,"Spearman","Spearman","Spearman","Savage","Thug")
+		IDs(3,"Spearman","Spearman","Spearman","Savage","Thug")
+		IDs(4,"Spearman","Spearman","Spearman","Savage","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Thug","Thug")
+		IDs(2,"Thug","Thug")
+		IDs(3,"Thug","Thug")
+		IDs(4,"Thug","Thug")
+		Time(0.010000)
+		Reward("fk_reward_41")
+		ObjectsToEnable("test41")
+		FinalWave(1)
+	}
+}
+Stage(42)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Thug","Thug")
+		IDs(2,"Savage","Savage","Hunter","Thug","Thug")
+		IDs(3,"Savage","Savage","Hunter","Thug","Thug")
+		IDs(4,"Savage","Savage","Hunter","Thug","Thug")
+		Time(0.010000)
+		Reward("fk_reward_42")
+		ObjectsToEnable("test42")
+		FinalWave(1)
+	}
+}
+Stage(43)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Hunter","Thug")
+		IDs(2,"Savage","Savage","Spearman","Hunter","Thug")
+		IDs(3,"Savage","Savage","Spearman","Hunter","Thug")
+		IDs(4,"Savage","Savage","Spearman","Hunter","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		Time(0.010000)
+		Reward("fk_reward_43")
+		ObjectsToEnable("test43")
+		FinalWave(1)
+	}
+}
+Stage(44)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Thug","Thug","Savage","Spearman")
+		IDs(2,"Savage","Thug","Thug","Savage","Spearman")
+		IDs(3,"Savage","Thug","Thug","Savage","Spearman")
+		IDs(4,"Savage","Thug","Thug","Savage","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Thug","Savage","Savage","Spearman")
+		IDs(2,"Savage","Thug","Savage","Savage","Spearman")
+		IDs(3,"Savage","Thug","Savage","Savage","Spearman")
+		IDs(4,"Savage","Thug","Savage","Savage","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Thug","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Thug","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Thug","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Thug","Hunter","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_44")
+		ObjectsToEnable("test44")
+		FinalWave(1)
+	}
+}
+Stage(45)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage","Thug")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage","Thug")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage","Thug")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage","Thug")
+		Time(0.010000)
+		Reward("fk_reward_45")
+		ObjectsToEnable("test45")
+		FinalWave(1)
+	}
+}
+Stage(46)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Spearman","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Hunter","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Hunter","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Hunter","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Hunter","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Hunter","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Savage")
+		IDs(2,"Savage","Savage","Hunter","Savage")
+		IDs(3,"Savage","Savage","Hunter","Savage")
+		IDs(4,"Savage","Savage","Hunter","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Hunter","Hunter","Thug")
+		IDs(2,"Savage","Savage","Hunter","Hunter","Thug")
+		IDs(3,"Savage","Savage","Hunter","Hunter","Thug")
+		IDs(4,"Savage","Savage","Hunter","Hunter","Thug")
+		Time(0.010000)
+		Reward("fk_reward_46")
+		ObjectsToEnable("test46")
+		FinalWave(1)
+	}
+}
+Stage(47)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Hunter","Spearman","Hunter")
+		IDs(2,"Savage","Spearman","Hunter","Spearman","Hunter")
+		IDs(3,"Savage","Spearman","Hunter","Spearman","Hunter")
+		IDs(4,"Savage","Spearman","Hunter","Spearman","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Spearman","Spearman","Spearman","Hunter","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter","Thug","Thug")
+		IDs(2,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter","Thug","Thug")
+		IDs(3,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter","Thug","Thug")
+		IDs(4,"Savage","Savage","Spearman","Spearman","Hunter","Hunter","Hunter","Thug","Thug")
+		Time(0.010000)
+		Reward("fk_reward_47")
+		ObjectsToEnable("test47")
+		FinalWave(1)
+	}
+}
+Stage(48)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Spearman")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Spearman")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Spearman")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Spearman")
+		Time(0.010000)
+		Reward("fk_reward_48")
+		ObjectsToEnable("test48")
+		FinalWave(1)
+	}
+}
+Stage(49)
+{
+	Wave()
+	{
+		IDs(1,"Savage")
+		IDs(2,"Savage")
+		IDs(3,"Savage")
+		IDs(4,"Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Hunter","Savage")
+		IDs(2,"Hunter","Savage")
+		IDs(3,"Hunter","Savage")
+		IDs(4,"Hunter","Savage")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Hunter")
+		IDs(2,"Savage","Hunter","Hunter")
+		IDs(3,"Savage","Hunter","Hunter")
+		IDs(4,"Savage","Hunter","Hunter")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman")
+		IDs(2,"Savage","Hunter","Spearman")
+		IDs(3,"Savage","Hunter","Spearman")
+		IDs(4,"Savage","Hunter","Spearman")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Hunter","Spearman","Thug")
+		IDs(2,"Savage","Hunter","Spearman","Thug")
+		IDs(3,"Savage","Hunter","Spearman","Thug")
+		IDs(4,"Savage","Hunter","Spearman","Thug")
+		Time(0.010000)
+		Reward("fk_reward_49")
+		ObjectsToEnable("test49")
+		FinalWave(1)
+	}
+}
+Stage(50)
+{
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage","Hunter","Thug")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage","Hunter","Thug")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage","Hunter","Thug")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage","Hunter","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Savage","Spearman","Hunter","Thug")
+		IDs(2,"Savage","Savage","Savage","Savage","Savage","Spearman","Hunter","Thug")
+		IDs(3,"Savage","Savage","Savage","Savage","Savage","Spearman","Hunter","Thug")
+		IDs(4,"Savage","Savage","Savage","Savage","Savage","Spearman","Hunter","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(2,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(3,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		IDs(4,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug","Thug")
+		IDs(2,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug","Thug")
+		IDs(3,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug","Thug")
+		IDs(4,"Savage","Savage","Savage","Savage","Spearman","Spearman","Spearman","Hunter","Thug","Thug")
+		Time(0.010000)
+	}
+	Wave()
+	{
+		IDs(1,"Savage","Savage","Savage","Savage","Spearman","Spearman","Thug","Thug","Thug","Hunter","Hunter","Hunter")
+		IDs(2,"Savage","Savage","Savage","Savage","Spearman","Spearman","Thug","Thug","Thug","Hunter","Hunter","Hunter")
+		IDs(3,"Savage","Savage","Savage","Savage","Spearman","Spearman","Thug","Thug","Thug","Hunter","Hunter","Hunter")
+		IDs(4,"Savage","Savage","Savage","Savage","Spearman","Spearman","Thug","Thug","Thug","Hunter","Hunter","Hunter")
+		Time(0.010000)
+		Reward("fk_reward_50_playersCount")
+		ObjectsToEnable("test50")
+		FinalWave(1)
+	}
+}

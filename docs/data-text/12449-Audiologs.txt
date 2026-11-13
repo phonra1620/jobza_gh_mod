@@ -1,0 +1,134 @@
+// AudioLogi
+Node("Audiolog_Dr_Raport_16_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Dr_Raport_16", False, 0)
+	Element("EnableObject:Audiolog_Dr_Raport_16_ON", False, 1)
+	Element("DisableObject:Audiolog_Dr_Raport_16_OFF", False, 2)
+	Element("StartDialog:Audiolog_Dr_Raport_16", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Dr_Raport_16", False, 4)
+	Element("EnableObject:Audiolog_Dr_Raport_16_OFF", False, 5)
+	Element("DisableObject:Audiolog_Dr_Raport_16_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Dr_Raport_16", False, 7)
+}
+Node("Audiolog_Dr_Raport_20_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Dr_Raport_20", False, 0)
+	Element("EnableObject:Audiolog_Dr_Raport_20_ON", False, 1)
+	Element("DisableObject:Audiolog_Dr_Raport_20_OFF", False, 2)
+	Element("StartDialog:Audiolog_Dr_Raport_20", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Dr_Raport_20", False, 4)
+	Element("EnableObject:Audiolog_Dr_Raport_20_OFF", False, 5)
+	Element("DisableObject:Audiolog_Dr_Raport_20_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Dr_Raport_20", False, 7)
+}
+Node("Audiolog_Dr_Raport_23_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Dr_Raport_23", False, 0)
+	Element("EnableObject:Audiolog_Dr_Raport_23_ON", False, 1)
+	Element("DisableObject:Audiolog_Dr_Raport_23_OFF", False, 2)
+	Element("StartDialog:Audiolog_Dr_Raport_23", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Dr_Raport_23", False, 4)
+	Element("EnableObject:Audiolog_Dr_Raport_23_OFF", False, 5)
+	Element("DisableObject:Audiolog_Dr_Raport_23_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Dr_Raport_23", False, 7)
+}
+Node("Audiolog_Dr_Raport_26_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Dr_Raport_26", False, 0)
+	Element("EnableObject:Audiolog_Dr_Raport_26_ON", False, 1)
+	Element("DisableObject:Audiolog_Dr_Raport_26_OFF", False, 2)
+	Element("StartDialog:Audiolog_Dr_Raport_26", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Dr_Raport_26", False, 4)
+	Element("UnlockItemInfo:Quassia_Amara_flowers", False, 10)
+	Element("UnlockItemInfo:Quassia_Amara_flowers_Dryed", False, 12)
+	Element("EnableObject:Audiolog_Dr_Raport_26_OFF", False, 5)
+	Element("DisableObject:Audiolog_Dr_Raport_26_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Dr_Raport_26", False, 7)
+}
+
+
+Node("Audiolog_Dr_Raport_27_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Dr_Raport_27", False, 0)
+	Element("EnableObject:Audiolog_Dr_Raport_27_ON", False, 1)
+	Element("DisableObject:Audiolog_Dr_Raport_27_OFF", False, 2)
+	Element("StartDialog:Audiolog_Dr_Raport_27", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Dr_Raport_27", False, 4)
+	Element("UnlockItemInfo:Guanabana_Fruit", False, 10)
+	Element("UnlockItemInfo:Guanabana_Fruit_Spoiled", False, 20)
+	Element("UnlockItemInfo:Guanabana_Seeds", False, 21)
+	Element("EnableObject:Audiolog_Dr_Raport_27_OFF", False, 5)
+	Element("DisableObject:Audiolog_Dr_Raport_27_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Dr_Raport_27", False, 7)
+}
+Node("Audiolog_Dr_Raport_36_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Dr_Raport_36", False, 0)
+	Element("EnableObject:Audiolog_Dr_Raport_36_ON", False, 1)
+	Element("DisableObject:Audiolog_Dr_Raport_36_OFF", False, 2)
+	Element("StartDialog:Audiolog_Dr_Raport_36", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Dr_Raport_36", False, 4)
+	Element("EnableObject:Audiolog_Dr_Raport_36_OFF", False, 5)
+	Element("DisableObject:Audiolog_Dr_Raport_36_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Dr_Raport_36", False, 7)
+}
+Node("Audiolog_BodyGuard_Raport_03_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_BodyGuard_Raport_03", False, 0)
+	Element("EnableObject:Audiolog_BodyGuard_Raport_03_ON", False, 1)
+	Element("DisableObject:Audiolog_BodyGuard_Raport_03_OFF", False, 2)
+	Element("StartDialog:Audiolog_BodyGuard_Raport_03", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_BodyGuard_Raport_03", False, 4)
+	Element("EnableObject:Audiolog_BodyGuard_Raport_03_OFF", False, 5)
+	Element("DisableObject:Audiolog_BodyGuard_Raport_03_ON", False, 6)
+	Element("ResetTrigger:Audiolog_BodyGuard_Raport_03", False, 7)
+}
+Node("Audiolog_BodyGuard_Raport_08_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_BodyGuard_Raport_08", False, 0)
+	Element("StartDialog:Audiolog_BodyGuard_Raport_08", False, 1)
+	Element("EnableObject:Audiolog_BodyGuard_Raport_08_ON", False, 2)
+	Element("DisableObject:Audiolog_BodyGuard_Raport_08_OFF", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_BodyGuard_Raport_08", False, 4)
+	Element("EnableObject:Audiolog_BodyGuard_Raport_08_OFF", False, 5)
+	Element("DisableObject:Audiolog_BodyGuard_Raport_08_ON", False, 6)
+	Element("ResetTrigger:Audiolog_BodyGuard_Raport_08", False, 7)
+}
+Node("Audiolog_BodyGuard_Raport_24_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_BodyGuard_Raport_24", False, 0)
+	Element("EnableObject:Audiolog_BodyGuard_Raport_24_ON", False, 1)
+	Element("DisableObject:Audiolog_BodyGuard_Raport_24_OFF", False, 2)
+	Element("StartDialog:Audiolog_BodyGuard_Raport_24", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_BodyGuard_Raport_24", False, 4)
+	Element("EnableObject:Audiolog_BodyGuard_Raport_24_OFF", False, 5)
+	Element("DisableObject:Audiolog_BodyGuard_Raport_24_ON", False, 6)
+	Element("ResetTrigger:Audiolog_BodyGuard_Raport_24", False, 7)
+}
+
+Node("Audiolog_Tent_Together_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Audiolog_Tent_Together", False, 0)
+	Element("EnableObject:Audiolog_Tent_Together_ON", False, 1)
+	Element("DisableObject:Audiolog_Tent_Together_OFF", False, 2)
+	Element("StartDialog:Audiolog_Tent_Together", False, 3)
+	Element("IsDialogPlaying:false:Audiolog_Tent_Together", False, 4)
+	Element("EnableObject:Audiolog_Tent_Together_OFF", False, 5)
+	Element("DisableObject:Audiolog_Tent_Together_ON", False, 6)
+	Element("ResetTrigger:Audiolog_Tent_Together", False, 7)
+}
+
+Node("DartFrog_Audiolog_Play", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:DartFrog_Audiolog", False, 0)
+	Element("EnableObject:DartFrog_Audiolog_ON", False, 1)
+	Element("DisableObject:DartFrog_Audiolog_OFF", False, 2)
+	Element("StartDialog:DartFrog_Audiolog", False, 3)
+	Element("IsDialogPlaying:false:DartFrog_Audiolog", False, 4)
+	Element("EnableObject:DartFrog_Audiolog_OFF", False, 5)
+	Element("DisableObject:DartFrog_Audiolog_ON", False, 6)
+	Element("ResetTrigger:DartFrog_Audiolog", False, 7)
+}
+
+
+

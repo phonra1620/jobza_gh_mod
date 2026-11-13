@@ -1,0 +1,9 @@
+Anim("death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("death_b")
+{
+	Event("DieEnd", 0.99)
+}

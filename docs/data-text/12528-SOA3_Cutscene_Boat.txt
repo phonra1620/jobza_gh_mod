@@ -1,0 +1,7 @@
+//Sub(start time, duration, loc_string)
+
+Sub(0.5, 3.0, "PVE_EndCutscene_Player_01")
+Sub(4.0, 3.0, "PVE_EndCutscene_Mia_01")
+Sub(7.5, 4.0, "PVE_EndCutscene_Player_02")
+Sub(12.5, 3.8, "PVE_EndCutscene_Mia_02")
+Sub(17.5, 1.5, "PVE_EndCutscene_Mia_02_cut_01")

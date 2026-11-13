@@ -1,0 +1,4 @@
+Anim("Death")
+{
+	Event("DieEnd", 0.99)
+}

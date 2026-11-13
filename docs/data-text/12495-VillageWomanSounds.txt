@@ -1,0 +1,6 @@
+Idle(
+Work(
+Eat(
+Sleep(
+Planting(
+Cook(

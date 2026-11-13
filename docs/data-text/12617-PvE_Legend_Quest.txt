@@ -1,0 +1,701 @@
+// ########### ALBINO CAIMAN ###############
+Node("LegendaryQuest_Albino", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Albino", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQAlbino_Hunt:true", False, 1)
+}	
+
+Node("LegendaryQuest_Albino_Part1_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("HaveItem:true:QuestItem_AlbinoPaw", False, 0)
+	Element("DeleteInventoryItem:QuestItem_AlbinoPaw", False, 1)
+	Element("StartDialog:PvE_Story_01Croc_Player_01", False, 2)
+	Element("IsDialogPlaying:false:PvE_Story_01Croc_Player_01", False, 3)
+	Element("PlayMusicJingle:gh_jg5:false:0.7:0", False, 4)
+	Element("SetBoolVariable:VarLegendaryQuest_Albino_CanTalk:true", False, 5)
+}
+
+Node("LegendaryQuest_Albino_EasyMode", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:CaimanEasyModeTotem", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Albino_EasyMode", False, 2)
+	Element("EnableObject:CaimanEasyModeTotem", False, 3)
+	Element("IsTriggered:true:CaimanEasyModeTrigger", False, 4)
+	Element("DisableObject:CaimanEasyModeTrigger", False, 5)
+	Element("StartDialog:PvE_Story_01Croc_Player_01", False, 6)
+	Element("IsDialogPlaying:false:PvE_Story_01Croc_Player_01", False, 7)
+	Element("PlayMusicJingle:gh_jg5:false:0.7:0", False, 8)
+	Element("SetBoolVariable:VarLegendaryQuest_Albino_CanTalk:true", False, 9)
+}
+	
+Node("LegendaryQuest_Albino_Part1_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Albino_CanTalk", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQAlbino_Hunt", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_LQAlbino_Paw:true", False, 3)
+	Element("DisableObject:CaimanEasyModeTrigger", False, 9)
+	Element("DeactivateScenarioNode:LegendaryQuest_Albino_Part1_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Albino_EasyMode", False, 5)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQAlbino_Talk:true", False, 6)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_A", False, 7)
+	Element("UnlockPveDialog:LQuest_Albino", False, 8)
+}
+
+Node("LegendaryQuest_Albino_Part2_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "LegendaryQuest_Albino_Part1_TPP", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Albino", False, 0)
+	Element("IsDialogPlaying:false:LQuest_Albino", False, 1)
+	Element("AddReputationFromStory:Village_01_planting:LQAlbino", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_Albino_EndQuest:true", False, 3)
+}
+
+Node("LegendaryQuest_Albino_Part2_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_AlbinoPawAtShaman", False, 7)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Albino_EndQuest", False, 0)
+	Element("ShowFakeItemInBackpack:backpack_LQAlbino_Paw:false", False, 1)
+	Element("DeactivateScenarioNode:LegendaryQuest_Albino_Part2_FPP", False, 2)
+	Element("LockPveDialog:LQuest_Albino", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQAlbino_Talk", False, 4)
+	Element("EnableObject:LQ_AlbinoPawAtShaman", False, 5)
+	Element("SetLegendFinishState:Story_01Croc:true", False, 6)
+}	
+
+// ########### BIKE  ###############
+
+
+Node("LegendaryQuest_Bike_Reset_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Bike", False, 0)
+	Element("EnableObject:LQ_Bike_NotWork_Group", False, 1)
+	Element("DisableObject:LQ_Bike_Trigger", False, 2)
+	Element("DisableObject:LQ_Bike_Work_Group", False, 3)
+	Element("DisableObject:LQ_Bike_Cordage_Group", False, 4)
+}
+
+Node("LegendaryQuest_Bike_BikeLoop", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("Wait:10", False, 0)
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Bike_Triggered", False, 1)
+	Element("IsNight:true", False, 2)
+	Element("DisableObject:LQ_Bike_NotWork_Group", False, 3)
+	Element("EnableObject:LQ_Bike_Work_Group", False, 4)
+	Element("IsNight:false", False, 5)
+	Element("DisableObject:LQ_Bike_Work_Group", False, 6)
+	Element("EnableObject:LQ_Bike_NotWork_Group", False, 7)
+}
+
+Node("LegendaryQuest_Bike_AllStones", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Bike", False, 0)
+	Element("EnableObject:LQ_Bike_Trigger", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQBike_Solve:true", False, 2)
+}
+
+Node("LegendaryQuest_Bike_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Bike_Trigger", False, 0)
+	Element("StartDialog:PvE_Story_02Bike_BikeTrigger_Player_01", False, 1)
+	Element("PlayMusicJingle:gh_jg1:false:0.7:0", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_Bike_Triggered:true", False, 3)
+	
+}	
+
+Node("LegendaryQuest_Bike_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Bike_Triggered", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Bike_BikeLoop", False, 1)
+	Element("DisableObject:LQ_Bike_NotWork_Group", False, 2)
+	Element("DisableObject:LQ_Bike_Trigger", False, 3)
+	Element("DisableObject:LQ_Bike_Work_Group", False, 4)
+	Element("EnableObject:LQ_Bike_Cordage_Group", False, 5)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQBike_Solve", False, 6)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQBike_Talk:true", False, 7)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_A", False, 8)
+	Element("UnlockPveDialog:LQuest_Bike", False, 9)
+}	
+
+Node("LegendaryQuest_Bike_dialog", True, -1125.0000, -27.0000, 200.0000, 75.0000, "LegendaryQuest_Bike_TPP", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Bike", False, 1)
+	Element("IsDialogPlaying:false:LQuest_Bike", False, 2)
+	Element("AddReputationFromStory:Village_01_planting:LQBike", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_Bike_EndQuest:true", False, 4)
+}
+
+Node("LegendaryQuest_Bike_compleate", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Bike_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Bike_dialog", False, 1)
+	Element("LockPveDialog:LQuest_Bike", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQBike_Talk", False, 3)
+	Element("SetLegendFinishState:Story_02Bike:true", False, 4)
+}	
+
+
+// ########### STATUE  ###############
+
+Node("LegendaryQuest_Statue_EasyMode_Loop", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("DisableObject:PVE_Fake_FangGiver", False, 15)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Statue_EasyMode", False, 0)
+	Element("IsBoolVariableTrue:true:VarLQTrigger_Story_03Statue_05", False, 1)
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Staue_CanTalk", False, 2)
+	Element("EnableObject:PVE_Fake_FangGiver", False, 3)
+	Element("ResetTrigger:PVE_Fake_FangGiver", False, 7)
+	Element("IsTriggered:true:PVE_Fake_FangGiver", False, 4)
+	Element("PlayerAddItemToInventory:cat_fang", False, 5)
+	Element("Wait:5", False, 6)
+}
+
+Node("LegendaryQuest_Statue_Trigger4", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:form_Quest_Scale", False, 0)
+	Element("IsBoolVariableTrue:true:VarLQTrigger_Story_03Statue_04", False, 1)
+	Element("UnlockCraftingItem:form_Quest_Scale", False, 2)
+}
+Node("LegendaryQuest_Statue_Trigger5", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:form_Quest_Fang", False, 0)
+	Element("IsBoolVariableTrue:true:VarLQTrigger_Story_03Statue_05", False, 1)
+	Element("UnlockCraftingItem:form_Quest_Fang", False, 2)
+}
+Node("LegendaryQuest_Statue_Trigger6", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:form_Quest_Feather", False, 0)
+	Element("IsBoolVariableTrue:true:VarLQTrigger_Story_03Statue_06", False, 1)
+	Element("UnlockCraftingItem:form_Quest_Feather", False, 2)
+}
+
+Node("LegendaryQuest_Statue_all", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_StatueGhost", False, 5)
+	Element("LockCraftingItem:QuestItem_statue", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Statue", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQStatue_Make:true", False, 2)
+	Element("UnlockCraftingItem:QuestItem_statue", False, 3)
+	Element("EnableObject:LQ_StatueGhost", False, 4)
+}
+
+Node("LegendaryQuest_Statue_Comment_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_statue", False, 0)
+	Element("StartDialog:PvE_Story_03Statue_Player_01", False, 1)
+	Element("IsDialogPlaying:false:PvE_Story_03Statue_Player_01", False, 2)
+	Element("PlayMusicJingle:gh_jg4:false:0.7:0", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_Statue_Comment_FPP:true", False, 4)
+}
+
+Node("LegendaryQuest_Statue_Comment_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Statue_Comment_FPP", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Statue_Comment_FPP", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQStatue_Make", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQStatue_Talk:true", False, 3)
+}
+
+Node("LegendaryQuest_Statue_PutDown", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_StatueGhost", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_Staue_CanTalk:true", False, 2)
+}
+
+Node("LegendaryQuest_Statue_compleate", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_StatueFinal", False, 5)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Staue_CanTalk", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Statue_EasyMode_Loop", False, 6)
+	Element("EnableObject:LQ_StatueFinal", False, 1)
+	Element("DisableObject:LQ_StatueGhost", False, 2)
+	Element("DisableObject:PVE_Fake_FangGiver", False, 10)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_A", False, 3)
+	Element("UnlockPveDialog:LQuest_Statue", False, 4)
+}
+
+Node("LegendaryQuest_Statue_compleate_A2", True, -1125.0000, -27.0000, 200.0000, 75.0000, "LegendaryQuest_Statue_compleate", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Statue", False, 1)
+	Element("IsDialogPlaying:false:LQuest_Statue", False, 2)
+	Element("AddReputationFromStory:Village_01_planting:LQStatue", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_Statue_EndQuest:true", False, 4)
+}
+
+Node("LegendaryQuest_Statue_compleate_A3", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Statue_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Statue_compleate_2", False, 1)
+	Element("LockPveDialog:LQuest_Statue", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQStatue_Talk", False, 3)
+	Element("SetLegendFinishState:Story_03Statue:true", False, 4)
+}	
+
+	
+// ########### Bad Water  ###############
+Node("Box_BadWater_Pve", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvEBadWaterBox_Open", False, 0)
+	Element("EnableObject:PvEBadWaterBox_Close", False, 1)
+	Element("EnableObject:PvEBadWaterBox_Trigger", False, 2)
+	Element("IsTriggered:true:PvEBadWaterBox_Trigger", False, 3)
+	Element("DisableObject:PvEBadWaterBox_Trigger", False, 4)
+	Element("DisableObject:PvEBadWaterBox_Close", False, 5)
+	Element("EnableObject:PvEBadWaterBox_Open", False, 6)
+}
+
+
+Node("LegendaryQuest_BadWater", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Golden_Pate", False, 0) // do podmianki
+	Element("StartDialog:PvE_Story_04BadWater_Pickup_Player_01", False, 1)
+	Element("DeleteInventoryItem:QuestItem_Golden_Pate", False, 2)
+	Element("SetBoolVariable:VarLegendaryQuest_BadWater_EnableAltar:true", False, 3)
+}		
+
+
+Node("LegendaryQuest_BadWater_Complete_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_BadWatter_AltarTrigger", False, 5)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_EnableAltar", False, 0)
+	Element("ShowFakeItemInBackpack:backpack_LQGolden_Plate:true", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQBadWater_Solve:true", False, 3)
+	Element("EnableObject:LQ_BadWatter_AltarTrigger", False, 4)
+}
+
+
+Node("LegendaryQuest_BadWater_Trigger_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_BadWatter_AltarTrigger", False, 0)
+	Element("StartDialog:PvE_Story_04BadWater_Altar_Player_01", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_BadWater_Triggered:true", False, 2)
+}
+
+
+Node("LegendaryQuest_BadWater_SaveFix", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsObjectEnabled:true:LQ_GoldPlate_OnAltar", False, 0)
+	Element("EnableObject:PvE_Rack_BadWater", False, 3)
+}
+
+Node("LegendaryQuest_BadWater_Trigger_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_GoldPlate_OnAltar", False, 5)
+	Element("DisableObject:PvE_Rack_BadWater", False, 6)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_Triggered", False, 0)
+	Element("DisableObject:LQ_BadWatter_AltarTrigger", False, 1)
+	Element("EnableObject:LQ_GoldPlate_OnAltar", False, 2)
+	Element("EnableObject:PvE_Rack_BadWater", False, 3)
+	Element("ShowFakeItemInBackpack:backpack_LQGolden_Plate:false", False, 4)
+}
+
+Node("LegendaryQuest_BadWater_Rack_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "LegendaryQuest_BadWater_Trigger_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_Triggered", False, 0)
+	Element("IsRackBurning:true:PvE_Rack_BadWater", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_BadWater_RackFire:true", False, 2)
+	Element("PlayerIsInSensor:true:PvE_BadWaterNearAltar_sensor", False, 3)
+	Element("StartDialog:PvE_Story_04BadWater_Altar_Player_02", False, 4)
+	Element("PlayMusicJingle:gh_jg2:false:0.7:0", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_BadWater_AlterFinished:true", False, 6)
+}
+
+Node("LegendaryQuest_BadWater_Rack_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:LQ_BadWater_Dirty", False, 5)
+	Element("DisableObject:LQ_BadWater_Light", False, 6)
+	Element("DisableObject:LQ_BadWater_Clean", False, 7)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_RackFire", False, 0)
+	Element("SetRackEndlessFire:PvE_Rack_BadWater", False, 1)
+	Element("EnableObject:LQ_BadWater_Light", False, 2)
+	Element("DisableObject:LQ_BadWater_Dirty", False, 3)
+	Element("EnableObject:LQ_BadWater_Clean", False, 4)
+}
+		
+Node("LegendaryQuest_BadWater_Complete_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_AlterFinished", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_BadWater_Rack_FPP", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQBadWater_Solve", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQBadWater_Talk:true", False, 3)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_A", False, 4)
+	Element("UnlockPveDialog:LQuest_BadWater", False, 5)
+}
+Node("LegendaryQuest_BadWater_Complete_FPP_A2", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_BadWater", False, 1)
+	Element("IsDialogPlaying:false:LQuest_BadWater", False, 2)
+	Element("AddReputationFromStory:Village_01_planting:LQBadWater", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_BadWater_EndQuest:true", False, 4)
+}
+Node("LegendaryQuest_BadWater_Complete_TPP_A2", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_BadWater_Complete_FPP_A2", False, 1)
+	Element("LockPveDialog:LQuest_BadWater", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQBadWater_Talk", False, 3)
+	Element("SetLegendFinishState:Story_04BadWater:true", False, 4)
+}	
+
+
+// ########### SOA 2 Canoe ###############
+
+Node("LegendaryQuest_Canoe_Start", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Canoe_Bracelet_Trigger", False, 4)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Canoe", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQCanoe_FindBracelet:true", False, 1)
+	Element("EnableObject:LQ_Canoe_Bracelet_Trigger", False, 2)
+}
+
+Node("LegendaryQuest_Canoe_FoundItem_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Canoe_Bracelet_Trigger", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Canoe_CanTalk:true", False, 1)
+}
+
+Node("LegendaryQuest_Canoe_FoundItem_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:LQ_Canoe_Bracelet", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Canoe_CanTalk", False, 0)
+	Element("DisableObject:LQ_Canoe_Bracelet_Trigger", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQCanoe_FindBracelet", False, 2)
+	Element("DeactivateScenarioNode:LegendaryQuest_Canoe_FoundItem_FPP", False, 3)
+	Element("DisableObject:LQ_Canoe_Bracelet", False, 4)
+	Element("ShowFakeItemInBackpack:backpack_LQCanoe_Bracelet:true", False, 5)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQCanoe_Talk:true", False, 6)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_B", False, 7)
+	Element("UnlockPveDialog:LQuest_Canoe", False, 8)
+}
+
+Node("LegendaryQuest_Canoe_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Canoe", False, 0)
+	Element("IsDialogPlaying:false:LQuest_Canoe", False, 1)
+	Element("AddReputationFromStory:Village_02_hunt:LQCanoe", False, 2)  // -- Do sprawdzenia nazwa wioski 
+	Element("SetBoolVariable:VarLegendaryQuest_Canoe_EndQuest:true", False, 3)
+}
+
+Node("LegendaryQuest_Canoe_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Canoe_Bracelet_InVillageArt", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Canoe_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Canoe_Talk_FPP", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_LQCanoe_Bracelet:false", False, 2)
+	Element("LockPveDialog:LQuest_Canoe", False, 3)
+	Element("EnableObject:LQ_Canoe_Bracelet_InVillageArt", False, 4)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQCanoe_Talk", False, 5)
+	Element("SetLegendFinishState:Story_05Canoe:true", False, 6)
+}
+
+// ########### SOA 2 Drum ###############
+
+Node("LQ_TapirSkined_VO", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:false:VAR_TapirSkined", False, 0)
+	Element("HaveItem:true:tapir_skin", False, 1)
+	Element("StartDialog:PvE_Player_LQuest_Drum_2", False, 2)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_Drum_2", False, 3)
+	Element("SetBoolVariable:VAR_TapirSkined:true", False, 4)
+}
+
+
+Node("LegendaryQuest_Drum_Start", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_DrumBuilding", False, 5)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum", False, 0)
+	Element("EnableObject:LQ_DrumBuilding", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQDrum_Hunt:true", False, 2)
+}
+
+// Drum Wood
+Node("LegendaryQuest_Drum_Wood_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Drum_Wood_Ghost", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_wood:true", False, 1)
+}
+
+Node("LegendaryQuest_Drum_Wood_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Drum_Wood_Art", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_wood", False, 0)
+	Element("DisableObject:LQ_Drum_Wood_Ghost", False, 1)
+	Element("EnableObject:LQ_Drum_Wood_Art", False, 2)
+	Element("DisableObject:LQ_Drum_Skin_GhostInactive", False, 3)
+	Element("EnableObject:LQ_Drum_Skin_Ghost", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Drum_Wood_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_woodDone:true", False, 6)
+}
+
+// Drum Rope
+Node("LegendaryQuest_Drum_Rope_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Drum_Rope_Ghost", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_rope:true", False, 1)
+	Element("StartDialog:PvE_Player_LQuest_Drum_3", False, 2)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_Drum_3", False, 3)
+}
+
+Node("LegendaryQuest_Drum_Rope_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Drum_Rope_Art", False, 5)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_rope", False, 0)
+	Element("DisableObject:LQ_Drum_Rope_Ghost", False, 1)
+	Element("EnableObject:LQ_Drum_Rope_Art", False, 2)
+	Element("DeactivateScenarioNode:LegendaryQuest_Drum_Rope_FPP", False, 3)
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_ropeDone:true", False, 4)
+}
+
+// Drum Skin
+Node("LegendaryQuest_Drum_Skin_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Drum_Skin_Ghost", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_skin:true", False, 1)
+}
+
+Node("LegendaryQuest_Drum_Skin_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Drum_Skin_Art", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_skin", False, 0)
+	Element("DisableObject:LQ_Drum_Skin_Ghost", False, 1)
+	Element("EnableObject:LQ_Drum_Skin_Art", False, 2)
+	Element("DisableObject:LQ_Drum_Rope_GhostInactive", False, 3)
+	Element("EnableObject:LQ_Drum_Rope_Ghost", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Drum_Skin_FPP", False, 5)
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_skinDone:true", False, 6)
+}
+
+
+Node("LegendaryQuest_Drum_Talk", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Drum_Working", False, 12)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_woodDone", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_ropeDone", False, 1)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_skinDone", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQDrum_Hunt", False, 3)
+	Element("DisableObject:LQ_Drum_Wood", False, 4)
+	Element("DisableObject:LQ_Drum_Rope", False, 5)
+	Element("DisableObject:LQ_Drum_Skin", False, 6)
+	Element("EnableObject:LQ_Drum_Working", False, 7)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQDrum_Talk:true", False, 8)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_B", False, 9)
+	Element("UnlockPveDialog:LQuest_Drum", False, 10)
+}
+
+
+Node("LegendaryQuest_Drum_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Drum", False, 0)
+	Element("IsDialogPlaying:false:LQuest_Drum", False, 1)
+	Element("AddReputationFromStory:Village_02_hunt:LQDrum", False, 2)  // -- Do sprawdzenia nazwa wioski 
+	Element("SetBoolVariable:VarLegendaryQuest_Drum_EndQuest:true", False, 3)
+}
+
+Node("LegendaryQuest_Drum_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Drum_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Drum_Talk_FPP", False, 1)
+	Element("LockPveDialog:LQuest_Drum", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQDrum_Talk", False, 3)
+	Element("SetLegendFinishState:Story_06Drum:true", False, 4)
+}
+
+
+
+// ########### SOA 2 Panther ###############
+
+Node("LegendaryQuest_Panther_Start", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Panther_meat_1_Trigger", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQPanther_PlaceMeat:true", False, 1)
+	Element("EnableObject:LQ_Panther_meat_1_Trigger", False, 2)
+}
+
+Node("LegendaryQuest_Panther_DayCount", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_meat_1", False, 0)
+	Element("IsNight:false", False, 1)
+	Element("IsNight:true", False, 2)
+	Element("SetBoolVariable:VarLQ_Panther_Night_1_Done:true", False, 3)
+	
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_meat_2", False, 4)
+	Element("IsNight:false", False, 5)
+	Element("IsNight:true", False, 6)
+	Element("SetBoolVariable:VarLQ_Panther_Night_2_Done:true", False, 7)
+	
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_meat_3", False, 8)
+	Element("IsNight:false", False, 9)
+	Element("IsNight:true", False, 10)
+	Element("SetBoolVariable:VarLQ_Panther_Night_3_Done:true", False, 11)
+}
+
+
+// Panther Meat 1
+Node("LegendaryQuest_Panther_PlaceMeat_1_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Panther_meat_1_Trigger", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Panther_meat_1:true", False, 1)
+	Element("StartDialog:PvE_Player_LQuest_Panther_2", False, 2)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_Panther_2", False, 3)
+}
+
+Node("LegendaryQuest_Panther_PlaceMeat_1_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Panther_meat_1_3d", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_meat_1", False, 0)
+	Element("DisableObject:LQ_Panther_meat_1_Trigger", False, 1)
+	Element("EnableObject:LQ_Panther_meat_1_3d", False, 2)
+	Element("DeactivateScenarioNode:LegendaryQuest_Panther_PlaceMeat_1_FPP", False, 3)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_EatMeat_1_FPP", False, 4)
+}
+
+Node("LegendaryQuest_Panther_EatMeat_1_FPP", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNight:true", False, 1)
+	Element("PlayerIsInSensor:false:PvE_Panther_Cave_sensor", False, 0)
+	Element("DisableObject:LQ_Panther_meat_1_3d", False, 2)
+	Element("IsBoolVariableTrue:true:VarLQ_Panther_Night_1_Done", False, 3)
+	Element("EnableObject:LQ_Panther_meat_2_Trigger", False, 4)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_PlaceMeat_2_FPP", False, 5)
+}
+
+// Panther Meat 2
+Node("LegendaryQuest_Panther_PlaceMeat_2_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Panther_meat_2_Trigger", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Panther_meat_2:true", False, 1)
+	Element("StartDialog:PvE_Player_LQuest_Panther_3", False, 2)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_Panther_3", False, 3)
+}
+
+Node("LegendaryQuest_Panther_PlaceMeat_2_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Panther_meat_2_3d", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_meat_2", False, 0)
+	Element("DisableObject:LQ_Panther_meat_2_Trigger", False, 1)
+	Element("EnableObject:LQ_Panther_meat_2_3d", False, 2)
+	Element("DeactivateScenarioNode:LegendaryQuest_Panther_PlaceMeat_2_FPP", False, 3)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_EatMeat_2_FPP", False, 4)
+}
+
+Node("LegendaryQuest_Panther_EatMeat_2_FPP", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNight:true", False, 1)
+	Element("PlayerIsInSensor:false:PvE_Panther_Cave_sensor", False, 0)
+	Element("DisableObject:LQ_Panther_meat_2_3d", False, 2)
+	Element("IsBoolVariableTrue:true:VarLQ_Panther_Night_2_Done", False, 3)
+	Element("EnableObject:LQ_Panther_meat_3_Trigger", False, 4)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_PlaceMeat_3_FPP", False, 5)
+}
+
+// Panther Meat 3
+Node("LegendaryQuest_Panther_PlaceMeat_3_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:LQ_Panther_meat_3_Trigger", False, 0)
+	Element("SetBoolVariable:VarLegendaryQuest_Panther_meat_3:true", False, 1)
+	Element("StartDialog:PvE_Player_LQuest_Panther_4", False, 2)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_Panther_4", False, 3)
+}
+
+Node("LegendaryQuest_Panther_PlaceMeat_3_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Panther_meat_3_3d", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_meat_3", False, 0)
+	Element("DisableObject:LQ_Panther_meat_3_Trigger", False, 1)
+	Element("EnableObject:LQ_Panther_meat_3_3d", False, 2)
+	Element("DeactivateScenarioNode:LegendaryQuest_Panther_PlaceMeat_3_FPP", False, 3)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_EatMeat_3_FPP", False, 4)
+}
+
+Node("LegendaryQuest_Panther_EatMeat_3_FPP", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNight:true", False, 1)
+	Element("PlayerIsInSensor:false:PvE_Panther_Cave_sensor", False, 0)
+	Element("DisableObject:LQ_Panther_meat_3_3d", False, 2)
+	Element("IsBoolVariableTrue:true:VarLQ_Panther_Night_3_Done", False, 3)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_NoPredator", False, 5)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQPanther_PlaceMeat", False, 6)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQPanther_Hunt:true", False, 7)
+	Element("IsBoolVariableTrue:false:VarLegendaryQuest_Panther_EasyMode", False, 8)
+	Element("ActivateScenarioNode:LegendaryQuest_Panther_Predator", False, 9)
+}
+// Panther Easy Mode - Tail
+Node("LegendaryQuest_Panther_NoPredator", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Panther_3d_EasyMode_Totem", False, 15)
+	Element("DisableObject:LQ_Panther_EasyMode_Triger", False, 16)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_EasyMode", False, 0)
+	Element("IsNight:false", False, 1)
+	Element("IsNight:true", False, 2)
+	Element("PlayerIsInSensor:false:PvE_Panther_Cave_sensor", False, 3)
+	Element("EnableObject:LQ_Panther_3d_EasyMode_Totem", False, 4)
+	Element("EnableObject:LQ_Panther_EasyMode_Triger", False, 6)
+	Element("IsTriggered:true:LQ_Panther_EasyMode_Triger", False, 7)
+	Element("DisableObject:LQ_Panther_EasyMode_Triger", False, 8)
+	//Element("StartDialog:PvE_Story_01Croc_Player_01", False, 6)
+	//Element("IsDialogPlaying:false:PvE_Story_01Croc_Player_01", False, 7)
+	Element("PlayMusicJingle:gh_jg5:false:0.7:0", False, 9)
+	Element("SetBoolVariable:VarLegendaryQuest_Panther_CanTalk:true", False, 10)
+}
+// Panther Easy Mode - Tail
+
+Node("LegendaryQuest_Panther_Predator", False, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNight:false", False, 0)
+	Element("IsNight:true", False, 1)
+	Element("SetBoolVariable:VarLegendaryQuest_SpawnPanther:true", False, 3)
+}
+
+Node("LegendaryQuest_Panter_HaveTail", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Black_Panther_tail", False, 4)
+	Element("DeleteInventoryItem:QuestItem_Black_Panther_tail", False, 5)
+	Element("StartDialog:PvE_Player_LQuest_Panther_5", False, 8)
+	Element("IsDialogPlaying:false:PvE_Player_LQuest_Panther_5", False, 9)
+	Element("PlayMusicJingle:gh_jg5:false:0.7:0", False, 6)
+	Element("SetBoolVariable:VarLegendaryQuest_Panther_CanTalk:true", False, 7)
+}
+
+Node("LegendaryQuest_Panter_Talk", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_CanTalk", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQPanther_Hunt", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_LQPanther_Tail:true", False, 3)
+	Element("DisableObject:LQ_Panther_EasyMode_Triger", False, 9)
+	//Element("DeactivateScenarioNode:LegendaryQuest_Albino_Part1_FPP", False, 4)
+	Element("DeactivateScenarioNode:LegendaryQuest_Panther_NoPredator", False, 5)
+	Element("DeactivateScenarioNode:LegendaryQuest_Panter_HaveTail", False, 10)
+	Element("AddStoryObjective:NB_OBJ_PVE_LQPanther_Talk:true", False, 6)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_B", False, 7)
+	Element("UnlockPveDialog:LQuest_Panther", False, 8)
+}
+
+
+Node("LegendaryQuest_Panther_Talk_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:LQuest_Panther", False, 0)
+	Element("IsDialogPlaying:false:LQuest_Panther", False, 1)
+	Element("AddReputationFromStory:Village_02_hunt:LQPanther", False, 2)  // -- Do sprawdzenia nazwa wioski 
+	Element("SetBoolVariable:VarLegendaryQuest_Panther_EndQuest:true", False, 3)
+}
+
+Node("LegendaryQuest_Panther_Talk_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LQ_Panther_Tail_InVillageArt", False, 10)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_EndQuest", False, 0)
+	Element("DeactivateScenarioNode:LegendaryQuest_Panther_Talk_FPP", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_LQPanther_Tail:false", False, 2)
+	Element("LockPveDialog:LQuest_Panther", False, 3)
+	Element("EnableObject:LQ_Panther_Tail_InVillageArt", False, 4)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_LQPanther_Talk", False, 5)
+	Element("SetLegendFinishState:Story_07Panther:true", False, 6)
+}
+
+//Node("Temp_Loop_Dialog", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", True)
+//{
+//	Element("UnlockPveDialog:PvE_VillB_Hello", False, 0)
+//	Element("UnlockPveDialog:PvE_VillB_Ending", False, 1)
+//	Element("UnlockPveDialog:LQuest_Canoe", False, 2)
+//	Element("UnlockPveDialog:LQuest_Panther", False, 3)
+//	Element("UnlockPveDialog:LQuest_Drum", False, 4)
+//}

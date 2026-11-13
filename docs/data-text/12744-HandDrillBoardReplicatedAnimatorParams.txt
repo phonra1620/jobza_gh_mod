@@ -1,0 +1,5 @@
+//CustomBlend("current_state_name", "target_state_name", time)
+CustomBlend("Hand_Drill_Idle", "Hand_Drill_Board", 0.012)
+CustomBlend("Hand_Drill_Board", "Hand_Drill_Idle", 0.018)
+
+

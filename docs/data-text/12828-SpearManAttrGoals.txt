@@ -1,0 +1,2 @@
+Goal("MoveToAttractor")
+Goal("Idle")

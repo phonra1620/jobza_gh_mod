@@ -1,0 +1,2 @@
+CallBatteryUse(0.1)
+BatteryRestorePerSec(0.003)

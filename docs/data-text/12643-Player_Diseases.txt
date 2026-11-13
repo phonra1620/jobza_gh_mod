@@ -1,0 +1,48 @@
+Symptom("Vomiting")
+{
+	CarboLoss(0.25)
+	ProteinsLoss(0.25)
+	FatLoss(0.25)
+	HydrationLoss(0.25)
+}
+
+
+Disease("FoodPoisoning")
+{
+	Symptom("Vomiting")
+	AutoHealTimeMinutes(60.0)	
+	EnergyLossPerSecond(0.0)
+}
+
+Disease("Fever")
+{	
+	AutoHealTimeMinutes(260.0)	
+	EnergyLossPerSecond(0.1)	
+	MaxLevel(10)
+}
+
+Disease("ParasiteSickness")
+{	
+	MacroNutricientFatLossMul(1.8)	
+	MacroNutricientCarboLossMul(1.8)	
+	MacroNutricientProteinsLossMul(1.8)	
+	MaxLevel(15)
+}
+
+
+Disease("Insomnia")
+{	
+	NoSleepTimeToActivate(1440.0)
+	NoSleepTimeToIncreaseLevel(360.0)
+	EnergyLossMull(1.0)	
+	EnergyLossMulAddByLevel(0.1)
+	SleepTimeToDecreaseLevel(245.0)
+	SanityDecreaseVal(1)
+	SanityDecreaseInterval(2.0)
+}
+
+Disease("DirtSickness")
+{
+	MaxLevel(5)
+}
+

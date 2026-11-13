@@ -1,0 +1,17 @@
+MinGroupMembersCount(1)
+MaxGroupMembersCount(5)
+
+IncreaseGroupMembersInterval(2100.0) //real time
+
+MinActivationDistance(35.0)
+MaxActivationDistance(45.0)
+
+GroupSpawnCooldown(3240.0) //real time
+PredatorSpawnCooldown(2200.0) //real time
+
+StartWaveSpawnCooldown(3900.0, 7200.0, 3600.0) //real time, easy, med, hard
+WaveSpawnCooldown(7200.0, 7200.0, 5400.0) //real time, easy, med, hard
+
+BurningFactorIncreaseSpeed(0.006, 0.0008, 0.001) // per sec, eal time, easy, med, hard
+BurningFactorDecreaseSpeed(0.001, 0.0003, 0.0001) // per sec, real time, easy, med, hard
+

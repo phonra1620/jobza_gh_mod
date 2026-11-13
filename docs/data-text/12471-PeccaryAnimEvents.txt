@@ -1,0 +1,168 @@
+Anim("peccary_big|death")
+{
+	// Sound("Peccary_Death_", "AI/Peccary", 0.0)
+	Event("DieEnd", 0.99)
+}
+
+Anim("peccary_big|hitreaction")
+{
+	Sound("Peccary_Hit_", "AI/Peccary", 0.0)
+}
+
+Anim("peccary_big|eat")
+{
+	Sound("Peccary_Idle_", "AI/Peccary", 0.0)
+}
+
+Anim("peccary_big|idle_smells")
+{
+	Sound("Peccary_Idle_", "AI/Peccary", 0.0)
+}
+
+Anim("peccary_big|idle_look_around")
+{
+	Sound("Peccary_Idle_", "AI/Peccary", 0.0)
+}
+
+// Anim("peccary_big|alerted")
+// {
+	// Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+// }
+
+
+///////////movement////////////
+Anim("peccary_big|walk_forward")
+{
+	Footstep(0.27, "b_LF_leg04")
+	Footstep(0.51, "b_LB_leg03")
+	Footstep(0.77, "b_RF_leg04")
+	Footstep(0.01, "b_RB_leg03")
+}
+
+Anim("peccary_big|walk_left")
+{
+	Footstep(0.27, "b_LF_leg04")
+	Footstep(0.51, "b_LB_leg03")
+	Footstep(0.77, "b_RF_leg04")
+	Footstep(0.01, "b_RB_leg03")
+}
+
+Anim("peccary_big|walk_right")
+{
+	Footstep(0.27, "b_LF_leg04")
+	Footstep(0.51, "b_LB_leg03")
+	Footstep(0.77, "b_RF_leg04")
+	Footstep(0.01, "b_RB_leg03")
+}
+
+Anim("peccary_big|trot_forward")
+{
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_RB_leg03")
+	Footstep(0.88, "b_RF_leg04")
+	Footstep(0.88, "b_LB_leg03")
+}
+
+Anim("peccary_big|trot_left")
+{
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_RB_leg03")
+	Footstep(0.88, "b_RF_leg04")
+	Footstep(0.88, "b_LB_leg03")
+}
+
+Anim("peccary_big|trot_right")
+{
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_RB_leg03")
+	Footstep(0.88, "b_RF_leg04")
+	Footstep(0.88, "b_LB_leg03")
+}
+
+Anim("peccary_big|run_forward")
+{
+	Footstep(0.27, "b_RB_leg03")
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_LB_leg03")
+	Footstep(0.62, "b_RF_leg04")
+}
+
+Anim("peccary_big|run_left")
+{
+	Footstep(0.27, "b_RB_leg03")
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_LB_leg03")
+	Footstep(0.62, "b_RF_leg04")
+}
+
+Anim("peccary_big|run_right")
+{
+	Footstep(0.27, "b_RB_leg03")
+	Footstep(0.38, "b_LF_leg04")
+	Footstep(0.38, "b_LB_leg03")
+	Footstep(0.62, "b_RF_leg04")
+}
+
+Anim("peccary_big|start_forward")
+{
+	Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.60, "b_RB_leg03")
+	Footstep(0.63, "b_LF_leg04")
+	Footstep(0.75, "b_RF_leg04")
+}
+
+Anim("peccary_big|start_left")
+{
+	Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.60, "b_RB_leg03")
+	Footstep(0.63, "b_LF_leg04")
+	Footstep(0.75, "b_RF_leg04")
+}
+
+Anim("peccary_big|start_right")
+{
+	Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.60, "b_RB_leg03")
+	Footstep(0.63, "b_LF_leg04")
+	Footstep(0.75, "b_RF_leg04")
+}
+
+Anim("peccary_big|start_left_back")
+{
+	Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.60, "b_RB_leg03")
+	Footstep(0.63, "b_LF_leg04")
+	Footstep(0.75, "b_RF_leg04")
+}
+
+Anim("peccary_big|start_right_back")
+{
+	Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.60, "b_RB_leg03")
+	Footstep(0.63, "b_LF_leg04")
+	Footstep(0.75, "b_RF_leg04")
+}
+
+Anim("peccary_big|start_right_back")
+{
+	Sound("Peccary_Panic_", "AI/Peccary", 0.0)
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.60, "b_RB_leg03")
+	Footstep(0.63, "b_LF_leg04")
+	Footstep(0.75, "b_RF_leg04")
+}
+
+Anim("peccary_big_start_left_back_copy")
+{
+	Footstep(0.57, "b_RB_leg03")
+	Footstep(0.60, "b_LB_leg03")
+	Footstep(0.65, "b_LF_leg04")
+	Footstep(0.80, "b_RF_leg04")
+}
+
+

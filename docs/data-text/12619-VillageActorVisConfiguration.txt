@@ -1,0 +1,80 @@
+DefaultObjectsToHide()
+{
+	GameObjectName("savage_hair_black")
+	GameObjectName("savage_hair_b_black")
+	GameObjectName("savage_hair_red")
+	GameObjectName("savage_hair_b_red")
+	GameObjectName("savage_hair_c")
+	GameObjectName("savage_hair_d")
+}
+
+VisPreset("default")
+{
+	ShouldHideDefaultObjects(false)
+	ObjectsToHide()
+	{
+	}
+	ObjectsToShow()
+	{
+	}
+}
+
+VisPreset("no_hair")
+{
+	ShouldHideDefaultObjects(true)
+	ObjectsToHide()
+	{
+	}
+	ObjectsToShow()
+	{
+	}
+}
+
+VisPreset("hair_01")
+{
+	ShouldHideDefaultObjects(true)
+	ObjectsToHide()
+	{
+	}
+	ObjectsToShow()
+	{
+		GameObjectName("savage_hair_black")
+	}
+}
+
+VisPreset("hair_02")
+{
+	ShouldHideDefaultObjects(true)
+	ObjectsToHide()
+	{
+	}
+	ObjectsToShow()
+	{
+		GameObjectName("savage_hair_red")
+	}
+}
+
+VisPreset("hair_03")
+{
+	ShouldHideDefaultObjects(true)
+	ObjectsToHide()
+	{
+	}
+	ObjectsToShow()
+	{
+		GameObjectName("savage_hair_b_black")
+	}
+}
+
+VisPreset("hair_04")
+{
+	ShouldHideDefaultObjects(true)
+	ObjectsToHide()
+	{
+	}
+	ObjectsToShow()
+	{
+		GameObjectName("savage_hair_b_red")
+	}
+}
+

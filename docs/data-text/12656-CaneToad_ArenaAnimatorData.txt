@@ -1,0 +1,6 @@
+State("Idle_0", "toad_idle_1", 8.8333, 1)
+State("Die", "toad_die", 1.1333, 0)
+State("Walk", "toad_jump", 0.8333, 1)
+State("Idle_1", "toad_idle_2", 22.1333, 1)
+State("TrapBlock", "toad_idle_2", 22.1333, 1)
+State("TrapKill", "toad_trapkill", 0.0333, 0)

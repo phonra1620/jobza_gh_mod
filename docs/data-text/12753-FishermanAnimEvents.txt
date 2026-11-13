@@ -1,0 +1,150 @@
+// Obs³uga eventów animacyjnych powi¹zanych z aktorem z wioski
+// To co zostanie pokazane/ukryte w evencie jest konfigurowane w komponencie
+// AnimAssetActivator w prefabie aktora
+
+// UWAGA: eventy s¹ do animacji, czyli np gdy podepniesz do "vil_man_s_axe_idle_A" to wykona siê w ka¿dym stanie, który ma t¹ animacjê
+
+// UWAGA: Jeœli jest jakiœ niepo³¹czony stan z t¹ sam¹ animacj¹, to eventy nie zadzia³aj¹
+
+// To notify that idle sound should be played (it can be skipped if actor is in sound cooldown)
+// Event("VillageActorIdleStart", 0.01);
+
+// To notify that voice over should be played (it can be skipped if actor is in sound cooldown)
+// VoiceOver(file_name_without_preset_and_index, path_to_file, anim_time_percent, probability_that_vo_will_be_played)
+
+// vil_man_fisherman_spear_catch
+// vil_man_fisherman_spear_getup
+// vil_man_fisherman_spear_idle
+// vil_man_fisherman_spear_idle_to_work
+// vil_man_fisherman_spear_sitting
+// vil_man_fisherman_spear_start_standing
+// vil_man_fisherman_spear_watching
+// vil_man_fisherman_spear_work_to_idle
+
+// vil_man_fisherman_bow_catch
+// vil_man_fisherman_bow_getup
+// vil_man_fisherman_bow_idle
+// vil_man_fisherman_bow_seek
+// vil_man_fisherman_bow_sitting
+// vil_man_fisherman_bow_start_standing
+
+// ShowVillageFish
+// HideVillageFish
+// ShowVillageTribeBow
+// HideVillageTribeBow
+// ShowVillageTribalSpearSmall
+// HideVillageTribalSpearSmall
+// ShowVillageTribeArrow
+// HideVillageTribeArrow
+
+
+
+Anim("vil_man_fisherman_spear_getup")
+{
+	Sound("tent_step_", "TempSounds/Player", 0.13)
+	Sound("grass_jump_02", "TempSounds/Player", 0.13)
+	Sound("tent_step_", "TempSounds/Player", 0.18)
+	Sound("tent_step_", "TempSounds/Player", 0.48)
+	Event("ShowVillageTribalSpearSmall", 0.52)
+	Sound("tent_step_", "TempSounds/Player", 0.55)
+}
+
+Anim("vil_man_fisherman_spear_idle")
+{
+	Event("PlayFishermanFishSound", 0.5)
+	Sound("tent_step_", "TempSounds/Player", 0.57)
+}
+
+Anim("vil_man_fisherman_spear_idle_to_work")
+{
+	Sound("tent_step_", "TempSounds/Player", 0.535)
+	Sound("tent_step_", "TempSounds/Player", 0.99)
+}
+
+Anim("vil_man_fisherman_spear_work_to_idle")
+{
+	Event("ShowVillageTribalSpearSmall", 0.01)
+	Sound("tent_step_", "TempSounds/Player", 0.538)
+	Sound("tent_step_", "TempSounds/Player", 0.785)
+}
+
+Anim("vil_man_fisherman_spear_watching")
+{
+	Sound("tent_step_", "TempSounds/Player", 0.105)
+	Event("PlayFishermanFishSound", 0.5)
+	Sound("tent_step_", "TempSounds/Player", 0.905)
+}
+
+Anim("vil_man_fisherman_spear_catch")
+{
+	Event("ShowVillageFish", 0.4)
+	Sound("Small_Splash_Audio_quiet", "Player", 0.41)
+	Event("PlayFishermanFishSound", 0.5)
+	Sound("tent_step_", "TempSounds/Player", 0.505)
+	Sound("mud_jump_start_02", "TempSounds/Player", 0.615)
+	Event("HideVillageFish", 0.674)
+	Sound("click_drop_item_backpack", "Items", 0.674)
+	Sound("tent_step_", "TempSounds/Player", 0.72)
+	Sound("tent_step_", "TempSounds/Player", 0.765)
+}
+
+Anim("vil_man_fisherman_bow_sitting")
+{
+	Event("HideAllVillageAnimAssets", 0.01)
+	Event("PlayFishermanIdleSound", 0.5)
+}
+
+Anim("vil_man_fisherman_bow_getup")
+{
+	Sound("tent_step_", "TempSounds/Player", 0.13)
+	Sound("grass_jump_02", "TempSounds/Player", 0.13)
+	Sound("tent_step_", "TempSounds/Player", 0.18)
+	Sound("tent_step_", "TempSounds/Player", 0.48)
+	Event("ShowVillageTribeBow", 0.5)
+	Sound("tent_step_", "TempSounds/Player", 0.55)
+	Event("ShowVillageTribeArrow", 0.625)
+}
+
+Anim("vil_man_fisherman_bow_idle")
+{
+	Event("ShowVillageTribeBow", 0.01)
+	Event("ShowVillageTribeArrow", 0.01)
+	Event("PlayFishermanFishSound", 0.5)
+	Sound("tent_step_", "TempSounds/Player", 0.58)
+	Sound("tent_step_", "TempSounds/Player", 0.70)
+	Sound("tent_step_", "TempSounds/Player", 0.81)
+}
+
+Anim("vil_man_fisherman_bow_catch")
+{
+	Sound("tent_step_", "TempSounds/Player", 0.05)
+	Sound("tent_step_", "TempSounds/Player", 0.105)
+	Sound("bamboo_bow_draw_02", "Weapon", 0.26)
+	Sound("bamboo_bow_shot_03", "Weapon", 0.38)
+	Sound("Small_Splash_Audio_quiet", "Player", 0.39)
+	Event("ShowVillageFish", 0.4)
+	Event("PlayFishermanFishSound", 0.5)
+	Sound("tent_step_", "TempSounds/Player", 0.52)
+	Sound("tent_step_", "TempSounds/Player", 0.55)
+	Sound("tent_step_", "TempSounds/Player", 0.575)
+	Sound("swim_surface_01", "Player", 0.58)
+	Sound("mud_jump_start_02", "TempSounds/Player", 0.685)
+	Sound("LandingWaterSplash", "Player", 0.685)
+	Sound("tent_step_", "TempSounds/Player", 0.71)
+	Sound("tent_step_", "TempSounds/Player", 0.76)
+	Event("HideVillageFish", 0.82)
+	Sound("click_drop_item_backpack", "Items", 0.82)
+	Sound("tent_step_", "TempSounds/Player", 0.83)
+	Sound("tent_step_", "TempSounds/Player", 0.885)
+	Sound("tent_step_", "TempSounds/Player", 0.95)
+}
+
+Anim("vil_man_fisherman_bow_seek")
+{
+	Sound("tent_step_", "TempSounds/Player", 0.325)
+	Sound("bamboo_bow_draw_02", "Weapon", 0.35)
+	Event("PlayFishermanFishSound", 0.5)
+	Sound("bamboo_bow_draw_03", "Weapon", 0.62)
+	Sound("tent_step_", "TempSounds/Player", 0.72)
+	Sound("tent_step_", "TempSounds/Player", 0.92)
+}

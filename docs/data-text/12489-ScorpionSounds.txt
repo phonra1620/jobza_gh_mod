@@ -1,0 +1,3 @@
+Attack("Scorpio_Attack_01","Scorpio_Attack_02","Scorpio_Attack_03")
+Death("Scorpio_Death_01")
+Loop("Scorpio_Loop")

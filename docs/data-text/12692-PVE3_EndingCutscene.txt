@@ -1,0 +1,88 @@
+
+Node("PvE3_EndingCutscene_Boat_Repair", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:DriveBoatEnding_Trigger", False, 0)	
+	Element("Wait:0.1", False, 1)
+	Element("DisableObject:DriveBoatEnding_Trigger", False, 2)	
+	//Element("HideHUD", False, 3)		
+	Element("PlayerHideWeapon", False, 3)
+	Element("SetPlayerInSafeZone", False, 4)
+	
+	Element("PlayerBlockMoves", False, 5)
+	
+	//Element("PlayerBlockRotation",` False, 4545)	
+	Element("DisablePlayerCollisions", False, 6)
+	Element("StartDialog:PvE3_EndingDialog", False, 7)
+	Element("Wait:2.1", False, 8)
+	
+	Element("DreamFadeOut:1.0", False, 9)
+	Element("Wait:2.1", False, 10)
+		
+	Element("EnableObject:Boat_Engine_Starting_Sound", False, 11)
+	Element("Wait:3.7", False, 12)	
+	Element("EnableObject:Boat_Engine_Working_Sound", False, 13)
+	Element("Wait:0.7", False, 14)
+		
+	
+	///  dół potem zamienić na odpalanie filmu ///////
+	Element("EnablePlayerCollisions", False, 15)
+	Element("DreamFadeIn:1.0", False, 16)
+	Element("Wait:0.1", False, 17)
+	Element("PlayerResetBlockMoves", False, 18)
+	Element("ResetPlayerInSafeZone", False, 19)
+	Element("PlayerRestoreWeapon", False, 20)	
+//Element("EnablePlayerCollisions", False, 31)
+}
+
+
+
+// Node("PvE3_EndingCutscene_Boat_Repair", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+// {
+	// Element("IsTriggered:true:DriveBoatEnding_Trigger", False, 0)
+	// Element("Wait:0.1", False, 2)
+	// Element("DisableObject:DriveBoatEnding_Trigger", False, 6)	
+	// //Element("HideHUD", False, 3)		
+	// Element("PlayerHideWeapon", False, 1)
+	// Element("SetPlayerInSafeZone", False, 455)
+	// Element("PlayerBlockMoves", False, 4)
+	// //Element("PlayerBlockRotation", False, 4545)	
+	// Element("DisablePlayerCollisions", False, 8)
+	// Element("StartDialog:PvE3_EndingDialog", False, 787)
+	// Element("Wait:1.1", False, 782)
+	// Element("DreamFadeOut:1.0", False, 331)
+	// Element("Wait:2.1", False, 78782)
+	// Element("PlayerSetLookAtObject:null", False, 16)
+	// Element("Teleport:Boat_CutsceneEndBoat_PlayerPos:false", False, 5)
+	// Element("Wait:0.2", False, 456)
+	// Element("EnableObject:Boat_CutsceneEndBoat", False, 11)
+	// Element("Wait:0.2", False, 4786)
+	// Element("PlayerAttachToObject:Boat_CutsceneEndBoat_PlayerPos", False, 7)
+	// Element("Wait:0.7", False, 4242)
+	// Element("EnableObject:Boat_Engine_Starting_Sound", False, 1541)
+	// Element("PlayerSetLookAtObject:Boat_PlayerLookAt", False, 1432)
+	// Element("Wait:3.7", False, 423542)	
+	// Element("EnableObject:Boat_Engine_Working_Sound", False, 781)
+	// Element("Wait:2.1", False, 2787)
+	// Element("PlayAnimation:Boat_CutsceneEndBoat:PvE3_BoatEndingAnimationSwim", False, 457)
+	
+	// Element("DreamFadeIn:1.0", False, 311)
+	// Element("IsDialogPlaying:false:PvE3_EndingDialog", False, 44)
+	// Element("FadeOut:3.0", False, 454)
+	// Element("EnableObject:PvE3_EndingSceneCollision", False, 7871)
+	// Element("Wait:1.1", False, 27)	
+	// //Element("PlayerDetachFromParent", False, 4878)
+	// Element("PlayAnimation:Player:Player_Cam_zero_pose", False, 545)
+	// Element("PlayerSetSpeedMul:0.8", False, 9)	
+	// Element("PlayCutscene:PvE3_EndingCutscene", False, 41)
+	// Element("Wait:0.8", False, 789)
+	// Element("PlayerSetPositionObject:PvE3_EndingCliff_PlayerPos", False, 7878)	
+	// Element("Wait:0.8", False, 799)	
+	// Element("FadeIn:1.0", False, 3581)
+	// Element("IsCutsceneTimeGreaterOrEqual:true:PvE3_EndingCutscene:30.75", False, 17)  
+	// Element("ShowCredits", False, 103)
+	// Element("PlayerDetachFromParent", False, 4745)
+
+// //Element("EnablePlayerCollisions", False, 31)
+// }
+
+

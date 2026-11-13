@@ -1,0 +1,36 @@
+Anim("armadillo_death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("armadillo_walk_forward")
+{
+	Footstep(0.37, "bn_R_paw01")
+	Footstep(0.47, "bn_L_foot01")
+	Footstep(0.95, "bn_L_paw01")
+	Footstep(0.01, "bn_R_foot01")
+}
+
+Anim("armadillo_run_forward")
+{
+	Footstep(0.05, "bn_R_foot01")
+	Footstep(0.18, "bn_L_paw01")
+	Footstep(0.36, "bn_R_paw01")
+	Footstep(0.90, "bn_L_foot01")	
+}
+
+//Anim("armadillo_run_left")
+//{
+//	Footstep(0.05, "bn_R_foot01")
+//	Footstep(0.18, "bn_L_paw01")
+//	Footstep(0.36, "bn_R_paw01")
+//	Footstep(0.90, "bn_L_foot01")
+//}
+
+//Anim("armadillo_run_right")
+//{
+//	Footstep(0.05, "bn_R_foot01")
+//	Footstep(0.18, "bn_L_paw01")
+//	Footstep(0.36, "bn_R_paw01")
+//	Footstep(0.90, "bn_L_foot01")
+//}

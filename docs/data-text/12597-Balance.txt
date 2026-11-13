@@ -1,0 +1,432 @@
+Prefab("medium_plant_02_cut","Spawn","Meds")
+{
+	Chance(0.1)
+	Condition("HasNoDressing")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.1)
+}
+Prefab("small_plant_08_cut","Spawn","Herbs")
+{
+	Chance(0.4)
+	Condition("Poison")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("medium_plant_10_cut","Spawn","Herbs")
+{
+	Chance(0.4)
+	Condition("Infected")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("carcass","Spawn","FoodHi")
+{
+	Chance(0.4)
+	Condition("Infected")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("medium_plant_08_cut","Spawn","FoodHi")
+{
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("big_tree_11_cut","Spawn","FoodHi")
+{
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("small_plant_01_cut","Spawn","FoodHi")
+{
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("Phallus_FakeItem_Spawner","Spawn","FoodLow;Sanity")
+{
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("small_plant_11_cut","Spawn","Water")
+{
+	Chance(0.4)
+	Condition("Hydration")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("small_plant_10_cut","Spawn","Herbs")
+{
+	Chance(0.4)
+	Condition("Poison")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("Gerronema_viridilucens","Attachment","FoodLow")
+{
+	ItemID("Gerronema_viridilucens")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.03)
+}
+Prefab("Banana_Low_Flower","Attachment","FoodLow")
+{
+	ItemID("Banana_Low_Flower")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("Banana_Medium_Flower","Attachment","FoodHi")
+{
+	ItemID("Banana_Medium_Flower")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("Banana_High_Flower","Attachment","FoodHi")
+{
+	ItemID("Banana_High_Flower")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("medium_plant_04_flower_spawner","Attachment","Common")
+{
+	ItemID("medium_plant_04_flower_spawner")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("larvas_from_treestump01","Attachment","FoodLow")
+{
+	ItemID("larvas_from_treestump01")
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("larvas_from_treestump02","Attachment","FoodHi")
+{
+	ItemID("larvas_from_treestump02")
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_01_Medium_Gerronema","Attachment","FoodHi")
+{
+	ItemID("rotten_tree_01_Medium_Gerronema")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_01_Low_Gerronema","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_01_Low_Gerronema")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_01_Medium_CopaHongo","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_01_Medium_CopaHongo")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_01_Low_CopaHongo","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_01_Low_CopaHongo")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_03_Low_CopaHongo","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_03_Low_CopaHongo")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_03_Low_Viridilucens","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_03_Low_Viridilucens")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_03_Low_Retiarium","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_03_Low_Retiarium")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_04_Low_Viridilucens","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_04_Low_Viridilucens")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_04_Low_Retiarium","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_04_Low_Retiarium")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_04_Low_CopaHongo","Attachment","FoodLow")
+{
+	ItemID("rotten_tree_04_Low_CopaHongo")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("rotten_tree_04_Medium_Nest","Attachment","Common")
+{
+	ItemID("rotten_tree_04_Medium_Nest")
+	Chance(0.4)
+	Condition("HasFire")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("Bird_feather","Spawn","Common;Sanity")
+{
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("coconuts_on_tree_01","Attachment","Water")
+{
+	ItemID("coconuts_on_tree_01")
+	Chance(0.4)
+	Condition("Hydration")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("Mouse_Body","Spawn","FoodLow;Sanity")
+{
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("CaneToad_Body","Spawn","FoodLow;Sanity")
+{
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("ParrotMacaw_Body","Spawn","FoodHi;Sanity")
+{
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("medium_plant_04_fruit_spawner","Attachment","FoodHi")
+{
+	ItemID("medium_plant_04_fruit_spawner")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.1)
+	ConditionChance(0.4)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("dead_tree_01_resin_spawner","Attachment","Common")
+{
+	ItemID("dead_tree_01_resin_spawner")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.1)
+	ConditionChance(0.4)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("dead_tree_02_resin_spawner","Attachment","Common")
+{
+	ItemID("dead_tree_02_resin_spawner")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.1)
+	ConditionChance(0.4)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("dead_tree_01_birdnest_spawner","Attachment","Common")
+{
+	ItemID("dead_tree_01_birdnest_spawner")
+	Chance(0.4)
+	Condition("HasFire")
+	ConditionChance(0.2)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("dead_tree_02_birdnest_spawner","Attachment","Common")
+{
+	ItemID("dead_tree_02_birdnest_spawner")
+	Chance(0.4)
+	Condition("HasFire")
+	ConditionChance(0.2)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("water_plant_lilly_spawner","Attachment","Herbs")
+{
+	ItemID("water_plant_lilly_spawner")
+	Chance(0.4)
+	Condition("Poison")
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("giant_tree_01_Blue_Lepionia_Spawner","Attachment","Snails")
+{
+	ItemID("giant_tree_01_Blue_Lepionia_Spawner")
+	Chance(0.4)
+	Condition("Carbo")
+	ConditionValue(0.1)
+	ConditionChance(0.4)
+	Cooldown(180.0)
+	CooldownChance(0.11)
+}
+Prefab("giant_tree_01_BrazilNut_Spawner","Attachment","Snails")
+{
+	ItemID("giant_tree_01_BrazilNut_Spawner")
+	Chance(0.8)
+	Condition("Fat")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.21)
+}
+Prefab("big_tree_03_rafia_spawner","Attachment","FoodHi")
+{
+	ItemID("big_tree_03_rafia_spawner")
+	Chance(0.4)
+	Condition("Fat")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(180.0)
+	CooldownChance(0.01)
+}
+Prefab("medium_plant_12_cut","Spawn","Herbs")
+{
+	Chance(0.6)
+	Condition("Bleeding")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("small_plant_13_cut","Spawn","Herbs")
+{
+	Chance(0.6)
+	Condition("Bleeding")
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("Toucan_Body","Spawn","FoodHi;Sanity")
+{
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.3)
+	ConditionChance(0.6)
+	Cooldown(160.0)
+	CooldownChance(0.01)
+}
+Prefab("Snail_ToSpawnAndTake","Attachment","Snails")
+{
+	ItemID("Snail_ToSpawnAndTake")
+	Chance(0.4)
+	Condition("Proteins")
+	ConditionValue(0.1)
+	ConditionChance(0.4)
+	Cooldown(180.0)
+	CooldownChance(0.1)
+}

@@ -1,0 +1,7 @@
+﻿Sound("Sing", "tribe_sing", "AI/Tribe/sing")
+Sound("Speak", "tribe_speak", "AI/Tribe/speak")
+Sound("Death", "tribe_death", "AI/Tribe/death")
+Sound("Scream", "tribe_scream", "AI/Tribe/screams")
+
+
+

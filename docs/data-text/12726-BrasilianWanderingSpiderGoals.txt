@@ -1,0 +1,12 @@
+Goal("Death")
+Goal("ReactOnHit")
+Goal("DontMove")
+
+Goal("AttackFoot")
+
+Goal("PrepareToAttack")
+
+Goal("ReturnToSpawner")
+
+Goal("Loiter", 0.5)
+Goal("Idle")

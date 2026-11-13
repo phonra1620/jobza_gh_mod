@@ -1,0 +1,3 @@
+Sentence("Hope", "Peace", "Calm");
+Sentence("Calm", "Hope", "Peace");
+Sentence("Peace", "Peace", "Hope");

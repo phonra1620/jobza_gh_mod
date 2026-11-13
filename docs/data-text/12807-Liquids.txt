@@ -1,0 +1,539 @@
+// Consume effects (effect delay po dwukropku, czas w godzinach ingame):
+//	- FoodPoisoning
+//	- Fever
+//  - ParasiteSickness
+// Fat(0.0)
+// Carbohydrates(0.0)
+// Proteins(0.0)
+// SanityChange(0)
+// DrinkEffect("None", 0.0, 0.0, 0) // Effect, chance, delay, level
+// PoisonDebuff(0) // Od Venom Debuff
+// Energy(0.0)
+// Disgusting(1)
+
+
+Liquid("Water")
+{
+	Components("None", "None") // Liquid, Item
+	Water(100.0)
+	CookingResult("Water")
+	DrinkEffect("None", 0.0, 0.0, 0) // Effect, chance, delay, level
+}
+Liquid("UnsafeWater")
+{	
+	Components("None", "None")
+	Water(100.0)
+	CookingResult("Water")
+	DrinkEffect("ParasiteSickness", 0.20, 0.0, 2)
+	Disgusting(1)
+}
+Liquid("DirtyWater")
+{	
+	Components("None", "None")
+	Water(100.0)
+	CookingResult("Water")
+	DrinkEffect("ParasiteSickness", 0.80, 0.0, 2)
+	Disgusting(1)
+}
+Liquid("Ficus_Infusion")
+{
+	Components("Water", "Ficus_leaf") // Liquid, Item
+	Fat(0.0)
+	Carbohydrates(0.0)
+	Proteins(0.0)
+	Water(100.0)
+	SanityChange(0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, -3)
+	DrinkEffect("Fever", 1.0, 2.0, 5)
+}
+Liquid("Molineria_Infusion")
+{
+	Components("Water", "Molineria_leaf") // Liquid, Item
+	Water(100.0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 3)
+}
+Liquid("QAInfusion") // Brakuje Na Decaya - do przemyslenia
+{
+	Components("Water", "Quassia_Amara_flowers")
+	Water(100.0)
+	DrinkEffect("Fever", 1.0, 2.0, -15)
+}
+Liquid("Plant_lilly_Infusion")
+{
+	Components("Water", "Plantain_lily_leaf")
+	Water(100.0)
+	PoisonDebuff(4)
+}
+Liquid("Lily_flower_Infusion")
+{
+	Components("Water", "lily_flower")
+	Water(100.0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, -5)
+}
+Liquid("Honeycomb_Infusion")
+{
+	Components("Water", "Honeycomb")
+	Carbohydrates(20.0)
+	SanityChange(5)
+	Water(100.0)
+}
+Liquid("Palm_heart_Infusion")
+{
+	Components("Water", "Palm_heart")
+	Carbohydrates(40.0)
+	SanityChange(5)
+	Energy(10.0)
+	Water(100.0)
+}
+Liquid("Cocona_fruit_Infusion")
+{
+	Components("Water", "Cocona_fruit")
+	Carbohydrates(5.0)
+	Water(100.0)
+}
+Liquid("monstera_deliciosa_flower_Infusion")
+{
+	Components("Water", "monstera_deliciosa_flower")
+	Fat(0.0)
+	Carbohydrates(0.0)
+	Proteins(0.0)
+	Water(100.0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 3)
+}
+Liquid("monstera_deliciosa_fruit_Infusion")
+{
+	Components("Water", "monstera_deliciosa_fruit")
+	Carbohydrates(25.0)
+	Proteins(15.0)
+	SanityChange(5)
+	Energy(15.0)
+	Water(100.0)
+}
+Liquid("Tabaco_Infusion")
+{
+	Components("Water", "Tobacco_Leaf")
+	Fat(0.0)
+	Carbohydrates(0.0)
+	Proteins(0.0)
+	Water(100.0)
+	PoisonDebuff(5)
+}
+Liquid("Maggots_Soup")
+{
+	Components("Water", "Maggots")
+	Proteins(8.0)
+	SanityChange(-2)
+	Energy(5.0)
+	Water(100.0)
+}
+Liquid("Larva_Soup")
+{
+	Components("Water", "Larva")
+	Proteins(8.0)
+	SanityChange(-2)
+	Energy(5.0)
+	Water(100.0)
+}
+Liquid("BoneInfusion")
+{
+	Components("Water", "Bone")
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, -3)
+	DrinkEffect("Fever", 1.0, 2.0, -3)
+	Fat(10.0)
+	Proteins(15.0)
+	Water(100.0)
+	Energy(5.0)
+}
+Liquid("Casava_Soup")
+{
+	Components("Water", "Cassava_bulb")
+	Carbohydrates(50.0)
+	Energy(10.0)
+	SanityChange(8)
+	Water(100.0)
+}
+Liquid("Malaga_Soup")
+{
+	Components("Water", "Malanga_bulb")
+	Carbohydrates(40.0)
+	SanityChange(8)
+	Energy(10.0)
+	Water(100.0)
+}
+Liquid("copa_hongo_Soup")
+{
+	Components("Water", "copa_hongo")
+	Water(100.0)
+	Carbohydrates(2.0)
+	DrinkEffect("ParasiteSickness", 1.0, 0.0, -1)
+}
+Liquid("Gerronema_retiarium_Soup")
+{
+	Components("Water", "Gerronema_retiarium")
+	Carbohydrates(2.0)
+	Water(100.0)
+}
+Liquid("Gerronema_viridilucens_Soup")
+{
+	Components("Water", "Gerronema_viridilucens")
+	Carbohydrates(2.0)
+	Water(100.0)
+}
+Liquid("indigo_blue_Soup")
+{
+	Components("Water", "indigo_blue_leptonia")
+	Carbohydrates(2.0)
+	Energy(15.0)
+	Water(100.0)
+	DrinkEffect("ParasiteSickness", 1.0, 0.0, -2)
+}
+Liquid("Phallus_Soup")
+{
+	Components("Water", "Phallus_indusiatus")
+	Carbohydrates(15.0)
+	SanityChange(5)
+	Water(100.0)
+}
+Liquid("Fuel")
+{
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 10)
+}
+Liquid("Default_Infusion")
+{
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 3)
+}
+Liquid("Piranha_Soup")
+{
+	Components("Water", "Pirahnia_Meat_Raw")
+	Proteins(24.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Bass_Soup")
+{
+	Components("Water", "Peacock_Bass_Meat_Raw")
+	Proteins(28.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Arowana_Soup")
+{
+	Components("Water", "Arowana_Meat_Raw")
+	Proteins(33.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Stingray_Soup")
+{
+	Components("Water", "Stingray_Meat_Raw")
+	Proteins(30.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Rattlesnake_Soup")
+{
+	Components("Water", "Rattlesnake_Meat_Raw")
+	Proteins(15.0)
+	Energy(5.0)
+	Water(100.0)
+}
+Liquid("Macaw_Soup")
+{
+	Components("Water", "Macaw_Meat_Raw")
+	Proteins(13.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Cane_Toad_Soup")
+{
+	Components("Water", "Cane_Toad_Meat_Raw")
+	Proteins(16.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Mouse_Soup")
+{
+	Components("Water", "Mouse_Meat_Raw")
+	Proteins(12.0)
+	Energy(5.0)
+	Water(100.0)
+}
+Liquid("Toucan_Soup")
+{
+	Components("Water", "Toucan_Meat_Raw")
+	Proteins(10.0)
+	Fat(5.0)
+	Carbohydrates(5.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Poison_Dart_Frog_Soup")
+{
+	Components("Water", "Poison_Dart_Frog_Meat_Raw")
+	Proteins(10.0)
+	Fat(5.0)
+	Carbohydrates(5.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 20)
+}
+Liquid("Green_Iguana_Soup")
+{
+	Components("Water", "Green_Iguana_Meat_Raw")
+	Proteins(30.0)
+	Fat(5.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Peccary_Soup")
+{
+	Components("Water", "Peccary_Meat_Raw")
+	Proteins(65.0)
+	Fat(15.0)
+	SanityChange(5)
+	Energy(15.0)
+	Water(100.0)
+}
+Liquid("Capybara_Soup")
+{
+	Components("Water", "Capybara_Meat_Raw")
+	Proteins(72.0)
+	Fat(22.0)
+	SanityChange(5)
+	Energy(15.0)
+	Water(100.0)
+}
+Liquid("Tapir_Soup")
+{
+	Components("Water", "Tapir_Meat_Raw")
+	Proteins(90.0)
+	Fat(26.0)
+	SanityChange(5)
+	Energy(15.0)
+	Water(100.0)
+}
+Liquid("Mud_Turtle_Soup")
+{
+	Components("Water", "Mud_Turtle_Meat_Raw")
+	Fat(52.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Red_Footed_Tortoise_Soup")
+{
+	Components("Water", "Red_Footed_Tortoise_Meat_Raw")
+	Proteins(10.0)
+	Fat(5.0)
+	Carbohydrates(5.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Armadilo_Soup")
+{
+	Components("Water", "Armadilo_Meat_Raw")
+	Proteins(50.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Human_Soup")
+{
+	Components("Water", "Human_Meat_Raw")
+	Proteins(10.0)
+	Fat(5.0)
+	Carbohydrates(5.0)
+	SanityChange(-45)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Puma_Soup")
+{
+	Components("Water", "Puma_Meat_Raw")
+	Proteins(40.0)
+	Fat(5.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Jaguar_Soup")
+{
+	Components("Water", "Jaguar_Meat_Raw")
+	Proteins(40.0)
+	Fat(5.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Caiman_Lizard_Soup")
+{
+	Components("Water", "Caiman_Lizard_Meat_Raw")
+	Proteins(24.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Armadillo_Three_Banded_Soup")
+{
+	Components("Water", "Armadillo_Three_Banded_Meat_Raw")
+	Proteins(22.0)
+	SanityChange(5)
+	Energy(12.0)
+	Water(100.0)
+}
+Liquid("Guanabana_Fruit_Infusion")
+{
+	Components("Water", "Guanabana_Fruit") // Liquid, Item
+	Fat(0.0)
+	Carbohydrates(15.0)
+	Proteins(0.0)
+	Water(100.0)
+	SanityChange(0)
+	DrinkEffect("ParasiteSickness", 1.0, 0.0, -2)
+}
+Liquid("Albahaca_Leaf_Infusion")
+{
+	Components("Water", "Albahaca_Leaf") // Liquid, Item
+	Fat(0.0)
+	Carbohydrates(0.0)
+	Proteins(0.0)
+	Water(100.0)
+	SanityChange(0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, -3)
+}
+Liquid("Albahaca_Flower_Infusion")
+{
+	Components("Water", "Albahaca_Flower") // Liquid, Item
+	Water(100.0)
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 1)
+}
+Liquid("Crab_Soup")
+{
+	Components("Water", "Crab_Body") // Liquid, Item
+	Proteins(5.0)
+	Water(100.0)
+	Energy(1.0)
+}
+Liquid("Snail_Soup")
+{
+	Components("Water", "Snail_Raw") // Liquid, Item
+	Proteins(4.0)
+	Water(100.0)
+	Energy(1.0)
+}
+Liquid("DiscusFish_Soup")
+{
+	Components("Water", "DiscusFish_Body") // Liquid, Item
+	Proteins(5.0)
+	Water(100.0)
+	Energy(1.0)
+}
+Liquid("Angelfish_Soup")
+{
+	Components("Water", "AngelFish_Body") // Liquid, Item
+	Proteins(5.0)
+	Water(100.0)
+	Energy(1.0)
+}
+Liquid("Prawn_Soup")
+{
+	Components("Water", "Shrimp_Raw") // Liquid, Item
+	Proteins(7.0)
+	Water(100.0)
+	Energy(2.0)
+}
+Liquid("Caiman_Soup")
+{
+	Components("Water", "Caiman_Meat_Raw") // Liquid, Item
+	Proteins(45.0)
+	Water(100.0)
+	Energy(10.0)
+}
+Liquid("geoglossum_Soup")
+{
+	Components("Water", "geoglossum_viride")
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 3)
+	Carbohydrates(3.0)
+	Water(100.0)
+}
+Liquid("geoglossum_Drayed_Soup")
+{
+	Components("Water", "geoglossum_viride_Dryed")
+	Carbohydrates(2.0)
+	Energy(2.0)
+	Water(100.0)
+}
+Liquid("marasmius_Soup")
+{
+	Components("Water", "marasmius_haematocephalus")
+	Carbohydrates(5.0)
+	SanityChange(5)
+	Energy(5.0)
+	Water(100.0)
+	DrinkEffect("Fever", 1.0, 2.0, -1)
+}
+Liquid("marasmius_Drayed_Soup")
+{
+	Components("Water", "marasmius_haematocephalus_Dryed")
+	Carbohydrates(3.0)
+	SanityChange(5)
+	Energy(5.0)
+	Water(100.0)
+	DrinkEffect("Fever", 1.0, 2.0, -1)
+}
+Liquid("Tea")
+{
+	Components("Water", "TeaBag")
+	SanityChange(5)
+	Energy(8.0)
+	Water(100.0)
+}
+Liquid("Coffee")
+{
+	Components("Water", "coffee_instant")
+	SanityChange(5)
+	Energy(15.0)
+	Water(100.0)
+}
+Liquid("Banisteriopsis_Infusion")
+{
+	Components("Water", "banisteriopsis_scraps")
+	SanityChange(-10)
+	Water(100.0)
+}
+Liquid("Psychotria_Infusion")
+{
+	Components("Water", "psychotria_viridis")
+	DrinkEffect("FoodPoisoning", 1.0, 2.0, 4)
+	SanityChange(-10)
+	Water(100.0)
+}
+Liquid("PoisonedWater")
+{	
+	Components("None", "None")
+	Water(100.0)
+	CookingResult("PoisonedWater")
+	DrinkEffect("FoodPoisoning", 1.0, 1.0, 10)
+	SanityChange(-15)
+	Disgusting(1)
+	Energy(-15)
+}
+Liquid("GiantAnteater_Soup")
+{
+	Components("Water", "GiantAnteater_Meat_Raw")
+	Proteins(50.0)
+	Fat(14.0)
+	SanityChange(5)
+	Energy(15.0)
+	Water(100.0)
+}

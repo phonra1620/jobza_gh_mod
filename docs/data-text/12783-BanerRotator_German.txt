@@ -1,0 +1,22 @@
+Baner()
+{
+	Title("news_SR_BigTrailer_title")
+	Text("news_SR_BigTrailer_text")
+	Graphic("StarRupture-KV_1080x1080_ENG")
+	
+	Opened_title("news_SR_BigTrailer_title")
+	Opened_text("news_SR_BigTrailer_openedText")
+	Opened_graphic("StarRupture-KV_1080x1080_ENG")
+	Url("https://store.steampowered.com/app/1631270/StarRupture/?utm_source=GreenHell-InGameNews")
+}
+Baner()
+{
+	Title("News_deco_01")
+	Text("News_deco_02")
+	Graphic("GH-Decorations-KeyArt-1080x1080")
+	
+	Opened_title("News_deco_01")
+	Opened_text("News_deco_03")
+	Opened_graphic("GH-Decorations-KeyArt-1080x1080")
+	Url("https://store.steampowered.com/news/app/815370/view/4247544173385383199")
+}

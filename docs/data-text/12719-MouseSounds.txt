@@ -1,0 +1,2 @@
+Idle("mouse_idle_01", "mouse_idle_02", "mouse_idle_03")
+Panic("mouse_idle_01", "mouse_idle_02", "mouse_idle_03")

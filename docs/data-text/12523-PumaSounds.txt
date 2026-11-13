@@ -1,0 +1,6 @@
+PostAttack("Puma_PostAttack_01","Puma_PostAttack_02","Puma_PostAttack_03")
+Idle("Puma_Idle_01")
+Hit("Puma_Hit_01","Puma_Hit_02")
+Panic("Puma_Panic_01","Puma_Panic_02")
+Death("Puma_Death_01","Puma_Death_02")
+Lurkin("Puma_Lurking_loop")

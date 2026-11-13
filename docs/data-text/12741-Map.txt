@@ -1,0 +1,480 @@
+Node("Pickup_Map_A", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_A", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Map_A", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map00", False, 3)
+	Element("SetBoolVariable:HaveMap_A:true", False, 4)
+}
+Node("Pickup_Map_B", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_B", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Map_B", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map01", False, 3)
+	Element("SetBoolVariable:HaveMap_B:true", False, 4)
+}
+Node("Pickup_Map_C", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_C", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Map_C", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map02", False, 3)
+	Element("SetBoolVariable:HaveMap_C:true", False, 4)
+}
+
+// #################   MAP A  #################
+// *** LOCATIONS_MAP_A ***
+// ----- LOCATION - TRIBE_VILLAGE -----
+Node("MAP_Tribe_Village", True, -1337.0000, 60.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Tribe_Village_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_TribeVillage", False, 1)
+}
+// ----- LOCATION - PAINTENTROCK -----
+Node("MAP_PaintedRock", True, -1125.0000, -114.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PaintedRock_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_PaintedRock", False, 1)
+}
+// ----- LOCATION - PAINTENTROCK02 -----
+Node("MAP_PaintedRock02", True, -1125.0000, -114.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PaintedRock02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_PaintedRock02", False, 1)
+}
+// ----- LOCATION - CARTEL -----
+Node("MAP_Cartel", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cartel_Lab_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cartel", False, 1)
+}
+// ----- LOCATION - ELEVATOR -----
+Node("MAP_Elevator", True, -1125.0000, -114.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Elevator_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Elevator", False, 1)
+}
+
+// ----- LOCATION - GODLMINE -----
+Node("MAP_Goldmine", True, -1125.0000, -114.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Gold_Mine_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_GoldMine", False, 1)
+}
+// ----- LOCATION - JEEP_WRECK -----
+Node("MAP_Jeep_Wreck", True, -1339.0000, -114.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Jeep_Wreck_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Jeep", False, 1)
+}
+// ----- LOCATION - RIVER_HARBOR -----
+Node("MAP_River_Harbor", True, -1130.0000, 231.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:River_Harbor_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Harbor", False, 1)
+}
+// ----- LOCATION - PLANE -----
+Node("MAP_Plane", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Plane_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_CrashedPlane", False, 1)
+}
+// ----- LOCATION - CAMP_IN_CAVE -----
+Node("MAP_Camp_in_cave", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Camp_in_cave_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_CampInCave", False, 1)
+}
+// ----- LOCATION - STONERING -----
+Node("MAP_StoneRing_01", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:StoneRing_01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_StoneRing_01", False, 1)
+}
+// ----- LOCATION - BROKEN_BRIDGE -----
+Node("MAP_Broken_Bridge", True, -1337.0000, -23.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Old_Bridge_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Bridge_01", False, 1)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 2)
+	Element("UnlockMapElement:MP_Bridge_02", False, 3)
+}
+
+Node("MAP_Broken_Bridge_B", True, -1337.0000, -23.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Old_Bridge_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Bridge_02", False, 1)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 2)
+	Element("UnlockMapElement:MP_Bridge", False, 3)
+}
+
+// ----- LOCATION - EVIL_VILLAGE_S01 -----
+Node("MAP_Evil_Village_S01", True, -1344.0000, 324.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Evil_Village_S01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_EvilVillage01", False, 1)
+}
+// ----- LOCATION - EVIL_VILLAVE_S10 -----
+Node("MAP_Evil_Village_S10", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Evil_Village_S10_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_EvilVillage10", False, 1)
+}
+// *** CLIMBING_MAP_A ***
+// ----- CLIMBING - GPH_A01S07_TO_STONERING -----
+Node("MAP_GHP_A01S07_to_StoneRing", True, -1340.0000, 243.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GHP_A01S07_to_StoneRing_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_GHP_A01S07_to_StoneRing", False, 1)
+}
+// ----- CLIMBING - GHP_A01S07_TO_CARTEL -----
+Node("MAP_GHP_A01S07_to_Cartel", True, -1336.0000, 152.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GHP_A01S07_to_Cartel_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_GHP_A01S07_to_Cartel", False, 1)
+}
+// ----- CLIMBING - GHP_A01S07_TO_CRASHEDPLANE -----
+Node("MAP_GHP_A01S07_to_CrashedPlane", True, -1336.0000, 152.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GHP_A01S07_to_CrashedPlane_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_GHP_A01S07_to_CrashedPlane", False, 1)
+}
+// *** CAVES_MAP_A ***
+// ----- CAVE - CAVE01_A01S01 -----
+Node("MAP_Cave01_A01S01", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S01", False, 1)
+}
+// ----- CAVE - CAVE02_A01S01 -----
+Node("MAP_Cave02_A01S01", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A01S01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A01S01", False, 1)
+}
+// ----- CAVE - CAVE03_A01S01 -----
+Node("MAP_Cave03_A01S01", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A01S01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A01S01", False, 1)
+}
+// ----- CAVE - CAVE01_A01S02 -----
+Node("MAP_Cave01_A01S02", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S02", False, 1)
+}
+// ----- CAVE - CAVE02_A01S02 -----
+Node("MAP_Cave02_A01S02", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A01S02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A01S02", False, 1)
+}
+// ----- CAVE - CAVE01_A01S04 -----
+Node("MAP_Cave01_A01S04", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S04_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S04", False, 1)
+}
+// ----- CAVE - CAVE01_A01S06 -----
+Node("MAP_Cave01_A01S06", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S06_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S06", False, 1)
+}
+// ----- CAVE - CAVE02_A01S06 -----
+Node("MAP_Cave02_A01S06", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A01S06_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A01S06", False, 1)
+}
+// ----- CAVE - CAVE01_A01S07 -----
+Node("MAP_Cave01_A01S07", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S07_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S07", False, 1)
+}
+// ----- CAVE - CAVE02_A01S07 -----
+Node("MAP_Cave02_A01S07", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A01S07_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A01S07", False, 1)
+}
+// ----- CAVE - CAVE03_A01S07 -----
+Node("MAP_Cave03_A01S07", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A01S07_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A01S07", False, 1)
+}
+// ----- CAVE - CAVE04_A01S07 -----
+Node("MAP_Cave04_A01S07", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A01S07_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A01S07", False, 1)
+}
+// ----- CAVE - CAVE01_A01S08 -----
+Node("MAP_Cave01_A01S08", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S08_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S08", False, 1)
+}
+// ----- CAVE - CAVE02_A01S08 -----
+Node("MAP_Cave02_A01S08", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A01S08_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A01S08", False, 1)
+}
+// ----- CAVE - CAVE01_A01S09 -----
+Node("MAP_Cave01_A01S09", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S09_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S09", False, 1)
+}
+// #################   MAP B  #####################################
+// *** LOCATIONS_MAP_B ***
+// ----- LOCATION - EVIL_VILLAGE_S11 -----
+Node("MAP_Evil_Village_S11", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Evil_Village_S11_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_EvilVillage11", False, 1)
+}
+// ----- LOCATION - AIRPORT -----
+Node("MAP_Airport", True, -908.0000, 150.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Airstrip_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Airport", False, 1)
+}
+// ----- LOCATION - REFUGES -----
+Node("MAP_Refuges", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Refuges_camp_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_RefugesCamp", False, 1)
+}
+// ----- LOCATION - WHA CAVE CAMP -----
+Node("MAP_WHA_cave_camp", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:WHA_cave_camp_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_WHA_cave_camp", False, 1)
+}
+// *** CLIMBING_MAP_B ***
+// ----- CLIMBING - GHP_A01S11_TO_CARTEL -----
+Node("MAP_GHP_A01S11", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GHP_A01S11_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_GHP_A01S11", False, 1)
+}
+// ----- CLIMBING - GHP_A01S12_TO_AIRPORT -----
+Node("MAP_GHP_A01S12_to_Airport", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GHP_A01S12_to_Airport01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_GHP_A01S12_to_Airport", False, 1)
+}
+// ----- CLIMBING - GHP_A01S12_CAVES -----
+Node("MAP_GHP_A01S12_to_Caves", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GHP_A01S12_Caves_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_GHP_A01S12_to_Caves", False, 1)
+}
+// ----- CLIMBING - RLT_A02S01 -----
+Node("MAP_RLT_A02S01", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:RLT_A02S01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_RLT_A02S01", False, 1)
+}
+// ----- CLIMBING - RLT_A02S02 -----
+Node("MAP_RLT_A02S02", True, -693.0000, -115.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:RLT_A02S02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_RLT_A02S02", False, 1)
+}
+// *** CAVES_MAP_B ***
+// ----- CAVE - CAVE01_A01S12 -----
+Node("MAP_Cave01_A01S12", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A01S12_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A01S12", False, 1)
+}
+// ----- CAVE - CAVE02_A01S12 -----
+Node("MAP_Cave02_A01S12", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A01S12_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A01S12", False, 1)
+}
+// ----- CAVE - CAVE03_A01S12 -----
+Node("MAP_Cave03_A01S12", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave03_A01S12_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave03_A01S12", False, 1)
+}
+// ----- CAVE - CAVE04_A01S12 -----
+Node("MAP_Cave04_A01S12", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave04_A01S12_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave04_A01S12", False, 1)
+}
+// ----- CAVE - CAVE05_A01S12 -----
+Node("MAP_Cave05_A01S12", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave05_A01S12_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave05_A01S12", False, 1)
+}
+// ----- CAVE - CAVE01_A02S02 -----
+Node("MAP_Cave01_A02S02", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A02S02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A02S02", False, 1)
+}
+// ----- CAVE - CAVE02_A02S02 -----
+Node("MAP_Cave02_A02S02", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A02S02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A02S02", False, 1)
+}
+
+// ----- LOCATION - ALVAREZCAVE -----
+Node("MAP_B_AlvarezCave", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:AlvarezCave_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_AlvarezCave_Map01", False, 1)
+}
+
+// ----- CLIMBING - EGHP_A03S01_TO_TUTORIAL -----
+Node("MAP_B_EGHP_A03S01_to_Tutorial_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:EGHP_A03S01_to_Tutorial_01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 5)
+	Element("UnlockMapElement:MP_EGHP_A03S01_to_Tutorial_01_Map01", False, 1)
+}
+
+// #################   MAP C  #####################################
+// *** LOCATIONS_MAP_C ***
+// ----- LOCATION - WHA_CAMP -----
+Node("MAP_WHA_Camp", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:WHA_Camp_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_WHA", False, 1)
+}
+// ----- LOCATION - ALVAREZCAVE -----
+Node("MAP_AlvarezCave", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:AlvarezCave_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_AlvarezCave", False, 1)
+}
+// ----- LOCATION - STONERING_02 -----
+Node("MAP_StoneRing_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:StoneRing_02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_StoneRing_02", False, 1)
+}
+// ----- LOCATION - FINALVILLAGE -----
+Node("MAP_FinalVillage", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:EndVillage_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_FinalVillage", False, 1)
+}
+// ----- LOCATION - TENT -----
+Node("MAP_Tent", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Tent_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_Tent", False, 1)
+}
+// *** CLIMBING_MAP_C ***
+// ----- CLIMBING - EGHP_A03S01_TO_TUTORIAL -----
+Node("MAP_EGHP_A03S01_to_Tutorial_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:EGHP_A03S01_to_Tutorial_01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_EGHP_A03S01_to_Tutorial_01", False, 1)
+}
+// ----- CLIMBING - EGHP_EGHP_A03S03_TO_REFUGEES -----
+Node("MAP_EGHP_A03S03_to_Refugees", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:EGHP_A03S03_to_Refugees_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_EGHP_A03S03_to_Refugees", False, 1)
+}
+// *** CAVES_MAP_C ***
+// ----- CAVE - CAVE01_A03S01 -----
+Node("MAP_Cave01_A03S01", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A03S01_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A03S01", False, 1)
+}
+// ----- CAVE - CAVE01_A03S02 -----
+Node("MAP_Cave01_A03S02", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A03S02_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A03S02", False, 1)
+}
+// ----- CAVE - CAVE01_A03S03 -----
+Node("MAP_Cave01_A03S03", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave01_A03S03_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_Cave01_A03S03", False, 1)
+}
+// ----- CAVE - CAVE02_A03S03 -----
+Node("MAP_Cave02_A03S03", True, -901.0000, 65.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cave02_A03S03_map_sensor", False, 0)
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 5)
+	Element("UnlockMapElement:MP_Cave02_A03S03", False, 1)
+}

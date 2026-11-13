@@ -1,0 +1,69 @@
+
+Anim("guard_walkaway")
+{
+	Event("AnimEnd", 0.99)
+	Sound("Gatekeeper_walkaway_", "Chatters\Gatekeeper", 0.11)
+}
+
+Anim("guard_alerted")
+{
+	Event("AnimEnd", 0.99)
+//	Sound("Gatekeeper_Idle_", "Chatters\Gatekeeper", 0.01)
+}
+
+Anim("guard_standing")
+{
+	Event("AnimEnd", 0.99)
+//	Sound("Gatekeeper_Idle_", "Chatters\Gatekeeper", 0.01)
+}
+
+Anim("guard_alerted_pushback_c")
+{
+	Event("PushBack", 0.3)
+	Event("PushBackEnd", 0.8)
+	Event("AnimEnd", 0.99)
+	Sound("Gatekeeper_pushback_", "Chatters/Gatekeeper", 0.11)
+}
+
+Anim("guard_standing_to_alerted")
+{
+	Event("AnimEnd", 0.99)
+	//Sound("Gatekeeper_walkaway_", "Chatters\Gatekeeper", 0.0)
+}
+
+Anim("guard_alerted_to_standing")
+{
+	Event("AnimEnd", 0.99)
+	//Sound("Gatekeeper_walkaway_", "Chatters\Gatekeeper", 0.0)
+}
+
+Anim("guard_walkaway_standing")
+{
+	Event("AnimEnd", 0.99)
+	//Sound("Gatekeeper_Idle_", "Chatters\Gatekeeper", 0.01)
+}
+
+Anim("guard_alerted_pointing")
+{
+	Event("AnimEnd", 0.99)
+	//Sound("Gatekeeper_point_", "Chatters\Gatekeeper", 0.11)
+}
+
+
+Anim("guard_alerted_show_direction")
+{
+	Event("AnimEnd", 0.99)
+	//Sound("Gatekeeper_point_", "Chatters\Gatekeeper", 0.11)
+}
+
+Anim("guard_alerted_say_what")
+{
+	Event("AnimEnd", 0.99)
+//	Sound("PVE_VillageGuard_Guard_", "Chatters\Gatekeeper", 0.11)
+}
+
+Anim("guard_alerted_say_no")
+{
+	Event("AnimEnd", 0.99)
+	Sound("Gatekeeper_after_pushback_", "Chatters\Gatekeeper", 0.01)
+}

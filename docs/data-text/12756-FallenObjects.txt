@@ -1,0 +1,38 @@
+//SourceObject(tag, fallen_object_prefab_name, quantity_min, quantity_max, time_to_generate_min, time_to_generate_max, min_gen_radius, max_gen_radius, no_respawn, chance, cooldown)
+
+SourceObject("giant_tree_01", 	"Stick", 			2, 5, 4.0, 10.0, false, 1.0,  20.0)
+SourceObject("giant_tree_01", 	"Small_Stick",			2, 5, 4.0, 10.0, false, 1.0,  20.0)
+
+// dlugie chude drzewo 	big_tree_06	 				 
+SourceObject("big_tree_06", 	"Stick", 				1, 1, 1.5, 3.0,  false, 0.15, 20.0)
+SourceObject("big_tree_06", 	"Small_Stick", 			1, 2, 1.5, 3.0,  false, 0.15, 20.0)
+
+// dlugie chude drzewo 	big_tree_07	 				 
+SourceObject("big_tree_07", 	"Stick", 				1, 1, 1.5, 3.0,  false, 0.15, 20.0)
+SourceObject("big_tree_07", 	"Small_Stick", 			1, 2, 1.5, 3.0,  false, 0.15, 20.0)
+
+
+// Duze wysokie drzewo  big_tree_05
+SourceObject("big_tree_05", 	"Small_Stick", 			1, 2, 4.0, 10.0, false, 1.0,  20.0)
+SourceObject("big_tree_05", 	"Stick", 				1, 2, 4.0, 10.0, false, 1.0,  20.0)
+
+// Duzy glaz
+SourceObject("big_stone", 		"Big_Stone", 			1, 3, 0.5, 4.0,  true,  0.7,  20.0)
+SourceObject("big_stone", 		"Stone", 				1, 3, 0.5, 2.0,  true,  1.0,  20.0)
+
+// Maly glaz
+SourceObject("small_stone", "Stone", 					1, 2, 0.5, 4.0,  true,  0.95, 20.0)
+
+
+// Wylaczone rzeczy, dla sprawdzenia czy przez to w coopie sie nie spawnuja
+// wysoka palma big_tree_01
+//SourceObject("big_tree_01", 	"Palm_Leaf", 			1, 1, 1.0, 3.0,  false, 0.25, 30.0)
+
+// przekrzywiona palma big_tree_02
+//SourceObject("big_tree_02", 	"Palm_Leaf", 			1, 1, 2.0, 5.0,  false, 0.25, 30.0)
+
+// mala palemka big_tree_03
+//SourceObject("big_tree_03", 	"Palm_Leaf", 			1, 1, 1.0, 3.0,  false, 0.15, 20.0)
+
+// Bananowa palemka big_tree_08
+//SourceObject("big_tree_08", 	"Banana_Leaf", 			1, 1, 1.0, 3.0,  false, 0.15, 20.0)

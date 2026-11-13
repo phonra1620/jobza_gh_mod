@@ -1,0 +1,119 @@
+Node("NotSOA_Aztec_Club_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsPve:false", False, 0)
+	Element("HaveItem:true:Aztec_Club", False, 1)
+	Element("UnlockCraftingItem:Aztec_Club", False, 2)
+	Element("UnlockItemInNotepad:Aztec_Club", False, 3)
+}
+
+Node("PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNodeCompleted:true:Mud_Mixer_Unlock", False, 0)
+	Element("UnlockItemInNotepad:pottery_table", False, 1)
+}
+
+Node("form_armor_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_armor", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("form_armor_stick_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_armor_stick", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("form_armor_bamboo_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_armor_bamboo", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("form_armor_bone_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_armor_bone", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("form_armor_metal_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_armor_metal", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("form_armor_metal_part_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_armor_metal_part", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("form_blade_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_blade", False, 0)
+	Element("UnlockItemInNotepad:form_blade", False, 1)
+}
+Node("form_axe_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_axe", False, 0)
+	Element("UnlockItemInNotepad:form_axe", False, 1)
+}
+Node("form_arrow_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_arrow", False, 0)
+	Element("UnlockItemInNotepad:form_arrow", False, 1)
+}
+Node("form_nail_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_nail", False, 0)
+	Element("UnlockItemInNotepad:form_nail", False, 1)
+}
+Node("form_nail_stinger_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ItemExist:true:form_nail_stinger", False, 0)
+	Element("UnlockItemInNotepad:form_nail", False, 1)
+}
+Node("clay_bidon_fresh_coconut_bidon_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Coconut_Bidon", False, 0)
+	Element("UnlockItemInNotepad:clay_bidon_fresh", False, 1)
+}
+Node("clay_bidon_fresh_bidon_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Bidon", False, 0)
+	Element("UnlockItemInNotepad:clay_bidon_fresh", False, 1)
+}
+Node("clay_bowl_small_fresh_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("UnlockItemInNotepadNoMsg:clay_bowl_small_fresh", False, 1)
+}
+Node("clay_bowl_big_fresh_PotteryTable_Unlock", True, -89.0000, 622.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("UnlockItemInNotepadNoMsg:clay_bowl_big_fresh", False, 1)
+}
+
+
+Node("form_blade_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Pottery:5", False, 0)
+	Element("UnlockItemInNotepad:form_blade", False, 1)
+}
+Node("form_axe_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Pottery:10", False, 0)
+	Element("UnlockItemInNotepad:form_axe", False, 1)
+}
+Node("form_arrow_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Pottery:15", False, 0)
+	Element("UnlockItemInNotepad:form_arrow", False, 1)
+}
+Node("form_armor_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Pottery:20", False, 0)
+	Element("UnlockItemInNotepad:form_armor", False, 1)
+}
+Node("clay_bidon_fresh_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SkillGreaterOrEqual:true:Pottery:22", False, 0)
+	Element("UnlockItemInNotepad:clay_bidon_fresh", False, 1)
+}
+// Node("form_nail_SkillUnlock", True, 2391.0000, 1616.5000, 200.0000, 75.0000, "NoParents", False)
+// {
+	// Element("SkillGreaterOrEqual:true:Pottery:18", False, 0)
+	// Element("UnlockItemInNotepad:form_nail", False, 1)
+// }

@@ -1,0 +1,29 @@
+Preset("Sitting01")
+{
+	IdleAnim("quest_a_idle")
+	AcceptAnim("quest_a_accept")
+	FinishAnim("quest_a_quit")
+	NoticeAnim("quest_a_notice_start")
+}
+
+Preset("Standing01")
+{
+	IdleAnim("quest_b_idle")
+	AcceptAnim("quest_b_accept")
+	FinishAnim("quest_b_quit")
+
+}
+Preset("Standing_Stick01")
+{
+	IdleAnim("quest_c_idle")
+	AcceptAnim("quest_c_accept")
+	FinishAnim("quest_c_quit")
+
+}
+Preset("Standing_Bow01")
+{
+	IdleAnim("quest_d_idle")
+	AcceptAnim("quest_d_accept")
+	FinishAnim("quest_d_quit")
+
+}

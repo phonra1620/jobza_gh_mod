@@ -1,0 +1,7 @@
+State("Idle", "crab_idle", 0.3333, 1)
+State("Die", "crab_death", 0.3333, 0)
+State("Run", "crab_run_right", 0.3333, 1)
+State("Walk", "crab_run_right", 0.3333, 1)
+State("HitReaction", "crab_hitreaction", 0.3333, 0)
+State("TrapBlock", "crab_catch", 1.0000, 1)
+State("TrapKill", "crab_catch", 1.0000, 1)

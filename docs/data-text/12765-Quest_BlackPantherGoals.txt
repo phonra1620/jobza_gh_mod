@@ -1,0 +1,23 @@
+Goal("Death")
+Goal("PunchBack", 0.5)
+Goal("ReactOnHit")
+
+//Goal("JumpBack", 0.8)
+
+//Goal("MoveAwayFromEnemy")
+
+//Goal("Strafe", 0.2)
+Goal("PostAttack")
+
+Goal("Attack")
+
+Goal("MoveToAttractor")
+Goal("MoveToEnemy")
+
+Goal("CantReachEnemy")
+
+Goal("ReturnToSpawner")
+
+Goal("Loiter", 0.4)
+//Goal("Eat", 0.2)
+Goal("Idle")

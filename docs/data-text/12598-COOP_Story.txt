@@ -1,0 +1,671 @@
+
+Node("Survival", True, 158.0000, 138.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DeleteAllInventoryItems", False, 0)
+	Element("CompleteAllObjectives", False, 1)
+	Element("SetTutorial:false", False, 2)
+	Element("UnlockKnownInjury:SmallWoundAbrassion", False, 3)
+	Element("UnlockPlantInNotepad:Molineria_leaf", False, 4)
+	Element("IsDreamFadeOut:false", False, 5)
+	Element("SetBoolVariable:IsTutorialFinished:true", False, 6)
+	Element("Teleport:WakeUp_Morning_Spawn:false", False, 7)
+	Element("DreamFadeIn:0.2", False, 8)
+}
+Node("Story", True, 158.0000, 138.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("PlayerSetLookAtObject:null", False, 1)
+	Element("HealPlayer", False, 2)
+	Element("DeleteAllInventoryItems", False, 3)
+	Element("PlayerReplaceMaterial:Hands:Hand", False, 4)
+	Element("UnlockNotepad", False, 5)
+	Element("UnlockWatch", False, 6)
+	Element("UnblockInspection", False, 7)
+	Element("UnblockSleeping", False, 8)
+	Element("UnblockRun", False, 9)
+	Element("PlayerUnblockFistFight", False, 10)
+	Element("UnblockParametersLoss", False, 11)
+	Element("UnblockRain", False, 12)
+	Element("UnblockGettingDirty", False, 13)
+	Element("StopDialog", False, 14)
+	Element("HideAllHints", False, 15)
+	Element("StartDayTimeProgress", False, 16)
+	Element("SetDayTime:08:00", False, 17)
+	Element("ResetWatchDate", False, 18)
+	Element("UnblockBackpack", False, 19)
+	Element("UnblockHUDWheel", False, 20)
+	Element("PlayerResetBlockMoves", False, 21)
+	Element("PlayerResetBlockRotation", False, 22)
+	Element("EnablePlayerCollisions", False, 23)
+	Element("ResetInjuries", False, 24)
+	Element("DisableObject:Bamboo_BridgeGhost", False, 25)
+	Element("DisableObject:suspension_bridge", False, 26)
+	Element("EnableObject:suspension_bridge_broken", False, 27)
+	Element("EnableObject:hero_tent_ruined", False, 28)
+	Element("EnableObject:GrappHookPlace_A03S02_from_Tutorial", False, 29)
+	Element("DisableObject:Tutorial_story_log", False, 30)
+	Element("EnableObject:Tutorial_story_log_show", False, 31)
+	Element("DisableObject:Survi_AfterDream2_LogToPass1", False, 41)
+	Element("DisableObject:Survi_AfterDream2_LogToPass2", False, 42)
+	Element("DisableObject:Goldmine_Kill_sensor", False, 32)
+	Element("DisableObject:WakeUp_WalkieTalkie", False, 33)
+	Element("DisableObject:QuestItem_Key", False, 34)
+	Element("EnableObject:COOP_QuestItem_Key", False, 35)
+	Element("PerformSave", False, 36)
+}
+Node("StoryIncluder", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:COOP_OBJ", False, 0)
+	Element("Include:COOP_MusicSensors", False, 1)
+	Element("Include:Unlocks", False, 2)
+	Element("Include:Map", False, 3)
+	Element("Include:GrapplingHookPlaces", False, 4)
+	Element("Include:COOP_LootBoxes", False, 5)
+	Element("Include:COOP_Elevator", False, 7)
+	Element("Include:COOP_WHA_Camp", False, 8)
+	Element("Include:PreDream01", False, 9)
+	Element("Include:Dream01", False, 10)
+	Element("Include:PreDream02", False, 11)
+	Element("Include:Dream02", False, 12)
+	Element("Include:PreDream03", False, 13)
+	Element("Include:Dream03", False, 14)
+	Element("Include:COOP_Dream04", False, 15)
+	Element("Include:BadEnding", False, 16)
+	Element("Include:GoodEnding", False, 17)
+	Element("Include:COOP_DialogUnlocker", False, 18)
+	Element("Include:COOP_WaitProgress", False, 19)
+	Element("Include:COOP_Cauldrons", False, 20)
+}
+Node("After_WakeUp", True, 156.0000, 337.0000, 200.0000, 75.0000, "Survival", False)
+{
+	Element("SetBoolVariable:AfterWakeUp:true", False, 0)
+}
+Node("Leaving_StartingArea_A", True, 156.0000, 337.0000, 200.0000, 75.0000, "After_WakeUp", False)
+{
+	Element("IsTabActive:true:StoryTab:-1", False, 0)
+	Element("SetBoolVariable:LeaveStartingArea:true", False, 1)
+}
+Node("Leaving_StartingArea_B", True, 156.0000, 337.0000, 200.0000, 75.0000, "After_WakeUp", False)
+{
+	Element("PlayerIsInSensor:true:LeavingStartArea_Sensor", False, 0)
+	Element("PlayerIsInSensor:false:LeavingStartArea_Sensor", False, 1)
+	Element("SetBoolVariable:LeaveStartingArea:true", False, 2)
+}
+Node("FPP_Sector7_InVillage", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:07TribeVillage_OBJ_Sensor", False, 0)
+	Element("SetBoolVariable:OBJ_VillageEnter:true", False, 1)
+}
+Node("FPP_Backpack", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:burned_backpack_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_Backpack_Open:true", False, 1)
+	Element("StartDialog:map_Player_01", False, 2)
+	Element("IsDialogPlaying:false:map_Player_01", False, 3)
+	Element("StartDialog:map_Player_02", False, 4)
+}
+Node("TPP_Backpack", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Backpack_Open", False, 0)
+	Element("DisableObject:burned_backpack_Trigger", False, 1)
+	Element("AddStoryEvent:Notebook_Village07", False, 2)
+	Element("DisableObject:burned_backpack_Closed", False, 3)
+	Element("EnableObject:burned_backpack_Open", False, 4)
+	Element("PlayAudioSource:burned_backpack_Sound", False, 5)
+	Element("EnableComponent:QuestItem_Map_A:Item", False, 6)
+}
+
+Node("Backpack_Part2", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 0)
+	Element("EnableComponent:Collectable_TribeCamp_Book1:ReadableItem", False, 1)
+	Element("WasReadedAndOff:true:Collectable_TribeCamp_Book1", False, 2)
+	Element("SetBoolVariable:CanMakeAyuhaska:true", False, 3)
+}
+Node("FPP_Check_NewMap", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveMap_A", False, 0)
+	Element("ShowHint:LookatMap:0", False, 1)
+	Element("IsLookingAtMap:true", False, 2)
+	Element("HideHint:LookatMap", False, 3)
+	Element("DeactivateScenarioNode:TPP_Check_NewMap", False, 4)
+	Element("SetBoolVariable:FPP_LookedAtMap:true", False, 5)
+	Element("IsBoolVariableTrue:false:IsDream_01Finished", False, 6)
+	Element("StartDialog:map_Player_03", False, 7)
+}
+Node("TPP_Check_NewMap", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_LookedAtMap", False, 0)
+	Element("DeactivateScenarioNode:FPP_Check_NewMap", False, 1)
+	Element("HideHint:LookatMap", False, 2)
+}
+Node("FPP_WasHere_S07GrabHook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:WasHere_S07Grabhook_lookat", False, 0)
+	Element("DisableObject:WasHere_S07Grabhook_lookat", False, 1)
+	Element("IsBoolVariableTrue:false:UnlockGrappHook", False, 2)
+	Element("SetBoolVariable:WasHere_S07GrabHook:true", False, 3)
+	Element("Wait:1", False, 4)
+	Element("StartDialogIfNonPlaying:S07Grabhook_lookat", False, 5)
+}
+Node("FPP_AT_Rock", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:WasHere_PaintedRook_lookat", False, 0)
+	Element("SetBoolVariable:FPP_LookedAtRock:true", False, 1)
+}
+Node("FPP_Pre_Dream01", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Ayuhasca_cauldron_Dream01_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_PreDream1:true", False, 1)
+	Element("Wait:0.3", False, 2)
+	Element("EnableObject:Dream_banisteriopsis_scraps", False, 3)
+	Element("AttachObjectToPlayersBone:Dream_banisteriopsis_scraps:LH_holder", False, 4)
+	Element("PlayAnimation:Player:Ayuhasca_Seasoning", False, 5)
+	Element("Wait:1", False, 6)
+	Element("DisableObject:Dream_banisteriopsis_scraps", False, 7)
+}
+Node("Pre_Dream01", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_PreDream1", False, 0)
+	Element("SetBoolVariable:PlayerMechGameEnding:true", False, 1)
+	Element("BlockHUDWalkieTalkie", False, 2)
+	Element("PlayerBlockMoves", False, 3)
+	Element("PlayerBlockRotation", False, 4)
+	Element("DisableObject:Ayuhasca_cauldron_Dream01_Trigger", False, 5)
+	Element("PlayerHideWeapon", False, 6)
+	Element("Wait:0.3", False, 7)
+	Element("SetRackEndlessFire:Ayuhasca_Cauldron_Dream01_Rack", False, 8)
+	Element("DeactivateScenarioNode:Dream01_Cauldron_Rack", False, 9)
+	Element("CompleteStoryObjective:NB_OBJ_MakeAyuhaska", False, 10)
+	Element("SetBoolVariable:ShouldPreDream_01:true", False, 11)
+	Element("HideForPlayers:true", False, 12)
+	Element("SetHideProgress:0", False, 13)
+	Element("BlockDayTimeCoopSychro:true", False, 14)
+	Element("DestroyAllEnemies", False, 15)
+	Element("UnlockAchievement:ACH_AYAHUASKA", False, 16)
+
+}
+Node("Pre_AfterDream_01", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 0)
+	Element("UnblockHUDWalkieTalkie", False, 1)
+	//Element("Teleport:AfterDream_01_Spawn:false", False, 2)
+	Element("DisableObject:DreamPassageBlocker", False, 3)
+	Element("EnableObject:DreamPassageUnblocked", False, 4)
+	Element("SetHideProgress:100", False, 5)
+	Element("BlockDayTimeCoopSychro:false", False, 6)
+	Element("HideForPlayers:false", False, 7)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 8)
+	Element("SetBoolVariable:COOP_AfterDream_01:true", False, 9)
+}
+Node("FPP_Port", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Port_Destroyed_Boat", False, 0)
+	Element("SetBoolVariable:FPP_Port_Destroyed_Boat:true", False, 1)
+}
+Node("FPP_CrashedPlane", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CrashedPlane_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_CrashedPlane:true", False, 1)
+}
+Node("FPP_GoldMine_Story", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GoldMine_Story_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_GoldMine_Story_Sensor:true", False, 1)
+}
+Node("FPP_Bridge", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:BrokenBridge_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_Bridge:true", False, 1)
+}
+Node("FPP_StoneRing", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Find_StoneRing_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_StoneRing:true", False, 1)
+}
+Node("FPP_StoneAtStoneRing", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Dream2_RockObj_Sensor", False, 0)
+	Element("IsBoolVariableTrue:true:Has_KnownSpiritPassage", False, 1)
+	Element("StartDialogIfNonPlaying:StoneRing2_KnownAll", False, 2)
+	Element("IsDialogPlaying:false:StoneRing2_KnownAll", False, 3)
+	Element("SetBoolVariable:FPP_StoneAtStoneRing:true", False, 4)
+}
+Node("FPP_PLACEHOLDER_Pre_Dream02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Ayuhasca_cauldron_Dream02_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_PreDream2:true", False, 1)
+	Element("Wait:0.3", False, 2)
+	Element("EnableObject:Dream_banisteriopsis_scraps", False, 3)
+	Element("AttachObjectToPlayersBone:Dream_banisteriopsis_scraps:LH_holder", False, 4)
+	Element("PlayAnimation:Player:Ayuhasca_Seasoning", False, 5)
+	Element("Wait:1", False, 6)
+	Element("DisableObject:Dream_banisteriopsis_scraps", False, 7)
+}
+Node("TPP_PLACEHOLDER_Pre_Dream02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_PreDream2", False, 0)
+	Element("DisableObject:Ayuhasca_cauldron_Dream02_Trigger", False, 1)
+	Element("SetRackEndlessFire:Ayuhasca_Cauldron_Dream02_Rack", False, 2)
+	Element("BlockHUDWalkieTalkie", False, 3)
+	Element("PlayerHideWeapon", False, 4)
+	Element("PlayerBlockMoves", False, 5)
+	Element("PlayerBlockRotation", False, 6)
+	Element("DeactivateScenarioNode:Dream02_Cauldron_Rack", False, 7)
+	Element("DeactivateScenarioNode:AtStoneRing_OBJ_B", False, 8)
+	Element("Wait:0.3", False, 9)
+	Element("SetBoolVariable:ShouldPreDream_02:true", False, 10)
+	Element("UnlockAchievement:ACH_AYAHUASKA", False, 101)
+	Element("HideForPlayers:true", False, 11)
+	Element("SetHideProgress:0", False, 12)
+	Element("BlockDayTimeCoopSychro:true", False, 13)
+	Element("DisableObject:Dream2_Rock", False, 14)
+	Element("DisableObject:SensorDamage_Fall_Predream2", False, 15)
+}
+Node("After_Dream02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_02Finished", False, 0)
+	Element("EnableObject:AfterDream2_LogToPass1", False, 1)
+	Element("EnableObject:AfterDream2_LogToPass2", False, 2)
+	Element("PlayerRestoreWeapon", False, 3)
+	Element("UnblockHUDWalkieTalkie", False, 4)
+	Element("EnableObject:SensorDamage_Fall_Predream2", False, 5)
+	Element("SetHideProgress:100", False, 6)
+	Element("BlockDayTimeCoopSychro:false", False, 7)
+	Element("HideForPlayers:false", False, 8)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 9)
+	Element("DestroyAllEnemies", False, 10)
+}
+Node("FPP_RefugessCamp", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:RefugessCamp_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_RefugessCamp:true", False, 1)
+}
+Node("FPP_Airport_From_RadioTrigger", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Airport_Radio_NoAntena_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_AiportOffRadioTrigger:true", False, 1)
+	Element("Wait:1.0", False, 2)
+	Element("StartDialog:Nosignal_Player_01", False, 3)
+}
+Node("Airport_From_RadioTrigger", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_AiportOffRadioTrigger", False, 0)
+	Element("DeactivateScenarioNode:FPP_Airport_From_AntenaTrigger", False, 1)
+	Element("DeactivateScenarioNode:Airport_From_AntenaTrigger", False, 2)
+}
+Node("FPP_Airport_From_RadioTrigger_Part2", True, 156.0000, 337.0000, 200.0000, 75.0000, "Airport_From_RadioTrigger", False)
+{
+	Element("IsTriggered:true:AntenaPower_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_AiportOffRadioTrigger_Part2:true", False, 1)
+	Element("Wait:1.0", False, 2)
+	Element("StartDialog:radiofixed_Player_01", False, 3)
+}
+Node("Airport_From_RadioTrigger_Part2", True, 156.0000, 337.0000, 200.0000, 75.0000, "Airport_From_RadioTrigger", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_AiportOffRadioTrigger_Part2", False, 0)
+	Element("EnableObject:Airport_Radio_Trigger", False, 1)
+	Element("EnableObject:Airport_antena_cable_repair", False, 2)
+	Element("DisableObject:Airport_antena_cable_broken", False, 3)
+	Element("DisableObject:Airport_Radio_NoAntena_Trigger", False, 4)
+	Element("DisableObject:AntenaPower_Trigger", False, 5)
+}
+Node("FPP_Airport_From_AntenaTrigger", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:AntenaPower_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_AirportAntenaTigger:true", False, 1)
+	Element("Wait:1.0", False, 2)
+	Element("StartDialog:radiofixed_Player_01", False, 3)
+}
+Node("Airport_From_AntenaTrigger", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_AirportAntenaTigger", False, 0)
+	Element("DeactivateScenarioNode:FPP_Airport_From_RadioTrigger", False, 1)
+	Element("DeactivateScenarioNode:Airport_From_RadioTrigger", False, 2)
+	Element("DeactivateScenarioNode:Airport_From_RadioTrigger_Part2", False, 3)
+	Element("EnableObject:Airport_Radio_Trigger", False, 4)
+	Element("EnableObject:Airport_antena_cable_repair", False, 5)
+	Element("DisableObject:Airport_antena_cable_broken", False, 6)
+	Element("DisableObject:Airport_Radio_NoAntena_Trigger", False, 7)
+	Element("DisableObject:AntenaPower_Trigger", False, 8)
+}
+Node("FPP_GetToAirport_Sensor", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:AirPortMia_No_Radio", False, 0)
+	Element("SetBoolVariable:FPP_GetToAirport:true", False, 1)
+}
+Node("FPP_AirPort", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Airport_Radio_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_StartAiportCutscene:true", False, 1)
+}
+Node("AirPort", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_StartAiportCutscene", False, 0)
+	Element("SetBoolVariable:AirportCutscene:true", False, 100)
+	Element("HideForPlayers:true", False, 1)
+	Element("SetHideProgress:0", False, 2)
+	Element("DestroyAllEnemies", False, 3)
+	Element("BlockParametersLoss", False, 4)
+	Element("PlayMusic:airport_radio_music_talk_with_atc:false:0.7:0", False, 5)
+	Element("DisableObject:Airport_Radio_Trigger", False, 6)
+	Element("DisableObject:Airport_Collision_Desk", False, 7)
+	Element("DisablePlayerCollisions", False, 8)
+	Element("AnimationTriggerSetMoveSpeed:25.3", False, 9)
+	Element("SetBoolVariable:PlayerMechGameEnding:true", False, 10)
+	Element("PlayerSetLookAtObjectFactor:8.2", False, 11)
+	Element("PlayerHideWeapon", False, 12)
+	Element("Wait:0.1", False, 13)
+	Element("PlayerSetPositionObject:AirPort_Radio_ScenePlayerPos", False, 14)
+	Element("BlockBackpack", False, 15)
+	Element("LockNotepad", False, 16)
+	Element("HideMap", False, 55)
+	Element("HideNotepad", False, 56)
+	Element("Wait:1.0", False, 1311)
+	Element("BlockHUDWheel", False, 17)
+	Element("PlayerSetLookAtObject:Airport_Radio_LookAtObject", False, 18)
+	Element("Wait:0.1", False, 19)
+	Element("BlockWatch", False, 20)
+	Element("PlayAnimation:Player:AirPort_Radio_StartRadio", False, 21)
+	Element("Wait:3", False, 22)
+	Element("StartDialog:AirPort_Radio", False, 23)
+	Element("ScheduleMusic:airport_radio_music_talk_with_atc_external_loop:0:true", False, 24)
+	Element("Wait:2", False, 25)
+	Element("PlayerSetLookAtObject:null", False, 26)
+	Element("PlayerBlockRotation", False, 27)
+	Element("SetHideProgress:10", False, 28)
+	Element("IsBoolVariableTrue:true:KeyFirstFall", False, 29)
+	Element("PlayAnimation:COOP_QuestItem_Key:QuestShedKey_OnRadio_Fall_1", False, 30)
+	Element("IsBoolVariableTrue:true:KeySecondFall", False, 31)
+	Element("PlayAnimation:COOP_QuestItem_Key:QuestShedKey_OnRadio_Fall_2", False, 32)
+	Element("IsDialogPlaying:false:AirPort_Radio", False, 33)
+	Element("StopAllMusicsOnTrack:0:3.0", False, 34)
+	Element("SetHideProgress:50", False, 35)
+	Element("Wait:2", False, 36)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 37)
+	Element("UnblockWatch", False, 38)
+	Element("EnableObject:Airport_Collision_Desk", False, 39)
+	Element("AnimationTriggerResetMoveSpeed", False, 40)
+	Element("PlayerResetLookAtObjectFactor", False, 41)
+	Element("EnablePlayerCollisions", False, 42)
+	Element("PlayerUnblockRotation", False, 43)
+	Element("PlayerRestoreWeapon", False, 44)
+	Element("UnblockBackpack", False, 45)
+	Element("UnlockNotepad", False, 46)
+	Element("UnblockHUDWheel", False, 47)
+	Element("PlayerSetPositionObject:null", False, 48)
+	Element("Wait:2", False, 49)
+	Element("SetHideProgress:70", False, 50)
+}
+Node("AirPort_DidTalk", True, 156.0000, 337.0000, 200.0000, 75.0000, "AirPort", False)
+{
+	Element("IsBoolVariableTrue:true:Can_talkabout_Airport", False, 0)
+	Element("DeactivateScenarioNode:AirPort_DidNotTalk", False, 1)
+	Element("StartDialogWithWT:AirPortMia_airport_after_radio", False, 2)
+	Element("PlayMusic:airport_radio_music_mia_where_are_you:false:0.7:0", False, 3)
+	Element("IsDialogPlaying:false:AirPortMia_airport_after_radio", False, 4)
+	Element("ActivateScenarioNode:DialogAfterAirport", False, 5)
+}
+Node("AirPort_DidNotTalk", True, 156.0000, 337.0000, 200.0000, 75.0000, "AirPort", False)
+{
+	Element("IsBoolVariableTrue:false:Can_talkabout_Airport", False, 0)
+	Element("DeactivateScenarioNode:AirPort_DidTalk", False, 1)
+	Element("StartDialogWithWT:AirPortMia_airport_after_radio_NoPre", False, 2)
+	Element("PlayMusic:airport_radio_music_mia_where_are_you:false:0.7:0", False, 3)
+	Element("IsDialogPlaying:false:AirPortMia_airport_after_radio_NoPre", False, 4)
+	Element("ActivateScenarioNode:DialogAfterAirport", False, 5)
+}
+Node("DialogAfterAirport", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("SetHideProgress:100", False, 0)
+	Element("HideForPlayers:false", False, 1)
+	Element("SetBoolVariable:AirportCutscene:false", False, 100)
+	Element("UnblockParametersLoss", False, 2)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 3)
+	Element("EnableComponent:COOP_QuestItem_Key:Trigger", False, 4)
+	Element("PlayerResetBlockRotation", False, 5)
+	Element("PlayerResetBlockMoves", False, 6)
+	Element("CompleteStoryObjective:NB_OBJ_FindHelp", False, 7)
+	Element("CompleteStoryObjective:NB_OBJ_CheckAirport", False, 8)
+	Element("AddStoryObjective:NB_OBJ_FindMia:true", False, 9)
+	Element("AddStoryObjective:NB_OBJ_W8AtAirport:true", False, 10)
+	Element("AddStoryEvent:Notebook_MiaOut", False, 11)
+	Element("LockAllDialogs", False, 12)
+	Element("SetBoolVariable:UnlockDialogSystem:false", False, 13)
+	Element("SetBoolVariable:AfterAirportWT:true", False, 14)
+}
+Node("AirPortShed_Dialog", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Airport_Shed_Sensor", False, 0)
+	Element("StartDialog:shed_player_01", False, 1)
+}
+Node("AirPortShed_Map_NotCenote", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 0)
+	Element("IsLookingAtMapPage:true:Map01", False, 1)
+	Element("StartDialog:airportstuff_Player_02", False, 2)
+}
+Node("FPP_Cenote", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cenote_Tripod_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_Cenote:true", False, 1)
+}
+Node("FPP_Cenote_Line", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_CenotLine", False, 0)
+	Element("SetBoolVariable:UnlockZipLine:true", False, 1)
+	Element("DeleteInventoryItem:QuestItem_CenotLine", False, 2)
+}
+Node("Cenote_Line", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockZipLine", False, 0)
+	Element("ShowFakeItemInBackpack:backpack_climbgear:true", False, 1)
+}
+Node("Airport_Door_Unlocker", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockKey", False, 0)
+	Element("DisableObject:AirPortShedDoor_NoKey_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockKey", False, 2)
+	Element("IsBoolVariableTrue:false:UnlockDialogSystem", False, 3)
+	Element("EnableObject:AirPortShedDoor_Trigger", False, 4)
+}
+Node("FPP_Airport_Door", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:AirPortShedDoor_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_Sheed_Door:true", False, 1)
+}
+Node("Airport_Door", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Sheed_Door", False, 0)
+	Element("DisableObject:AirPortShedDoor_Trigger", False, 1)
+	Element("ForcePlayAnimation:Shed_doors:Shed_doorsOpen", False, 2)
+	Element("EnableObject:Unlock_AirportShed_Sound", False, 3)
+	Element("DisableObject:padlock", False, 4)
+	Element("EnableObject:padlock_to_drop", False, 5)
+	Element("ShowFakeItemInBackpack:backpack_key:false", False, 6)
+}
+Node("HaveKey", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:COOP_QuestItem_Key", False, 0)
+	Element("SetBoolVariable:UnlockKey:true", False, 1)
+}
+Node("TPP_HaveKey", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockKey", False, 0)
+	Element("DisableObject:COOP_QuestItem_Key", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_key:true", False, 2)
+}
+Node("Diving_Set", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_DivingEquipment", False, 0)
+	Element("DeleteInventoryItem:QuestItem_DivingEquipment", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_divingset:true", False, 2)
+	Element("SetBoolVariable:FPP_Diving:true", False, 3)
+}
+Node("TPP_Diving_Set", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_Diving", False, 0)
+	Element("InfiniteDiving:true", False, 1)
+	Element("AddStoryEvent:Notebook_Cenote", False, 2)
+}
+Node("FPP_KeepWalking_Obj", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:WalkingIntoRozlewiska_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_KeepWalking_Obj:true", False, 1)
+}
+Node("FPP_WHA_Find", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Find_WHA_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_WHA_Find:true", False, 1)
+	Element("IsBoolVariableTrue:true:FPP_WHA_Find", False, 2)
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 3)
+	Element("AddStoryEvent:Notebook_WHA", False, 4)
+}
+Node("FPP_Pre_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Dream3_Ring_Sensor", False, 0)
+	Element("SetBoolVariable:FPP_Pre_Dream03:true", False, 1)
+}
+Node("FPP_PLACEHOLDER_Pre_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Ayuhasca_cauldron_Dream03_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_PreDream3:true", False, 1)
+	Element("Wait:0.3", False, 2)
+	Element("EnableObject:Dream_banisteriopsis_scraps", False, 3)
+	Element("AttachObjectToPlayersBone:Dream_banisteriopsis_scraps:LH_holder", False, 4)
+	Element("PlayAnimation:Player:Ayuhasca_Seasoning", False, 5)
+	Element("UnlockAchievement:ACH_AYAHUASKA", False, 51)
+	Element("Wait:2", False, 6)
+	Element("DisableObject:Dream_banisteriopsis_scraps", False, 7)
+}
+Node("TPP_PLACEHOLDER_Pre_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_PreDream3", False, 0)
+	Element("PlayerBlockMoves", False, 1)
+	Element("PlayerBlockRotation", False, 2)
+	Element("BlockHUDWalkieTalkie", False, 3)
+	Element("PlayerHideWeapon", False, 4)
+	Element("DisableObject:Ayuhasca_cauldron_Dream03_Trigger", False, 5)
+	Element("Wait:0.3", False, 6)
+	Element("SetBoolVariable:ShouldPreDream_03:true", False, 7)
+	Element("HideForPlayers:true", False, 8)
+	Element("SetHideProgress:0", False, 9)
+	Element("BlockDayTimeCoopSychro:true", False, 10)
+	Element("DestroyAllEnemies", False, 11)
+}
+Node("TPP_After_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 0)
+	Element("DisableObject:Dream3_Rock", False, 1)
+	Element("UnblockHUDWalkieTalkie", False, 2)
+	Element("SetHideProgress:100", False, 3)
+	Element("BlockDayTimeCoopSychro:false", False, 4)
+	Element("HideForPlayers:false", False, 5)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 6)
+}
+Node("FPP_DialogAfterGrappHook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsLocalBoolVariableTrue:true:PickedGrabbHookGun", False, 0)
+	Element("StartDialog:TalkingtoSkeleton_Player_01", False, 1)
+}
+Node("TPP_DialogAfterGrappHook", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockEpickGrappHook", False, 0)
+	Element("DisableObject:WaterLands_HookTrigger", False, 1)
+	Element("EnableComponent:Audiolog_BodyGuard_Raport_24:Trigger", False, 2)
+}
+Node("FPP_EpickHookPlaceFound", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:WaterLands_HookTrigger", False, 0)
+	Element("IsBoolVariableTrue:false:UnlockEpickGrappHook", False, 1)
+	Element("StartDialog:atgraphookgun_Player_01", False, 2)
+	Element("IsDialogPlaying:true:atgraphookgun_Player_01", False, 3)
+	Element("IsDialogPlaying:false:atgraphookgun_Player_01", False, 4)
+	Element("SetBoolVariable:FPP_EpickHookPlaceFound:true", False, 5)
+}
+Node("TPP_EpickHookPlaceFound", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_EpickHookPlaceFound", False, 0)
+	Element("DisableObject:WaterLands_HookTrigger", False, 1)
+}
+Node("FPP_CureMachine", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Lab_Analyzer_lookat", False, 0)
+	Element("DisableObject:Lab_Analyzer_lookat", False, 1)
+	Element("SetBoolVariable:FPP_CureMachine:true", False, 2)
+}
+Node("TPP_CureMachine", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FPP_CureMachine", False, 0)
+	Element("DisableObject:Lab_Analyzer_lookat", False, 1)
+}
+Node("FPP_Notebook_Tent", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveMap_C", False, 0)
+	Element("ShowHint:LookatMap:0", False, 1)
+	Element("IsLookingAtMap:true", False, 2)
+	Element("SetBoolVariable:FPP_Notebook_Tent:true", False, 3)
+}
+Node("Have_InfectedVial", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Infected_BloodVial", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Infected_BloodVial", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_infectedvial:true", False, 2)
+	Element("SetBoolVariable:HaveInfectedVial:true", False, 3)
+}
+Node("FPP_Insert_InfectedVial", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UsedBloodInAnalizer", False, 0)
+	Element("PlayerIsInSensor:true:WHA_CureMachineOperator", False, 1)
+	Element("DeactivateScenarioNode:TPP_Insert_InfectedVial", False, 2)
+	Element("ShowFakeItemInBackpack:backpack_infectedvial:false", False, 5)
+	Element("StartDialog:Kjur_Player_01", False, 6)
+}
+Node("TPP_Insert_InfectedVial", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UsedBloodInAnalizer", False, 0)
+	Element("PlayerIsInSensor:false:WHA_CureMachineOperator", False, 1)
+	Element("DeactivateScenarioNode:FPP_Insert_InfectedVial", False, 2)
+	Element("ShowFakeItemInBackpack:backpack_infectedvial:false", False, 5)
+}
+
+Node("FPP_Have_Cure", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Cure_Vial", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Cure_Vial", False, 1)
+	Element("StartDialog:Kjur_Player_09", False, 2)
+	Element("IsDialogPlaying:false:Kjur_Player_09", False, 3)
+	Element("SetBoolVariable:HaveCure:true", False, 4)
+}
+Node("BackAtHeroTent", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:AfterAirportWT", False, 0)
+	Element("PlayerIsInSensor:true:BackAtHeroTent_Sensor", False, 1)
+	Element("StartDialog:BackAtHeroTent", False, 2)
+}
+Node("Pre_Ending_Village", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Pre_EndingVillageTop_Sensor", False, 0)
+	Element("Wait:2", False, 1)
+	Element("StartDialog:atendvillage_Player_01", False, 2)
+}
+Node("Ending_Village", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:EndingVillageShoutForMia_Sensor", False, 0)
+	Element("StartDialog:atendvillage_Player_03", False, 1)
+	Element("IsDialogPlaying:false:atendvillage_Player_03", False, 2)
+	Element("SetBoolVariable:FPP_VillageEnding:true", False, 3)
+}
+Node("FPP_MushromeCave", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:geoglossum_viride", False, 0)
+	Element("SetBoolVariable:FPP_Have_Mushroom:true", False, 1)
+}
+
+
+Node("PvE_ModeProtector", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:LDStory_passages_to_old_sectors", False, 0)
+	Element("DisableObject:ClimbingRopes_shared_map_sensors", False, 1)
+	Element("DisableObject:ClimbingRopes_shared_ropes", False, 2)
+}

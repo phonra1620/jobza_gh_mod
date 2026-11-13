@@ -1,0 +1,186 @@
+Anim("dzieciak_przy_ognisku_loop1")
+{
+		Event("HideAllVillageAnimAssets", 0.0)
+		Event("VillageActorIdleStart", 0.01)	
+	//Sound("Village_generic_sing_", "PVE/Villagers/Child", 0.0)
+
+//Event("HideAllVillageAnimAssets", 0.0)
+}
+
+Anim("dzieciak_sie_przyglada_loop_1")
+{
+	Event("HideAllVillageAnimAssets", 0.0)
+	
+	Event("VillageActorIdleStart", 0.01);	
+	//Sound("Village_generic_stand_", "PVE/Villagers/Child", 0.0)
+
+	//Event("HideAllVillageAnimAssets", 0.0)
+}
+
+//Anim("dzieciak_sie_przyglada_loop_2")
+//{
+//	Event("HideAllVillageAnimAssets", 0.01)
+//		Event("VillageActorIdleStart", 0.02)
+	//Sound("Village_generic_stand_", "PVE/Villagers/Child", 0.0)
+	//Event("HideAllVillageAnimAssets", 0.0)
+//}
+
+ Anim("stoi_za_filarem_loop1")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)	
+	
+ }
+
+Anim("stoi_za_filarem_loop2")
+
+{
+	Event("HideAllVillageAnimAssets", 0.01)
+		Event("VillageActorIdleStart", 0.02)	
+	
+}
+
+//Anim("stoi_za_filarem_loop3")
+//{
+//	Event("HideAllVillageAnimAssets", 0.01)
+//		Event("VillageActorIdleStart", 0.02)
+//}
+
+ Anim("kid_sleep_pose_idle")
+ {
+	
+	 Event("ShowVillageHammock", 0.1)
+	VoiceOver("vil_kid_generic_sleep_loop_", "PVE/Villagers/Child/kid_sleep", 0.1, 0.1)
+ }
+
+ Anim("dzieciak_siedzi_w_kuckach_i_sie_przyglada_001")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)
+		
+	
+	Sound("kid_siedzi_w_kuckach_001_sfx_01", "PVE\Villagers\SFX\Child_Crouch", 0.02)
+    VoiceOver("kid_siedzi_w_kuckach_001_VO_", "PVE/Villagers/Child/kid_crouch_look_at", 0.01, 0.75)
+ }
+ 
+  Anim("dzieciak_siedzi_w_kuckach_i_sie_przyglada_002")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)
+		
+	
+	Sound("kid_siedzi_w_kuckach_002_sfx_01", "PVE\Villagers\SFX\Child_Crouch", 0.02)
+    VoiceOver("kid_siedzi_w_kuckach_002_VO_", "PVE\Villagers\Child\kid_crouch_look_at", 0.01, 0.75)
+ }
+ 
+  Anim("dzieciak_siedzi_w_kuckach_i_sie_przyglada_003")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)
+		
+	
+	Sound("kid_siedzi_w_kuckach_003_sfx_01", "PVE/Villagers/SFX/Child_Crouch", 0.02)
+    VoiceOver("kid_siedzi_w_kuckach_003_VO_", "PVE/Villagers/Child/kid_crouch_look_at", 0.01, 0.75)
+ }
+ 
+  Anim("dzieciak_siedzi_w_kuckach_i_sie_przyglada_004")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)
+		
+	
+	Sound("kid_siedzi_w_kuckach_004_sfx_01", "PVE/Villagers/SFX/Child_Crouch", 0.02)
+    VoiceOver("kid_siedzi_w_kuckach_004_VO_", "PVE/Villagers/Child/kid_crouch_look_at", 0.01, 0.75)
+ }
+ 
+  Anim("dzieciak_siedzi_w_kuckach_i_sie_przyglada_005")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)
+		
+	
+	Sound("kid_siedzi_w_kuckach_005_sfx_01", "PVE\Villagers\SFX\Child_Crouch", 0.02)
+    VoiceOver("kid_siedzi_w_kuckach_005_VO_", "PVE/Villagers/Child/kid_crouch_look_at", 0.01, 0.75)
+ }
+ 
+  Anim("dzieciak_siedzi_w_kuckach_i_sie_przyglada_006")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+	 	Event("VillageActorIdleStart", 0.02)
+		
+	
+	Sound("kid_siedzi_w_kuckach_006_sfx_01", "PVE\Villagers\SFX\Child_Crouch", 0.02)
+    VoiceOver("kid_siedzi_w_kuckach_006_VO_", "PVE/Villagers/Child/kid_crouch_look_at", 0.01, 0.75)
+ }
+ 
+
+ Anim("dzieciak_obrazony_loop_01")
+ {
+	 Event("HideAllVillageAnimAssets", 0.01)
+
+ }
+
+//Anim("dzieciak_obrazony_loop_02")
+//{
+//	 Event("HideAllVillageAnimAssets", 0.01)
+//}
+
+///////////////////////////// LONGSTICK/////////////
+
+
+Anim("kid_with_longstick_start")
+ {
+	//Event("HideAllVillageAnimAssets", 0.05)
+	Event("ShowVillageLongStickPlain", 0.2)
+
+
+	
+	//VoiceOver("kid_with_longstick_01_IDLE_01_VO_", "PVE/Villagers/Child/kid_long_stick", 0.01, 0.75)
+	
+	
+ }
+
+Anim("kid_with_longstick_01_IDLE_01")
+ {
+	//Event("HideAllVillageAnimAssets", 0.01)
+	Event("ShowVillageLongStickPlain", 0.01)
+
+
+	
+    VoiceOver("kid_with_longstick_01_IDLE_01_VO_", "PVE/Villagers/Child/kid_long_stick", 0.01, 0.75)
+	
+	
+ }
+ 
+ Anim("kid_with_longstick_02_flys")
+ {
+	//Event("HideAllVillageAnimAssets", 0.01)
+	//Event("ShowVillageLongStickPlain", 0.01)
+
+	Sound("kid_with_longstick_02_flys_Sfx_", "PVE\Villagers\SFX\Child_Longstick", 0.02)
+    VoiceOver("kid_with_longstick_02_flys_VO_", "PVE\Villagers\Child\kid_long_stick", 0.01, 0.75)
+	
+	
+ } 
+ Anim("kid_with_longstick_03_look_around")
+ {
+	//Event("HideAllVillageAnimAssets", 0.01)
+//	Event("ShowVillageLongStickPlain", 0.01)
+
+
+	Sound("kid_with_longstick_03_look_arround_sfx", "PVE\Villagers\SFX\Child_Longstick", 0.02)
+    VoiceOver("kid_with_longstick_03_look_arround_VO_", "PVE\Villagers\Child\kid_long_stick", 0.01, 0.75)
+	
+	
+ }
+ Anim("kid_with_longstick_01_IDLE")
+ {
+	//Event("HideAllVillageAnimAssets", 0.01)
+//	Event("ShowVillageLongStickPlain", 0.01)
+
+
+	//Sound("", "PVE\Villagers\Child\kid_long_stick", 0.02)
+    VoiceOver("kid_with_longstick_01_IDLE_01_VO_", "PVE/Villagers/Child/kid_long_stick", 0.01, 0.75)
+	
+	
+ }

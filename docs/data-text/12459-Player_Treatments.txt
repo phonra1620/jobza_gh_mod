@@ -1,0 +1,5 @@
+Treatment("Wound", "Bandage*2")
+Treatment("Bite", "Bandage*2")
+Treatment("Burn", "Bandage;Apple")
+Treatment("Worm", "Bandage;Apple*2")
+Treatment("Leech", "Bandage*2")

@@ -1,0 +1,12 @@
+
+Anim("centipede_escape_B_flat_rot")
+{
+	Event("DisableRigidBody", 0.67)
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("centipede_death_flat_rot")
+{
+	Sound("Scolopendra_death_rnd_", "AI\Centipede", 0.0)
+	Event("DieEnd", 0.99)
+}

@@ -1,0 +1,129 @@
+Node("WHA_TENT_01_ENTRANCE_Trigger_Outside", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:WHATent01_Outside_Trigger", False, 0)
+	Element("PlayerHideWeapon", False, 2)
+	Element("Wait:0.1", False, 3)
+	//Element("DisableObject:WHATent01_Outside_Trigger", False, 4)
+	Element("PlayerSetLookAtObject:WHA_Inside_Player_Look", False, 5)
+	Element("PlayerSetPositionObject:WHA_Outside_Player_Pos", False, 6)
+	Element("Wait:1", False, 7)
+	Element("PlayAnimation:Player:LeavingTent", False, 8)
+	Element("PlaySound:Player:Sounds/Story/tent_open_sfx", False, 9)
+	Element("Wait:0.5", False, 10)
+	Element("FadeOut:0.7", False, 11)
+	Element("Wait:1", False, 12)
+	Element("PlayerSetLookAtObject:null", False, 14)
+	Element("PlayerSetPositionObject:null", False, 15)
+	Element("Wait:0.1", False, 16)
+	Element("PlayerBlockRotation", False, 17)
+	Element("PlayerBlockMoves", False, 18)
+	Element("Teleport:WHATent01_Inside_Spawn:false", False, 19)
+	Element("LoadScene:wha_camp_inside", False, 20)
+	Element("IsSceneLoading:false", False, 21)
+	Element("Wait:2", False, 26)
+	Element("FadeIn:0.7", False, 27)
+	Element("PlayerRestoreWeapon", False, 28)
+	Element("PlayerUnblockMoves", False, 29)
+	Element("PlayerUnblockRotation", False, 30)
+	//Element("EnableObject:WHATent01_Inside_Trigger", False, 31)
+	Element("ResetTrigger:WHATent01_Outside_Trigger", False, 32)
+	//Element("EnableObject:WHATent01_Outside_Trigger", False, 33)
+}
+Node("WHA_TENT_01_ENTRANCE_Trigger_Inside", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:WHATent01_Inside_Trigger", False, 0)
+	Element("Wait:0.1", False, 1)
+	Element("PlayerSetPositionObject:WHA_Inside_Player_Pos", False, 2)
+	Element("PlayerSetLookAtObject:WHA_Inside_Player_Look", False, 3)
+	//Element("DisableObject:WHATent01_Inside_Trigger", False, 4)
+	Element("PlayerHideWeapon", False, 5)
+	Element("Wait:0.5", False, 6)
+	Element("PlayAnimation:Player:LeavingTent", False, 7)
+	Element("PlaySound:Player:Sounds/Story/tent_open_sfx", False, 8)
+	Element("Wait:0.5", False, 9)
+	Element("FadeOut:0.7", False, 10)
+	Element("Wait:2", False, 13)
+	Element("PlayerSetPositionObject:null", False, 14)
+	Element("PlayerSetLookAtObject:null", False, 15)
+	Element("PlayerBlockRotation", False, 16)
+	Element("Wait:0.1", False, 17)
+	Element("PlayerBlockRotation", False, 18)
+	Element("PlayerBlockMoves", False, 19)
+	Element("ResetStreamersLoaded", False, 248)
+	Element("Teleport:WHATent01_Outside_Spawn:false", False, 20)
+	Element("AreStreamersLoaded:true", False, 21)
+	Element("UnloadScene:wha_camp_inside", False, 24)
+	Element("Wait:1", False, 25)
+	Element("FadeIn:0.7", False, 27)
+	Element("PlayerResetBlockMoves", False, 28)
+	Element("PlayerResetBlockRotation", False, 29)
+	Element("PlayerRestoreWeapon", False, 30)
+	Element("ResetTrigger:WHATent01_Inside_Trigger", False, 32)
+}
+Node("FPP_WHA_WaterFX", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:WHA_WaterFx_Sensor", False, 0)
+	Element("SetDirtiness:0.0", False, 1)
+	Element("SetBoolVariable:WHA_WaterShower:true", False, 2)
+}
+Node("TPP_WHA_WaterFX", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsBoolVariableTrue:true:WHA_WaterShower", False, 0)
+	Element("EnableObject:fx_deco_shower", False, 1)
+	Element("Wait:3.6", False, 2)
+	Element("DisableObject:fx_deco_shower", False, 3)
+	Element("SetBoolVariable:WHA_WaterShower:false", False, 4)
+	Element("RestartNode:FPP_WHA_WaterFX", False, 5)
+}
+
+Node("WHA_In_And_Out_Tent", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("PlayerIsInSensor:true:WHA_Inside_Sensor", False, 0)
+	Element("SetPlayerInSafeZone", False, 12)
+	Element("MSAmbientStop:0", False, 1)
+	Element("MSStart:MedTent_no_power_Ambient:3", False, 2)
+	Element("EnableTerrainRendering:false", False, 3)
+	Element("DisableSkyDome", False, 4)
+	Element("DisableOutlineCamera", False, 15)	
+	Element("DisableObject:global_reflection_probe_bake_area", False, 5)
+	Element("PlayerIsInSensor:false:WHA_Inside_Sensor", False, 6)
+	Element("MSStop:MedTent_no_power_Ambient:0", False, 7)
+	Element("EnableTerrainRendering:true", False, 8)
+	Element("EnableObject:global_reflection_probe_bake_area", False, 9)
+	Element("EnableSkyDome", False, 10)
+	Element("MSAmbientStart:3", False, 11)
+	Element("ResetPlayerInSafeZone", False, 13)
+	Element("EnableOutlineCamera", False, 14)	
+}
+
+
+
+// WHA Tent Fridges //////////////////////////////  Start  ////
+Node("FPP_WHATent_Fridge01_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:WHATent_Fridge01_Open_trigger", False, 0)
+	Element("SetBoolVariable:WHATent_Fridge01_open:true", False, 1)	
+}
+
+Node("TPP_WHATent_Fridge01_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:WHATent_Fridge01_open", False, 0)
+	Element("DisableObject:WHATent_Fridge01_Open_trigger", False, 1)
+	Element("ForcePlayAnimation:fridge_lab_tent01:Fridge_Open", False, 2)
+	Element("PlayAudioSource:WHATent_Fridge01_Open_Sound", False, 3)
+}
+
+Node("FPP_WHATent_Fridge02_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:WHATent_Fridge02_Open_trigger", False, 0)
+	Element("SetBoolVariable:WHATent_Fridge02_open:true", False, 1)
+}
+
+
+Node("TPP_WHATent_Fridge02_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:WHATent_Fridge02_open", False, 0)
+	Element("DisableObject:WHATent_Fridge02_Open_trigger", False, 1)
+	Element("ForcePlayAnimation:fridge_lab_tent02:Fridge_Open", False, 2)
+	Element("PlayAudioSource:WHATent_Fridge02_Open_Sound", False, 3)
+}

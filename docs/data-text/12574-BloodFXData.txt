@@ -1,0 +1,2 @@
+Blunt("Blood_Mist") 
+Sharp("Blood_Burst_Directional")

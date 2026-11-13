@@ -1,0 +1,457 @@
+// Scenario
+Syntax("DeactivateScenarioNode", "Action:ScenarioManager:DeactivateNode", False)
+Syntax("ActivateScenarioNode", "Action:ScenarioManager:ActivateNode", False)
+Syntax("IsNodeCompleted", "CndTF:ScenarioManager:IsNodeCompleted")
+Syntax("ExecuteNode", "Action:ScenarioManager:ExecuteNode", False)
+Syntax("RestartNode", "Action:ScenarioManager:RestartNode", False)
+Syntax("CompleteTutorial", "Action:ScenarioManager:ScenarioCompleteTutorial")
+Syntax("ShowYesNoDialog", "Action:ScenarioManager:ShowYesNoDialog")
+Syntax("IsYesNoDialogActive", "CndTF:ScenarioManager:IsYesNoDialogActive")
+
+// Dialogs
+Syntax("StartDialog", "Action:DialogsManager:StartDialog", False)
+Syntax("StartDialogWithWT", "Action:DialogsManager:StartDialogWithWT", False)
+Syntax("StopDialog", "Action:DialogsManager:StopDialog", False)
+Syntax("IsDialogPlaying", "CndTF:DialogsManager:IsDialogPlaying")
+Syntax("IsAnyDialogPlaying", "CndTF:DialogsManager:IsAnyDialogPlaying")
+Syntax("UnlockDialog", "Action:DialogsManager:UnlockScenarioDialog", False)
+Syntax("LockDialog", "Action:DialogsManager:LockScenarioDialog", False)
+Syntax("LockAllDialogs", "Action:DialogsManager:LockAllScenarioDialogs", False)
+Syntax("StartDialogIfNonPlaying", "Action:DialogsManager:ScenarioStartDialogIfNonPlaying", False)
+Syntax("UnlockPveDialog", "Action:DialogsManager:UnlockPveDialog", False)
+Syntax("LockPveDialog", "Action:DialogsManager:LockPveDialog", False)
+
+// Objectives
+Syntax("ActivateObjective", "Action:ObjectivesManager:ActivateObjective")
+Syntax("CompleteObjective", "Action:ObjectivesManager:DeactivateObjective")
+Syntax("CompleteAndHideObjective", "Action:ObjectivesManager:DeactivateAndHideObjective")
+Syntax("CompleteAllObjectives", "Action:ObjectivesManager:DeactivateAllActiveObjectives")
+Syntax("IsObjectiveCompleted", "CndTF:ObjectivesManager:IsObjectiveCompleted")
+Syntax("AddObjective3D", "Action:HUDObjective3D:AddObjective")
+Syntax("RemoveObjective3D", "Action:HUDObjective3D:RemoveObjective")
+Syntax("SetObjectiveDuration", "Action:HUDObjectives:SetObjectiveDuration")
+
+// Items
+Syntax("HaveItem", "CndTF:Player:ScenarioHaveItem")
+Syntax("HaveItemType", "CndTF:Player:HaveItemType")
+Syntax("HaveAnyItem", "CndTF:InventoryBackpack:HaveAnyItem")
+Syntax("HaveLiquid", "CndTF:InventoryBackpack:HaveLiquid")
+Syntax("HaveItemEquiped", "CndTF:Player:HasItemEquiped")
+Syntax("UnlockItemInNotepad", "Action:ItemsManager:UnlockItemInNotepadScenario")
+Syntax("UnlockItemInNotepadNoMsg", "Action:ItemsManager:UnlockItemInNotepadNoMsgScenario")
+Syntax("LockItemInNotepad", "Action:ItemsManager:LockItemInNotepadScenario")
+Syntax("ItemExist", "CndTF:ItemsManager:ItemExist")
+Syntax("GhostExist", "CndTF:ConstructionGhostManager:GhostExist")
+Syntax("IsFirecampBurning", "CndTF:ItemsManager:IsFirecampBurning")
+Syntax("WasReadedAndOff", "CndTF:ItemsManager:WasReadedAndOff")
+Syntax("WasReaded", "CndTF:ItemsManager:WasReaded")
+Syntax("BackpackWasOpen", "CndTF:Player:BackpackWasOpen")
+Syntax("IsSlotFilled", "CndTF:ItemsManager:IsSlotFilled")
+Syntax("LockCraftingItem", "Action:ItemsManager:LockCraftingItem", False, True)
+Syntax("UnlockCraftingItem", "Action:ItemsManager:UnlockCraftingItem", False, True)
+Syntax("UnlockItemInfo", "Action:ItemsManager:UnlockItemInfo")
+Syntax("LockItemInfo", "Action:ItemsManager:LockItemInfo")
+Syntax("ExtinguishAllFirecams", "Action:ItemsManager:ScenarioExtinguishAllFirecamps", False)
+Syntax("WypierdolAllFirecamps", "Action:ItemsManager:ScenarioDeleteAllFirecamps", False)
+Syntax("DeleteAllGhosts", "Action:ConstructionGhostManager:ScenarioDeleteAllGhosts", False)
+Syntax("DeleteDraggedGhosts", "Action:ConstructionGhostManager:ScenarioDeleteDraggedGhosts", False)
+Syntax("IsSettingUpGhost", "CndTF:ConstructionGhostManager:IsSettingUpGhost")
+Syntax("IsRackBurning", "CndTF:ItemsManager:IsRackBurning")
+Syntax("BurnoutRack", "Action:ItemsManager:BurnoutRack")
+Syntax("SetRackEndlessFire", "Action:ItemsManager:SetRackEndlessFire")
+Syntax("ResetRackEndlessFire", "Action:ItemsManager:ResetRackEndlessFire")
+Syntax("IsGeneratorFull", "CndTF:MainLevel:IsGeneratorFull")
+Syntax("ShowFakeItemInBackpack", "Action:InventoryBackpack:ShowFakeItem")
+Syntax("DeleteInventoryItem", "Action:InventoryBackpack:DeleteItem")
+Syntax("UnlockPlantInNotepad", "Action:ItemsManager:UnlockPlantInNotepadScenario", False)
+Syntax("Hack_ScenarioSpawnSOA3CraneGhosts", "Action:ConstructionGhostManager:Hack_ScenarioSpawnSOA3CraneGhosts", False)
+
+ 
+// Player
+Syntax("PlayerCondition", "CndParam:PlayerConditionModule")
+Syntax("PlayerSetParam", "SetParam:PlayerConditionModule")
+Syntax("PlayerIsInSensor", "CndTF:SensorManager:PlayerIsInSensor")
+Syntax("PlayerIsLookingAtObject", "CndTF:Player:IsLookingAtObject")
+Syntax("PlayerSetLookAtObject", "Action:LookController:SetLookAtObject")
+Syntax("PlayerSetLookAtObjectFactor", "Action:LookController:SetLookAtObjectFactor")
+Syntax("PlayerResetLookAtObjectFactor", "Action:LookController:ResetLookAtObjectFactor")
+Syntax("PlayerSetPositionObject", "Action:Player:SetScenarioPositionObject")
+Syntax("PlayerSetPositionObjectSpeedMod", "Action:Player:SetScenarioPositionObjectSpeedMod")
+Syntax("PlayerBlockMoves", "Action:Player:BlockMoves", False)
+Syntax("PlayerUnblockMoves", "Action:Player:UnblockMoves", False)
+Syntax("PlayerBlockRotation", "Action:Player:BlockRotation", False)
+Syntax("PlayerUnblockRotation", "Action:Player:UnblockRotation", False)
+Syntax("PlayerResetBlockMoves", "Action:Player:ResetBlockMoves")
+Syntax("PlayerResetBlockRotation", "Action:Player:ResetBlockRotation")
+Syntax("PlayerGiveDamage", "Action:Player:ScenarioGiveDamage")
+Syntax("PlayerShowRadio", "Action:Player:ShowWalkieTalkie")
+Syntax("PlayerHideRadio", "Action:Player:HideWalkieTalkie")
+Syntax("PlayerAddItemToInventory", "Action:Player:AddItemToInventory")
+Syntax("PlayerShowDivingMask", "Action:Player:ShowDivingMask")
+Syntax("PlayerHideDivingMask", "Action:Player:HideDivingMask")
+Syntax("PlayerShowBiohazardMask", "Action:Player:ShowBiohazardMask")
+Syntax("PlayerHideBiohazardMask", "Action:Player:HideBiohazardMask")
+Syntax("AddWorm", "Action:PlayerInjuryModule:AddWorm", False)
+Syntax("HasWorm", "CndTF:PlayerInjuryModule:HasWorm")
+Syntax("AddInjury", "Action:PlayerInjuryModule:ScenarioAddInjury", False)
+Syntax("ResetInjuries", "Action:PlayerInjuryModule:ResetInjuries", False)
+Syntax("Teleport", "Action:Player:Teleport")
+Syntax("TeleportWithRandomOffset", "Action:Player:TeleportWithRandomOffset")
+Syntax("RandomTeleport", "Action:Player:RandomTeleport")
+Syntax("HasSymptom", "CndTF:PlayerDiseasesModule:ScenarioHasSymptom")
+Syntax("BIIsLookingAt", "CndTF:BodyInspectionController:ScenarioLookingAt")
+Syntax("IsLookingAtInjury", "CndTF:BodyInspectionController:ScenarioIsLookingAtInjury")
+Syntax("IsLookingAtInjuryState", "CndTF:BodyInspectionController:ScenarioIsLookingAtInjuryState")
+Syntax("HasInjuryAt", "CndTF:PlayerInjuryModule:ScenarioHasInjuryAt")
+Syntax("HasBandageOnInjuryAt", "CndTF:PlayerInjuryModule:ScenarioHasBandageOnInjuryAt")
+Syntax("DeleteAllInventoryItems", "Action:Player:DeleteAllItems", False)
+Syntax("BlockParametersLoss", "Action:PlayerConditionModule:BlockParametersLoss")
+Syntax("UnblockParametersLoss", "Action:PlayerConditionModule:UnblockParametersLoss")
+Syntax("SetMaxCondition", "Action:PlayerConditionModule:ResetParams", False)
+Syntax("SetConditionFromScript", "Action:PlayerConditionModule:ScenarioSetParamsFromScript", False)
+Syntax("AttachObjectToPlayersBone", "Action:Player:AttachObjectToPlayersBone", False)
+Syntax("DetachObjectFromPlayer", "Action:Player:DetachObjectFromPlayer", False)
+Syntax("UnlockKnownInjury", "Action:PlayerInjuryModule:UnlockKnownInjuryFromScenario")
+Syntax("UnlockKnownInjuryTreatment", "Action:PlayerInjuryModule:UnlockKnownInjuryTreatmentFromScenario")
+Syntax("UnlockKnownInjuryState", "Action:PlayerInjuryModule:UnlockKnownInjuryStateFromScenario")
+Syntax("UnlockKnownInjuryStateTreatment", "Action:PlayerInjuryModule:UnlockKnownInjuryStateTreatmentFromScenario")
+Syntax("UnlockKnownSymptom", "Action:PlayerDiseasesModule:UnlockKnownSymptomFromScenario")
+Syntax("UnlockKnownSymptomTreatment", "Action:PlayerDiseasesModule:UnlockKnownSymptomTreatmentFromScenario")
+Syntax("UnlockKnownDisease", "Action:PlayerDiseasesModule:UnlockKnownDiseaseFromScenario")
+Syntax("UnlockKnownDiseaseTreatment", "Action:PlayerDiseasesModule:UnlockKnownDiseaseTreatmentFromScenario")
+Syntax("EnablePlayerCollisions", "Action:Player:EnableCollisions")
+Syntax("DisablePlayerCollisions", "Action:Player:DisableCollisions", False, False)
+Syntax("ItemsFromHandsPutToInventory", "Action:Player:ItemsFromHandsPutToInventory", False)
+Syntax("BlockRun", "Action:FPPController:ScenarioBlockRun")
+Syntax("UnblockRun", "Action:FPPController:ScenarioUnblockRun")
+Syntax("BlockDodge", "Action:FPPController:ScenarioBlockDodge")
+Syntax("UnblockDodge", "Action:FPPController:ScenarioUnblockDodge")
+Syntax("ResetBodyRotation", "Action:Player:ScenarioResetBodyRotationParams")
+Syntax("PlayerReplaceMaterial", "Action:Player:ReplaceMaterial")
+Syntax("BlockSleeping", "Action:Player:BlockSleeping")
+Syntax("UnblockSleeping", "Action:Player:UnblockSleeping")
+Syntax("BlockInspection", "Action:Player:BlockInspection")
+Syntax("UnblockInspection", "Action:Player:UnblockInspection")
+Syntax("PlayerCreate", "CndTF:ItemsManager:ScenarioPlayerCreate")
+Syntax("IsStartingFire", "CndTF:MakeFireController:IsStartingFire")
+Syntax("SetDreamPP", "Action:Player:SetDreamPPActive")
+Syntax("PlayerSetSpeedMul", "Action:Player:SetSpeedMul")
+Syntax("PlayerBlockFistFight", "Action:FightController:BlockFight")
+Syntax("PlayerUnblockFistFight", "Action:FightController:UnblockFight")
+Syntax("IsCombatState", "CndTF:PlayerStateModule:ScenarioIsCombatState")
+Syntax("SetCombatState", "Action:PlayerStateModule:ScenarioSetCombatState")
+Syntax("EnableFootstepSounds", "Action:Player:EnableFootstepSounds")
+Syntax("SetPlayerInSafeZone", "Action:Player:SetInSafeZone", False)
+Syntax("ResetPlayerInSafeZone", "Action:Player:ResetInSafeZone", False)
+Syntax("HasKilledTribe", "CndTF:Player:HasKilledTribe")
+Syntax("HasKilledCaiman", "CndTF:Player:HasKilledCaiman")
+Syntax("PlayerHideWeapon", "Action:Player:HideWeaponFromScenario", False)
+Syntax("PlayerRestoreWeapon", "Action:Player:ShowWeaponFromScenario")
+Syntax("DeleteHeavyObjectsInHands", "Action:Player:DeleteHeavyObjectsInHands")
+Syntax("InfiniteDiving", "Action:Player:InfiniteDiving")
+Syntax("HasOpenInspection", "CndTF:BodyInspectionController:IsActive")
+Syntax("HealPlayer", "Action:Player:ScenarioHeal", False)
+Syntax("SetWatchDate", "Action:Watch:SetFakeDate", False)
+Syntax("ResetWatchDate", "Action:Watch:ClearFakeDate", False)
+Syntax("HideForPlayers", "Action:Player:ScenarioSetHideForPlayers", False)
+Syntax("SetHideProgress", "Action:Player:ScenarioSetHideProgress", False)
+Syntax("PlayerAttachToObject", "Action:Player:AttachToObject")
+Syntax("PlayerDetachFromParent", "Action:Player:DetachFromParent")
+Syntax("ScenarioSetIgnoreFadeWhenHidden", "Action:Player:ScenarioSetIgnoreFadeWhenHidden", False)
+Syntax("SetDialogMode", "Action:Player:QSSetDialogMode")
+
+
+
+
+// Statistics
+Syntax("StatisticGreater", "CndTF:StatsManager:StatisticGreater")
+Syntax("StatisticEqual", "CndTF:StatsManager:StatisticEqual")
+Syntax("StatisticLess", "CndTF:StatsManager:StatisticLess")
+
+// Achivements
+Syntax("UnlockAchievement", "Action:AchievementsManager:UnlockAchievement", False)
+Syntax("OnStoryFinished", "Action:AchievementsManager:OnStoryFinished", False)
+
+// Objects
+Syntax("EnableObject", "Action:MainLevel:EnableObject", False)
+Syntax("DisableObject", "Action:MainLevel:DisableObject", False)
+Syntax("IsObjectEnabled", "CndTF:MainLevel:IsObjectEnabled")
+Syntax("IsObjectInRange", "CndTF:MainLevel:IsObjectInRange")
+Syntax("IsTriggered", "CndTF:TriggersManager:IsTriggered") 
+Syntax("ResetTrigger", "Action:TriggersManager:ResetTrigger", False) 
+Syntax("EnableComponent", "Action:ScenarioManager:EnableComponent", False)
+Syntax("DisableComponent", "Action:ScenarioManager:DisableComponent", False)
+Syntax("SetLocalUniformScale", "Action:ScenarioManager:SetLocalUniformScale", False)
+Syntax("DisappearWithEffect", "Action:ScenarioManager:Disappear")
+Syntax("IsCreepyAppearGroupCompleted", "CndTF:ScenarioManager:IsCreepyAppearGroupCompleted")
+Syntax("AnimationTriggerSetMoveSpeed", "Action:AnimationTriggerController:SetMoveSpeed")
+Syntax("AnimationTriggerResetMoveSpeed", "Action:AnimationTriggerController:ResetMoveSpeed")
+Syntax("SetAnimatorBool", "Action:ScenarioManager:SetAnimatorBool")
+Syntax("BatterySetValue", "Action:PlayerWalkieTalkieModule:SetBatteryLevel", False)
+Syntax("IsBatteryGreater", "CndTF:PlayerWalkieTalkieModule:IsBatteryLevelGreater")
+Syntax("BlockBackpack", "Action:Inventory3DManager:ScenarioBlockBackpack", False)
+Syntax("UnblockBackpack", "Action:Inventory3DManager:ScenarioUnblockBackpack", False)
+Syntax("HideBackpack", "Action:Inventory3DManager:HideBackpack", False)
+
+// Cutscenes
+Syntax("PlayCutscene", "Action:CutscenesManager:PlayCutscene", False)
+Syntax("PlayCutsceneWithPlayerLook", "Action:CutscenesManager:PlayCutsceneWithPlayerLook", False)
+Syntax("StopCutscene", "Action:CutscenesManager:StopCutscene", False)
+Syntax("IsCutscenePlaying", "CndTF:CutscenesManager:IsCutscenePlaying")
+Syntax("IsDebugCutscenePlaying", "CndTF:MainLevel:IsDebugCutscenePlaying")
+Syntax("IsCutsceneTimeGreaterOrEqual", "CndTF:CutscenesManager:IsCutsceneTimeGreaterOrEqual")
+Syntax("PauseCutscene", "Action:CutscenesManager:PauseCutscene", False)
+Syntax("ResumeCutscene", "Action:CutscenesManager:ResumeCutscene", False)
+
+//Hints
+Syntax("ShowHint", "Action:HintsManager:ShowHint", False)
+Syntax("HideHint", "Action:HintsManager:HideHint", False)
+Syntax("HideAllHints", "Action:HintsManager:HideAllHints")
+
+// Time
+Syntax("Wait", "CndWait:Wait")
+Syntax("StopDayTimeProgress", "Action:MainLevel:StopDayTimeProgress")
+Syntax("StartDayTimeProgress", "Action:MainLevel:StartDayTimeProgress")
+Syntax("SetDayTime", "Action:MainLevel:SetDayTime")
+Syntax("BlockDayTimeCoopSychro", "Action:MainLevel:BlockDayTimeCoopSychro")
+Syntax("IsNight", "CndTF:MainLevel:IsNight")
+
+//Music
+Syntax("PlayMusic", "Action:Music:PlayByName", False)
+Syntax("StopMusic", "Action:Music:Stop", False)
+Syntax("StopAllMusics", "Action:Music:StopAll", False)
+Syntax("StopAllMusicsOnTrack", "Action:Music:StopAllOnTrack", False)
+Syntax("FadeOutMusic", "Action:Music:FadeOut", False)
+Syntax("FadeInMusic", "Action:Music:FadeIn", False)
+Syntax("IsMusicPlaying", "CndTF:Music:IsMusicPlaying")
+Syntax("IsMusicPlayingAndIsNoPause", "CndTF:Music:IsMusicPlayingAndIsNoPause")
+Syntax("ScheduleMusic", "Action:Music:Schedule", False)
+
+//MusicJingle
+Syntax("PlayMusicJingle", "Action:MusicJingle:PlayByName", False)
+Syntax("StopMusicJingle", "Action:MusicJingle:Stop", False)
+Syntax("FadeOutMusicJingle", "Action:MusicJingle:FadeOut", False)
+Syntax("FadeInMusicJingle", "Action:MusicJingle:FadeIn", False)
+
+//Sounds
+Syntax("PlayAudioSource", "Action:ScenarioManager:PlayAudioSource")
+Syntax("StopAudioSource", "Action:ScenarioManager:StopAudioSource")
+Syntax("PlaySound", "Action:ScenarioSoundsManager:PlaySound")
+
+// Animations
+Syntax("PlayAnimation", "Action:ScenarioManager:PlayAnimation", False)
+Syntax("ForcePlayAnimation", "Action:ScenarioManager:PlayAnimation") //odgrywa siê w trakcie loada
+
+//Notepad
+Syntax("LockNotepad", "Action:Player:LockNotepad")
+Syntax("UnlockNotepad", "Action:Player:UnlockNotepad")
+Syntax("HideNotepad", "Action:NotepadController:Hide")
+Syntax("AddStoryEvent", "Action:MenuNotepad:AddStoryEvent")
+Syntax("UnlockElementFromStory", "Action:LegendTab:UnlockElementFromStory")
+
+//Map
+Syntax("UnlockMapElement", "Action:MapTab:UnlockElement")
+Syntax("LockMapElement", "Action:MapTab:LockElement")
+Syntax("UnlockMap", "Action:Player:UnlockMap")
+Syntax("IsLookingAtMap", "CndTF:Player:IsLookingAtMap")
+Syntax("IsLookingAtMapPage", "CndTF:Player:IsLookingAtMapPage")
+Syntax("UnlockMapPage", "Action:MapTab:UnlockPage")
+Syntax("LockMapPage", "Action:MapTab:LockPage")
+Syntax("HideMap", "Action:MapController:Hide")
+
+//Watch
+Syntax("LockWatch", "Action:Player:LockWatch")
+Syntax("UnlockWatch", "Action:Player:UnlockWatch")
+Syntax("BlockWatch", "Action:Player:ScenarioBlockWatch")
+Syntax("UnblockWatch", "Action:Player:ScenarioUnblockWatch")
+Syntax("IsWatchTabActive", "CndTF:Watch:IsWatchTabActive")
+Syntax("IsWatchTab", "CndTF:Watch:IsWatchTab")
+Syntax("SetWatchTab", "Action:WatchController:SetWatchMode")
+Syntax("IsLookingAtWatch", "CndTF:Player:IsWatchControllerActive")
+
+//Dreams
+Syntax("StartDream", "Action:Player:StartDream", False)
+Syntax("StopDream", "Action:Player:StopDream", False)
+
+//Arena
+Syntax("StartArena", "Action:MainLevel:StartArenaFromQS", False)
+
+//Movies
+Syntax("PlayMovie", "Action:MainLevel:PlayMovie", False)
+Syntax("IsMoviePlaying", "CndTF:MainLevel:IsMoviePlaying")
+
+Syntax("PlayMovieWithFade", "Action:MainLevel:PlayMovieWithFade", False)
+Syntax("IsMovieWithFadePlaying", "CndTF:MainLevel:IsMovieWithFadePlaying")
+Syntax("IsMovieWithFadeFinished", "CndTF:MainLevel:IsMovieWithFadeFinished")
+
+//Sanity
+Syntax("SanityEvent", "Action:PlayerSanityModule:OnEvent")
+
+//Demo
+Syntax("ShowDemoEnd", "Action:HUDManager:ShowDemoEnd", False)
+Syntax("IsGamescom", "CndTF:GreenHellGame:IsGamescom")
+Syntax("IsYoutubeDemo", "CndTF:GreenHellGame:IsYoutubeDemo")
+
+//Camera
+Syntax("SetZoom", "Action:CameraManager:SetZoom")
+Syntax("StartFovInterpolator", "Action:CameraManager:StartFovInterpolator")
+Syntax("StopFovInterpolator", "Action:CameraManager:StopFovInterpolator")
+Syntax("EnableTodRaysUpdate", "Action:CameraManager:EnableTODRaysUpdate")
+Syntax("SetFOV", "Action:CameraManager:ScenarioSetFOV")
+Syntax("ResetFOV", "Action:CameraManager:ScenarioResetFOV")
+Syntax("EnableOutlineCamera", "Action:MainLevel:EnableOutlineCamera")
+Syntax("DisableOutlineCamera", "Action:MainLevel:DisableOutlineCamera")
+Syntax("EnableCPRTMain", "Action:MainLevel:EnableCPRTMain")
+Syntax("DisableCPRTMain", "Action:MainLevel:DisableCPRTMain")
+Syntax("EnableCPRTOutline", "Action:MainLevel:EnableCPRTOutline")
+Syntax("DisableCPRTOutline", "Action:MainLevel:DisableCPRTOutline")
+Syntax("EnableCPRTHorizon", "Action:MainLevel:EnableCPRTHorizon")
+Syntax("DisableCPRTHorizon", "Action:MainLevel:DisableCPRTHorizon")
+
+//MenuNotepad
+Syntax("IsTabActive", "CndTF:MenuNotepad:IsTabActive")
+Syntax("WasTabActivated", "CndTF:MenuNotepad:WasTabActivated")
+
+//Menu
+Syntax("ShowMenu", "Action:MenuInGameManager:ScenarioShowScreen")
+
+//Fade System
+Syntax("FadeOut", "Action:MainLevel:ScenarioFadeOut", False)
+Syntax("FadeOutWithScreen", "Action:MainLevel:ScenarioFadeOutWithScreen", False)
+Syntax("FadeIn", "Action:MainLevel:ScenarioFadeIn", False)
+Syntax("IsFadeOut", "CndTF:MainLevel:IsFadeOut")
+Syntax("IsFadeIn", "CndTF:MainLevel:IsFadeIn")
+
+//Dream Fade System
+Syntax("DreamFadeOut", "Action:MainLevel:DreamFadeOut")
+Syntax("DreamFadeIn", "Action:MainLevel:DreamFadeIn")
+Syntax("DreamWhiteFadeOut", "Action:MainLevel:DreamWhiteFadeOut")
+Syntax("DreamWhiteFadeIn", "Action:MainLevel:DreamWhiteFadeIn")
+Syntax("IsDreamFadeOut", "CndTF:MainLevel:IsDreamFadeOut")
+Syntax("IsDreamFadeIn", "CndTF:MainLevel:IsDreamFadeIn")
+
+//HUD
+Syntax("BlockHUDWheel", "Action:Player:ScenarioBlockHUDWheel", False)
+Syntax("UnblockHUDWheel", "Action:Player:ScenarioUnblockHUDWheel", False)
+Syntax("IsHUDWheelActive", "CndTF:HUDWheel:ScenarioIsActive")
+Syntax("ShowStartSurvivalSplash", "Action:HUDStartSurvivalSplash:Activate", False)
+Syntax("ShowPatchPVESplash", "Action:HUDPatchPVESplash:Activate", False)
+Syntax("BlockHUDEnergy", "Action:HUDEnergy:ScenarioBlock")
+Syntax("UnblockHUDEnergy", "Action:HUDEnergy:ScenarioUnblock")
+Syntax("BlockHUDSanity", "Action:HUDSanity:ScenarioBlock")
+Syntax("UnblockHUDSanity", "Action:HUDSanity:ScenarioUnblock")
+Syntax("HideHUD", "Action:HUDManager:ScenarioHideHUD")
+Syntax("ShowHUD", "Action:HUDManager:ScenarioShowHUD")
+Syntax("BlockHUDCrosshair", "Action:HUDCrosshair:ScenarioBlock")
+Syntax("UnblockHUDCrosshair", "Action:HUDCrosshair:ScenarioUnblock")
+Syntax("BlockHUDWalkieTalkie", "Action:HUDWalkieTalkie:ScenarioBlock")
+Syntax("UnblockHUDWalkieTalkie", "Action:HUDWalkieTalkie:ScenarioUnblock")
+Syntax("BlockHUDWalkieTalkieBattery", "Action:HUDEnergy:ScenarioBlockWTBattery")
+Syntax("UnblockHUDWalkieTalkieBattery", "Action:HUDEnergy:ScenarioUnblockWTBattery")
+Syntax("BlockHUDSaving", "Action:HUDSaving:ScenarioBlock")
+Syntax("UnblockHUDSaving", "Action:HUDSaving:ScenarioUnblock")
+Syntax("ShowCredits", "Action:HUDManager:ShowCredits")
+Syntax("ShowCoopFinalScreen", "Action:HUDCoopFinal:Activate")
+
+//RAIN
+Syntax("StartRain", "Action:RainManager:ScenarioStartRain")
+Syntax("StopRain", "Action:RainManager:ScenarioStopRain")
+Syntax("BlockRain", "Action:RainManager:ScenarioBlockRain")
+Syntax("UnblockRain", "Action:RainManager:ScenarioUnblockRain")
+Syntax("SetRainVolume", "Action:MainLevel:SetRainVolume")
+
+//SKILLS
+Syntax("SkillGreater", "CndTF:SkillsManager:SkillGreater")
+Syntax("SkillGreaterOrEqual", "CndTF:SkillsManager:SkillGreaterOrEqual")
+
+//VARIABLES
+Syntax("CreateBoolVariable", "Action:ScenarioManager:CreateBoolVariable")
+Syntax("SetBoolVariable", "Action:ScenarioManager:SetBoolVariable")
+Syntax("IsBoolVariableTrue", "CndTF:ScenarioManager:IsBoolVariableTrue")
+Syntax("CreateIntVariable", "Action:ScenarioManager:CreateIntVariable")
+Syntax("SetIntVariable", "Action:ScenarioManager:SetIntVariable")
+Syntax("IntVariableAdd", "Action:ScenarioManager:IntVariableAdd")
+Syntax("IsIntVariableEqual", "CndTF:ScenarioManager:IsIntVariableEqual")
+Syntax("IsIntVariableGreater", "CndTF:ScenarioManager:IsIntVariableGreater")
+Syntax("IsIntVariableGreaterOrEqual", "CndTF:ScenarioManager:IsIntVariableGreaterOrEqual")
+Syntax("CreateLocalBoolVariable", "Action:ScenarioManager:CreateLocalBoolVariable")
+Syntax("SetLocalBoolVariable", "Action:ScenarioManager:SetLocalBoolVariable")
+Syntax("IsLocalBoolVariableTrue", "CndTF:ScenarioManager:IsLocalBoolVariableTrue")
+
+//Other
+Syntax("PerformSave", "Action:MainLevel:ScenarioPerformSave", False)
+Syntax("BlockHumanAISpawn", "Action:AIs.EnemyAISpawnManager:BlockSpawn")
+Syntax("UnblockHumanAISpawn", "Action:AIs.EnemyAISpawnManager:UnblockSpawn")
+Syntax("SetTutorial", "Action:MainLevel:ScenarioSetTutorial")
+Syntax("ShouldSkipTutorial", "CndTF:ScenarioManager:ShouldSkipTutorial")
+Syntax("IsCraftingActive", "CndTF:CraftingManager:IsActive")
+Syntax("LoadScene", "Action:ScenarioManager:LoadScene", False)
+Syntax("UnloadScene", "Action:ScenarioManager:UnloadScene", False)
+Syntax("IsSceneLoading", "CndTF:ScenarioManager:IsSceneLoading")
+Syntax("CreditsFinished", "CndTF:HUDOnGameCredits:IsFinished")
+Syntax("BlockSaveGame", "Action:MainLevel:BlockSaveGame", False)
+Syntax("UnblockSaveGame", "Action:MainLevel:UnblockSaveGame", False)
+Syntax("HideCollectable", "Action:HUDReadableItem:Deactivate", False)
+Syntax("ReturnToMainMenu", "Action:GreenHellGame:ReturnToMainMenu", False)
+Syntax("DestroyAllEnemies", "Action:AIs.AIManager:DestroyAllEnemies", False)
+Syntax("IsPve", "CndTF:ScenarioManager:IsPve")
+
+//Post Process
+Syntax("StartPPInterpolator", "Action:PlayerPostProcessModule:StartPPInterpolator")
+Syntax("StopPPInterpolator", "Action:PlayerPostProcessModule:StopPPInterpolator")
+Syntax("PostProcessVolumeExDisableWithFade", "Action:MainLevel:PostProcessVolumeExDisableWithFade")
+
+
+//Story Objectives
+Syntax("AddStoryObjective", "Action:StoryObjectivesManager:ActivateObjective")
+Syntax("CompleteStoryObjective", "Action:StoryObjectivesManager:DeactivateObjective")
+Syntax("CompleteAndHideStoryObjective", "Action:StoryObjectivesManager:DeactivateAndHideObjective")
+
+//Dirtiness
+Syntax("BlockGettingDirty", "Action:PlayerConditionModule:BlockGettingDirty")
+Syntax("UnblockGettingDirty", "Action:PlayerConditionModule:UnblockGettingDirty")
+Syntax("SetDirtiness", "Action:PlayerConditionModule:SetDirtiness")
+
+//Balance system
+Syntax("BalanceSystemBlockListsUpdate", "Action:BalanceSystem20:BlockListsUpdate")
+Syntax("BalanceSystemUnblockListsUpdate", "Action:BalanceSystem20:UnblockListsUpdate")
+Syntax("BalanceSystemSetItemsLastSpawnToPlayerPos", "Action:BalanceSystem20:SetItemsLastSpawnToPlayerPos")
+
+//Sky dome
+Syntax("EnableSkyDome", "Action:MainLevel:EnableSkyDome")
+Syntax("DisableSkyDome", "Action:MainLevel:DisableSkyDome")
+Syntax("EnableAtmosphereAndCloudsUpdate", "Action:MainLevel:EnableAtmosphereAndCloudsUpdate")
+
+//TODTime INTERPOLATOR
+Syntax("TODInterpolatorStoreTime", "Action:MainLevel:TODInterpolatorStoreTime")
+Syntax("TODInterpolatorInterpolate", "Action:MainLevel:TODInterpolatorInterpolate")
+Syntax("TODInterpolatorRestore", "Action:MainLevel:TODInterpolatorRestore")
+
+//Multisample
+Syntax("MSAmbientStart", "Action:MainLevel:MSAmbientStart")
+Syntax("MSAmbientStop", "Action:MainLevel:MSAmbientStop")
+Syntax("MSStart", "Action:MainLevel:StartMultisample")
+Syntax("MSStop", "Action:MainLevel:StopMultisample")
+
+//Parameters Interpolator
+Syntax("DisablePICommanderWithFade", "Action:GreenHellGame:DisablePICommanderWithFade")
+Syntax("ParametersInterpolatorSetupData", "Action:GreenHellGame:ParametersInterpolatorSetupData")
+
+//Terrain
+Syntax("EnableTerrainRendering", "Action:MainLevel:EnableTerrainRendering")
+
+//Streamers
+Syntax("AreStreamersLoaded", "CndTF:MainLevel:AreStreamersLoaded")
+Syntax("ResetStreamersLoaded", "Action:MainLevel:ResetStreamersLoaded", False)
+
+//Life Places
+Syntax("EnableLifePlace", "Action:LifePlaceSystem:EnableLifePlaceByName", True)
+Syntax("DisableLifePlace", "Action:LifePlaceSystem:DisableLifePlaceByName", False)
+Syntax("EnableLifePlaceActor", "Action:LifePlaceSystem:EnableLifePlaceActorByName", True)
+Syntax("DisableLifePlaceActor", "Action:LifePlaceSystem:DisableLifePlaceActorByName", False)
+
+//Reputation
+Syntax("AddReputationFromStory", "Action:ReputationSystem:AddReputationFromStory", False)
+
+//Legends
+Syntax("SetLegendFinishState", "Action:LegendTab:SetLegendFinishState", False)

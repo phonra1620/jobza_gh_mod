@@ -1,0 +1,47 @@
+HPWeight(5.0)
+HydrationWeight(1.0)
+EnergyWeight(0.5)
+ProteinsWeight(2.0)
+FatWeight(2.0)
+CarbsWeight(2.0)
+HaveItemWeight(0.15)
+HaveFireWeight(1.0)
+SanityWeight(5.0)
+InfectedWoundWeight(1.0)
+SnakeBiteLvlWeight(1.0)
+FoodPoisonLvlWeight(2.0)
+BleedingWeight(3.0)
+CutWoundWeight(1.0)
+InsectWoundWeight(0.5)
+MaxNumGroupPriority("Meds", 1)
+MaxNumGroupPriority("Herbs", 1)
+MaxNumGroupPriority("FoodHi", 2)
+MaxNumGroupPriority("FoodLow", 2)
+MaxNumGroupPriority("Water", 1)
+MaxNumGroupPriority("Common", 3)
+MaxNumGroupPriority("Snails", 2)
+BalanceSpawnerCooldown(660.0)
+BalanceSpawnerNoSpawnCooldown(600.0)
+
+BSConditionCooldown("Proteins", 60.0)
+BSConditionCooldown("Fat", 60.0)
+BSConditionCooldown("Carbo", 60.0)
+BSConditionCooldown("Infected", 60.0)
+BSConditionCooldown("Bleeding", 60.0)
+BSConditionCooldown("Cut", 60.0)
+BSConditionCooldown("FoodPoison", 60.0)
+BSConditionCooldown("Sanity", 60.0)
+BSConditionCooldown("Poison", 60.0)
+BSConditionCooldown("Hydration", 60.0)
+BSConditionCooldown("Fever", 60.0)
+BSConditionCooldown("HasFire", 60.0)
+
+
+
+
+
+
+
+
+
+

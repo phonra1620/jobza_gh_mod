@@ -1,0 +1,56 @@
+Item("Bamboo_Bow")
+{
+	Clip("PL|BowIdle", "PL|BambooBowArmedIdle")
+	Clip("PL|BowAim", "PL|BambooBowAim")
+	Clip("PL|BowAimIdle", "PL|BambooBowAimIdle")
+	Clip("PL|BowUnAim", "PL|BambooBowUnAim")
+	Clip("PL|BowShot", "PL|BambooBowShot")
+	Clip("PL|BowReload", "PL|BambooBowReload")
+	Clip("PL|BowNoArrowIdle", "PL|BambooBowNoArrowIdle")
+	Clip("PL|BowWalk", "PL|BambooBowWalk")
+	Clip("PL|BowRun", "PL|BambooBowRun")
+	Clip("PL|BowNoArrowRun", "PL|BambooBowNoArrowRun")
+	Clip("PL|BowNoArrowWalk", "PL|BambooBowNoArrowWalk")
+	Clip("PL|Fight_block", "PL|BambooBowBlock")
+	Clip("PL|Fight_block", "PL|BambooBowBlock")
+	Clip("PL|Axe_LowStamina", "PL|BambooBow_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_BambooBow")
+	Clip("PL|Jump_BowNoArrow", "PL|Jump_BambooBowNoArrow")
+	Clip("PL|BambooBowHarvest", "PL|BowHarvest")
+	//Clip("PL|BowStaminaNoArrow", "PL|BambooBowStaminaNoArrow")	
+	//Clip("PL|Bow_LowStamina", "PL|BambooBow_LowStamina")	
+	
+
+}
+Item("Bow")
+{	
+	Clip("PL|Fight_block", "PL|BowBlock")
+	Clip("PL|Axe_LowStamina", "PL|Bow_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Bow")
+	Clip("PL|Harvest", "PL|BowHarvest")
+
+}
+Item("Bow_ArenaHunting")
+{	
+	Clip("PL|Fight_block", "PL|BowBlock")
+	Clip("PL|Axe_LowStamina", "PL|Bow_LowStamina")	
+	Clip("PL|Jump", "PL|Jump_Bow")
+	Clip("PL|Harvest", "PL|BowHarvest")
+
+}
+Item("tribe_bow")
+{	
+	Clip("PL|Fight_block", "PL|BowBlock")
+	Clip("PL|Harvest", "PL|BowHarvest")
+	Clip("PL|Axe_LowStamina", "PL|Bow_LowStamina")
+	Clip("PL|Jump", "PL|Jump_Bow")	
+}
+
+Item("Bamboo_Blowpipe")
+{
+	//Clip("PL|Fight_block", "PL|FightBlockAxe")
+	//Clip("PL|AxeHitBack", "PL|AttackRight_AdditiveMachette")
+	//Clip("PL|PreFight_block", "PL|PreFightBlockAxe")
+	Clip("PL|Jump", "PL|BlowPipe_idle")
+	
+}

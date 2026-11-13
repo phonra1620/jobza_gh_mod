@@ -1,0 +1,290 @@
+//------------------------------movement-------------------------------
+
+Anim("Lurking_Walk_Forward")
+{
+	// Sound("Jaguar_Idle_", "AI/Jaguar/Idle", 0.0)
+}
+
+Anim("Walk_Forward")
+{
+	Footstep(0.14, "Jaguar_LegBLFoot")
+	Footstep(0.49, "Jaguar_LegFLFoot")
+	Footstep(0.64, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegFRFoot")
+}
+
+Anim("Walk_Left")
+{
+	Footstep(0.14, "Jaguar_LegBLFoot")
+	Footstep(0.49, "Jaguar_LegFLFoot")
+	Footstep(0.64, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegFRFoot")
+}
+
+Anim("Walk_Right")
+{
+	Footstep(0.14, "Jaguar_LegBLFoot")
+	Footstep(0.49, "Jaguar_LegFLFoot")
+	Footstep(0.64, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegFRFoot")
+}
+
+Anim("run_forward_spine")
+{
+	Footstep(0.09, "Jaguar_LegFRFoot")
+	Footstep(0.23, "Jaguar_LegFLFoot")
+	Footstep(0.49, "Jaguar_LegBRFoot")
+	Footstep(0.64, "Jaguar_LegBLFoot")
+}
+
+Anim("Run_Left")
+{
+	Footstep(0.09, "Jaguar_LegFRFoot")
+	Footstep(0.23, "Jaguar_LegFLFoot")
+	Footstep(0.49, "Jaguar_LegBRFoot")
+	Footstep(0.64, "Jaguar_LegBLFoot")
+}
+
+Anim("Run_Right")
+{
+	Footstep(0.09, "Jaguar_LegFRFoot")
+	Footstep(0.23, "Jaguar_LegFLFoot")
+	Footstep(0.49, "Jaguar_LegBRFoot")
+	Footstep(0.64, "Jaguar_LegBLFoot")
+}
+
+
+//------------------------------attack---------------------------------
+
+Anim("Attack_Both")
+{
+	Event("GiveDamageRArm", 0.5)
+	Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.35, "Jaguar_LegBRFoot")
+	Footstep(0.76, "Jaguar_LegFRFoot")
+	Footstep(0.82, "Jaguar_LegFLFoot")
+}
+
+Anim("Attack_Jump_Right")
+{
+	Event("GiveDamageLArm", 0.45)
+	Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.74, "Jaguar_LegBLFoot")
+	Footstep(0.77, "Jaguar_LegFRFoot")
+	Footstep(0.78, "Jaguar_LegBRFoot")
+	Footstep(0.82, "Jaguar_LegFLFoot")
+}
+
+Anim("Attack_Jump_Left")
+{
+	Event("GiveDamageRArm", 0.45)
+	Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.74, "Jaguar_LegBRFoot")
+	Footstep(0.77, "Jaguar_LegFLFoot")
+	Footstep(0.78, "Jaguar_LegBLFoot")
+	Footstep(0.82, "Jaguar_LegFRFoot")
+}
+
+Anim("Attack_Left_Soft")
+{
+	Event("GiveDamageRLeg", 0.5)
+	Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.40, "Jaguar_LegBLFoot")
+	Footstep(0.90, "Jaguar_LegBLFoot")
+	Footstep(0.98, "Jaguar_LegFLFoot")
+}
+
+Anim("Attack_Right_Soft")
+{
+	Event("GiveDamageLLeg", 0.5)
+	Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.34, "Jaguar_LegBRFoot")
+	Footstep(0.98, "Jaguar_LegBRFoot")
+	Footstep(0.98, "Jaguar_LegFRFoot")
+}
+
+// Anim("Attack_Right") //nieużywane
+// {
+	// Event("GiveDamage", 0.5)
+	// Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+// }
+
+// Anim("Attack_Left") //nieużywane
+// {
+	// Event("GiveDamage", 0.5)
+	// Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+// }
+
+Anim("low_to_jump_attack")
+{
+	Event("GiveDamageRArm", 0.5)
+	Sound("Black_Panther_attack_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.70, "Jaguar_LegBLFoot")
+	Footstep(0.70, "Jaguar_LegBRFoot")
+	Footstep(0.77, "Jaguar_LegFRFoot")
+	Footstep(0.79, "Jaguar_LegFLFoot")
+}
+
+//----------------------------combat mode-----------------------------
+Anim("Strafe_Left")
+{
+	Footstep(0.34, "Jaguar_LegFRFoot")
+	Footstep(0.50, "Jaguar_LegBRFoot")
+	Footstep(0.85, "Jaguar_LegFLFoot")
+	Footstep(0.99, "Jaguar_LegBLFoot")
+}
+
+Anim("Strafe_Right")
+{
+	Footstep(0.34, "Jaguar_LegFLFoot")
+	Footstep(0.50, "Jaguar_LegBLFoot")
+	Footstep(0.85, "Jaguar_LegFRFoot")
+	Footstep(0.99, "Jaguar_LegBRFoot")
+}
+
+Anim("turn_right_45")
+{
+	Footstep(0.42, "Jaguar_LegFLFoot")
+	Footstep(0.42, "Jaguar_LegBLFoot")
+	Footstep(0.90, "Jaguar_LegFRFoot")
+	Footstep(0.90, "Jaguar_LegBRFoot")
+}
+
+Anim("turn_right_90")
+{
+	Footstep(0.21, "Jaguar_LegBLFoot")
+	Footstep(0.45, "Jaguar_LegFRFoot")
+	Footstep(0.64, "Jaguar_LegBRFoot")
+	Footstep(0.74, "Jaguar_LegFLFoot")
+	Footstep(0.95, "Jaguar_LegBLFoot")
+}
+
+Anim("turn_right_135")
+{
+	Footstep(0.21, "Jaguar_LegBLFoot")
+	Footstep(0.30, "Jaguar_LegFRFoot")
+	Footstep(0.60, "Jaguar_LegFLFoot")
+	Footstep(0.64, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegBLFoot")
+	Footstep(0.95, "Jaguar_LegFRFoot")
+}
+
+Anim("turn_right_180")
+{
+	Footstep(0.21, "Jaguar_LegBLFoot")
+	Footstep(0.30, "Jaguar_LegFRFoot")
+	Footstep(0.60, "Jaguar_LegFLFoot")
+	Footstep(0.64, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegBLFoot")
+	Footstep(0.95, "Jaguar_LegFRFoot")
+}
+////////
+
+Anim("turn_left_45")
+{
+	Footstep(0.42, "Jaguar_LegFRFoot")
+	Footstep(0.42, "Jaguar_LegBRFoot")
+	Footstep(0.90, "Jaguar_LegFLFoot")
+	Footstep(0.90, "Jaguar_LegBLFoot")
+}
+
+Anim("turn_left_90")
+{
+	Footstep(0.21, "Jaguar_LegBRFoot")
+	Footstep(0.45, "Jaguar_LegFLFoot")
+	Footstep(0.64, "Jaguar_LegBLFoot")
+	Footstep(0.74, "Jaguar_LegFRFoot")
+	Footstep(0.95, "Jaguar_LegBRFoot")
+}
+
+Anim("turn_left_135")
+{
+	Footstep(0.21, "Jaguar_LegBRFoot")
+	Footstep(0.30, "Jaguar_LegFLFoot")
+	Footstep(0.60, "Jaguar_LegFRFoot")
+	Footstep(0.64, "Jaguar_LegBLFoot")
+	Footstep(0.95, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegFLFoot")
+}
+
+Anim("turn_left_180")
+{
+	Footstep(0.21, "Jaguar_LegBRFoot")
+	Footstep(0.30, "Jaguar_LegFLFoot")
+	Footstep(0.60, "Jaguar_LegFRFoot")
+	Footstep(0.64, "Jaguar_LegBLFoot")
+	Footstep(0.95, "Jaguar_LegBRFoot")
+	Footstep(0.95, "Jaguar_LegFLFoot")
+}
+
+
+
+Anim("jump_back")
+{
+	Sound("Black_Panther_Panic_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.52, "Jaguar_LegFRFoot")
+	Footstep(0.62, "Jaguar_LegFLFoot")
+	Footstep(0.62, "Jaguar_LegBLFoot")
+	Footstep(0.68, "Jaguar_LegBRFoot")
+}
+
+Anim("postattack_a")
+{
+	// Sound("Jaguar_PostAttack_", "AI/Jaguar", 0.0)
+}
+
+Anim("postattack_b")
+{
+	// Sound("Jaguar_PostAttack_", "AI/Jaguar", 0.0)
+	Footstep(0.33, "Jaguar_LegBRFoot")
+	Footstep(0.48, "Jaguar_LegBLFoot")
+	Footstep(0.65, "Jaguar_LegBRFoot")
+	Footstep(0.80, "Jaguar_LegBLFoot")
+}
+
+Anim("postattack_c")
+{
+	// Sound("Jaguar_PostAttack_", "AI/Jaguar", 0.0)
+}
+
+Anim("Hit_Reaction_Head_Left")
+{
+	// Sound("Black_Panther_hit_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.31, "Jaguar_LegFLFoot")
+	Footstep(0.87, "Jaguar_LegFLFoot")
+}
+
+Anim("Hit_Reaction_Head_Right")
+{
+	// Sound("Black_Panther_hit_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.31, "Jaguar_LegFRFoot")
+	Footstep(0.87, "Jaguar_LegFRFoot")
+}
+
+Anim("Death")
+{
+	// Sound("Black_Panther_death_", "AI/Quest_BlackPanther", 0.0)
+}
+
+//-------------------------------misc---------------------------------
+
+Anim("Idle_Roar")
+{
+	// Sound("Black_Panther_Lurking_", "AI/Quest_BlackPanther", 0.0)
+	Footstep(0.21, "Jaguar_LegFRFoot")
+	Footstep(0.25, "Jaguar_LegBRFoot")
+	Footstep(0.32, "Jaguar_LegBLFoot")
+	Footstep(0.53, "Jaguar_LegBLFoot")
+	Footstep(0.57, "Jaguar_LegFRFoot")
+	Footstep(0.61, "Jaguar_LegBRFoot")
+}
+
+Anim("Idle_Tail")
+{
+	// Sound("Black_Panther_Lurking_", "AI/Quest_BlackPanther", 0.0)
+}
+
+Anim("Growl")
+{
+	Sound("Black_Panther_Growl_", "AI/Quest_BlackPanther", 0.0)
+}

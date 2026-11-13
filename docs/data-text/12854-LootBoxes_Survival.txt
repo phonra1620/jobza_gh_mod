@@ -1,0 +1,15 @@
+// Bag with PVE3 Map /////////////////////////
+Node("small_bag_military_lootable_PVE3Map_Survi", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:small_bag_military_lootable_PVE3Map_Survi_Trigger", False, 0)
+	Element("SetBoolVariable:small_bag_military_lootable_PVE3Map_Survi_opened:true", False, 1)
+}
+Node("TPP_Backpack", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:small_bag_military_lootable_PVE3Map_Survi_opened", False, 0)
+	Element("DisableObject:small_bag_military_lootable_PVE3Map_Survi_Trigger", False, 1)
+	Element("DisableObject:small_bag_military_lootable_PVE3Map_Survi_Closed", False, 2)
+	Element("EnableObject:small_bag_military_lootable_PVE3Map_Survi_Open", False, 3)
+	Element("PlayAudioSource:small_bag_military_lootable_PVE3Map_Survi_Sound", False, 4)
+	Element("EnableComponent:QuestItem_Map_PVE3_C:Item", False, 5)
+}

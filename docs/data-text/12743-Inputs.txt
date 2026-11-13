@@ -1,0 +1,435 @@
+// Actions path - Assets\Code\Systems\InputsManager.cs - enum InputAction
+Action("Drop", "Q", "Down", 0.0)
+
+Action("MeleeAttack", "Mouse0", "Down", 0.0)
+
+Action("SpearAttack", "Mouse0", "Up", 0.0)
+
+Action("SpearUpAim", "Mouse0", "Down", 0.3)
+Action("SpearAttackUp", "Mouse0", "Up", 0.0)
+
+Action("SpearThrowAim", "Mouse2", "Down", 0.0)
+Action("SpearThrow", "Mouse2", "Up", 0.0)
+Action("SpearThrowReleaseAim", "R", "Down", 0.0)
+
+Action("ItemAim", "Mouse2", "Down", 0.0)
+Action("ItemThrow", "Mouse2", "Up", 0.0)
+Action("ItemCancelAim", "R", "Down", 0.0)
+Action("ItemSwing", "Mouse0", "Down", 0.0)
+
+Action("BlowpipeAim", "Mouse0", "Down", 0.0)
+Action("BlowpipeMaxAim", "LeftShift", "Down", 0.0)
+Action("BlowpipeStopMaxAim", "LeftShift", "Up", 0.0)
+Action("BlowpipeCancelAim", "R", "Down", 0.0)
+Action("BlowpipeShot", "Mouse0", "Up", 0.0)
+
+Action("BowAim", "Mouse0", "Down", 0.0)
+Action("BowMaxAim", "LeftShift", "Down", 0.0)
+Action("BowStopMaxAim", "LeftShift", "Up", 0.0)
+Action("BowCancelAim", "R", "Down", 0.0)
+Action("BowShot", "Mouse0", "Up", 0.0)
+
+Action("BowlSpil", "Mouse1", "Down", 1.0)
+Action("BowlDrink", "Mouse0", "Down", 1.0)
+
+Action("WaterDrink", "E", "Down", 1.0)
+
+Action("FishingAim", "Mouse0", "Down", 0.0)
+Action("FishingCancelAim", "R", "Down", 0.0)
+Action("FishingCast", "Mouse0", "Up", 0.0)
+Action("FishingStrike", "Mouse0", "Down", 0.0)
+Action("FishingReel", "Mouse1", "Down", 0.0)
+Action("FishingTakeFish", "E", "Down", 0.0)
+
+Action("Paint", "Mouse0", "Down", 0.0)
+Action("RemovePaint", "Mouse1", "Down", 0.0)
+
+Action("CreateConstruction", "Mouse0", "Down", 0.0)
+Action("ConstructionRotate", "Mouse1", "Down", 0.0)
+
+Action("ShowInventory", "Tab", "Down", 0.0)
+Action("HideInventory", "Tab", "Down", 0.0)
+
+Action("ShowNotepad", "N", "Down", 0.0)
+Action("HideNotepad", "N", "Down", 0.0)
+
+Action("ShowMap", "M", "Down", 0.0)
+Action("HideMap", "M", "Down", 0.0)
+
+Action("ShowWheel", "C", "Down", 0.0)
+Action("HideWheel", "C", "Up", 0.0)
+
+Action("LMB", "Mouse0", "Down", 0.0)
+Action("RMB", "Mouse1", "Down", 0.0)
+Action("MMB", "Mouse2", "Down", 0.0)
+
+Action("BISelectItem", "Mouse0", "Down", 0.0)
+Action("BIRotateLimb", "Mouse1", "Down", 0.0)
+Action("BISelectLimb", "Mouse2", "Down", 0.0)
+
+Action("SkipDialogNode", "Space", "Down", 0.0)
+Action("ShowSelectDialogNode", "T", "Down", 0.0)
+
+Action("QuickEquip0", "Alpha1", "Down", 0.0)
+Action("QuickEquip1", "Alpha2", "Down", 0.0)
+Action("QuickEquip2", "Alpha3", "Down", 0.0)
+Action("QuickEquip3", "Alpha4", "Down", 0.0)
+
+Action("SkipCutscene", "Space", "Down", 0.0)
+
+Action("SkipMovie", "Space", "Down", 0.0)
+
+Action("Block", "R", "Down", 0.0)
+
+Action("FistFightHard", "Mouse0", "Down", 0.0)
+
+Action("DodgeLeft", "A", "Down", 0.0)
+Action("DodgeRight", "D", "Down", 0.0)
+Action("DodgeForward", "W", "Down", 0.0) 
+Action("DodgeBackward", "S", "Down", 0.0)
+
+Action("Jump", "Space", "Down", 0.0)
+Action("Duck", "LeftControl", "Down", 0.0)
+Action("DuckStop", "LeftControl", "Up", 0.0)
+Action("Sprint", "LeftShift", "Down", 0.0)
+
+Action("Quit", "Escape", "Down", 0.0)
+Action("Watch", "F", "Down", 0.0)
+
+Action("ThrowStone", "G", "Down", 0.0)
+
+Action("Forward", "W", "Down", 0.0)
+Action("Backward", "S", "Down", 0.0)
+Action("Left", "A", "Down", 0.0)
+Action("Right", "D", "Down", 0.0)
+
+Action("SortItemsInBackpack", "Y", "Down", 0.5)
+
+Action("StopCrafting", "Q", "Down", 0.0)
+
+// Mouse
+AxisAnalog("LookLeft", "Mouse X", "PC", false)
+AxisAnalog("LookRight", "Mouse X", "PC", true)
+AxisAnalog("LookUp", "Mouse Y", "PC", false)
+AxisAnalog("LookDown", "Mouse Y", "PC", true)
+
+Action("AdditionalQuit", "Q", "Down", 0.0)
+Action("ResetNotepadCounters", "Y", "Down", 0.0)
+
+Action("ReadCollectable", "R", "Down", 0.0)
+
+Action("HideSelectDialog", "Q", "Down", 0.0)
+
+Action("TextChat", "Return", "Down", 0.0)
+
+//Action("ShowWalkieTalkieDialog", "T", "Down", 0.0)
+//Action("HideWalkieTalkieDialog", "T", "Up", 0.0)
+
+AxisDigital("PrevItem", "Mouse ScrollWheel", "PC", false, 0.05, 0.01)
+AxisDigital("NextItem", "Mouse ScrollWheel", "PC", true, 0.05, 0.01)
+AxisDigital("PrevPage", "Mouse ScrollWheel", "PC", false, 0.05, 0.01)
+AxisDigital("NextPage", "Mouse ScrollWheel", "PC", true, 0.05, 0.01)
+
+Action("KickPlayer", "Delete", "Down", 0.0)
+
+Action("DeleteSaveSlot", "Delete", "Down", 0.0)
+Action("ConvertSaveSlot", "C", "Down", 0.0)
+
+///////////////////////////////////////
+// Gamepad
+// AxisAnalog("action_type", "axis_name", "PC"/"Pad"[controller type], bool[invert value])
+// AxisDigital("action_type", "axis_name", "PC"/"Pad"[controller type], bool[invert value], [optional]float[hysteresis1], [optional]float[hysteresis2], [optional]"Down"/"Up")
+///////////////////////////////////////
+
+Action("Button_A", "Button_A", "Down", 0.0)
+Action("Button_B", "Button_B", "Down", 0.0)
+Action("Button_X", "Button_X", "Down", 0.0)
+Action("Button_Y", "Button_Y", "Down", 0.0)
+
+Action("Jump", "Button_A", "Down", 0.0)
+Action("Duck", "Button_B", "Down", 0.0)
+Action("DuckStop", "Button_B", "Up", 0.0)
+Action("Sprint", "L3", "Down", 0.0)
+AxisDigital("Block", "LeftTrigger", "Pad", false)
+Action("Quit", "Button_B", "Down", 0.0)
+Action("Drop", "Button_B", "Down", 0.0)
+
+Action("ThrowStone", "Button_Y", "Down", 1.5)
+AxisDigital("ThrowStonePad", "RightTrigger", "Pad", false)
+
+Action("StandUp", "Q", "Down", 0.0)
+Action("StandUp", "Button_B", "Down", 0.0)
+
+AxisDigital("ItemSwing", "RightTrigger", "Pad", false)
+
+Action("ReadCollectable", "Button_Y", "Down", 0.0)
+
+AxisDigital("SortItemsInBackpack", "DPadY", "Pad", true, 0.5, 0.5, "Down", 0.5)
+Action("ForceQuitBackpack", "Button_B", "Down", 0.5)
+
+AxisDigital("MeleeAttack", "RightTrigger", "Pad", false, 0.5, 0.5, "Down")
+
+AxisDigital("FistFightHard", "RightTrigger", "Pad", false)
+
+AxisDigital("SpearAttack", "RightTrigger", "Pad", false, 0.5, 0.5, "Up")
+Action("SpearThrowAim", "R3", "Down", 0.0)
+AxisDigital("SpearAttackUp", "RightTrigger", "Pad", false, 0.5, 0.5, "Up")
+AxisDigital("SpearUpAim", "RightTrigger", "Pad", false, 0.5, 0.5, "Down", 0.5)
+AxisDigital("SpearThrow", "RightTrigger", "Pad", false, 0.5, 0.5, "Down")
+Action("SpearThrowReleaseAim", "Button_Y", "Down", 0.0)
+
+Action("ItemAim", "R3", "Down", 0.0)
+AxisDigital("ItemThrow", "RightTrigger", "Pad", false, 0.5, 0.5, "Down")
+Action("ItemCancelAim", "Button_Y", "Down", 0.0)
+
+//AxisDigital("ShowNotepad", "LeftTrigger", "Pad", false, 1.0)
+//AxisDigital("HideNotepad", "LeftTrigger", "Pad", false, 1.0)
+
+AxisDigital("WatchNext", "DPadX", "Pad", false, 1.0)
+AxisDigital("WatchPrev", "DPadX", "Pad", true, 1.0)
+
+AxisDigital("HUDItemNext", "LeftStickY", "Pad", false)
+AxisDigital("HUDItemPrev", "LeftStickY", "Pad", true)
+Action("HUDItemSelect", "Button_X", "Down", 0.0)
+Action("HUDItemCancel", "Button_B", "Down", 0.0)
+
+AxisDigital("ShowMap", "DPadY", "Pad", true, 1.0)
+AxisDigital("HideMap", "DPadY", "Pad", true, 1.0)
+AxisDigital("ZoomMap", "LeftTrigger", "Pad", false)
+
+Action("StartCrafting", "RB", "Down", 0.0)
+
+Action("Watch", "RB", "Down", 0.0)
+
+Action("ShowInventory", "LB", "Down", 0.0)
+Action("HideInventory", "LB", "Down", 0.0)
+AxisDigital("InventoryNextTab", "DPadX", "Pad", false)
+AxisDigital("InventoryPrevTab", "DPadX", "Pad", true)
+
+Action("ShowWheel", "Back", "Down", 0.0)
+Action("HideWheel", "Back", "Up", 0.0)
+Action("WheelSelect", "R3", "Down", 0.0)
+
+Action("R3", "R3", "Down", 0.0)
+Action("L3", "L3", "Down", 0.0)
+
+Action("LeftStickRot", "LeftStickRot", "Down", 0.0)
+Action("RightStickRot", "RightStickRot", "Down", 0.0)
+
+AxisDigital("ShowSelectDialogNode", "DPadY", "Pad", false)
+
+AxisAnalog("Forward", "LeftStickY", "Pad", false)
+AxisAnalog("Backward", "LeftStickY", "Pad", true)
+AxisAnalog("Left", "LeftStickX", "Pad", false)
+AxisAnalog("Right", "LeftStickX", "Pad", true)
+
+AxisDigital("LSForward", "LeftStickY", "Pad", false)
+AxisDigital("LSBackward", "LeftStickY", "Pad", true)
+AxisDigital("LSRight", "LeftStickX", "Pad", true)
+AxisDigital("LSLeft", "LeftStickX", "Pad", false)
+
+AxisDigital("RSForward", "RightStickY", "Pad", false)
+AxisDigital("RSBackward", "RightStickY", "Pad", true)
+AxisDigital("RSRight", "RightStickX", "Pad", true)
+AxisDigital("RSLeft", "RightStickX", "Pad", false)
+
+AxisAnalog("LookLeft", "RightStickX", "Pad", false)
+AxisAnalog("LookRight", "RightStickX", "Pad", true)
+AxisAnalog("LookUp", "RightStickY", "Pad", false)
+AxisAnalog("LookDown", "RightStickY", "Pad", true)
+
+AxisDigital("DodgeLeft", "LeftStickX", "Pad", false)
+AxisDigital("DodgeRight", "LeftStickX", "Pad", true)
+AxisDigital("DodgeForward", "LeftStickY", "Pad", false)
+AxisDigital("DodgeBackward", "LeftStickY", "Pad", true)
+
+Action("BIShowHideArmor", "RB", "Down", 0.0)
+AxisDigital("BISelectLimb", "LeftTrigger", "Pad", false)
+AxisDigital("BIRotateLimb", "RightTrigger", "Pad", false)
+
+AxisDigital("NotepadNextTab", "RightTrigger", "Pad", false, 1.0)
+AxisDigital("NotepadPrevTab", "LeftTrigger", "Pad", false, 1.0)
+AxisDigital("PrevPage", "LeftStickX", "Pad", false)
+AxisDigital("NextPage", "LeftStickX", "Pad", true)
+AxisDigital("PrevItem", "DPadX", "Pad", true, 1.0)
+AxisDigital("NextItem", "DPadX", "Pad", false, 1.0)
+
+AxisDigital("DPadDown", "DPadY", "Pad", true, 1.0)
+AxisDigital("DPadLeft", "DPadX", "Pad", true, 1.0)
+AxisDigital("DPadRight", "DPadX", "Pad", false, 1.0)
+AxisDigital("DPadUp", "DPadY", "Pad", false, 1.0)
+
+Action("CreateConstruction", "Button_X", "Down", 0.0)
+AxisDigital("ConstructionRotate", "LeftTrigger", "Pad", false)
+
+AxisDigital("BowAim", "LeftTrigger", "Pad", false)
+Action("BowMaxAim", "R3", "Down", 0.0)
+AxisDigital("BowCancelAim", "LeftTrigger", "Pad", false, 0.5, 0.5, "Up")
+AxisDigital("BowShot", "RightTrigger", "Pad", false, 0.5, 0.5, "Down")
+
+AxisDigital("BlowpipeAim", "LeftTrigger", "Pad", false)
+Action("BlowpipeMaxAim", "R3", "Down", 0.0)
+AxisDigital("BlowpipeCancelAim", "LeftTrigger", "Pad", false, 0.5, 0.5, "Up")
+AxisDigital("BlowpipeShot", "RightTrigger", "Pad", false, 0.5, 0.5, "Down")
+
+AxisDigital("FishingAim", "RightTrigger", "Pad", false)
+Action("FishingCancelAim", "Button_Y", "Down", 0.0)
+AxisDigital("FishingCast", "RightTrigger", "Pad", false, 0.5, 0.5, "Up")
+AxisDigital("FishingStrike", "RightTrigger", "Pad", false)
+Action("FishingReel", "Button_Y", "Down", 0.0)
+Action("FishingTakeFish", "Button_X", "Down", 0.0)
+
+AxisDigital("Paint", "RightTrigger", "Pad", false)
+AxisDigital("RemovePaint", "LeftTrigger", "Pad", false)
+
+Action("SkipDialogNode", "Button_B", "Down", 0.0)
+Action("KickPlayer", "Button_Y", "Down", 0.0)
+
+Action("DeleteSaveSlot", "Button_Y", "Down", 0.0)
+Action("ConvertSaveSlot", "RB", "Down", 0.0)
+
+AxisAnalog("ScrollDown", "RightTrigger", "Pad", false)
+AxisAnalog("ScrollUp", "LeftTrigger", "Pad", false)
+
+Action("SkipMovie", "Button_B", "Down", 0.0)
+
+Action("StopCrafting", "Button_B", "Down", 0.0)
+
+Action("ResetNotepadCounters", "Button_Y", "Down", 0.0)
+
+// Actions path - Assets\Code\Objects\Trigger.cs - class TriggerAction
+TriggerAction("Take", 					"E", "Down", 0.0)
+TriggerAction("Take", 					"Button_X", "Down", 0.0)
+TriggerAction("Expand", 				"Mouse1", "Down", 0.0)
+TriggerAction("Expand", 				"Button_Y", "Down", 0.0)
+TriggerAction("Harvest", 				"E", "Down", 0.0)
+TriggerAction("Harvest", 				"Button_X", "Down", 0.0)
+TriggerAction("Eat", 					"E", "Down", 0.0)
+TriggerAction("Eat", 					"Button_X", "Down", 0.0)
+TriggerAction("Drink", 					"E", "Down", 0.0)
+TriggerAction("Drink", 					"Button_X", "Down", 0.0)
+TriggerAction("DrinkHold",				"E", "Down", 1.0)
+TriggerAction("DrinkHold",				"Button_X", "Down", 1.0)
+TriggerAction("Use", 					"E", "Down", 0.0)
+TriggerAction("Use", 					"Button_X", "Down", 0.0)
+TriggerAction("Sleep", 					"E", "Down", 2.0)
+TriggerAction("Sleep", 					"Button_X", "Down", 2.0)
+TriggerAction("Insert", 				"E", "Down", 0.0)
+TriggerAction("Insert", 				"Button_X", "Down", 0.0)
+TriggerAction("InsertX", 				"Q", "Down", 0.0)
+TriggerAction("InsertX", 				"Button_B", "Down", 0.0)
+TriggerAction("Climb", 					"E", "Down", 0.0)
+TriggerAction("Climb", 					"Button_X", "Down", 0.0)
+TriggerAction("PickUp", 				"E", "Down", 0.0)
+TriggerAction("PickUp", 				"Button_X", "Down", 0.0)
+TriggerAction("Arm", 					"E", "Down", 3.0)
+TriggerAction("Arm", 					"Button_X", "Down", 3.0)
+TriggerAction("Deconstruct", 			"Q", "Down", 1.0)
+TriggerAction("Deconstruct", 			"Button_Y", "Down", 1.0)
+TriggerAction("Exit", 					"E", "Down", 0.0)
+TriggerAction("Exit", 					"Button_X", "Down", 0.0)
+TriggerAction("Pour", 					"E", "Down", 0.0)
+TriggerAction("Pour", 					"Button_X", "Down", 0.0)
+TriggerAction("Read", 					"E", "Down", 0.0)
+TriggerAction("Read", 					"Button_X", "Down", 0.0)
+TriggerAction("Look", 					"E", "Down", 0.0)
+TriggerAction("Look", 					"Button_X", "Down", 0.0)
+TriggerAction("Open", 					"E", "Down", 0.0)
+TriggerAction("Open", 					"Button_X", "Down", 0.0)
+TriggerAction("Close", 					"E", "Down", 0.0)
+TriggerAction("Close", 					"Button_X", "Down", 0.0)
+TriggerAction("TakeHold", 				"E", "Down", 1.0)
+TriggerAction("TakeHold", 				"Button_X", "Down", 1.0)
+TriggerAction("TakeQueen",				"E", "Down", 5.0)
+TriggerAction("TakeQueen",				"Button_X", "Down", 5.0)
+TriggerAction("TakeHoldLong",			"E", "Down", 10.0)
+TriggerAction("TakeHoldLong",			"Button_X", "Down", 10.0)
+TriggerAction("RemoveFromSnareTrap",	"E", "Down", 2.0)
+TriggerAction("RemoveFromSnareTrap",	"Button_X", "Down", 2.0)
+TriggerAction("Ignite",             	"E", "Down", 0.0)
+TriggerAction("Ignite",             	"Button_X", "Down", 0.0)
+TriggerAction("Fill",	            	"E", "Down", 0.0)
+TriggerAction("Fill",	            	"Button_X", "Down", 0.0)
+TriggerAction("InventoryExpand",    	"Mouse1", "Down", 0.0)
+TriggerAction("InventoryExpand",    	"Button_Y", "Down", 0.0)
+TriggerAction("UseHold", 		    	"E", "Down", 2.0)
+TriggerAction("UseHold", 		    	"Button_X", "Down", 2.0)
+TriggerAction("ClimbHold", 		    	"E", "Down", 1.0)
+TriggerAction("ClimbHold", 		    	"Button_X", "Down", 1.0)
+TriggerAction("SwapHold", 		    	"E", "Down", 0.8)
+TriggerAction("SwapHold", 		    	"Button_X", "Down", 0.8)
+TriggerAction("SaveGame", 		    	"E", "Down", 1.0)
+TriggerAction("SaveGame", 		    	"Button_X", "Down", 1.0)
+TriggerAction("Remove",             	"Mouse1", "Down", 0.0)
+TriggerAction("Remove",             	"Button_Y", "Down", 0.0)
+TriggerAction("InsertToStand",			"E", "Down", 0.0)
+TriggerAction("InsertToStand",			"Button_X", "Down", 0.0)
+TriggerAction("TurnOn",					"E", "Down", 0.0)
+TriggerAction("TurnOn",					"Button_X", "Down", 0.0)
+TriggerAction("TurnOff",				"E", "Down", 0.0)
+TriggerAction("TurnOff",				"Button_X", "Down", 0.0)
+TriggerAction("IgniteFrom",				"E", "Down", 0.0)
+TriggerAction("IgniteFrom",				"Button_X", "Down", 0.0)
+TriggerAction("Touch",					"E", "Down", 0.0)
+TriggerAction("Touch",					"Button_X", "Down", 0.0)
+TriggerAction("Talk",					"E", "Down", 0.0)
+TriggerAction("Talk",					"Button_X", "Down", 0.0)
+TriggerAction("Play",					"E", "Down", 0.0)
+TriggerAction("Play",					"Button_X", "Down", 0.0)
+TriggerAction("Plow",					"Q", "Down", 2.0)
+TriggerAction("Plow",					"Button_Y", "Down", 2.0)
+TriggerAction("Pick",					"Button_X", "Down", 0.0)
+TriggerAction("HelpCoop", 				"E", "Down", 0.0)
+TriggerAction("HelpCoop", 				"Button_X", "Down", 0.0)
+TriggerAction("OpenHold", 				"E", "Down", 1.0)
+TriggerAction("OpenHold", 				"Button_X", "Down", 1.0)
+TriggerAction("DigHold", 				"E", "Down", 1.0)
+TriggerAction("DigHold", 				"Button_X", "Down", 1.0)
+TriggerAction("ReadHold", 				"E", "Down", 1.0)
+TriggerAction("ReadHold", 				"Button_X", "Down", 1.0)
+TriggerAction("CremationRitualHold",	"E", "Down", 1.0)
+TriggerAction("CremationRitualHold",	"Button_X", "Down", 1.0)
+TriggerAction("FuneralPyreHold", 		"E", "Down", 1.0)
+TriggerAction("FuneralPyreHold", 		"Button_X", "Down", 1.0)
+TriggerAction("PutDown", 				"E", "Down", 0.0)
+TriggerAction("PutDown", 				"Button_X", "Down", 0.0)
+TriggerAction("HarvestHold", 			"E", "Down", 1.0)
+TriggerAction("HarvestHold", 			"Button_X", "Down", 1.0)
+TriggerAction("InsertToSlot", 			"Button_A", "Down", 0.0)
+TriggerAction("AddToCrafting", 			"Button_A", "Down", 0.0)
+TriggerAction("PlayDrumBass", 			"Button_X", "Down", 0.0)
+TriggerAction("PlayDrumTreble", 		"Button_Y", "Down", 0.0)
+TriggerAction("PlayDrumBass", 			"E", "Down", 0.0)
+TriggerAction("PlayDrumTreble", 		"R", "Down", 0.0)
+TriggerAction("PickUpHold", 			"E", "Down", 1.0)
+TriggerAction("PickUpHold", 			"Button_X", "Down", 1.0)
+TriggerAction("RepairHold", 			"E", "Down", 1.0)
+TriggerAction("RepairHold", 			"Button_X", "Down", 1.0)
+TriggerAction("Place", 					"E", "Down", 0.0)
+TriggerAction("Place", 					"Button_X", "Down", 0.0)
+TriggerAction("NextGhostItem", 			"Mouse1", "Down", 0.0)
+TriggerAction("NextGhostItem", 			"Button_Y", "Down", 0.0)
+TriggerAction("NextDecorationGhostItem","V", "Down", 0.0)
+TriggerAction("NextDecorationGhostItem","Button_A", "Down", 0.0)
+TriggerAction("Catch", 					"E", "Down", 0.0)
+TriggerAction("Catch", 					"Button_X", "Down", 0.0)
+TriggerAction("DrinkNoAnimHold", 		"E", "Down", 1.0)
+TriggerAction("DrinkNoAnimHold", 		"Button_X", "Down", 1.0)
+TriggerAction("CraftPotteryHold", 		"E", "Down", 1.0)
+TriggerAction("CraftPotteryHold", 		"Button_X", "Down", 1.0)
+TriggerAction("LeaveHold", 				"E", "Down", 1.0)
+TriggerAction("LeaveHold", 				"Button_X", "Down", 1.0)
+TriggerAction("PushHold", 				"E", "Down", 1.0)
+TriggerAction("PushHold", 				"Button_X", "Down", 1.0)
+TriggerAction("Pet", 					"R", "Down", 0.0)
+TriggerAction("Pet", 					"Button_X", "Down", 0.0)
+TriggerAction("Whistle", 				"E", "Down", 0.0)
+TriggerAction("Whistle", 				"Button_X", "Down", 0.0)
+TriggerAction("CleanHold", 				"E", "Down", 1.0)
+TriggerAction("CleanHold", 				"Button_X", "Down", 1.0)
+TriggerAction("Tie", 					"E", "Down", 1.0)
+TriggerAction("Tie", 					"Button_X", "Down", 1.0)
+TriggerAction("Pull", 					"E", "Down", 0.0)
+TriggerAction("Pull", 					"Button_X", "Down", 0.0)
+TriggerAction("TakeAll", 				"Q", "Down", 0.0)
+TriggerAction("TakeAll", 				"Button_A", "Down", 0.0)

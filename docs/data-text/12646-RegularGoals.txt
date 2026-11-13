@@ -1,0 +1,13 @@
+Goal("Death")
+Goal("ReactOnHit")
+
+Goal("Emergency")
+
+Goal("MoveAroundEnemy")
+
+//Goal("PostAttack")
+Goal("ComboAttack")
+
+Goal("MoveToEnemy")
+
+Goal("Loiter")

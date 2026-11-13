@@ -1,0 +1,13 @@
+Node("AfterTutorial_Unlocks_Patch_FlamekeeperUpdate", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("UnlockItemInNotepadNoMsg:wooden_fence_strong", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_fence_strong", False, 2)
+	Element("UnlockItemInNotepadNoMsg:bamboo_fence_weak", False, 3)
+	Element("UnlockItemInNotepadNoMsg:wooden_fence_weak", False, 4)
+	Element("UnlockItemInNotepadNoMsg:bamboo_gate", False, 5)
+	Element("UnlockItemInNotepadNoMsg:wooden_gate", False, 6)
+	Element("UnlockItemInNotepadNoMsg:wooden_ramp", False, 7)
+	Element("UnlockItemInNotepadNoMsg:bamboo_ramp", False, 8)
+	Element("LockCraftingItem:Flamekeeper_Starter", False, 9)
+}

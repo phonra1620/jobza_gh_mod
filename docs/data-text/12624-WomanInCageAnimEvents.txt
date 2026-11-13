@@ -1,0 +1,28 @@
+Anim("vil_woman_cage_idle")
+{
+	Sound("CageWoman_idle_", "PVE/WomanInCage/woman_idle/woman0", 0.1)
+}
+Anim("vil_woman_cage_look_up")
+{
+	Sound("CageWoman_react_", "PVE/WomanInCage/woman_react/woman0", 0.5)
+}
+Anim("vil_woman_cage_look_down")
+{
+	Sound("CageWoman_react_Cry_", "PVE/WomanInCage/woman_react/woman0", 0.5)	
+}
+Anim("vil_woman_cage_look_idle")
+{
+	Sound("CageWoman_idle_", "PVE/WomanInCage/woman_idle/woman0", 0.1)
+}
+Anim("vil_woman_cage_stand")
+{
+	//Sound("CageWoman_idle_Sing_", "PVE/WomanInCage/woman_idle/woman0", 0.5)
+}
+Anim("vil_woman_cage_dirt_A")
+{
+	Sound("CageWoman_react_Cry_", "PVE/WomanInCage/woman_react/woman0", 0.1)
+}
+Anim("vil_woman_cage_getupB")
+{
+	Sound("CageWoman_savedA_", "PVE/WomanInCage/woman_saved/woman0", 0.5)
+}

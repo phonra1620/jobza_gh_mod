@@ -1,0 +1,5 @@
+TriggerCheckRange(2.15)
+TriggerUseRange(2.15)
+FistFightNormalDamage(5.0)
+FistFightHardDamage(10.0)
+Param("LowStaminaDamageMul", 0.5)

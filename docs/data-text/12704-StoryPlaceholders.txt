@@ -1,0 +1,45 @@
+Node("Debug_Movie_Intro_Boat", True, -56.0000, 334.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("CreateBoolVariable:Movie_Boat:false", False, 0)
+	Element("IsBoolVariableTrue:true:Movie_Boat", False, 0)
+	// placeholder
+	Element("PlayMovieWithFade:Intro:1.0", False, 1)
+	// placeholder
+	Element("IsMoviePlaying:true", False, 2)
+}
+Node("Debug_Movie_End_of_Tutorial", True, -61.0000, 241.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("CreateBoolVariable:Movie_End_of_Tutorial:false", False, 0)
+	Element("IsBoolVariableTrue:true:Movie_End_of_Tutorial", False, 0)
+	Element("PlayMovieWithFade:Tutorial_End:0.7", False, 1)
+	// placeholder
+	Element("IsMoviePlaying:true", False, 2)
+}
+Node("Debug_Movie_END_GAME", True, -63.0000, 149.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("CreateBoolVariable:Movie_END_GAME:false", False, 0)
+	Element("IsBoolVariableTrue:true:Movie_END_GAME", False, 0)
+	// placeholder
+	Element("PlayMovieWithFade:Intro:1.0", False, 1)
+	// placeholder
+	Element("IsMoviePlaying:true", False, 2)
+}
+
+Node("Airport_Door_Unlocker", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockKey", False, 0)
+	Element("DisableObject:AirPortShedDoor_NoKey_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockKey", False, 2)
+	Element("IsBoolVariableTrue:false:UnlockDialogSystem", False, 3)
+	Element("EnableObject:AirPortShedDoor_Trigger", False, 4)
+}
+Node("Airport_Door", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:AirPortShedDoor_Trigger", False, 0)
+	Element("DisableObject:AirPortShedDoor_Trigger", False, 1)
+	Element("ForcePlayAnimation:Shed_doors:Shed_doorsOpen", False, 2)
+	Element("EnableObject:Unlock_AirportShed_Sound", False, 3)
+	Element("DisableObject:padlock", False, 4)
+	Element("EnableObject:padlock_to_drop", False, 5)
+	Element("ShowFakeItemInBackpack:backpack_key:false", False, 6)	
+}

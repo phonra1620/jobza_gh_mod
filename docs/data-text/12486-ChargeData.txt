@@ -1,0 +1,6 @@
+AnimSpeed(1.15)
+MaxChargeDist(8.0)
+MinDistToStart(4.0)
+MaxDistToStart(10.0)
+ChargeDamage(20.0)
+MinTimeInterval(7.0)

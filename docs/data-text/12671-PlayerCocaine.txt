@@ -1,0 +1,8 @@
+Duartion(2.0)
+StaminaConsumptionMul(0.5)
+HPConsumptionMul(0.5)
+FatConsumptionMul(0.5)
+CarboConsumptionMul(0.5)
+ProteinsConsumptionMul(0.5)
+HydrationConsumptionMul(0.5)
+IncreaseEnergyPerSec(5.0)

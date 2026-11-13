@@ -1,0 +1,4 @@
+Idle("armadillo_idle_01", "armadillo_idle_02", "armadillo_idle_03", "armadillo_idle_04", "armadillo_idle_05", "armadillo_idle_06")
+Panic("armadillo_run_01", "armadillo_run_01")
+Hit("armadillo_hit_01", "armadillo_hit_02")
+Death("armadillo_die_01", "armadillo_die_02", "armadillo_die_03")

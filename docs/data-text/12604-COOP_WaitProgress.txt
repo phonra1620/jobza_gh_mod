@@ -1,0 +1,33 @@
+Node("COOP_WaitingForDream1", True, -84.0000, 181.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:Dream1_Hospital", False, 0)
+	Element("SetHideProgress:20", False, 1)
+	Element("IsBoolVariableTrue:true:Dream1_Arrival", False, 2)
+	Element("SetHideProgress:40", False, 3)
+	Element("IsBoolVariableTrue:true:Dream1_Village", False, 4)
+	Element("SetHideProgress:60", False, 5)
+	Element("IsBoolVariableTrue:true:Dream1_Gift", False, 6)
+	Element("SetHideProgress:80", False, 7)
+}
+Node("COOP_WaitingForDream2", True, -84.0000, 181.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:Dream2_Hospital", False, 0)
+	Element("SetHideProgress:20", False, 1)
+	Element("IsBoolVariableTrue:true:Dream2_Scene1_RoomBook", False, 2)
+	Element("SetHideProgress:40", False, 3)
+	Element("IsBoolVariableTrue:true:Dream2_Scene2_Room", False, 4)
+	Element("SetHideProgress:60", False, 5)
+	Element("IsBoolVariableTrue:true:Dream2_Scene3_Hospital", False, 6)
+	Element("SetHideProgress:80", False, 7)
+}
+Node("COOP_WaitingForDream3", True, -84.0000, 181.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:Dream3_Corridor", False, 0)
+	Element("SetHideProgress:20", False, 1)
+	Element("IsBoolVariableTrue:true:Dream3_Room", False, 2)
+	Element("SetHideProgress:40", False, 3)
+	Element("IsBoolVariableTrue:true:Dream3_Wall", False, 4)
+	Element("SetHideProgress:60", False, 5)
+	Element("IsBoolVariableTrue:true:Dream3_Fawela", False, 6)
+	Element("SetHideProgress:80", False, 7)
+}

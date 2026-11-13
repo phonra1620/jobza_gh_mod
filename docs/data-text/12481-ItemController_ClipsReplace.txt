@@ -1,0 +1,40 @@
+Item("Stone")
+{
+	Clip("PL|MeeleIdle", "PL|MeeleStone_Idle")	
+	Clip("PL|AttackRight", "PL|StoneAttack")	
+	
+}
+
+
+Item("Torch")
+{
+	Clip("PL|PreFight_block", "PL|PreTorchBlock")	
+	Clip("PL|Fight_block", "PL|TorchBlock")	
+	Clip("PL|Axe_LowStamina", "PL|TorchNormal_LowStamina")	
+	//Clip("PL|Jump", "PL|Jump_TorchUnlit")
+	Clip("PL|AttackRight", "PL|TorchAttack")	
+
+}
+
+Item("Weak_Torch")
+{
+	Clip("PL|PreFight_block", "PL|PreTorchBlock")	
+	Clip("PL|Fight_block", "PL|TorchBlock")	
+	Clip("PL|Axe_LowStamina", "PL|TorchNormal_LowStamina")	
+	//Clip("PL|Jump", "PL|Jump_TorchUnlit")	
+	Clip("PL|AttackRight", "PL|TorchAttack")	
+}
+
+Item("Tobacco_Torch")
+{
+	Clip("PL|PreFight_block", "PL|PreTorchBlock")	
+	Clip("PL|Fight_block", "PL|TorchBlock")	
+	Clip("PL|Axe_LowStamina", "PL|TorchNormal_LowStamina")	
+	//Clip("PL|Jump", "PL|Jump_TorchUnlit")	
+		Clip("PL|AttackRight", "PL|TorchAttack")	
+}
+
+Item("Walkie_Talkie")
+{
+	Clip("PL|SlowerWatchIdle", "PL|WalkieTalkieWatch")	
+}

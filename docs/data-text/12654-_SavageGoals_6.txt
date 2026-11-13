@@ -1,0 +1,14 @@
+Goal("Death", 0)
+Goal("HumanPunchBack", 1, 0.25)
+Goal("HumanHitReaction", 1)
+
+Goal("HumanJumpBack", 1, 0.8)
+
+Goal("HumanEmergency", 3)
+
+Goal("HumanRest", 4)
+Goal("HumanUpset", 4)
+
+Goal("HumanThrowStone", 8, 0.8)
+Goal("HumanMoveAwayFromEnemy", 8)
+Goal("Idle", 9)

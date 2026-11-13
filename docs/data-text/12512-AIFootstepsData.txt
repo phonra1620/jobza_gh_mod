@@ -1,0 +1,75 @@
+Unknown()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/AI/Footsteps/", "tribe_step_default_01;tribe_step_default_02;tribe_step_default_03;tribe_step_default_04;tribe_step_default_05;tribe_step_default_06", "tribe_run_default_01;tribe_run_default_02;tribe_run_default_03;tribe_run_default_04;tribe_run_default_05;tribe_run_default_06")
+}
+Water()
+{
+	FX("Foot_Splash_a")
+	Sound("Sounds/AI/Footsteps/", "tribe_walk_water_01;tribe_walk_water_02;tribe_walk_water_03;tribe_walk_water_04;tribe_walk_water_05;tribe_walk_water_06", "tribe_run_water_01;tribe_run_water_02;tribe_run_water_03;tribe_run_water_04;tribe_run_water_05;tribe_run_water_06")
+}
+Wood()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/TempSounds/Player/", "wood_step_01;wood_step_02;wood_step_03;wood_step_04;wood_step_05;wood_step_06;wood_step_07;wood_step_08")
+}
+Bush()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/AI/Footsteps/", "tribe_step_grass_01;tribe_step_grass_02;tribe_step_grass_03;tribe_step_grass_04;tribe_step_grass_05;tribe_step_grass_06;tribe_step_grass_07;tribe_step_grass_08", "tribe_run_grass_01;tribe_run_grass_02;tribe_run_grass_03;tribe_run_grass_04;tribe_run_grass_05;tribe_run_grass_06;tribe_run_grass_07;tribe_run_grass_08")
+}
+Stone()
+{
+	FX("footstep_dirt")
+	//Sound("Sounds/TempSounds/Player/", "concrete_step_01;concrete_step_02;concrete_step_03;concrete_step_04;concrete_step_05;concrete_step_06;concrete_step_07")
+}
+DryLeaves()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/AI/Footsteps/", "tribe_step_grass_01;tribe_step_grass_02;tribe_step_grass_03;tribe_step_grass_04;tribe_step_grass_05;tribe_step_grass_06;tribe_step_grass_07;tribe_step_grass_08", "tribe_run_grass_01;tribe_run_grass_02;tribe_run_grass_03;tribe_run_grass_04;tribe_run_grass_05;tribe_run_grass_06;tribe_run_grass_07;tribe_run_grass_08")
+}
+Grass()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/AI/Footsteps/", "tribe_step_grass_01;tribe_step_grass_02;tribe_step_grass_03;tribe_step_grass_04;tribe_step_grass_05;tribe_step_grass_06;tribe_step_grass_07;tribe_step_grass_08", "tribe_run_grass_01;tribe_run_grass_02;tribe_run_grass_03;tribe_run_grass_04;tribe_run_grass_05;tribe_run_grass_06;tribe_run_grass_07;tribe_run_grass_08")
+}
+Mud()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/AI/Footsteps/", "tribe_walk_mud_01;tribe_walk_mud_02;tribe_walk_mud_03;tribe_walk_mud_04;tribe_walk_mud_05;tribe_walk_mud_06", "tribe_run_mud_01;tribe_run_mud_02;tribe_run_mud_03;tribe_run_mud_04;tribe_run_mud_05;tribe_run_mud_06")
+}
+Sand()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/AI/Footsteps/", "tribe_step_grass_01;tribe_step_grass_02;tribe_step_grass_03;tribe_step_grass_04;tribe_step_grass_05;tribe_step_grass_06;tribe_step_grass_07;tribe_step_grass_08", "tribe_run_grass_01;tribe_run_grass_02;tribe_run_grass_03;tribe_run_grass_04;tribe_run_grass_05;tribe_run_grass_06;tribe_run_grass_07;tribe_run_grass_08")
+}
+Flesh()
+{
+	FX("footstep_dirt")
+	//Sound("Sounds/TempSounds/Player/", "mud_step_01;mud_step_02;mud_step_03;mud_step_04;mud_step_05;mud_step_06;mud_step_07;mud_step_08")
+}
+Soil()
+{
+	FX("footstep_dirt")
+	//Sound("Sounds/TempSounds/Player/", "grass_step_01;grass_step_02;grass_step_03;grass_step_04;grass_step_05;grass_step_06;grass_step_07;grass_step_08")
+}
+Moss()
+{
+	FX("footstep_dirt")
+	//Sound("Sounds/TempSounds/Player/", "grass_step_01;grass_step_02;grass_step_03;grass_step_04;grass_step_05;grass_step_06;grass_step_07;grass_step_08")
+}
+WoodTree()
+{
+	FX("footstep_dirt")
+	//Sound("Sounds/TempSounds/Player/", "wood_tree_step_01;wood_tree_step_02;wood_tree_step_03;wood_tree_step_04;wood_tree_step_05;wood_tree_step_06;wood_tree_step_07")
+}
+Metal()
+{
+	FX("footstep_dirt")
+	Sound("Sounds/TempSounds/Player/", "metal_step_02;metal_step_03;metal_step_04")
+}
+Tent()
+{
+	FX("footstep_dirt")
+	//Sound("Sounds/TempSounds/Player/", "tent_step_01;tent_step_02;tent_step_03;tent_step_04;tent_step_05;tent_step_06")
+}

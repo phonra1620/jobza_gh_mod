@@ -1,0 +1,156 @@
+// Event("GiveDamageRArm", 0.5)
+// Event("GiveDamageLArm", 0.5)
+// Event("GiveDamageLLeg", 0.5)
+// Event("GiveDamageRLeg", 0.5)
+
+
+Anim("anteater_walk_forward")
+{
+	Footstep(0.1, "LB_foot")
+	Footstep(0.28, "LF_claw")
+	Footstep(0.62, "RB_foot")
+	Footstep(0.78, "RF_claw")
+}
+
+Anim("anteater_walk_left")
+{
+	Footstep(0.1, "LB_foot")
+	Footstep(0.28, "LF_claw")
+	Footstep(0.62, "RB_foot")
+	Footstep(0.78, "RF_claw")
+}
+
+Anim("anteater_walk_right")
+{
+	Footstep(0.1, "LB_foot")
+	Footstep(0.28, "LF_claw")
+	Footstep(0.62, "RB_foot")
+	Footstep(0.78, "RF_claw")
+}
+
+Anim("anteater_run_forward")
+{
+	Footstep(0.22, "RF_claw")
+	Footstep(0.37, "LF_claw")
+	Footstep(0.88, "RB_foot")
+	Footstep(0.99, "LB_foot")
+}
+
+Anim("anteater_run_left")
+{
+	Footstep(0.22, "RF_claw")
+	Footstep(0.37, "LF_claw")
+	Footstep(0.88, "RB_foot")
+	Footstep(0.99, "LB_foot")
+}
+
+Anim("anteater_run_right")
+{
+	Footstep(0.22, "RF_claw")
+	Footstep(0.37, "LF_claw")
+	Footstep(0.88, "RB_foot")
+	Footstep(0.99, "LB_foot")
+}
+
+Anim("anteater_turn_left")
+{
+	Footstep(0.20, "RF_claw")
+	Footstep(0.23, "LB_foot")
+	Footstep(0.35, "LF_claw")
+	Footstep(0.38, "RB_foot")
+	Footstep(0.49, "RF_claw")
+	Footstep(0.63, "LB_foot")
+	Footstep(0.67, "LF_claw")
+	Footstep(0.65, "RB_foot")
+	Footstep(0.83, "RF_claw")
+}
+
+Anim("anteater_turn_right")
+{
+	Footstep(0.20, "LF_claw")
+	Footstep(0.23, "RB_foot")
+	Footstep(0.35, "RF_claw")
+	Footstep(0.38, "LB_foot")
+	Footstep(0.49, "LF_claw")
+	Footstep(0.63, "RB_foot")
+	Footstep(0.67, "RF_claw")
+	Footstep(0.65, "LB_foot")
+	Footstep(0.83, "LF_claw")
+}
+
+Anim("anteater_eat")
+{
+	Footstep(0.12, "LF_claw")
+}
+
+Anim("anteater_idle")
+{
+	
+}
+
+Anim("anteater_hitreaction")
+{
+	
+}
+
+Anim("anteater_trapkill")
+{
+	
+}
+
+Anim("anteater_traphang")
+{
+	
+}
+
+Anim("anteater_attack_left")
+{
+	Event("GiveDamageRLeg", 0.44)
+	Footstep(0.67, "LF_claw")
+	Footstep(0.67, "RF_claw")
+}
+
+Anim("anteater_attack_right")
+{
+	Event("GiveDamageLLeg", 0.44)
+	Footstep(0.67, "LF_claw")
+	Footstep(0.67, "RF_claw")
+}
+
+Anim("anteater_attack_front")
+{
+	Footstep(0.15, "LB_foot")
+	Footstep(0.23, "RF_claw")
+	Footstep(0.32, "LF_claw")
+	Footstep(0.38, "RB_foot")
+	Event("GiveDamageLLeg", 0.64)
+	Footstep(0.66, "LB_foot")
+	Footstep(0.75, "RB_foot")
+	Footstep(0.78, "LF_claw")
+	Footstep(0.83, "RF_claw")
+}
+
+
+Anim("anteater_lay_down")
+{
+	Footstep(0.20, "RF_claw")
+	Footstep(0.47, "RF_claw")
+}
+
+Anim("anteater_sleep")
+{
+	
+}
+
+Anim("anteater_get_up")
+{
+	Footstep(0.25, "RF_claw")
+	Footstep(0.35, "LF_claw")
+	Footstep(0.56, "RF_claw")
+	Footstep(0.71, "LF_claw")
+}
+
+Anim("anteater_death")
+{
+	Event("DieEnd", 0.99)
+}

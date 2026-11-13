@@ -1,0 +1,498 @@
+SCENARIO
+- DeactivateScenarioNode:'node name'
+- ActivateScenarioNode:'node name'
+- IsNodeCompleted:'true|false':'node name'
+- ExecuteNode:'node name'
+- RestartNode:'node name'
+- CompleteTutorial
+- ShowYesNoDialog'dialog type':'label text id':'description text id' -> Available types: YesNo
+																						 Ok
+- IsYesNoDialogActive:'true|false'
+
+DIALOGS
+ - StartDialog:'dialog name'
+ - StartDialogWithWT:'dialog name'
+ - StopDialog
+ - IsDialogPlaying:'true|false':'dialog name'
+ - IsAnyDialogPlaying:'true|false'
+ - UnlockDialog:'dialog name'
+ - LockDialog:'dialog name'
+ - LockAllDialogs
+ - StartDialogIfNonPlaying:'dialog name'
+ - UnlockPveDialog:'dialog name'
+ - LockPveDialog:'dialog name'
+
+OBJECTIVES -> Check 'Resources/Scripts/Objectives/Objectives.txt' to find objective names
+ - ActivateObjective:'objective name':bool show_objective
+ - CompleteObjective:'objective name'
+ - CompleteAndHideObjective:'objective name'
+ - CompleteAllObjectives
+ - IsObjectiveCompleted:'true|false':'objective_name'
+ - AddObjective3D:'object name':'display name'
+ - RemoveObjective3D:'object name'
+ - SetObjectiveDuration:'duration' -> if 0 objective will be displayed until is not completed
+  
+ITEMS -> Check 'Code/Objects/Items/ItemEnums.sc -> Event' to item ids
+ - HaveItem:'true|false':'item id'
+ - HaveItemType:'true|false':'item type'
+ - HaveAnyItem:'true|false':'excluded item id'
+ - HaveLiquid:'true|false':'item id':'amount'
+ - HaveItemEquiped:'true|false':'item id'
+ - UnlockItemInNotepad:'item_name'
+ - LockItemInNotepad:'item_name'
+ - UnlockItemInNotepadNoMsg:'item_name'
+ - UnlockPlantInNotepad:'item_name'
+ - ItemExist:'true|false':'item id'
+ - GhostExist:'true|false':'name'
+ - IsFirecampBurning:'true|false':'item id'
+ - WasReadedAndOff:'true|false':'object name'
+ - WasReaded:'true|false':'object name'
+ - BackpackWasOpen:'true|false'
+ - IsSlotFilled:'true|false':'slot name'
+ - LockCraftingItem:'item_name'
+ - UnlockCraftingItem:'item_name'
+ - LockItemInfo:'item_name'
+ - UnlockItemInfo:'item_name'
+ - ExtinguishAllFirecams
+ - WypierdolAllFirecamps
+ - DeleteAllGhosts
+ - IsSettingUpGhost:'true|false':'ghost name'
+ - IsRackBurning:'true|false':'rack name'
+ - BurnoutRack:'rack name':'true|false' -> set to false to not spawn ash and charcoal
+ - SetRackEndlessFire:'rack name'
+ - ResetRackEndlessFire:'rack name'
+ - IsGeneratorFull:'true|false':'generator name'
+ - ShowFakeItemInBackpack:string item_id:bool true|false
+ - DeleteInventoryItem:'item name'
+
+PLAYER
+ - PlayerCondition:'condition name':'Less|Greater|Equal':'value' -> Available conditions: Health, Stamina, Energy, NutritionFat, NutritionCarbo, NutritionProteins, Sanity, Hydration
+ - PlayerSetParam:'condition name':'value' -> Available params: HP, Stamina, Energy, NutritionFat, NutritionCarbo, NutritionProteins, Sanity, Hydration
+ - PlayerIsInSensor:'true|false':'sensor name'
+ - PlayerIsLookingAtObject:'true|false':'object name':'distance'
+ - PlayerSetLookAtObject:'obj name'
+ - PlayerSetLookAtObjectFactor:'factor'
+ - PlayerResetLookAtObjectFactor
+ - PlayerSetPositionObject:'obj name'
+ - PlayerSetPositionObjectSpeedMod:'speed_modifier'
+ - PlayerBlockMoves
+ - PlayerUnblockMoves
+ - PlayerBlockRotation
+ - PlayerUnblockRotation
+ - PlayerResetBlockMoves
+ - PlayerResetBlockRotation
+ - PlayerGiveDamage:'value' 
+ - PlayerShowRadio
+ - PlayerHideRadio
+ - PlayerAddItemToInventory:'obj_name'
+ - PlayerShowDivingMask
+ - PlayerHideDivingMask
+ - PlayerShowBiohazardMask
+ - PlayerHideBiohazardMask
+ - AddWorm:'injuty place' -> Available places: LHand, RHand, RLeg, LLeg
+ - HasWorm:'true|false'
+ - AddInjury:'injury type':'injury place':'injury_state' -> Available types: SmallWoundAbrassion,
+																			 SmallWoundScratch,
+																			 Laceration,
+																			 LacerationCat,
+																			 Rash,
+																			 Worm,
+																			 WormHole,
+																			 Leech,
+																			 LeechHole,
+																			 VenomBite,
+																			 SnakeBite,
+										  -> Available places: LHand, 
+															   RHand, 
+															   RLeg, 
+															   LLeg
+															   
+										-> Available states   Bleeding,
+															  Open,
+															  Infected,
+															  Closed,        
+ - ResetInjuries
+ - Teleport:'target object name':'show loading true|false'
+ - TeleportWithRandomOffset:'target object name':'show loading true|false':'allowed_offset_in_coop'
+ - RandomTeleport:'target objects names list':'show loading true|false' -> names must be separated by a semicolon
+ - HasSymptom:'true|false':'symptom name' -> Available symptoms: Fever, Vomiting
+ - BIIsLookingAt:'true|false':'limb' -> LLeg, RLeg, LHand, RHand
+ - IsLookingAtInjuryState:'true|false':'injury_type' -> Available states:  Bleeding,
+																			Open,
+																			Infected,
+																			Closed, 
+ - HasInjuryAt:'true|false':'limb' -> LLeg, RLeg, LHand, RHand
+ - HasBandageOnInjuryAt:'true|false':'limb' -> LLeg, RLeg, LHand, RHand
+ - DeleteAllInventoryItems
+ - BlockParametersLoss
+ - UnblockParametersLoss
+ - SetMaxCondition
+ - SetConditionFromScript:'script name' -> Script must be located in Scripts/Player
+ - AttachObjectToPlayersBone:'object_name', 'bone_name'
+ - DetachObjectFromPlayer:'object_name'
+ - UnlockKnownInjury:'injury_type' -> Available types: SmallWoundAbrassion,
+														SmallWoundScratch,
+														Laceration,
+														LacerationCat,
+														Rash,
+														Worm,
+														WormHole,
+														Leech,
+														LeechHole,
+														VenomBite,
+														SnakeBite														
+ - UnlockKnownInjuryTreatment:'id'  -> Available types Code/Enums.cs -> NotepadKnownInjuryTreatment
+ - UnlockKnownInjuryState:'injury_state' -> Available types: Bleeding,
+																Open,
+																Infected,
+																Closed
+ - UnlockKnownInjuryStateTreatment:'id'  -> Available types Code/Enums.cs -> NotepadKnownInjuryStateTreatment
+ - UnlockKnownSymptom:'symptom_type' -> Available types: Diarrhea,
+															Vomiting
+ - UnlockKnownSymptomTreatment:'id'  -> Available types Code/Enums.cs -> NotepadKnownSymptomTreatment
+ - UnlockKnownDisease:'symptom_type' -> Available types: FoodPoisoning,
+															Fever,
+ - UnlockKnownDiseaseTreatment:'id'  -> Available types Code/Enums.cs -> NotepadKnownDiseaseTreatment
+ - EnablePlayerCollisions
+ - DisablePlayerCollisions
+ - ItemsFromHandsPutToInventory
+ - BlockRun
+ - UnblockRun
+ - BlockDodge
+ - UnblockDodge
+ - ResetBodyRotation
+ - PlayerReplaceMaterial:'elem name':'new name'
+ - BlockSleeping
+ - UnblockSleeping
+ - BlockInspection
+ - UnblockInspection
+ - PlayerCreate:'true|false':'item id'
+ - IsStartingFire:'true:false'
+ - PlayerSetSpeedMul:'mul'
+ - PlayerBlockFistFight
+ - PlayerUnblockFistFight
+ - IsCombatState
+ - SetCombatState:'true|false'
+ - EnableFootstepSounds:'true|false'
+ - SetPlayerInSafeZone
+ - ResetPlayerInSafeZone
+ - HasKilledTribe:'true|false'
+ - HasKilledCaiman:'true|false'
+ - PlayerHideWeapon
+ - PlayerRestoreWeapon
+ - DeleteHeavyObjectsInHands
+ - InfiniteDiving:'true|false'
+ - HasOpenInspection:'true|false'
+ - HealPlayer
+ - SetWatchDate:'day_int':'month_int'
+ - ResetWatchDate
+ - HideForPlayers:'true|false'
+ - SetHideProgress:int val range 0 - 100
+ - PlayerAttachToObject: 'object_name'
+ - PlayerDetachFromParent
+ - SetDialogMode:'true|false'
+ 
+STATISTIC -> Check 'Code/Enums.sc -> Event' to find stat names
+ - StatisticGreater:'true|false':'statistic name':'value'
+ - StatisticEqual:'true|false':'statistic name':'value'
+ - StatisticLess:'true|false':'statistic name':'value'
+
+ ACHIVEMENT
+ - UnlockAchievement:'achivement_api_name'
+ - OnStoryFinished:'true|false'
+
+OBJECT
+ - EnableObject:'object name'
+ - DisableObject:'object name'
+ - IsObjectEnabled:'true|false':obj_name
+ - IsObjectInRange:'true|false':'obj name':'target obj name':'range'
+ - IsTriggered:'true|false':obj_name   - obj must be of class Trigger
+ - ResetTrigger:obj_name  - obj must be of class Trigger
+ - EnableComponent:'object name':'component name'
+ - DisableComponent:'object name':'component name'
+ - SetLocalScale:'object name':'new_uniform_scale' -> new_uniform_scale is float (e.g for 0.1 it will set scale to (0.1,0.1,0.1))
+ - DisappearWithEffect:'object name':'DisappearEffect prefab name'
+ - IsCreepyAppearGroupCompleted:'true|false':'object name'
+ - AnimationTriggerSetMoveSpeed:'speed'
+ - AnimationTriggerResetMoveSpeed
+ - SetAnimatorBool:'obj_name':'bool name':'true|false'
+ - BatterySetValue:'float value range 0f - 1f'
+ - IsBatteryGreater:'true|false':'float value range 0f - 1f'
+ 
+CUTSCENES
+ - PlayCutscene:'cutscene name' 
+ - PlayCutsceneWithPlayerLook:'cutscene name' 
+ - StopCutscene
+ - PauseCutscene:'cutscene name' 
+ - ResumeCutscene:'cutscene name' 
+ - IsCutscenePlaying:'true|false'
+ - IsCutsceneTimeGreaterOrEqual:'true|false':'cutscene name':'time'
+ 
+TIME
+ - Wait:'wait duration'
+ - StopDayTimeProgress
+ - StartDayTimeProgress
+ - SetDayTime:'godzina (int)':'minuty (int)'
+ - BlockDayTimeCoopSychro:'true|false'
+ - IsNight:'true|false'
+  
+MUSIC
+ - PlayMusic:'music name':'(looped)'true|false':'volume':'track_num'
+ - StopMusic:'fadeout duration':'track_num'
+ - StopAllMusics
+ - StopAllMusicsOnTrack:'track num':'float time'
+ - FadeInMusic:'target_volume':'fade_duration':'track_num'
+ - FadeOutMusic:'target_volume':'fade_duration':'track_num'
+ - IsMusicPlaying:'true|false':'track_num'
+ - IsMusicPlayingAndIsNoPause:'true|false':'track_num'
+ - ScheduleMusic:'music name':'track_num':'loop'
+ 
+MUSICJINGLE
+ - PlayMusicJingle:'music name':'(looped)'true|false':'volume':'track_num'
+ - StopMusicJingle:'fadeout duration':'track_num'
+ - FadeInMusicJingle:'target_volume':'fade_duration':'track_num'
+ - FadeOutMusicJingle:'target_volume':'fade_duration':'track_num'
+
+SOUNDS
+ - PlayAudioSource:'audio source obj name'
+ - StopAudioSource:'audio source obj name'
+ - PlaySound:'obj name':'clip name with path'
+ 
+ANIMATIONS
+ - PlayAnimation:'obj name':'anim name'
+ - ForcePlayAnimation:'obj name':'anim name' //odgrywa się w trakcie load save
+
+DREAM
+ - StartDream:'dream_name'
+ - SetDreamPP:'true|false'
+
+ARENA
+ - StartArena:'arena_type_name'
+
+HINTS
+ - ShowHint:'hint name':'duration'
+ - HideHint:'hint name'
+ - HideAllHints
+ 
+MOVIES
+ - PlayMovie:'movie_name'
+ - IsMoviePlaying:'true|false'
+ - PlayMovieWithFade:'movie_name':'float volume'
+ - IsMovieWithFadePlaying:'true|false'
+ - IsMovieWithFadeFinished:'true|false'
+ 
+SANITY
+ - SanityEvent:'event name' -> Available names: StoryNegative, StoryPositive
+ 
+DEMO
+ - ShowDemoEnd
+ - IsGamescom
+ - IsYoutubeDemo
+ 
+CAMERA
+ - SetZoom:'zoom value (0.0 - 1.0)'
+ - StartFovInterpolator:fov_obj_name1:fov_obj_name2
+ - StopFovInterpolator
+ - EnableTodRaysUpdate:bool enable
+ - SetFOV:'fov value'
+ - ResetFOV
+ - DisableOutlineCamera
+ - EnableOutlineCamera
+ - EnableCPRTMain
+ - DisableCPRTMain
+ - EnableCPRTOutline
+ - DisableCPRTOutline
+ - EnableCPRTHorizon
+ - DisableCPRTHorizon
+ 
+MAP
+ - UnlockMap
+ - IsLookingAtMap:'true|false'
+ - IsLookingAtMapPage:'true|false':'page name'
+ - UnlockMapElement:'element_name'
+ - LockMapElement:'element_name'
+ - UnlockMapPage:'page_name'
+ - LockMapPage:'page_name'
+ - HideMap
+ 
+WATCH
+ - LockWatch
+ - UnlockWatch
+ - BlockWatch
+ - UnblockWatch
+ - IsLookingAtWatch:'true|false'
+ - IsWatchTabActive:'true|false':tab name: -> Time, Compass, Macronutrients, Sanity
+ - IsWatchTab:'true|false':tab name: -> Time, Compass, Macronutrients, Sanity
+ - SetWatchTab:tab name: -> Hour, Compass, PlayerParameters, Sanity
+
+NOTEPAD
+ - AddStoryEvent:'hud_elemnt_name'
+ - LockNotepad
+ - UnlockNotepad
+ - HideNotepad
+ - IsTabActive:'true|false':'tab name':page_num -> StoryTab,
+										  MapTab,
+        								  ItemsTab,
+        								  ConstructionsTab,
+        								  FirecampTab,
+        								  TrapsTab,
+        								  PlannerTab,
+        								  SkillsTab,
+        								  WaterConstructionsTab,
+        								  HealingItemsTab
+ - WasTabActivated:'true|false':'tab name' -> StoryTab,
+											  MapTab,
+        									  ItemsTab,
+        									  ConstructionsTab,
+        									  FirecampTab,
+        									  TrapsTab,
+        									  PlannerTab,
+        									  SkillsTab,
+        									  WaterConstructionsTab,
+        									  HealingItemsTab
+- UnlockElementFromStory:'legend_page_game_object_name':'game_object_to_activate_name'
+											  
+FADE SYSTEM
+ - FadeOut:float duration
+ - FadeIn:float duration
+ - IsFadeOut:'true|false'			zwraca true w trakcie fade'a. Jak się skończy to zmienia na false.								  
+ - IsFadeIn:'true|false'
+ - FadeOutWithScreen:'screen prefab name':float duration -> prefab must be located in Resources/Prefabs/Systems/, root object of prefab requires Canvas Group component
+ 
+DREAM FADE
+ - DreamFadeOut:float duration
+ - DreamFadeIn:float duration
+ - DreamWhiteFadeOut:float duration
+ - DreamWhiteFadeIn:float duration
+ - IsDreamFadeOut:'true|false'		  zwraca true w trakcie fade'a. Jak się skończy to zmienia na false.									  
+ - IsDreamFadeIn:'true|false'
+ 
+HUD
+ - BlockHUDWheel
+ - UnblockHUDWheel
+ - IsHUDWheelActive:'true|false'
+ - BlockHUDEnergy
+ - UnblockHUDEnergy
+ - BlockHUDSanity
+ - UnblockHUDSanity
+ - BlockHUDCrosshair
+ - UnblockHUDCrosshair
+ - BlockHUDWalkieTalkie
+ - UnblockHUDWalkieTalkie
+ - BlockHUDWalkieTalkieBattery
+ - UnblockHUDWalkieTalkieBattery
+ - HideHUD
+ - ShowHUD
+ - ShowCredits
+ - ShowCoopFinalScreen
+ 
+RAIN
+ - StartRain
+ - StopRain
+ - BlockRain
+ - UnblockRain
+ - SetRainVolume:float volume
+ 
+SKILLS
+ - SkillGreater:'true|false':'skill name':'value'
+ - SkillGreaterOrEqual:'true|false':'skill name':'value'
+ 
+VARIABLES
+ - CreateBoolVariable:'name':'true|false'
+ - SetBoolVariable:'name':'true|false'
+ - IsBoolVariableTrue:'true|false':'name'
+ - IsBoolVariableFalse:'true|false':'name'
+ - CreateIntVariable:'name':int value
+ - SetIntVariable:'name':int value
+ - IntVariableAdd:'nama':int value
+ - IsIntVariableEqual:'true|false':'name':int value
+ - IsIntVariableGreater:'true|false':'name':int value
+ - IsIntVariableGreaterOrEqual:'true|false':'name':int value
+ - CreateLocalBoolVariable:'name':'true|false'
+ - SetLocalBoolVariable:'name':'true|false'
+ - IsLocalBoolVariableTrue:'true|false':'name'
+ - IsLocalBoolVariableFalse:'true|false':'name'
+
+OTHER
+ - PerformSave
+ - BlockHumanAISpawn
+ - UnblockHumanAISpawn:'true:false' -> should reset spawn cooldown
+ - SetTutrial:'true:false'
+ - ShouldSkipTutorial:'true:false'
+ - IsCraftingActive:'true:false'
+ - Include:'script name'
+ - LoadScene:'scene name'
+ - UnloadScene:'scene name'
+ - IsSceneLoading
+ - CreditsFinished:'true:false'
+ - BlockSaveGame
+ - UnblockSaveGame
+ - HideCollectable
+ - BlockBackpack
+ - UnblockBackpack
+ - SetTutorial:'true:false'
+ - ReturnToMainMenu
+ - DestroyAllEnemies
+ - IsPve:'true|false'
+ 
+ POST PROCESS
+ - StartPPInterpolator:pp1:pp2:pp_def
+ - StopPPInterpolator
+ - PostProcessVolumeExDisableWithFade:'obj_name':float time
+ 
+ STORY OBJECTIVES
+ - AddStoryObjective:name:bool show_objective true|false
+ - CompleteStoryObjective:name
+ - CompleteAndHideStoryObjective:name
+ 
+ DIRTINESS
+ - BlockGettingDirty
+ - UnblockGettingDirty
+ - SetDirtiness:'float value' (0.0 = czysty 1.0 = brudny)
+ 
+ BALANCE SYSTEM
+  - BalanceSystemBlockListsUpdate
+  - BalanceSystemUnblockListsUpdate
+  - BalanceSystemSetItemsLastSpawnToPlayerPos
+
+ SKY DOME
+ - EnableSkyDome
+ - DisableSkyDome
+ - EnableAtmosphereAndCloudsUpdate:bool enable
+ 
+ TODTime INTERPOLATOR
+ - TODInterpolatorStoreTime
+ - TODInterpolatorInterpolate:float hour, float duration
+ - TODInterpolatorRestore:float duration
+ 
+ MULTISAMPLE
+ - MSAmbientStart:float fade_in
+ - MSAmbientStop:float fade_out
+ - MSStart:'name':float fade_in
+ - MSStop:'name':float fade_out
+ 
+ PARAMETERS INTERPOLATOR
+ - DisablePICommanderWithFade:string interp_name:float fade_dur
+ - ParametersInterpolatorSetupData:string object_name
+ 
+ TERRAIN
+ - EnableTerrainRendering:bool enable
+ 
+ STREAMERS
+ - AreStreamersLoaded:true|false
+ - ResetStreamersLoaded
+ 
+ MENU
+ - ShowMenu:'menu name' 
+
+LIFE PLACES
+- EnableLifePlace:string lp_gameobject_name: float time_delay
+- DisableLifePlace:string lp_gameobject_name: float time_delay
+- EnableLifePlaceActor:string lp_actor_gameobject_name: float time_delay
+- DisableLifePlaceActor:string lp_actor_gameobject_name: float time_delay
+
+REPUTATION
+- AddReputationFromStory:string village_name: string reputation_event_name
+
+LEGEND
+- SetLegendFinishState:string legend_page_GO_name: bool is_finished

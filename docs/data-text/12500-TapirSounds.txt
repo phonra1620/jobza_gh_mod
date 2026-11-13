@@ -1,0 +1,3 @@
+Idle("tapir_idle_01", "tapir_idle_02", "tapir_idle_03", "tapir_idle_04", "tapir_idle_05")
+Panic("anim_tapir_scared_01", "anim_tapir_scared_02", "anim_tapir_scared_03", "anim_tapir_scared_04", "tapir_run_01", "tapir_run_02", "tapir_run_03", "tapir_run_04")
+Death("tapir_death_01", "tapir_death_02")

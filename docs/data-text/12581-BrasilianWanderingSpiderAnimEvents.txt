@@ -1,0 +1,14 @@
+Anim("spider_die")
+{
+	Event("DieEnd", 0.99)
+}
+
+//Anim("spider_attack")
+//{
+//	Event("GiveDamageRLeg", 0.5)
+//}
+
+Anim("spider_attack_b")
+{
+	Event("GiveDamageLLeg", 0.35)
+}

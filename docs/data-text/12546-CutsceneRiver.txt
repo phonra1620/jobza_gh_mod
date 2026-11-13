@@ -1,0 +1,84 @@
+ Node("IntroCutscene_VariableStuff", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+ {
+	 Element("CreateBoolVariable:PVE_Intro_FirstPart:false", False, 0)
+	 Element("CreateBoolVariable:PVE_Intro_SecondPart:false", False, 1)
+	
+ }
+
+
+Node("Starting_Cutscene1", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	
+	Element("IsTriggered:true:Start_intro_trigger", False, 1)
+	Element("EnableObject:Intro_cutscene_stuff", False, 2)
+	Element("HideHUD", False, 3)
+	Element("Wait:1", False, 4)
+	Element("Teleport:wooden_boat_playerpos:false", False, 5)
+	Element("Wait:0.2", False, 6)
+	Element("PlayerAttachToObject:wooden_boat_playerpos", False, 7)
+	Element("Wait:0.2", False, 45)
+	Element("PlayerSetLookAtObject:PlayerLookAtOnBoat", False, 8)
+	Element("PlayCutsceneWithPlayerLook:PVE_Intro_cutscene", False, 9)
+	Element("PlayerSetLookAtObject:null", False, 10)
+	Element("PlayerBlockMoves", False, 11)
+	//Element("PlayerBlockRotation", False, 58)
+	Element("PlayerIsInSensor:true:Tribes_WalkingSensor", False, 12)
+	Element("PlayerSetLookAtObject:null", False, 13)
+	Element("PlayCutscene:PVE_IntroTribesSitting", False, 14)
+	Element("Wait:0.2", False, 15)
+	Element("PlayerSetLookAtObjectFactor:1.5", False, 16)
+	Element("Wait:0.2", False, 17)
+	Element("PlayerSetLookAtObject:Tribe_Lookout_Object", False, 18)
+	Element("Wait:10.2", False, 19)
+	Element("PlayerSetLookAtObject:null", False, 20)
+	Element("Wait:0.2", False, 21)
+	Element("PlayerSetLookAtObject:PlayerLookAtOnBoat", False, 22)
+	Element("PlayerIsInSensor:true:TribesAttackSensor_End", False, 23)
+	Element("FadeOut:0.9", False, 24)	
+	Element("Wait:0.9", False, 25)
+	Element("PlayerDetachFromParent", False, 26)
+	Element("Wait:0.2", False, 27)
+	Element("PlayerSetLookAtObject:null", False, 28)
+	Element("Teleport:wooden_boat_playerpos_back:false", False, 29)
+	Element("Wait:0.2", False, 30)
+	Element("PlayerAttachToObject:wooden_boat_playerpos_back", False, 31)
+	Element("Wait:0.2", False, 32)
+	Element("AttachObjectToPlayersBone:can_in_hand:LH_holder", False, 33)
+	Element("SetBoolVariable:PVE_Intro_SecondPart:true", False, 34)
+	Element("Wait:0.8", False, 35)
+	
+	Element("FadeIn:0.5", False, 36)	
+//	Element("PlayerIsInSensor:true:TribesAttackSensor_34234", False, 54357)
+//	Element("PlayerUnblockMoves", False, 21)
+	Element("Wait:5.2", False, 37)
+	Element("DetachObjectFromPlayer:can_in_hand", False, 38)
+	Element("PlayerResetLookAtObjectFactor", False, 39)
+}
+
+
+ Node("IntroTribesAttack", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+ {
+	
+	Element("IsBoolVariableTrue:true:PVE_Intro_SecondPart", False, 0)
+	
+	Element("PlayCutscene:PVE_Intro_tribes_attack", False, 1)
+	Element("Wait:15", False, 2)
+	//Element("IsCutsceneTimeGreaterOrEqual:true:PVE_Intro_cutscene:10.20", False, 2)
+	Element("FadeOut:0.9", False, 3) 
+	//Element("IsFadeOut:true", False, 89)
+	Element("Wait:1.1", False, 4)
+		
+	Element("SetDayTime:02:00", False, 5)
+	Element("PlayerDetachFromParent", False, 6)
+	Element("Wait:0.2", False, 7)	
+	Element("Teleport:TribeChief_Spawner:false", False, 8)
+	Element("PlayerBlockMoves", False, 9)
+	Element("PlayerBlockRotation", False, 10)
+	Element("Wait:3.0", False, 11)	
+	Element("FadeIn:3", False, 12) 
+//	Element("Wait:0.2", False, 173)	
+
+	Element("PlayCutscene:PVE_Intro_TribeChief", False, 13)
+	Element("Wait:7", False, 14)
+	Element("FadeOut:1.5", False, 15)
+}

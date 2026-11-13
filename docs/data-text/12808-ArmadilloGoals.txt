@@ -1,0 +1,21 @@
+Goal("Death")
+Goal("LieDown")
+Goal("ReactOnHit")
+Goal("Hide")
+Goal("DontMove")
+
+Goal("Shit")
+Goal("Stroking")
+
+Goal("FollowWhistler")
+Goal("UseTrough")
+
+Goal("KeepDistanceToPlayer")
+Goal("MoveAwayFromEnemy")
+
+Goal("ReturnToSpawner")
+
+Goal("LoiterInFarm", 0.5)
+Goal("Loiter", 0.5)
+
+Goal("Idle")

@@ -1,0 +1,4 @@
+Goal("Death")
+Goal("ReactOnHit")
+Goal("MoveToAttractorAndExplode")
+Goal("Idle")

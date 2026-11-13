@@ -1,0 +1,45 @@
+//AI(ai_name, frequency in minutes, day count, night count)
+
+// Hostile
+AI("Puma", 65, 1, 1)
+AI("Jaguar", 65, 1, 1)
+AI("BlackPanther", 65, 1, 1)
+AI("Quest_BlackPanther", 45, 1, 1)
+
+//Hostile water
+AI("BlackCaiman", 45, 1, 1)
+AI("AlbinoCaiman", 45, 1, 1)
+
+//Snakes
+AI("GreenAnaconda", 50, 0, 1)
+AI("BoaConstrictor", 50, 0, 1)
+AI("SouthAmericanRattlesnake", 30, 0, 2)
+AI("GoliathBirdEater", 55, 0, 1)
+AI("BrasilianWanderingSpider", 55, 0, 1)
+AI("Scorpion", 15, 1, 0)
+
+//Mammals,
+AI("Mouse", 5, 1, 3)
+AI("Agouti", 15, 1, 2)
+AI("Peccary", 25, 1, 0)
+AI("Capybara", 35, 1, 0)
+AI("Tapir", 35, 1, 0)
+AI("Armadillo", 15, 1, 0)
+AI("GoldenLionTamarin", 20, 1, 1)
+AI("Atelinae", 20, 1, 1)
+AI("Tapir_baby", 35, 1, 0)
+
+//Frogs
+AI("PoisonDartFrog", 35, 1, 1)
+AI("CaneToad", 15, 1, 1)
+
+//Turtles
+AI("MudTurtle", 35, 1, 1)
+AI("RedFootedTortoise", 35, 1, 1)
+
+//Lizards
+AI("GreenIguana", 10, 1, 1)
+
+//Other
+AI("Caterpillar", 10, 1, 1)
+AI("Beetle", 10, 1, 1)

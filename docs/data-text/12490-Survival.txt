@@ -1,0 +1,168 @@
+Node("SurvivalVariableCreator", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateBoolVariable:IsTutorialFinished:true", False, 0)
+}
+Node("Goldmine_Kill", True, 690.0000, 139.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:Goldmine_Kill_sensor", False, 0)
+	Element("PlayerIsInSensor:true:Goldmine_Kill_sensor", False, 1)
+}
+Node("Includer_Survival", True, 155.0000, 240.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Reminders", False, 0)
+	// Element("Include:Tutorial", False, 1)
+	Element("Include:Unlocks", False, 1)
+	Element("Include:GrapplingHookPlaces", False, 2)
+	// Element("Include:Elevator", False, 3)
+	Element("Include:Map", False, 3)
+	Element("Include:LootBoxes", False, 4)
+	//Element("Include:Audiologs", False, 5)
+	Element("Include:Unlock_Eternal_Fire", False, 6)
+}
+Node("Survival", True, 158.0000, 138.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("ShouldSkipTutorial:true", False, 0)
+	// Element("ExecuteNode:DeactivateTutorialNodes", False, 31)
+	// Element("PlayerSetLookAtObject:null", False, 0)
+	Element("SetConditionFromScript:Player_condition_after_Tutorial", False, 0)
+	// Element("DeleteAllInventoryItems", False, 2)
+	// Element("PlayerReplaceMaterial:Hands:Hand", False, 3)
+	// Element("SetBoolVariable:IsTutorialFinished:true", False, 4)
+	Element("RandomTeleport:SAT_00;SAT_01;SAT_02;SAT_03;SAT_04;SAT_05;SAT_06;SAT_07;SAT_08;SAT_09;SAT_10;SAT_11;SAT_12;SAT_13;SAT_14;SAT_15;SAT_16:true", False, 1)
+	// PVE Spawn Points Element("RandomTeleport:SAT_17;SAT_18;SAT_19;SAT_20;SAT_22;SAT_23;SAT_24;SAT_25:true", False, 1)
+	Element("BalanceSystemUnblockListsUpdate", False, 2)
+	Element("BalanceSystemSetItemsLastSpawnToPlayerPos", False, 3)
+	Element("UnblockHumanAISpawn:true", False, 4)
+	Element("UnlockNotepad", False, 5)
+	Element("UnlockWatch", False, 6)
+	Element("SetDayTime:08:00", False, 7)
+	// Element("UnblockHUDWheel", False, 21)
+	// Element("Wait:3", False, 25)
+	Element("FadeIn:0.7", False, 8)
+	Element("SetTutorial:false", False, 9)
+	Element("EnableObject:Bamboo_BridgeGhost", False, 10)
+	Element("EnableObject:suspension_bridge", False, 11)
+	Element("DisableObject:suspension_bridge_broken", False, 12)
+	Element("DisableObject:hero_tent_ruined", False, 13)
+	Element("DisableObject:Tutorial_story_log", False, 14)
+	Element("EnableObject:Tutorial_story_log_show", False, 15)
+	Element("EnableObject:GrappHookPlace_A03S02_from_Tutorial", False, 16)
+	Element("EnableObject:Survi_AfterDream2_LogToPass1", False, 40)
+	Element("EnableObject:Survi_AfterDream2_LogToPass2", False, 41)
+	// Element("DisableObject:QuestItem_Fuel", False, 38)
+	// Element("DisableObject:StoryQuest_Items", False, 17)
+	Element("DisableObject:QuestItem_Map_A", False, 17)
+	Element("DisableObject:QuestItem_Map_B", False, 18)
+	Element("DisableObject:QuestItem_Map_C", False, 19)
+	Element("DisableObject:QuestItem_Fuel", False, 20)
+	Element("DisableObject:Grappling_Hook", False, 21)
+	Element("DisableObject:QuestItem_CenotLine", False, 22)
+	Element("DisableObject:grappling_hook_gun", False, 23)
+	Element("DisableObject:QuestItem_Infected_BloodVial", False, 24)
+	Element("DisableObject:QuestItem_DivingEquipment", False, 25)
+	Element("DisableObject:WHATent01_Outside_Trigger", False, 35)
+	// Element("EnableObject:SurvivalQuest_Items", False, 18)
+	Element("EnableObject:QuestItem_Map_A_Survi", False, 26)
+	Element("EnableObject:QuestItem_Map_B_Survi", False, 27)
+	Element("EnableObject:QuestItem_Map_C_Survi", False, 28)
+	Element("EnableObject:Grappling_Hook_Survi", False, 29)
+	Element("EnableObject:QuestItem_CenotLine_Survi", False, 30)
+	Element("EnableObject:QuestItem_DivingEquipment_Survi", False, 31)
+	Element("EnableObject:grappling_hook_gun_Survi", False, 32)
+	Element("PerformSave", False, 33)
+}
+Node("Survi_Diving_Set", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_DivingEquipment_Survi", False, 0)
+	Element("DeleteInventoryItem:QuestItem_DivingEquipment_Survi", False, 1)
+	Element("ShowFakeItemInBackpack:backpack_divingset:true", False, 2)
+	Element("InfiniteDiving:true", False, 3)
+}
+Node("Survi_Cenote_Line", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_CenotLine_Survi", False, 0)
+	Element("DeleteInventoryItem:QuestItem_CenotLine_Survi", False, 1)
+	Element("SetBoolVariable:UnlockZipLine:true", False, 2)
+	Element("ShowFakeItemInBackpack:backpack_climbgear:true", False, 3)
+	//Element("CompleteStoryObjective:NB_OBJ_Cenote", False, 4)
+	//Element("DeactivateScenarioNode:Cenote_OBj", False, 5)
+}
+Node("Survi_GrabbHook_Unlock", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:Grappling_Hook_Survi", False, 0)
+	Element("DeleteInventoryItem:Grappling_Hook_Survi", False, 1)
+	Element("SetBoolVariable:UnlockGrappHook:true", False, 2)
+	Element("ShowFakeItemInBackpack:backpack_grappling_hook:true", False, 3)
+}
+Node("Survi_EpicGrabHook_Unlock", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:grappling_hook_gun_Survi", False, 0)
+	Element("DeleteInventoryItem:grappling_hook_gun_Survi", False, 1)
+	Element("SetBoolVariable:UnlockEpickGrappHook:true", False, 2)
+	Element("ShowFakeItemInBackpack:backpack_ghgun:true", False, 3)
+}
+Node("Survi_Pickup_Map_A", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_A_Survi", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Map_A_Survi", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map00", False, 3)
+	Element("SetBoolVariable:HaveMap_A:true", False, 4)
+}
+Node("Survi_Pickup_Map_B", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_B_Survi", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Map_B_Survi", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map01", False, 3)
+	Element("SetBoolVariable:HaveMap_B:true", False, 4)
+}
+Node("Survi_Pickup_Map_C", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:QuestItem_Map_C_Survi", False, 0)
+	Element("DeleteInventoryItem:QuestItem_Map_C_Survi", False, 1)
+	Element("UnlockMap", False, 2)
+	Element("UnlockMapPage:Map02", False, 3)
+	Element("SetBoolVariable:HaveMap_C:true", False, 4)
+}
+
+Node("Logs_ForOldSave", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:Survi_AfterDream2_LogToPass1", False, 0)
+	Element("EnableObject:Survi_AfterDream2_LogToPass2", False, 1)
+}
+
+Node("Survi_Unlock_PvE_Sectors", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:LDStory_passages_to_old_sectors", False, 0)
+}
+
+Node("Include_PvE_Map", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:PvE_MaP", False, 0)
+}
+
+Node("Include_PvE3C_Map", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:PvE3C_Map", False, 0)
+}
+
+Node("Include_PvE3_Survi_GrapplingHookPlaces", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:PvE3_Survi_GrapplingHookPlaces", False, 0)
+	Element("EnableObject:ClimbingRopes_shared_map_sensors", False, 1)
+	Element("EnableObject:ClimbingRopes_shared_ropes", False, 2)
+}	
+Node("PveBoat_ItemsLocker_ForOldSave", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:boat_sleeping_place", False, 0)
+	Element("DisableObject:Collectable_Survival_Guide_Book_Cover", False, 1)
+}
+Node("Include_NotStory_Unlocks", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:NotStory_Unlocks", False, 6)
+}
+Node("Include_LootBoxes_Survival", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:LootBoxes_Survival", False, 6)
+}	

@@ -1,0 +1,4 @@
+Attack("Bird_Eater_Attack_00","Bird_Eater_Attack_01")
+Death("Bird_Eater_Death_00")
+Walk("Bird_Eater_Walk_Loop")
+Run("Bird_Eater_Run_Loop")

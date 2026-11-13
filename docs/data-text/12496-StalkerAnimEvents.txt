@@ -1,0 +1,19 @@
+// GiveDamage
+
+Anim("Attack_Both")
+{
+	Event("GiveDamageRArm", 0.5)
+	Event("JaguarAttackEnd", 0.99)
+}
+
+Anim("Attack_Jump_Right")
+{
+	Event("GiveDamageLArm", 0.45)
+	Event("JaguarAttackEnd", 0.99)
+}
+
+Anim("Attack_Jump_Left")
+{
+	Event("GiveDamageRArm", 0.45)
+	Event("JaguarAttackEnd", 0.99)
+}

@@ -1,0 +1,704 @@
+// #################   PVE  #################
+// ----- MapTrigger - Croc Legend -----
+Node("PVE_MAP_Story_01Croc_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_01Croc_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_01Croc_01", False, 1)
+}
+
+Node("PVE_MAP_Story_01Croc_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_01Croc_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_01Croc_02", False, 1)
+}
+
+Node("PVE_MAP_Story_01Croc_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_01Croc_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_01Croc_03", False, 1)
+}
+
+Node("PVE_MAP_Story_01Croc_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_01Croc_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_01Croc_04", False, 1)
+}
+
+Node("PVE_MAP_Story_01Croc_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_01Croc_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_01Croc_05", False, 1)
+}
+
+Node("PVE_MAP_Story_01Croc_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_01Croc_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_01Croc_06", False, 1)
+}
+
+// ----- MapTrigger - Bike Legend -----
+
+Node("PVE_MAP_Story_02Bike_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_01", False, 1)
+}
+
+Node("PVE_MAP_Story_02Bike_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_02", False, 1)
+}
+
+Node("PVE_MAP_Story_02Bike_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_03", False, 1)
+}
+
+Node("PVE_MAP_Story_02Bike_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_04", False, 1)
+}
+
+Node("PVE_MAP_Story_02Bike_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_05", False, 1)
+}
+
+Node("PVE_MAP_Story_02Bike_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_06", False, 1)
+}
+
+Node("PVE_MAP_Story_02Bike_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_02Bike_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_02Bike_07", False, 1)
+}
+
+// ----- MapTrigger - Statue Legend -----
+
+Node("PVE_MAP_Story_03Statue_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_01", False, 1)
+}
+
+Node("PVE_MAP_Story_03Statue_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_02", False, 1)
+}
+
+Node("PVE_MAP_Story_03Statue_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_03", False, 1)
+}
+
+Node("PVE_MAP_Story_03Statue_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_04", False, 1)
+}
+
+Node("PVE_MAP_Story_03Statue_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_05", False, 1)
+}
+
+Node("PVE_MAP_Story_03Statue_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_06", False, 1)
+}
+
+Node("PVE_MAP_Story_03Statue_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_03Statue_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_03Statue_07", False, 1)
+}
+
+// ----- MapTrigger - BadWater Legend -----
+
+
+Node("PVE_MAP_Story_04BadWater_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_01", False, 1)
+}
+
+Node("PVE_MAP_Story_04BadWater_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_02", False, 1)
+}
+
+Node("PVE_MAP_Story_04BadWater_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_03", False, 1)
+}
+
+Node("PVE_MAP_Story_04BadWater_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_04", False, 1)
+}
+
+Node("PVE_MAP_Story_04BadWater_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_05", False, 1)
+}
+
+Node("PVE_MAP_Story_04BadWater_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_06", False, 1)
+}
+
+Node("PVE_MAP_Story_04BadWater_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_04BadWater_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 5)
+	Element("UnlockMapElement:MP_Story_04BadWater_07", False, 1)
+}
+
+// ----- MapTrigger - Caiman Legend POI -----
+
+
+Node("PVE_MAP_Legend_CaimanLair_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_CaimanLair_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_CaimanLair_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_CaimanLair_MaP_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_CaimanLair_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Albino", False, 1)
+	Element("UnlockMapElement:MP_Legend_Caiman", False, 2)
+}
+
+Node("PVE_MAP_Legend_CaimanLair_MaP_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_CaimanLair_MaP_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Albino_CanTalk", False, 1)
+	Element("SetBoolVariable:PvE_CaimanLair_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_Caiman", False, 2)
+}
+
+// ----- MapTrigger - Bike Legend POI-----
+
+Node("PVE_MAP_Legend_Bike_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Bike_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_Bike_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_Bike_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_Bike_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Bike", False, 1)
+	Element("UnlockMapElement:MP_Legend_Bike", False, 2)
+}
+
+Node("PVE_MAP_Legend_Bike_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_Bike_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Bike_Triggered", False, 1)
+	Element("SetBoolVariable:PvE_Bike_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_Bike", False, 2)
+}
+
+// ----- MapTrigger - BadWAter Legend POI -----
+
+Node("PVE_MAP_Legend_BadWater_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_BadWater_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_BadWater_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_BadWater_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_BadWater_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater", False, 1)
+	Element("UnlockMapElement:MP_Legend_BadWater", False, 2)
+}
+
+Node("PVE_MAP_Legend_BadWater_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_BadWater_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_BadWater_AlterFinished", False, 0)
+	Element("SetBoolVariable:PvE_BadWater_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_BadWater", False, 1)
+}
+
+// #################   PVE2  #################
+// ----- MapTrigger - Canoe Legend -----
+Node("PVE_MAP_Story_05Canoe_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_05Canoe_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_05Canoe_01", False, 1)
+}
+
+Node("PVE_MAP_Story_05Canoe_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_05Canoe_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_05Canoe_02", False, 1)
+}
+
+Node("PVE_MAP_Story_05Canoe_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_05Canoe_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_05Canoe_03", False, 1)
+}
+
+Node("PVE_MAP_Story_05Canoe_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_05Canoe_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_05Canoe_04", False, 1)
+}
+
+Node("PVE_MAP_Story_05Canoe_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_05Canoe_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_05Canoe_05", False, 1)
+}
+
+Node("PVE_MAP_Story_05Canoe_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_05Canoe_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_05Canoe_06", False, 1)
+}
+
+// ----- MapTrigger - Drum Legend -----
+Node("PVE_MAP_Story_06Drum_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_01", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_02", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_03", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_04", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_05", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_06", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_07", False, 1)
+}
+
+Node("PVE_MAP_Story_06Drum_08", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_06Drum_08", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_06Drum_08", False, 1)
+}
+
+// ----- MapTrigger - Panther Legend -----
+Node("PVE_MAP_Story_07Panther_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_01", False, 1)
+}
+
+Node("PVE_MAP_Story_07Panther_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_02", False, 1)
+}
+
+Node("PVE_MAP_Story_07Panther_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_03", False, 1)
+}
+
+Node("PVE_MAP_Story_07Panther_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_04", False, 1)
+}
+
+Node("PVE_MAP_Story_07Panther_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_05", False, 1)
+}
+
+Node("PVE_MAP_Story_07Panther_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_06", False, 1)
+}
+
+Node("PVE_MAP_Story_07Panther_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_07Panther_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_07Panther_07", False, 1)
+}
+
+
+// ----- MapTrigger - Canoe Legend POI -----
+Node("PVE_MAP_Legend_SunkenCanoe_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_SunkenCanoe_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_SunkenCanoe_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_SunkenCanoe_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_SunkenCanoe_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Canoe", False, 1)
+	Element("UnlockMapElement:MP_Legend_Canoe", False, 2)
+}
+
+Node("PVE_MAP_Legend_SunkenCanoe_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_SunkenCanoe_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Canoe_CanTalk", False, 1)
+	Element("SetBoolVariable:PvE_SunkenCanoe_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_Canoe", False, 2)
+}
+
+// ----- MapTrigger - Panther Legend POI -----
+Node("PVE_MAP_Legend_PantherLair_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_PantherLair_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_PantherLair_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_PantherLair_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_PantherLair_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther", False, 1)
+	Element("UnlockMapElement:MP_Legend_Panther", False, 2)
+}
+
+Node("PVE_MAP_Legend_PantherLair_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_PantherLair_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Panther_CanTalk", False, 1)
+	Element("SetBoolVariable:PvE_PantherLair_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_Panther", False, 2)
+}
+
+// #################   PVE3  #################
+// ----- MapTrigger - GoldenFish Legend -----
+Node("PVE_MAP_Story_08GoldenFish_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_01", False, 1)
+}
+Node("PVE_MAP_Story_08GoldenFish_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_02", False, 1)
+}
+Node("PVE_MAP_Story_08GoldenFish_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_03", False, 1)
+}
+Node("PVE_MAP_Story_08GoldenFish_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_04", False, 1)
+}
+Node("PVE_MAP_Story_08GoldenFish_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_05", False, 1)
+}
+Node("PVE_MAP_Story_08GoldenFish_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_06", False, 1)
+}
+Node("PVE_MAP_Story_08GoldenFish_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_08GoldenFish_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_08GoldenFish_07", False, 1)
+}
+// ----- MapTrigger - GuardianMonkeys Legend -----
+Node("PVE_MAP_Story_09GuardianMonkeys_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_01", False, 1)
+}
+Node("PVE_MAP_Story_09GuardianMonkeys_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_02", False, 1)
+}
+Node("PVE_MAP_Story_09GuardianMonkeys_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_03", False, 1)
+}
+Node("PVE_MAP_Story_09GuardianMonkeys_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_04", False, 1)
+}
+Node("PVE_MAP_Story_09GuardianMonkeys_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_05", False, 1)
+}
+Node("PVE_MAP_Story_09GuardianMonkeys_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_06", False, 1)
+}
+Node("PVE_MAP_Story_09GuardianMonkeys_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_09GuardianMonkeys_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_09GuardianMonkeys_07", False, 1)
+}
+// ----- MapTrigger - AztecWarrior Legend -----
+Node("PVE_MAP_Story_10AztecWarrior_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_01", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_02", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_03", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_04", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_05", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_06", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_07", False, 1)
+}
+Node("PVE_MAP_Story_10AztecWarrior_08", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_10AztecWarrior_08", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("UnlockMapElement:MP_Story_10AztecWarrior_08", False, 1)
+}
+// ----- MapTrigger - Lovers Legend -----
+Node("PVE_MAP_Story_11Lovers_01", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_01", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_01", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_02", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_02", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_02", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_03", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_03", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_03", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_04", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_04", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_04", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_05", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_05", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_05", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_06", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_06", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_06", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_07", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_07", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_07", False, 1)
+}
+Node("PVE_MAP_Story_11Lovers_08", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Story_11Lovers_08", False, 2)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 5)
+	Element("UnlockMapElement:MP_Story_11Lovers_08", False, 1)
+}
+// ----- MapTrigger - Lovers shack POI -----
+Node("PVE_MAP_Legend_Lovers_Shack_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Lovers_Shack_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_Lovers_Shack_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_Lovers_Shack_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_Lovers_Shack_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_Lovers", False, 1)
+	Element("UnlockMapElement:MP_Legend_Lovers", False, 2)
+}
+
+Node("PVE_MAP_Legend_Lovers_Shack_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_Lovers_Shack_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:HaveLoversPhotos", False, 1)
+	Element("SetBoolVariable:PvE_Lovers_Shack_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_Lovers", False, 2)
+}
+// ----- MapTrigger - GoldenFish Cove POI -----
+Node("PVE_MAP_Legend_GoldenFish_Cove_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_GoldenFish_Cove_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_GoldenFish_Cove_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_GoldenFish_Cove_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_GoldenFish_Cove_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish", False, 1)
+	Element("UnlockMapElement:MP_Legend_GoldenFish", False, 2)
+}
+
+Node("PVE_MAP_Legend_GoldenFish_Cove_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_GoldenFish_Cove_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_GoldenFish_CanTalk", False, 1)
+	Element("SetBoolVariable:PvE_GoldenFish_Cove_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_GoldenFish", False, 2)
+}
+// ----- MapTrigger - AztecWarrior Caves POI -----
+Node("PVE_MAP_Legend_AztecWarrior_Caves_FPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_AztecWarrior_Caves_MapSensor", False, 0)
+	Element("SetBoolVariable:PvE_AztecWarrior_Caves_MapSensorON:true", False, 1)
+}
+
+Node("PVE_MAP_Legend_AztecWarrior_Caves_TPP", True, -1120.0000, 58.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:PvE_AztecWarrior_Caves_MapSensorON", False, 0)
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior", False, 1)
+	Element("UnlockMapElement:MP_Legend_AztecWarrior", False, 2)
+}
+
+Node("PVE_MAP_Legend_AztecWarrior_Caves_TPPB", True, -1120.0000, 58.0000, 200.0000, 75.0000, "PVE_MAP_Legend_AztecWarrior_Caves_TPP", False)
+{
+	Element("IsBoolVariableTrue:true:VarLegendaryQuest_AztecWarrior_AllFound", False, 1)
+	Element("SetBoolVariable:PvE_AztecWarrior_Caves_MapSensorON:false", False, 3)
+	Element("LockMapElement:MP_Legend_AztecWarrior", False, 2)
+}

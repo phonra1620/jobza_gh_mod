@@ -1,0 +1,13 @@
+EnergyToPassOut(0.0)
+PassingOutDuration(4.0)
+{
+	Test(0)
+}
+PassOutDuration(2.0) // hours
+PassOutDurationRealTime(3.0) // seconds
+PassOutDurationCoop(90.0) // seconds
+WormChance(0.1)
+WormCheckInterval(1.0) // hours
+WormCheckIntervalCoop(10.0) // seconds
+RainWormChanceFactor(2.0)
+FParam("m_Energy", 20.0)

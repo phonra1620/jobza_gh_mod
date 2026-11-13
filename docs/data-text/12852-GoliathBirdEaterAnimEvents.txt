@@ -1,0 +1,12 @@
+Anim("goliath_attack")
+{
+	Event("GiveDamageRLeg", 0.3)
+}
+//Anim("goliath_die")
+//{
+//	Event("DieEnd", 0.99)
+//}
+Anim("goliath_die_b")
+{
+	Event("DieEnd", 0.99)
+}

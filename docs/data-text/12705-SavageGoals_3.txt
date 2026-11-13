@@ -1,0 +1,33 @@
+Goal("Death")
+Goal("HumanPunchBack", 0.5)
+Goal("HumanHitReaction")
+
+Goal("HumanJumpBack", 0.8)
+
+Goal("HumanEmergency")
+
+Goal("HumanUseNavLink")
+
+Goal("HumanMoveAwayFromEternalFire")
+
+Goal("HumanRest")
+Goal("HumanUpset")
+Goal("HumanTaunt")
+Goal("HumanFollowPatrolPath")
+
+Goal("HumanPostAttackConstruction")
+Goal("HumanExtinguishEternalFire")
+Goal("HumanAttackConstruction")
+Goal("HumanMoveToConstruction")
+
+//Goal("MoveAroundEnemy", 0.6)
+
+Goal("HumanThrowGrenade")
+
+Goal("HumanPostAttack")
+Goal("HumanJumpAttack")
+Goal("HumanAttack")
+Goal("HumanThrowStone", 0.5)
+Goal("HumanMoveToEnemy")
+Goal("HumanReturnToStart")
+Goal("Idle")

@@ -1,0 +1,4 @@
+Anim("toad_die")
+{
+	Event("DieEnd", 0.99)
+}

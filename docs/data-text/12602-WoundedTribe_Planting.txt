@@ -1,0 +1,124 @@
+EffectsTreatment()
+{
+	Effect("Fever","Painkillers",5)
+	Effect("Fever","marasmius_haematocephalus",1)
+	Effect("Fever","marasmius_haematocephalus_Dryed",1)
+	Effect("FoodPoisoning","Charcoal",1)
+	Effect("FoodPoisoning","lily_flower",2)
+	Effect("FoodPoisoning","Albahaca_Leaf",2)
+	Effect("ParasiteSickness","copa_hongo",1)
+	Effect("ParasiteSickness","copa_hongo_dryed",1)
+	Effect("ParasiteSickness","Guanabana_Fruit",2)
+	
+}
+
+Dehydration(34.0)
+Fever(1,2,3,4,5) //values for each difficulty level - Tourist, Easy, Normal, Hard, PermaDeath. Custom == Normal
+Health(100.0)
+HealthLossPerSec(0.05,0.15,0.225,0.3,0.3) //values for each difficulty level - Tourist, Easy, Normal, Hard, PermaDeath. Custom == Normal
+MouthSlot("slot_mouth")
+
+////LEG////
+Preset("leg_abrasion_01")
+{
+	WoundedPose("vil_man_wounded_leg_hurt")
+	CuredAnim("vil_man_wounded_leg_cure")
+	DeathAnim("vil_man_wounded_leg_death")
+	NoticeAnim("vil_man_wounded_leg_look_up")
+	ThanksAnim("vil_man_wounded_leg_thanks")
+	Wound("wound_leg_abrasion", "slot_l_leg", "dressing_l_leg", "", "Leaf_Bandage", "Honey_Dressing", "ash_dressing", "Tabaco_Dressing", "lily_dressing", "Goliath_dressing")
+	GroanSounds("WoundedTribe_Idle_WoundA_01", "WoundedTribe_Idle_WoundA_02", "WoundedTribe_Idle_WoundA_03", "WoundedTribe_Idle_WoundA_04", "WoundedTribe_Idle_WoundA_05", "WoundedTribe_Idle_WoundA_06")
+	NoticeSounds("WoundedTribe_Idle_Wound_HeadUp_01", "WoundedTribe_Idle_Wound_HeadUp_02", "WoundedTribe_Idle_Wound_HeadUp_03", "WoundedTribe_Idle_Wound_HeadUp_04", "WoundedTribe_Idle_Wound_HeadUp_05", "WoundedTribe_Idle_Wound_HeadUp_06")
+	ThanksSounds("WoundedTribe_partdone_01", "WoundedTribe_partdone_02", "WoundedTribe_partdone_03", "WoundedTribe_partdone_04", "WoundedTribe_partdone_05", "WoundedTribe_partdone_06", "WoundedTribe_partdone_07", "WoundedTribe_partdone_08", "WoundedTribe_partdone_09")
+	RecoverySounds("WoundedTribe_thank_01", "WoundedTribe_thank_02", "WoundedTribe_thank_03", "WoundedTribe_thank_04", "WoundedTribe_thank_05", "WoundedTribe_thank_06", "WoundedTribe_thank_07", "WoundedTribe_thank_08")
+	CuredIdleSounds("WoundedTribe_Idle_Healed_01", "WoundedTribe_Idle_Healed_02", "WoundedTribe_Idle_Healed_03", "WoundedTribe_Idle_Healed_04", "WoundedTribe_Idle_Healed_05", "WoundedTribe_Idle_Healed_06", "WoundedTribe_Idle_Healed_07", "WoundedTribe_Idle_Healed_08")
+	DeathSounds("WoundedTribe_death_01", "WoundedTribe_death_02", "WoundedTribe_death_03", "WoundedTribe_death_04", "WoundedTribe_death_05")
+	Dummy("dummy_leg")
+}
+
+Preset("leg_laceration_01")
+{
+	WoundedPose("vil_man_wounded_leg_hurt")
+	CuredAnim("vil_man_wounded_leg_cure")
+	DeathAnim("vil_man_wounded_leg_death")
+	NoticeAnim("vil_man_wounded_leg_look_up")
+	ThanksAnim("vil_man_wounded_leg_thanks")
+	Wound("wound_leg_laceration", "slot_l_leg", "dressing_l_leg", "healed_leg_laceration", "Ants", "Honey_Dressing", "ash_dressing", "Goliath_dressing")
+	GroanSounds("WoundedTribe_Idle_WoundA_01", "WoundedTribe_Idle_WoundA_02", "WoundedTribe_Idle_WoundA_03", "WoundedTribe_Idle_WoundA_04", "WoundedTribe_Idle_WoundA_05", "WoundedTribe_Idle_WoundA_06")
+	NoticeSounds("WoundedTribe_Idle_Wound_HeadUp_01", "WoundedTribe_Idle_Wound_HeadUp_02", "WoundedTribe_Idle_Wound_HeadUp_03", "WoundedTribe_Idle_Wound_HeadUp_04", "WoundedTribe_Idle_Wound_HeadUp_05", "WoundedTribe_Idle_Wound_HeadUp_06")
+	ThanksSounds("WoundedTribe_partdone_01", "WoundedTribe_partdone_02", "WoundedTribe_partdone_03", "WoundedTribe_partdone_04", "WoundedTribe_partdone_05", "WoundedTribe_partdone_06", "WoundedTribe_partdone_07", "WoundedTribe_partdone_08", "WoundedTribe_partdone_09")
+	RecoverySounds("WoundedTribe_thank_01", "WoundedTribe_thank_02", "WoundedTribe_thank_03", "WoundedTribe_thank_04", "WoundedTribe_thank_05", "WoundedTribe_thank_06", "WoundedTribe_thank_07", "WoundedTribe_thank_08")
+	CuredIdleSounds("WoundedTribe_Idle_Healed_01", "WoundedTribe_Idle_Healed_02", "WoundedTribe_Idle_Healed_03", "WoundedTribe_Idle_Healed_04", "WoundedTribe_Idle_Healed_05", "WoundedTribe_Idle_Healed_06", "WoundedTribe_Idle_Healed_07", "WoundedTribe_Idle_Healed_08")
+	DeathSounds("WoundedTribe_death_01", "WoundedTribe_death_02", "WoundedTribe_death_03", "WoundedTribe_death_04", "WoundedTribe_death_05")
+	Dummy("dummy_leg")
+}
+
+Preset("leg_snakebite_01")
+{
+	WoundedPose("vil_man_wounded_leg_hurt")
+	CuredAnim("vil_man_wounded_leg_cure")
+	DeathAnim("vil_man_wounded_leg_death")
+	NoticeAnim("vil_man_wounded_leg_look_up")
+	ThanksAnim("vil_man_wounded_leg_thanks")
+	Wound("wound_leg_snakebite", "slot_l_leg", "dressing_l_leg", "", "Tabaco_Dressing", "lily_dressing")	
+	GroanSounds("WoundedTribe_Idle_WoundA_01", "WoundedTribe_Idle_WoundA_02", "WoundedTribe_Idle_WoundA_03", "WoundedTribe_Idle_WoundA_04", "WoundedTribe_Idle_WoundA_05", "WoundedTribe_Idle_WoundA_06")
+	NoticeSounds("WoundedTribe_Idle_Wound_HeadUp_01", "WoundedTribe_Idle_Wound_HeadUp_02", "WoundedTribe_Idle_Wound_HeadUp_03", "WoundedTribe_Idle_Wound_HeadUp_04", "WoundedTribe_Idle_Wound_HeadUp_05", "WoundedTribe_Idle_Wound_HeadUp_06")
+	ThanksSounds("WoundedTribe_partdone_01", "WoundedTribe_partdone_02", "WoundedTribe_partdone_03", "WoundedTribe_partdone_04", "WoundedTribe_partdone_05", "WoundedTribe_partdone_06", "WoundedTribe_partdone_07", "WoundedTribe_partdone_08", "WoundedTribe_partdone_09")
+	RecoverySounds("WoundedTribe_thank_01", "WoundedTribe_thank_02", "WoundedTribe_thank_03", "WoundedTribe_thank_04", "WoundedTribe_thank_05", "WoundedTribe_thank_06", "WoundedTribe_thank_07", "WoundedTribe_thank_08")
+	CuredIdleSounds("WoundedTribe_Idle_Healed_01", "WoundedTribe_Idle_Healed_02", "WoundedTribe_Idle_Healed_03", "WoundedTribe_Idle_Healed_04", "WoundedTribe_Idle_Healed_05", "WoundedTribe_Idle_Healed_06", "WoundedTribe_Idle_Healed_07", "WoundedTribe_Idle_Healed_08")
+	DeathSounds("WoundedTribe_death_01", "WoundedTribe_death_02", "WoundedTribe_death_03", "WoundedTribe_death_04", "WoundedTribe_death_05")
+	Dummy("dummy_leg")
+}
+
+////LACERATIONS////
+
+Preset("arm_abrasion_01")
+{
+	WoundedPose("vil_man_wounded_arm_hurt")
+	CuredAnim("vil_man_wounded_arm_cure")
+	DeathAnim("vil_man_wounded_arm_death")
+	NoticeAnim("vil_man_wounded_arm_look_up")
+	ThanksAnim("vil_man_wounded_arm_thanks")
+	Wound("wound_hand_abrasion", "slot_r_hand", "dressing_r_hand", "", "Leaf_Bandage", "Honey_Dressing", "ash_dressing", "Tabaco_Dressing", "lily_dressing", "Goliath_dressing")
+	GroanSounds("WoundedTribe_Idle_WoundA_01", "WoundedTribe_Idle_WoundA_02", "WoundedTribe_Idle_WoundA_03", "WoundedTribe_Idle_WoundA_04", "WoundedTribe_Idle_WoundA_05", "WoundedTribe_Idle_WoundA_06")
+	NoticeSounds("WoundedTribe_Idle_Wound_HeadUp_01", "WoundedTribe_Idle_Wound_HeadUp_02", "WoundedTribe_Idle_Wound_HeadUp_03", "WoundedTribe_Idle_Wound_HeadUp_04", "WoundedTribe_Idle_Wound_HeadUp_05", "WoundedTribe_Idle_Wound_HeadUp_06")
+	ThanksSounds("WoundedTribe_partdone_01", "WoundedTribe_partdone_02", "WoundedTribe_partdone_03", "WoundedTribe_partdone_04", "WoundedTribe_partdone_05", "WoundedTribe_partdone_06", "WoundedTribe_partdone_07", "WoundedTribe_partdone_08", "WoundedTribe_partdone_09")
+	RecoverySounds("WoundedTribe_thank_01", "WoundedTribe_thank_02", "WoundedTribe_thank_03", "WoundedTribe_thank_04", "WoundedTribe_thank_05", "WoundedTribe_thank_06", "WoundedTribe_thank_07", "WoundedTribe_thank_08")
+	CuredIdleSounds("WoundedTribe_Idle_Healed_01", "WoundedTribe_Idle_Healed_02", "WoundedTribe_Idle_Healed_03", "WoundedTribe_Idle_Healed_04", "WoundedTribe_Idle_Healed_05", "WoundedTribe_Idle_Healed_06", "WoundedTribe_Idle_Healed_07", "WoundedTribe_Idle_Healed_08")
+	DeathSounds("WoundedTribe_death_01", "WoundedTribe_death_02", "WoundedTribe_death_03", "WoundedTribe_death_04", "WoundedTribe_death_05")
+	Dummy("dummy_arm")
+}
+
+Preset("arm_laceration_01")
+{
+	WoundedPose("vil_man_wounded_arm_hurt")
+	CuredAnim("vil_man_wounded_arm_cure")
+	DeathAnim("vil_man_wounded_arm_death")
+	NoticeAnim("vil_man_wounded_arm_look_up")
+	ThanksAnim("vil_man_wounded_arm_thanks")
+	Wound("wound_hand_laceration", "slot_r_hand", "dressing_r_hand", "healed_hand_laceration", "Ants", "Honey_Dressing", "ash_dressing", "Goliath_dressing")
+	GroanSounds("WoundedTribe_Idle_WoundA_01", "WoundedTribe_Idle_WoundA_02", "WoundedTribe_Idle_WoundA_03", "WoundedTribe_Idle_WoundA_04", "WoundedTribe_Idle_WoundA_05", "WoundedTribe_Idle_WoundA_06")
+	NoticeSounds("WoundedTribe_Idle_Wound_HeadUp_01", "WoundedTribe_Idle_Wound_HeadUp_02", "WoundedTribe_Idle_Wound_HeadUp_03", "WoundedTribe_Idle_Wound_HeadUp_04", "WoundedTribe_Idle_Wound_HeadUp_05", "WoundedTribe_Idle_Wound_HeadUp_06")
+	ThanksSounds("WoundedTribe_partdone_01", "WoundedTribe_partdone_02", "WoundedTribe_partdone_03", "WoundedTribe_partdone_04", "WoundedTribe_partdone_05", "WoundedTribe_partdone_06", "WoundedTribe_partdone_07", "WoundedTribe_partdone_08", "WoundedTribe_partdone_09")
+	RecoverySounds("WoundedTribe_thank_01", "WoundedTribe_thank_02", "WoundedTribe_thank_03", "WoundedTribe_thank_04", "WoundedTribe_thank_05", "WoundedTribe_thank_06", "WoundedTribe_thank_07", "WoundedTribe_thank_08")
+	CuredIdleSounds("WoundedTribe_Idle_Healed_01", "WoundedTribe_Idle_Healed_02", "WoundedTribe_Idle_Healed_03", "WoundedTribe_Idle_Healed_04", "WoundedTribe_Idle_Healed_05", "WoundedTribe_Idle_Healed_06", "WoundedTribe_Idle_Healed_07", "WoundedTribe_Idle_Healed_08")
+	DeathSounds("WoundedTribe_death_01", "WoundedTribe_death_02", "WoundedTribe_death_03", "WoundedTribe_death_04", "WoundedTribe_death_05")
+	Dummy("dummy_arm")
+}
+
+Preset("arm_snakebite_01")
+{
+	WoundedPose("vil_man_wounded_arm_hurt")
+	CuredAnim("vil_man_wounded_arm_cure")
+	DeathAnim("vil_man_wounded_arm_death")
+	NoticeAnim("vil_man_wounded_arm_look_up")
+	ThanksAnim("vil_man_wounded_arm_thanks")
+	Wound("wound_hand_snakebite", "slot_r_hand", "dressing_r_hand", "", "Tabaco_Dressing", "lily_dressing")
+	GroanSounds("WoundedTribe_Idle_WoundA_01", "WoundedTribe_Idle_WoundA_02", "WoundedTribe_Idle_WoundA_03", "WoundedTribe_Idle_WoundA_04", "WoundedTribe_Idle_WoundA_05", "WoundedTribe_Idle_WoundA_06")
+	NoticeSounds("WoundedTribe_Idle_Wound_HeadUp_01", "WoundedTribe_Idle_Wound_HeadUp_02", "WoundedTribe_Idle_Wound_HeadUp_03", "WoundedTribe_Idle_Wound_HeadUp_04", "WoundedTribe_Idle_Wound_HeadUp_05", "WoundedTribe_Idle_Wound_HeadUp_06")
+	ThanksSounds("WoundedTribe_partdone_01", "WoundedTribe_partdone_02", "WoundedTribe_partdone_03", "WoundedTribe_partdone_04", "WoundedTribe_partdone_05", "WoundedTribe_partdone_06", "WoundedTribe_partdone_07", "WoundedTribe_partdone_08", "WoundedTribe_partdone_09")
+	RecoverySounds("WoundedTribe_thank_01", "WoundedTribe_thank_02", "WoundedTribe_thank_03", "WoundedTribe_thank_04", "WoundedTribe_thank_05", "WoundedTribe_thank_06", "WoundedTribe_thank_07", "WoundedTribe_thank_08")
+	CuredIdleSounds("WoundedTribe_Idle_Healed_01", "WoundedTribe_Idle_Healed_02", "WoundedTribe_Idle_Healed_03", "WoundedTribe_Idle_Healed_04", "WoundedTribe_Idle_Healed_05", "WoundedTribe_Idle_Healed_06", "WoundedTribe_Idle_Healed_07", "WoundedTribe_Idle_Healed_08")
+	DeathSounds("WoundedTribe_death_01", "WoundedTribe_death_02", "WoundedTribe_death_03", "WoundedTribe_death_04", "WoundedTribe_death_05")
+	Dummy("dummy_arm")
+}

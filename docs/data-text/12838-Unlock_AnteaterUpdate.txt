@@ -1,0 +1,41 @@
+Node("Unlocks_Bird_House", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bird_feather", False, 1)
+	Element("UnlockItemInNotepad:bird_house", False, 2)
+}
+Node("Unlocks_Bird_House_ParrotMacaw_Body", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:ParrotMacaw_Body", False, 1)
+	Element("UnlockItemInNotepad:bird_house", False, 2)
+}
+Node("Unlocks_Bird_House_ParrotMacaw_yellow_Body", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:ParrotMacaw_yellow_Body", False, 1)
+	Element("UnlockItemInNotepad:bird_house", False, 2)
+}
+Node("Unlocks_Bird_House_Egg", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Egg", False, 1)
+	Element("UnlockItemInNotepad:bird_house", False, 2)
+}
+Node("Unlocks_Bird_House_Bird_Nest", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bird_Nest", False, 1)
+	Element("UnlockItemInNotepad:bird_house", False, 2)
+}
+Node("Unlocks_Bird_House_Toucan_Body", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Toucan_Body", False, 1)
+	Element("UnlockItemInNotepad:bird_house", False, 2)
+}
+Node("Unlocks_Composter", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItemType:true:Spoiled", False, 0)
+	Element("UnlockItemInNotepad:composter", False, 1)
+}

@@ -1,0 +1,6 @@
+Goal("Death")
+Goal("ReactOnHit")
+Goal("DontMove")
+
+Goal("Loiter", 0.8)
+Goal("Idle")

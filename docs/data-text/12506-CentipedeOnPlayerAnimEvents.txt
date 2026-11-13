@@ -1,0 +1,23 @@
+Anim("SK|Centipede_Coconut")
+{
+	Event("CentipedeMoveStart", 0.0)
+	Event("CentipedeAnimFinish", 0.99)	
+}
+
+Anim("SK|Centipede_Leafs")
+{
+	Event("CentipedeMoveStart", 0.0)
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("SK|Centipede_LongStick")
+{
+	Event("CentipedeMoveStart", 0.0)
+	Event("CentipedeAnimFinish", 0.99)
+}
+
+Anim("SK|Centipede_BigStone")
+{
+	Event("CentipedeMoveStart", 0.0)
+	Event("CentipedeAnimFinish", 0.99)
+}

@@ -1,0 +1,4 @@
+Anim("dartfrog_death")
+{
+	Event("DieEnd", 0.99)
+}

@@ -1,0 +1,5 @@
+ClosedIdleAnims("ClosedIdle_01")
+AlertedAnims("Alerted_01")
+PushBackAnims("PushBack_01")
+OpeningAnims("Opening_01")
+OpenIdleAnims("OpenIdle_01")

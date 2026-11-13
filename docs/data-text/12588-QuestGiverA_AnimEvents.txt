@@ -1,0 +1,12 @@
+Anim("vil_questgiver_A6_A")
+{
+	Sound("Vill_A_QuestGiver_1stTimeWave_", "PVE\QuestGiver", 0.02)
+}
+Anim("vil_questgiver_A6_rest_to_idle")
+{
+	Sound("Vill_A_QuestGiver_Greetings_", "PVE\QuestGiver", 0.02)
+}
+Anim("vil_questgiver_A3_C_greeting_long")
+{
+	Sound("Vill_A_QuestGiver_Greetings_", "PVE\QuestGiver", 0.02)
+}

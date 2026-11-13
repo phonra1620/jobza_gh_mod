@@ -1,0 +1,318 @@
+//------------------------------movement-------------------------------
+
+Anim("lurking_walk_forward")
+{
+	// Sound("Puma_Lurking_loop", "AI/Puma", 0.0)
+}
+
+Anim("walk_forward")
+{
+	Footstep(0.14, "LegBLFoot")
+	Footstep(0.49, "LegFLFoot")
+	Footstep(0.64, "LegBRFoot")
+	Footstep(0.95, "LegFRFoot")
+}
+
+Anim("walk_left")
+{
+	Footstep(0.14, "LegBLFoot")
+	Footstep(0.49, "LegFLFoot")
+	Footstep(0.64, "LegBRFoot")
+	Footstep(0.95, "LegFRFoot")
+}
+
+Anim("walk_right")
+{
+	Footstep(0.14, "LegBLFoot")
+	Footstep(0.49, "LegFLFoot")
+	Footstep(0.64, "LegBRFoot")
+	Footstep(0.95, "LegFRFoot")
+}
+
+Anim("run_forward_spine")
+{
+	Footstep(0.09, "LegFRFoot")
+	Footstep(0.23, "LegFLFoot")
+	Footstep(0.49, "LegBRFoot")
+	Footstep(0.64, "LegBLFoot")
+}
+
+Anim("run_left")
+{
+	Footstep(0.09, "LegFRFoot")
+	Footstep(0.23, "LegFLFoot")
+	Footstep(0.49, "LegBRFoot")
+	Footstep(0.64, "LegBLFoot")
+}
+
+Anim("run_right")
+{
+	Footstep(0.09, "LegFRFoot")
+	Footstep(0.23, "LegFLFoot")
+	Footstep(0.49, "LegBRFoot")
+	Footstep(0.64, "LegBLFoot")
+}
+
+
+//------------------------------attack---------------------------------
+
+Anim("attack_both")
+{
+	Event("GiveDamageRArm", 0.5)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.35, "LegBRFoot")
+	Footstep(0.76, "LegFRFoot")
+	Footstep(0.82, "LegFLFoot")
+}
+
+Anim("attack_jump_both")
+{
+	Event("GiveDamageRArm", 0.45)
+
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.72, "LegBLFoot")
+	Footstep(0.75, "LegBRFoot")
+	Footstep(0.75, "LegFRFoot")
+	Footstep(0.75, "LegFLFoot")
+}
+
+Anim("attack_jump_right")
+{
+	Event("GiveDamageLArm", 0.45)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.74, "LegBLFoot")
+	Footstep(0.77, "LegFRFoot")
+	Footstep(0.78, "LegBRFoot")
+	Footstep(0.82, "LegFLFoot")
+}
+
+Anim("attack_jump_left")
+{
+	Event("GiveDamageRArm", 0.45)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.74, "LegBRFoot")
+	Footstep(0.77, "LegFLFoot")
+	Footstep(0.78, "LegBLFoot")
+	Footstep(0.82, "LegFRFoot")
+}
+
+Anim("attack_left_soft")
+{
+	Event("GiveDamageRLeg", 0.5)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.40, "LegBLFoot")
+	Footstep(0.90, "LegBLFoot")
+	Footstep(0.98, "LegFLFoot")
+}
+
+Anim("attack_right_soft")
+{
+	Event("GiveDamageLLeg", 0.5)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.34, "LegBRFoot")
+	Footstep(0.98, "LegBRFoot")
+	Footstep(0.98, "LegFRFoot")
+}
+
+Anim("attack_right")
+{
+	Event("GiveDamageLArm", 0.5)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.75, "LegFRFoot")
+	Footstep(0.75, "LegFLFoot")
+}
+
+Anim("attack_left")
+{
+	Event("GiveDamageRArm", 0.5)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.75, "LegFRFoot")
+	Footstep(0.75, "LegFLFoot")
+}
+
+//Anim("low_to_jump_attack")
+//{
+//	Event("GiveDamageRArm", 0.5)
+//	Sound("Puma_Attack_", "AI/Puma", 0.0)
+//	Footstep(0.70, "LegBLFoot")
+//	Footstep(0.70, "LegBRFoot")
+//	Footstep(0.77, "LegFRFoot")
+//	Footstep(0.79, "LegFLFoot")
+//}
+
+Anim("attack_left_back")
+{
+	Event("GiveDamageRLeg", 0.25)
+	Sound("Puma_Attack_", "AI/Puma", 0.0)
+	Footstep(0.13, "LegFRFoot")
+	Footstep(0.17, "LegBLFoot")
+	Footstep(0.48, "LegFLFoot")
+	Footstep(0.54, "LegBLFoot")
+	Footstep(0.62, "LegFRFoot")
+	Footstep(0.68, "LegBRFoot")
+	Footstep(0.80, "LegFLFoot")
+	Footstep(0.85, "LegBLFoot")
+	Footstep(0.93, "LegFRFoot")
+	Footstep(0.98, "LegBRFoot")
+}
+
+//----------------------------combat mode-----------------------------
+Anim("strafe_left")
+{
+	Footstep(0.34, "LegFRFoot")
+	Footstep(0.50, "LegBRFoot")
+	Footstep(0.85, "LegFLFoot")
+	Footstep(0.99, "LegBLFoot")
+}
+
+Anim("strafe_right")
+{
+	Footstep(0.34, "LegFLFoot")
+	Footstep(0.50, "LegBLFoot")
+	Footstep(0.85, "LegFRFoot")
+	Footstep(0.99, "LegBRFoot")
+}
+
+Anim("turn_right_45")
+{
+	Footstep(0.42, "LegFLFoot")
+	Footstep(0.42, "LegBLFoot")
+	Footstep(0.90, "LegFRFoot")
+	Footstep(0.90, "LegBRFoot")
+}
+
+Anim("turn_right_90")
+{
+	Footstep(0.21, "LegBLFoot")
+	Footstep(0.45, "LegFRFoot")
+	Footstep(0.64, "LegBRFoot")
+	Footstep(0.74, "LegFLFoot")
+	Footstep(0.95, "LegBLFoot")
+}
+
+Anim("turn_right_135")
+{
+	Footstep(0.21, "LegBLFoot")
+	Footstep(0.30, "LegFRFoot")
+	Footstep(0.60, "LegFLFoot")
+	Footstep(0.64, "LegBRFoot")
+	Footstep(0.95, "LegBLFoot")
+	Footstep(0.95, "LegFRFoot")
+}
+
+Anim("turn_right_180")
+{
+	Footstep(0.21, "LegBLFoot")
+	Footstep(0.30, "LegFRFoot")
+	Footstep(0.60, "LegFLFoot")
+	Footstep(0.64, "LegBRFoot")
+	Footstep(0.95, "LegBLFoot")
+	Footstep(0.95, "LegFRFoot")
+}
+////////
+
+Anim("turn_left_45")
+{
+	Footstep(0.42, "LegFRFoot")
+	Footstep(0.42, "LegBRFoot")
+	Footstep(0.90, "LegFLFoot")
+	Footstep(0.90, "LegBLFoot")
+}
+
+Anim("turn_left_90")
+{
+	Footstep(0.21, "LegBRFoot")
+	Footstep(0.45, "LegFLFoot")
+	Footstep(0.64, "LegBLFoot")
+	Footstep(0.74, "LegFRFoot")
+	Footstep(0.95, "LegBRFoot")
+}
+
+Anim("turn_left_135")
+{
+	Footstep(0.21, "LegBRFoot")
+	Footstep(0.30, "LegFLFoot")
+	Footstep(0.60, "LegFRFoot")
+	Footstep(0.64, "LegBLFoot")
+	Footstep(0.95, "LegBRFoot")
+	Footstep(0.95, "LegFLFoot")
+}
+
+Anim("turn_left_180")
+{
+	Footstep(0.21, "LegBRFoot")
+	Footstep(0.30, "LegFLFoot")
+	Footstep(0.60, "LegFRFoot")
+	Footstep(0.64, "LegBLFoot")
+	Footstep(0.95, "LegBRFoot")
+	Footstep(0.95, "LegFLFoot")
+}
+
+
+
+Anim("jump_back")
+{
+	Sound("Puma_Panic_", "AI/Puma", 0.0)
+	Footstep(0.52, "LegFRFoot")
+	Footstep(0.62, "LegFLFoot")
+	Footstep(0.62, "LegBLFoot")
+	Footstep(0.68, "LegBRFoot")
+}
+
+Anim("postattack_a")
+{
+	// Sound("Puma_PostAttack_", "AI/Puma", 0.0)
+}
+
+Anim("postattack_b")
+{
+	// Sound("Puma_PostAttack_", "AI/Puma", 0.0)
+	Footstep(0.33, "LegBRFoot")
+	Footstep(0.48, "LegBLFoot")
+	Footstep(0.65, "LegBRFoot")
+	Footstep(0.80, "LegBLFoot")
+}
+
+Anim("postattack_c")
+{
+	// Sound("Puma_PostAttack_", "AI/Puma", 0.0)
+}
+
+Anim("hit_reaction_head_left")
+{
+	// Sound("Puma_Hit_", "AI/Puma", 0.0)
+	Footstep(0.31, "LegFLFoot")
+	Footstep(0.87, "LegFLFoot")
+}
+
+Anim("hit_reaction_head_right")
+{
+	// Sound("Puma_Hit_", "AI/Puma", 0.0)
+	Footstep(0.31, "LegFRFoot")
+	Footstep(0.87, "LegFRFoot")
+}
+
+Anim("death")
+{
+	// Sound("Puma_Death_", "AI/Puma", 0.0)
+}
+
+//-------------------------------misc---------------------------------
+
+Anim("idle_roar")
+{
+	// Sound("Puma_Idle_", "AI/Puma", 0.0)
+	Footstep(0.21, "LegFRFoot")
+	Footstep(0.25, "LegBRFoot")
+	Footstep(0.32, "LegBLFoot")
+	Footstep(0.53, "LegBLFoot")
+	Footstep(0.57, "LegFRFoot")
+	Footstep(0.61, "LegBRFoot")
+}
+
+Anim("idle_tail")
+{
+	// Sound("Puma_Idle_", "AI/Puma", 0.0)
+}
+
+

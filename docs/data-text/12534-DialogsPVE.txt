@@ -1,0 +1,2058 @@
+Dialog("LQuest_Albino", "Village_01_planting")
+{
+	Node("PvE_Player_LQuest_Albino", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Albino_1", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Albino")
+	}
+}
+Dialog("LQuest_Bike", "Village_01_planting")
+{
+	Node("PvE_Player_LQuest_Bike", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Bike_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Bike")
+	}
+}
+Dialog("LQuest_Statue", "Village_01_planting")
+{
+	Node("PvE_Player_LQuest_Statue", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Statue_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Statue")
+	}
+}
+Dialog("LQuest_BadWater", "Village_01_planting")
+{
+	Node("PvE_Player_LQuest_BadWater", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_BadWater_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_BadWater")
+	}
+}
+Dialog("PvE_VillA_Mushrooms", "Village_01_planting")
+{
+	Node("PvE_Vill_A_Player_MushroomA", 752.0000, 242.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		RequiredReputation(800.00)
+		ShouldReplicateAudio(1)
+	}
+	Node("Vill_A_QuestGiver_MushroomA", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Dialog_MushroomsA")
+	}
+	Node("PvE_Vill_A_Player_Mushroom_GenericD_02", 674.0000, 475.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		Next(3)
+		ShouldReplicateAudio(1)
+	}
+	Node("Vill_A_QuestGiver_MushroomB", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(3)
+		Next(4)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Dialog_MushroomsB")
+	}
+	Node("PvE_Vill_A_Player_MushroomB", 674.0000, 475.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(4)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PvE_VillA_Welcoming", "Village_01_planting")
+{
+	Node("PvE_Vill_A_Player_1stDialogA", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("Vill_A_QuestGiver_1stDialogA", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_QuestGiver_1stDialogA")
+	}
+	Node("PvE_Vill_A_Player_1stDialogB", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		Next(3)
+		ShouldReplicateAudio(1)
+	}
+	Node("Vill_A_QuestGiver_1stDialogB", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(3)
+		Next(4)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_QuestGiver_1stDialogB")
+	}
+	Node("PvE_Vill_A_Player_1stDialogC", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(4)
+		Next(5)
+		ShouldReplicateAudio(1)
+	}
+	Node("Vill_A_QuestGiver_1stDialogC", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverA")
+	{
+		ID(5)
+		Next(6)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_QuestGiver_1stDialogC")
+	}
+	Node("PvE_Vill_A_Player_GenericB_02", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(6)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("Story_01Croc_01", "ALL")
+{
+	Node("PvE_Story_01Croc_01_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_01Croc_02", "ALL")
+{
+	Node("PvE_Story_01Croc_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_01Croc_03", "ALL")
+{
+	Node("PvE_Story_01Croc_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_01Croc_04", "ALL")
+{
+	Node("PvE_Story_01Croc_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_01Croc_05", "ALL")
+{
+	Node("PvE_Story_01Croc_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_01Croc_06", "ALL")
+{
+	Node("PvE_Story_01Croc_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_01", "ALL")
+{
+	Node("PvE_Story_02Bike_01_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_02", "ALL")
+{
+	Node("PvE_Story_02Bike_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_03", "ALL")
+{
+	Node("PvE_Story_02Bike_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_04", "ALL")
+{
+	Node("PvE_Story_02Bike_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_05", "ALL")
+{
+	Node("PvE_Story_02Bike_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_06", "ALL")
+{
+	Node("PvE_Story_02Bike_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_02Bike_07", "ALL")
+{
+	Node("PvE_Story_02Bike_07_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_01", "ALL")
+{
+	Node("PvE_Story_03Statue_01_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_02", "ALL")
+{
+	Node("PvE_Story_03Statue_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_03", "ALL")
+{
+	Node("PvE_Story_03Statue_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_04", "ALL")
+{
+	Node("PvE_Story_03Statue_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_05", "ALL")
+{
+	Node("PvE_Story_03Statue_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_06", "ALL")
+{
+	Node("PvE_Story_03Statue_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_03Statue_07", "ALL")
+{
+	Node("PvE_Story_03Statue_07_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_01", "ALL")
+{
+	Node("PvE_Story_04BadWater_01_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_02", "ALL")
+{
+	Node("PvE_Story_04BadWater_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_03", "ALL")
+{
+	Node("PvE_Story_04BadWater_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_04", "ALL")
+{
+	Node("PvE_Story_04BadWater_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_05", "ALL")
+{
+	Node("PvE_Story_04BadWater_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_06", "ALL")
+{
+	Node("PvE_Story_04BadWater_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_04BadWater_07", "ALL")
+{
+	Node("PvE_Story_04BadWater_07_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_FoundCaptain", "ALL")
+{
+	Node("PvE_Capitan_Found_Player_01", 772.0000, 497.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PvE_BoatRadio", "ALL")
+{
+	Node("PvE_Radio_Found_Player_01", 667.0000, 479.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+	}
+	Node("Wait", 737.0000, 580.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, "")
+	{
+		ID(2)
+		Next(0)
+	}
+	Node("PvE_Radio_Found_Player_02", 688.0000, 682.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(3)
+		ShouldReplicateAudio(1)
+	}
+	Node("PvE_Radio_Found_Player_03", 687.0000, 773.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(3)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PvE_VillA_Kids", "Village_01_planting")
+{
+	Node("PvE_VillA_Kids", 732.0000, 277.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_VillA_Help", "Village_01_planting")
+{
+	Node("PvE_VillA_Help", 691.0000, 317.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Village_Found_Player_01", "ALL")
+{
+	Node("PvE_Village_Found_Player_01", 1030.0000, 766.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Map_Found_Player_01", "ALL")
+{
+	Node("PvE_Map_Found_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Story_01Croc_Player_01", "ALL")
+{
+	Node("PvE_Story_01Croc_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Story_02Bike_BikeTrigger_Player_01", "ALL")
+{
+	Node("PvE_Story_02Bike_BikeTrigger_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Story_03Statue_Player_01", "ALL")
+{
+	Node("PvE_Story_03Statue_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Story_04BadWater_Altar_Player_01", "ALL")
+{
+	Node("PvE_Story_04BadWater_Altar_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Story_04BadWater_Altar_Player_02", "ALL")
+{
+	Node("PvE_Story_04BadWater_Altar_Player_02", 582.0000, 419.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(2)
+	}
+	Node("PvE_Story_04BadWater_Altar_Player_03", 563.0000, 581.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(1)
+	}
+	Node("Wait", 646.0000, 497.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 3.0000, "")
+	{
+		ID(2)
+		Next(1)
+	}
+}
+Dialog("PvE_Story_04BadWater_Pickup_Player_01", "ALL")
+{
+	Node("PvE_Story_04BadWater_Pickup_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("LQuest_Canoe", "Village_02_hunt")
+{
+	Node("PvE_Player_LQuest_Canoe", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Canoe_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("QuestGiver_LQuest_Canoe_1_cut_1", 6.5)
+		AdditionalText("QuestGiver_LQuest_Canoe_1_cut_2", 14.0)
+		AdditionalText("QuestGiver_LQuest_Canoe_1_cut_3", 19.5)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Canoe")
+	}
+}
+Dialog("LQuest_Drum", "Village_02_hunt")
+{
+	Node("PvE_Player_LQuest_Drum", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Drum_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("QuestGiver_LQuest_Drum_1_cut_1", 3.0)
+		AdditionalText("QuestGiver_LQuest_Drum_1_cut_2", 5.5)
+		AdditionalText("QuestGiver_LQuest_Drum_1_cut_3", 8.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Drum")
+	}
+}
+Dialog("LQuest_Panther", "Village_02_hunt")
+{
+	Node("PvE_Player_LQuest_Panther", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Panther_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("QuestGiver_LQuest_Panther_1_cut_1", 5.0)
+		AdditionalText("QuestGiver_LQuest_Panther_1_cut_2", 9.3)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Panther")
+	}
+}
+Dialog("PVE_Boat_Radio_Talk_PlaceHolder", "ALL")
+{
+	Node("PVE_Radio_Player_01", 481.0000, 436.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		PlayerAnimName("Boat_WT_Talk")
+		Locked(1)
+		HideWT(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("Wait", 557.0000, 777.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, "")
+	{
+		ID(1)
+		Next(2)
+		PlayerAnimName("Boat_WT_Listen")
+	}
+	Node("PVE_Radio_Player_02", 481.0000, 436.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		Next(3)
+		PlayerAnimName("Boat_WT_Talk")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Man_01", 471.0000, 596.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(3)
+		Next(4)
+		WTSoundBefore(1)		
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Man_02", 471.0000, 596.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(4)
+		Next(5)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Player_03", 481.0000, 436.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(5)
+		Next(6)
+		PlayerAnimName("Boat_WT_Talk")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Man_03", 471.0000, 596.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(6)
+		Next(7)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Player_05", 472.0000, 680.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(7)
+		Next(8)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Man_04", 471.0000, 596.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(8)
+		Next(9)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Player_06", 472.0000, 680.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(9)
+		Next(10)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Man_05", 471.0000, 596.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(10)
+		Next(11)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Player_07", 472.0000, 680.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(11)
+		Next(12)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Man_06", 471.0000, 596.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(12)
+		Next(13)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_Radio_Player_08", 472.0000, 680.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(13)
+		PlayerAnimName("WT_Hide")
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PvE_Map_Found_Player_02", "ALL")
+{
+	Node("PvE_Map_Found_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Village_Found_Player_02", "ALL")
+{
+	Node("PvE_Village_Found_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Drum_2", "ALL")
+{
+	Node("PvE_Player_LQuest_Drum_2", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Drum_3", "ALL")
+{
+	Node("PvE_Player_LQuest_Drum_3", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Panther_2", "ALL")
+{
+	Node("PvE_Player_LQuest_Panther_2", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Panther_3", "ALL")
+{
+	Node("PvE_Player_LQuest_Panther_3", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Panther_4", "ALL")
+{
+	Node("PvE_Player_LQuest_Panther_4", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Panther_5", "ALL")
+{
+	Node("PvE_Player_LQuest_Panther_5", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_VillB_Ending", "Village_02_hunt")
+{
+	Node("PvE_VillB_Ending_Player_01", 752.0000, 242.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		RequiredReputation(800.00)
+		ShouldReplicateAudio(1)
+	}
+	Node("PvE_VillB_Ending_QuestGiver_01", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+		AdditionalText("PvE_VillB_Ending_QuestGiver_01_cut_1", 6.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_EndTalk")
+	}
+	Node("PvE_VillB_Ending_Player_02", 674.0000, 475.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PvE_VillB_Hello", "Village_02_hunt")
+{
+	Node("PvE_VillB_Hello_QuestGiver_01", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_welcome_A")
+	}
+	Node("PvE_VillB_Hello_Player_01", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+	}
+	Node("PvE_VillB_Hello_QuestGiver_02", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(2)
+		Next(3)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_welcome_B")
+	}
+	Node("PvE_VillB_Hello_Player_02", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(3)
+		Next(4)
+		ShouldReplicateAudio(1)
+	}
+	Node("PvE_VillB_Hello_QuestGiver_03", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(4)
+		Next(5)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_welcome_C")
+	}
+	Node("PvE_VillB_Hello_QuestGiver_04", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverB")
+	{
+		ID(5)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_welcome_D")
+	}
+}
+Dialog("Story_05Canoe_01", "ALL")
+{
+	Node("PvE_Story_05Canoe_01_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_05Canoe_02", "ALL")
+{
+	Node("PvE_Story_05Canoe_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_05Canoe_03", "ALL")
+{
+	Node("PvE_Story_05Canoe_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_05Canoe_04", "ALL")
+{
+	Node("PvE_Story_05Canoe_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_05Canoe_05", "ALL")
+{
+	Node("PvE_Story_05Canoe_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_05Canoe_06", "ALL")
+{
+	Node("PvE_Story_05Canoe_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_01", "ALL")
+{
+	Node("PvE_Story_06Drum_01_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_02", "ALL")
+{
+	Node("PvE_Story_06Drum_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_03", "ALL")
+{
+	Node("PvE_Story_06Drum_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_04", "ALL")
+{
+	Node("PvE_Story_06Drum_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_05", "ALL")
+{
+	Node("PvE_Story_06Drum_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_06", "ALL")
+{
+	Node("PvE_Story_06Drum_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_07", "ALL")
+{
+	Node("PvE_Story_06Drum_07_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_06Drum_08", "ALL")
+{
+	Node("PvE_Story_06Drum_08_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_01", "ALL")
+{
+	Node("PvE_Story_07Panther_01_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_02", "ALL")
+{
+	Node("PvE_Story_07Panther_02_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_03", "ALL")
+{
+	Node("PvE_Story_07Panther_03_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_04", "ALL")
+{
+	Node("PvE_Story_07Panther_04_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_05", "ALL")
+{
+	Node("PvE_Story_07Panther_05_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_06", "ALL")
+{
+	Node("PvE_Story_07Panther_06_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_07Panther_07", "ALL")
+{
+	Node("PvE_Story_07Panther_07_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Water_Purified_01", "ALL")
+{
+	Node("PVE_Water_Purified_Player_01", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Water_Purified_02", "ALL")
+{
+	Node("PVE_Water_Purified_Player_02", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Water_Purified_03", "ALL")
+{
+	Node("PVE_Water_Purified_Player_03", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Water_Purified_04", "ALL")
+{
+	Node("PVE_Water_Purified_Player_04", 787.0000, 253.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_GoldenFish_2", "ALL")
+{
+	Node("PvE_Player_LQuest_GoldenFish_2", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_GuardianMonkeys_2", "ALL")
+{
+	Node("PvE_Player_LQuest_GuardianMonkeys_2", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_GuardianMonkeys_3", "ALL")
+{
+	Node("PvE_Player_LQuest_GuardianMonkeys_3", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_GuardianMonkeys_4", "ALL")
+{
+	Node("PvE_Player_LQuest_GuardianMonkeys_4", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_GuardianMonkeys_5", "ALL")
+{
+	Node("PvE_Player_LQuest_GuardianMonkeys_5", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_AztecWarrior_2", "ALL")
+{
+	Node("PvE_Player_LQuest_AztecWarrior_2", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_AztecWarrior_3", "ALL")
+{
+	Node("PvE_Player_LQuest_AztecWarrior_3", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_AztecWarrior_4", "ALL")
+{
+	Node("PvE_Player_LQuest_AztecWarrior_4", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_AztecWarrior_5", "ALL")
+{
+	Node("PvE_Player_LQuest_AztecWarrior_5", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_AztecWarrior_6", "ALL")
+{
+	Node("PvE_Player_LQuest_AztecWarrior_6", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Lovers_2", "ALL")
+{
+	Node("PvE_Player_LQuest_Lovers_2", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Lovers_3", "ALL")
+{
+	Node("PvE_Player_LQuest_Lovers_3", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_Player_LQuest_Lovers_4", "ALL")
+{
+	Node("PvE_Player_LQuest_Lovers_4", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_VillC_Ending", "Village_03_fishing")
+{
+	Node("PvE_VillC_Ending_Player_01", 752.0000, 242.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		RequiredReputation(800.00)
+		ShouldReplicateAudio(1)
+	}
+	Node("PvE_VillC_Ending_QuestGiver_01", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverC")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+		AdditionalText("PvE_VillC_Ending_QuestGiver_01_cut_1", 4.5)
+		AdditionalText("PvE_VillC_Ending_QuestGiver_01_cut_2", 9.0)
+		AdditionalText("PvE_VillC_Ending_QuestGiver_01_cut_3", 13.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_EndTalk")
+        ObjectAnimTransitionTime(1.0000)
+	}
+	Node("PvE_VillC_Ending_Player_02", 674.0000, 475.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		ShouldReplicateAudio(1)
+		AdditionalText("PvE_VillC_Ending_Player_02_cut_1", 2.5)
+	}
+}
+Dialog("PvE_VillC_Hello", "Village_03_fishing")
+{
+	Node("PvE_VillC_Hello_Player_01", 606.0000, 531.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("PvE_VillC_Hello_Player_01_cut_1", 6.0)
+	}
+	Node("PvE_VillC_Hello_QuestGiver_01", 678.0000, 371.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverC")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("PvE_VillC_Hello_QuestGiver_01_cut_1", 3.5)
+		AdditionalText("PvE_VillC_Hello_QuestGiver_01_cut_2", 8.0)
+		AdditionalText("PvE_VillC_Hello_QuestGiver_01_cut_3", 11.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Welcome")
+        ObjectAnimTransitionTime(1.0000)
+	}
+}
+Dialog("LQuest_GoldenFish", "Village_03_fishing")
+{
+	Node("PvE_Player_LQuest_GoldenFish", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_GoldenFish_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverC")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_GoldenFish")
+        ObjectAnimTransitionTime(1.0000)
+	}
+}
+Dialog("LQuest_GuardianMonkeys", "Village_03_fishing")
+{
+	Node("PvE_Player_LQuest_GuardianMonkeys", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_GuardianMonkeys_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverC")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("QuestGiver_LQuest_GuardianMonkeys_1_cut_1", 6.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_GuardianMonkeys")
+        ObjectAnimTransitionTime(1.0000)
+	}
+}
+Dialog("LQuest_AztecWarrior", "Village_03_fishing")
+{
+	Node("PvE_Player_LQuest_AztecWarrior", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_AztecWarrior_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverC")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("QuestGiver_LQuest_AztecWarrior_1_cut_1", 3.5)
+		AdditionalText("QuestGiver_LQuest_AztecWarrior_1_cut_2", 9.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_AztecWarrior")
+        ObjectAnimTransitionTime(1.0000)
+	}
+}
+Dialog("LQuest_Lovers", "Village_03_fishing")
+{
+	Node("PvE_Player_LQuest_Lovers", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("QuestGiver_LQuest_Lovers_1", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "QuestGiverC")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("QuestGiver_LQuest_Lovers_1_cut_1", 5.0)
+		AdditionalText("QuestGiver_LQuest_Lovers_1_cut_2", 10.0)
+		AdditionalText("QuestGiver_LQuest_Lovers_1_cut_3", 15.0)
+		AudioFromObjectPos(1)
+		ObjectAnimName("PvE_Quest_Lovers")
+        ObjectAnimTransitionTime(1.0000)
+	}
+}
+Dialog("PVE_KidRope_LookAt", "ALL")
+{
+	Node("PVE_KidRope_LookAt", 572.0000, 468.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_KidRope_FirstTalk", "ALL")
+{
+	Node("PVE_KidRope_Player_01", 635.0000, 364.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_KidRope_Kid_01", 662.0000, 618.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "Kid_Throwing_Rope")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("child_rope_idle")
+	}
+}
+Dialog("PVE_KidRope_NoToken", "ALL")
+{
+	Node("PVE_KidRope_NoToken_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PVE_KidRope_HaveToken_1", "ALL")
+{
+	Node("PVE_KidRope_Token_Player_01", 556.0000, 128.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+	}
+	Node("PVE_KidRope_Token_Kid_01", 565.0000, 252.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "Kid_Throwing_Rope")
+	{
+		ID(1)
+		AudioFromObjectPos(1)
+	}
+}
+Dialog("PVE_KidRope_HaveToken_2", "ALL")
+{
+	Node("PVE_KidRope_Token_Kid_02", 571.0000, 353.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "Kid_Throwing_Rope")
+	{
+		ID(0)
+		Next(1)
+		AudioFromObjectPos(1)
+	}
+	Node("PVE_KidRope_Token_Player_02", 562.0000, 540.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(1)
+	}
+}
+Dialog("PVE_YabahuacaVillage_Found_Player_01", "ALL")
+{
+	Node("PVE_YabahuacaVillage_Found_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_YabahuacaVillage_Guard", "ALL")
+{
+	Node("PVE_VillageGuard_Guard_01", 708.0000, 361.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "GateKeeper_A03_S03_01")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+
+		ObjectAnimName("GK_Yabahuacca_talk_1st")
+        ObjectAnimTransitionTime(1.0000)		
+	}
+	Node("PVE_VillageGuard_Player_01", 682.0000, 498.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+		AdditionalText("PVE_VillageGuard_Player_01_cut_1", 4.0)
+	}
+	Node("PVE_VillageGuard_Guard_02", 718.0000, 620.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "GateKeeper_A03_S03_01")
+	{
+		ID(2)
+		Next(3)
+		ShouldReplicateAudio(1)
+
+		ObjectAnimName("GK_Yabahuacca_talk_2nd")
+        ObjectAnimTransitionTime(1.0000)		
+	}
+	Node("PVE_VillageGuard_Player_02", 692.0000, 688.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(3)
+		Next(4)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_VillageGuard_Guard_03", 690.0000, 776.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "GateKeeper_A03_S03_01")
+	{
+		ID(4)
+		ShouldReplicateAudio(1)
+
+		ObjectAnimName("GK_Yabahuacca_talk_3rd")
+        ObjectAnimTransitionTime(1.0000)		
+	}
+}
+Dialog("PVE_VillageGuard_Player_03", "ALL")
+{
+	Node("PVE_VillageGuard_Player_03", 749.0000, 563.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PVE_SnakePassage_Player_01", "ALL")
+{
+	Node("PVE_SnakePassage_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_SnakePassage_Player_02", "ALL")
+{
+	Node("PVE_SnakePassage_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_PassageGuardian_Guard", "ALL")
+{
+	Node("PVE_PassageGuardian_Player_01", 734.0000, 217.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_PassageGuardian_Guard_01", 726.0000, 330.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "GateKeeper_A04_S02_01")
+	{
+		ID(1)
+		Next(2)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("GK_Totem_talk_1st")
+        ObjectAnimTransitionTime(0.2500)		
+	}
+	Node("PVE_PassageGuardian_Player_02", 756.0000, 427.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		Next(3)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_PassageGuardian_Guard_02", 783.0000, 681.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "GateKeeper_A04_S02_01")
+	{
+		ID(3)
+		ShouldReplicateAudio(1)
+		AudioFromObjectPos(1)
+		ObjectAnimName("GK_Totem_talk_2nd")
+        ObjectAnimTransitionTime(0.2500)		
+	}
+}
+Dialog("PVE_PassageGuardian_Player_03", "ALL")
+{
+	Node("PVE_PassageGuardian_Player_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PVE_PassageGuardian_Player_04", "ALL")
+{
+	Node("PVE_PassageGuardian_Player_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)		
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE_PassageGuardian_Player_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(1)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PVE_PassageGuardian_Player_06", "ALL")
+{
+	Node("PVE_PassageGuardian_Player_Choice01", 961.0000, 365.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)
+	}
+}
+Dialog("PvE3_EndingDialog", "ALL")
+{
+	Node("backpack_Player_01", 776.0000, 597.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_01", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_01_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_02", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_02_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_03", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_03_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_04", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_04_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_05", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_05_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_06", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_06_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_08GoldenFish_07", "ALL")
+{
+	Node("PvE_Story_08GoldenFish_07_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_01", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_01_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_02", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_02_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_03", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_03_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_04", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_04_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_05", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_05_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_06", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_06_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_09GuardianMonkeys_07", "ALL")
+{
+	Node("PvE_Story_09GuardianMonkeys_07_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_01", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_01_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_02", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_02_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_03", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_03_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_04", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_04_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_05", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_05_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_06", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_06_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_07", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_07_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_10AztecWarrior_08", "ALL")
+{
+	Node("PvE_Story_10AztecWarrior_08_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_01", "ALL")
+{
+	Node("PvE_Story_11Lovers_01_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_02", "ALL")
+{
+	Node("PvE_Story_11Lovers_02_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_03", "ALL")
+{
+	Node("PvE_Story_11Lovers_03_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_04", "ALL")
+{
+	Node("PvE_Story_11Lovers_04_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_05", "ALL")
+{
+	Node("PvE_Story_11Lovers_05_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_06", "ALL")
+{
+	Node("PvE_Story_11Lovers_06_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_07", "ALL")
+{
+	Node("PvE_Story_11Lovers_07_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Story_11Lovers_08", "ALL")
+{
+	Node("PvE_Story_11Lovers_08_Player_01", 748.0000, 258.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Boat_Radio_2nd_Mia", "ALL")
+{
+	Node("PVE3_Radio_Player_01", 683.0000, -396.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		Next(1)
+		PlayerAnimName("Boat_WT_Talk")
+		Locked(1)
+		HideWT(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("Wait", 705.0000, -302.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, "")
+	{
+		ID(1)
+		Next(2)
+		PlayerAnimName("Boat_WT_Listen")
+	}
+	Node("PVE3_Radio_Player_01_1", 686.0000, -210.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(2)
+		Next(3)
+		PlayerAnimName("Boat_WT_Talk")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Mia_01", 673.0000, -121.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(3)
+		Next(4)
+		WTSoundAfter(1)		
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Player_02", 618.0000, -24.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(4)
+		Next(5)
+		PlayerAnimName("Boat_WT_Talk")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Mia_02", 578.0000, 53.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(5)
+		Next(6)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Player_03", 596.0000, 117.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(6)
+		Next(7)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+		AdditionalText("PVE3_Radio_Player_03_cut_01", 3.5)		
+	}
+	Node("PVE3_Radio_Mia_03", 608.0000, 181.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(7)
+		Next(8)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("PVE3_Radio_Mia_03_cut_01", 4.0)		
+	}
+	Node("PVE3_Radio_Player_04", 592.0000, 261.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(8)
+		Next(9)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Mia_04", 586.0000, 345.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(9)
+		Next(10)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("PVE3_Radio_Mia_04_cut_01", 7.0)			
+	}
+	Node("PVE3_Radio_Player_05", 561.0000, 409.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(10)
+		Next(11)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+		AdditionalText("PVE3_Radio_Player_05_cut_01", 3.0)			
+	}
+	Node("PVE3_Radio_Mia_05", 588.0000, 482.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(11)
+		Next(12)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+		AdditionalText("PVE3_Radio_Mia_05_cut_01", 1.5)
+		AdditionalText("PVE3_Radio_Mia_05_cut_02", 8.0)			
+	}
+	Node("PVE3_Radio_Player_06", 561.0000, 562.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(12)
+		Next(13)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Mia_06", 562.0000, 636.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(13)
+		Next(14)
+		WTSoundAfter(1)
+		PlayerAnimName("Boat_WT_Listen")
+		Locked(1)
+		ShouldReplicateAudio(1)
+	}
+	Node("PVE3_Radio_Player_07", 550.0000, 718.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(14)
+		Next(15)
+		PlayerAnimName("Boat_WT_Talk")
+		ShouldReplicateAudio(1)
+	}
+	Node("Wait", 612.0000, 802.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.2000, "")
+	{
+		ID(15)
+		PlayerAnimName("WT_Hide")
+	}
+}
+//Arena Farmer Player comments
+Dialog("PVE_Farmer_Start_Player_01", "ALL")
+{
+	Node("PVE_Farmer_Start_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Fail_Player_01", "ALL")
+{
+	Node("PVE_Farmer_Fail_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Fail_Player_02", "ALL")
+{
+	Node("PVE_Farmer_Fail_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Fail_Player_03", "ALL")
+{
+	Node("PVE_Farmer_Fail_Player_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Fail_Player_04", "ALL")
+{
+	Node("PVE_Farmer_Fail_Player_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Fail_Player_05", "ALL")
+{
+	Node("PVE_Farmer_Fail_Player_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Positive_01", "ALL")
+{
+	Node("PVE_Farmer_Positive_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Positive_02", "ALL")
+{
+	Node("PVE_Farmer_Positive_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Farmer_Positive_03", "ALL")
+{
+	Node("PVE_Farmer_Positive_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+//Arena Hunter Player comments
+Dialog("PVE_Hunter_Start_Player_01", "ALL")
+{
+	Node("PVE_Hunter_Start_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_01", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_02", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_03", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_04", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_05", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_06", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_06", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_07", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_07", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Fail_Player_08", "ALL")
+{
+	Node("PVE_Hunter_Fail_Player_08", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Success_01", "ALL")
+{
+	Node("PVE_Hunter_Success_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Success_02", "ALL")
+{
+	Node("PVE_Hunter_Success_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Success_03", "ALL")
+{
+	Node("PVE_Hunter_Success_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Success_04", "ALL")
+{
+	Node("PVE_Hunter_Success_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Success_05", "ALL")
+{
+	Node("PVE_Hunter_Success_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Hunter_Success_06", "ALL")
+{
+	Node("PVE_Hunter_Success_06", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+//Arena Fishing Player comments
+Dialog("PVE_Fish_Fail_Player_01", "ALL")
+{
+	Node("PVE_Fish_Fail_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Fish_Fail_Player_02", "ALL")
+{
+	Node("PVE_Fish_Fail_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Fish_Fail_Player_03", "ALL")
+{
+	Node("PVE_Fish_Fail_Player_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Fish_Fail_Player_04", "ALL")
+{
+	Node("PVE_Fish_Fail_Player_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Fish_Fail_Player_05", "ALL")
+{
+	Node("PVE_Fish_Fail_Player_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Fish_Positive_01", "ALL")
+{
+	Node("PVE_Fish_Positive_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_Fish_Positive_02", "ALL")
+{
+	Node("PVE_Fish_Positive_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+//Arena Tribe Mia comments
+Dialog("Mia_Tribe_Arena_01_01", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_01_02", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_01_03", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_01_04", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_01_05", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_01_06", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_06", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_01_07", "ALL")
+{
+	Node("Mia_Tribe_Arena_01_07", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_01", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_02", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_03", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_04", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_04", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_05", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_05", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_06", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_06", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_07", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_07", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("Mia_Tribe_Arena_02_08", "ALL")
+{
+	Node("Mia_Tribe_Arena_02_08", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+//Checking PVE3boat comments
+Dialog("PVE_BoatCheck_Player_01", "ALL")
+{
+	Node("PVE_BoatCheck_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)		
+	}
+}
+Dialog("PVE_BoatCheck_Player_02", "ALL")
+{
+	Node("PVE_BoatCheck_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		ShouldReplicateAudio(1)		
+	}
+}
+//Comment on pickup token
+Dialog("PvE_TrialsEnd_Player_01", "ALL")
+{
+	Node("PvE_TrialsEnd_Player_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_TrialsEnd_Player_02", "ALL")
+{
+	Node("PvE_TrialsEnd_Player_02", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PvE_TrialsEnd_Player_03", "ALL")
+{
+	Node("PvE_TrialsEnd_Player_03", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+	}
+}
+Dialog("PVE_MushroomTake_01", "ALL")
+{
+	Node("PVE_MushroomTake_01", 762.0000, 426.0000, 100.0000, 40.0000, False, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, "")
+	{
+		ID(0)
+		AdditionalText("PVE_MushroomTake_01_cut_01", 5.0)
+		AdditionalText("PVE_MushroomTake_01_cut_02", 13.5)
+		AdditionalText("PVE_MushroomTake_01_cut_03", 19.5)		
+	}
+}
+Group("Village_01_planting")
+Group("Village_02_hunt")
+Group("Village_03_fishing")

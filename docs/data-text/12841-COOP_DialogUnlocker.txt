@@ -1,0 +1,616 @@
+Node("Dialog_After_WakeUp", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:AfterWakeUp", False, 0)
+	Element("UnlockDialog:WakeUP", False, 1)
+}
+
+// ## AT CARTEL 
+Node("Cartel_Find_NoInside", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cartel_Find_NoInside", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:Cartel_Find_NoInside", False, 2)
+	Element("IsDialogPlaying:true:Cartel_Find_NoInside", False, 3)
+	Element("DeactivateScenarioNode:Cartel_FindOut_Ago", False, 4)
+	Element("PlayerIsInSensor:true:Cartel_FindOut", False, 5)
+	Element("IsDialogPlaying:false:Cartel_Find_NoInside", False, 6)
+	Element("UnlockDialog:Cartel_FindOut", False, 7)
+	Element("IsDialogPlaying:true:Cartel_FindOut", False, 8)
+	Element("IsDialogPlaying:false:Cartel_FindOut", False, 9)
+	Element("SetBoolVariable:Can_talkabout_Cartel:true", False, 10)
+}
+Node("Cartel_FindOut_Ago", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Cartel_FindOut", False, 0)
+	Element("IsDialogPlaying:false:Cartel_Find_NoInside", False, 1)
+	Element("DeactivateScenarioNode:Cartel_Find_NoInside", False, 2)
+	Element("LockDialog:Cartel_Find_NoInside", False, 3)
+	Element("LockDialog:Cartel_FindOut", False, 4)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 5)
+	Element("UnlockDialog:Cartel_FindOut_Ago", False, 6)
+	Element("IsDialogPlaying:true:Cartel_FindOut_Ago", False, 7)
+	Element("IsDialogPlaying:false:Cartel_FindOut_Ago", False, 8)
+	Element("SetBoolVariable:Can_talkabout_Cartel:true", False, 9)
+}
+Node("Cartel_Microwave", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Cartel_Microwave_DialogTrigger", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 2)
+	Element("UnlockDialog:Cartel_Microwave", False, 3)
+}
+Node("Cartel_Snowman", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Cartel_Snowman_DialogTrigger", False, 0)
+	Element("AddStoryEvent:Notebook_Cartel", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 2)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 3)
+	Element("UnlockDialog:Cartel_Snowman", False, 4)
+}
+Node("Cartel_Cage_Trigger1", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Cartel_Cage_DialogTrigger1", False, 0)
+	Element("SetBoolVariable:Can_talkabout_Cage:true", False, 1)
+}
+Node("Cartel_Cage_Trigger2", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Cartel_Cage_DialogTrigger2", False, 0)
+	Element("SetBoolVariable:Can_talkabout_Cage:true", False, 1)
+}
+Node("Cartel_Cage", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cage", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 2)
+	Element("UnlockDialog:Cartel_Cage", False, 3)
+}
+Node("Cartel_Tribe_Arrows", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Cartel_Tribe_Arrows_DialogTrigger", False, 0)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 2)
+	Element("UnlockDialog:Cartel_Tribe_Arrows", False, 3)
+}
+// ## AT PORT 
+Node("Port_Found_NoCartel", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Port_Found", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:Port_Found_NoCartel", False, 2)
+	Element("IsDialogPlaying:true:Port_Found_NoCartel", False, 3)
+	Element("DeactivateScenarioNode:Port_Found", False, 4)
+	Element("IsDialogPlaying:false:Port_Found_NoCartel", False, 5)
+	Element("SetBoolVariable:Can_talkabout_Port:true", False, 6)
+}
+Node("Port_Found", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Port_Found", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 2)
+	Element("IsDialogPlaying:false:Port_Found_NoCartel", False, 3)
+	Element("DeactivateScenarioNode:Port_Found_NoCartel", False, 4)
+	Element("UnlockDialog:Port_Found", False, 5)
+	Element("LockDialog:Port_Found_NoCartel", False, 6)
+	Element("IsDialogPlaying:true:Port_Found", False, 7)
+	Element("IsDialogPlaying:false:Port_Found", False, 8)
+	Element("SetBoolVariable:Can_talkabout_Port:true", False, 9)
+}
+Node("Port_Destroyed_Boat", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Port_Destroyed_Boat", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Port", False, 2)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Cartel", False, 3)
+	Element("IsDialogPlaying:false:Port_Destroyed_Boat_NoCartel", False, 4)
+	Element("DeactivateScenarioNode:Port_Destroyed_Boat_NoCartel", False, 5)
+	Element("LockDialog:Port_Destroyed_Boat_NoCartel", False, 6)
+	Element("UnlockDialog:Port_Destroyed_Boat", False, 7)
+}
+Node("Port_Destroyed_Boat_NoCartel", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Port_Destroyed_Boat", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_Port", False, 2)
+	Element("IsBoolVariableTrue:false:Can_talkabout_Cartel", False, 3)
+	Element("UnlockDialog:Port_Destroyed_Boat_NoCartel", False, 4)
+	Element("IsDialogPlaying:true:Port_Destroyed_Boat_NoCartel", False, 5)
+	Element("DeactivateScenarioNode:Port_Destroyed_Boat", False, 6)
+}
+// ## Camp AT PORT 
+Node("01Camp_Find", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:01Camp_Find", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:01Camp_Find", False, 2)
+	Element("IsDialogPlaying:true:01Camp_Find", False, 3)
+	Element("IsDialogPlaying:false:01Camp_Find", False, 4)
+}
+Node("01Camp_Binocular", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("WasReadedAndOff:true:Collectable_Camp01_ScoutNote", False, 0)
+	Element("IsNodeCompleted:true:01Camp_Find", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 2)
+	Element("UnlockDialog:01Camp_Binocular", False, 3)
+}
+// ## AT GOLD MINE
+Node("GoldMine", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GoldMine_Story_Sensor", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("DeactivateScenarioNode:FindFuel_Needed", False, 2)
+	Element("DeactivateScenarioNode:TPP_FindFuel_Needed", False, 14)
+	Element("DeactivateScenarioNode:Elevator2ndTime", False, 3)
+	Element("DeactivateScenarioNode:ElevatorRunning_didnt_call_1st", False, 4)
+	Element("UnlockDialog:GoldMine", False, 5)
+	Element("LockDialog:Elevator1stTime", False, 6)
+	Element("LockDialog:ElevatorRunning_didnt_call_1st", False, 7)
+	Element("LockDialog:ElevatorRunning_2nd", False, 8)
+	Element("LockDialog:FoundFuel", False, 9)
+	Element("IsDialogPlaying:true:GoldMine", False, 10)
+	Element("IsDialogPlaying:false:GoldMine", False, 11)
+	Element("SetBoolVariable:Can_talkabout_GoldMine:true", False, 12)
+}
+Node("GoldMine_Burned_Corpses", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GoldMine_Burned_Corpses", False, 0)
+	Element("StartDialogIfNonPlaying:GoldMine_Burned_Corpses_Find", False, 1)
+	Element("IsDialogPlaying:true:GoldMine_Burned_Corpses_Find", False, 2)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 3)
+	Element("IsBoolVariableTrue:true:Can_talkabout_GoldMine", False, 4)
+	Element("UnlockDialog:GoldMine_Burned_Corpses", False, 5)
+}
+Node("GoldMine_Blood_Transfusion", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:GoldMine_Blood_Transfusion", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_GoldMine", False, 2)
+	Element("UnlockDialog:GoldMine_Blood_Transfusion", False, 3)
+}
+Node("GoldMine_pouch", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItem:true:moneybag", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsBoolVariableTrue:true:Can_talkabout_GoldMine", False, 2)
+	Element("UnlockDialog:GoldMine_pouch", False, 3)
+}
+Node("Elevator1stTime", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("IsBoolVariableTrue:true:NeedFuel", False, 1)
+	Element("UnlockDialog:Elevator1stTime", False, 2)
+	Element("IsDialogPlaying:true:Elevator1stTime", False, 3)
+	Element("DeactivateScenarioNode:ElevatorRunning_didnt_call_1st", False, 4)
+	Element("IsDialogPlaying:false:Elevator1stTime", False, 5)
+	Element("SetBoolVariable:Can_talkabout_Fuel:true", False, 6)
+}
+Node("Elevator2ndTime", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "Elevator1stTime", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockElevator", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 3)
+	Element("UnlockDialog:ElevatorRunning_2nd", False, 1)
+}
+// ElevatorRunning_didnt_call_1st
+Node("ElevatorRunning_didnt_call_1st", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockElevator", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 3)
+	Element("UnlockDialog:ElevatorRunning_didnt_call_1st", False, 1)
+}
+
+Node("WorkingGeneratorBlocker", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockElevator", False, 0)
+	Element("DeactivateScenarioNode:FindFuel_Needed", False, 1)
+	Element("LockDialog:Elevator1stTime", False, 2)
+	Element("LockDialog:FoundFuel", False, 3)
+}
+// #### AT JEEP ####
+Node("AtJeep", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:AtJeep", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 2)
+	Element("SetBoolVariable:AtJeep_COOP:true", False, 6)
+}
+
+Node("AtJeep_COOP", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:AtJeep_COOP", False, 0)
+	Element("UnlockDialog:AtJeep", False, 1)
+	Element("DeactivateScenarioNode:ARoad_if_no_jeep", False, 2)
+	Element("LockDialog:ARoad_if_no_jeep", False, 3)
+}
+// #### AT PLANE ####
+Node("CrashedPlane", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:CrashedPlane_Sensor", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:CrashedPlane", False, 2)
+	Element("IsDialogPlaying:true:CrashedPlane", False, 3)
+	Element("IsDialogPlaying:false:CrashedPlane", False, 4)
+	Element("SetBoolVariable:Can_talkabout_Airport:true", False, 5)
+}
+Node("AboutThePlane", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "CrashedPlane", False)
+{
+	// Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("UnlockDialog:AboutThePlane", False, 0)
+}
+// #### STPONE RING ####
+Node("StoneRings", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:StoneRings", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:StoneRings", False, 2)
+}
+// ## REF CAMP
+Node("RefugessCamp", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:RefugessCamp_Sensor", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:RefugessCamp", False, 2)
+	Element("IsDialogPlaying:true:RefugessCamp", False, 3)
+	Element("IsDialogPlaying:false:RefugessCamp", False, 4)
+}
+Node("Refugess_KidOnIsland", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:RefugessCamp_Kid_Sensor", False, 0)
+	Element("StartDialogIfNonPlaying:Refugess_KidOnIsland_Find", False, 1)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 2)
+	Element("IsNodeCompleted:true:RefugessCamp", False, 3)
+	Element("UnlockDialog:Refugess_KidOnIsland", False, 4)
+}
+Node("Refugess_IslandMap", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("WasReadedAndOff:true:Collectable_Island_Drawed_Map", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("IsNodeCompleted:true:RefugessCamp", False, 2)
+	Element("UnlockDialog:Refugess_IslandMap", False, 3)
+}
+Node("Refugess_Anaconda", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("IsNodeCompleted:true:RefugessCamp", False, 1)
+	Element("UnlockDialog:Refugess_Anaconda", False, 2)
+}
+Node("Microscope_Talk", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:microscope_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("DeactivateScenarioNode:Microscope_Talk_Known", False, 2)
+	Element("LockDialog:Microscope_Talk_Known", False, 3)
+	Element("UnlockDialog:Microscope_Talk", False, 4)
+}
+Node("Microscope_Talk_Known", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsNodeCompleted:true:Refugess_Anaconda", False, 0)
+	Element("DeactivateScenarioNode:Microscope_Talk", False, 1)
+	Element("IsTriggered:true:microscope_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 3)
+	Element("LockDialog:Microscope_Talk", False, 4)
+	Element("UnlockDialog:Microscope_Talk_Known", False, 5)
+}
+// ## AIRPORT
+Node("AirPortMia_No_Radio", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:AirPortMia_No_Radio", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:AirPortMia_No_Radio", False, 2)
+	Element("LockDialog:Refugess_IslandMap", False, 3)
+	Element("DeactivateScenarioNode:Refugess_IslandMap", False, 4)
+	Element("LockDialog:AboutThePlane", False, 5)
+	Element("DeactivateScenarioNode:AboutThePlane", False, 6)
+}
+// #### UNLOCKS - After Charge ####
+Node("AfterFirstCharge", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 0)
+	Element("IsDialogPlaying:true:AfterDreamFirstCall_2", False, 1)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall_2", False, 2)
+	Element("BatterySetValue:0.0", False, 3)
+	Element("Wait:1", False, 4)
+	Element("IsBatteryGreater:true:0.1", False, 5)
+	Element("UnlockDialog:AfterFirstCharge", False, 6)
+	Element("IsDialogPlaying:true:AfterFirstCharge", False, 7)
+	Element("Wait:1", False, 8)
+	Element("IsDialogPlaying:false:AfterFirstCharge", False, 9)
+	Element("SetBoolVariable:UnlockDialogSystem:true", False, 10)
+}
+Node("07Village", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("UnlockDialog:07Village", False, 1)
+}
+Node("AboutTheAccident", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("UnlockDialog:AboutTheAccident", False, 1)
+}
+Node("AboutNightCall", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("UnlockDialog:AboutNightCall", False, 1)
+}
+Node("AboutAyuhaska", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("UnlockDialog:AboutAyuhaska", False, 1)
+}
+// #####  MORE COMPLICATED -  Sensor + Unlocked #### 
+Node("07Climbing", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:07Climbing", False, 2)
+	Element("IsDialogPlaying:true:07Climbing", False, 3)
+	Element("IsDialogPlaying:false:07Climbing", False, 4)
+}
+Node("Stillnoclimbgear", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "07Climbing", False)
+{
+	Element("IsBoolVariableTrue:false:UnlockGrappHook", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 10)
+	// 1
+	Element("IsNight:true", False, 1)
+	Element("IsNight:false", False, 2)
+	// 2
+	Element("IsNight:true", False, 3)
+	Element("IsNight:false", False, 4)
+	// 3
+	Element("IsNight:true", False, 5)
+	Element("IsNight:false", False, 6)
+	// 4
+	Element("IsNight:true", False, 7)
+	Element("IsNight:false", False, 8)
+	Element("UnlockDialog:Stillnoclimbgear", False, 9)
+}
+Node("07Rock", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("PlayerIsInSensor:true:AirPortMia_No_Radio", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	Element("UnlockDialog:07Rock", False, 1)
+	Element("IsDialogPlaying:true:07Rock", False, 2)
+	Element("IsDialogPlaying:false:07Rock", False, 3)
+	Element("AddStoryObjective:NB_OBJ_Rock:true", False, 4)
+}
+
+Node("07Rock_AltOBJ_Complete", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "07Rock", False)
+{
+	Element("PlayerIsInSensor:true:RockIsGoneSensor", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_Rock", False, 2)
+}
+
+Node("07RockGone_If_not_talked", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 0)
+	Element("PlayerIsInSensor:true:RockIsGoneSensor", False, 1)
+	Element("IsDialogPlaying:false:07Rock", False, 2)
+	Element("IsNodeCompleted:false:07Rock", False, 3)
+	Element("DeactivateScenarioNode:07Rock", False, 4)
+	Element("DeactivateScenarioNode:07RockGone_If_talked", False, 16)
+	// Element("PlayerIsInSensor:true:AirPortMia_No_Radio", False, 0)
+	Element("LockDialog:07Rock", False, 5)
+	Element("LockDialog:07RockGone_If_talked", False, 15)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 6)
+	Element("UnlockDialog:07RockGone_If_not_talked", False, 7)
+	Element("IsDialogPlaying:true:07RockGone_If_not_talked", False, 8)
+	Element("IsDialogPlaying:false:07RockGone_If_not_talked", False, 9)
+	Element("SetBoolVariable:Has_talkabout_Rock:true", False, 10)
+	Element("Wait:2", False, 11)
+	Element("StartDialog:07RockGone_If_talked_GoingCrazy", False, 12)
+}
+Node("07RockGone_If_talked", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 0)
+	Element("PlayerIsInSensor:true:RockIsGoneSensor", False, 1)
+	Element("IsDialogPlaying:false:07Rock", False, 2)
+	Element("IsNodeCompleted:true:07Rock", False, 3)
+	Element("DeactivateScenarioNode:07RockGone_If_not_talked", False, 4)
+	Element("LockDialog:07RockGone_If_not_talked", False, 15)
+	// Element("PlayerIsInSensor:true:AirPortMia_No_Radio", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_Rock", False, 5)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 12)
+	Element("UnlockDialog:07RockGone_If_talked", False, 6)
+	Element("IsDialogPlaying:true:07RockGone_If_talked", False, 7)
+	Element("SetBoolVariable:Has_talkabout_Rock:true", False, 8)
+	Element("IsDialogPlaying:false:07RockGone_If_talked", False, 9)
+	Element("Wait:1", False, 10)
+	Element("StartDialog:07RockGone_If_talked_GoingCrazy", False, 11)
+}
+
+
+Node("AtStoneRingRock_Dialog_if_talked", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Dream2_RockObj_Sensor", False, 0)
+	Element("DeactivateScenarioNode:07RockGone_If_talked", False, 14)
+	Element("DeactivateScenarioNode:07RockGone_If_not_talked", False, 15)
+	Element("LockDialog:07RockGone_If_talked", False, 10)
+	Element("LockDialog:07Rock", False, 11)
+	Element("IsBoolVariableTrue:true:Has_talkabout_Rock", False, 1)
+	Element("DeactivateScenarioNode:AtStoneRingRock_Dialog_if_not_talked", False, 16)
+	Element("LockDialog:StoneRing2_DidintTalkedAbout", False, 18)
+	Element("IsBoolVariableTrue:false:IsDream_02Finished", False, 2)
+	Element("IsBoolVariableTrue:false:Has_KnownSpiritPassage", False, 3)
+	Element("UnlockDialog:StoneRing2_TalkedAbout", False, 4)
+	Element("IsDialogPlaying:true:StoneRing2_TalkedAbout", False, 5)
+	Element("IsDialogPlaying:false:StoneRing2_TalkedAbout", False, 6)
+	Element("IsBoolVariableTrue:false:IsDream_02Finished", False, 7)
+	Element("AddStoryObjective:NB_OBJ_2ndDream:true", False, 8)
+}
+Node("AtStoneRingRock_Dialog_if_not_talked", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Dream2_RockObj_Sensor", False, 0)
+	Element("DeactivateScenarioNode:07RockGone_If_talked", False, 14)
+	Element("DeactivateScenarioNode:07RockGone_If_not_talked", False, 15)
+	Element("LockDialog:07RockGone_If_talked", False, 10)
+	Element("LockDialog:07Rock", False, 11)
+	Element("IsBoolVariableTrue:false:Has_talkabout_Rock", False, 1)
+	Element("DeactivateScenarioNode:AtStoneRingRock_Dialog_if_talked", False, 17)
+	Element("LockDialog:StoneRing2_TalkedAbout", False, 18)
+	Element("IsBoolVariableTrue:false:IsDream_02Finished", False, 2)
+	Element("IsBoolVariableTrue:false:Has_KnownSpiritPassage", False, 3)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 13)
+	Element("UnlockDialog:StoneRing2_DidintTalkedAbout", False, 4)
+	Element("IsDialogPlaying:true:StoneRing2_DidintTalkedAbout", False, 5)
+	Element("IsDialogPlaying:false:StoneRing2_DidintTalkedAbout", False, 6)
+	Element("IsBoolVariableTrue:false:IsDream_02Finished", False, 7)
+	Element("AddStoryObjective:NB_OBJ_2ndDream:true", False, 8)
+}
+Node("AfterDream2_StoneDialogBlocker", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_02Finished", False, 0)
+	Element("LockDialog:StoneRing2_TalkedAbout", False, 1)
+	Element("LockDialog:StoneRing2_DidintTalkedAbout", False, 2)
+}
+Node("AboutSickMia", True, 177.0000, 238.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("IsBoolVariableTrue:true:IsDream_02Finished", False, 2)
+	Element("Wait:8", False, 5)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 3)
+	Element("UnlockDialog:AboutSickMia", False, 4)
+}
+// ## Block dialog
+Node("Wakuup_Blocker", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 0)
+	Element("LockDialog:WakeUP", False, 1)
+}
+Node("TribeKilled", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HasKilledTribe:true", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:TribeKilled", False, 2)
+}
+Node("ARoad_if_no_jeep", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:Can_talkabout_Road", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:ARoad_if_no_jeep", False, 2)
+}
+Node("WilliamBall", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HaveItemEquiped:true:william_ball", False, 0)
+	Element("StartDialog:William_Talk", False, 1)
+	Element("IsBoolVariableTrue:true:NameWilliam", False, 2)
+	Element("UnlockItemInfo:william_ball", False, 3)
+	// Unlock Name William 
+
+}
+Node("Caiman_Talk", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("HasKilledCaiman:true", False, 0)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 1)
+	Element("UnlockDialog:Caiman_Talk", False, 2)
+}
+Node("HaveGrappHookSoBlock", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockGrappHook", False, 0)
+	Element("LockDialog:07RockGone_If_not_talked", False, 1)
+	Element("DeactivateScenarioNode:07RockGone_If_not_talked", False, 2)
+	Element("LockDialog:07RockGone_If_talked", False, 3)
+	Element("DeactivateScenarioNode:07RockGone_If_talked", False, 4)
+	Element("LockDialog:ARoad_if_no_jeep", False, 5)
+	Element("DeactivateScenarioNode:ARoad_if_no_jeep", False, 6)
+	Element("DeactivateScenarioNode:FindFuel_NoNeed", False, 7)
+	Element("DeactivateScenarioNode:FindFuel_Needed", False, 8)
+	Element("LockDialog:FoundFuel", False, 9)
+	// Element("LockDialog:AtJeep", False, 3)
+	// Element("DeactivateScenarioNode:AtJeep", False, 4)
+	Element("LockDialog:07Climbing", False, 10)
+	Element("DeactivateScenarioNode:07Climbing", False, 11)
+	Element("LockDialog:Stillnoclimbgear", False, 12)
+	Element("DeactivateScenarioNode:Stillnoclimbgear", False, 13)
+	Element("LockDialog:Elevator1stTime", False, 14)
+}
+// GoldMine_GH_knows_how
+// GoldMine_GH_doesnt_know
+// HowAreYouMia - HowAreYouMia 
+Node("HowAreYouMia", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("Wait:1.0", False, 1)
+	// 1
+	Element("IsNight:true", False, 2)
+	Element("IsNight:false", False, 3)
+	// 2
+	Element("IsNight:true", False, 4)
+	Element("IsNight:false", False, 5)
+	// 3
+	Element("IsNight:true", False, 6)
+	Element("IsNight:false", False, 7)
+	// 4
+	Element("IsNight:true", False, 8)
+	Element("IsNight:false", False, 9)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 10)
+	Element("UnlockDialog:HowAreYouMia", False, 11)
+	Element("IsDialogPlaying:true:HowAreYouMia", False, 12)
+	Element("IsDialogPlaying:false:HowAreYouMia", False, 13)
+}
+Node("PreGoodNight", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "HowAreYouMia", False)
+{
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 0)
+	// 1
+	Element("IsNight:true", False, 1)
+	Element("IsNight:false", False, 2)
+	// 2
+	Element("IsNight:true", False, 3)
+	Element("IsNight:false", False, 4)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 10)
+	Element("ActivateScenarioNode:GoodNight_Talk", False, 5)
+	Element("ActivateScenarioNode:GoodNight_Talk_End", False, 6)
+}
+Node("GoodNight_Talk", False, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsNight:true", False, 10)
+	Element("IsBoolVariableTrue:true:UnlockDialogSystem", False, 11)
+	Element("UnlockDialog:GoodNight_Talk", False, 2)
+	Element("IsNight:false", False, 3)
+	Element("LockDialog:GoodNight_Talk", False, 4)
+}
+Node("GoodNight_Talk_End", False, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:GoodNight_Talk", False, 0)
+	Element("IsDialogPlaying:false:GoodNight_Talk", False, 1)
+	Element("DeactivateScenarioNode:GoodNight_Talk", False, 2)
+}
+// GoldMine_Burned_Corpses_if_transfusion
+Node("AfterAirportWT", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:AfterAirportWT", False, 0)
+	Element("Wait:15", False, 1)
+	Element("UnlockDialog:afterall_Player_01", False, 2)
+	Element("IsDialogPlaying:true:afterall_Player_01", False, 3)
+	Element("IsDialogPlaying:false:afterall_Player_01", False, 4)
+	Element("UnlockDialog:afterall_Player_02", False, 5)
+	Element("IsDialogPlaying:true:afterall_Player_02", False, 6)
+	Element("IsDialogPlaying:false:afterall_Player_02", False, 7)
+	Element("UnlockDialog:afterall_Player_03", False, 8)
+	Element("IsDialogPlaying:true:afterall_Player_03", False, 9)
+	Element("IsDialogPlaying:false:afterall_Player_03", False, 10)
+	Element("UnlockDialog:afterall_Player_04", False, 11)
+	Element("IsDialogPlaying:true:afterall_Player_04", False, 12)
+	Element("IsDialogPlaying:false:afterall_Player_04", False, 13)
+	Element("UnlockDialog:afterall_Player_05", False, 14)
+	Element("IsDialogPlaying:true:afterall_Player_05", False, 15)
+	Element("IsDialogPlaying:false:afterall_Player_05", False, 16)
+	Element("UnlockDialog:afterall_Player_06", False, 17)
+	Element("IsDialogPlaying:true:afterall_Player_06", False, 18)
+	Element("IsDialogPlaying:false:afterall_Player_06", False, 19)
+	Element("UnlockDialog:afterall_Player_07", False, 20)
+	Element("IsDialogPlaying:true:afterall_Player_07", False, 21)
+	Element("IsDialogPlaying:false:afterall_Player_07", False, 22)
+	Element("UnlockDialog:afterall_Player_08", False, 23)
+	Element("IsDialogPlaying:true:afterall_Player_08", False, 24)
+	Element("IsDialogPlaying:false:afterall_Player_08", False, 25)
+	Element("UnlockDialog:afterall_Player_09", False, 26)
+	Element("IsDialogPlaying:true:afterall_Player_09", False, 27)
+	Element("IsDialogPlaying:false:afterall_Player_09", False, 28)
+	Element("UnlockDialog:afterall_Player_10", False, 29)
+	Element("IsDialogPlaying:true:afterall_Player_10", False, 30)
+	Element("IsDialogPlaying:false:afterall_Player_10", False, 31)
+	Element("UnlockDialog:afterall_Player_11", False, 32)
+}
+Node("AfterWHA_WT", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Find_WHA_Sensor", False, 0)
+	Element("IsBoolVariableTrue:true:AfterAirportWT", False, 1)
+	Element("UnlockDialog:AfterMiaGone_Player_01_WHA", False, 2)
+}

@@ -1,0 +1,60 @@
+Anim("death")
+{
+	Event("DieEnd", 0.99)
+}
+
+//Anim("walk_forward")
+//{
+//	Footstep(0.30, "b_LF_leg04")
+//	Footstep(0.43, "b_RB_leg03")
+//	Footstep(0.80, "b_RF_leg04")
+//	Footstep(0.93, "b_LB_leg03")
+//}
+
+Anim("walk_left")
+{
+	Footstep(0.30, "b_LF_leg04")
+	Footstep(0.43, "b_RB_leg03")
+	Footstep(0.80, "b_RF_leg04")
+	Footstep(0.93, "b_LB_leg03")
+}
+
+Anim("walk_right")
+{
+	Footstep(0.30, "b_LF_leg04")
+	Footstep(0.43, "b_RB_leg03")
+	Footstep(0.80, "b_RF_leg04")
+	Footstep(0.93, "b_LB_leg03")
+}
+
+Anim("run_forward")
+{
+	Footstep(0.01, "b_RB_leg03")
+	Footstep(0.21, "b_LB_leg03")
+	Footstep(0.35, "b_RF_leg04")
+	Footstep(0.62, "b_LF_leg04")
+}
+
+Anim("run_left")
+{
+	Footstep(0.01, "b_RB_leg03")
+	Footstep(0.21, "b_LB_leg03")
+	Footstep(0.35, "b_RF_leg04")
+	Footstep(0.62, "b_LF_leg04")
+}
+
+Anim("run_right")
+{
+	Footstep(0.01, "b_RB_leg03")
+	Footstep(0.21, "b_LB_leg03")
+	Footstep(0.35, "b_RF_leg04")
+	Footstep(0.62, "b_LF_leg04")
+}
+
+Anim("walk_forward_reduced")
+{
+	Footstep(0.30, "b_LF_leg04")
+	Footstep(0.43, "b_RB_leg03")
+	Footstep(0.80, "b_RF_leg04")
+	Footstep(0.93, "b_LB_leg03")
+}

@@ -1,0 +1,9 @@
+Anim("Death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("attack")
+{
+	Event("GiveDamageRLeg", 0.5)
+}

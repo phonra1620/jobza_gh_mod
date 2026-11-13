@@ -1,0 +1,8 @@
+Goal("Death")
+Goal("ReactOnHit")
+Goal("DontMove")
+
+Goal("AttackFoot")
+Goal("SnakeLookAtEnemy")
+
+Goal("Idle")

@@ -1,0 +1,36 @@
+Goal("Death")
+Goal("LieDown")
+Goal("PunchBack")
+Goal("ReactOnHit")
+Goal("DontMove")
+
+
+Goal("Shit")
+Goal("Stroking")
+
+Goal("FollowWhistler")
+Goal("UseTrough")
+
+Goal("KeepDistanceToPlayer")
+Goal("MoveAwayFromEnemy")
+
+Goal("GiantAnteaterJumpBack")
+Goal("GiantAnteaterAttack")
+Goal("MoveToEnemy")
+Goal("CantReachEnemy")
+
+//Goal("ReturnToSpawner")
+
+
+//Goal("Strafe", 0.2)
+//Goal("PostAttack")
+//Goal("MoveToAttractor")
+//Goal("ReturnToSpawner")
+
+Goal("ScareOff")
+Goal("UseWormFeeder", 0.8)
+
+Goal("LoiterInFarm", 0.5)
+Goal("Loiter", 0.5)
+
+Goal("Idle")

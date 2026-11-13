@@ -1,0 +1,382 @@
+Node("StoryVariableCreator", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateBoolVariable:IsTutorialFinished:true", False, 0)
+	Element("CreateBoolVariable:ShouldDream_01_Start:false", False, 1)
+	Element("CreateBoolVariable:ShouldDream_02_Start:false", False, 2)
+	Element("CreateBoolVariable:ShouldDream_03_Start:false", False, 3)
+	Element("CreateBoolVariable:ShouldDream_04_Start:false", False, 4)
+	Element("CreateBoolVariable:IsDream_01Finished:false", False, 5)
+	Element("CreateBoolVariable:IsDream_02Finished:false", False, 6)
+	Element("CreateBoolVariable:IsDream_03Finished:false", False, 7)
+	Element("CreateBoolVariable:IsDream_04Finished:false", False, 8)
+	Element("CreateBoolVariable:ShouldPreDream_01:false", False, 9))
+	Element("CreateBoolVariable:ShouldPreDream_02:false", False, 10)
+	Element("CreateBoolVariable:ShouldPreDream_03:false", False, 11)
+	Element("CreateBoolVariable:ShouldPreDream_04:false", False, 12)
+	Element("CreateBoolVariable:IsItDebugDream1:false", False, 13)
+	Element("CreateBoolVariable:IsItDebugDream2:false", False, 14)
+	Element("CreateBoolVariable:IsItDebugDream3:false", False, 15)
+	Element("CreateBoolVariable:IsItDebugDream4:false", False, 16)
+	Element("CreateBoolVariable:UnlockDialogSystem:false", False, 17)
+	Element("CreateBoolVariable:UnlockGrappHook:false", False, 18)
+	Element("CreateBoolVariable:UnlockEpickGrappHook:false", False, 19)
+	Element("CreateBoolVariable:UnlockElevator:false", False, 20)
+	Element("CreateBoolVariable:UnlockFuel:false", False, 21)
+	Element("CreateBoolVariable:UnlockZipLine:false", False, 22)
+	Element("CreateBoolVariable:UnlockKey:false", False, 23)
+	Element("CreateBoolVariable:UnlockLongDiving:false", False, 24)
+	Element("CreateBoolVariable:DebugStoryPlay:false", False, 25)
+	Element("CreateBoolVariable:AfterWakeUp:false", False, 26)
+	Element("CreateBoolVariable:WasHere_S07GrabHook:false", False, 27)
+	Element("CreateBoolVariable:NeedFuel:false", False, 28)
+	Element("CreateBoolVariable:DreamActive:false", False, 29)
+	Element("CreateBoolVariable:HaveCure:false", False, 30)
+	Element("CreateBoolVariable:HaveInfectedVial:false", False, 31)
+	Element("CreateBoolVariable:UsedBloodInAnalizer:false", False, 32)
+	// Element("CreateBoolVariable:ShouldHealPlayer:false", False, 33)
+	Element("CreateBoolVariable:WHAHasPower:false", False, 33)
+	Element("CreateBoolVariable:HaveMap_A:false", False, 34)
+	Element("CreateBoolVariable:HaveMap_B:false", False, 35)
+	Element("CreateBoolVariable:HaveMap_C:false", False, 36)
+	Element("CreateBoolVariable:PreDreamActive:false", False, 37)
+	Element("CreateBoolVariable:CanMakeAyuhaska:false", False, 38)
+	Element("CreateBoolVariable:AfterAirportWT:false", False, 39)
+	Element("CreateBoolVariable:IsItTimeToDisable_Cauldron4:false", False, 40)
+}
+Node("StoryIncluder", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Include:Tutorial2", False, 0)
+	Element("Include:PreDream01", False, 1)
+	Element("Include:PreDream02", False, 2)
+	Element("Include:PreDream03", False, 3)
+	Element("Include:Dream01", False, 4)
+	Element("Include:Dream02", False, 5)
+	Element("Include:Dream03", False, 6)
+	Element("Include:Dream04", False, 7)
+	Element("Include:Unlocks", False, 8)
+	// Placeholder Mechanics
+	Element("Include:StoryPlaceholders", False, 9)
+	// Placeholder Mechanics
+	Element("Include:DialogUnlocker", False, 10)
+	Element("Include:GrapplingHookPlaces", False, 11)
+	Element("Include:Elevator", False, 12)
+	Element("Include:Cauldrons", False, 13)
+	Element("Include:Map", False, 14)
+	// Debug if needed 
+	// Element("Include:NotebookStory", False, 15)
+	Element("Include:LootBoxes", False, 15)
+	Element("Include:Audiologs", False, 16)
+	Element("Include:Reminders", False, 17)
+	Element("Include:WHA_Camp", False, 18)
+	Element("Include:BadEnding", False, 19)
+	Element("Include:GoodEnding", False, 20)
+}
+Node("Survival", True, 158.0000, 138.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ShouldSkipTutorial:true", False, 0)
+	Element("DreamFadeOut:0.01", False, 101)
+	Element("ExecuteNode:DeactivateTutorialNodes", False, 1)
+	Element("StopDialog", False, 2)
+	Element("StopMusic:0.5:0", False, 3)
+	Element("PlayerSetLookAtObject:null", False, 4)
+	Element("DeleteAllInventoryItems", False, 5)
+	Element("CompleteAllObjectives", False, 6)
+	Element("SetTutorial:false", False, 7)
+	Element("LockAllDialogs", False, 8)
+	Element("StopRain", False, 9)
+	Element("BlockRain", False, 10)
+	Element("HideCollectable", False, 11)
+	Element("UnlockKnownInjury:SmallWoundAbrassion", False, 14)
+	Element("UnlockPlantInNotepad:Molineria_leaf", False, 15)
+	Element("IsDreamFadeOut:false", False, 102)
+	Element("SetBoolVariable:IsTutorialFinished:true", False, 12)
+}
+
+Node("Survival_Debug", True, 158.0000, 138.5000, 200.0000, 75.0000, "Survival", False)
+{
+	Element("IsBoolVariableTrue:true:DebugStoryPlay", False, 0)
+	Element("DreamFadeIn:0.2", False, 1)
+}
+
+
+Node("WakeUpCall", True, 156.0000, 337.0000, 200.0000, 75.0000, "Story", False)
+{
+	// czy tutorial skonczony
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("IsBoolVariableTrue:false:DebugStoryPlay", False, 1)
+	Element("IsGamescom:false", False, 2)
+	Element("BlockHUDEnergy", False, 3)
+	Element("BlockHUDSanity", False, 4)
+	Element("BlockHUDCrosshair", False, 5)
+	Element("BlockHUDSaving", False, 6)
+	Element("BlockHUDWalkieTalkie", False, 7)
+	Element("BlockHUDWalkieTalkieBattery", False, 8)
+	Element("BatterySetValue:0.4", False, 9)
+	// Element("SetObjectiveDuration:0", False, 11)
+	Element("EnableObject:WakeUp_WalkieTalkie", False, 14)
+	Element("SetDayTime:23:00", False, 15)
+	// a gdzie unlock w notatniku?	
+	Element("SetDirtiness:5.0", False, 16)
+	Element("PlayerBlockMoves", False, 17)
+	Element("PlayerBlockRotation", False, 18)
+	Element("IsDreamFadeOut:false", False, 129)
+	Element("Teleport:AfterTutorial_Night_Spawn:false", False, 19)
+	Element("UnloadScene:Tutorial", False, 20)
+	Element("BalanceSystemSetItemsLastSpawnToPlayerPos", False, 21)
+	Element("BalanceSystemUnblockListsUpdate", False, 22)
+	// Animacja czołgania się do walkie talkie
+	Element("ResetStreamersLoaded", False, 248)
+	Element("Wait:3", False, 23)
+	Element("AreStreamersLoaded:true", False, 24)
+	Element("StartDialog:WT_Start", False, 25)
+	Element("PlayCutscene:Begin_Cutscene", False, 26)
+	Element("EnableObject:WakeUp_pp_volume_ex_a", False, 27)
+	// placeholder
+	Element("Wait:1", False, 28)
+	Element("DreamFadeIn:0.7", False, 29)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialTurnOn", False, 30)
+	Element("IsDialogPlaying:false:WT_Start", False, 31)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialIdle", False, 32)
+	Element("Wait:0.2", False, 33)
+	Element("StartDialog:WT_Start2", False, 34)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialTurnOn", False, 35)
+	Element("IsDialogPlaying:false:WT_Start2", False, 36)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialIdle", False, 37)
+	Element("Wait:0.2", False, 38)
+	Element("StartDialog:WT_Start3", False, 39)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialTurnOn", False, 40)
+	Element("IsDialogPlaying:false:WT_Start3", False, 41)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialIdle", False, 42)
+	Element("Wait:0.2", False, 43)
+	Element("StartDialog:WT_Start4", False, 44)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialTurnOn", False, 45)
+	Element("IsDialogPlaying:false:WT_Start4", False, 46)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialIdle", False, 47)
+	Element("IsCutsceneTimeGreaterOrEqual:true:Begin_Cutscene:19.50", False, 48)
+	// Element("IsCutscenePlaying:false", False, 131)	
+	// Element("IsDialogPlaying:false:WT_Start", False, 39) // jak dialog się skończy
+	// zasłabnięcie fade out
+	Element("FadeOut:0.7", False, 49)
+	Element("EnableObject:WakeUp_AirPlane", False, 50)
+	Element("Wait:3", False, 51)
+	Element("Teleport:WakeUp_Morning_Spawn:false", False, 52)
+	Element("PlayAnimation:WakeUp_WalkieTalkie:WalkieTalkieMaterialIdle", False, 53)
+	Element("EnableObject:WakeUp_pp_volume_ex_b", False, 54)
+	Element("SetDayTime:8:00", False, 55)
+	Element("DisableObject:WakeUp_pp_volume_ex_a", False, 56)
+	Element("PlayerSetLookAtObject:Wakeup_Lookat", False, 57)
+	// ustawienie nowych statystyk
+	Element("PlayCutscene:Begin_Cutscene_Part2", False, 58)
+	Element("FadeIn:0.7", False, 59)
+	Element("Wait:3", False, 60)
+	// zasłabnięcie fade out
+	Element("FadeOut:0.7", False, 61)
+	Element("Wait:3", False, 62)
+	Element("DisableObject:WakeUp_AirPlane", False, 63)
+	Element("DisableObject:WakeUp_pp_volume_ex_b", False, 64)
+	Element("Wait:3", False, 65)
+	Element("SetDayTime:12:00", False, 66)
+	Element("FadeIn:0.7", False, 67)
+	Element("EnableObject:WakeUp_pp_volume_ex_c", False, 68)
+	// Element("PlayerSetLookAtObject:wakeupplane_sound", False, 119)
+	// Element("Wait:6", False, 52)
+	Element("IsCutsceneTimeGreaterOrEqual:true:Begin_Cutscene_Part2:15.20", False, 69)
+	Element("EnableObject:Walkie_TalkieInHand", False, 70)
+	Element("DisableObject:WakeUp_WalkieTalkie", False, 71)
+	// Element("FadeOut:0.7", False, 240)
+	Element("PlayerSetLookAtObject:null", False, 72)
+	Element("Wait:3", False, 73)
+	Element("DisableObject:Walkie_TalkieInHand", False, 74)
+	// Element("FadeIn:0.7", False, 243)
+	Element("IsCutscenePlaying:false", False, 75)
+	Element("PlayerUnblockMoves", False, 76)
+	Element("PlayerUnblockRotation", False, 77)
+	// Animacja wstawania i gadania przez walkie talkie 
+	Element("DisableObject:WakeUp_pp_volume_ex_c", False, 78)
+	Element("Wait:3", False, 79)
+	Element("UnblockHUDEnergy", False, 80)
+	Element("UnblockHUDSanity", False, 81)
+	Element("UnblockHUDSaving", False, 82)
+	Element("UnblockHUDCrosshair", False, 83)
+	Element("UnblockHUDWalkieTalkie", False, 84)
+	Element("UnblockHUDWalkieTalkieBattery", False, 85)
+	Element("StartDialogWithWT:AfterCrash_WakeUp", False, 86)
+	// jak dialog się skończy
+	Element("IsDialogPlaying:false:AfterCrash_WakeUp", False, 87)
+	Element("StartDialog:AfterCrash_WakeUp_goddamit", False, 88)
+	Element("IsDialogPlaying:false:AfterCrash_WakeUp_goddamit", False, 89)
+	// Acctual Start of the Game	
+	// Element("PlayerResetBlockRotation", False, 30)
+	// Element("PlayerResetBlockMoves", False, 31)
+	Element("Wait:2", False, 90)
+	Element("PerformSave", False, 91)
+	Element("SetBoolVariable:AfterWakeUp:true", False, 92)
+}
+
+
+
+
+Node("Pre_AfterDream_01", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_01Finished", False, 0)
+	Element("UnblockHUDWalkieTalkie", False, 1)
+	Element("Teleport:AfterDream_01_Spawn:false", False, 2)
+	// Element("EnableObject:Walkie_TalkieInHand", False, 2)
+	// Element("PlayAnimation:Walkie_TalkieInHand:WalkieTalkieMaterialTurnOn", False, 4)
+	// Element("PlayerBlockMoves", False, 5)
+	// Element("PlayerBlockRotation", False, 6)
+	Element("DisableObject:DreamPassageBlocker", False, 3)
+	Element("EnableObject:DreamPassageUnblocked", False, 4)
+}
+
+
+Node("AfterDream_01_NOLambda", True, 156.0000, 337.0000, 200.0000, 75.0000, "Pre_AfterDream_01", False)
+{
+	Element("IsBoolVariableTrue:false:WasHere_S07GrabHook", False, 2)
+	Element("DeactivateScenarioNode:AfterDream_01_WithLambda", False, 3)
+	Element("StartDialogWithWT:AfterDreamFirstCall", False, 4)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall", False, 5)
+	Element("ActivateScenarioNode:AfterDream_01", False, 6)
+	Element("AddStoryObjective:NB_OBJ_FindLambda:true", False, 7)
+}
+Node("AfterDream_01_WithLambda", True, 156.0000, 337.0000, 200.0000, 75.0000, "Pre_AfterDream_01", False)
+{
+	Element("IsBoolVariableTrue:true:WasHere_S07GrabHook", False, 2)
+	Element("DeactivateScenarioNode:AfterDream_01_NOLambda", False, 3)
+	Element("StartDialogWithWT:AfterDreamFirstCall_Been", False, 4)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall_Been", False, 5)
+	Element("ActivateScenarioNode:AfterDream_01", False, 6)
+}
+Node("AfterDream_01", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("StartDialog:AfterDreamFirstCall_2", False, 0)
+	Element("IsDialogPlaying:false:AfterDreamFirstCall_2", False, 1)
+	Element("Wait:1", False, 2)
+	Element("AddStoryEvent:Notebook_AfterDream1", False, 3)
+	Element("AddStoryEvent:Notebook_Battery", False, 4)
+	Element("ActivateScenarioNode:BatteryObjective", False, 5)
+}
+
+
+
+
+// co to za gówno 
+Node("AtStoneRing_OBJ_C", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Dream2_RockObj_Sensor", False, 0)
+	Element("IsBoolVariableTrue:true:Has_KnownSpiritPassage", False, 1)
+	Element("StartDialogIfNonPlaying:StoneRing2_KnownAll", False, 2)
+	Element("IsDialogPlaying:false:StoneRing2_KnownAll", False, 3)
+	Element("AddStoryObjective:NB_OBJ_2ndDream:true", False, 4)
+}
+
+
+
+
+
+Node("Pre_Dream02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Ayuhasca_cauldron_Dream02_Trigger", False, 0)
+	Element("SetBoolVariable:PlayerMechGameEnding:true", False, 1)
+	Element("BlockHUDWalkieTalkie", False, 2)
+	Element("PlayerHideWeapon", False, 3)
+	Element("PlayerBlockMoves", False, 4)
+	Element("PlayerBlockRotation", False, 5)
+	Element("Wait:0.3", False, 6)
+	// Element("PlayerBlockMoves", False, 854)
+	// Element("PlayerSetLookAtObject:Ayuhasca_cauldron_Dream01_LookAt", False, 2)
+	Element("DisableObject:Ayuhasca_cauldron_Dream02_Trigger", False, 7)
+	Element("SetRackEndlessFire:Ayuhasca_Cauldron_Dream02_Rack", False, 8)
+	Element("DeactivateScenarioNode:Dream02_Cauldron_Rack", False, 9)
+	Element("DeactivateScenarioNode:AtStoneRing_OBJ_B", False, 10)
+	Element("EnableObject:Dream_banisteriopsis_scraps", False, 11)
+	Element("AttachObjectToPlayersBone:Dream_banisteriopsis_scraps:LH_holder", False, 12)
+	Element("PlayAnimation:Player:Ayuhasca_Seasoning", False, 13)
+	Element("CompleteStoryObjective:NB_OBJ_2ndDream", False, 14)
+	Element("SetBoolVariable:ShouldPreDream_02:true", False, 15)
+	Element("DisableObject:Dream2_Rock", False, 16)
+	Element("DisableObject:SensorDamage_Fall_Predream2", False, 17)
+	Element("Wait:1", False, 18)
+	Element("PlayerSetLookAtObject:null", False, 19)
+	// Element("PlayerUnblockMoves", False, 19)
+	// Element("PlayerUnblockRotation", False, 20)
+	Element("DisableObject:Dream_banisteriopsis_scraps", False, 20)
+}
+Node("After_Dream02", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_02Finished", False, 0)
+	Element("EnableObject:AfterDream2_LogToPass1", False, 1)
+	Element("EnableObject:AfterDream2_LogToPass2", False, 2)
+	Element("PlayerRestoreWeapon", False, 4)
+	Element("UnblockHUDWalkieTalkie", False, 5)
+	Element("EnableObject:SensorDamage_Fall_Predream2", False, 6)
+}
+
+
+
+
+Node("AirPort", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	// Element("DisableComponent:AirportShed_Key:Animator", False, 10)
+	// Element("EnableObject:Airport_Radio_Trigger", False, 34)
+}
+
+
+
+
+Node("AirPortShed_Map", True, 2769.0000, 1143.5000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:HaveMap_B", False, 0)
+	Element("StartDialog:airportstuff_Player_01", False, 1)
+}
+
+
+
+
+
+
+Node("Pre_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Ayuhasca_cauldron_Dream03_Trigger", False, 4)
+	Element("SetBoolVariable:PlayerMechGameEnding:true", False, 5)
+	Element("PlayerBlockMoves", False, 6)
+	Element("PlayerBlockRotation", False, 7)
+	Element("BlockHUDWalkieTalkie", False, 8)
+	Element("PlayerHideWeapon", False, 9)
+	Element("Wait:0.3", False, 10)
+	Element("DisableObject:Ayuhasca_cauldron_Dream03_Trigger", False, 11)
+	Element("EnableObject:Dream_banisteriopsis_scraps", False, 12)
+	Element("AttachObjectToPlayersBone:Dream_banisteriopsis_scraps:LH_holder", False, 13)
+	Element("PlayAnimation:Player:Ayuhasca_Seasoning", False, 14)
+	Element("SetBoolVariable:ShouldPreDream_03:true", False, 15)
+	Element("Wait:2", False, 16)
+	Element("DisableObject:Dream_banisteriopsis_scraps", False, 17)
+}
+Node("After_Dream03", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsDream_03Finished", False, 0)
+	Element("DisableObject:Dream3_Rock", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_3rdDream:true", False, 2)
+	Element("AddStoryEvent:Notebook_NeedCure", False, 3)
+	Element("AddStoryObjective:NB_OBJ_FindCure:true", False, 4)
+	Element("UnblockHUDWalkieTalkie", False, 5)
+}
+
+
+
+
+
+Node("Pre_Dream04", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:ShouldDream_04_Start", False, 0)
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 1)
+	Element("IsBoolVariableTrue:false:ShouldDream_01_Start", False, 2)
+	Element("IsBoolVariableTrue:false:ShouldDream_02_Start", False, 3)
+	Element("IsBoolVariableTrue:false:ShouldDream_03_Start", False, 4)
+	Element("Teleport:Temp_Village_Ending:false", False, 5)
+	// Element("SetBoolVariable:ShouldDream_04_Start:true", False, 2)
+	// Element("DisableObject:Dream3_Rock", False, 2)
+	Element("BlockHUDWalkieTalkie", False, 6)
+}
+
+

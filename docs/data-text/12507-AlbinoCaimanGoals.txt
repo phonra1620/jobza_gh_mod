@@ -1,0 +1,14 @@
+Goal("Death")
+Goal("ReactOnHit")
+Goal("DontMove")
+
+Goal("PostAttack")
+Goal("CaimanAttack")
+
+Goal("Swim")
+Goal("MoveToEnemy")
+
+Goal("ReturnToSpawner")
+
+Goal("Loiter", 0.2)
+Goal("Idle")

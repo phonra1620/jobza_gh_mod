@@ -1,0 +1,117 @@
+// First aid box on airport //////////////////////////////  Start  ////
+Node("First_Aid_Box_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:first_aid_box_Open_trigger", False, 0)
+	Element("DisableObject:first_aid_box_Open_trigger", False, 1)
+	Element("PlayAnimation:first_aid_box_airport:first_aid_box_Open", False, 2)
+	Element("EnableObject:first_aid_box_Open_Sound", False, 3)
+	Element("Wait:1.3", False, 4)
+	Element("DisableObject:first_aid_box_Open_Sound", False, 5)
+	Element("ResetTrigger:first_aid_box_Open_trigger", False, 6)
+	Element("ActivateScenarioNode:First_Aid_Box_Closing", False, 7)
+	Element("EnableObject:first_aid_box_Close_trigger", False, 8)
+}
+Node("First_Aid_Box_Closing", False, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:first_aid_box_Close_trigger", False, 0)
+	Element("DisableObject:first_aid_box_Close_trigger", False, 1)
+	Element("PlayAnimation:first_aid_box_airport:first_aid_box_closed", False, 2)
+	Element("EnableObject:first_aid_box_Close_Sound", False, 3)
+	Element("Wait:1.2", False, 4)
+	Element("DisableObject:first_aid_box_Close_Sound", False, 5)
+	Element("ResetTrigger:first_aid_box_Close_trigger", False, 6)
+	Element("EnableObject:first_aid_box_Open_trigger", False, 7)
+}
+// First aid box in Cartel //////////////////////////////  Start  ////
+Node("First_Aid_Box01_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:first_aid_box01_Open_trigger", False, 0)
+	Element("DisableObject:first_aid_box01_Open_trigger", False, 1)
+	Element("PlayAnimation:first_aid_box_Cartel:first_aid_box_Open", False, 2)
+	Element("EnableObject:first_aid_box01_Open_Sound", False, 3)
+	Element("Wait:1.3", False, 4)
+	Element("DisableObject:first_aid_box01_Open_Sound", False, 5)
+	Element("ResetTrigger:first_aid_box01_Open_trigger", False, 6)
+	Element("ActivateScenarioNode:First_Aid_Box01_Closing", False, 7)
+	Element("EnableObject:first_aid_box01_Close_trigger", False, 8)
+}
+Node("First_Aid_Box01_Closing", False, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:first_aid_box01_Close_trigger", False, 0)
+	Element("DisableObject:first_aid_box01_Close_trigger", False, 1)
+	Element("PlayAnimation:first_aid_box_Cartel:first_aid_box_closed", False, 2)
+	Element("EnableObject:first_aid_box01_Close_Sound", False, 3)
+	Element("Wait:1.2", False, 4)
+	Element("DisableObject:first_aid_box01_Close_Sound", False, 5)
+	Element("ResetTrigger:first_aid_box01_Close_trigger", False, 6)
+	Element("EnableObject:first_aid_box01_Open_trigger", False, 7)
+}
+// First aid box in Goldmine //////////////////////////////  Start  ////
+Node("First_Aid_box02_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:first_aid_box02_Open_trigger", False, 0)
+	Element("DisableObject:first_aid_box02_Open_trigger", False, 1)
+	Element("PlayAnimation:first_aid_box_Goldmine:first_aid_box_Open", False, 2)
+	Element("EnableObject:first_aid_box02_Open_Sound", False, 3)
+	Element("Wait:1.3", False, 4)
+	Element("DisableObject:first_aid_box02_Open_Sound", False, 5)
+	Element("ResetTrigger:first_aid_box02_Open_trigger", False, 6)
+	Element("ActivateScenarioNode:First_Aid_box02_Closing", False, 7)
+	Element("EnableObject:first_aid_box02_Close_trigger", False, 8)
+}
+Node("First_Aid_box02_Closing", False, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:first_aid_box02_Close_trigger", False, 0)
+	Element("DisableObject:first_aid_box02_Close_trigger", False, 1)
+	Element("PlayAnimation:first_aid_box_Goldmine:first_aid_box_closed", False, 2)
+	Element("EnableObject:first_aid_box02_Close_Sound", False, 3)
+	Element("Wait:1.2", False, 4)
+	Element("DisableObject:first_aid_box02_Close_Sound", False, 5)
+	Element("ResetTrigger:first_aid_box02_Close_trigger", False, 6)
+	Element("EnableObject:first_aid_box02_Open_trigger", False, 7)
+}
+// MICROWAVE in cartel //////////////////////////////  Start  ////
+Node("Microwave_Cartel_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Microwave_Cartel_Open_trigger", False, 0)
+	Element("DisableObject:Microwave_Cartel_Open_trigger", False, 1)
+	Element("PlayAnimation:microwave:MicrowaveOpen", False, 2)
+	Element("EnableObject:Microwave_Cartel_Open_Sound", False, 3)
+	Element("Wait:1.3", False, 4)
+	Element("DisableObject:Microwave_Cartel_Open_Sound", False, 5)
+	Element("ResetTrigger:Microwave_Cartel_Open_trigger", False, 6)
+	Element("ActivateScenarioNode:Microwave_Cartel_Closing", False, 7)
+	Element("EnableObject:Microwave_Cartel_Close_trigger", False, 8)
+}
+Node("Microwave_Cartel_Closing", False, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsTriggered:true:Microwave_Cartel_Close_trigger", False, 0)
+	Element("DisableObject:Microwave_Cartel_Close_trigger", False, 1)
+	Element("PlayAnimation:microwave:MicrowaveClose", False, 2)
+	Element("EnableObject:Microwave_Cartel_Close_Sound", False, 3)
+	Element("Wait:1.2", False, 4)
+	Element("DisableObject:Microwave_Cartel_Close_Sound", False, 5)
+	Element("ResetTrigger:Microwave_Cartel_Close_trigger", False, 6)
+	Element("EnableObject:Microwave_Cartel_Open_trigger", False, 7)
+}
+// Burned backpack on S07 //////////////////////////////  Start  ////
+Node("burned_backpack_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:burned_backpack_Trigger", False, 0)
+	Element("DisableObject:burned_backpack_Closed", False, 1)
+	Element("EnableObject:burned_backpack_Open", False, 2)
+	Element("PlayAudioSource:burned_backpack_Sound", False, 3)
+	Element("EnableComponent:QuestItem_Map_A:Item", False, 4)
+	Element("DisableObject:burned_backpack_Trigger", False, 5)
+}
+// military_box_small_Chest //////////////////////////////  Start  ////
+Node("military_box_small_Chest_Opening", True, 173.0000, 244.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:MilitaryBox01_Open_Trigger", False, 0)
+	Element("DisableObject:MilitaryBox01_Open_Trigger", False, 1)
+	Element("EnableObject:MilitaryBox01_Open_Sound", False, 2)
+	Element("PlayAnimation:military_box_small_Chest:MilitaryBox_Small_Open", False, 3)
+	Element("Wait:1.3", False, 4)
+	Element("DisableObject:collision_military_box_small_Chest_Closed", False, 5)
+	Element("EnableObject:collision_military_box_small_Chest_Open", False, 6)
+}

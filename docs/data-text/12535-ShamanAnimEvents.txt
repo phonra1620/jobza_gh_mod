@@ -1,0 +1,5 @@
+Anim("PL|AttackRightSwing")
+{
+	Event("ShamanAttackEnd", 0.6)
+	Event("ShamanDamage", 0.5)
+}

@@ -1,0 +1,87 @@
+Node("Blowgun_and_Darts_Unlock", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bamboo_Long_Stick", False, 1)
+	Element("UnlockItemInNotepad:Bamboo_Blowpipe", False, 2)
+	Element("UnlockItemInNotepad:Blowpipe_Arrows_unfinished", False, 3)
+}
+
+Node("FrogStrecher_Unlock", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bamboo_Blowpipe", False, 1)
+	Element("UnlockItemInNotepad:Frog_Stretcher", False, 2)
+}
+
+
+Node("Beehive_Unlock", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Honeycomb", False, 1)
+	Element("UnlockItemInNotepad:Beehive", False, 2)
+}
+
+Node("Beehive_Unlock_B", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:queen_bee", False, 1)
+	Element("UnlockItemInNotepad:Beehive", False, 2)
+}
+
+Node("Animal_Farm_Unlock", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Bamboo_Blowpipe", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Farm_Unlock_B", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Armadillo_HO", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Farm_Unlock_C", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:GiantAnteater_HO", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Farm_Unlock_D", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Capybara_HO", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Farm_Unlock_E", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Tapir_HO", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Farm_Unlock_F", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:ArmadilloThreeBanded_HO", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Farm_Unlock_G", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Peccary_HO", False, 1)
+	Element("UnlockItemInNotepad:farm", False, 2)
+}
+
+Node("Animal_Trough_Unlock", True, 2163.0000, 1017.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:farm", False, 1)
+	Element("UnlockItemInNotepad:TroughFood", False, 2)
+	Element("UnlockItemInNotepad:TroughWater", False, 3)
+	Element("UnlockItemInNotepad:TroughInsects", False, 4)
+}

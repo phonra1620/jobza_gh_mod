@@ -1,0 +1,120 @@
+Challenge("Firecamp", "FirecampChallenge")
+{
+	NameID("FirecampChallenge_Name")
+	DescriptionID("FirecampChallenge_Desc")
+	Icon("FirecampChallenge_Icon")
+	Object("Firecamp")
+	Duration(72.0)
+	Objective("Obj_FirecampChallenge")
+	StartDate(2016, 1, 1, 10, 30)
+}
+
+//Challenge("FirecampHard", "FirecampChallenge")
+//{
+//	NameID("FirecampHardChallenge_Name")
+//	DescriptionID("FirecampHardChallenge_Desc")
+//	Icon("FirecampHardChallenge_Icon")
+//	Object("FirecampHard")
+//	Duration(120.0)
+//	Objective("Obj_FirecampHardChallenge")
+//	StartDate(2016, 1, 1, 10, 30)
+//}
+
+Challenge("Boat", "BoatChallenge")
+{
+	NameID("BoatChallenge_Name")
+	DescriptionID("BoatChallenge_Desc")
+	Icon("BoatChallenge_Icon")
+	Object("Boat")
+	BoatGhost("challenge_raftGhost")
+	SuppliesGhost("challangeRaftSuppliceGhost")
+	Duration(72.0)
+	Objective("Obj_BoatChallenge_00")
+	Objective("Obj_BoatChallenge_01")
+	StartDate(2016, 1, 1, 10, 30)
+}
+
+Challenge("Camp", "CampChallenge")
+{
+	NameID("CampChallenge_Name")
+	DescriptionID("CampChallenge_Desc")
+	Icon("CampChallenge_Icon")
+	Object("Camp")
+	Duration(72.0)
+	Objective("Obj_CampChallenge")
+	StartDate(2016, 1, 1, 10, 30)
+}
+
+Challenge("Hunter", "HunterChallenge")
+{
+	NameID("HunterChallenge_Name")
+	DescriptionID("HunterChallenge_Desc")
+	Icon("HunterChallenge_Icon")
+	Object("Hunter")
+	Duration(72.0)
+	Objective("Obj_HunterChallenge")
+	StartDate(2016, 1, 1, 10, 30)
+	RequiredItems("Rattlesnake_Meat_Raw;Macaw_Meat_Raw;Cane_Toad_Meat_Raw;Mouse_Meat_Raw;Toucan_Meat_Raw;Green_Iguana_Meat_Raw;Caiman_Lizard_Meat_Raw;Peccary_Meat_Raw;Capybara_Meat_Raw;Tapir_Meat_Raw;Red_Footed_Tortoise_Meat_Raw;Armadilo_Meat_Raw;Armadillo_Three_Banded_Meat_Raw")
+}
+
+Challenge("Angler", "AnglerChallenge")
+{
+	NameID("AnglerChallenge_Name")
+	DescriptionID("AnglerChallenge_Desc")
+	Icon("AnglerChallenge_Icon")
+	Object("Angler")
+	Duration(72.0)
+	Objective("Obj_AnglerChallenge")
+	StartDate(2016, 1, 1, 10, 30)
+	RequiredItems("Piranha_Body;PeacockBass_Body;Arowana_Body;Stingray_Body;AngelFish_Body;DiscusFish_Body;Crab_Body;Snail_Raw;Shrimp_Raw")
+}
+
+Challenge("Combat", "CombatChallenge")
+{
+	NameID("CombatChallenge_Name")
+	DescriptionID("CombatChallenge_Desc")
+	Icon("CombatChallenge_Icon")
+	Object("Combat")
+	Duration(72.0)
+	Objective("Obj_CombatChallenge")
+	StartDate(2016, 1, 1, 10, 30)
+	RequiredItems("Chellange_WalkieTalkie_Hold;Chellange_Battery_Hold")
+}
+
+Challenge("Mud", "MudChallenge")
+{
+	NameID("MudChallenge_Name")
+	DescriptionID("MudChallenge_Desc")
+	Icon("MudChallenge_Icon")
+	Object("Mud")
+	Duration(96.0)
+	Objective("Obj_MudChallenge")
+	StartDate(2016, 1, 1, 10, 30)
+	RequiredItems("metal_spear")
+	RequireArmorOnAllLimbs("Metal")
+	
+}
+
+//RequireArmorOnAllLimbs("metal_armor")
+
+//Challenge("TribeRadio", "TribeRadioChallenge")
+//{
+//	NameID("TribeRadioChallenge_Name")
+//	DescriptionID("TribeRadioChallenge_Desc")
+//	Icon("TribeRadioChallenge_Icon")
+//	Object("TribeRadio")
+//	Duration(48.0)
+//	Objective("Obj_TribeRadioChallenge")
+//	StartDate(2016, 1, 1, 10, 30)
+//}
+
+//Challenge("TribeRunaway", "TribeRunawayChallenge")
+//{
+//	NameID("TribeRunawayChallenge_Name")
+//	DescriptionID("TribeRunawayChallenge_Desc")
+//	Icon("TribeRunawayChallenge_Icon")
+//	Object("TribeRunaway")
+//	Duration(48.0)
+//	Objective("Obj_TribeRunawayChallenge")
+//	StartDate(2016, 1, 1, 10, 30)
+//}

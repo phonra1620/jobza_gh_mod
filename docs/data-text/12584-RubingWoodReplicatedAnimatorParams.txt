@@ -1,0 +1,7 @@
+//CustomBlend("current_state_name", "target_state_name", time)
+CustomBlend("RubbingWood_Idle", "Rubbing_Wood", 0.025)
+CustomBlend("Rubbing_Wood", "RubbingWood_Idle", 0.028)
+CustomBlend("Rubbing_Wood", "RubbingWood_Break", 0.01)
+CustomBlend("RubbingWood_Break", "RubbingWood_Idle", 0.25)
+
+

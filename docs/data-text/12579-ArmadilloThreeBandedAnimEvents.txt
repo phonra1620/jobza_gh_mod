@@ -1,0 +1,21 @@
+Anim("arm3_death")
+{
+	Event("DieEnd", 0.99)
+}
+
+Anim("arm3_walk_A")
+{
+	Footstep(0.01, "LF_leg02")
+	Footstep(0.01, "RB_leg03")
+	Footstep(0.5, "RF_leg02")
+	Footstep(0.5, "LB_leg03")
+}
+
+Anim("arm3_walk_B")
+{
+	Footstep(0.01, "LF_leg02")
+	Footstep(0.01, "RB_leg03")
+	Footstep(0.5, "RF_leg02")
+	Footstep(0.5, "LB_leg03")
+}
+

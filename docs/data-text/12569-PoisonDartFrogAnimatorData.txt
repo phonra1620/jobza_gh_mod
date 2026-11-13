@@ -1,0 +1,5 @@
+State("Idle", "dartfrog_idle", 6.6667, 1)
+State("Die", "dartfrog_death", 0.1667, 0)
+State("Walk", "Blend Tree", 0.5556, 1)
+State("TrapBlock", "dartfrog_idle", 6.6667, 1)
+State("TrapKill", "dartfrog_trapkill", 0.0333, 0)

@@ -1,0 +1,509 @@
+//---------------------------walk------------------------------
+
+Anim("spr_start_combat_walk_forward")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.85, "L_foot")
+}
+
+Anim("spr_start_combat_walk_left_90_ext")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.38, "L_foot")
+	Footstep(0.71, "R_foot")
+	Footstep(0.95, "L_foot")
+}
+
+Anim("spr_start_combat_walk_left_180_ext")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.47, "L_foot")
+	Footstep(0.75, "R_foot")
+	Footstep(0.95, "L_foot")
+}
+
+Anim("spr_start_combat_walk_right_90_ext")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.29, "R_foot")
+	Footstep(0.51, "L_foot")
+	Footstep(0.76, "R_foot")
+	Footstep(0.96, "L_foot")
+}
+
+Anim("spr_start_combat_walk_right_180_ext")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.58, "R_foot")
+	Footstep(0.92, "L_foot")
+}
+
+Anim("spr_stop_combat_walk")
+{
+	Event("StopMoveEnd", 0.4)
+	Footstep(0.7, "R_foot")
+}
+
+Anim("spr_combat_walk_forward")
+{
+	Footstep(0.38, "R_foot")
+	Footstep(0.90, "L_foot")
+}
+
+Anim("spr_combat_walk_left")
+{
+	Footstep(0.07, "L_foot")
+	Footstep(0.57, "R_foot")
+}
+
+Anim("spr_combat_walk_right")
+{
+	Footstep(0.40, "R_foot")
+	Footstep(0.93, "L_foot")
+}
+
+//---------------------------run------------------------------
+
+Anim("spr_start_run_forward")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.4, "L_foot")
+	Footstep(0.72, "R_foot")
+	Footstep(0.96, "L_foot")
+}
+
+Anim("spr_start_run_left_90")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.33, "R_foot")
+	Footstep(0.5, "L_foot")
+	Footstep(0.76, "R_foot")
+	Footstep(0.96, "L_foot")
+}
+
+Anim("spr_start_run_left_180")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.34, "R_foot")
+	Footstep(0.51, "L_foot")
+	Footstep(0.78, "R_foot")
+	Footstep(0.97, "L_foot")
+}
+
+Anim("spr_start_run_right_90")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.2, "L_foot")
+	Footstep(0.6, "L_foot")
+	Footstep(0.76, "R_foot")
+	Footstep(0.97, "L_foot")
+}
+
+Anim("spr_start_run_right_180")
+{
+	Event("StartMoveEnd", 0.9)
+	Footstep(0.33, "L_foot")
+	Footstep(0.48, "R_foot")
+	Footstep(0.67, "L_foot")
+	Footstep(0.82, "R_foot")
+	Footstep(0.97, "L_foot")
+}
+
+Anim("spr_run_forward")
+{
+	Footstep(0.44, "R_foot")
+	Footstep(0.95, "L_foot")
+}
+
+Anim("spr_stop_run")
+{
+	Event("StopMoveEnd", 0.6)
+	Footstep(0.11, "R_foot")
+	Footstep(0.25, "L_foot")
+	Footstep(0.46, "R_foot")
+	Footstep(0.77, "L_foot")
+}
+
+Anim("spr_stop_run_left_90")
+{
+	Event("StopMoveEnd", 0.5)
+	Footstep(0.12, "R_foot")
+	Footstep(0.23, "L_foot")
+	Footstep(0.4, "R_foot")
+}
+
+Anim("spr_stop_run_right_90")
+{
+	Event("StopMoveEnd", 0.5)
+	Footstep(0.11, "R_foot")
+	Footstep(0.21, "L_foot")
+	Footstep(0.51, "R_foot")
+	Footstep(0.8, "L_foot")
+}
+
+Anim("spr_stop_run_right_180")//używany też do left 180
+{
+	Event("StopMoveEnd", 0.6)
+	Footstep(0.11, "R_foot")
+	Footstep(0.22, "L_foot")
+	Footstep(0.47, "R_foot")
+	Footstep(0.77, "L_foot")
+}
+
+//---------------------------rotate------------------------------
+
+Anim("spr_rotate_left_45")
+{
+	Footstep(0.55, "L_foot")
+	Footstep(0.70, "R_foot")
+}
+
+Anim("spr_rotate_left_90")
+{
+	Footstep(0.28, "R_foot")
+	Footstep(0.56, "L_foot")
+}
+
+Anim("spr_rotate_left_135")
+{
+	Footstep(0.23, "R_foot")
+	Footstep(0.60, "L_foot")
+	Footstep(0.84, "R_foot")
+}
+
+Anim("spr_rotate_left_180")
+{
+	Footstep(0.69, "L_foot")
+	Footstep(0.95, "R_foot")
+}
+
+Anim("spr_rotate_right_45")
+{
+	Footstep(0.42, "R_foot")
+	Footstep(0.62, "L_foot")
+	Footstep(0.92, "R_foot")
+}
+
+Anim("spr_rotate_right_90")
+{
+	Footstep(0.41, "R_foot")
+	Footstep(0.63, "L_foot")
+	Footstep(0.80, "R_foot")
+}
+
+Anim("spr_rotate_right_135")
+{
+	Footstep(0.51, "R_foot")
+	Footstep(0.85, "L_foot")
+}
+
+Anim("spr_rotate_right_180")
+{
+	Footstep(0.26, "L_foot")
+	Footstep(0.51, "R_foot")
+	Footstep(0.84, "L_foot")
+}
+
+
+
+//---------------------------attack------------------------------
+//basic
+
+Anim("spr_attack_a")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.2)
+	Event("GiveDamageLArm", 0.38)
+	Footstep(0.30, "L_foot")
+	Footstep(0.85, "L_foot")
+}
+
+Anim("spr_attack_b")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.1)
+	Event("GiveDamageRArm", 0.25)
+	Footstep(0.21, "L_foot")
+	Footstep(0.35, "R_foot")
+	Footstep(0.49, "L_foot")
+	Footstep(0.64, "R_foot")
+}
+
+Anim("spr_attack_c")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.1)
+	Event("GiveDamageLArm", 0.2)
+	Footstep(0.2, "L_foot")
+	Footstep(0.45, "R_foot")
+	Footstep(0.57, "L_foot")
+}
+
+Anim("spr_attack_d")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.2)
+	Event("GiveDamageRArm", 0.34)
+	Footstep(0.28, "L_foot")
+	Footstep(0.68, "L_foot")
+	Footstep(0.81, "L_foot")
+}
+
+Anim("spr_attack_e")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.1)
+	Event("GiveDamageLArm", 0.22)
+	Footstep(0.17, "L_foot")
+	Footstep(0.35, "R_foot")
+	Footstep(0.44, "L_foot")
+	Footstep(0.64, "R_foot")
+}
+
+Anim("spr_attack_f")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.1)
+	Event("GiveDamageRArm", 0.28)
+	Footstep(0.11, "R_foot")
+	Footstep(0.24, "L_foot")
+	Footstep(0.30, "R_foot")
+	Footstep(0.55, "L_foot")
+	Footstep(0.65, "R_foot")
+}
+
+Anim("spr_attack_g")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.2)
+	Event("GiveDamageRArm", 0.3)
+	Footstep(0.28, "L_foot")
+	Footstep(0.32, "R_foot")
+	Footstep(0.54, "R_foot")
+	Footstep(0.69, "L_foot")
+}
+
+Anim("spr_attack_h")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.2)
+	Event("GiveDamageLArm", 0.35)
+	Footstep(0.24, "L_foot")
+	Footstep(0.51, "R_foot")
+	Footstep(0.59, "L_foot")
+}
+
+Anim("spr_attack_left_90")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.4)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.45)
+	Event("GiveDamageLArm", 0.4)
+	Footstep(0.18, "R_foot")
+	Footstep(0.35, "L_foot")
+	Footstep(0.39, "L_foot")
+}
+
+Anim("spr_attack_left_180")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.4)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.4)
+	Event("GiveDamageLArm", 0.42)
+	Footstep(0.29, "L_foot")
+	Footstep(0.4, "R_foot")
+	Footstep(0.63, "L_foot")
+}
+
+Anim("spr_attack_right_90")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.3)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.3)
+	Event("GiveDamageRArm", 0.35)
+	Footstep(0.11, "L_foot")
+	Footstep(0.22, "R_foot")
+	Footstep(0.31, "L_foot")
+	Footstep(0.55, "L_foot")
+}
+
+Anim("spr_attack_right_180")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.4)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.4)
+	Event("GiveDamageRArm", 0.44)
+	Footstep(0.28, "R_foot")
+	Footstep(0.43, "L_foot")
+	Footstep(0.73, "L_foot")
+}
+
+Anim("spr_punchback_left_fast")
+{
+	Sound("tribe_hit_reaction", "AI/Tribe/hit_reaction", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.2)
+	Event("GiveDamageRArm", 0.33)
+	Footstep(0.31, "L_foot")
+	Footstep(0.55, "R_foot")
+	Footstep(0.69, "L_foot")
+}
+
+Anim("spr_punchback_right_fast")
+{
+	Sound("tribe_hit_reaction", "AI/Tribe/hit_reaction", 0.0)
+	Sound("stoneblade_swing_", "AI/Tribe/weapon_swoosh", 0.2)
+	Event("GiveDamageLArm", 0.34)
+	Footstep(0.27, "L_foot")
+	Footstep(0.53, "L_foot")
+}
+
+//throw
+
+//Anim("rock_throw")//nieaktywne
+//{
+//	Event("ThrowStone", 0.47)
+//}
+
+Anim("spr_rock_throw_czyste")
+{
+	Event("ThrowStone", 0.5)
+	Sound("tribe_throw_rock", "AI/Tribe/throw_rock", 0.6)
+	Footstep(0.12, "L_foot")
+	Footstep(0.23, "R_foot")
+	Footstep(0.35, "L_foot")
+	Footstep(0.42, "R_foot")
+	Footstep(0.63, "L_foot")
+	Footstep(0.77, "R_foot")
+}
+
+//---------------------------combat------------------------------
+
+Anim("spr_hitreaction_front_left")
+{
+	Sound("tribe_hit_reaction", "AI/Tribe/hit_reaction", 0.0)
+	Event("CheckPunchBack", 0.2)
+}
+
+Anim("spr_hitreaction_front_right")
+{
+	Sound("tribe_hit_reaction", "AI/Tribe/hit_reaction", 0.0)
+	Event("CheckPunchBack", 0.25)
+}
+
+Anim("spr_hitreaction_front_mid")
+{
+	Sound("tribe_hit_reaction", "AI/Tribe/hit_reaction", 0.0)
+	Event("CheckPunchBack", 0.25)
+	Footstep(0.15, "L_foot")
+	Footstep(0.45, "R_foot")
+}
+
+Anim("spr_hit_reaction_long_front_mid")
+{
+	Sound("tribe_hit_reaction", "AI/Tribe/hit_reaction", 0.0)
+	Event("CheckPunchBack", 0.25)
+	Footstep(0.10, "R_foot")
+	Footstep(0.15, "L_foot")
+	Footstep(0.21, "R_foot")
+	Footstep(0.26, "L_foot")
+	Footstep(0.34, "R_foot")
+	Footstep(0.40, "L_foot")
+	Footstep(0.47, "R_foot")
+	Footstep(0.54, "L_foot")
+	Footstep(0.66, "R_foot")
+	Footstep(0.71, "L_foot")
+	Footstep(0.78, "R_foot")
+	Footstep(0.85, "L_foot")
+	Footstep(0.93, "R_foot")
+}
+
+Anim("spr_jump_back")
+{
+	Sound("tribe_attack_", "AI/Tribe/attack_left_to_right", 0.1)
+	Footstep(0.31, "L_foot")
+	Footstep(0.42, "R_foot")
+	Footstep(0.54, "L_foot")
+}
+
+//---------------------------idle------------------------------
+Anim("spr_idle")
+{
+	
+}
+
+Anim("spr_postattack_a")
+{
+	Sound("tribe_combat_idle", "AI/Tribe/combat_idle", 0.0)
+}
+
+Anim("spr_postattack_b")
+{
+	Sound("tribe_combat_idle", "AI/Tribe/combat_idle", 0.0)
+}
+
+Anim("spr_postattack_c")
+{
+	Sound("tribe_combat_idle", "AI/Tribe/combat_idle", 0.0)
+}
+
+Anim("spr_taunt_a")
+{
+	Sound("tribe_taunt_short", "AI/Tribe/taunt_short", 0.15)
+	Footstep(0.14, "L_foot")
+	Footstep(0.19, "R_foot")
+	Footstep(0.24, "L_foot")
+	Footstep(0.30, "R_foot")
+	Footstep(0.33, "L_foot")
+	Footstep(0.39, "R_foot")
+	Footstep(0.46, "L_foot")
+	Footstep(0.50, "R_foot")
+	Footstep(0.55, "L_foot")
+	Footstep(0.64, "R_foot")
+	Footstep(0.75, "L_foot")
+	Footstep(0.81, "R_foot")
+}
+
+Anim("spr_taunt_b")
+{
+	Sound("tribe_taunt_long", "AI/Tribe/taunt_long", 0.15)
+	Footstep(0.15, "L_foot")
+	Footstep(0.24, "R_foot")
+	Footstep(0.30, "L_foot")
+	Footstep(0.37, "R_foot")
+	Footstep(0.45, "L_foot")
+	Footstep(0.51, "R_foot")
+	Footstep(0.57, "L_foot")
+	Footstep(0.64, "R_foot")
+	Footstep(0.71, "L_foot")
+	Footstep(0.76, "R_foot")
+}
+
+Anim("spr_taunt_c")
+{
+	Sound("tribe_taunt_long", "AI/Tribe/taunt_long", 0.20)
+	Footstep(0.16, "L_foot")
+	Footstep(0.21, "R_foot")
+	Footstep(0.27, "L_foot")
+	Footstep(0.31, "R_foot")
+	Footstep(0.36, "L_foot")
+	Footstep(0.41, "R_foot")
+	Footstep(0.46, "L_foot")
+	Footstep(0.53, "R_foot")
+	Footstep(0.55, "L_foot")
+	Footstep(0.62, "R_foot")
+	Footstep(0.68, "L_foot")
+	Footstep(0.75, "R_foot")
+	Footstep(0.79, "L_foot")
+}
+
+Anim("spr_idle_to_crouch")
+{
+	Footstep(0.42, "R_foot")
+	Footstep(0.75, "L_foot")
+}
+
+Anim("spr_crouch")
+{
+	
+}
+
+Anim("spr_crouch_to_idle")
+{
+	Footstep(0.59, "R_foot")
+}

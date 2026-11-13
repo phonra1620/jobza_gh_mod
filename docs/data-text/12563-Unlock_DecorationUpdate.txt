@@ -1,0 +1,267 @@
+Node("building_wall_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:building_wall", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+//Node("building_bamboo_wall_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+//{
+	//Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	//Element("ItemExist:true:building_bamboo_wall", False, 1)
+	//Element("UnlockItemInNotepad:decoration_table", False, 2)
+//}
+Node("building_wall_short_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:building_wall_short", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("wooden_window_wall_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:wooden_window_wall", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+// Node("bamboo_window_wall_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+// {
+	// Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	// Element("ItemExist:true:bamboo_window_wall", False, 1)
+	// Element("UnlockItemInNotepad:decoration_table", False, 2)
+// }
+Node("wooden_doorway_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:wooden_doorway", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("wooden_shed_wall_back_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:wooden_shed_wall_back", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("wooden_shed_wall_left_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:wooden_shed_wall_left", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("wooden_shed_wall_right_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:wooden_shed_wall_right", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+// Node("bamboo_doorway_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+// {
+	// Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	// Element("ItemExist:true:bamboo_doorway", False, 1)
+	// Element("UnlockItemInNotepad:decoration_table", False, 2)
+// }
+Node("mud_wall_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_wall", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("mud_wall_short_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_wall_short", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("mud_window_wall_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_window_wall", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("mud_doorway_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_doorway", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("mud_shed_wall_back_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_shed_wall_back", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("mud_shed_wall_left_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_shed_wall_left", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+Node("mud_shed_wall_right_Unlocks_decoration_table", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:mud_shed_wall_right", False, 1)
+	Element("UnlockItemInNotepad:decoration_table", False, 2)
+}
+
+
+Node("paint_white_Unlocks_painting_brush", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:paint_white", False, 1)
+	Element("SetBoolVariable:Paint_Brush_Crafting_Unlock:true", False, 2)
+}
+Node("paint_green_Unlocks_painting_brush", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:paint_green", False, 1)
+	Element("SetBoolVariable:Paint_Brush_Crafting_Unlock:true", False, 2)
+}
+Node("paint_red_Unlocks_painting_brush", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:paint_red", False, 1)
+	Element("SetBoolVariable:Paint_Brush_Crafting_Unlock:true", False, 2)
+}
+Node("paint_blue_Unlocks_painting_brush", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:paint_blue", False, 1)
+	Element("SetBoolVariable:Paint_Brush_Crafting_Unlock:true", False, 2)
+}
+Node("paint_yellow_Unlocks_painting_brush", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:paint_yellow", False, 1)
+	Element("SetBoolVariable:Paint_Brush_Crafting_Unlock:true", False, 2)
+}
+
+Node("unlocks_paint_brush", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("LockCraftingItem:painting_brush", False, 0)
+	Element("IsBoolVariableTrue:true:Paint_Brush_Crafting_Unlock", False, 1)
+	Element("UnlockItemInNotepad:painting_brush", False, 2)
+	Element("UnlockCraftingItem:painting_brush", False, 3)
+}
+
+Node("Unlocks_paint_white", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Maggots", False, 1)
+	Element("UnlockItemInNotepad:paint_white", False, 2)
+}
+Node("Unlocks_paint_green", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Small_leaf_pile", False, 1)
+	Element("UnlockItemInNotepad:paint_green", False, 2)
+}
+Node("Unlocks_paint_yellow", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Gerronema_viridilucens", False, 1)
+	Element("UnlockItemInNotepad:paint_yellow", False, 2)
+}
+Node("Unlocks_paint_blue", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:indigo_blue_leptonia", False, 1)
+	Element("UnlockItemInNotepad:paint_blue", False, 2)
+}
+Node("Unlocks_paint_red", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:psychotria_viridis", False, 1)
+	Element("UnlockItemInNotepad:paint_red", False, 2)
+}
+
+Node("Arrow_Unlocks_bamboo_arrow_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Arrow", False, 1)
+	Element("UnlockItemInNotepad:bamboo_arrow_stand", False, 2)
+}
+Node("Tribe_Arrow_Unlocks_bamboo_arrow_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Tribe_Arrow", False, 1)
+	Element("UnlockItemInNotepad:bamboo_arrow_stand", False, 2)
+}
+Node("Metal_arrow_Unlocks_bamboo_arrow_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("HaveItem:true:Metal_arrow", False, 1)
+	Element("UnlockItemInNotepad:bamboo_arrow_stand", False, 2)
+}
+
+
+Node("leaf_armor_Unlocks_wooden_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:leaf_armor", False, 1)
+	Element("UnlockItemInNotepad:wooden_armor_stand", False, 2)
+}
+Node("stick_armor_Unlocks_wooden_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:stick_armor", False, 1)
+	Element("UnlockItemInNotepad:wooden_armor_stand", False, 2)
+}
+Node("bamboo_armor_Unlocks_wooden_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:bamboo_armor", False, 1)
+	Element("UnlockItemInNotepad:wooden_armor_stand", False, 2)
+}
+Node("bone_armor_Unlocks_wooden_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:bone_armor", False, 1)
+	Element("UnlockItemInNotepad:wooden_armor_stand", False, 2)
+}
+Node("armadillo_armor_Unlocks_wooden_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:armadillo_armor", False, 1)
+	Element("UnlockItemInNotepad:wooden_armor_stand", False, 2)
+}
+Node("metal_armor_Unlocks_wooden_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:metal_armor", False, 1)
+	Element("UnlockItemInNotepad:wooden_armor_stand", False, 2)
+}
+
+Node("leaf_armor_Unlocks_bamboo_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:leaf_armor", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_armor_stand", False, 2)
+}
+Node("stick_armor_Unlocks_bamboo_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:stick_armor", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_armor_stand", False, 2)
+}
+Node("bamboo_armor_Unlocks_bamboo_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:bamboo_armor", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_armor_stand", False, 2)
+}
+Node("bone_armor_Unlocks_bamboo_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:bone_armor", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_armor_stand", False, 2)
+}
+Node("armadillo_armor_Unlocks_bamboo_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:armadillo_armor", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_armor_stand", False, 2)
+}
+Node("metal_armor_Unlocks_bamboo_armor_stand", True, 880.0000, 1358.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:IsTutorialFinished", False, 0)
+	Element("ItemExist:true:metal_armor", False, 1)
+	Element("UnlockItemInNotepadNoMsg:bamboo_armor_stand", False, 2)
+}

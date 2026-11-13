@@ -1,0 +1,999 @@
+Node("PVE2_VariableStuff", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("CreateBoolVariable:Boat_radio_on:false", False, 0)
+}
+
+Node("PVE2_EnablePermamentActors", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableLifePlaceActor:vil_kid_actor_hunter_05:0", False, 36)
+	Element("EnableLifePlaceActor:vil_woman_actor_hunter_03:0", False, 37)
+}
+
+Node("PvE_FindBoat_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_PVE_FindBoat", False)
+{
+	Element("PlayerIsInSensor:true:PVE_FindBoat_sensor", False, 0)
+	Element("PlayMusicJingle:gh_jg3:false:0.7:0", False, 100)
+}
+Node("PvE_FindSteamBoat_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_PVE_FindBoat", False)
+{
+	Element("PlayerIsInSensor:true:SteamBoat_jingle_sensor", False, 0)
+	Element("PlayMusicJingle:jingle_creepy_01:false:0.7:0", False, 1)
+}
+
+// ############################  Boat
+
+Node("OBJ_PVE_FindBoat", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Wait:3", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_FindBoat:true", False, 0)	
+}
+Node("OBJ_PVE_FindBoat_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_PVE_FindBoat", False)
+{
+	Element("PlayerIsInSensor:true:PVE_FindBoat_sensor", False, 0)
+	Element("SetBoolVariable:VarOBJ_PVE_FindBoat:true", False, 1)
+}
+
+Node("OBJ_PVE_SearchBoat", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindBoat", False, 0)
+	Element("DeactivateScenarioNode:OBJ_PVE_FindBoat_FPP", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_FindBoat", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_SearchBoat:true", False, 3)
+}
+
+Node("PvE_Capitan_Dialog_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_PVE_FindBoat", False)
+{
+	Element("PlayerIsInSensor:true:PVE_FindCapitan_sensor", False, 0)
+	Element("StartDialog:PvE_FoundCaptain", False, 1) 
+	Element("SetBoolVariable:VarFindCapitan:true", False, 2)
+}
+
+Node("PvE_BrazzilCaptin_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarFindCapitan", False, 0)
+	Element("DeactivateScenarioNode:PvE_Capitan_Dialog_FPP", False, 1)
+	Element("IsTriggered:true:HangedBody_Brazilian", False, 2)
+	Element("SetBoolVariable:BrazilCapitanToBurn:true", False, 3)
+}
+
+Node("PvE_BrazzilCaptin_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:BrazilCapitanToBurn", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_BurnCapitan:true", False, 1)
+}
+
+Node("PvE_BrazzilCaptin_Done_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:BrazilCapitanCompleated", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BurnCapitan:true", False, 1)
+}
+
+Node("PvE_Boat_Radio_FPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:Boat_Radio_Trigger", False, 0)
+	Element("StartDialog:PvE_BoatRadio", False, 1)
+	Element("IsDialogPlaying:false:PvE_BoatRadio", False, 2) 
+	Element("SetBoolVariable:PvE_BoatRadioUsed:true", False, 3)
+}
+
+Node("PvE_Boat_Radio_TPP", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioUsed", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_SearchBoat", False, 1)
+}
+
+
+
+// ############################ Help Village
+
+Node("QuestGiver_A_Wave", True, -1125.0000, -27.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_01_Questgiver_FarSensor", False, 0)
+	Element("SetAnimatorBool:QuestGiverA:PvE_WelcomingWave:true", False, 1)
+}
+
+
+Node("OBJ_PVE_FindElder_A", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Wait:4", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_FindElder_A:true", False, 0)
+}
+
+Node("OBJ_PVE_FindVillageWithElder_A", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_01_audio_sensor", False, 0)
+	Element("StartDialog:PvE_Village_Found_Player_01", False, 1)
+	Element("UnlockPveDialog:PvE_VillA_Welcoming", False, 2)
+	Element("UnlockAchievement:DISCOVER_VILLAGE_MUAGI", False, 3)
+}
+
+Node("OBJ_PVE_FindElder_A_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "OBJ_PVE_FindElder_A", False)
+{
+	Element("IsDialogPlaying:true:PvE_VillA_Welcoming", False, 0)
+	Element("IsDialogPlaying:false:PvE_VillA_Welcoming", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_FindElder_A:true", False, 2)
+}
+Node("OBJ_PVE_GainReputation_A", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_A", False, 0)
+	Element("DeactivateScenarioNode:OBJ_PVE_FindVillageWithElder_A", False, 1)
+	Element("LockPveDialog:PvE_VillA_Welcoming", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_FindElder_A", False, 3)
+	Element("AddStoryObjective:NB_OBJ_PVE_GainReputation_A:true", False, 4)
+	Element("UnlockPveDialog:PvE_VillA_Mushrooms", False, 5)
+	Element("EnableComponent:QuestGiverA:KidQuest", False, 6)
+}
+
+Node("OBJ_PVE_GainReputation_A_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:PvE_VillA_Mushrooms", False, 0)
+	Element("IsDialogPlaying:false:PvE_VillA_Mushrooms", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_GainReputation_A:true", False, 2)
+}
+
+Node("OBJ_PVE_GainReputation_A_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_A", False, 0)
+	Element("LockPveDialog:PvE_VillA_Mushrooms", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_GainReputation_A", False, 2)		
+}
+//Arena Planting objective from SOA3
+Node("OBJ_PVE_CompleteArenaPlanting_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_A", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_CompleteArenaPlanting:true", False, 1)
+	Element("IsBoolVariableTrue:true:Is_Arena_Planting_Completed", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_CompleteArenaPlanting", False, 3)		
+    Element("UnlockAchievement:COMPLETE_MUAGI_TRIAL", False, 4)		
+}
+
+// ############################ Patch End
+
+Node("OBJ_PvE_EndOfPart_One", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_A", False, 0)
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioUsed", False, 1)
+	//Element("ShowPatchPVESplash", False, 2)
+	//Element("ShowYesNoDialog:YesNo:SoAPart1End_Label:SoAPart1End_Text", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_EndPart1:false", False, 3)
+	Element("CompleteAndHideStoryObjective:NB_OBJ_PVE_EndPart1", False, 7)
+}
+
+// More in Patch 2
+
+Node("Steamboat_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:SteamBoat_jingle_sensor", False, 0)
+	Element("SetBoolVariable:VarOBJ_Steamboat:true", False, 2)
+}
+
+Node("Steamboat_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_Steamboat", False, 0)
+	Element("DeactivateScenarioNode:Steamboat_FPP", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_SteamBoat:true", False, 1)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_SteamBoat", False, 4)
+}
+
+// ############################ SoA 2 - start
+
+Node("Village_B_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_02_audio_sensor", False, 0)
+	Element("StartDialog:PvE_Village_Found_Player_02", False, 2)
+	Element("SetBoolVariable:VarOBJ_PVE_FoundVillage_B:true", False, 1)
+}
+
+Node("Village_B_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FoundVillage_B", False, 0)
+	Element("DeactivateScenarioNode:Village_B_FPP", False, 1)
+	Element("UnlockPveDialog:PvE_VillB_Hello", False, 2)
+	Element("UnlockAchievement:DISCOVER_VILLAGE_UNGARACA", False, 3)
+}
+
+Node("PvE_VillB_Hello_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:PvE_VillB_Hello", False, 0)
+	Element("IsDialogPlaying:false:PvE_VillB_Hello", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_FindElder_B:true", False, 2)
+}
+
+Node("PvE_VillB_Hello_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_B", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_GainReputation_B:true", False, 1)
+	Element("EnableComponent:QuestGiverB:KidQuest", False, 2)
+	Element("LockPveDialog:PvE_VillB_Hello", False, 3)
+	Element("UnlockPveDialog:PvE_VillB_Ending", False, 4)
+}
+
+
+Node("OBJ_PVE_GainReputation_B_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:PvE_VillB_Ending", False, 0)
+	Element("IsDialogPlaying:false:PvE_VillB_Ending", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_GainReputation_B:true", False, 2)
+}
+
+Node("OBJ_PVE_GainReputation_B_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_B", False, 0)
+	Element("LockPveDialog:PvE_VillB_Ending", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_GainReputation_B", False, 2)
+}
+//Arena Hunting objective from SOA3
+Node("OBJ_PVE_CompleteArenaHunting_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_B", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_CompleteArenaHunting:true", False, 1)
+	Element("IsBoolVariableTrue:true:Is_Arena_Hunting_Completed", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_CompleteArenaHunting", False, 3)		
+	Element("UnlockAchievement:COMPLETE_UNGARACA_TRIAL", False, 4)	
+}
+
+// ############################ SoA 2 - radio
+
+Node("SOA2_Radio_FindPart", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatNewAntena_Trigger", False, 2)
+	Element("EnableObject:Boat_Radio_Trigger", False, 5)
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioUsed", False, 0)
+	Element("DisableObject:Boat_Radio_Trigger", False, 6)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatRadioFindPart:true", False, 1)
+	Element("EnableObject:PvE_BoatNewAntena_Trigger", False, 4)
+}
+
+Node("SOA2_Radio_FindPart_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_BoatNewAntena_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\TempSounds\Player\item_grab_hard_02", False, 1)
+	Element("SetBoolVariable:PvE_BoatRadioPartFound:true", False, 2)
+}
+
+Node("SOA2_Radio_FindPart_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_BoatRepairAntena_Trigger", False, 7)
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioPartFound", False, 0)
+	Element("DisableObject:PvE_BoatNewAntena_Trigger", False, 1)
+	Element("DisableObject:PvE_BoatNewAntena_ART", False, 5)
+	Element("DisableObject:PvE_BoatAntenaBroken_3d", False, 6)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatRadioFindPart", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatRadioFix:true", False, 3)
+	Element("EnableObject:PvE_BoatRepairAntena_Trigger", False, 4)
+}
+
+Node("SOA2_Radio_Fix_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:SOA2_Boat_Radio_Trigger", False, 7)
+	Element("IsTriggered:true:PvE_BoatRepairAntena_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\Story\airport_radio_sfx_antena_cable_repair", False, 1)
+	Element("SetBoolVariable:PvE_BoatRadioFixed:true", False, 2)
+}
+
+Node("SOA2_Radio_Fix_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioFixed", False, 0)
+	Element("DisableObject:PvE_BoatRepairAntena_Trigger", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatRadioFix", False, 3)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatRadioUseSoA2:true", False, 4)
+	Element("EnableObject:SOA2_Boat_Radio_Trigger", False, 5)
+	Element("EnableObject:PvE_BoatAntenaFixed_3d", False, 6)
+}
+
+Node("SOA2_Radio_Talk_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:boat_radio_walkie_LOD0", False, 0)
+	Element("EnableObject:boat_radio_walkie_LOD1", False, 1)
+	Element("EnableObject:boat_radio_walkie_LOD2", False, 2)
+
+	Element("IsTriggered:true:SOA2_Boat_Radio_Trigger", False, 3)
+	Element("PlayerHideWeapon", False, 4)
+	Element("Wait:0.4", False, 5)
+	Element("SetBoolVariable:SOA2_Boat_Radio_FPPUsing:true", False, 6)	// Miejsce na odpalenie dialogu FPP
+	Element("PlayAnimation:boat_old_radio:boat_old_radio_on", False, 7)
+	Element("PlayerBlockMoves", False, 8)
+
+	Element("PlayerBlockFistFight", False, 9)
+	Element("PlayerBlockRotation", False, 10)
+	Element("StartDialog:PVE_Boat_Radio_Talk_PlaceHolder", False, 11)
+	Element("Wait:0.2", False, 12)
+
+	Element("EnableObject:Radio_handset_InHand", False, 13)
+
+	Element("DisableObject:boat_radio_walkie_LOD0", False, 14)
+	Element("DisableObject:boat_radio_walkie_LOD1", False, 15)
+	Element("DisableObject:boat_radio_walkie_LOD2", False, 16)
+	
+	Element("IsDialogPlaying:false:PVE_Boat_Radio_Talk_PlaceHolder", False, 17)
+	
+	//Element("PlayAnimation:Player:WalkieTalkie_Hide", False, 18)
+	//Element("SetBoolVariable:Boat_radio_on:false", False, 19)
+	
+	Element("DisableObject:Radio_handset_InHand", False, 20)
+	Element("Wait:0.2", False, 21)
+	
+	Element("EnableObject:boat_radio_walkie_LOD0", False, 22)
+	Element("EnableObject:boat_radio_walkie_LOD1", False, 23)
+	Element("EnableObject:boat_radio_walkie_LOD2", False, 24)
+	
+	Element("PlayAnimation:boat_old_radio:boat_old_radio_off", False, 25)
+	Element("DisableObject:Radio_handset_InHand", False, 26)
+	Element("PlayerUnblockMoves", False, 27)
+	Element("PlayerRestoreWeapon", False, 28)
+	Element("PlayerUnblockFistFight", False, 29)
+	Element("PlayerUnblockRotation", False, 30)
+
+	Element("SetBoolVariable:SOA2_Boat_Radio_Talk_Done:true", False, 31)
+}
+
+Node("SOA2_Radio_Talk_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:SOA2_Boat_Radio_FPPUsing", False, 0)
+	Element("DisableObject:SOA2_Boat_Radio_Trigger", False, 1)
+	//new for save v 2.20
+	Element("BlockSaveGame", False, 100)
+	Element("IsBoolVariableTrue:true:SOA2_Boat_Radio_Talk_Done", False, 101)
+	Element("UnblockSaveGame", False, 102)
+	Element("UnlockAchievement:RAPORT_BACK_TO_THE_BASE", False, 103)
+}
+
+Node("SOA2_Radio_AfterTalk_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:SOA2_Boat_Radio_Talk_Done", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatRadioUseSoA2", False, 2)
+}
+
+
+
+// ############################ SOA 2 Patch End
+
+Node("OBJ_PvE_EndOfPart_Two", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_A", False, 0)
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_B", False, 1)
+	Element("IsBoolVariableTrue:true:SOA2_Boat_Radio_Talk_Done", False, 2)
+	//Element("ShowPatchPVESplash", False, 3)
+	Element("AddStoryObjective:NB_OBJ_PVE_EndPart2:false", False, 4)
+	Element("CompleteAndHideStoryObjective:NB_OBJ_PVE_EndPart2", False, 7)		
+}
+
+
+// ############################ Music Sensor - Locations
+
+Node("SoA_Cartel_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:SoA2_CartelMusicSensor", False, 0)
+	Element("PlayMusicJingle:jingle_cartel:false:0.8:0", False, 1)
+}
+
+
+// ############################ SoA 3 - start
+
+Node("PVE3_EnablePermamentActors", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableLifePlaceActor:vil_woman_actor_fishing_05:0", False, 1)
+	Element("EnableLifePlaceActor:vil_kid_actor_fishing_01:0", False, 2)
+	Element("EnableLifePlaceActor:vil_kid_actor_fishing_02:0", False, 3)
+	Element("EnableLifePlaceActor:vil_kid_actor_fishing_03:0", False, 4)
+}
+
+Node("OBJ_PVE_FindYabahuaca", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("Wait:2", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_FindYabahuaca:true", False, 1)
+}
+
+Node("Village_C_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:Village_03_audio_sensor", False, 0)
+	Element("StartDialog:PvE_Village_Found_Player_03", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_FoundVillage_C:true", False, 2)
+}
+
+Node("Village_C_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FoundVillage_C", False, 0)
+	Element("DeactivateScenarioNode:Village_C_FPP", False, 1)
+	Element("UnlockPveDialog:PvE_VillC_Hello", False, 2)
+	Element("UnlockAchievement:DISCOVER_VILLAGE_HABBAKU", False, 3)
+}
+
+Node("PvE_VillC_Hello_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:PvE_VillC_Hello", False, 0)
+	Element("IsDialogPlaying:false:PvE_VillC_Hello", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_FindElder_C:true", False, 2)
+}
+
+Node("PvE_VillC_Hello_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_FindElder_C", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_GainReputation_C:true", False, 1)
+	Element("LockPveDialog:PvE_VillC_Hello", False, 2)
+	Element("UnlockPveDialog:PvE_VillC_Ending", False, 3)
+}
+
+Node("OBJ_PVE_GainReputation_C_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsDialogPlaying:true:PvE_VillC_Ending", False, 0)
+	Element("IsDialogPlaying:false:PvE_VillC_Ending", False, 1)
+	Element("SetBoolVariable:VarOBJ_PVE_GainReputation_C:true", False, 2)
+}
+
+Node("OBJ_PVE_GainReputation_C_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_C", False, 0)
+	Element("LockPveDialog:PvE_VillC_Ending", False, 1)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_GainReputation_C", False, 2)
+}
+//Arena Fishing objective from SOA3
+Node("OBJ_PVE_CompleteArenaFishing_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VarOBJ_PVE_GainReputation_C", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_CompleteArenaFishing:true", False, 1)
+	Element("IsBoolVariableTrue:true:Is_Arena_Fishing_Completed", False, 2)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_CompleteArenaFishing", False, 3)		
+	Element("UnlockAchievement:COMPLETE_HABBAKU_TRIAL", False, 4)
+}
+
+// ## KidPassage
+Node("PvE_KidPassage_Lookat_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:WasHere_S07KidGrabhook_lookat", False, 0)
+	Element("StartDialog:PVE_KidRope_LookAt", False, 1)
+	Element("SetBoolVariable:SoA3_KidGrabHook_lookat:true", False, 2)
+}
+
+Node("PvE_KidPassage_Lookat_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:WasHere_S07KidGrabhook_lookat", False, 0)
+	Element("IsBoolVariableTrue:true:SoA3_KidGrabHook_lookat", False, 1)
+	Element("DisableObject:WasHere_S07KidGrabhook_lookat", False, 2)
+	Element("DeactivateScenarioNode:PvE_KidPassage_Lookat_FPP", False, 3)
+	Element("ActivateScenarioNode:PvE_KidPassage_1stDialog_FPP", False, 4)
+	Element("ActivateScenarioNode:PvE_KidPassage_1stDialog_TPP", False, 5)
+}
+
+Node("PvE_KidPassage_1stDialog_FPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:SoA3_KidGrabhook_1stTalk_Trigger", False, 0)
+	Element("SetDialogMode:true", False, 101)	
+	Element("SetBoolVariable:SoA3_KidGrabHook_1stDialogStarted:true", False, 1)
+	Element("PlayerSetLookAtObject:Kid_Throwing_Rope", False, 2)
+	Element("StartDialog:PVE_KidRope_FirstTalk", False, 3)
+	Element("IsDialogPlaying:false:PVE_KidRope_FirstTalk", False, 4)	
+	Element("StartDialog:PVE_KidRope_NoToken", False, 5)
+	Element("IsDialogPlaying:false:PVE_KidRope_NoToken", False, 6)	
+	Element("PlayerSetLookAtObject:null", False, 7)
+	Element("SetDialogMode:false", False, 102)
+	Element("SetBoolVariable:SoA3_KidGrabHook_1stDialogEnded:true", False, 8)
+}
+
+Node("PvE_KidPassage_1stDialog_TPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:SoA3_KidGrabhook_1stTalk_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:SoA3_KidGrabHook_1stDialogStarted", False, 1)
+	Element("BlockSaveGame", False, 2)
+	Element("DisableObject:SoA3_KidGrabhook_1stTalk_Trigger", False, 3)
+	Element("IsBoolVariableTrue:true:SoA3_KidGrabHook_1stDialogEnded", False, 4)
+	Element("UnblockSaveGame", False, 5)
+	Element("DeactivateScenarioNode:PvE_KidPassage_1stDialog_FPP", False, 6)
+	Element("ActivateScenarioNode:PvE_KidPassage_Token_Trigger", False, 7)
+	Element("AddStoryObjective:NB_OBJ_PVE_BringTokenToKid:true", False, 8)
+}
+
+Node("PvE_KidPassage_Token_Trigger", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:SoA3_KidGrabhook_No_Token_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:HasToken_Hunting_AfterArena", False, 1)
+	Element("DisableObject:SoA3_KidGrabhook_No_Token_Trigger", False, 2)
+	Element("ActivateScenarioNode:PvE_KidPassage_End_FPP", False, 3)
+	Element("ActivateScenarioNode:PvE_KidPassage_End_TPP", False, 4)
+}
+
+Node("PvE_KidPassage_End_FPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:SoA3_KidGrabhook_End_Trigger", False, 0)
+	Element("SetBoolVariable:SoA3_KidGrabHook_EndDialogStarted:true", False, 1)
+}
+
+Node("PvE_KidPassage_End_TPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:SoA3_KidGrabhook_End_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:SoA3_KidGrabHook_EndDialogStarted", False, 1)
+	Element("DisableObject:SoA3_KidGrabhook_End_Trigger", False, 2)
+	Element("SetBoolVariable:Start_PvE_KidPassage_Cutscene:true", False, 3)
+	Element("IsBoolVariableTrue:true:SoA3_KidGrabHook_EndDialogEnded", False, 4)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BringTokenToKid", False, 5)
+}
+
+Node("PvE_KidPassage_Cutscene", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False, True)
+{
+	Element("EnableObject:SOA3_Kid_Rope_Throw", False, 0)
+	Element("EnableObject:SOA3_KidRope_HangingRope", False, 1)	
+	Element("IsBoolVariableTrue:true:Start_PvE_KidPassage_Cutscene", False, 2)
+	Element("SetDialogMode:true", False, 101)
+	Element("SetBoolVariable:PlayerMechGameEnding:true", False, 3)
+	Element("BlockSaveGame", False, 4)
+	Element("DreamFadeOut:0.9", False, 5)
+	Element("HideAllHints", False, 6)
+	Element("IsDreamFadeOut:false", False, 7)
+	Element("HideForPlayers:true", False, 8)	
+	Element("Wait:1", False, 9)		
+	Element("TeleportWithRandomOffset:SOA3_KidRope_TeleportSpawner:false:1.0", False, 10)
+	Element("DreamFadeIn:0.6", False, 11)
+	Element("Wait:0.8", False, 12)
+	Element("PlayerSetLookAtObject:PvE3_ClimbingRope_Kid_PlayerLookUp", False, 13)
+	Element("PlayerHideWeapon", False, 14)
+	Element("Wait:0.1", False, 15)
+	Element("SetPlayerInSafeZone", False, 16)
+	Element("PlayerBlockMoves", False, 17) 
+	Element("StartDialog:PVE_KidRope_HaveToken_1", False, 103)
+	Element("Wait:1.0", False, 19)
+	Element("PlayAnimation:Player:Show_Token_kid", False, 20)	
+	Element("EnableObject:Token_Hunting_InHand", False, 21)
+	Element("Wait:3.0", False, 22)
+	Element("IsDialogPlaying:false:PVE_KidRope_HaveToken_1", False, 104)
+	Element("StartDialog:PVE_KidRope_HaveToken_2", False, 105)
+	Element("SetBoolVariable:Child_Throw_Rope:true", False, 106)	
+	Element("Wait:2.4", False, 23)
+	Element("DisableObject:Token_Hunting_InHand", False, 24)
+	Element("Wait:2.0", False, 25)	
+	Element("PlayerSetLookAtObject:PvE3_ClimbingRope_Kid_PlayerLookDown", False, 26)
+	Element("Wait:0.5", False, 27)	
+	Element("PlayerSetLookAtObject:null", False, 28)
+	Element("PlayerRestoreWeapon", False, 29)
+	Element("PlayerResetBlockRotation", False, 30)
+	Element("PlayerResetBlockMoves", False, 31)
+	Element("ResetPlayerInSafeZone", False, 32)
+	Element("HideForPlayers:false", False, 33)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 34)
+	Element("SetBoolVariable:COOP_AfterKidPassageCutscene:true", False, 35)
+	Element("SetBoolVariable:SoA3_KidGrabHook_EndDialogEnded:true", False, 36)
+	Element("IsDialogPlaying:false:PVE_KidRope_HaveToken_2", False, 107)	
+	Element("PlayMusicJingle:jingle_new_area2_kid:false:0.7:0", False, 38)
+	Element("UnblockSaveGame", False, 39)
+	Element("SetDialogMode:false", False, 102)
+}
+
+Node("PvE_KidPassage_Cutscene_KidAnim", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:Child_Throw_Rope", False, 0)
+	Element("SetAnimatorBool:Kid_Throwing_Rope:Child_Throw_Rope:true", False, 1)
+	Element("Wait:2.8", False, 2)
+	Element("DisableObject:SOA3_KidRope_HangingRope", False, 3)
+	Element("Wait:2.34", False, 4)
+	Element("SetBoolVariable:SoA3_KidGrabHook_unlocked:true", False, 5)
+	Element("Wait:5.5", False, 6)
+	Element("DisableObject:SOA3_Kid_Rope_Throw", False, 7)
+}
+
+// ############################ SoA 3 - MISC 
+Node("OBJ_PVE_SearchCartel_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PvE_Cartel_sensor", False, 0)
+	Element("SetBoolVariable:WasPVECartelVisited:true", False, 1)	
+}
+
+Node("OBJ_PVE_SearchCartel_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioUsed", False, 0)	
+	Element("IsBoolVariableTrue:true:WasPVECartelVisited", False, 1)
+	Element("DeactivateScenarioNode:OBJ_PVE_SearchCartel_FPP", False, 2)	
+	Element("DisableObject:PvE_Cartel_sensor", False, 3)	
+	Element("AddStoryObjective:NB_OBJ_PVE_SearchCartel:true", False, 4)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve2", False, 5)
+	Element("IsBoolVariableTrue:true:PvE_BoatRadioPartFound", False, 6)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_SearchCartel", False, 7)	
+}
+
+Node("OBJ_PVE_SearchAirport_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("PlayerIsInSensor:true:PvE_Airport_sensor", False, 0)
+	Element("SetBoolVariable:WasPVEAirportVisited:true", False, 1)	
+}
+
+Node("OBJ_PVE_SearchAirport_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:WasPVEAirportVisited", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_SearchAirport:true", False, 1)
+	Element("DeactivateScenarioNode:OBJ_PVE_SearchAirport_FPP", False, 2)	
+	Element("DisableObject:PvE_Airport_sensor", False, 3)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_A", False, 4)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_B", False, 5)		
+	Element("CompleteStoryObjective:NB_OBJ_PVE_SearchAirport", False, 6)	
+}
+
+Node("OBJ_PVE_SearchTent_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("PlayerIsInSensor:true:PvE_Tent_sensor", False, 0)
+	Element("PlayMusicJingle:jingle_leaving_tent:false:0.8:0", False, 1)
+	Element("SetBoolVariable:WasPVETentVisited:true", False, 2)	
+}
+
+Node("OBJ_PVE_SearchTent_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("IsBoolVariableTrue:true:WasPVETentVisited", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_SearchTent:true", False, 1)
+	Element("DeactivateScenarioNode:OBJ_PVE_SearchTent_FPP", False, 2)	
+	Element("DisableObject:PvE_Tent_sensor", False, 3)
+	Element("IsBoolVariableTrue:true:HaveMap_Pve3_C", False, 4)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_SearchTent", False, 5)	
+}
+
+Node("PvE_YabahuacaGatekeeper_Talk_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:SoA3_YabahuacaGatekeeper_Talked", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_FindYabahuaca", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_FindSacredPath:true", False, 2)	
+	Element("ActivateScenarioNode:PVE_SacredPassage_StoneLook_FPP", False, 3)
+	Element("ActivateScenarioNode:PVE_SacredPassage_StoneLook_TPP", False, 4)
+}
+Node("YabahuacaVillage_Noticed_Sensor1_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_YabahuacaVillage_Notice_sensor1", False, 0)
+	Element("StartDialog:PVE_YabahuacaVillage_Found_Player_01", False, 1)	
+	Element("SetBoolVariable:SoA3_Yabahuaca_Found:true", False, 2)
+}
+Node("YabahuacaVillage_Noticed_Sensor2_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_YabahuacaVillage_Notice_sensor2", False, 0)
+	Element("StartDialog:PVE_YabahuacaVillage_Found_Player_01", False, 1)	
+	Element("SetBoolVariable:SoA3_Yabahuaca_Found:true", False, 2)
+}
+Node("YabahuacaVillage_Noticed_Sensor3_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_YabahuacaVillage_Notice_sensor3", False, 0)
+	Element("StartDialog:PVE_YabahuacaVillage_Found_Player_01", False, 1)	
+	Element("SetBoolVariable:SoA3_Yabahuaca_Found:true", False, 2)
+}
+Node("YabahuacaVillage_Noticed_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:SoA3_Yabahuaca_Found", False, 0)
+	Element("DeactivateScenarioNode:YabahuacaVillage_Noticed_Sensor1_FPP", False, 1)
+	Element("DeactivateScenarioNode:YabahuacaVillage_Noticed_Sensor2_FPP", False, 2)
+	Element("DeactivateScenarioNode:YabahuacaVillage_Noticed_Sensor3_FPP", False, 3)
+	Element("DisableObject:PVE_YabahuacaVillage_Notice_sensor1", False, 4)
+	Element("DisableObject:PVE_YabahuacaVillage_Notice_sensor2", False, 5)
+	Element("DisableObject:PVE_YabahuacaVillage_Notice_sensor3", False, 6)	
+	Element("UnlockAchievement:REACH_YABAHUACA_VILLAGE", False, 7)
+}
+// ## Snake PASS Path 
+Node("PVE_SacredPassage_StoneLook_FPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_SacredPassage_Stone_lookat", False, 0)
+	Element("SetBoolVariable:WasSacredPassageVisited:true", False, 1)
+	Element("StartDialog:PVE_SnakePassage_Player_01", False, 2)
+}
+
+Node("PVE_SacredPassage_StoneLook_TPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PvE_SacredPassage_Stone_lookat", False, 0)
+	Element("IsBoolVariableTrue:true:SoA3_YabahuacaGatekeeper_Talked", False, 1)
+	Element("EnableObject:PvE_SacredPassage_Stone_lookat", False, 2)	
+	Element("IsBoolVariableTrue:true:WasSacredPassageVisited", False, 3)
+	Element("DisableObject:PvE_SacredPassage_Stone_lookat", False, 4)
+	Element("DeactivateScenarioNode:PVE_SacredPassage_StoneLook_FPP", False, 5)
+	Element("ActivateScenarioNode:PVE_SacredPassage_StonePush_FPP", False, 6)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_FindSacredPath", False, 7)
+	Element("AddStoryObjective:NB_OBJ_PVE_RebuildSacredPath:true", False, 8)
+}
+
+Node("PVE_SacredPassage_StonePush_FPP", False, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PVE_SacredPassage_Stone_Trigger", False, 0)	
+	Element("SetBoolVariable:IsSacredPassageStonePushed:true", False, 1)
+}
+
+Node("PVE_SacredPassage_StonePush_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PVE_SacredPassage_Stone_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:WasSacredPassageVisited", False, 1)
+	Element("EnableObject:PVE_SacredPassage_Stone_Trigger", False, 2)
+	Element("IsBoolVariableTrue:true:IsSacredPassageStonePushed", False, 3)
+	Element("DisableObject:PVE_SacredPassage_Stone_Trigger", False, 4)
+	Element("ActivateScenarioNode:PVE_SacredPassage_MusicSensor", False, 5)
+}
+
+Node("PVE_SacredPassage_StonePush_Cutscene", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:PVE_SacredPassage_Stone", False, 0)
+	Element("EnableObject:PVE_SacredPassage_Barrier", False, 1)	
+	Element("DisableObject:PVE_SacredPassage_Rebuilt", False, 2)
+	Element("IsBoolVariableTrue:true:IsSacredPassageStonePushed", False, 3)
+	Element("SetBoolVariable:BlockHOPickUp:true", False, 200)
+	Element("SetDialogMode:true", False, 102)	
+	Element("BlockSaveGame", False, 4)
+	Element("PlayerHideWeapon", False, 5)
+	Element("PlayerBlockRotation", False, 100)	
+	Element("StartDialog:PVE_SnakePassage_Player_02", False, 6)	
+	Element("PlayerSetPositionObject:PvE_SacredPassage_Stone_PlayerPos", False, 7)
+	Element("PlayerSetPositionObjectSpeedMod:6.15", False, 8)	
+	Element("Wait:1.5", False, 9)	
+	Element("PlayAnimation:Player:Pushing_Rock_Off_Cliff", False, 10)	
+	Element("PlaySound:Player:Sounds/PVE/Snake_pass_Stone_Push", False, 11)	
+	Element("Wait:1", False, 12)	
+	Element("DreamFadeOut:0.9", False, 13)
+	Element("PlayerSetLookAtObject:PvE_SacredPassage_Stone_lookat_01", False, 14)
+	Element("PlayerBlockMoves", False, 15)
+	Element("IsDreamFadeOut:false", False, 16)
+	Element("DisableObject:PVE_SacredPassage_Stone", False, 17)
+	Element("DisableObject:PVE_SacredPassage_Barrier", False, 18)
+	Element("EnableObject:PVE_SacredPassage_Rebuilt", False, 19)	
+	Element("Wait:5", False, 20)
+	Element("PlayerRestoreWeapon", False, 21)
+	Element("PlayerSetLookAtObject:null", False, 22)
+	Element("PlayerSetPositionObject:null", False, 23)
+	Element("PlayerSetPositionObjectSpeedMod:1.00", False, 24)
+	Element("DreamFadeIn:0.6", False, 25)
+	Element("Wait:1", False, 26)
+	Element("PlayerUnblockRotation", False, 101)
+	Element("PlayerResetBlockMoves", False, 27)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_RebuildSacredPath", False, 28)
+	Element("AddStoryObjective:NB_OBJ_PVE_FindKiwini:true", False, 29)	
+	Element("PlayMusic:Green_hell_Walk_on_the_edge:false:0.7:0", False, 30)
+	Element("UnblockSaveGame", False, 31)
+	Element("SetDialogMode:false", False, 103)
+	Element("SetBoolVariable:BlockHOPickUp:false", False, 201)
+}
+
+Node("PvE_TokenScales_Gatekeeper_Talk_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:SoA3_TokensGatekeeper_Talked", False, 0)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatReportProgress:true", False, 1)
+}
+
+Node("SOA3_Radio_Talk_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("EnableObject:boat_radio_walkie_LOD0", False, 0)
+	Element("EnableObject:boat_radio_walkie_LOD1", False, 1)
+	Element("EnableObject:boat_radio_walkie_LOD2", False, 2)
+
+	Element("IsTriggered:true:SOA3_Boat_Radio_Trigger", False, 3)
+	Element("PlayerHideWeapon", False, 4)
+	Element("Wait:0.4", False, 5)
+	Element("SetBoolVariable:SOA3_Boat_Radio_FPPUsing:true", False, 6)	// Miejsce na odpalenie dialogu FPP
+	Element("PlayAnimation:boat_old_radio:boat_old_radio_on", False, 7)
+	Element("PlayerBlockMoves", False, 8)
+
+	Element("PlayerBlockFistFight", False, 9)
+	Element("PlayerBlockRotation", False, 10)
+	Element("StartDialog:PVE_Boat_Radio_2nd_Mia", False, 11)
+	Element("Wait:0.2", False, 12)
+
+	Element("EnableObject:Radio_handset_InHand", False, 13)
+
+	Element("DisableObject:boat_radio_walkie_LOD0", False, 14)
+	Element("DisableObject:boat_radio_walkie_LOD1", False, 15)
+	Element("DisableObject:boat_radio_walkie_LOD2", False, 16)
+	
+	Element("IsDialogPlaying:false:PVE_Boat_Radio_2nd_Mia", False, 17)
+	
+	//Element("PlayAnimation:Player:WalkieTalkie_Hide", False, 18)
+	//Element("SetBoolVariable:Boat_radio_on:false", False, 19)
+	Element("Wait:3.5", False, 18)
+	Element("DisableObject:Radio_handset_InHand", False, 19)
+	Element("Wait:0.2", False, 20)
+	
+	Element("EnableObject:boat_radio_walkie_LOD0", False, 21)
+	Element("EnableObject:boat_radio_walkie_LOD1", False, 22)
+	Element("EnableObject:boat_radio_walkie_LOD2", False, 23)
+	
+	Element("PlayAnimation:boat_old_radio:boat_old_radio_off", False, 24)
+	Element("DisableObject:Radio_handset_InHand", False, 25)
+	Element("PlayerUnblockMoves", False, 26)
+	Element("PlayerRestoreWeapon", False, 27)
+	Element("PlayerUnblockFistFight", False, 28)
+	Element("PlayerUnblockRotation", False, 29)
+
+	Element("SetBoolVariable:SOA3_Boat_Radio_Talk_Done:true", False, 30)
+}
+
+Node("SOA3_Radio_Talk_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:SOA3_Boat_Radio_Trigger", False, 0)
+	Element("IsBoolVariableTrue:true:SOA2_Boat_Radio_Talk_Done", False, 1)
+	Element("IsBoolVariableTrue:true:SoA3_TokensGatekeeper_Talked", False, 2)
+	Element("EnableObject:SOA3_Boat_Radio_Trigger", False, 3)	
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_FPPUsing", False, 4)
+	Element("DisableObject:SOA3_Boat_Radio_Trigger", False, 5)
+	Element("BlockSaveGame", False, 6)
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 7)
+	Element("UnblockSaveGame", False, 8)
+}
+
+Node("SOA3_Radio_AfterTalk_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("DisableObject:PVE_ArenaCave_sensor_Hunter", False, 0)
+	Element("DisableObject:PVE_ArenaCave_sensor_Farmer", False, 1)
+	Element("DisableObject:PVE_ArenaCave_sensor_Fishing", False, 2)
+	Element("IsBoolVariableTrue:true:SOA3_Boat_Radio_Talk_Done", False, 3)
+	Element("EnableObject:PVE_ArenaCave_sensor_Hunter", False, 4)
+	Element("EnableObject:PVE_ArenaCave_sensor_Farmer", False, 5)
+	Element("EnableObject:PVE_ArenaCave_sensor_Fishing", False, 6)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_BoatReportProgress", False, 7)
+	Element("AddStoryObjective:NB_OBJ_PVE_BoatInspect:true", False, 8)
+	Element("AddStoryObjective:NB_OBJ_PVE_FindArenaCave:true", False, 9)	
+}
+Node("PvE_ArenaCave_Sensor_HunterFPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_ArenaCave_sensor_Hunter", False, 0)
+	Element("SetBoolVariable:VisitedArenaCave:true", False, 1)
+	Element("SetBoolVariable:VisitedArenaCave_Hunter:true", False, 2)
+}
+Node("PvE_ArenaCave_Sensor_FarmingFPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_ArenaCave_sensor_Farmer", False, 0)
+	Element("SetBoolVariable:VisitedArenaCave:true", False, 1)
+	Element("SetBoolVariable:VisitedArenaCave_Farming:true", False, 2)
+}
+Node("PvE_ArenaCave_Sensor_FishingFPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_ArenaCave_sensor_Fishing", False, 0)
+	Element("SetBoolVariable:VisitedArenaCave:true", False, 1)
+	Element("SetBoolVariable:VisitedArenaCave_Fishing:true", False, 2)
+}
+
+Node("PvE_ArenaCave_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VisitedArenaCave", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_FindArenaCave", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_Find_HunterCave:true", False, 2)
+	Element("AddStoryObjective:NB_OBJ_PVE_Find_FarmingCave:true", False, 3)
+	Element("AddStoryObjective:NB_OBJ_PVE_Find_FishingCave:true", False, 4)
+	Element("AddStoryObjective:NB_OBJ_PVE_CompleteAllForges:true", False, 5)
+}
+
+Node("PvE_ArenaCave_HunterTPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VisitedArenaCave_Hunter", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_Find_HunterCave", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_Forge_HunterCave:true", False, 2)
+	Element("IsBoolVariableTrue:true:HasToken_Hunting_AfterForge", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_Forge_HunterCave", False, 4)
+}
+Node("PvE_ArenaCave_FarmingTPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VisitedArenaCave_Farming", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_Find_FarmingCave", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_Forge_FarmingCave:true", False, 2)
+	Element("IsBoolVariableTrue:true:HasToken_Planting_AfterForge", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_Forge_FarmingCave", False, 4)
+}
+Node("PvE_ArenaCave_FishingTPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:VisitedArenaCave_Fishing", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_Find_FishingCave", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_Forge_FishingCave:true", False, 2)
+	Element("IsBoolVariableTrue:true:HasToken_Fishing_AfterForge", False, 3)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_Forge_FishingCave", False, 4)
+}
+
+Node("OBJ_PVE_CompleteAllArenas_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:AreAllTokensOnScale", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_CompleteAllForges", False, 1)
+}
+
+Node("PvE_ArenaTribeFound_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_ArenaTribe_sensor", False, 0)
+	Element("SetBoolVariable:FoundArenaTribe:true", False, 1)
+}
+
+Node("PvE_ArenaTribeFound_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:FoundArenaTribe", False, 0)
+	Element("CompleteStoryObjective:NB_OBJ_PVE_FindKiwini", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_CompleteArenaTribe:true", False, 2)
+	Element("IsBoolVariableTrue:true:IsArenaTribeWakeUpAnimationFinished", False, 3)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_CompleteArenaTribe", False, 4)	
+	Element("UnlockAchievement:PASS_YABAHUACA_TRIAL", False, 5)	
+}
+
+
+Node("PvE_Arena_Tribe_CauldronNoticed_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:PVE_ArenaTribe_sensor", False, 0)
+	Element("StartDialog:PVE_PassageGuardian_Player_06", False, 1)	
+	Element("SetBoolVariable:PVE_Arena_Tribe_Cauldron_Noticed:true", False, 2)
+}
+Node("PvE_Arena_Tribe_CauldronNoticed_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:PVE_Arena_Tribe_Cauldron_Noticed", False, 0)
+	Element("DeactivateScenarioNode:PvE_Arena_Tribe_CauldronNoticed_FPP", False, 1)		
+}
+
+Node("PvE_Mushroom_FPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:PvE_Mushroom_Trigger", False, 0)
+	Element("PlaySound:Player:Sounds\TempSounds\Player\item_grab_food_01", False, 1)
+	Element("StartDialog:PVE_MushroomTake_01", False, 2)	
+	Element("SetBoolVariable:Is_Mushroom_Gathered:true", False, 3)
+}
+Node("PvE_Mushroom_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("ShowFakeItemInBackpack:backpack_mushroom:false", False, 0)	
+	Element("EnableObject:PvE_Mushroom_Trigger", False, 1)
+	Element("IsBoolVariableTrue:true:IsArenaTribeWakeUpAnimationFinished", False, 2)	
+	Element("AddStoryObjective:NB_OBJ_PVE_GatherMushrooms:true", False, 3)
+	Element("IsBoolVariableTrue:true:Is_Mushroom_Gathered", False, 4)
+	Element("DisableObject:PvE_Mushroom_Trigger", False, 5)
+	Element("ShowFakeItemInBackpack:backpack_mushroom:true", False, 6)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_GatherMushrooms", False, 7)
+	Element("DeactivateScenarioNode:PvE_Mushroom_FPP", False, 8)	
+}
+
+
+
+Node("FPP_PvE_BoatEnding_Looped", True, -138.0000, 380.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsTriggered:true:SOA3_Ending_Trigger", False, 0)
+	Element("SetBoolVariable:FPP_Ending_Trigger:true", False, 1)
+}
+Node("TPP_PvE_BoatEnding_Looped", True, -138.0000, 380.0000, 200.0000, 75.0000, "NoParents", True)
+{
+	Element("IsBoolVariableTrue:true:FPP_Ending_Trigger", False, 0)
+	Element("ShowCoopFinalScreen", False, 1)
+	Element("Wait:5.0", False, 7)
+	Element("SetBoolVariable:FPP_Ending_Trigger:false", False, 2)
+	Element("RestartNode:PvE_EndTrigger_True", False, 3)
+	Element("ActivateScenarioNode:PvE_EndTrigger_True", False, 4)
+	Element("RestartNode:PvE_EndTrigger_False", False, 5)
+	Element("ActivateScenarioNode:EndTrigger_False", False, 6)
+}
+Node("PvE_EndTrigger_True", False, -138.0000, 380.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:true:CoopFinal_PVE", False, 0)
+	Element("DeactivateScenarioNode:PvE_EndTrigger_False", False, 1)
+	Element("DeactivateScenarioNode:FPP_PvE_BoatEnding_Looped", False, 2)
+	Element("SetBoolVariable:Is_SOA3_Ended:true", False, 3)
+}
+Node("PvE_EndTrigger_False", False, -138.0000, 380.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("IsBoolVariableTrue:false:CoopFinal_PVE", False, 0)
+	Element("ResetTrigger:SOA3_Ending_Trigger", False, 1)
+	Element("RestartNode:FPP_PvE_BoatEnding_Looped", False, 2)
+	Element("RestartNode:TPP_PvE_BoatEnding_Looped", False, 3)
+}
+
+Node("PvE_BoatEnding_TPP", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{	
+	Element("DisableObject:SOA3_Ending_Trigger", False, 0)	
+	Element("IsBoolVariableTrue:true:Is_Mushroom_Gathered", False, 1)
+	Element("AddStoryObjective:NB_OBJ_PVE_ReturnToBoat:true", False, 2)	
+	Element("IsBoolVariableTrue:true:IsCranePlatformCutOff", False, 3)	
+	Element("EnableObject:SOA3_Ending_Trigger", False, 4)	
+	Element("IsBoolVariableTrue:true:Is_SOA3_Ended", False, 5)
+	Element("UnlockAchievement:ACH_COMPLETE_SOA3_STORY", False, 25)	
+	Element("CompleteStoryObjective:NB_OBJ_PVE_ReturnToBoat", False, 6)	
+	Element("BlockSaveGame", False, 7)
+	Element("DisableObject:SOA3_Ending_Trigger", False, 8)
+	Element("FadeOut:4", False, 9)
+	Element("IsFadeOut:false", False, 10)
+	Element("PlayMovieWithFade:SOA3_Cutscene_Boat:1.0", False, 11)
+	Element("FadeIn:4", False, 12)
+	Element("IsMovieWithFadePlaying:true", False, 13)
+	Element("IsMovieWithFadeFinished:true", False, 14)
+	Element("Teleport:SAT_00:false", False, 15)
+	Element("MSAmbientStop:1", False, 16)
+	Element("PlayMusic:Green_hell_pve_Tribe_Singer:false:0.9:0", False, 17)
+	Element("PlayerBlockMoves", False, 18)
+	Element("PlayerBlockRotation", False, 19)
+	//Element("OnStoryFinished:false", False, 261)
+	Element("ShowCredits", False, 20)
+	Element("IsMusicPlayingAndIsNoPause:false:0", False, 21)
+	Element("Wait:5", False, 22)
+	Element("SetBoolVariable:PlayerMechGameEnding:false", False, 23)	
+	//Element("UnblockSaveGame", False, 24)
+}
+
+// ############################ Music Sensor - Locations SOA3
+
+Node("SoA_Airport_Music", True, 156.0000, 337.0000, 200.0000, 75.0000, "NoParents", False)
+{
+	Element("PlayerIsInSensor:true:SoA3_AirportMusicSensor", False, 0)
+	Element("PlayMusicJingle:jingle_cartel:false:0.8:0", False, 1)
+}
