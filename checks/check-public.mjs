@@ -38,6 +38,10 @@ for(const role of ['single','host','client'])for(const route of routes){
 }
 for(const asset of renderedAssets)assert.ok((await stat(path.join(root,asset.split(/[?#]/)[0]))).isFile(),`Missing rendered asset: ${asset}`);
 run('state.mode="host";active="field-tools";render()');
+run('active="crafting";craftCategory="bandages";craftRecipe=craftRecipes.find(r=>r.category==="bandages").id;render()');
+assert.equal((node('#main').innerHTML.match(/data-bandage-result=/g)||[]).length,run('craftRecipes.filter(r=>r.category==="bandages").length'));
+assert.match(node('#main').innerHTML,/VenomBite \/ SnakeBite/);
+run('active="field-tools";render()');
 for(const feature of ['in-wall','invisible','ignore-me'])assert.ok(node('#main').innerHTML.includes(`data-expansion="${feature}"`));
 let count=0;
 async function inspect(directory){
