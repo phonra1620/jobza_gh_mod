@@ -42,7 +42,12 @@ run('active="crafting";craftCategory="bandages";craftRecipe=craftRecipes.find(r=
 assert.equal((node('#main').innerHTML.match(/data-bandage-result=/g)||[]).length,run('craftRecipes.filter(r=>r.category==="bandages").length'));
 assert.match(node('#main').innerHTML,/VenomBite \/ SnakeBite/);
 run('active="field-tools";render()');
-for(const feature of ['in-wall','invisible','ignore-me'])assert.ok(node('#main').innerHTML.includes(`data-expansion="${feature}"`));
+assert.ok(node('#main').innerHTML.includes('data-expansion="in-wall"'));
+for(const feature of ['invisible','ignore-me','names','map-player'])assert.ok(!node('#main').innerHTML.includes(`data-expansion="${feature}"`));
+run('active="self-tools";hubSelfSection="survival";render()');
+for(const feature of ['invisible','ignore-me'])assert.ok(node('#main').innerHTML.includes(`data-expansion="${feature}"`));
+run('active="teleport";render()');
+for(const feature of ['names','map-player'])assert.ok(node('#main').innerHTML.includes(`data-expansion="${feature}"`));
 let count=0;
 async function inspect(directory){
  for(const entry of await readdir(directory,{withFileTypes:true})){

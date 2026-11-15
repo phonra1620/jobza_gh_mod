@@ -1,17 +1,19 @@
 {
-  "scannedAt": "2026-11-13T17:33:51+07:00",
+  "scannedAt": "2026-11-13T17:48:51+07:00",
   "root": "Published inventory snapshot (not a live scan)",
-  "packageCount": 67,
+  "packageCount": 68,
   "mods": [
     {
       "id": "FastForest",
       "name": "Green Hell Mod Hub",
-      "latestVersion": "0.4.65",
-      "description": "Single Player test suite. Shift + R: building, backpack, forest, Immortal Mode, time/weather, item and AI spawning. Quick Launch built in. No external Debug Mode required. Host native replication test build. Forest, simulation speed and instant table craft remain SP only.",
+      "latestVersion": "0.4.80",
+      "description": "Installed .80, Apply/runtime pending. Insert: Admin/Player and ON-OFF; notebook Build Everywhere/Alt-wheel height; native crafting spawn durability; Kit auto-armor; notebook Skills; Teleport map/name controls.",
       "compatible": "2.9.5",
       "origin": "custom",
       "selectable": 1,
       "versions": [
+        "0.4.80",
+        "0.4.66",
         "0.4.65",
         "0.4.63",
         "0.4.62",
@@ -66,11 +68,59 @@
       "packages": [
         {
           "id": "FastForest",
-          "version": "0.4.65",
+          "version": "0.4.66",
           "name": "Green Hell Mod Hub",
           "description": "Single Player test suite. Shift + R: building, backpack, forest, Immortal Mode, time/weather, item and AI spawning. Quick Launch built in. No external Debug Mode required. Host native replication test build. Forest, simulation speed and instant table craft remain SP only.",
           "compatible": "2.9.5",
           "storage": "selectable",
+          "path": "snapshot/FastForest-0.4.66-ce709bc7df97756a5e177af3a0f67a9c.mod",
+          "bytes": 108525,
+          "hooks": [
+            "Player::CheckUnderTerrain",
+            "Being::IsIgnoredByAI",
+            "ReplicatedLogicalPlayer::SetHideForPlayers",
+            "ReplicatedLogicalPlayer::SetIgnoreFadeWhenHiddenFromPlayers",
+            "FPPController::UpdateWantedSpeed",
+            "Player::OnLand",
+            "Player::OnLanding",
+            "HUDCoopPlayer::UpdateSizeAndOpacity",
+            "P2PSession::StartInternal",
+            "ConstructionGhost::SetState",
+            "StaticObjectsManager::Load",
+            "StaticObjectsManager::UpdateGrowing",
+            "Player::Start",
+            "NotepadConstructionData::ShouldShow",
+            "MainMenu::Start",
+            "Inventory3DManager::UpdateMouseInputs",
+            "TriggerController::ControllerUpdate",
+            "InputsManager::OnAction",
+            "HUDEnergy::ShouldShow",
+            "BodyInspectionController::UpdateInput",
+            "MenuNotepad::UpdateInputs",
+            "AIs.AI::CanReceiveDamageOfType",
+            "AIs.AI::Kill",
+            "AIs.AI::OnDie",
+            "AIs.HealthModule::DecreaseHealth",
+            "AIs.AIManager::Save"
+          ],
+          "addedClasses": [
+            "FastForest.ModHub",
+            "FastForest.HubText",
+            "FastForest.HubGUI",
+            "FastForest.MultiplayerCapacity",
+            "FastForest.GrowthEntry",
+            "FastForest.ForestRuntime",
+            "FastForest.GrowthRules",
+            "FastForest.HubSettings"
+          ]
+        },
+        {
+          "id": "FastForest",
+          "version": "0.4.65",
+          "name": "Green Hell Mod Hub",
+          "description": "Single Player test suite. Shift + R: building, backpack, forest, Immortal Mode, time/weather, item and AI spawning. Quick Launch built in. No external Debug Mode required. Host native replication test build. Forest, simulation speed and instant table craft remain SP only.",
+          "compatible": "2.9.5",
+          "storage": "backup",
           "path": "snapshot/FastForest-0.4.65-e029f61e2d5d723f753107a17ff7f57f.mod",
           "bytes": 107149,
           "hooks": [
@@ -2031,5 +2081,7 @@
         }
       ]
     }
-  ]
+  ],
+  "snapshotUpdatedAt": "2026-11-15T21:24:00+07:00",
+  "snapshotNote": "Package .80 installation verified; historical inventory entries retained, not a new full disk scan. No .80 Apply/runtime confirmation."
 }

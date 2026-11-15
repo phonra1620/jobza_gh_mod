@@ -93,26 +93,36 @@ for(const row of modeStatusRows){
  if(row.id==='master')row.note+=' Host menu checklist 1: user PASS on 0.4.59; language switch in 0.4.60 pending.';
 }
 // Current release evidence stays distinct from historical capability reports.
-const release061Note='0.4.62 เรียงกลุ่มและการ์ดเหมือนกันทุกโหมด · รายการที่ใช้ไม่ได้คงตำแหน่งและแสดงว่าล็อก · ยังรอ Apply และทดสอบในเกม · NPC Friend ยังถอดชั่วคราว';
+for(const row of modeStatusRows){
+ if(['master','skills','immortal','menu-home','ui-language'].includes(row.id)){row.note='0.4.80 installed, new UI runtime pending. Historical evidence: '+row.note;if(row.id!=='menu-home')row.statuses=['ready','ready','ready'];}
+ if(row.id==='master'){row.group='Insert / Mod control';row.note+=' Insert chooses Admin/Player before ON; Player hides only full Hub.';}
+ if(row.id==='immortal')row.group='Player > Survival';
+ if(row.id==='skills')row.note+=' Native notebook order/EN-TH, raw float slider/text and Level buttons, Apply/Cancel/Undo.';
+ if(row.id==='always-names'){row.group='Teleport / native map';row.note='0.4.80: distance below native peer name; separate peer list removed. Runtime pending.';}
+ if(row.id==='map-player')row.group='Teleport / native map';
+ if(row.id==='auto-arrows'){row.statuses=['none','none','none'];row.note='Removed from current Hub; historical entry only.';}
+ if(row.id==='invisible'){row.statuses=['ready','locked','locked'];row.group='Player > Survival';row.note='Solo AI-only; no native hide/fade writes. Co-op disabled since .68.';}
+ if(row.id==='ignore-me')row.group='Player > Survival';
+}
+modeStatusRows.push({id:'build-everywhere',name:'Build Everywhere + Alt-wheel frame height',group:'Notebook > Building',statuses:['ready','ready','locked'],note:'Default OFF; native local preview only. Wood/bamboo frames: Alt-wheel 0.10 m, selected height retained until placement. Peer/save tests pending.'});
+modeStatusRows.push({id:'spawn-condition',name:'Craft-based Items / Kit durability',group:'Items / Kit',statuses:['ready','ready','ready'],note:'Native crafting calculator, no XP/history awards; replaces kit fixed 29%.'});
+modeStatusRows.push({id:'kit-auto-armor',name:'Kit auto-equip missing armor',group:'Kit > Backpack',statuses:['ready','ready','ready'],note:'Armor first; only empty limbs, preserve worn pieces, skip extras. Ground spawns selected quantity. Runtime pending.'});
+const release061Note='Installed 0.4.80 / Apply and new runtime checks pending. Historical PASS results retain their original versions.';
 modeStatusRows.push({id:'menu-home',name:'Home / Host checklist 1',group:'Main menu',statuses:['ready','pass','ready'],note:'User confirmed checklist 1 PASS on Host 0.4.59; no other checklist groups accepted.'});
 modeStatusRows.push({id:'ui-language',name:'EN / TH',group:'Main menu',statuses:['ready','ready','ready'],note:'Installed package 0.4.61: mod-window labels/descriptions, saved local language preference; runtime pending.'});
 const expansionPreview={flight:false,inWall:false,invisible:false,ignoreMe:false,names:false,mapPlayer:false,arrows:false,npc:'off',job:'รอคำสั่ง',capacity:4,mode:'host'};
-function expansionPreviewPanel(){
- const demo=expansionPreview,canNpc=demo.mode!=='client';
- const control=(id,label,selected=false,disabled=false)=>`<button data-expansion="${id}" aria-pressed="${selected}" ${disabled?'disabled':''}>${label}</button>`;
- return `<section class="panel expansion-preview"><div class="panel-head"><h2>0.4.61 · ทดลองหน้าควบคุม</h2><span class="pill">จำลองเท่านั้น</span></div><p>Installed package 0.4.65; Apply pending. In wall / Invisible / Ignore me added; runtime pending. NPC Friend remains removed. Interactive preview only.</p><div class="expansion-controls">${['single','host','client'].map(mode=>control('mode:'+mode,modeStatusLabels[mode],demo.mode===mode)).join('')}</div><div class="expansion-grid"><div><h3>i_can_fly / Always Show Names</h3><div class="expansion-controls">${control('flight','i_can_fly',demo.flight)}${control('in-wall','In wall',demo.inWall,!demo.flight)}${control('invisible','Invisible',demo.invisible)}${control('ignore-me','Ignore me',demo.ignoreMe)}${control('names','Always Show Names',demo.names)}${control('map-player','Show player on map',demo.mapPlayer)}${control('auto-arrows','Auto Pickup Arrows',demo.arrows)}</div><p aria-live="polite">i_can_fly: ${demo.flight?'ON':'OFF'} | Names: ${demo.names?'ON':'OFF'}</p><p class="muted">WASD / Space: up / Left Ctrl: down / F8: exit. Speed: run x3.</p></div><div><h3>MP Cap Remover</h3><div class="expansion-controls">${control('cap:-','−',false,demo.capacity<=4||demo.mode!=='host')}<strong aria-live="polite">${demo.capacity} / 8 คน</strong>${control('cap:+','＋',false,demo.capacity>=8||demo.mode!=='host')}</div><p>เลือกก่อนสร้างห้องใหม่ · ไม่เปลี่ยนห้องที่กำลังเล่น</p><p class="muted">ในเกมตั้งจากเมนูหลัก ไม่ขึ้นกับ Mod ON/OFF · ยังไม่ยืนยันคนที่ 5–8</p></div></div></section>`;
-}
+function expansionPreviewPanel(){return `<section class="panel expansion-preview"><div class="panel-content"><h2>0.4.80 / interactive preview</h2><p>Insert: Admin / Player + ON-OFF. New UI runtime checks remain pending.</p><div class="action-group"><a href="#ingame">In-game .80</a><a href="#teleport">Teleport / map / names</a><a href="#self-tools">Self / Survival / Immortal</a><a href="#skills">Notebook Skills</a></div></div></section>`;}
 function handleExpansionPreview(event){
  const button=event.target.closest('[data-expansion]');if(!button)return false;
- const [kind,value]=button.dataset.expansion.split(':'),demo=expansionPreview;
+ const [kind,value]=button.dataset.expansion.split(':'),demo=expansionPreview;if(kind!=='mode'&&!hubMasterPreview)return true;
  if(kind==='mode'&&['single','host','client'].includes(value)){demo.mode=value;if(value==='client'){demo.npc='off';demo.job='รอคำสั่ง';}}
  else if(kind==='flight'){demo.flight=!demo.flight;if(!demo.flight)demo.inWall=false;}
  else if(kind==='in-wall'&&demo.flight)demo.inWall=!demo.inWall;
- else if(kind==='invisible')demo.invisible=!demo.invisible;
+ else if(kind==='invisible')demo.invisible=state.mode==='single'?!demo.invisible:false;
  else if(kind==='ignore-me')demo.ignoreMe=!demo.ignoreMe;
  else if(kind==='names')demo.names=!demo.names;
  else if(kind==='map-player')demo.mapPlayer=!demo.mapPlayer;
- else if(kind==='auto-arrows')demo.arrows=!demo.arrows;
+ else if(kind==='auto-arrows')demo.arrows=false;
  else if(kind==='cap'&&demo.mode==='host'&&['+','-'].includes(value))demo.capacity=Math.max(4,Math.min(8,demo.capacity+(value==='+'?1:-1)));
  render();return true;
 }
@@ -130,7 +140,7 @@ function modeStatusTable(){
  return `<p class="muted" aria-live="polite">แสดง ${rows.length} / ${modeStatusRows.length} รายการ · สถานะตามหลักฐาน ณ 11 พ.ย. 2026 · ป้ายผลผู้ใช้แบบรวมไม่เท่ากับยืนยันครบทุกโหมด</p><div class="table-wrap mode-status-table"><table><thead><tr><th scope="col">ความสามารถ</th>${modes.map(mode=>`<th scope="col">${modeStatusLabels[mode]}</th>`).join('')}<th scope="col">เงื่อนไข / หลักฐาน</th></tr></thead><tbody>${rows.map(row=>`<tr data-capability-id="${row.id}"><th scope="row">${esc(row.name)}<small>${esc(row.group)}</small>${row.acceptance?`<small class="mode-status-pass">${esc(row.acceptance)}</small>`:''}</th>${modes.map(mode=>`<td>${modeStatusCell(row.statuses[Object.keys(modeStatusLabels).indexOf(mode)])}</td>`).join('')}<td>${esc(row.note)}</td></tr>`).join('')||`<tr><td colspan="${modes.length+2}" class="empty">ไม่พบรายการที่ตรงกับตัวกรอง</td></tr>`}</tbody></table></div>`;
 }
 function modeStatusPage(){
- return heading('Mode capabilities','แต่ละโหมดทำอะไรได้แล้ว และอะไรยังใช้ไม่ได้','SINGLE INSTALL')+`<p class="notice">${release061Note}</p><div class="notice mode-status-notice"><strong>ติดตั้งม็อดเฉพาะเครื่องเรา</strong><p>รุ่นติดตั้ง: <b>0.4.65</b> · ต้องเลือก .62 และ Apply<br>ผู้ใช้ยืนยันข้อ 1 เมนู Host ของ .59 ผ่านแล้ว · .60 เพิ่ม EN/TH และถอด NPC Friend ชั่วคราว · LazyFrog ยังอยู่<br>ภาษาใหม่และข้อทดสอบอื่นยังไม่ยืนยัน · การติดตั้งไม่ใช่ผลทดสอบในเกม</p></div>${expansionPreviewPanel()}
+ return heading('Mode capabilities','แต่ละโหมดทำอะไรได้แล้ว และอะไรยังใช้ไม่ได้','SINGLE INSTALL')+`<p class="notice">${release061Note}</p>${release80StatusBanner()}${expansionPreviewPanel()}
  <div class="mode-status-cards">${[['single','โลกของเรา','0.4.55 เพิ่ม Navigation / NPC Friend รอทดสอบ · คราฟโต๊ะและ Forest ยัง SP เท่านั้น'],['host','ผู้เปิดห้อง','LazyFrog และชุดเดิมผ่านตามรายงาน · NPC Friend / MP 8 คน รอทดสอบ · ฝนยังไม่ซิงก์'],['client','ผู้เข้าร่วมห้อง','Kit Backpack / สูตรแปลน / G แปลนที่วางเอง ผู้ใช้ยืนยันผ่าน · Navigation ใหม่รอทดสอบ · NPC ล็อก']].map(([mode,title,detail])=>`<button class="mode-status-card ${modeStatusMode===mode?'selected':''}" data-capability-mode="${mode}" aria-pressed="${modeStatusMode===mode}"><span>${modeStatusLabels[mode]}</span><strong>${title}</strong><small>${detail}</small></button>`).join('')}</div>
  <section class="panel"><div class="panel-head"><h2>เปรียบเทียบความสามารถ</h2><button data-capability-mode="all" aria-pressed="${modeStatusMode==='all'}">ดูครบ 3 โหมด</button></div><div class="mode-status-tools"><label>ค้นหาความสามารถ<input class="input" id="mode-status-search" value="${esc(modeStatusQuery)}" placeholder="เช่น ปลิง, Teleport, เวลา"></label><label>สถานะ<select class="input" id="mode-status-filter"><option value="all">ทุกสถานะ</option>${Object.entries(modeStatusKinds).map(([key,kind])=>`<option value="${key}" ${modeStatusFilter===key?'selected':''}>${kind.label}</option>`).join('')}</select></label></div><div class="mode-status-results" id="mode-status-results">${modeStatusTable()}</div></section>
  <details class="panel mode-status-legend"><summary>ความหมายของสถานะและขอบเขตผลทดสอบ</summary><div>${Object.entries(modeStatusKinds).map(([key,kind])=>`<p>${modeStatusCell(key)} ${esc(kind.description)}</p>`).join('')}<p>“ล็อกไว้” หมายถึงสิทธิ์ในโค้ดปัจจุบัน ไม่ได้หมายความว่าเกมไม่มีทางรองรับ ส่วน “รอทดสอบ” ไม่ได้ยืนยันว่าใช้งานได้จริง</p><p>การเลือกเพื่อนใน Player ไม่ทำให้ Host มีสิทธิ์แก้ HP / อาหาร / Skills ของเพื่อน และการแก้ข้อมูลตัวเองบน Client ยังต้องเปิดสิทธิ์และทดสอบเป็นรายฟีเจอร์</p><p>หน้าอื่นของ mockup เป็นการจำลองหน้าตา กดปุ่มได้ไม่ได้แปลว่าม็อดจริงรองรับโหมดนั้น</p></div></details>`;
