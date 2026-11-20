@@ -10,6 +10,9 @@ New features marked pending have not been validated in every game mode.
 GitHub Pages publishes the `docs/` folder from `main`. All paths are relative
 to support project-site hosting. No server, Node installation, or build is
 needed by visitors. Private chat history, internal roadmap documents, local
-machine paths, mod binaries, and credentials are excluded from this repository.
+machine paths, game/loader binaries, and credentials are excluded from this repository.
+The explicitly published GreenHellSiri package is available with its SHA256 and
+clean-install instructions at https://phonra1620.github.io/jobza_gh_mod/#siri .
+GreenHellSiri is an experimental ModAPI mod; in-game validation is pending.
 
 Run `node checks/check-public.mjs` to check static assets and public routes.

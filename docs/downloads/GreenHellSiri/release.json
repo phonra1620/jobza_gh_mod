@@ -1,0 +1,11 @@
+{
+  "name": "GreenHellSiri",
+  "version": "0.1.0",
+  "file": "GreenHellSiri-0.1.0-7ca41faa26fe9f365783e93bc9333dfa.mod",
+  "bytes": 30780,
+  "sha256": "803361A1A79A2318AC7B9A7AFC307171E8C2EF8D3E46E023746EBACBF0BA4AB3",
+  "loader": "ModAPI",
+  "platform": "Windows / Steam",
+  "nativeBuild": "21698250",
+  "status": "Experimental; offline checks passed; in-game validation pending"
+}
