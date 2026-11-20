@@ -1,1 +1,19 @@
 .mod-control{position:fixed;z-index:100;left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,calc(100vw - 32px));background:var(--panel,#1d2b22);border:1px solid var(--green,#9cb681);border-radius:12px;box-shadow:0 20px 80px #000c}.mod-control .panel-content{padding:22px}.mod-control p{font-size:13px;line-height:1.8}.mod-control button[aria-pressed=true]{outline:2px solid var(--green)}.game-stage .mod-control{position:absolute}.game-off-hint{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);text-align:center;color:#fff;text-shadow:0 2px 6px #000;font-size:16px}.game-toolbar{flex-wrap:wrap;gap:8px}.native-peer-label{position:absolute;z-index:2;color:#fff;text-align:center;text-shadow:0 2px 4px #000;font-size:17px;pointer-events:none}.native-peer-label small{display:block;font-size:13px;margin-top:4px}.native-demo .game-content{overflow:auto;max-height:calc(100% - 48px)}.teleport-display-controls{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}.teleport-display-controls [aria-pressed=true]{border-color:var(--green);color:var(--green)}.vital-icon{width:26px;height:26px;vertical-align:middle;margin-right:8px}.hub-self-vitals{grid-template-columns:repeat(auto-fit,minmax(145px,1fr))}.game-hud .vital-icon{width:19px;height:19px}.kit-armor-preview{border:1px solid var(--border);padding:16px;border-radius:10px;margin:18px 0}.kit-armor-preview [aria-pressed=true]{color:var(--green);border-color:var(--green)}.frame-preview{margin-top:20px;padding:18px;border:1px dashed var(--green);border-radius:10px;overscroll-behavior:contain}.frame-scene{height:260px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(transparent 64%,#859b7640 65%,transparent 66%)}.frame-scene svg{width:240px;height:160px;fill:none;stroke:#badb8e;stroke-width:5;transition:transform .08s}.self-map-marker{background:#ef5656!important}.skill-presets{display:flex;gap:6px;flex-wrap:wrap}.skills-list small{display:block}.skills-list{max-height:680px;overflow:auto}.game-content fieldset{min-width:0}.game-content .skills-layout{grid-template-columns:minmax(150px,.8fr) minmax(220px,1.2fr)}@media(max-width:700px){.game-content .skills-layout{grid-template-columns:1fr}.skills-list{max-height:220px}.mod-control .action-group{flex-wrap:wrap}.game-toolbar button{font-size:11px}.teleport-display-controls>button{width:100%}}
+.game-window{width:calc(100% - 32px);max-width:1100px;height:clamp(560px,78dvh,760px);margin:70px 16px 65px;min-width:0}
+.game-title{flex-shrink:0;gap:8px;min-height:42px}
+.game-home-layout .game-tabs{align-content:start;scrollbar-gutter:stable}
+.game-home-layout .game-tabs>button{flex:0 0 auto;min-width:0;white-space:normal;overflow-wrap:anywhere;padding:8px 10px;min-height:36px}
+.game-home-layout .hub-language-buttons{flex-shrink:0;min-width:0}
+.game-home-layout .hub-language-buttons button{min-width:0}
+.game-home-layout .game-content{overscroll-behavior:contain;scrollbar-gutter:stable}
+@media(max-width:700px){
+ .game-window{width:calc(100% - 16px);margin:70px 8px 65px;height:clamp(620px,82dvh,820px)}
+ .game-home-layout{grid-template-rows:auto minmax(0,1fr)}
+ .game-home-layout .game-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:8px;overflow:visible;border-right:0;border-bottom:1px solid var(--border);scrollbar-gutter:auto}
+ .game-home-layout .game-tabs>button{white-space:normal;text-align:center;padding:6px 4px;font-size:11px;line-height:1.4}
+ .game-home-layout .hub-language-buttons{grid-column:1/-1;margin:0;padding:0;justify-content:flex-end}
+ .game-home-layout .hub-language-buttons button{flex:0 0 54px;padding:4px}
+ .game-home-layout .game-content{padding:10px}
+ .game-toolbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .game-toolbar button{min-width:0;white-space:normal}
+}
